@@ -503,6 +503,33 @@ class OrganSystem(str, Enum):
     OTHER = "other"
 
 
+class BiologicalSex(str, Enum):
+    """Biological sex for demographic stratification."""
+    MALE = "male"
+    FEMALE = "female"
+    OTHER = "other"
+    NOT_MENTIONED = "not_mentioned"
+
+
+class ReligiousBackground(str, Enum):
+    """Religious/spiritual background categories."""
+    CHRISTIAN_CATHOLIC = "christian_catholic"
+    CHRISTIAN_PROTESTANT = "christian_protestant"
+    CHRISTIAN_ORTHODOX = "christian_orthodox"
+    CHRISTIAN_OTHER = "christian_other"
+    JEWISH = "jewish"
+    MUSLIM = "muslim"
+    HINDU = "hindu"
+    BUDDHIST = "buddhist"
+    SIKH = "sikh"
+    SPIRITUAL_NOT_RELIGIOUS = "spiritual_not_religious"
+    AGNOSTIC = "agnostic"
+    ATHEIST = "atheist"
+    NONE = "none"
+    OTHER = "other"
+    NOT_MENTIONED = "not_mentioned"
+
+
 # =============================================================================
 # SECTION 2: NESTED MODELS - PATIENT DEMOGRAPHICS
 # =============================================================================
@@ -515,7 +542,7 @@ class DemographicsSection(QuestionnaireBaseModel):
         None,
         ge=0,
         le=120,
-        description="Patient age at initial cancer diagnosis."
+        description="Patient age at initial diagnosis."
     )
     age_at_remission: Optional[int] = Field(
         None,
@@ -523,11 +550,11 @@ class DemographicsSection(QuestionnaireBaseModel):
         le=120,
         description="Patient age when remission was confirmed."
     )
-    sex: Optional[str] = Field(
-        None,
-        description="Patient sex (male/female/other)."
+    sex: BiologicalSex = Field(
+        BiologicalSex.NOT_MENTIONED,
+        description="Biological sex of the patient."
     )
-    geographic_location: Optional[str] = Field(
+    geographic_region: Optional[str] = Field(
         None,
         description="Country or region (for cultural stratification)."
     )
@@ -535,9 +562,13 @@ class DemographicsSection(QuestionnaireBaseModel):
         None,
         description="Occupation if mentioned."
     )
-    religious_background: Optional[str] = Field(
+    religious_background: ReligiousBackground = Field(
+        ReligiousBackground.NOT_MENTIONED,
+        description="Religious/spiritual background."
+    )
+    religious_background_detail: Optional[str] = Field(
         None,
-        description="Religious affiliation if mentioned (Christian, Buddhist, None, etc.)."
+        description="Specific denomination or detail if mentioned."
     )
     socioeconomic_indicators: Optional[str] = Field(
         None,
@@ -1809,6 +1840,13 @@ class RemissionAnalysisResponse(QuestionnaireBaseModel):
     )
     
     # Flags for statistical filtering (LLM determines from narrative)
+    
+    # CRITICAL: First filter - is this even a human case?
+    is_human_case: bool = Field(
+        False,
+        description="Is this a HUMAN case study? False if animal study, in vitro, or unclear."
+    )
+    
     disease_category_flag: DiseaseCategory = Field(
         DiseaseCategory.UNKNOWN,
         description="Primary disease category for filtering."
