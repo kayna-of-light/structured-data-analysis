@@ -8,24 +8,15 @@ This project applies the same methodology as [nde-data-analysis](https://github.
 
 ### Core Hypothesis
 
-The **Somatic Influx** hypothesis: Profound spiritual transformation acts as a consistent causal precursor to spontaneous remission. The physical body is the "soul in ultimates" — disease corresponds to spiritual states, and healing follows spiritual resolution.
+Psycho-spiritual transformation may be temporally—and perhaps causally—related to spontaneous remission. This project tests whether transformation consistently **precedes** physical healing, as would be expected if psychological/spiritual states influence physical outcomes.
 
-### Correspondential Framework
+### Theoretical Framework
 
-This project operates from a Swedenborgian understanding of illness and healing. Key principles:
+This project is situated within a post-materialist framework that treats consciousness as potentially causally efficacious in physical processes. The analysis draws on Swedenborgian correspondential theory as one interpretive lens, while maintaining rigorous statistical methodology.
 
-| Principle | Description |
-|-----------|-------------|
-| **Body = Soul in Ultimates** | The physical body is the outermost expression of spiritual state, not disconnected from it |
-| **Will is Receptive** | The will does not *produce* falsities—it *receives* and accepts them from the spiritual environment |
-| **Vulnerability Model** | Illness represents vulnerability to falsity, not direct causation by soul deficiency |
-| **True Healing ≠ Physical Survival** | True healing is reception of spiritual life; physical outcome is secondary |
-| **Death is Not Evil** | The dead body represents what the soul *laid off*—falsities and external states, not the soul itself |
+**Key Finding**: Among 138 cases with clear temporal ordering, psychological transformation preceded physical remission in **85.5%** of cases (χ² = 69.59, p < 0.001). Surrender events were associated with 100% transformation prevalence and 98.3% spiritual connection.
 
-**Key Finding**: 85.5% of cases with clear temporal ordering showed spiritual transformation *preceding* physical remission (p < 0.000001). The transformation IS the healing; physical remission is evidence, not the goal.
-
-📖 **Full Thesis**: [The Somatic Influx - A Correspondential Theory of Illness and Healing](docs/thesis/The%20Somatic%20Influx%20-%20A%20Correspondential%20Theory%20of%20Illness%20and%20Healing.md)  
-📄 **Framework Summary**: [Correspondential Framework for Illness and Healing](docs/Correspondential%20Framework%20for%20Illness%20and%20Healing.md)
+📖 **Full Thesis**: [Psycho-Spiritual Transformation and Spontaneous Remission: A Statistical Analysis](docs/thesis/Psycho-Spiritual%20Transformation%20and%20Spontaneous%20Remission.md)
 
 ### Data Sources (Planned)
 
@@ -167,9 +158,10 @@ Analysis of 569 cases (219 testimonial, 350 clinical) reveals:
 
 | Metric | Finding |
 |--------|---------|
-| Clear temporal ordering cases | 117 |
+| Clear temporal ordering cases | 138 |
 | Transformation preceded remission | **85.5%** |
-| Statistical significance | p < 0.000001 |
+| Binomial test vs 50% | p < 0.001 |
+| Chi-square test | χ² = 69.59, p < 0.001 |
 
 ### Surrender as Opening to Influx
 
@@ -196,7 +188,7 @@ Analysis of 569 cases (219 testimonial, 350 clinical) reveals:
 | Surrender event | 26.5% |
 | **At least one spiritual indicator** | **78.1%** |
 
-**Interpretation**: The will's opening (surrender, fear→love) precedes and enables healing. Physical remission follows spiritual transformation as consequence, not cause.
+**Interpretation**: These findings are consistent with models proposing that psychological/spiritual changes may temporally precede physical healing. However, the observational nature of this data precludes causal inference.
 
 ## Related Projects
 
