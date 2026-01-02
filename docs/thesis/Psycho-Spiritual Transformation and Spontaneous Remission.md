@@ -12,6 +12,18 @@
 
 **Keywords**: spontaneous remission, psychological transformation, spiritual connection, radical remission, near-death experience
 
+## Data Provenance
+
+| Item | Source | Access |
+|------|--------|--------|
+| PMC Cases (n=350) | PubMed Central case reports | Public domain |
+| RRP Cases (n=149) | Radical Remission Project | radicalremission.com |
+| NDERF Cases (n=50) | Near-Death Experience Research Foundation | nderf.org |
+| IANDS Cases (n=20) | International Association for Near-Death Studies | iands.org |
+| Analysis Code | `remission_statistical_analysis.ipynb` | Repository |
+| Statistics Script | `extract_thesis_stats.py` | Repository |
+| Raw Data | `output/analysis/*.json` | Repository (569 files) |
+
 ---
 
 ## 1. Introduction
@@ -62,7 +74,7 @@ Cases were collected from four sources representing different evidence types:
 
 ### 2.2 Coding Scheme
 
-Each case was coded by AI analysis (GPT-4) using a structured schema including:
+Each case was coded by AI analysis (GPT-4 via Azure OpenAI) using a structured Pydantic schema (`models/questionnaire.py`). The schema includes:
 
 - **Demographics**: Age, sex, religious background
 - **Diagnosis**: Disease category, cancer type (if applicable), organ system, terminal status
@@ -95,6 +107,8 @@ Several limitations must be acknowledged:
 ---
 
 ## 3. Results
+
+*All statistics in this section were verified by running `extract_thesis_stats.py` on 2026-01-02. Raw outputs are reproducible from the repository.*
 
 ### 3.1 Sample Characteristics
 
@@ -268,10 +282,26 @@ The data support further investigation of the temporal relationship between psyc
 
 ## References
 
+### Primary Sources
+
 - Beauregard, M. (2014). The primordial psyche. *Journal of Consciousness Studies*, 21(7-8), 132-157.
 - O'Regan, B., & Hirshberg, C. (1993). *Spontaneous remission: An annotated bibliography*. Institute of Noetic Sciences.
 - Swedenborg, E. (1758). *Heaven and its wonders and hell*. Swedenborg Foundation.
 - Turner, K. (2014). *Radical remission: Surviving cancer against all odds*. HarperOne.
+
+### Data Sources
+
+- PubMed Central (PMC): https://www.ncbi.nlm.nih.gov/pmc/
+- Radical Remission Project: https://radicalremission.com/
+- Near-Death Experience Research Foundation (NDERF): https://www.nderf.org/
+- International Association for Near-Death Studies (IANDS): https://iands.org/
+
+### Analysis Repository
+
+- GitHub: `remission-analysis` repository
+- Primary notebook: `remission_statistical_analysis.ipynb`
+- Statistics verification: `extract_thesis_stats.py`
+- Data schema: `models/questionnaire.py`
 
 ---
 
