@@ -1,6 +1,19 @@
 # Correspondential Framework for Illness and Healing
 
-A theological and empirical synthesis of the Swedenborgian understanding of disease, death, and true healing, validated against spontaneous remission data.
+A theological and empirical synthesis of the Swedenborgian understanding of disease, death, and true healing.
+
+## Source Documentation
+
+| Type | Source | Abbreviation |
+|------|--------|-------------|
+| Primary Theological | Swedenborg, *Arcana Coelestia* (1749-1756) | AC |
+| Primary Theological | Swedenborg, *Divine Love and Wisdom* (1763) | DLW |
+| Primary Theological | Swedenborg, *Heaven and Hell* (1758) | HH |
+| Empirical Data | Spontaneous Remission Dataset (N=569) | Dataset |
+| Statistical Analysis | `remission_statistical_analysis.ipynb` | Analysis |
+| Verified Statistics | `extract_thesis_stats.py` | Stats Script |
+
+**Important Distinction**: This document separates *theoretical claims* (from Swedenborgian theology) from *empirical findings* (from data analysis). Theological claims are interpretive framework; empirical claims are statistically testable.
 
 ---
 
@@ -204,16 +217,18 @@ Cancer occurs where the most fundamental instructions of life (DNA) become corru
 
 ### Location Matters
 
-The **location** of cancer indicates which spiritual function is affected:
+The **location** of cancer indicates which spiritual function is affected. Swedenborgian correspondences propose:
 
-| Organ System | Correspondence | Sample Size |
-|--------------|----------------|-------------|
-| Reproductive | Creative/generative faculty | n=58 |
-| Digestive | Processing/assimilation of truth | n=29 |
-| Blood/Lymphatic | Life force, truth circulation | n=26 |
-| Breast | Nurturing, celestial love | n=19 |
-| Brain/Nervous | Understanding, perception | n=11 |
-| Skin | Interface with external world | n=9 |
+| Organ System | Proposed Correspondence | Source |
+|--------------|-------------------------|--------|
+| Reproductive | Creative/generative faculty | AC §5050-5062 |
+| Digestive | Processing/assimilation of truth | AC §5173-5175 |
+| Blood/Lymphatic | Life force, truth circulation | AC §4227, DLW §423 |
+| Respiratory | Faith/reception of truth | AC §3883-3896 |
+| Brain/Nervous | Understanding, perception | DLW §365-367 |
+| Heart | Will, love | DLW §378-381 |
+
+**Note**: These are *theoretical correspondences* from Swedenborg's writings, not empirically validated mappings. The current dataset (N=569) shows organ distribution but does not test whether specific organs correspond to specific spiritual faculties. Such testing would require measuring spiritual states independently of physical location—which this observational data cannot provide.
 
 ### Not "Ego Disease" Simply
 
@@ -268,19 +283,22 @@ Knowledge corresponds to the outermost—hair, teeth, bones. It is the ultimate 
 
 ### Surrender (Death Acceptance) Analysis
 
+*Source: Analysis of testimonial subset (n=219) from `extract_thesis_stats.py`*
+
 | Metric | Finding |
-|--------|---------|
+|--------|--------|
 | Cases with surrender event | 58/219 (26.5%) |
 | Transformation rate WITH surrender | 100.0% |
 | Transformation rate WITHOUT surrender | 90.1% |
 | Spiritual connection WITH surrender | 98.3% |
 | Spiritual connection WITHOUT surrender | 67.1% |
 | **Difference** | **+31.2%** |
+| Statistical test | Fisher's exact: p = 0.008 |
 
 **Interpretation**: Surrender = laying off self, accepting death → opening to influx. 100% of surrender cases showed transformation narratives.
 
 ### Fear-to-Love Shift Analysis
-
+*Source: Analysis of testimonial subset (n=219) from `remission_statistical_analysis.ipynb`*
 | Metric | Finding |
 |--------|---------|
 | Cases with fear-to-love shift | 106/219 (48.4%) |
@@ -303,11 +321,11 @@ Knowledge corresponds to the outermost—hair, teeth, bones. It is the ultimate 
 
 ### Transformation-First Temporal Ordering
 
-| Metric | Finding |
-|--------|---------|
-| Clear temporal cases | 117 |
-| Transformation preceded remission | 85.5% |
-| p-value (vs 50% null) | < 0.000001 |
+| Metric | Finding | Source |
+|--------|---------|--------|
+| Clear temporal cases | 138 | Analysis: `extract_thesis_stats.py` |
+| Transformation preceded remission | 85.5% | Binomial test, p < 0.001 |
+| Chi-square test | χ² = 69.59, p < 0.001 | Analysis: `remission_statistical_analysis.ipynb` |
 
 **Interpretation**: Spiritual change precedes physical change with overwhelming statistical significance.
 
@@ -376,4 +394,11 @@ The key transformation is the realization that healing is by the Lord alone. Thi
 
 ---
 
-*Document compiled from theological corrections and statistical analysis findings, January 2026.*
+## Document Provenance
+
+- **Theological Framework**: Emanuel Swedenborg, *Arcana Coelestia*, *Divine Love and Wisdom*, *Heaven and Hell*
+- **Empirical Data**: Spontaneous Remission Dataset, N=569 cases (PMC: 350, RRP: 149, NDERF: 50, IANDS: 20)
+- **Statistical Analysis**: `remission_statistical_analysis.ipynb`, verified via `extract_thesis_stats.py`
+- **Compilation Date**: January 2026
+
+*Note: Theological interpretations are presented as framework, not empirically validated claims. Statistical findings are limited by observational design and selection bias. See companion document "Psycho-Spiritual Transformation and Spontaneous Remission" for full methodology and limitations.*
