@@ -269,7 +269,6 @@ class StructuredExtractor:
         if self.config.use_registries and self.config.registries_dir:
             # Registry-based loading
             import sys
-            from pathlib import Path as PathLib
             
             # Add shared to path
             shared_path = self.config.registries_dir.parent.parent / "shared"

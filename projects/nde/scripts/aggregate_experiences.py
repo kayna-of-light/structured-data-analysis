@@ -24,45 +24,6 @@ def load_json(path: Path) -> Mapping[str, object]:
         return json.load(handle, object_pairs_hook=OrderedDict)
 
 
-def gather_entries_from_registry(registry_path: Path, dataset_label: str) -> Iterable[dict]:
-    """Gather entries using registry system."""
-    if not registry_path.exists():
-        print(f"Warning: Registry not found: {registry_path}")
-        return
-    
-    registry = load_registry(registry_path)
-    
-    for dataset_name in registry.list_datasets():
-        files = registry.get_files(dataset_name)
-        for path in files:
-            try:
-                data = load_json(path)
-            except json.JSONDecodeError:
-                continue
-            title = str(data.get("title") or path.stem).strip() or "Untitled Experience"
-            date = (
-                str(data.get("date") or data.get("data") or "").strip()
-                or "Unknown"
-            )
-            content = str(data.get("content") or "").strip()
-            content, _ = dedupe_paragraphs(content)
-            source_url = str(data.get("source_url") or "").strip()
-            elements = data.get("elements")
-            if isinstance(elements, Mapping):
-                qa_items = list(elements.items())
-            else:
-                qa_items = []
-            yield {
-                "dataset": dataset_label,
-                "title": title,
-                "date": date,
-                "content": content,
-                "source_url": source_url,
-                "qa": qa_items,
-                "path": path,
-            }
-
-
 def format_entry(entry: Mapping[str, object]) -> str:
     lines: List[str] = []
     title = str(entry["title"])
@@ -144,13 +105,48 @@ def main() -> None:
     project_root = Path(__file__).parent.parent
     registry_path = project_root / "registries" / "nde_full.yaml"
     
-    # Gather NDERF and IANDS entries from registry
-    nderf_entries = list(gather_entries_from_registry(registry_path, "NDERF"))
-    iands_entries = list(gather_entries_from_registry(registry_path, "IANDS"))
+    # The registry contains both NDERF and IANDS datasets
+    # Gather all entries and let the registry determine which files belong to each
+    if not registry_path.exists():
+        print(f"Error: Registry not found at {registry_path}")
+        return
     
-    # Filter by dataset name from the path
-    entries.extend([e for e in nderf_entries if "nderf" in str(e["path"]).lower()])
-    entries.extend([e for e in iands_entries if "iands" in str(e["path"]).lower()])
+    registry = load_registry(registry_path)
+    
+    # Process each dataset from the registry
+    for dataset_name in registry.list_datasets():
+        files = registry.get_files(dataset_name)
+        label = "NDERF" if "nderf" in dataset_name.lower() else "IANDS"
+        
+        for path in files:
+            try:
+                data = load_json(path)
+            except json.JSONDecodeError:
+                continue
+            
+            title = str(data.get("title") or path.stem).strip() or "Untitled Experience"
+            date = (
+                str(data.get("date") or data.get("data") or "").strip()
+                or "Unknown"
+            )
+            content = str(data.get("content") or "").strip()
+            content, _ = dedupe_paragraphs(content)
+            source_url = str(data.get("source_url") or "").strip()
+            elements = data.get("elements")
+            if isinstance(elements, Mapping):
+                qa_items = list(elements.items())
+            else:
+                qa_items = []
+            
+            entries.append({
+                "dataset": label,
+                "title": title,
+                "date": date,
+                "content": content,
+                "source_url": source_url,
+                "qa": qa_items,
+                "path": path,
+            })
     
     dataset_rank = {"NDERF": 0, "IANDS": 1}
     entries.sort(key=lambda item: (dataset_rank.get(item["dataset"], 99), item["title"].lower()))
