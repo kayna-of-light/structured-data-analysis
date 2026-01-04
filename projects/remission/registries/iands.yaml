@@ -1,0 +1,16 @@
+# IANDS Healing Subset Registry for Remission Analysis
+# References only IANDS cases involving physical healing/remission
+# This is a SUBSET of the full IANDS dataset used in NDE project
+
+name: iands_healing
+description: IANDS cases with documented physical healing (remission subset)
+version: "1.0.0"
+
+datasets:
+  iands:
+    description: IANDS cases relevant to remission research (healing subset)
+    source_path: ../../../data/iands
+    files: "*"  # TODO: Filter to healing-specific cases using filter_healing_cases.py
+    exclude: []
+    # Note: This should be refined to include only cases with physical healing
+    # Use scripts/filter_healing_cases.py to identify relevant files

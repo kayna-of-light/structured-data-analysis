@@ -6,7 +6,7 @@ and the NDEAnalysisResponse questionnaire schema.
 
 Usage:
     python extract.py --max-concurrency 4 --log-level INFO
-    python extract.py --datasets nderf --limit 25 --dry-run
+    python extract.py --datasets nde_full --limit 25 --dry-run
 """
 
 from pathlib import Path
@@ -20,7 +20,8 @@ from shared.analysis import ExtractorConfig, StructuredExtractor
 from models import NDEAnalysisResponse
 
 # NDE-specific configuration
-SUPPORTED_DATASETS = ("nderf", "iands")
+# Note: These are registry names, not direct dataset names
+SUPPORTED_DATASETS = ("nde_full",)
 
 SYSTEM_PROMPT = """\
 You are an expert researcher who classifies near-death experience (NDE) narratives 
@@ -50,6 +51,8 @@ def main() -> None:
         secrets_path=PROJECT_ROOT.parent.parent / "secrets" / "azure_openai.env",
         schema_name="NDEAnalysisResponse",
         user_prompt_suffix="\nProvide the most accurate structured questionnaire responses possible.",
+        registries_dir=PROJECT_ROOT / "registries",
+        use_registries=True,
     )
 
     extractor = StructuredExtractor(config)

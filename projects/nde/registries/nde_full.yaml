@@ -1,0 +1,19 @@
+# NDE Full Dataset Registry
+# References the complete NDERF and IANDS datasets for NDE analysis
+
+name: nde-full
+description: Complete NDE dataset registry for analysis
+version: "1.0.0"
+
+datasets:
+  nderf:
+    description: NDERF (Near Death Experience Research Foundation) experiences - full dataset
+    source_path: ../../../data/nderf
+    files: "*"
+    exclude: []
+
+  iands:
+    description: IANDS (International Association for Near-Death Studies) accounts - full dataset
+    source_path: ../../../data/iands
+    files: "*"
+    exclude: []
