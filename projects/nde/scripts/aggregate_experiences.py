@@ -7,9 +7,10 @@ from typing import Iterable, List, Mapping
 
 from text_cleanup import dedupe_paragraphs
 
-ROOT = Path(__file__).parent
-NDERF_DIR = ROOT / "output" / "nderf"
-IANDS_DIR = ROOT / "output" / "iands"
+# Updated paths for new structure
+ROOT = Path(__file__).parent.parent.parent.parent
+NDERF_DIR = ROOT / "data" / "nderf"
+IANDS_DIR = ROOT / "data" / "iands"
 OUTPUT_DIR = ROOT / "output" / "compiled_experiences"
 LEGACY_SINGLE_FILE = ROOT / "output" / "all_experiences.md"
 MAX_CHUNK_BYTES = 18 * 1024 * 1024  # ~18 MB target to stay under 20 MB
