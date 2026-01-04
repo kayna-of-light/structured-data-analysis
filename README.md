@@ -1,10 +1,12 @@
-# Spontaneous Remission Data Analysis
+# Consciousness Research Analysis
 
-Python toolkit for collecting, structuring, and analyzing spontaneous remission case data using LLM-powered questionnaire analysis.
+Unified workspace for NDE (Near-Death Experience) and Spontaneous Remission data analysis using LLM-powered questionnaire analysis.
 
 ## Project Overview
 
-This project applies the same methodology as [nde-data-analysis](https://github.com/marconian/nde-data-analysis) to the domain of spontaneous remission research. The goal is to create a structured database that enables statistical analysis of the relationship between psycho-spiritual transformation and physical healing.
+This workspace combines two related research projects:
+- **NDE Analysis**: Structured analysis of near-death experiences from NDERF and IANDS databases
+- **Remission Analysis**: Statistical analysis of spontaneous remission cases and their relationship to psycho-spiritual transformation
 
 ### Core Hypothesis
 
@@ -18,36 +20,70 @@ This project is situated within a post-materialist framework that treats conscio
 
 📖 **Full Thesis**: [Psycho-Spiritual Transformation and Spontaneous Remission: A Statistical Analysis](docs/thesis/Psycho-Spiritual%20Transformation%20and%20Spontaneous%20Remission.md)
 
-### Data Sources (Planned)
+### Data Sources
 
-| Source | Type | Priority |
-|--------|------|----------|
-| Radical Remission Project | Patient testimonials | High |
-| IONS Spontaneous Remission Database | Medical case reports | High |
-| Lourdes Medical Bureau | Verified miraculous healings | High |
-| NDERF (healing subset) | NDE-linked remissions | Medium |
-| PubMed Case Reports | Medical literature | Medium |
-| HealthTalk.org (DIPEx) | Patient narratives | Low-Medium |
+| Source | Type | Status |
+|--------|------|--------|
+| NDERF | NDE testimonials (~3500 cases) | ✅ Complete |
+| IANDS | NDE testimonials (~600 cases) | ✅ Complete |
+| Radical Remission Project | Patient testimonials | 🔄 In Progress |
+| PubMed Central | Medical case reports | 🔄 In Progress |
 
 ## Project Structure
 
 ```
-remission-analysis/
-├── data/                    # Raw scraped data (JSON per case)
-│   ├── radicalremission/    # Radical Remission Project cases
-│   ├── ions/                # IONS database cases
-│   ├── lourdes/             # Lourdes Medical Bureau cases
-│   └── pubmed/              # Medical case reports
-├── output/
-│   └── analysis/            # LLM-analyzed cases
-├── models/
-│   └── questionnaire.py     # Pydantic schema for structured analysis
-├── docs/                    # Research documents & reports
-│   └── reports/             # Generated analysis reports
-├── secrets/                 # Azure OpenAI credentials (gitignored)
-├── tests/                   # Unit tests
-└── scripts/                 # Utility scripts
+remission-analysis/                    # Workspace root
+├── shared/                            # SHARED CORE LIBRARY
+│   ├── scrapers/                      # Common scraper utilities
+│   │   ├── base.py                    # BaseScraper, ScrapedCase, http utilities
+│   │   ├── nderf_scraper.py           # NDERF scraper
+│   │   ├── iands_scraper.py           # IANDS scraper
+│   │   ├── pmc_scraper.py             # PubMed Central scraper
+│   │   └── radical_remission_scraper.py
+│   ├── analysis/                      # Azure OpenAI analysis utilities
+│   │   ├── azure_client.py            # Credential management
+│   │   └── base_analyzer.py           # BaseAnalyzer class
+│   ├── registry/                      # Dataset registry loader
+│   │   └── loader.py                  # Registry file management
+│   └── models/                        # Shared Pydantic models
+│       └── common.py                  # MentionResponse, QuestionnaireBaseModel
+│
+├── data/                              # UNIFIED DATA REPOSITORY
+│   ├── nderf/                         # ~3500 NDE files (authoritative)
+│   ├── iands/                         # ~600 NDE files (authoritative)
+│   ├── pmc/                           # PMC case reports
+│   └── radical_remission/             # Radical Remission Project
+│
+├── projects/                          # ANALYSIS PROJECTS
+│   ├── nde/                           # NDE Analysis Project
+│   │   ├── extract.py                 # Structured extraction script
+│   │   ├── models/                    # NDE questionnaire schema
+│   │   ├── registries/                # Dataset registries
+│   │   ├── notebooks/                 # Analysis notebooks
+│   │   ├── reports/                   # Generated reports
+│   │   ├── scripts/                   # Utility scripts
+│   │   ├── structured/                # Analysis output
+│   │   └── README.md                  # Project documentation
+│   │
+│   └── remission/                     # Remission Analysis Project
+│       ├── extract.py                 # Structured extraction script
+│       ├── models/                    # Remission questionnaire schema
+│       ├── registries/                # Dataset registries
+│       ├── notebooks/                 # Analysis notebooks
+│       ├── reports/                   # Generated reports & thesis
+│       ├── scripts/                   # Utility scripts
+│       ├── structured/                # Analysis output
+│       └── README.md                  # Project documentation
+│
+├── docs/                              # General documentation
+├── scripts/                           # Workspace-level scripts
+├── tests/                             # Unit tests
+└── secrets/                           # Azure OpenAI credentials (gitignored)
 ```
+
+📖 **Project Documentation**:
+- [NDE Analysis Project](projects/nde/README.md)
+- [Remission Analysis Project](projects/remission/README.md)
 
 ## Workflow
 
@@ -59,25 +95,36 @@ python radicalremission_scraper.py
 python pubmed_scraper.py
 ```
 
-### 2. Structured Analysis
+### 2. Structured Extraction
 
 ```powershell
-# Analyze cases using Azure OpenAI with structured questionnaire
-python analyze_cases.py --max-concurrency 4 --log-level INFO
+# NDE Extraction
+cd projects/nde
+python extract.py --max-concurrency 4 --log-level INFO
+
+# Remission Extraction
+cd projects/remission
+python extract.py --max-concurrency 4 --log-level INFO
 ```
 
 Key flags:
-- `--datasets radicalremission ions` — select specific datasets
+- `--datasets radicalremission pmc` — select specific datasets
 - `--limit 25` — process a sample for validation
 - `--dry-run` — list files without calling Azure
-- `--overwrite` — regenerate existing analyses
+- `--overwrite` — regenerate existing extractions
 
 ### 3. Statistical Analysis
 
+Jupyter notebooks for each project are located in their respective `notebooks/` folders:
+
 ```powershell
-# TBD: Analysis notebooks and scripts
-python correspondence_analysis.py
-python factor_analysis.py
+# NDE Analysis notebooks
+cd projects/nde/notebooks
+jupyter notebook nde_statistical_analysis.ipynb
+
+# Remission Analysis notebooks  
+cd projects/remission/notebooks
+jupyter notebook remission_statistical_analysis.ipynb
 ```
 
 ## Azure OpenAI Setup

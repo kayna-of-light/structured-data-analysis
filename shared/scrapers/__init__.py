@@ -1,0 +1,50 @@
+"""
+Shared scraper modules.
+
+This package provides scrapers for all data sources used across
+the NDE and remission analysis projects.
+
+Available scrapers:
+- nderf: Near Death Experience Research Foundation (nderf.org)
+- iands: International Association for Near-Death Studies
+- pmc: PubMed Central (via OAI-PMH and E-utilities)
+- radical_remission: Radical Remission Project database (future)
+- lourdes: Lourdes Medical Bureau documented cases (future)
+- ions: Institute of Noetic Sciences (future)
+"""
+
+from .base import (
+    get_session,
+    http_get,
+    slugify,
+    clean_text,
+    pad_id,
+    ScrapedCase,
+    BaseScraper,
+    logger,
+)
+
+from .nderf_scraper import NDERFScraper
+from .iands_scraper import IANDSScraper
+from .pmc_scraper import PMCScraper
+from .radical_remission_scraper import RadicalRemissionScraper
+
+__all__ = [
+    # Base utilities
+    "get_session",
+    "http_get",
+    "slugify",
+    "clean_text",
+    "pad_id",
+    # Data structures
+    "ScrapedCase",
+    "BaseScraper",
+    # Scraper classes
+    "NDERFScraper",
+    "IANDSScraper",
+    "PMCScraper",
+    "RadicalRemissionScraper",
+    # Logging
+    "logger",
+]
+
