@@ -112,7 +112,7 @@ def cleanup(root: Path, *, apply: bool) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Remove suffixed *-###.json duplicates")
-    parser.add_argument("--root", type=Path, default=Path("../../data/nderf"), help="Directory to scan")
+    parser.add_argument("--root", type=Path, default=Path("../../../data/nderf"), help="Directory to scan")
     parser.add_argument("--apply", action="store_true", help="Actually delete the duplicates")
     args = parser.parse_args()
     cleanup(args.root, apply=args.apply)

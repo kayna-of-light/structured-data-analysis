@@ -8,7 +8,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent / "shared"))
 from scrapers.pmc_scraper import PMCScraper
 
 def main():
-    output_dir = Path('../../data/pmc')
+    output_dir = Path('../../../data/pmc')
     scraper = PMCScraper(output_dir)
     
     print('Starting PMC scrape for spontaneous remission case reports...')

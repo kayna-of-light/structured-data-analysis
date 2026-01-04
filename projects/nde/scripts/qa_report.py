@@ -214,7 +214,7 @@ def main(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Report possible anomalies in scraped NDERF data")
-    parser.add_argument("--root", type=Path, default=Path("../../data/nderf"), help="Directory containing JSON files")
+    parser.add_argument("--root", type=Path, default=Path("../../../data/nderf"), help="Directory containing JSON files")
     parser.add_argument("--top", type=int, default=10, help="How many duplicate entries to list")
     parser.add_argument(
         "--export-issue",

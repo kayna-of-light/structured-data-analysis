@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-cases = list(Path('../../data/pmc/pmc').glob('*.json'))
+cases = list(Path('../../../data/pmc/pmc').glob('*.json'))
 print(f'Total cases: {len(cases)}')
 
 # Check content lengths
@@ -29,7 +29,7 @@ for f in cases:
 print(f'\nWith PDF: {with_pdf}/{len(cases)}')
 
 # Check PDFs on disk
-pdf_dir = Path('../../data/pmc/pmc/pdfs')
+pdf_dir = Path('../../../data/pmc/pmc/pdfs')
 if pdf_dir.exists():
     pdfs = list(pdf_dir.glob('*.pdf'))
     total_pdf_size = sum(p.stat().st_size for p in pdfs)
