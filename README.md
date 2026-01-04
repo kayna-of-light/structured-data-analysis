@@ -1,136 +1,90 @@
-# Consciousness Research Analysis
+# Structured Data Analysis Framework
 
-Unified workspace for NDE (Near-Death Experience) and Spontaneous Remission data analysis using LLM-powered questionnaire analysis.
+A general-purpose framework for converting scraped text datasets into structured data and performing systematic analysis using LLM-powered extraction.
 
-## Project Overview
+## Overview
 
-This workspace combines two related research projects:
-- **NDE Analysis**: Structured analysis of near-death experiences from NDERF and IANDS databases
-- **Remission Analysis**: Statistical analysis of spontaneous remission cases and their relationship to psycho-spiritual transformation
+This repository provides a coherent and common base for research projects that:
+1. **Scrape** data from various sources (web pages, databases, documents)
+2. **Extract** structured data from unstructured text using LLM-powered questionnaires
+3. **Analyze** the structured data with statistical and qualitative methods
 
-### Core Hypothesis
+The framework includes reusable components for web scraping, Azure OpenAI integration, data registry management, and extensible questionnaire schemas. Projects can be added to analyze any type of narrative or document corpus.
 
-Psycho-spiritual transformation may be temporally—and perhaps causally—related to spontaneous remission. This project tests whether transformation consistently **precedes** physical healing, as would be expected if psychological/spiritual states influence physical outcomes.
+### Current Projects
 
-### Theoretical Framework
+- **[NDE Analysis](projects/nde/)**: Structured analysis of near-death experience narratives from NDERF and IANDS databases
+- **[Remission Analysis](projects/remission/)**: Statistical analysis of spontaneous remission cases and their relationship to psycho-spiritual transformation
 
-This project is situated within a post-materialist framework that treats consciousness as potentially causally efficacious in physical processes. The analysis draws on Swedenborgian correspondential theory as one interpretive lens, while maintaining rigorous statistical methodology.
+### Key Features
 
-**Key Finding**: Among 138 cases with clear temporal ordering, psychological transformation preceded physical remission in **85.5%** of cases (χ² = 69.59, p < 0.001). Surrender events were associated with 100% transformation prevalence and 98.3% spiritual connection.
+- **Shared Scrapers**: Reusable web scraping utilities with a common base class
+- **LLM-Powered Extraction**: Azure OpenAI integration with Pydantic schema validation
+- **Registry System**: YAML-based dataset management to avoid data duplication
+- **Project Isolation**: Each project has its own questionnaire schema, analysis scripts, and outputs
+- **Parallel Processing**: Configurable concurrency for efficient batch processing
 
-📖 **Full Thesis**: [Psycho-Spiritual Transformation and Spontaneous Remission: A Statistical Analysis](docs/thesis/Psycho-Spiritual%20Transformation%20and%20Spontaneous%20Remission.md)
-
-### Data Sources
-
-| Source | Type | Status |
-|--------|------|--------|
-| NDERF | NDE testimonials (~3500 cases) | ✅ Complete |
-| IANDS | NDE testimonials (~600 cases) | ✅ Complete |
-| Radical Remission Project | Patient testimonials | 🔄 In Progress |
-| PubMed Central | Medical case reports | 🔄 In Progress |
-
-## Project Structure
+## Repository Structure
 
 ```
-remission-analysis/                    # Workspace root
+remission-analysis/                    # Framework root
 ├── shared/                            # SHARED CORE LIBRARY
 │   ├── scrapers/                      # Common scraper utilities
 │   │   ├── base.py                    # BaseScraper, ScrapedCase, http utilities
-│   │   ├── nderf_scraper.py           # NDERF scraper
-│   │   ├── iands_scraper.py           # IANDS scraper
-│   │   ├── pmc_scraper.py             # PubMed Central scraper
-│   │   └── radical_remission_scraper.py
+│   │   └── [source]_scraper.py        # Source-specific scrapers
 │   ├── analysis/                      # Azure OpenAI analysis utilities
 │   │   ├── azure_client.py            # Credential management
-│   │   └── base_analyzer.py           # BaseAnalyzer class
-│   ├── registry/                      # Dataset registry loader
-│   │   └── loader.py                  # Registry file management
+│   │   ├── base_analyzer.py           # BaseAnalyzer class
+│   │   └── structured_extractor.py    # Generic extraction pipeline
+│   ├── registry/                      # Dataset registry management
+│   │   └── loader.py                  # YAML registry loader
 │   └── models/                        # Shared Pydantic models
-│       └── common.py                  # MentionResponse, QuestionnaireBaseModel
+│       └── common.py                  # Base model classes
 │
 ├── data/                              # UNIFIED DATA REPOSITORY
-│   ├── nderf/                         # ~3500 NDE files (authoritative)
-│   ├── iands/                         # ~600 NDE files (authoritative)
-│   ├── pmc/                           # PMC case reports
-│   └── radical_remission/             # Radical Remission Project
+│   └── [source]/                      # One directory per data source
 │
 ├── projects/                          # ANALYSIS PROJECTS
-│   ├── nde/                           # NDE Analysis Project
-│   │   ├── extract.py                 # Structured extraction script
-│   │   ├── models/                    # NDE questionnaire schema
-│   │   ├── registries/                # Dataset registries
-│   │   ├── notebooks/                 # Analysis notebooks
-│   │   ├── reports/                   # Generated reports
-│   │   ├── scripts/                   # Utility scripts
-│   │   ├── structured/                # Analysis output
-│   │   └── README.md                  # Project documentation
-│   │
-│   └── remission/                     # Remission Analysis Project
+│   └── [project_name]/                # Individual project
 │       ├── extract.py                 # Structured extraction script
-│       ├── models/                    # Remission questionnaire schema
-│       ├── registries/                # Dataset registries
+│       ├── models/                    # Project-specific questionnaire schema
+│       │   └── questionnaire.py       # Pydantic models for extraction
+│       ├── registries/                # Dataset registry YAML files
 │       ├── notebooks/                 # Analysis notebooks
-│       ├── reports/                   # Generated reports & thesis
-│       ├── scripts/                   # Utility scripts
-│       ├── structured/                # Analysis output
+│       ├── reports/                   # Generated reports
+│       ├── scripts/                   # Project-specific utilities
+│       ├── structured/                # Extraction output (JSON)
 │       └── README.md                  # Project documentation
 │
 ├── docs/                              # General documentation
-├── scripts/                           # Workspace-level scripts
 ├── tests/                             # Unit tests
-└── secrets/                           # Azure OpenAI credentials (gitignored)
+└── secrets/                           # API credentials (gitignored)
 ```
 
-📖 **Project Documentation**:
-- [NDE Analysis Project](projects/nde/README.md)
-- [Remission Analysis Project](projects/remission/README.md)
+## Getting Started
 
-## Workflow
+### Prerequisites
 
-### 1. Data Collection (Scraping)
+- Python 3.10+
+- Azure OpenAI API access (for LLM-powered extraction)
+- pip or conda for package management
 
-```powershell
-# TBD: Source-specific scrapers
-python radicalremission_scraper.py
-python pubmed_scraper.py
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/marconian/remission-analysis.git
+cd remission-analysis
 ```
 
-### 2. Structured Extraction
-
-```powershell
-# NDE Extraction
-cd projects/nde
-python extract.py --max-concurrency 4 --log-level INFO
-
-# Remission Extraction
-cd projects/remission
-python extract.py --max-concurrency 4 --log-level INFO
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+# Or with conda:
+conda env create -f environment.yml
 ```
 
-Key flags:
-- `--datasets radicalremission pmc` — select specific datasets
-- `--limit 25` — process a sample for validation
-- `--dry-run` — list files without calling Azure
-- `--overwrite` — regenerate existing extractions
-
-### 3. Statistical Analysis
-
-Jupyter notebooks for each project are located in their respective `notebooks/` folders:
-
-```powershell
-# NDE Analysis notebooks
-cd projects/nde/notebooks
-jupyter notebook nde_statistical_analysis.ipynb
-
-# Remission Analysis notebooks  
-cd projects/remission/notebooks
-jupyter notebook remission_statistical_analysis.ipynb
-```
-
-## Azure OpenAI Setup
-
-Create `secrets/azure_openai.env`:
-
+3. Configure Azure OpenAI credentials (create `secrets/azure_openai.env`):
 ```env
 AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
 AZURE_OPENAI_API_KEY=your-api-key
@@ -138,109 +92,193 @@ AZURE_OPENAI_DEPLOYMENT=your-deployment-name
 AZURE_OPENAI_API_VERSION=2024-05-01-preview
 ```
 
-## Questionnaire Schema
+## Creating a New Project
 
-The structured questionnaire captures:
+To create a new analysis project using this framework:
 
-### Medical Metadata
-- Diagnosis (ICD-10, histology, stage)
-- Treatment history (conventional, alternative)
-- Prognosis given
-- Verification tier (1-4)
+### 1. Create Project Structure
 
-### Remission Event
-- Remission type (complete, partial)
-- Time to remission
-- Verification method
-- Speed of remission
+```bash
+mkdir -p projects/my_project/{models,registries,notebooks,reports,scripts,structured}
+touch projects/my_project/{README.md,extract.py}
+touch projects/my_project/models/__init__.py
+touch projects/my_project/models/questionnaire.py
+```
 
-### Psycho-Spiritual Factors (9 Factors + Extensions)
-1. Dietary change
-2. Taking control of health
-3. Following intuition
-4. Supplements/herbs
-5. Releasing suppressed emotions
-6. Increasing positive emotions
-7. Embracing social support
-8. Deepening spiritual connection
-9. Having strong reasons for living
+### 2. Define Your Questionnaire Schema
 
-### Anomalous Experience (NDE/STE)
-- Experience type
-- Greyson score (estimated)
-- Identity shift
-- Veridical perception
+Create Pydantic models in `projects/my_project/models/questionnaire.py`:
 
-### Existential Shift Markers
-- Authenticity shift
-- Fear-to-love shift
-- Surrender event
+```python
+from pydantic import BaseModel, Field
+from typing import Optional, List
+from enum import Enum
 
-## Validation Scoring
+class MyResponseModel(BaseModel):
+    """Your structured extraction schema."""
+    
+    # Define fields relevant to your research question
+    topic: str = Field(description="Main topic of the document")
+    sentiment: Optional[str] = Field(description="Overall sentiment")
+    key_points: List[str] = Field(default_factory=list)
+    # ... add more fields as needed
+```
 
-Cases are assigned a validation score (0-100) based on:
+### 3. Create Extraction Script
 
-| Tier | Classification | Criteria |
-|------|----------------|----------|
-| 1 | Medically Verified | Biopsy + scans + doctor names |
-| 2 | Clinically Supported | Detailed medical terminology + confirmation |
-| 3 | Self-Reported (Detailed) | Diagnosis + outcome, lacking medical specifics |
-| 4 | Anecdotal | Vague descriptions, hearsay |
+Create `projects/my_project/extract.py` following the pattern:
 
-## Research Questions
+```python
+#!/usr/bin/env python3
+from pathlib import Path
+import sys
 
-This database enables testing of:
+PROJECT_ROOT = Path(__file__).parent
+sys.path.insert(0, str(PROJECT_ROOT.parent.parent))
 
-1. **Causal Sequence**: Does spiritual transformation consistently precede remission?
-2. **Factor Analysis**: Which of the 9 factors (or combinations) predict complete remission?
-3. **Correspondence Testing**: Do specific spiritual states map to specific conditions?
-4. **Placebo Transcendence**: Do remission rates exceed placebo baselines?
-5. **Time-to-Remission**: Does transformation depth correlate with healing speed?
+from shared.analysis import ExtractorConfig, StructuredExtractor
+from models import MyResponseModel
 
-## Key Analysis Findings
+SUPPORTED_DATASETS = ("my_datasource",)
 
-Analysis of 569 cases (219 testimonial, 350 clinical) reveals:
+SYSTEM_PROMPT = """
+You are an expert researcher analyzing [your domain].
+Extract structured information according to the schema.
+Ground every answer in the source text.
+"""
 
-### Transformation Precedes Remission
+def main() -> None:
+    config = ExtractorConfig(
+        response_model=MyResponseModel,
+        system_prompt=SYSTEM_PROMPT,
+        supported_datasets=SUPPORTED_DATASETS,
+        data_root=PROJECT_ROOT.parent.parent / "data",
+        output_root=PROJECT_ROOT / "structured",
+        secrets_path=PROJECT_ROOT.parent.parent / "secrets" / "azure_openai.env",
+        registries_dir=PROJECT_ROOT / "registries",
+    )
+    
+    extractor = StructuredExtractor(config)
+    extractor.run()
 
-| Metric | Finding |
-|--------|---------|
-| Clear temporal ordering cases | 138 |
-| Transformation preceded remission | **85.5%** |
-| Binomial test vs 50% | p < 0.001 |
-| Chi-square test | χ² = 69.59, p < 0.001 |
+if __name__ == "__main__":
+    main()
+```
 
-### Surrender as Opening to Influx
+### 4. Create Dataset Registries
 
-| Metric | With Surrender | Without | Difference |
-|--------|----------------|---------|------------|
-| Transformation rate | 100.0% | 90.1% | +9.9% |
-| Spiritual connection | 98.3% | 67.1% | **+31.2%** |
+Create YAML files in `projects/my_project/registries/`:
 
-### Fear-to-Love Shift
+```yaml
+# my_datasource.yaml
+name: my_datasource_full
+description: My dataset for analysis
+source: my_datasource
+mode: all
+```
 
-| Metric | Finding |
-|--------|---------|
-| Cases with shift | 106/219 (48.4%) |
-| Spiritual connection rate | 94.3% |
-| Transformation narrative | 100.0% |
+### 5. Add Your Data Source Scraper (Optional)
 
-### True Healing Indicators
+If you need a new data source, create a scraper in `shared/scrapers/`:
 
-| Indicator | Prevalence |
-|-----------|------------|
-| Has transformation narrative | 92.7% |
-| Spiritual connection | 75.3% |
-| Fear-to-love shift | 48.4% |
-| Surrender event | 26.5% |
-| **At least one spiritual indicator** | **78.1%** |
+```python
+from shared.scrapers.base import BaseScraper, ScrapedCase
 
-**Interpretation**: These findings are consistent with models proposing that psychological/spiritual changes may temporally precede physical healing. However, the observational nature of this data precludes causal inference.
+class MySourceScraper(BaseScraper):
+    def scrape(self) -> List[ScrapedCase]:
+        # Implement your scraping logic
+        pass
+```
+
+### 6. Run Your Analysis
+
+```bash
+cd projects/my_project
+python extract.py --max-concurrency 4 --log-level INFO
+```
+
+### 7. Create Analysis Notebooks
+
+Add Jupyter notebooks to `projects/my_project/notebooks/` for statistical analysis and visualization.
+
+## Workflow
+
+### 1. Data Collection (Scraping)
+
+Scrapers are located in `shared/scrapers/`. Run source-specific scrapers to collect data:
+
+```bash
+python shared/scrapers/my_source_scraper.py
+```
+
+Data is saved to `data/[source]/` directory.
+
+### 2. Structured Extraction
+
+Each project has an `extract.py` script that processes raw data through Azure OpenAI:
+
+```bash
+cd projects/[project_name]
+python extract.py --max-concurrency 4 --log-level INFO
+```
+
+Common flags:
+- `--datasets source1 source2` — select specific datasets
+- `--limit 25` — process a sample for validation
+- `--dry-run` — list files without calling Azure
+- `--overwrite` — regenerate existing extractions
+
+Structured output is saved to `projects/[project_name]/structured/`.
+
+### 3. Statistical Analysis
+
+Use Jupyter notebooks in `projects/[project_name]/notebooks/` for analysis:
+
+```bash
+cd projects/[project_name]/notebooks
+jupyter notebook analysis.ipynb
+```
+
+## Common Patterns
+
+### Registry System
+
+Projects use YAML registry files to define which data files to analyze without duplicating data:
+
+```yaml
+# projects/my_project/registries/my_source.yaml
+name: my_source_full
+description: Complete dataset for analysis
+source: my_source  # references data/my_source/
+mode: all          # or specify file lists
+```
+
+Load registries in Python:
+
+```python
+from shared.registry import load_registry
+from pathlib import Path
+
+registry = load_registry(Path("registries/my_source.yaml"))
+files = registry.resolve_paths(Path("../../data"))
+```
+
+### Extraction Pipeline
+
+All extraction scripts follow the same pattern:
+1. Define Pydantic schema (questionnaire)
+2. Configure `ExtractorConfig` with schema and prompts
+3. Initialize `StructuredExtractor`
+4. Run extraction with parallel processing
+5. Output structured JSON files
+
+## Collaboration
+
+This repository works in close collaboration with the [literary-compilation](https://github.com/marconian/literary-compilation) project for theoretical frameworks and interpretive lenses.
 
 ## Related Projects
 
 - [nde-data-analysis](https://github.com/marconian/nde-data-analysis) — Parent project methodology
-- [literary-compilation](https://github.com/marconian/literary-compilation) — Theoretical framework
 
 ## License
 

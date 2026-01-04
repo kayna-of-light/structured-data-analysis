@@ -1,10 +1,26 @@
 # Remission Analysis Project
 
-Statistical analysis of spontaneous remission cases and their relationship to psycho-spiritual transformation.
+Statistical analysis of spontaneous remission cases investigating the relationship between psycho-spiritual transformation and physical healing.
 
-## Overview
+## Research Overview
 
-This project investigates the hypothesis that psycho-spiritual transformation may be temporally—and perhaps causally—related to spontaneous remission. Using LLM-powered structured extraction from medical case reports and patient narratives, we analyze the relationship between spiritual transformation and physical healing.
+This project tests the hypothesis that psycho-spiritual transformation may be temporally—and perhaps causally—related to spontaneous remission. Using LLM-powered structured extraction from medical case reports and patient narratives, the project analyzes:
+
+- **Medical ground truth**: Diagnosis, treatment history, remission classification, verification tier
+- **Psycho-spiritual factors**: Kelly Turner's 9 Radical Remission Factors
+- **Anomalous experiences**: Near-death experiences, spiritual experiences, healing visions
+- **Temporal relationships**: Does transformation precede physical healing?
+- **Existential shifts**: Surrender events, fear-to-love shifts, authenticity changes
+
+### Theoretical Framework
+
+This project is situated within a post-materialist framework that treats consciousness as potentially causally efficacious in physical processes. The analysis draws on:
+- **Kelly Turner's 9 Radical Remission Factors** (1,500+ cases)
+- **Swedenborgian correspondential ontology** (disease-spirit correspondence)
+- **Psychoneuroimmunology literature**
+- **Everson & Cole Spontaneous Regression criteria** (1966)
+
+The analysis maintains rigorous statistical methodology while exploring these theoretical frameworks.
 
 ## Key Finding
 
@@ -77,15 +93,33 @@ The remission questionnaire extracts structured data including:
 
 ## Usage
 
-### Running Analysis
+### Running Extraction
+
+From the project directory, run the extraction script:
 
 ```bash
-# From workspace root
 cd projects/remission
-python analyze_cases.py --datasets pmc radical_remission --max-concurrency 4
+python extract.py --datasets pmc radical_remission --max-concurrency 4 --log-level INFO
+```
+
+Common options:
+- `--datasets pmc radical_remission` — select which datasets to process  
+- `--limit 25` — process only first 25 cases for testing
+- `--dry-run` — list files without calling Azure OpenAI
+- `--overwrite` — regenerate existing extractions
+
+### Running Analysis
+
+Open Jupyter notebooks in the `notebooks/` directory:
+
+```bash
+cd notebooks
+jupyter notebook remission_statistical_analysis.ipynb
 ```
 
 ### Using Registries
+
+Projects use YAML registry files to define datasets:
 
 ```python
 from shared.registry import load_registry
@@ -95,17 +129,10 @@ registry = load_registry(Path("registries/remission_analysis.yaml"))
 files = registry.resolve_paths(Path("../../data"))
 ```
 
-## Theoretical Framework
-
-This project is situated within a post-materialist framework that treats consciousness as potentially causally efficacious in physical processes. The analysis draws on:
-
-- **Kelly Turner's 9 Radical Remission Factors** (1,500+ cases)
-- **Swedenborgian correspondential ontology** (disease-spirit correspondence)
-- **Psychoneuroimmunology literature**
-- **Everson & Cole Spontaneous Regression criteria** (1966)
-
 ## Related
 
-- [Shared Core Library](../../shared/) - Common scrapers, analysis utilities
+- [Framework Documentation](../../README.md) - How to set up new projects
+- [Shared Core Library](../../shared/) - Common scrapers and analysis utilities
 - [NDE Project](../nde/) - Near-death experience analysis
 - [Data Repository](../../data/) - Unified data storage
+- [Literary Compilation](https://github.com/marconian/literary-compilation) - Theoretical framework collaboration
