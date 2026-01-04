@@ -1,0 +1,623 @@
+"""Generic structured data extraction pipeline using Azure OpenAI.
+
+This module provides a reusable pipeline for extracting structured data from
+text narratives using Azure OpenAI's structured output feature. Projects
+provide their own Pydantic response model and system prompt.
+
+Usage:
+    from shared.analysis.structured_extractor import StructuredExtractor, ExtractorConfig
+    from models import MyResponseModel
+
+    config = ExtractorConfig(
+        response_model=MyResponseModel,
+        system_prompt="You are an expert...",
+        supported_datasets=("dataset1", "dataset2"),
+    )
+    extractor = StructuredExtractor(config)
+    asyncio.run(extractor.run(args))
+"""
+
+from __future__ import annotations
+
+import argparse
+import asyncio
+import json
+import logging
+import os
+import random
+from dataclasses import dataclass, field
+from datetime import datetime, timezone
+from functools import partial
+from hashlib import sha256
+from pathlib import Path
+from typing import (
+    Any,
+    Callable,
+    Dict,
+    List,
+    Mapping,
+    Optional,
+    Sequence,
+    Tuple,
+    Type,
+    TypeVar,
+)
+from urllib.parse import urlsplit, urlunsplit
+
+from dotenv import dotenv_values
+from openai import APIStatusError, OpenAI, OpenAIError, RateLimitError
+from pydantic import BaseModel, ValidationError
+
+# Type variable for the response model
+T = TypeVar("T", bound=BaseModel)
+
+DEFAULT_API_VERSION = "2024-05-01-preview"
+
+
+@dataclass
+class ExtractorConfig:
+    """Configuration for the structured extractor."""
+
+    response_model: Type[BaseModel]
+    """Pydantic model class for structured output parsing."""
+
+    system_prompt: str
+    """System prompt instructing the model how to extract data."""
+
+    supported_datasets: Tuple[str, ...]
+    """Tuple of supported dataset directory names."""
+
+    data_root: Path = field(default_factory=lambda: Path.cwd() / "data")
+    """Root directory containing dataset folders."""
+
+    output_root: Path = field(default_factory=lambda: Path.cwd() / "structured")
+    """Root directory for analysis output."""
+
+    secrets_path: Path = field(default_factory=lambda: Path.cwd() / "secrets" / "azure_openai.env")
+    """Path to Azure OpenAI credentials file."""
+
+    schema_name: Optional[str] = None
+    """Optional schema name for output metadata (defaults to model class name)."""
+
+    user_prompt_suffix: str = "\nProvide the most accurate structured responses possible."
+    """Suffix appended to user prompts."""
+
+
+@dataclass(slots=True)
+class ExtractionJob:
+    """Represents a single file to be processed."""
+
+    dataset: str
+    source_path: Path
+    target_path: Path
+
+
+def _read_json(path: Path) -> Mapping[str, object]:
+    """Read JSON file and return contents."""
+    with path.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def build_user_prompt(
+    *,
+    title: str,
+    date: Optional[str],
+    dataset: str,
+    source_url: Optional[str],
+    content: str,
+    suffix: str = "",
+) -> str:
+    """Build the user prompt for extraction.
+
+    Args:
+        title: Document title or name
+        date: Optional date string
+        dataset: Dataset identifier
+        source_url: Optional source URL
+        content: Main text content to analyze
+        suffix: Optional suffix to append
+
+    Returns:
+        Formatted user prompt string
+    """
+    header_lines = [
+        f"Dataset: {dataset}",
+        f"Title: {title.strip() or 'Untitled'}",
+    ]
+    if date:
+        header_lines.append(f"Reported date: {date}")
+    if source_url:
+        header_lines.append(f"Source URL: {source_url}")
+    header_lines.append("Narrative:")
+    header_lines.append(content.strip())
+    if suffix:
+        header_lines.append(suffix)
+    return "\n\n".join(header_lines)
+
+
+def load_azure_credentials(config_path: Path) -> Dict[str, str]:
+    """Load Azure OpenAI credentials from environment and/or file.
+
+    Checks environment variables first, then loads from the config file.
+    File values take precedence over environment variables.
+
+    Args:
+        config_path: Path to the credentials .env file
+
+    Returns:
+        Dictionary with credential keys
+
+    Raises:
+        RuntimeError: If required credentials are missing
+    """
+    collected: Dict[str, str] = {}
+
+    # Check environment variables first
+    for key in (
+        "AZURE_OPENAI_ENDPOINT",
+        "AZURE_OPENAI_KEY",
+        "AZURE_OPENAI_API_KEY",  # Alternative key name
+        "AZURE_OPENAI_DEPLOYMENT",
+        "AZURE_OPENAI_API_VERSION",
+    ):
+        env_value = os.getenv(key)
+        if env_value:
+            collected[key] = env_value
+
+    # Load from file (takes precedence)
+    if config_path.exists():
+        file_values = {k: v for k, v in dotenv_values(config_path).items() if v}
+        collected.update(file_values)
+
+    # Normalize key names (support both KEY and API_KEY)
+    if "AZURE_OPENAI_API_KEY" not in collected and "AZURE_OPENAI_KEY" in collected:
+        collected["AZURE_OPENAI_API_KEY"] = collected["AZURE_OPENAI_KEY"]
+    elif "AZURE_OPENAI_KEY" not in collected and "AZURE_OPENAI_API_KEY" in collected:
+        collected["AZURE_OPENAI_KEY"] = collected["AZURE_OPENAI_API_KEY"]
+
+    # Validate required credentials
+    missing = [
+        key
+        for key in ("AZURE_OPENAI_ENDPOINT", "AZURE_OPENAI_DEPLOYMENT")
+        if not collected.get(key)
+    ]
+    if not collected.get("AZURE_OPENAI_KEY") and not collected.get("AZURE_OPENAI_API_KEY"):
+        missing.append("AZURE_OPENAI_KEY")
+
+    if missing:
+        raise RuntimeError(
+            f"Missing Azure OpenAI credentials: {', '.join(missing)}. "
+            f"Set environment variables or create {config_path}"
+        )
+
+    collected.setdefault("AZURE_OPENAI_API_VERSION", DEFAULT_API_VERSION)
+    return collected
+
+
+def create_azure_client(creds: Dict[str, str], model_override: Optional[str] = None) -> Tuple[OpenAI, str]:
+    """Create Azure OpenAI client from credentials.
+
+    Args:
+        creds: Credentials dictionary from load_azure_credentials()
+        model_override: Optional model/deployment name override
+
+    Returns:
+        Tuple of (OpenAI client, model name)
+    """
+    endpoint = creds["AZURE_OPENAI_ENDPOINT"]
+    api_key = creds.get("AZURE_OPENAI_API_KEY") or creds.get("AZURE_OPENAI_KEY", "")
+    deployment = model_override or creds["AZURE_OPENAI_DEPLOYMENT"]
+    api_version = creds.get("AZURE_OPENAI_API_VERSION", DEFAULT_API_VERSION)
+
+    # Normalize endpoint URL
+    parts = urlsplit(endpoint)
+    base_url = urlunsplit((parts.scheme, parts.netloc, "", "", ""))
+
+    client = OpenAI(
+        api_key=api_key,
+        base_url=f"{base_url}/openai/deployments/{deployment}",
+        default_query={"api-version": api_version},
+    )
+
+    return client, deployment
+
+
+class StructuredExtractor:
+    """Generic structured data extraction pipeline.
+
+    This class provides the full extraction workflow:
+    1. Collect jobs from dataset directories
+    2. Build prompts from source files
+    3. Call Azure OpenAI with structured output
+    4. Save results to output directory
+    """
+
+    def __init__(self, config: ExtractorConfig):
+        """Initialize the extractor with configuration.
+
+        Args:
+            config: ExtractorConfig instance with model, prompts, and paths
+        """
+        self.config = config
+        self.schema_name = config.schema_name or config.response_model.__name__
+
+    def collect_jobs(
+        self,
+        datasets: Sequence[str],
+        *,
+        limit: Optional[int] = None,
+    ) -> List[ExtractionJob]:
+        """Collect all files to be processed.
+
+        Args:
+            datasets: List of dataset names to process
+            limit: Optional maximum number of jobs
+
+        Returns:
+            List of ExtractionJob instances
+        """
+        jobs: List[ExtractionJob] = []
+        output_dir = self.config.output_root
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        for dataset in datasets:
+            source_dir = self.config.data_root / dataset
+            if not source_dir.exists():
+                logging.warning(
+                    "Skipping dataset %s because %s is missing", dataset, source_dir
+                )
+                continue
+
+            for path in sorted(source_dir.glob("*.json")):
+                target_name = f"{dataset}-{path.name}"
+                jobs.append(
+                    ExtractionJob(
+                        dataset=dataset,
+                        source_path=path,
+                        target_path=output_dir / target_name,
+                    )
+                )
+
+        if limit is not None and limit >= 0:
+            jobs = jobs[:limit]
+
+        return jobs
+
+    async def request_extraction(
+        self,
+        client: OpenAI,
+        *,
+        model: str,
+        prompt: str,
+        system_prompt: str,
+        temperature: float,
+        max_output_tokens: int,
+        retries: int = 3,
+    ) -> Tuple[BaseModel, Optional[Mapping[str, object]], Optional[str]]:
+        """Call Azure OpenAI with structured output and return parsed response.
+
+        Args:
+            client: OpenAI client instance
+            model: Model/deployment name
+            prompt: User prompt content
+            system_prompt: System prompt content
+            temperature: Sampling temperature
+            max_output_tokens: Maximum response tokens
+            retries: Number of retry attempts
+
+        Returns:
+            Tuple of (parsed response model, usage dict, response ID)
+
+        Raises:
+            RuntimeError: If all retries fail
+        """
+        backoff = 2.0
+        last_error: Optional[str] = None
+
+        for attempt in range(1, retries + 1):
+            try:
+                loop = asyncio.get_running_loop()
+                call = partial(
+                    client.beta.chat.completions.parse,
+                    model=model,
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": prompt},
+                    ],
+                    response_format=self.config.response_model,
+                    temperature=temperature,
+                    max_tokens=max_output_tokens,
+                )
+                response = await loop.run_in_executor(None, call)
+
+                message = response.choices[0].message
+                if message.refusal:
+                    raise ValueError(f"Model refused: {message.refusal}")
+                if message.parsed is None:
+                    raise ValueError("No structured output returned")
+
+                usage = response.usage.model_dump() if response.usage else None
+                return message.parsed, usage, response.id
+
+            except RateLimitError as exc:
+                last_error = str(exc)
+                wait_time = 60.0  # Azure rate limits benefit from longer waits
+                logging.warning(
+                    "Rate limited (attempt %d/%d), waiting %.0fs: %s",
+                    attempt,
+                    retries,
+                    wait_time,
+                    exc,
+                )
+                await asyncio.sleep(wait_time)
+
+            except (OpenAIError, ValidationError) as exc:
+                last_error = str(exc)
+                logging.warning(
+                    "Extraction attempt %d/%d failed: %s", attempt, retries, exc
+                )
+                if attempt < retries:
+                    wait_time = backoff + random.random()
+                    await asyncio.sleep(wait_time)
+                    backoff *= 2
+
+        raise RuntimeError(last_error or "Unknown Azure OpenAI failure")
+
+    async def process_job(
+        self,
+        job: ExtractionJob,
+        *,
+        client: Optional[OpenAI],
+        model: str,
+        temperature: float,
+        max_output_tokens: int,
+        semaphore: asyncio.Semaphore,
+        overwrite: bool,
+        dry_run: bool,
+    ) -> str:
+        """Process a single extraction job.
+
+        Args:
+            job: ExtractionJob to process
+            client: OpenAI client (None for dry run)
+            model: Model name
+            temperature: Sampling temperature
+            max_output_tokens: Max response tokens
+            semaphore: Concurrency limiter
+            overwrite: Whether to overwrite existing files
+            dry_run: Whether to skip actual API calls
+
+        Returns:
+            Status string: 'success', 'skipped', 'empty', 'error', 'dry_run'
+        """
+        if not overwrite and job.target_path.exists():
+            logging.debug("Skipping %s (already exists)", job.target_path.name)
+            return "skipped"
+
+        try:
+            data = _read_json(job.source_path)
+        except (json.JSONDecodeError, IOError) as exc:
+            logging.error("Failed to read %s: %s", job.source_path, exc)
+            return "error"
+
+        # Extract fields from source data
+        title = str(data.get("title") or job.source_path.stem).strip() or "Untitled"
+        date = str(data.get("date") or data.get("reported_date") or "").strip() or None
+        content = str(
+            data.get("content") or data.get("narrative") or data.get("text") or ""
+        ).strip()
+        source_url = str(data.get("source_url") or data.get("url") or "").strip() or None
+
+        if not content:
+            logging.warning("No content in %s; skipping", job.source_path)
+            return "empty"
+
+        prompt = build_user_prompt(
+            title=title,
+            date=date,
+            dataset=job.dataset,
+            source_url=source_url,
+            content=content,
+            suffix=self.config.user_prompt_suffix,
+        )
+
+        checksum = sha256(content.encode("utf-8")).hexdigest()
+
+        if dry_run:
+            logging.info("Dry-run: would extract %s", job.source_path)
+            return "dry_run"
+
+        if client is None:
+            raise RuntimeError("Azure OpenAI client required when not in dry-run mode")
+
+        async with semaphore:
+            try:
+                analysis, usage, response_id = await self.request_extraction(
+                    client,
+                    model=model,
+                    prompt=prompt,
+                    system_prompt=self.config.system_prompt,
+                    temperature=temperature,
+                    max_output_tokens=max_output_tokens,
+                )
+            except Exception as exc:
+                logging.error("Extraction failed for %s: %s", job.source_path, exc)
+                return "error"
+
+        # Build output payload
+        payload = {
+            "dataset": job.dataset,
+            "source_file": str(job.source_path),
+            "source_url": source_url,
+            "title": title,
+            "date": date,
+            "content_checksum": checksum,
+            "extraction_model": model,
+            "extraction_timestamp": datetime.now(timezone.utc).isoformat(),
+            "schema": self.schema_name,
+            "extraction": analysis.model_dump(mode="json"),
+            "response_id": response_id,
+            "usage": usage,
+        }
+
+        job.target_path.parent.mkdir(parents=True, exist_ok=True)
+        job.target_path.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+
+        logging.info("Extracted %s -> %s", job.source_path.name, job.target_path.name)
+        return "success"
+
+    async def run_pipeline(self, args: argparse.Namespace) -> Dict[str, int]:
+        """Run the extraction pipeline.
+
+        Args:
+            args: Parsed command line arguments
+
+        Returns:
+            Dictionary of status counts
+        """
+        datasets = args.datasets or list(self.config.supported_datasets)
+        jobs = self.collect_jobs(datasets, limit=args.limit)
+
+        if not jobs:
+            logging.warning("No files found to process.")
+            return {}
+
+        logging.info("Collected %d jobs to process.", len(jobs))
+
+        client: Optional[OpenAI] = None
+        model_name = args.model or "dry-run"
+
+        if not args.dry_run:
+            secrets_path = Path(args.secrets_path) if args.secrets_path else self.config.secrets_path
+            creds = load_azure_credentials(secrets_path)
+            client, model_name = create_azure_client(creds, args.model)
+
+        semaphore = asyncio.Semaphore(max(1, args.max_concurrency))
+
+        tasks = [
+            asyncio.create_task(
+                self.process_job(
+                    job,
+                    client=client,
+                    model=model_name,
+                    temperature=args.temperature,
+                    max_output_tokens=args.max_output_tokens,
+                    semaphore=semaphore,
+                    overwrite=args.overwrite,
+                    dry_run=args.dry_run,
+                )
+            )
+            for job in jobs
+        ]
+
+        stats: Dict[str, int] = {}
+        for task in asyncio.as_completed(tasks):
+            status = await task
+            stats[status] = stats.get(status, 0) + 1
+
+        return stats
+
+    def create_parser(self, description: Optional[str] = None) -> argparse.ArgumentParser:
+        """Create argument parser for the extractor.
+
+        Args:
+            description: Optional parser description
+
+        Returns:
+            Configured ArgumentParser
+        """
+        parser = argparse.ArgumentParser(
+            description=description or f"Structured extraction using {self.schema_name}",
+        )
+        parser.add_argument(
+            "--datasets",
+            nargs="+",
+            default=list(self.config.supported_datasets),
+            choices=list(self.config.supported_datasets),
+            help="Datasets to process (default: all).",
+        )
+        parser.add_argument(
+            "--limit",
+            type=int,
+            default=None,
+            help="Maximum number of files to process.",
+        )
+        parser.add_argument(
+            "--max-concurrency",
+            type=int,
+            default=4,
+            help="Maximum concurrent Azure OpenAI calls (default: 4).",
+        )
+        parser.add_argument(
+            "--temperature",
+            type=float,
+            default=0.7,
+            help="Sampling temperature (default: 0.7).",
+        )
+        parser.add_argument(
+            "--max-output-tokens",
+            type=int,
+            default=10000,
+            help="Maximum response tokens (default: 10000).",
+        )
+        parser.add_argument(
+            "--model",
+            type=str,
+            default=None,
+            help="Override Azure OpenAI deployment name.",
+        )
+        parser.add_argument(
+            "--secrets-path",
+            type=str,
+            default=None,
+            help="Path to azure_openai.env file.",
+        )
+        parser.add_argument(
+            "--overwrite",
+            action="store_true",
+            help="Re-extract even if output exists.",
+        )
+        parser.add_argument(
+            "--dry-run",
+            action="store_true",
+            help="List files without calling Azure OpenAI.",
+        )
+        parser.add_argument(
+            "--log-level",
+            default="INFO",
+            choices=["DEBUG", "INFO", "WARNING", "ERROR"],
+            help="Logging verbosity (default: INFO).",
+        )
+        return parser
+
+    def run(self, argv: Optional[Sequence[str]] = None) -> None:
+        """Main entry point for the extractor.
+
+        Args:
+            argv: Optional command line arguments (defaults to sys.argv)
+        """
+        parser = self.create_parser()
+        args = parser.parse_args(argv)
+
+        logging.basicConfig(
+            level=getattr(logging, args.log_level),
+            format="[%(levelname)s] %(message)s",
+        )
+
+        try:
+            stats = asyncio.run(self.run_pipeline(args))
+        except KeyboardInterrupt:
+            logging.error("Interrupted by user")
+            raise SystemExit(1)
+        except Exception as exc:
+            logging.error("Pipeline aborted: %s", exc)
+            raise SystemExit(1)
+
+        if not stats:
+            logging.info("No work performed.")
+            return
+
+        summary = ", ".join(f"{k}={v}" for k, v in sorted(stats.items()))
+        logging.info("Extraction complete: %s", summary)

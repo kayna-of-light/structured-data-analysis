@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "consciousness-research"
+version = "1.0.0"
+description = "Unified workspace for NDE and Remission analysis"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+
+dependencies = [
+    "pydantic>=2.0",
+    "openai>=1.0",
+    "python-dotenv>=1.0",
+    "requests>=2.28",
+    "beautifulsoup4>=4.12",
+    "lxml>=4.9",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "black>=23.0",
+    "ruff>=0.1",
+]
+selenium = [
+    "selenium>=4.0",
+]
+pdf = [
+    "pdfplumber>=0.9",
+]
+
+[tool.setuptools.packages.find]
+include = ["shared*", "nde_analysis*", "remission*"]
+
+[tool.setuptools.package-dir]
+"" = "."
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
