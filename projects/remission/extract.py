@@ -6,7 +6,7 @@ Azure OpenAI and the RemissionAnalysisResponse questionnaire schema.
 
 Usage:
     python extract.py --max-concurrency 4 --log-level INFO
-    python extract.py --datasets radicalremission --limit 25 --dry-run
+    python extract.py --datasets pmc radical_remission --limit 25 --dry-run
 """
 
 from pathlib import Path
@@ -20,12 +20,12 @@ from shared.analysis import ExtractorConfig, StructuredExtractor
 from models import RemissionAnalysisResponse
 
 # Remission-specific configuration
+# Note: These are registry names (one per data source)
 SUPPORTED_DATASETS = (
-    "radicalremission",
-    "pubmed",
     "pmc",
-    "nderf_healing",
-    "healthtalk",
+    "radical_remission",
+    "nderf",  # Healing subset
+    "iands",  # Healing subset
 )
 
 SYSTEM_PROMPT = """\
@@ -74,6 +74,8 @@ def main() -> None:
             "Extract medical details, identify which of Turner's 9 factors are present, "
             "note any anomalous experiences (NDE/STE), and assess the validation tier."
         ),
+        registries_dir=PROJECT_ROOT / "registries",
+        use_registries=True,
     )
 
     extractor = StructuredExtractor(config)
