@@ -276,10 +276,6 @@ All extraction scripts follow the same pattern:
 
 This repository works in close collaboration with the [literary-compilation](https://github.com/marconian/literary-compilation) project for theoretical frameworks and interpretive lenses.
 
-## Related Projects
-
-- [nde-data-analysis](https://github.com/marconian/nde-data-analysis) — Parent project methodology
-
 ## License
 
 MIT License
