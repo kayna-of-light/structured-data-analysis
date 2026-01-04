@@ -12,7 +12,7 @@ def run_rrp():
     print("RADICAL REMISSION PROJECT SCRAPER")
     print("=" * 60)
     
-    output_dir = Path('../../data/radical_remission')
+    output_dir = Path('../../../data/radical_remission')
     scraper = RadicalRemissionScraper(output_dir)
     cases = scraper.scrape_all()
     

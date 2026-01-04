@@ -43,7 +43,7 @@ def main() -> None:
         "paths",
         nargs="*",
         type=Path,
-        default=[Path("../../data/nderf"), Path("../../data/iands")],
+        default=[Path("../../../data/nderf"), Path("../../../data/iands")],
         help="Files or directories to sanitize",
     )
     parser.add_argument(

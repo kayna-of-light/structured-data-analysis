@@ -56,7 +56,7 @@ def main():
     )
     
     # Output configuration
-    parser.add_argument("--output", "-o", type=Path, default=Path("../../data"),
+    parser.add_argument("--output", "-o", type=Path, default=Path("../../../data"),
                         help="Output directory for scraped data")
     
     # Scraper selection
