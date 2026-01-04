@@ -26,11 +26,9 @@ print("DATASET SUMMARY")
 print("=" * 60)
 
 total = 0
-total += analyze_dataset("PMC Case Reports", "data/pmc_cases/pmc/*.json")
+total += analyze_dataset("PMC Case Reports", "../../data/pmc/pmc/*.json")
 print()
-total += analyze_dataset("Lourdes Miracles", "data/lourdes_cases/lourdes/*.json")
-print()
-total += analyze_dataset("Radical Remission", "data/rrp_cases/radical_remission/*.json")
+total += analyze_dataset("Radical Remission", "../../data/radical_remission/radical_remission/*.json")
 
 print()
 print("=" * 60)

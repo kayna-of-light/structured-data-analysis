@@ -1,9 +1,14 @@
 """Run full PMC scrape - only saving cases with full content."""
 from pathlib import Path
+import sys
+
+# Add shared to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent / "shared"))
+
 from scrapers.pmc_scraper import PMCScraper
 
 def main():
-    output_dir = Path('data/pmc_cases')
+    output_dir = Path('../../data/pmc')
     scraper = PMCScraper(output_dir)
     
     print('Starting PMC scrape for spontaneous remission case reports...')
