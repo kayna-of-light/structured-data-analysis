@@ -6,8 +6,12 @@ import json
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Dict, List, Tuple
+import sys
 
-from nderf_scraper import canonicalize_url
+# Add shared to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent / "shared"))
+
+from scrapers.nderf_scraper import canonicalize_url
 
 MAX_EXAMPLES = 20
 ISSUE_LABELS = {
@@ -210,7 +214,7 @@ def main(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Report possible anomalies in scraped NDERF data")
-    parser.add_argument("--root", type=Path, default=Path("output/nderf"), help="Directory containing JSON files")
+    parser.add_argument("--root", type=Path, default=Path("../../../data/nderf"), help="Directory containing JSON files")
     parser.add_argument("--top", type=int, default=10, help="How many duplicate entries to list")
     parser.add_argument(
         "--export-issue",

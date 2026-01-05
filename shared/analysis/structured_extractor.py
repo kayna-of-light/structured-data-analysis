@@ -82,6 +82,12 @@ class ExtractorConfig:
     user_prompt_suffix: str = "\nProvide the most accurate structured responses possible."
     """Suffix appended to user prompts."""
 
+    registries_dir: Optional[Path] = None
+    """Optional path to registries directory for registry-based loading."""
+
+    use_registries: bool = True
+    """If True, load files from registries instead of direct directory access."""
+
 
 @dataclass(slots=True)
 class ExtractionJob:
@@ -260,23 +266,62 @@ class StructuredExtractor:
         output_dir = self.config.output_root
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        for dataset in datasets:
-            source_dir = self.config.data_root / dataset
-            if not source_dir.exists():
-                logging.warning(
-                    "Skipping dataset %s because %s is missing", dataset, source_dir
-                )
-                continue
-
-            for path in sorted(source_dir.glob("*.json")):
-                target_name = f"{dataset}-{path.name}"
-                jobs.append(
-                    ExtractionJob(
-                        dataset=dataset,
-                        source_path=path,
-                        target_path=output_dir / target_name,
+        if self.config.use_registries and self.config.registries_dir:
+            # Registry-based loading
+            import sys
+            
+            # Add shared to path
+            shared_path = self.config.registries_dir.parent.parent / "shared"
+            if str(shared_path) not in sys.path:
+                sys.path.insert(0, str(shared_path))
+            
+            from registry import load_registry
+            
+            for dataset in datasets:
+                registry_path = self.config.registries_dir / f"{dataset}.yaml"
+                if not registry_path.exists():
+                    logging.warning(
+                        "Skipping dataset %s because registry %s is missing", 
+                        dataset, registry_path
                     )
-                )
+                    continue
+                
+                try:
+                    registry = load_registry(registry_path)
+                    # Get files from all datasets in the registry
+                    for reg_dataset_name in registry.list_datasets():
+                        files = registry.get_files(reg_dataset_name)
+                        for path in sorted(files):
+                            target_name = f"{dataset}-{path.name}"
+                            jobs.append(
+                                ExtractionJob(
+                                    dataset=dataset,
+                                    source_path=path,
+                                    target_path=output_dir / target_name,
+                                )
+                            )
+                except Exception as e:
+                    logging.error("Error loading registry %s: %s", registry_path, e)
+                    continue
+        else:
+            # Direct directory access (legacy mode)
+            for dataset in datasets:
+                source_dir = self.config.data_root / dataset
+                if not source_dir.exists():
+                    logging.warning(
+                        "Skipping dataset %s because %s is missing", dataset, source_dir
+                    )
+                    continue
+
+                for path in sorted(source_dir.glob("*.json")):
+                    target_name = f"{dataset}-{path.name}"
+                    jobs.append(
+                        ExtractionJob(
+                            dataset=dataset,
+                            source_path=path,
+                            target_path=output_dir / target_name,
+                        )
+                    )
 
         if limit is not None and limit >= 0:
             jobs = jobs[:limit]

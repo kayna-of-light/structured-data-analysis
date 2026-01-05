@@ -1,15 +1,19 @@
 from __future__ import annotations
 
 import json
+import sys
 from collections import OrderedDict
 from pathlib import Path
 from typing import Iterable, List, Mapping
 
 from text_cleanup import dedupe_paragraphs
 
-ROOT = Path(__file__).parent
-NDERF_DIR = ROOT / "output" / "nderf"
-IANDS_DIR = ROOT / "output" / "iands"
+# Updated paths for new structure
+ROOT = Path(__file__).parent.parent.parent.parent
+sys.path.insert(0, str(ROOT / "shared"))
+
+from registry import load_registry
+
 OUTPUT_DIR = ROOT / "output" / "compiled_experiences"
 LEGACY_SINGLE_FILE = ROOT / "output" / "all_experiences.md"
 MAX_CHUNK_BYTES = 18 * 1024 * 1024  # ~18 MB target to stay under 20 MB
@@ -18,38 +22,6 @@ MAX_CHUNK_BYTES = 18 * 1024 * 1024  # ~18 MB target to stay under 20 MB
 def load_json(path: Path) -> Mapping[str, object]:
     with path.open("r", encoding="utf-8") as handle:
         return json.load(handle, object_pairs_hook=OrderedDict)
-
-
-def gather_entries(directory: Path, dataset: str) -> Iterable[dict]:
-    if not directory.exists():
-        return
-    for path in sorted(directory.glob("*.json")):
-        try:
-            data = load_json(path)
-        except json.JSONDecodeError:
-            continue
-        title = str(data.get("title") or path.stem).strip() or "Untitled Experience"
-        date = (
-            str(data.get("date") or data.get("data") or "").strip()
-            or "Unknown"
-        )
-        content = str(data.get("content") or "").strip()
-        content, _ = dedupe_paragraphs(content)
-        source_url = str(data.get("source_url") or "").strip()
-        elements = data.get("elements")
-        if isinstance(elements, Mapping):
-            qa_items = list(elements.items())
-        else:
-            qa_items = []
-        yield {
-            "dataset": dataset,
-            "title": title,
-            "date": date,
-            "content": content,
-            "source_url": source_url,
-            "qa": qa_items,
-            "path": path,
-        }
 
 
 def format_entry(entry: Mapping[str, object]) -> str:
@@ -126,13 +98,90 @@ def write_markdown_chunks(entries: List[Mapping[str, object]]) -> List[Path]:
 
 
 def main() -> None:
+    """Aggregate NDE experiences using registry system."""
     entries: List[dict] = []
-    entries.extend(list(gather_entries(NDERF_DIR, "NDERF") or []))
-    entries.extend(list(gather_entries(IANDS_DIR, "IANDS") or []))
+    
+    # Load from separate registries for NDERF and IANDS
+    project_root = Path(__file__).parent.parent
+    
+    # Process NDERF
+    nderf_registry_path = project_root / "registries" / "nderf.yaml"
+    if nderf_registry_path.exists():
+        registry = load_registry(nderf_registry_path)
+        for dataset_name in registry.list_datasets():
+            files = registry.get_files(dataset_name)
+            for path in files:
+                try:
+                    data = load_json(path)
+                except json.JSONDecodeError:
+                    continue
+                
+                title = str(data.get("title") or path.stem).strip() or "Untitled Experience"
+                date = (
+                    str(data.get("date") or data.get("data") or "").strip()
+                    or "Unknown"
+                )
+                content = str(data.get("content") or "").strip()
+                content, _ = dedupe_paragraphs(content)
+                source_url = str(data.get("source_url") or "").strip()
+                elements = data.get("elements")
+                if isinstance(elements, Mapping):
+                    qa_items = list(elements.items())
+                else:
+                    qa_items = []
+                
+                entries.append({
+                    "dataset": "NDERF",
+                    "title": title,
+                    "date": date,
+                    "content": content,
+                    "source_url": source_url,
+                    "qa": qa_items,
+                    "path": path,
+                })
+    
+    # Process IANDS
+    iands_registry_path = project_root / "registries" / "iands.yaml"
+    if iands_registry_path.exists():
+        registry = load_registry(iands_registry_path)
+        for dataset_name in registry.list_datasets():
+            files = registry.get_files(dataset_name)
+            for path in files:
+                try:
+                    data = load_json(path)
+                except json.JSONDecodeError:
+                    continue
+                
+                title = str(data.get("title") or path.stem).strip() or "Untitled Experience"
+                date = (
+                    str(data.get("date") or data.get("data") or "").strip()
+                    or "Unknown"
+                )
+                content = str(data.get("content") or "").strip()
+                content, _ = dedupe_paragraphs(content)
+                source_url = str(data.get("source_url") or "").strip()
+                elements = data.get("elements")
+                if isinstance(elements, Mapping):
+                    qa_items = list(elements.items())
+                else:
+                    qa_items = []
+                
+                entries.append({
+                    "dataset": "IANDS",
+                    "title": title,
+                    "date": date,
+                    "content": content,
+                    "source_url": source_url,
+                    "qa": qa_items,
+                    "path": path,
+                })
+    
     dataset_rank = {"NDERF": 0, "IANDS": 1}
     entries.sort(key=lambda item: (dataset_rank.get(item["dataset"], 99), item["title"].lower()))
+    
     if LEGACY_SINGLE_FILE.exists():
         LEGACY_SINGLE_FILE.unlink()
+    
     chunk_paths = write_markdown_chunks(entries)
     print(
         f"Wrote {len(entries)} experiences across {len(chunk_paths)} files "
