@@ -230,6 +230,7 @@ class LifeReviewPresentation(str, Enum):
 class ReviewJudgment(str, Enum):
     GUIDE_OR_LIGHT = "guide_or_light"
     SELF = "self_judgment"
+    HARSH_PUNISHING = "harsh_punishing"
     NONE = "none"
     NOT_MENTIONED = "not_mentioned"
 
