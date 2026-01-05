@@ -101,52 +101,80 @@ def main() -> None:
     """Aggregate NDE experiences using registry system."""
     entries: List[dict] = []
     
-    # Load from registry
+    # Load from separate registries for NDERF and IANDS
     project_root = Path(__file__).parent.parent
-    registry_path = project_root / "registries" / "nde_full.yaml"
     
-    # The registry contains both NDERF and IANDS datasets
-    # Gather all entries and let the registry determine which files belong to each
-    if not registry_path.exists():
-        print(f"Error: Registry not found at {registry_path}")
-        return
+    # Process NDERF
+    nderf_registry_path = project_root / "registries" / "nderf.yaml"
+    if nderf_registry_path.exists():
+        registry = load_registry(nderf_registry_path)
+        for dataset_name in registry.list_datasets():
+            files = registry.get_files(dataset_name)
+            for path in files:
+                try:
+                    data = load_json(path)
+                except json.JSONDecodeError:
+                    continue
+                
+                title = str(data.get("title") or path.stem).strip() or "Untitled Experience"
+                date = (
+                    str(data.get("date") or data.get("data") or "").strip()
+                    or "Unknown"
+                )
+                content = str(data.get("content") or "").strip()
+                content, _ = dedupe_paragraphs(content)
+                source_url = str(data.get("source_url") or "").strip()
+                elements = data.get("elements")
+                if isinstance(elements, Mapping):
+                    qa_items = list(elements.items())
+                else:
+                    qa_items = []
+                
+                entries.append({
+                    "dataset": "NDERF",
+                    "title": title,
+                    "date": date,
+                    "content": content,
+                    "source_url": source_url,
+                    "qa": qa_items,
+                    "path": path,
+                })
     
-    registry = load_registry(registry_path)
-    
-    # Process each dataset from the registry
-    for dataset_name in registry.list_datasets():
-        files = registry.get_files(dataset_name)
-        label = "NDERF" if "nderf" in dataset_name.lower() else "IANDS"
-        
-        for path in files:
-            try:
-                data = load_json(path)
-            except json.JSONDecodeError:
-                continue
-            
-            title = str(data.get("title") or path.stem).strip() or "Untitled Experience"
-            date = (
-                str(data.get("date") or data.get("data") or "").strip()
-                or "Unknown"
-            )
-            content = str(data.get("content") or "").strip()
-            content, _ = dedupe_paragraphs(content)
-            source_url = str(data.get("source_url") or "").strip()
-            elements = data.get("elements")
-            if isinstance(elements, Mapping):
-                qa_items = list(elements.items())
-            else:
-                qa_items = []
-            
-            entries.append({
-                "dataset": label,
-                "title": title,
-                "date": date,
-                "content": content,
-                "source_url": source_url,
-                "qa": qa_items,
-                "path": path,
-            })
+    # Process IANDS
+    iands_registry_path = project_root / "registries" / "iands.yaml"
+    if iands_registry_path.exists():
+        registry = load_registry(iands_registry_path)
+        for dataset_name in registry.list_datasets():
+            files = registry.get_files(dataset_name)
+            for path in files:
+                try:
+                    data = load_json(path)
+                except json.JSONDecodeError:
+                    continue
+                
+                title = str(data.get("title") or path.stem).strip() or "Untitled Experience"
+                date = (
+                    str(data.get("date") or data.get("data") or "").strip()
+                    or "Unknown"
+                )
+                content = str(data.get("content") or "").strip()
+                content, _ = dedupe_paragraphs(content)
+                source_url = str(data.get("source_url") or "").strip()
+                elements = data.get("elements")
+                if isinstance(elements, Mapping):
+                    qa_items = list(elements.items())
+                else:
+                    qa_items = []
+                
+                entries.append({
+                    "dataset": "IANDS",
+                    "title": title,
+                    "date": date,
+                    "content": content,
+                    "source_url": source_url,
+                    "qa": qa_items,
+                    "path": path,
+                })
     
     dataset_rank = {"NDERF": 0, "IANDS": 1}
     entries.sort(key=lambda item: (dataset_rank.get(item["dataset"], 99), item["title"].lower()))
