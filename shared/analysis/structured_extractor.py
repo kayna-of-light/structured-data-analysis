@@ -85,7 +85,7 @@ class ExtractorConfig:
     registries_dir: Optional[Path] = None
     """Optional path to registries directory for registry-based loading."""
 
-    use_registries: bool = False
+    use_registries: bool = True
     """If True, load files from registries instead of direct directory access."""
 
 
