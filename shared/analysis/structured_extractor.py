@@ -42,7 +42,6 @@ from typing import (
     Type,
     TypeVar,
 )
-from urllib.parse import urlsplit, urlunsplit
 
 from dotenv import dotenv_values
 from openai import APIStatusError, OpenAI, OpenAIError, RateLimitError
@@ -170,16 +169,26 @@ def load_azure_credentials(config_path: Path) -> Dict[str, str]:
         if env_value:
             collected[key] = env_value
 
+    file_values: Dict[str, str] = {}
+
     # Load from file (takes precedence)
     if config_path.exists():
         file_values = {k: v for k, v in dotenv_values(config_path).items() if v}
         collected.update(file_values)
 
     # Normalize key names (support both KEY and API_KEY)
-    if "AZURE_OPENAI_API_KEY" not in collected and "AZURE_OPENAI_KEY" in collected:
-        collected["AZURE_OPENAI_API_KEY"] = collected["AZURE_OPENAI_KEY"]
-    elif "AZURE_OPENAI_KEY" not in collected and "AZURE_OPENAI_API_KEY" in collected:
-        collected["AZURE_OPENAI_KEY"] = collected["AZURE_OPENAI_API_KEY"]
+    # IMPORTANT: file values must take precedence over environment variables.
+    if file_values.get("AZURE_OPENAI_KEY"):
+        collected["AZURE_OPENAI_KEY"] = file_values["AZURE_OPENAI_KEY"]
+        collected["AZURE_OPENAI_API_KEY"] = file_values["AZURE_OPENAI_KEY"]
+    elif file_values.get("AZURE_OPENAI_API_KEY"):
+        collected["AZURE_OPENAI_KEY"] = file_values["AZURE_OPENAI_API_KEY"]
+        collected["AZURE_OPENAI_API_KEY"] = file_values["AZURE_OPENAI_API_KEY"]
+    else:
+        if "AZURE_OPENAI_API_KEY" not in collected and collected.get("AZURE_OPENAI_KEY"):
+            collected["AZURE_OPENAI_API_KEY"] = collected["AZURE_OPENAI_KEY"]
+        elif "AZURE_OPENAI_KEY" not in collected and collected.get("AZURE_OPENAI_API_KEY"):
+            collected["AZURE_OPENAI_KEY"] = collected["AZURE_OPENAI_API_KEY"]
 
     # Validate required credentials
     missing = [
@@ -213,17 +222,9 @@ def create_azure_client(creds: Dict[str, str], model_override: Optional[str] = N
     endpoint = creds["AZURE_OPENAI_ENDPOINT"]
     api_key = creds.get("AZURE_OPENAI_API_KEY") or creds.get("AZURE_OPENAI_KEY", "")
     deployment = model_override or creds["AZURE_OPENAI_DEPLOYMENT"]
-    api_version = creds.get("AZURE_OPENAI_API_VERSION", DEFAULT_API_VERSION)
 
-    # Normalize endpoint URL
-    parts = urlsplit(endpoint)
-    base_url = urlunsplit((parts.scheme, parts.netloc, "", "", ""))
-
-    client = OpenAI(
-        api_key=api_key,
-        base_url=f"{base_url}/openai/deployments/{deployment}",
-        default_query={"api-version": api_version},
-    )
+    # Azure Foundry OpenAI-compatible endpoint: base_url should already include /openai/v1/
+    client = OpenAI(base_url=endpoint, api_key=api_key)
 
     return client, deployment
 
@@ -268,14 +269,7 @@ class StructuredExtractor:
 
         if self.config.use_registries and self.config.registries_dir:
             # Registry-based loading
-            import sys
-            
-            # Add shared to path
-            shared_path = self.config.registries_dir.parent.parent / "shared"
-            if str(shared_path) not in sys.path:
-                sys.path.insert(0, str(shared_path))
-            
-            from registry import load_registry
+            from shared.registry import load_registry
             
             for dataset in datasets:
                 registry_path = self.config.registries_dir / f"{dataset}.yaml"
@@ -363,26 +357,29 @@ class StructuredExtractor:
             try:
                 loop = asyncio.get_running_loop()
                 call = partial(
-                    client.beta.chat.completions.parse,
+                    client.responses.parse,
                     model=model,
-                    messages=[
+                    input=[
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": prompt},
                     ],
-                    response_format=self.config.response_model,
+                    text_format=self.config.response_model,
                     temperature=temperature,
-                    max_tokens=max_output_tokens,
+                    max_output_tokens=max_output_tokens,
                 )
                 response = await loop.run_in_executor(None, call)
 
-                message = response.choices[0].message
-                if message.refusal:
-                    raise ValueError(f"Model refused: {message.refusal}")
-                if message.parsed is None:
+                analysis = response.output_parsed
+                if analysis is None:
                     raise ValueError("No structured output returned")
-
-                usage = response.usage.model_dump() if response.usage else None
-                return message.parsed, usage, response.id
+                usage = None
+                if getattr(response, "usage", None):
+                    usage_obj = response.usage
+                    if hasattr(usage_obj, "model_dump"):
+                        usage = usage_obj.model_dump()
+                    else:
+                        usage = json.loads(json.dumps(usage_obj))
+                return analysis, usage, getattr(response, "id", None)
 
             except RateLimitError as exc:
                 last_error = str(exc)
