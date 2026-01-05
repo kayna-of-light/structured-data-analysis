@@ -1,4 +1,4 @@
-"""Utility to collapse suffixed duplicate JSON files in output/nderf."""
+"""Utility to collapse suffixed duplicate JSON files in data/nderf."""
 from __future__ import annotations
 
 import argparse
@@ -112,7 +112,7 @@ def cleanup(root: Path, *, apply: bool) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Remove suffixed *-###.json duplicates")
-    parser.add_argument("--root", type=Path, default=Path("output/nderf"), help="Directory to scan")
+    parser.add_argument("--root", type=Path, default=Path("../../../data/nderf"), help="Directory to scan")
     parser.add_argument("--apply", action="store_true", help="Actually delete the duplicates")
     args = parser.parse_args()
     cleanup(args.root, apply=args.apply)
