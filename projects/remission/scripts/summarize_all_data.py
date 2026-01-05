@@ -57,9 +57,9 @@ total += analyze_dataset_from_registry("pmc")
 print()
 total += analyze_dataset_from_registry("radical_remission")
 print()
-# Note: NDERF and IANDS healing subsets can be added when needed
-# total += analyze_dataset_from_registry("nderf")
-# total += analyze_dataset_from_registry("iands")
+total += analyze_dataset_from_registry("nderf")
+print()
+total += analyze_dataset_from_registry("iands")
 
 print()
 print("=" * 60)
