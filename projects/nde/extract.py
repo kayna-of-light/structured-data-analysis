@@ -6,7 +6,7 @@ and the NDEAnalysisResponse questionnaire schema.
 
 Usage:
     python extract.py --max-concurrency 4 --log-level INFO
-    python extract.py --datasets nde_full --limit 25 --dry-run
+    python extract.py --datasets nderf iands --limit 25 --dry-run
 """
 
 from pathlib import Path
@@ -20,8 +20,8 @@ from shared.analysis import ExtractorConfig, StructuredExtractor
 from models import NDEAnalysisResponse
 
 # NDE-specific configuration
-# Note: These are registry names, not direct dataset names
-SUPPORTED_DATASETS = ("nde_full",)
+# Note: These are registry names (separate files for each dataset)
+SUPPORTED_DATASETS = ("nderf", "iands")
 
 SYSTEM_PROMPT = """\
 You are an expert researcher who classifies near-death experience (NDE) narratives 
