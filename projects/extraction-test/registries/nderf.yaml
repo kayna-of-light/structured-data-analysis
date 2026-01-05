@@ -1,0 +1,40 @@
+# NDERF Test Samples Registry
+# Selected 8 diverse NDE accounts for extraction optimization testing
+#
+# Expected Classifications:
+# LOVE: 00449 ("Birthday parties, Christmas - mostly good memories"), 03487
+# SHAME_OR_REGRET: 00660 ("was very ashamed"), 00615
+# MIXED: 05201 ("people I had done wrong/good things to"), 02500, 03000
+# Unknown: 01000
+
+name: nderf_test_samples
+description: Selected NDERF samples for extraction optimization testing
+version: "1.0.0"
+
+datasets:
+  nderf:
+    description: NDERF test samples (8 files)
+    source_path: ../../../data/nderf
+    files:
+      # === LOVE emotional_tone samples ===
+      # "Birthday parties, Christmas - mostly good memories" - clear LOVE
+      - 00449_carolle-s-nde-1019.json
+      # Another positive life review - should classify as LOVE
+      - 03487_wanda-t-nde-6944.json
+      
+      # === SHAME/REGRET emotional_tone samples ===
+      # "was very ashamed, asked for forgiveness" - clear SHAME_OR_REGRET
+      - 00660_elsa-nde-2290.json
+      # Another shame sample
+      - 00615_john-l-nde.json
+      
+      # === MIXED emotional_tone samples ===
+      # "people I had done wrong things to...people I had done good things to" - clear MIXED
+      - 05201_thomas-g-nde-9681.json
+      # Mixed content with both positive and negative
+      - 02500_brenda-h-nde-22385.json
+      # Another mixed sample
+      - 03000_dan-bc-nde-6243.json
+      
+      # === EXTRA for diversity ===
+      - 01000_will-y-nde-21434.json

@@ -27,7 +27,7 @@ The framework includes reusable components for web scraping, Azure OpenAI integr
 ## Repository Structure
 
 ```
-remission-analysis/                    # Framework root
+structured-data-analysis/              # Framework root
 ├── shared/                            # SHARED CORE LIBRARY
 │   ├── scrapers/                      # Common scraper utilities
 │   │   ├── base.py                    # BaseScraper, ScrapedCase, http utilities
@@ -73,8 +73,8 @@ remission-analysis/                    # Framework root
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/marconian/remission-analysis.git
-cd remission-analysis
+git clone https://github.com/marconian/structured-data-analysis.git
+cd structured-data-analysis
 ```
 
 2. Install dependencies:
