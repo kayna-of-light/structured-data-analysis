@@ -643,6 +643,18 @@ class MaritalStatus(str, Enum):
     NOT_MENTIONED = "not_mentioned"
 
 
+class EducationLevel(str, Enum):
+    """Highest education level completed."""
+    NO_FORMAL = "no_formal"  # No formal education
+    SOME_HIGH_SCHOOL = "some_high_school"  # Did not complete high school
+    HIGH_SCHOOL = "high_school"  # High school diploma or GED
+    SOME_COLLEGE = "some_college"  # Some college or associate's degree
+    BACHELORS = "bachelors"  # Bachelor's degree
+    MASTERS = "masters"  # Master's degree
+    DOCTORATE_PROFESSIONAL = "doctorate_professional"  # PhD, MD, JD, etc.
+    NOT_MENTIONED = "not_mentioned"
+
+
 class ReligiousAffiliation(str, Enum):
     """Broad religious tradition. Use NOT_MENTIONED only when no information provided."""
 
@@ -1271,8 +1283,9 @@ class PersonDemographicsSection(QuestionnaireBaseModel):
     occupation: Optional[str] = Field(
         None, description="Q6.2.7 — Occupation or professional background."
     )
-    education_level: Optional[str] = Field(
-        None, description="Q6.2.8 — Highest educational level mentioned."
+    education_level: EducationLevel = Field(
+        ...,
+        description="Q6.2.8 — Highest educational level completed.",
     )
     marital_status: MaritalStatus = Field(
         ...,
