@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\04129_irene-z-nde-23112.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\04129_irene-z-nde-23112.json",
   "source_url": "https://www.nderf.org/Experiences/1irene_z_nde.html",
   "title": "Irene Z NDE 23112",
   "date": "2008",
-  "content": "I was in the process of having an angioplasty, when I heard myself tell the doctor, 'I don't feel that well.' All of a sudden, I felt my upper body being flung back like the bed was being laid straight back. Then I was at the ceiling, looking down towards myself on the bed. The doctor and his two nurses were alongside the bed. I knew instantly that they were the medical team doing my procedure. I knew it was my body on the bed. The doctor and the staff were standing in what appeared to be a sea of black ink. The colors of their uniforms were outstandingly brilliant. I felt just wonderful, not frightened in any sense but was stunned at the brilliance of the colors I saw. The next thing I was aware of was waking up in the intensive care unit with the staff asking me if I saw the light, did I see a tunnel, and did I see anyone I knew? I kept dozing off after asking several times for a cup of tea but falling back to sleep before I could partake. I imagine it was the medication that I was then given.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-30T02:23:28.652498+00:00",
-  "source_checksum": "a54f9e207e184596c9741c73c7fe8f425b7c29f4bf546299bac90d430dddd058",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "a54f9e207e184596c9741c73c7fe8f425b7c29f4bf546299bac90d430dddd058",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T12:45:42.512135+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,16 +16,17 @@
           "ceiling"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
-        "heightened_perception": "yes_explicit",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
+        "heightened_perception": "implied",
         "identity_continuity": "clear_identity",
         "separation_sensations": [
-          "none_specified"
+          "weightlessness"
         ],
-        "separation_sensations_other": null
+        "separation_sensations_other": "Felt upper body 'being flung back like the bed was being laid straight back,' then was at the ceiling."
       },
       "tunnel": {
-        "passage_type": "not_mentioned",
+        "passage_type": "no",
         "passage_other_detail": null,
         "movement_sensations": [],
         "movement_other_detail": null,
@@ -34,8 +34,8 @@
         "emotional_tone": "not_mentioned"
       },
       "arrival": {
-        "environment_description": "remained_transitional",
-        "light_encounter": [],
+        "environment_description": "minimal",
+        "light_encounter": "not_mentioned",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -48,53 +48,62 @@
         "environment_description": "brief",
         "environment_features": [
           "colors",
-          "other"
+          "light"
         ],
-        "environment_other_detail": "Medical staff appeared to be standing in a 'sea of black ink' while uniform colors were 'outstandingly brilliant.'",
+        "environment_other_detail": "Doctor and staff standing in what appeared to be 'a sea of black ink'; uniform colors were 'outstandingly brilliant.'",
         "comparative_reality": "not_mentioned",
         "thought_responsiveness": "not_mentioned"
       },
       "encounters": {
-        "deceased_relatives": "not_mentioned",
+        "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [
+          "no_communication"
+        ],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
+        "self_form": "no_description",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "not_mentioned",
-      "return_choice": "not_mentioned",
-      "return_reason": "not_mentioned",
+      "return_agency": "not_mentioned",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "not_specified",
@@ -106,25 +115,34 @@
       "volunteer_language": "not_mentioned"
     },
     "transformative_effects": {
-      "readjustment": "brief",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "readjustment": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
       "thought_speed": "not_mentioned",
       "sensory_vividness": "more_vivid",
-      "ineffability": "not_mentioned",
+      "ineffability": "no",
       "memory_persistence": "not_mentioned",
-      "reality_assessment": "not_mentioned",
+      "reality_assessment": "definitely_real",
       "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "realm_types": [
+        "vaguely_unearthly"
+      ],
       "overall_valence": "pleasant",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "not_mentioned",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
@@ -134,17 +152,22 @@
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "female",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -155,29 +178,29 @@
         "obe",
         "environment"
       ],
-      "elements_other_detail": null,
+      "elements_other_detail": "Perceived medical staff and body from ceiling; 'sea of black ink' with brilliantly colored uniforms.",
       "canonical_sequence": "partial",
-      "sequence_variation_description": "Out-of-body perception occurred during angioplasty with no reported tunnel/light/life review/boundary; return was waking in ICU.",
+      "sequence_variation_description": "OBE occurred without reported tunnel/light/being; then later woke in ICU.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Visual scene described as medical staff standing in a 'sea of black ink' with unusually brilliant uniform colors.",
-      "notable_quotes": "“I don't feel that well.”; “Then I was at the ceiling, looking down towards myself on the bed.”; “standing in what appeared to be a sea of black ink.”; “The colors of their uniforms were outstandingly brilliant.”"
+      "nonstandard_elements": "Visual scene described as staff standing in a 'sea of black ink' with extraordinarily brilliant uniform colors.",
+      "notable_quotes": "“Then I was at the ceiling, looking down towards myself on the bed.”; “The doctor and the staff were standing in what appeared to be a sea of black ink. The colors of their uniforms were outstandingly brilliant.”; “I felt just wonderful, not frightened in any sense but was stunned at the brilliance of the colors I saw.”"
     }
   },
-  "response_id": "resp_05e065acba9dff03006953378d3e908195ae79f52d9142cb25",
+  "response_id": "resp_0d8e5c98f78a634700695d03cdf5408195b3e3a26b314d3efa",
   "usage": {
-    "input_tokens": 9328,
+    "input_tokens": 11542,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1443,
+    "output_tokens": 1725,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10771
+    "total_tokens": 13267
   }
 }

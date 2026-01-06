@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01441_patricia-m-nde.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01441_patricia-m-nde.json",
   "source_url": "https://www.nderf.org/Experiences/1patricia_m_nde_168.html",
   "title": "Patricia M NDE 168",
   "date": "December 27.1999",
-  "content": "I was taken to hospital on Boxing Day after having been sick with the flu for ten days. At that time, I was diagnosed with streptococcal pneumonia, streptococcal septicemia, and Escherichia coli infection of the kidneys. I was sick. I was also in denial of my illness and wanted to go home. I have three children, it was Christmas, and I wanted to be with them. I was admitted, against my will, to the intensive care unit. That night I went home. I somehow arrived home to be with and watch my family, but they didn't know I was there. I sat in the living room and watched them with their gifts. I was peaceful in that place. My boys are sixteen, eight, and one and half years old and I felt good then, as I always did in real life, about their ability to love and care for each other. But I also knew that my job wasn't done. I knew I had to go back to the hospital. When I returned there was a nurse looking at me in a strange way. Also, there was a doctor there. Someone said that my blood pressure was up to some level that I knew was too low (maybe 80/40) and I told them, they had the wrong person. At the same time, a pager went off over head that alerted medical staff that I was in code blue. I decided that I would need to go home again and that whatever was happening was not going to finish in that room at that point in my life. The next few days were foggy but by January, 10th I was released and I returned to work at the end of that month.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T21:33:39.948147+00:00",
-  "source_checksum": "eb5dc6f07bd625274db8c825e3dd8c8b071e6977685a80504aae30261d7fdee3",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "eb5dc6f07bd625274db8c825e3dd8c8b071e6977685a80504aae30261d7fdee3",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T10:49:44.887452+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,7 +16,8 @@
           "moving_through_spaces"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "clear_identity",
         "separation_sensations": [
@@ -26,7 +26,7 @@
         "separation_sensations_other": null
       },
       "tunnel": {
-        "passage_type": "no",
+        "passage_type": "not_mentioned",
         "passage_other_detail": null,
         "movement_sensations": [],
         "movement_other_detail": null,
@@ -35,13 +35,11 @@
       },
       "arrival": {
         "environment_description": "minimal",
-        "light_encounter": [],
+        "light_encounter": "not_mentioned",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
-        "greeting_types": [
-          "solitary_arrival"
-        ],
+        "greeting_types": [],
         "sense_of_belonging": "not_mentioned"
       }
     },
@@ -56,9 +54,10 @@
       "encounters": {
         "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "not_mentioned",
-        "other_souls_presence": "none"
+        "communication_modes": [],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
+        "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
         "self_form": "no_description",
@@ -67,37 +66,46 @@
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "none",
-      "return_choice": "chose_to_return",
-      "return_reason": "family_responsibility",
+      "return_agency": "self",
+      "return_willingness": "willing",
+      "return_reasons": [
+        "family_responsibility",
+        "unfinished_business"
+      ],
       "return_reason_other_detail": null,
       "return_description": "brief",
-      "return_method": "other",
-      "return_method_other_detail": "She reports returning from being at home back to the hospital, without describing a specific mechanism.",
+      "return_method": "not_specified",
+      "return_method_other_detail": null,
       "return_feeling": "neutral",
       "mission_commissioned": "no",
       "mission_types": [],
@@ -106,44 +114,58 @@
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
       "thought_speed": "not_mentioned",
       "sensory_vividness": "not_mentioned",
-      "ineffability": "not_mentioned",
+      "ineffability": "no",
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "familiar_earthlike",
+      "realm_types": [
+        "familiar_earthlike"
+      ],
       "overall_valence": "pleasant",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "not_mentioned",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "illness",
-      "nde_cause_other_detail": "Flu complicated by streptococcal pneumonia, streptococcal septicemia, and E. coli kidney infection; ICU admission; code blue mentioned.",
-      "clinical_status": "implied",
+      "nde_cause_other_detail": "Streptococcal pneumonia, streptococcal septicemia, and E. coli kidney infection after flu.",
+      "clinical_status": "unknown",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "female",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": true,
       "number_of_children": 3,
@@ -154,29 +176,29 @@
         "obe",
         "return_choice"
       ],
-      "elements_other_detail": "She describes being at home observing her family while they were unaware of her presence, then returning to the hospital; no tunnel/light/life review/boundary described.",
+      "elements_other_detail": null,
       "canonical_sequence": "partial",
-      "sequence_variation_description": "OBE to home (watching family) followed by return to hospital; later she decides to go home again when code blue is announced.",
-      "repeated_stages": "yes",
-      "repeated_stage_detail": "She reports going home, returning to the hospital, and deciding she would need to go home again.",
+      "sequence_variation_description": "Reported leaving hospital to go home and observe family, then returning to hospital; no tunnel/light/life review described.",
+      "repeated_stages": "not_mentioned",
+      "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Repeated alternation between being at home observing family and being back in the hospital; she hears/knows a code blue is being called for her while present.",
-      "notable_quotes": "“I somehow arrived home to be with and watch my family, but they didn't know I was there.”"
+      "nonstandard_elements": "OBE described as going home from ICU to watch family open gifts; heard/registered a hospital overhead pager indicating 'code blue' while present in hospital environment.",
+      "notable_quotes": "“I somehow arrived home to be with and watch my family, but they didn't know I was there.” / “I was peaceful in that place.” / “I also knew that my job wasn't done. I knew I had to go back to the hospital.”"
     }
   },
-  "response_id": "resp_05abf824a0755578006952f3982d408193b425f529a062c15a",
+  "response_id": "resp_0035d340f0e1c2b900695ce89d209081949277ebb0259cda7b",
   "usage": {
-    "input_tokens": 9454,
+    "input_tokens": 11668,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1485,
+    "output_tokens": 1641,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10939
+    "total_tokens": 13309
   }
 }

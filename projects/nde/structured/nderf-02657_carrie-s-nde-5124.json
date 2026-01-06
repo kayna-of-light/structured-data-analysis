@@ -1,26 +1,29 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\02657_carrie-s-nde-5124.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\02657_carrie-s-nde-5124.json",
   "source_url": "https://www.nderf.org/Experiences/1carrie_s_nde.html",
   "title": "Carrie S NDE 5124",
   "date": "9/23/1999",
-  "content": "I had an anaphylactic reaction to a medication in the hospital. I had no pulse. I remember being above my bed and watching everything from above. I heard everything the doctors and nurses said but I could not respond. In the corner of the room above the bed was a good friend who had died the year before. There was a bright light behind her. Then she hugged me and told me to go back down. After getting epinephrine, my heart restarted and I was no longer looking down from above. Although I was scared I was not going to live, seeing my friend made me feel more secure. Afterwards I told the doctors the dosages of medication they gave me, where everyone was standing in the room, and even what they were wearing. The doctor said that is impossible you had no pulse. I told him the story about how I could see and hear everything and I was above them all in the room. He thought it was fascinating.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T23:40:51.535279+00:00",
-  "source_checksum": "1fe75168a7de6cd57ae4f3f284759589a41c370c029e18b9a9a0c362f67f1edc",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "1fe75168a7de6cd57ae4f3f284759589a41c370c029e18b9a9a0c362f67f1edc",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T11:43:24.574671+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
         "vantage_points": [
-          "above_body"
+          "above_body",
+          "room_corner"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "unverified",
         "heightened_perception": "yes_explicit",
-        "identity_continuity": "not_mentioned",
-        "separation_sensations": [],
+        "identity_continuity": "clear_identity",
+        "separation_sensations": [
+          "fear"
+        ],
         "separation_sensations_other": null
       },
       "tunnel": {
@@ -33,14 +36,12 @@
       },
       "arrival": {
         "environment_description": "remained_transitional",
-        "light_encounter": [
-          "brilliant_light"
-        ],
+        "light_encounter": "brilliant_light",
         "being_identifications": [
           "deceased_relative_guide"
         ],
         "religious_figure_detail": null,
-        "other_being_detail": "A good friend who had died the year before was seen in the corner of the room above the bed.",
+        "other_being_detail": "A good friend who had died the year before was seen in the corner of the room above the bed; there was a bright light behind her; she hugged the experiencer and told her to go back down.",
         "greeting_types": [
           "deceased_loved_ones"
         ],
@@ -56,62 +57,79 @@
         "thought_responsiveness": "not_mentioned"
       },
       "encounters": {
-        "deceased_relatives": "no",
+        "deceased_relatives": "named",
         "spiritual_beings": [],
-        "communication_mode": "normal_speech",
-        "guidance_level": "comfort_or_reassurance",
-        "other_souls_presence": "not_mentioned"
+        "communication_modes": [
+          "normal_speech"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "directional",
+          "comfort"
+        ],
+        "other_souls_presence": "none"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
+        "self_form": "no_description",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "verbal_limit",
-      "return_choice": "told_to_return",
-      "return_reason": "no_reason_given",
+      "return_agency": "external_being",
+      "return_willingness": "mixed",
+      "return_reasons": [
+        "not_your_time"
+      ],
       "return_reason_other_detail": null,
       "return_description": "brief",
-      "return_method": "other",
-      "return_method_other_detail": "Returned after receiving epinephrine; heart restarted and she was no longer looking down from above.",
-      "return_feeling": "not_mentioned",
-      "mission_commissioned": "not_mentioned",
+      "return_method": "not_specified",
+      "return_method_other_detail": null,
+      "return_feeling": "neutral",
+      "mission_commissioned": "no",
       "mission_types": [],
       "mission_detail": null,
       "volunteer_language": "not_mentioned"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -121,11 +139,17 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "definitely_real",
       "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "realm_types": [
+        "familiar_earthlike"
+      ],
       "overall_valence": "mixed",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "claimed_unverified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
@@ -135,17 +159,22 @@
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
-      "gender": "not_mentioned",
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
+      "gender": "female",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -162,27 +191,27 @@
       ],
       "elements_other_detail": null,
       "canonical_sequence": "partial",
-      "sequence_variation_description": "OBE occurred in the hospital room; encounter with deceased friend with a bright light behind her; told to go back; return coincided with epinephrine and heart restarting.",
+      "sequence_variation_description": "Experience focused on an in-room OBE with a deceased friend and a bright light behind her; no tunnel or otherworldly environment described; return followed instruction to 'go back down' and medical resuscitation.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "The deceased friend appeared in the corner of the hospital room above the bed with a bright light behind her, hugged the experiencer, and told her to go back down.",
-      "notable_quotes": "“I remember being above my bed and watching everything from above.” “In the corner of the room above the bed was a good friend who had died the year before. There was a bright light behind her.” “Then she hugged me and told me to go back down.” “Afterwards I told the doctors the dosages of medication they gave me, where everyone was standing in the room, and even what they were wearing.”"
+      "nonstandard_elements": "Deceased friend appeared in the hospital room (corner above the bed) with a bright light behind her; hugged the experiencer and instructed her to return.",
+      "notable_quotes": "“I remember being above my bed and watching everything from above.” / “There was a bright light behind her.” / “Then she hugged me and told me to go back down.” / “The doctor said that is impossible you had no pulse.”"
     }
   },
-  "response_id": "resp_0111ce2a550b6795006953116fc8e08197975a71f3fc68f746",
+  "response_id": "resp_0ffab1595881bf9200695cf54528348197a47029129f271662",
   "usage": {
-    "input_tokens": 9302,
+    "input_tokens": 11516,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1554,
+    "output_tokens": 1772,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10856
+    "total_tokens": 13288
   }
 }

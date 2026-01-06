@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01714_thaddeus-k-nde3715-nde-3715.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01714_thaddeus-k-nde3715-nde-3715.json",
   "source_url": "https://www.nderf.org/Experiences/1thaddeus_k_nde.html",
   "title": "Thaddeus K NDE3715 NDE 3715",
   "date": "Summer 1957",
-  "content": "I'm in bed in an isolation room. There are no other persons present. I was lying on my back awake. Suddenly, I am looking down at myself from the ceiling. My position is reversed so that my head is opposite to my feet on the bed. I see myself very clearly. I have normal vision. Then, I am presented with making a decision, although I heard no voice. I just had 'knowledge' that I have a choice. The choice is stay or go. There is absolutely no value to either choice, which surprises me. Then I feel a sense of absolute calm. I choose 'stay'. Immediately I am back in my body. I am startled by the experience and fearful of telling anyone about it, as I know I might be considered odd and that might have a negative effect on my status. I did not tell anyone about my experience, other than my wife at that time, for ten years.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T22:03:29.153101+00:00",
-  "source_checksum": "328eb23ce65a2235ce7c884bfd3ac886005999b71a3479d5675fe8b3405703b1",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "328eb23ce65a2235ce7c884bfd3ac886005999b71a3479d5675fe8b3405703b1",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T11:00:56.642486+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,9 +16,10 @@
           "ceiling"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "no",
-        "identity_continuity": "not_mentioned",
+        "identity_continuity": "clear_identity",
         "separation_sensations": [
           "none_specified"
         ],
@@ -35,7 +35,7 @@
       },
       "arrival": {
         "environment_description": "not_mentioned",
-        "light_encounter": [],
+        "light_encounter": "not_mentioned",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -54,44 +54,54 @@
       "encounters": {
         "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "none",
-        "other_souls_presence": "none"
+        "communication_modes": [
+          "telepathic",
+          "nonverbal"
+        ],
+        "guidance_received": "no",
+        "guidance_types": [],
+        "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
+        "self_form": "current_self",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
-      "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "presentation_modes": [],
+      "perspective_of_others": "no",
+      "judgment_source": "none",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "no",
       "pre_birth_realm_description": "no",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
       "life_preview": "no",
       "pre_incarnation_covenant": "no",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "none",
-      "purpose_of_existence": "not_mentioned",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
       "past_life_memory": "no",
       "death_memory": "not_mentioned",
       "intermission_memory": "no",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "no",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
-      "boundary_encounter": "not_mentioned",
-      "return_choice": "chose_to_return",
-      "return_reason": "no_reason_given",
+      "boundary_encounter": "verbal_limit",
+      "return_agency": "self",
+      "return_willingness": "willing",
+      "return_reasons": [],
       "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "instant",
@@ -104,10 +114,13 @@
     },
     "transformative_effects": {
       "readjustment": "brief",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
-      "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
+      "value_shift": "none",
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -117,31 +130,40 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "no",
-      "realm_type": "not_mentioned",
+      "realm_types": [],
       "overall_valence": "mixed",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "claimed_unverified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "surprised",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "illness",
-      "nde_cause_other_detail": "In bed in an isolation room (no further medical details provided).",
+      "nde_cause_other_detail": "In bed in an isolation room (cause not explicitly stated).",
       "clinical_status": "unknown",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -150,32 +172,31 @@
     "stage_sequence": {
       "present_elements": [
         "obe",
-        "return_choice",
         "return_choice"
       ],
-      "elements_other_detail": null,
-      "canonical_sequence": "indeterminate",
-      "sequence_variation_description": "OBE in isolation room followed by an internal 'knowledge' of a choice to stay or go; chose 'stay' and immediately returned to body.",
+      "elements_other_detail": "Decision presented as a choice to 'stay or go' with no voice; immediate return after choosing stay.",
+      "canonical_sequence": "partial",
+      "sequence_variation_description": "OBE occurred in bed; no tunnel/light/realm; choice to stay/go followed by immediate return.",
       "repeated_stages": "no",
       "repeated_stage_detail": null,
       "simultaneous_stages": "no",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Decision presented without hearing a voice: 'I heard no voice. I just had knowledge that I have a choice.' Also reported 'absolutely no value to either choice,' which surprised him.",
-      "notable_quotes": "“Suddenly, I am looking down at myself from the ceiling.” “The choice is stay or go.” “There is absolutely no value to either choice, which surprises me.” “Immediately I am back in my body.”"
+      "nonstandard_elements": "Decision presented without any voice: 'knowledge' of a neutral choice (stay/go) with 'absolutely no value' to either option.",
+      "notable_quotes": "“I am looking down at myself from the ceiling.” “The choice is stay or go. There is absolutely no value to either choice, which surprises me.” “Then I feel a sense of absolute calm. I choose 'stay'. Immediately I am back in my body.”"
     }
   },
-  "response_id": "resp_0bbb793bc2287b6b006952fa9dd8448197ab0d98823787fd99",
+  "response_id": "resp_0852c7d8ba282e4400695ceb4a7fec8193b46163c7bc14ccd3",
   "usage": {
-    "input_tokens": 9299,
+    "input_tokens": 11513,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1400,
+    "output_tokens": 1615,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10699
+    "total_tokens": 13128
   }
 }

@@ -1,21 +1,21 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01294_willis-s-nde.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01294_willis-s-nde.json",
   "source_url": "https://www.nderf.org/Experiences/1willis_s_nde.html",
   "title": "Willis S NDE 427",
   "date": "May 1, 2001",
-  "content": "Started with intense pain, worst of my life. The pain was suddenly gone. I found myself in a dark void. No light. Slowly in the center of the void, I became aware of a change in color. The darkness had a pinpoint of grey. The grey slowly became white. This white spot began to grow. It was as if this white area was 3D. It was rising out of the void coming directly towards me. I saw it as either a volcano, or a pimple, no other way to put it. It was not a tunnel. The white area continued to rise toward me. I got the impression that the white area was swelling from internal pressure. As it came closer, I felt that I could almost touch it. The most important thing was the feeling that the internal pressure was reaching a bursting point. Somehow, I knew that if the white area burst all of the void would be replaced with an intense, warm, bright light. I also knew that if it burst, I was gone. I did my best to will it not to burst. I was not ready for that. Suddenly it was all gone, I was back in the catheterization lab and they were working on me, but the pain was gone.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T21:18:20.865724+00:00",
-  "source_checksum": "32582ec82f708c063ecc0aac64767e0a8b343614fe24a6b458b909986c412cf5",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "32582ec82f708c063ecc0aac64767e0a8b343614fe24a6b458b909986c412cf5",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T10:43:09.152374+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "not_mentioned",
         "vantage_points": [],
         "vantage_other_detail": null,
-        "observation_accuracy": "not_mentioned",
+        "observations_made": "not_mentioned",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "not_mentioned",
         "separation_sensations": [],
@@ -23,15 +23,17 @@
       },
       "tunnel": {
         "passage_type": "void",
-        "passage_other_detail": "Dark void; explicitly stated it was not a tunnel.",
-        "movement_sensations": [],
-        "movement_other_detail": null,
+        "passage_other_detail": "Dark void; explicitly 'not a tunnel'. A 3D white area rose out of the void toward him 'either a volcano, or a pimple'.",
+        "movement_sensations": [
+          "none_specified"
+        ],
+        "movement_other_detail": "He perceived the white area rising toward him rather than himself moving through a tunnel.",
         "light_visibility": "no",
-        "emotional_tone": "not_mentioned"
+        "emotional_tone": "mixed"
       },
       "arrival": {
         "environment_description": "remained_transitional",
-        "light_encounter": [],
+        "light_encounter": "no",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -42,72 +44,78 @@
     "world_of_spirits": {
       "environment": {
         "environment_description": "brief",
-        "environment_features": [
-          "light",
-          "colors",
-          "other"
-        ],
-        "environment_other_detail": "Dark void with a pinpoint of grey that slowly became white; white area appeared 3D, 'rising out of the void' toward him like 'either a volcano, or a pimple.'",
+        "environment_features": [],
+        "environment_other_detail": "Dark void with a pinpoint of grey that slowly became a growing 3D white area.",
         "comparative_reality": "not_mentioned",
         "thought_responsiveness": "implied"
       },
       "encounters": {
         "deceased_relatives": "not_mentioned",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "no_description",
+        "self_form": "not_mentioned",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
-      "boundary_encounter": "threshold",
-      "return_choice": "chose_to_return",
-      "return_reason": "other",
-      "return_reason_other_detail": "He was 'not ready' and tried to will the white area not to burst because he believed if it burst, 'I was gone.'",
+      "boundary_encounter": "not_mentioned",
+      "return_agency": "involuntary",
+      "return_willingness": "reluctant",
+      "return_reasons": [],
+      "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "instant",
       "return_method_other_detail": null,
       "return_feeling": "neutral",
-      "mission_commissioned": "not_mentioned",
+      "mission_commissioned": "no",
       "mission_types": [],
       "mission_detail": null,
-      "volunteer_language": "not_mentioned"
+      "volunteer_language": "no"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -117,31 +125,40 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "void_darkness",
+      "realm_types": [
+        "void_darkness"
+      ],
       "overall_valence": "mixed",
-      "veridical_perception": "not_mentioned",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [],
+      "veridical_verification": "not_applicable",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
-      "nde_cause": "surgery",
-      "nde_cause_other_detail": "Occurred in a catheterization lab; began with intense pain that suddenly stopped.",
+      "nde_cause": "not_specified",
+      "nde_cause_other_detail": "Occurred in a catheterization lab; began with intense pain; then pain was suddenly gone and later he was 'back in the catheterization lab and they were working on me'.",
       "clinical_status": "unknown",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -150,32 +167,32 @@
     "stage_sequence": {
       "present_elements": [
         "environment",
-        "boundary",
+        "other",
         "return_choice"
       ],
-      "elements_other_detail": "Transitional void with growing 3D white area; no tunnel; return to catheterization lab.",
+      "elements_other_detail": "Dark void; emergence of a growing 3D white area rising toward him (explicitly not a tunnel). He attempted to will it not to 'burst' because he felt he would be 'gone'. Sudden return to the catheterization lab.",
       "canonical_sequence": "partial",
-      "sequence_variation_description": "Pain cessation → dark void → growing white 3D area (not tunnel) → attempted to prevent 'bursting' → sudden return to body/lab.",
+      "sequence_variation_description": "Pain cessation → dark void → growing 3D white area approaching (not tunnel) with sense of impending 'burst' into intense light and personal annihilation → sudden return to body/medical setting.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "A 3D white area rising out of a dark void like 'either a volcano, or a pimple' that seemed to be swelling with internal pressure and might 'burst' to replace the void with intense warm bright light.",
-      "notable_quotes": "\"I found myself in a dark void. No light.\" \"It was not a tunnel.\" \"Somehow, I knew that if the white area burst all of the void would be replaced with an intense, warm, bright light.\" \"I also knew that if it burst, I was gone.\""
+      "nonstandard_elements": "Instead of a tunnel/light, a pinpoint of grey became a growing 3D white 'volcano/pimple' swelling with internal pressure, perceived as about to burst and replace the void with intense warm bright light; experiencer tried to will it not to burst.",
+      "notable_quotes": "“I found myself in a dark void. No light.” / “It was not a tunnel.” / “Somehow, I knew that if the white area burst all of the void would be replaced with an intense, warm, bright light. I also knew that if it burst, I was gone.”"
     }
   },
-  "response_id": "resp_087d092e0c483119006952f004af608196af62a3aae6e81fcc",
+  "response_id": "resp_0ec9848b4a93ae3600695ce712ecb48194b025a591c2ef7671",
   "usage": {
-    "input_tokens": 9359,
+    "input_tokens": 11573,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1553,
+    "output_tokens": 1792,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10912
+    "total_tokens": 13365
   }
 }

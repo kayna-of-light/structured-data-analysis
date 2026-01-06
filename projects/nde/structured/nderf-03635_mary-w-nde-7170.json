@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\03635_mary-w-nde-7170.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\03635_mary-w-nde-7170.json",
   "source_url": "https://www.nderf.org/Experiences/1mary_w_nde_7170.html",
   "title": "Mary W NDE 7170",
   "date": "August 2002",
-  "content": "My blood pressure and heart rate had fallen. I remember watching people work on me. I was looking on from above them. I heard everything they said and did. The doctor couldn't get a central line on me. The scene was chaos. I had been kooky prior to this experience from high fever, concussion and the narcotics I was given. After this experience, I started to heal and remember things. Prior to this experience my husband was called and told to come immediately, I was dying.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-30T01:24:53.476259+00:00",
-  "source_checksum": "04e5607fe226b78a0ff37c4ab48e59918f7306eb95286ddcb7b39b6774c246e6",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "04e5607fe226b78a0ff37c4ab48e59918f7306eb95286ddcb7b39b6774c246e6",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T12:25:48.021198+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,9 +16,10 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
-        "heightened_perception": "yes_explicit",
-        "identity_continuity": "not_mentioned",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
+        "heightened_perception": "implied",
+        "identity_continuity": "clear_identity",
         "separation_sensations": [],
         "separation_sensations_other": null
       },
@@ -33,7 +33,7 @@
       },
       "arrival": {
         "environment_description": "not_mentioned",
-        "light_encounter": [],
+        "light_encounter": "not_mentioned",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -43,7 +43,7 @@
     },
     "world_of_spirits": {
       "environment": {
-        "environment_description": "no",
+        "environment_description": "not_mentioned",
         "environment_features": [],
         "environment_other_detail": null,
         "comparative_reality": "not_mentioned",
@@ -52,8 +52,11 @@
       "encounters": {
         "deceased_relatives": "not_mentioned",
         "spiritual_beings": [],
-        "communication_mode": "normal_speech",
-        "guidance_level": "none",
+        "communication_modes": [
+          "normal_speech"
+        ],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -63,33 +66,39 @@
     },
     "life_review": {
       "occurrence": "not_mentioned",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_specified",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "not_mentioned",
-      "return_choice": "not_mentioned",
-      "return_reason": "not_mentioned",
+      "return_agency": "not_mentioned",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
       "return_description": "not_mentioned",
       "return_method": "not_specified",
@@ -102,10 +111,13 @@
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -115,31 +127,40 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "realm_types": [],
       "overall_valence": "not_mentioned",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "claimed_unverified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "illness",
-      "nde_cause_other_detail": null,
+      "nde_cause_other_detail": "High fever and concussion; blood pressure and heart rate had fallen; narcotics given.",
       "clinical_status": "implied",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
-      "gender": "not_mentioned",
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
+      "gender": "female",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "married",
       "has_children": null,
       "number_of_children": null,
@@ -150,7 +171,7 @@
         "obe"
       ],
       "elements_other_detail": null,
-      "canonical_sequence": "indeterminate",
+      "canonical_sequence": "not_applicable",
       "sequence_variation_description": null,
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
@@ -158,20 +179,20 @@
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "She reports being \"kooky\" prior to the experience due to \"high fever, concussion and the narcotics\" and that after the experience she \"started to heal and remember things.\"",
+      "nonstandard_elements": "She reports being \"kooky\" prior to the experience due to high fever, concussion, and narcotics; after the experience she \"started to heal and remember things.\"",
       "notable_quotes": "“I remember watching people work on me. I was looking on from above them. I heard everything they said and did.”"
     }
   },
-  "response_id": "resp_04d196632e6a956200695329d3ea748196b05ac0baba6f44c0",
+  "response_id": "resp_0062578cce4c641500695cff2c8d108194bf42cbcfa151856a",
   "usage": {
-    "input_tokens": 9207,
+    "input_tokens": 11421,
     "input_tokens_details": {
-      "cached_tokens": 0
+      "cached_tokens": 11136
     },
-    "output_tokens": 1369,
+    "output_tokens": 1612,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10576
+    "total_tokens": 13033
   }
 }

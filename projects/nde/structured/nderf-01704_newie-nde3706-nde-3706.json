@@ -1,22 +1,22 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01704_newie-nde3706-nde-3706.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01704_newie-nde3706-nde-3706.json",
   "source_url": "https://www.nderf.org/Experiences/1newie_nde.html",
   "title": "Newie NDE3706 NDE 3706",
   "date": "9-20-2000",
-  "content": "I found myself in a sort of courtyard. There were no flowers, but the grass, bushes, and tree leaves were an extraordinarily vibrant green. Over the horizon was white and gold light. I knew I was in the presence of something sacred - not God as commonly described - and I experienced true awe for the first time. I was not afraid. There was an invisible barrier separating the courtyard from the light and the landscape beyond, and I was scrambling around, trying to find a way through. I heard a female voice say, 'It's not your time yet.' I replied, 'I've had a stroke and my left side is paralyzed. What better time could there be?' But they wouldn't let me in. I'm not sure who 'they' are, but I was devastated when I realized I was being dragged back to my ruined body. I was furious and grieving for years after the event. I still feel that way sometimes, but to a lesser extent; I guess I've become reconciled to the fact that, like it or not, I'm still embodied. I wanted very much to make it across the barrier and return Home, but all I can do is wait for that happy day to arrive.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T22:02:33.610876+00:00",
-  "source_checksum": "12dd43ca9ce90fd3738954a5e787dedecca5279bbf95d7ded7af405cebf0e894",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "12dd43ca9ce90fd3738954a5e787dedecca5279bbf95d7ded7af405cebf0e894",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T11:00:56.222505+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
-        "separation": "not_mentioned",
+        "separation": "implied",
         "vantage_points": [],
         "vantage_other_detail": null,
-        "observation_accuracy": "not_mentioned",
-        "heightened_perception": "not_mentioned",
+        "observations_made": "not_mentioned",
+        "observations_verified": "not_mentioned",
+        "heightened_perception": "implied",
         "identity_continuity": "not_mentioned",
         "separation_sensations": [],
         "separation_sensations_other": null
@@ -31,14 +31,12 @@
       },
       "arrival": {
         "environment_description": "detailed",
-        "light_encounter": [
-          "presence_without_visual"
-        ],
+        "light_encounter": "presence_without_visual",
         "being_identifications": [
           "unknown_presence"
         ],
         "religious_figure_detail": null,
-        "other_being_detail": "Heard a female voice; experiencer unsure who 'they' were.",
+        "other_being_detail": "Heard a female voice; also refers to unspecified 'they' who would not let them pass.",
         "greeting_types": [],
         "sense_of_belonging": "explicit"
       }
@@ -48,57 +46,72 @@
         "environment_description": "detailed",
         "environment_features": [
           "landscape",
-          "colors",
           "light",
-          "sky"
+          "colors"
         ],
-        "environment_other_detail": "Courtyard with extraordinarily vibrant green grass, bushes, and tree leaves; white and gold light over the horizon.",
+        "environment_other_detail": "Courtyard with extraordinarily vibrant green grass/bushes/tree leaves; white and gold light over the horizon beyond the courtyard.",
         "comparative_reality": "not_mentioned",
         "thought_responsiveness": "not_mentioned"
       },
       "encounters": {
-        "deceased_relatives": "not_mentioned",
+        "deceased_relatives": "no",
         "spiritual_beings": [
           "unidentified_benevolent"
         ],
-        "communication_mode": "normal_speech",
-        "guidance_level": "significant_guidance",
+        "communication_modes": [
+          "normal_speech"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "directional",
+          "informational"
+        ],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
+        "self_form": "no_description",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
-      "perspective_of_others": "no",
-      "judgment": "none",
+      "presentation_modes": [],
+      "perspective_of_others": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "no",
       "pre_birth_realm_description": "no",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
       "life_preview": "no",
       "pre_incarnation_covenant": "no",
       "universal_knowledge": "no",
       "cosmic_understanding": "no",
-      "future_knowledge": "none",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
       "purpose_of_existence": "no",
       "past_life_memory": "no",
-      "death_memory": "none",
+      "death_memory": "not_mentioned",
       "intermission_memory": "no",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "spiritual_realm",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [
+        "spiritual_realm"
+      ],
       "earth_alienation": "implied",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "physical_barrier",
-      "return_choice": "told_to_return",
-      "return_reason": "not_your_time",
+      "return_agency": "external_being",
+      "return_willingness": "reluctant",
+      "return_reasons": [
+        "not_your_time"
+      ],
       "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "other",
@@ -111,44 +124,57 @@
     },
     "transformative_effects": {
       "readjustment": "significant",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
-      "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
+      "value_shift": "subtle",
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
       "thought_speed": "not_mentioned",
       "sensory_vividness": "more_vivid",
-      "ineffability": "no",
+      "ineffability": "not_mentioned",
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
-      "unity_experience": "no",
-      "realm_type": "heavenly",
+      "unity_experience": "not_mentioned",
+      "realm_types": [
+        "heavenly",
+        "clearly_unearthly"
+      ],
       "overall_valence": "mixed",
-      "veridical_perception": "not_mentioned",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [],
+      "veridical_verification": "not_mentioned",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "illness",
-      "nde_cause_other_detail": "Stroke with left-side paralysis (as stated by experiencer).",
+      "nde_cause_other_detail": "Stroke mentioned; left side paralyzed.",
       "clinical_status": "unknown",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -157,33 +183,33 @@
     "stage_sequence": {
       "present_elements": [
         "environment",
-        "communication",
         "boundary",
-        "return_choice"
+        "return_choice",
+        "communication"
       ],
-      "elements_other_detail": null,
+      "elements_other_detail": "Sacred presence; intense awe; desire to go 'Home'.",
       "canonical_sequence": "partial",
-      "sequence_variation_description": "Experience centers on arrival in a courtyard, encountering a barrier and being told to return; no OBE/tunnel/life review described.",
+      "sequence_variation_description": "Narrative begins already in a courtyard realm; no tunnel/OBE described; then boundary encounter and forced return.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Courtyard setting with an invisible barrier separating it from white and gold light; experiencer scrambling to find a way through.",
-      "notable_quotes": "Female voice: 'It's not your time yet.' Experiencer: 'I've had a stroke and my left side is paralyzed. What better time could there be?'"
+      "nonstandard_elements": "Explicitly states the sacred presence was 'not God as commonly described'; prolonged post-return fury and grief for years; strong 'Home' framing.",
+      "notable_quotes": "“It’s not your time yet.” / “I was devastated when I realized I was being dragged back to my ruined body.” / “I wanted very much to make it across the barrier and return Home.”"
     }
   },
-  "response_id": "resp_054a8d67092da6af006952fa5e5e648190a188ade188f46eda",
+  "response_id": "resp_0c36e09b7768811c00695ceb2b36b481948919f00ae883bb91",
   "usage": {
-    "input_tokens": 9352,
+    "input_tokens": 11566,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1454,
+    "output_tokens": 1724,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10806
+    "total_tokens": 13290
   }
 }

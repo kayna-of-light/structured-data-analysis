@@ -1,21 +1,21 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01391_lewis-d-nde.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01391_lewis-d-nde.json",
   "source_url": "https://www.nderf.org/Experiences/1lewis_d_nde.html",
   "title": "Lewis D NDE 266",
   "date": "May 28,1994",
-  "content": "I was transported on a life-flight chopper, and they put the wires onto my heart to watch my vital signs. Then they said, 'We are losing him,' and then stuck me with a long needle in my chest. At that time, everything went black, so black it was as though I could feel it. Then I saw a ball of light that seemed to be moving closer to me, it seemed to rouse interest in me at the time. I was moving closer to the ball it was perfectly round with twinkles in it. Then a big hand and arm, very strong looking, came into view coming to grasp this ball of light all the time saying with a low voice saying, 'I have everything under control.' It was as if I was a part of this light somehow. I felt afraid no more as soon as I saw the light and the voice.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T21:28:29.810113+00:00",
-  "source_checksum": "2935c918ed08d9e3bdd6e9d0cd1d6299784b96b12537a82a505f70c1bdcd3df9",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "2935c918ed08d9e3bdd6e9d0cd1d6299784b96b12537a82a505f70c1bdcd3df9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T10:47:32.300444+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
-        "separation": "not_mentioned",
+        "separation": "no",
         "vantage_points": [],
         "vantage_other_detail": null,
-        "observation_accuracy": "not_mentioned",
+        "observations_made": "not_mentioned",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "not_mentioned",
         "separation_sensations": [],
@@ -23,79 +23,86 @@
       },
       "tunnel": {
         "passage_type": "void",
-        "passage_other_detail": "Everything went black, \"so black it was as though I could feel it.\"",
+        "passage_other_detail": null,
         "movement_sensations": [],
         "movement_other_detail": null,
-        "light_visibility": "bright",
-        "emotional_tone": "mixed"
+        "light_visibility": "not_mentioned",
+        "emotional_tone": "not_mentioned"
       },
       "arrival": {
         "environment_description": "remained_transitional",
-        "light_encounter": [
-          "brilliant_light"
-        ],
+        "light_encounter": "brilliant_light",
         "being_identifications": [
           "unknown_presence"
         ],
         "religious_figure_detail": null,
-        "other_being_detail": "A \"big hand and arm, very strong looking\" came to grasp the ball of light while a low voice said, \"I have everything under control.\"",
-        "greeting_types": [
-          "unidentified_presence"
-        ],
+        "other_being_detail": "A \"big hand and arm, very strong looking\" appeared, grasping the ball of light, speaking in a low voice: \"I have everything under control.\"",
+        "greeting_types": [],
         "sense_of_belonging": "not_mentioned"
       }
     },
     "world_of_spirits": {
       "environment": {
-        "environment_description": "not_mentioned",
+        "environment_description": "no",
         "environment_features": [],
         "environment_other_detail": null,
         "comparative_reality": "not_mentioned",
         "thought_responsiveness": "not_mentioned"
       },
       "encounters": {
-        "deceased_relatives": "not_mentioned",
+        "deceased_relatives": "no",
         "spiritual_beings": [
           "unidentified_benevolent"
         ],
-        "communication_mode": "normal_speech",
-        "guidance_level": "comfort_or_reassurance",
+        "communication_modes": [
+          "normal_speech"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "comfort"
+        ],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
+        "self_form": "no_description",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
-      "occurrence": "not_mentioned",
-      "presentation": "not_specified",
+      "occurrence": "no",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
-      "boundary_encounter": "not_mentioned",
-      "return_choice": "not_mentioned",
-      "return_reason": "not_mentioned",
+      "boundary_encounter": "none",
+      "return_agency": "not_mentioned",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
       "return_description": "not_mentioned",
       "return_method": "not_specified",
@@ -108,10 +115,13 @@
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -121,31 +131,41 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "implied",
-      "realm_type": "void_darkness",
+      "realm_types": [
+        "void_darkness",
+        "clearly_unearthly"
+      ],
       "overall_valence": "mixed",
-      "veridical_perception": "not_mentioned",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [],
+      "veridical_verification": "not_mentioned",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "other",
-      "nde_cause_other_detail": "Life-flight transport with cardiac monitoring; staff said \"We are losing him\" and used a long needle in the chest; then everything went black.",
+      "nde_cause_other_detail": "Medical emergency during life-flight transport; cardiac monitoring and emergency needle to chest after \"We are losing him.\"",
       "clinical_status": "implied",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -153,31 +173,33 @@
     },
     "stage_sequence": {
       "present_elements": [
-        "light_encounter"
+        "light_encounter",
+        "communication",
+        "other"
       ],
-      "elements_other_detail": "Blackness/void followed by a ball of light and a strong hand/arm with a low voice saying, \"I have everything under control.\"",
-      "canonical_sequence": "indeterminate",
-      "sequence_variation_description": null,
+      "elements_other_detail": "Blackness/void described as \"so black it was as though I could feel it\"; vision of a strong hand/arm grasping the ball of light while saying, \"I have everything under control.\"",
+      "canonical_sequence": "partial",
+      "sequence_variation_description": "Blackness/void first, then a moving ball of light, then an entity/hand with a voice.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "The darkness was described as \"so black it was as though I could feel it.\" A strong hand/arm appeared to grasp the ball of light while speaking.",
-      "notable_quotes": "\"We are losing him,\" \"I have everything under control.\""
+      "nonstandard_elements": "A disembodied \"big hand and arm\" grasping the ball of light while speaking.",
+      "notable_quotes": "\"We are losing him,\" \"I have everything under control.\"; \"so black it was as though I could feel it.\""
     }
   },
-  "response_id": "resp_09e09de2c1f75f76006952f26eeb748195ac0e12a3660e71e0",
+  "response_id": "resp_0d817a58245c231900695ce818a1e88190956793de423ac0e1",
   "usage": {
-    "input_tokens": 9283,
+    "input_tokens": 11497,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1481,
+    "output_tokens": 1718,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10764
+    "total_tokens": 13215
   }
 }

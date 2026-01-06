@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\02503_mark-p-nde-4903.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\02503_mark-p-nde-4903.json",
   "source_url": "https://www.nderf.org/Experiences/1mark_p_nde.html",
   "title": "Mark P NDE 4903",
   "date": "June of 1978",
-  "content": "From above the operating table, I saw the doctors working on my body. I felt no pain. Saw my wife and her parents in the waiting room and my mother 2,500 miles away. I will never forget it. I was a medical student. My wife is recently deceased after forty-nine years of marriage. I only wish I could apply what I experienced to my wife's death.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T23:25:15.286833+00:00",
-  "source_checksum": "7b356bd3e4a605a7fcc2b9531fac0c7976cea77e2719318a121ce01f25cc5620",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "7b356bd3e4a605a7fcc2b9531fac0c7976cea77e2719318a121ce01f25cc5620",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T11:37:00.222075+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,7 +16,8 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "not_mentioned",
         "separation_sensations": [
@@ -35,7 +35,7 @@
       },
       "arrival": {
         "environment_description": "not_mentioned",
-        "light_encounter": [],
+        "light_encounter": "not_mentioned",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -54,8 +54,9 @@
       "encounters": {
         "deceased_relatives": "not_mentioned",
         "spiritual_beings": [],
-        "communication_mode": "not_specified",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -65,33 +66,39 @@
     },
     "life_review": {
       "occurrence": "not_mentioned",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_specified",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "not_mentioned",
-      "return_choice": "not_mentioned",
-      "return_reason": "not_mentioned",
+      "return_agency": "not_mentioned",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
       "return_description": "not_mentioned",
       "return_method": "not_specified",
@@ -104,24 +111,32 @@
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
       "thought_speed": "not_mentioned",
       "sensory_vividness": "not_mentioned",
-      "ineffability": "implied",
+      "ineffability": "not_mentioned",
       "memory_persistence": "more_vivid_than_normal",
-      "reality_assessment": "not_mentioned",
+      "reality_assessment": "definitely_real",
       "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "realm_types": [],
       "overall_valence": "not_mentioned",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation",
+        "remote_viewing"
+      ],
+      "veridical_verification": "not_mentioned",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
@@ -131,18 +146,23 @@
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "male",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": "medical student",
-      "education_level": null,
-      "marital_status": "married",
+      "education_level": "not_mentioned",
+      "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
       "prior_nde_knowledge": "not_mentioned"
@@ -151,7 +171,7 @@
       "present_elements": [
         "obe"
       ],
-      "elements_other_detail": "Observed wife and her parents in the waiting room and his mother 2,500 miles away.",
+      "elements_other_detail": "Observed wife and her parents in the waiting room and his mother 2,500 miles away during the OBE.",
       "canonical_sequence": "indeterminate",
       "sequence_variation_description": null,
       "repeated_stages": "not_mentioned",
@@ -160,20 +180,20 @@
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "From above the operating table, he reported seeing doctors working on his body; also reported seeing his wife and her parents in the waiting room and his mother 2,500 miles away.",
-      "notable_quotes": "“From above the operating table, I saw the doctors working on my body. I felt no pain. Saw my wife and her parents in the waiting room and my mother 2,500 miles away. I will never forget it.”"
+      "nonstandard_elements": "Remote viewing-like perceptions: saw wife and her parents in the waiting room and his mother 2,500 miles away.",
+      "notable_quotes": "“From above the operating table, I saw the doctors working on my body.” / “Saw my wife and her parents in the waiting room and my mother 2,500 miles away.” / “I felt no pain.”"
     }
   },
-  "response_id": "resp_00ba95dacc08d5b20069530dcaa84c8197a3aae865e8aca810",
+  "response_id": "resp_08c59275e442428000695cf3b41b8881959afc6061b1ce4080",
   "usage": {
-    "input_tokens": 9183,
+    "input_tokens": 11397,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1420,
+    "output_tokens": 1638,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10603
+    "total_tokens": 13035
   }
 }

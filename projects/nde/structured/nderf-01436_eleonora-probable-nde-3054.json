@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01436_eleonora-probable-nde-3054.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01436_eleonora-probable-nde-3054.json",
   "source_url": "https://www.nderf.org/Experiences/1eleonora_probable_nde.html",
   "title": "Eleonora Probable NDE 3054",
   "date": "ignota",
-  "content": "I was sleeping and dreaming. Suddenly my dream interrupted and I was in a tunnel with a light in the bottom. I began to move fast in the tunnel toward the light. In the light I founded all the persons that I have known in my several past existences, I saw this like an old photo group, all the persons were happy to see me. I was watching the persons and suddenly to my left I was approached by a middle aged man with a beard that asked me, in authoritarian tone, why I were here. I answered that I didn't know why I were here. He said to me that it was not my moment and I had to go back. I answered that I didn't want to go back, I was happy in that moment and I wanted to stay here. He accompanied me far away from the group and then my short life passed in front of me. I felt all the pain I caused to my parents with my whims as a child. Then the man said to me that I must return because persons needed me. In that moment, I saw my future (unfortunately, I forgot this part) and I understood that it was right for me to go back. Suddenly I was over my body. I began to return in my body from the feet and I felt the heat go up from my feet towards my head. I was able to move only when I completed this return to my body. In that moment I was thinking that it was only a strange dream and I continued sleeping.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T21:33:11.562114+00:00",
-  "source_checksum": "46c5864d5739bf6ba901bb32d107f6eee86b30de5ac3aa13480ce1847e77ca70",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "46c5864d5739bf6ba901bb32d107f6eee86b30de5ac3aa13480ce1847e77ca70",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T10:49:45.511116+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,7 +16,8 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "not_mentioned",
+        "observations_made": "no",
+        "observations_verified": "not_applicable",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "not_mentioned",
         "separation_sensations": [
@@ -37,17 +37,15 @@
       },
       "arrival": {
         "environment_description": "minimal",
-        "light_encounter": [
-          "brilliant_light"
-        ],
+        "light_encounter": "brilliant_light",
         "being_identifications": [
-          "multiple_beings",
-          "other"
+          "other",
+          "unknown_presence"
         ],
         "religious_figure_detail": null,
-        "other_being_detail": "A middle-aged bearded man speaking in an authoritarian tone; also 'all the persons that I have known in my several past existences' seen like an 'old photo group'.",
+        "other_being_detail": "In the light, she found 'all the persons that I have known in my several past existences' (seen 'like an old photo group'), and was approached by 'a middle aged man with a beard' speaking authoritatively.",
         "greeting_types": [
-          "deceased_loved_ones"
+          "unidentified_presence"
         ],
         "sense_of_belonging": "implied"
       }
@@ -58,17 +56,24 @@
         "environment_features": [
           "light"
         ],
-        "environment_other_detail": null,
+        "environment_other_detail": "Light at the end/bottom of the tunnel; within the light was a 'photo group' of people from 'past existences'.",
         "comparative_reality": "not_mentioned",
-        "thought_responsiveness": "not_mentioned"
+        "thought_responsiveness": "no"
       },
       "encounters": {
         "deceased_relatives": "not_mentioned",
         "spiritual_beings": [
-          "not_mentioned"
+          "unidentified_benevolent"
         ],
-        "communication_mode": "normal_speech",
-        "guidance_level": "significant_guidance",
+        "communication_modes": [
+          "normal_speech"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "informational",
+          "directional",
+          "life_guidance"
+        ],
         "other_souls_presence": "many"
       },
       "self_perception": {
@@ -78,51 +83,65 @@
     },
     "life_review": {
       "occurrence": "brief",
-      "presentation": "sequential",
+      "presentation_modes": [
+        "not_specified"
+      ],
       "perspective_of_others": "yes_explicit",
-      "judgment": "guide_or_light",
+      "judgment_source": "guide_or_entity",
+      "judgment_intensity": "uncomfortable",
       "emotional_tone": "shame_or_regret"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
+      "premortal_existence_info": "yes_explicit",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "personal_future",
+      "personal_future_knowledge": "yes_explicit",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "yes_explicit",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "many_lives",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "verbal_limit",
-      "return_choice": "reluctant_return",
-      "return_reason": "other",
-      "return_reason_other_detail": "Told it was not her moment; also that 'persons needed me'.",
+      "return_agency": "external_being",
+      "return_willingness": "mixed",
+      "return_reasons": [
+        "not_your_time",
+        "earthly_mission"
+      ],
+      "return_reason_other_detail": null,
       "return_description": "detailed",
       "return_method": "gradual",
-      "return_method_other_detail": null,
-      "return_feeling": "neutral",
+      "return_method_other_detail": "Returned into body 'from the feet' with 'heat go up from my feet towards my head' until able to move.",
+      "return_feeling": "not_mentioned",
       "mission_commissioned": "implied",
       "mission_types": [
         "service"
       ],
-      "mission_detail": "The man said she must return because 'persons needed me'.",
+      "mission_detail": "Told she 'must return because persons needed me.'",
       "volunteer_language": "no"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -132,31 +151,40 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "uncertain",
       "unity_experience": "not_mentioned",
-      "realm_type": "multiple_realms",
+      "realm_types": [
+        "clearly_unearthly"
+      ],
       "overall_valence": "mixed",
-      "veridical_perception": "none",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [],
+      "veridical_verification": "not_applicable",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "not_specified",
-      "nde_cause_other_detail": null,
-      "clinical_status": "unknown",
+      "nde_cause_other_detail": "Experience began while 'sleeping and dreaming'; no near-death medical crisis described.",
+      "clinical_status": "no",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "female",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -171,31 +199,32 @@
         "boundary",
         "return_choice",
         "obe",
-        "communication"
+        "communication",
+        "environment"
       ],
-      "elements_other_detail": "Future glimpse was mentioned but forgotten by the experiencer.",
+      "elements_other_detail": "Included past-life group of persons and a brief future glimpse (later forgotten).",
       "canonical_sequence": "mostly",
-      "sequence_variation_description": "Tunnel and light first; encounter with group and a bearded man; life review; future glimpse; then above-body perception and gradual re-entry into body from feet upward.",
+      "sequence_variation_description": "Tunnel/light/group encounter preceded life review; OBE over body occurred at the return phase.",
       "repeated_stages": "no",
       "repeated_stage_detail": null,
       "simultaneous_stages": "no",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Experience began during sleep/dreaming; group described as persons known from 'several past existences' seen like an 'old photo group'.",
-      "notable_quotes": "“Suddenly my dream interrupted and I was in a tunnel with a light in the bottom.” “He said to me that it was not my moment and I had to go back.” “Then my short life passed in front of me.” “I began to return in my body from the feet and I felt the heat go up from my feet towards my head.”"
+      "nonstandard_elements": "Experience occurred during sleep/dreaming and was interpreted as a strange dream afterward; group described as people known in 'several past existences' shown 'like an old photo group.'",
+      "notable_quotes": "\"I was in a tunnel with a light in the bottom.\"; \"He said to me that it was not my moment and I had to go back.\"; \"my short life passed in front of me\"; \"I began to return in my body from the feet and I felt the heat go up from my feet towards my head.\""
     }
   },
-  "response_id": "resp_08855505721e3ee5006952f37a55b4819584fa929e214699bd",
+  "response_id": "resp_0be6487ec2071afc00695ce88dc8248194884549d5bc9ea310",
   "usage": {
-    "input_tokens": 9410,
+    "input_tokens": 11624,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1590,
+    "output_tokens": 1909,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 11000
+    "total_tokens": 13533
   }
 }

@@ -1,15 +1,14 @@
 {
   "dataset": "iands",
-  "source_file": "data\\iands\\archive-through-february-26-2002-029.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\iands\\archive-through-february-26-2002-029.json",
   "source_url": null,
   "title": "Archive through February 26, 2002 - Anonymous (prime.kapa.net - 206.135.162.167) (Wednesday, January 23, 2002 - 10:29 am)",
   "date": "Wednesday, January 23, 2002 - 10:29 am",
-  "content": "I was in hospital due to getting shocky from loss of blood thru internal bleeding. Doctors checked me out and then felt I was in less critical shape than other patient's with knife wounds etc. Suddenly I felt that I was swooshing up through my head towards a blinding light. From above their heads, I could see doctors and nurses yelling code blue and surrounding me and I could see them working on me. In the light I felt very peaceful. I seemed to be in a field or on a hillside and I felt wonderful in the bright light. I did not hear a voice, but suddenly I felt as though I was being offered a choice, to stay or return and watch my son grow up. I thought \"Oh yes, I want to see my son grow up\" and then I was sliding back quickly into darkness. I did not know what to think about it all, and did not tell my wife for about a year, when I saw an article describing NDE and I recognized some of it as what I had been through",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T16:52:06.040133+00:00",
-  "source_checksum": "e89f7f2c16dae3d4ba7aaadd75a730f52f60ad1257e66199d54fde4b7775bfd0",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "e89f7f2c16dae3d4ba7aaadd75a730f52f60ad1257e66199d54fde4b7775bfd0",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T14:08:49.296129+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,27 +16,29 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "not_mentioned",
-        "separation_sensations": [],
-        "separation_sensations_other": null
+        "separation_sensations": [
+          "other"
+        ],
+        "separation_sensations_other": "Felt \"swooshing up through my head\" toward a blinding light; then later \"sliding back quickly into darkness.\""
       },
       "tunnel": {
         "passage_type": "other",
-        "passage_other_detail": "Felt \"swooshing up through my head towards a blinding light\" and later \"sliding back quickly into darkness.\"",
+        "passage_other_detail": "Swooshing upward through the head toward a blinding light; later sliding back into darkness (no tunnel explicitly described).",
         "movement_sensations": [
-          "rapid"
+          "rapid",
+          "other"
         ],
-        "movement_other_detail": null,
+        "movement_other_detail": "Swooshing upward; sliding back quickly.",
         "light_visibility": "bright",
         "emotional_tone": "peaceful"
       },
       "arrival": {
         "environment_description": "detailed",
-        "light_encounter": [
-          "brilliant_light"
-        ],
+        "light_encounter": "brilliant_light",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -52,15 +53,20 @@
           "landscape",
           "light"
         ],
-        "environment_other_detail": "A \"field or on a hillside\" in a \"bright light.\"",
+        "environment_other_detail": "Described being \"in a field or on a hillside\" in \"the bright light.\"",
         "comparative_reality": "not_mentioned",
         "thought_responsiveness": "not_mentioned"
       },
       "encounters": {
         "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [
+          "nonverbal"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "directional"
+        ],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -70,49 +76,60 @@
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
-      "boundary_encounter": "threshold",
-      "return_choice": "chose_to_return",
-      "return_reason": "family_responsibility",
+      "boundary_encounter": "not_mentioned",
+      "return_agency": "self",
+      "return_willingness": "willing",
+      "return_reasons": [
+        "family_responsibility"
+      ],
       "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "rapid",
       "return_method_other_detail": null,
       "return_feeling": "not_mentioned",
-      "mission_commissioned": "not_mentioned",
+      "mission_commissioned": "no",
       "mission_types": [],
       "mission_detail": null,
-      "volunteer_language": "not_mentioned"
+      "volunteer_language": "no"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -122,31 +139,42 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "heavenly",
+      "realm_types": [
+        "heavenly"
+      ],
       "overall_valence": "pleasant",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "claimed_unverified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "illness",
-      "nde_cause_other_detail": "Shock from loss of blood through internal bleeding.",
+      "nde_cause_other_detail": "Internal bleeding with major blood loss; became \"shocky\"; staff called \"code blue.\"",
       "clinical_status": "implied",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "male",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "married",
       "has_children": true,
       "number_of_children": 1,
@@ -155,35 +183,34 @@
     "stage_sequence": {
       "present_elements": [
         "obe",
-        "tunnel",
         "light_encounter",
         "environment",
         "boundary",
         "return_choice"
       ],
-      "elements_other_detail": null,
+      "elements_other_detail": "Choice presented to stay or return to watch his son grow up; no voice heard.",
       "canonical_sequence": "mostly",
-      "sequence_variation_description": "OBE with medical scene, then blinding light and field/hillside, then a choice to stay or return, then rapid return into darkness.",
-      "repeated_stages": "not_mentioned",
+      "sequence_variation_description": "OBE with viewing resuscitation efforts, then peaceful bright light and field/hillside environment, then choice to return, then rapid return into darkness.",
+      "repeated_stages": "no",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Did not tell his wife for about a year; later recognized it after reading an article describing NDEs.",
-      "notable_quotes": "Felt \"swooshing up through my head towards a blinding light.\" Saw staff \"yelling code blue\" and \"working on me.\" \"I seemed to be in a field or on a hillside.\" Offered a choice \"to stay or return and watch my son grow up.\" Thought: \"Oh yes, I want to see my son grow up\" and then was \"sliding back quickly into darkness.\""
+      "nonstandard_elements": "Nonverbal sense of being \"offered a choice\" (no voice) to stay or return to watch his son grow up.",
+      "notable_quotes": "\"Suddenly I felt that I was swooshing up through my head towards a blinding light.\"; \"From above their heads, I could see doctors and nurses yelling code blue...\"; \"I seemed to be in a field or on a hillside\"; \"I was sliding back quickly into darkness.\""
     }
   },
-  "response_id": "resp_06fac29f3488017f006952b1a1072881909ce02771b1fc17b9",
+  "response_id": "resp_0554680e55a0fdec00695d17426ca08194a700880dd584b32a",
   "usage": {
-    "input_tokens": 9338,
+    "input_tokens": 11552,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1522,
+    "output_tokens": 1782,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10860
+    "total_tokens": 13334
   }
 }

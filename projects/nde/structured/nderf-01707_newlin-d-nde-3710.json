@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01707_newlin-d-nde-3710.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01707_newlin-d-nde-3710.json",
   "source_url": "https://www.nderf.org/Experiences/1newlin_d_nde.html",
   "title": "Newlin D NDE 3710",
   "date": "August 1972",
-  "content": "As I was being electrocuted I left my body and floated above the scene. I was surrounded by a warm diffuse light but could see everything clearly. I could see my body shaking and convulsing with the electrical current, my eyes were open, my mouth was open but I couldn't speak. I seemed to know that I was going to die unless something changed. I don't remember being scared or frightened at all - very matter-of-factly. While floating I went over to where my dad was working at the other end of the garage. He had his back to my body and wasn't aware of what was going on. I went over to him and then he looked up from his work on the floor, turned to see my body being electrocuted. He picked up a hammer, threw it across the room, and knocked the extension cord/drop light out of my hand. After that, the light went out, the scene collapsed. The next thing I was aware of was being awakened by my mother in our family room. Apparently, I had collapsed on the garage floor and then my dad had carried me into the family room. I remember feeling tingling all over; especially in my mouth (I had braces at the time). But I had no immediate recollection of the events. Likewise, it wasn't scary or unsettling in the least. I don't think I realized that I had nearly died physically and certainly didn't realize I had left my body.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T22:02:40.806485+00:00",
-  "source_checksum": "852a724bf8772f2f8133ff0939798c44ed4045519ac4bb8f79120836fb83b854",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "852a724bf8772f2f8133ff0939798c44ed4045519ac4bb8f79120836fb83b854",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T11:00:40.415228+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -18,13 +17,15 @@
           "moving_through_spaces"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "verified",
         "heightened_perception": "yes_explicit",
         "identity_continuity": "clear_identity",
         "separation_sensations": [
-          "weightlessness"
+          "weightlessness",
+          "peace"
         ],
-        "separation_sensations_other": null
+        "separation_sensations_other": "Floated above the scene; not scared, 'very matter-of-factly.'"
       },
       "tunnel": {
         "passage_type": "no",
@@ -36,9 +37,7 @@
       },
       "arrival": {
         "environment_description": "remained_transitional",
-        "light_encounter": [
-          "brilliant_light"
-        ],
+        "light_encounter": "brilliant_light",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -48,103 +47,126 @@
     },
     "world_of_spirits": {
       "environment": {
-        "environment_description": "no",
-        "environment_features": [],
-        "environment_other_detail": null,
+        "environment_description": "brief",
+        "environment_features": [
+          "light"
+        ],
+        "environment_other_detail": "Warm diffuse light while still seeing the garage scene clearly.",
         "comparative_reality": "not_mentioned",
-        "thought_responsiveness": "not_mentioned"
+        "thought_responsiveness": "no"
       },
       "encounters": {
         "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
-        "physical_limitations": "not_mentioned"
+        "self_form": "no_description",
+        "physical_limitations": "none"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
-      "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "presentation_modes": [],
+      "perspective_of_others": "no",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
-      "earth_alienation": "not_mentioned",
-      "identity_pre_body": "not_mentioned"
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
+      "earth_alienation": "no",
+      "identity_pre_body": "implied"
     },
     "boundary_and_return": {
       "boundary_encounter": "none",
-      "return_choice": "not_mentioned",
-      "return_reason": "not_mentioned",
+      "return_agency": "involuntary",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
       "return_description": "brief",
-      "return_method": "not_specified",
+      "return_method": "instant",
       "return_method_other_detail": null,
       "return_feeling": "neutral",
-      "mission_commissioned": "not_mentioned",
+      "mission_commissioned": "no",
       "mission_types": [],
       "mission_detail": null,
-      "volunteer_language": "not_mentioned"
+      "volunteer_language": "no"
     },
     "transformative_effects": {
       "readjustment": "none",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
       "thought_speed": "not_mentioned",
       "sensory_vividness": "more_vivid",
-      "ineffability": "not_mentioned",
+      "ineffability": "no",
       "memory_persistence": "not_mentioned",
-      "reality_assessment": "not_mentioned",
-      "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "reality_assessment": "definitely_real",
+      "unity_experience": "no",
+      "realm_types": [
+        "familiar_earthlike"
+      ],
       "overall_valence": "neutral",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
-      "multiple_ndes": "not_mentioned"
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "verified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
+      "multiple_ndes": "no"
     },
     "context": {
       "nde_cause": "accident",
-      "nde_cause_other_detail": "Electrocution in a garage (extension cord/drop light).",
-      "clinical_status": "unknown",
+      "nde_cause_other_detail": "Electrocution in a garage from an extension cord/drop light.",
+      "clinical_status": "implied",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -155,29 +177,29 @@
         "obe",
         "light_encounter"
       ],
-      "elements_other_detail": "Observed father at other end of garage; father threw a hammer to knock the cord/light out of experiencer's hand; then 'the light went out, the scene collapsed' and later awakened by mother.",
+      "elements_other_detail": "Observed father at other end of garage; father threw a hammer to knock the cord/light out of experiencer's hand; then 'the light went out, the scene collapsed' and next awareness was waking in family room.",
       "canonical_sequence": "partial",
-      "sequence_variation_description": "OBE with warm diffuse light present; no tunnel/realm/life review/boundary described; abrupt end and later awakening in body.",
+      "sequence_variation_description": "OBE occurred during electrocution with diffuse light; no tunnel/realm; abrupt transition to waking in body.",
       "repeated_stages": "no",
       "repeated_stage_detail": null,
       "simultaneous_stages": "yes",
-      "simultaneous_stage_detail": "Warm diffuse light while visually perceiving the physical scene during the OBE."
+      "simultaneous_stage_detail": "Warm diffuse light present while observing the physical garage scene."
     },
     "unique_elements": {
-      "nonstandard_elements": "During the OBE, the experiencer moved to father at the other end of the garage; father then noticed the electrocution and threw a hammer to knock the extension cord/drop light out of the experiencer's hand. The experiencer reports no immediate recollection afterward.",
-      "notable_quotes": "“As I was being electrocuted I left my body and floated above the scene.” “I was surrounded by a warm diffuse light but could see everything clearly.” “I don't remember being scared or frightened at all - very matter-of-factly.” “After that, the light went out, the scene collapsed.”"
+      "nonstandard_elements": "Post-incident amnesia: 'no immediate recollection of the events' and did not realize they had left the body.",
+      "notable_quotes": "“I left my body and floated above the scene.” “I was surrounded by a warm diffuse light but could see everything clearly.” “I don't remember being scared or frightened at all - very matter-of-factly.”"
     }
   },
-  "response_id": "resp_012ffa1c08247993006952fa6be04481908012ee6ee955b9b8",
+  "response_id": "resp_001f74facd71e0de00695ceb39e3148190b38e832e97011f1d",
   "usage": {
-    "input_tokens": 9397,
+    "input_tokens": 11611,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1527,
+    "output_tokens": 1678,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10924
+    "total_tokens": 13289
   }
 }

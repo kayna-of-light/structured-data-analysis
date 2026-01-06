@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\02849_marie-nde-6029.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\02849_marie-nde-6029.json",
   "source_url": "https://www.nderf.org/Experiences/1marie_nde_6029.html",
   "title": "Marie NDE 6029",
   "date": "November 1971",
-  "content": "I remember me above my body floating. There was a swirling bright light. The light was full of light dust particles and a tingling of bells. I was weightless and felt great calmness. It was a special place without time or space; just being. I felt at peace. I never heard anyone speak. It was all knowing without words. I later found out that I was near death. I can't recall everything that occurred before and during this experience since I was very ill and never mentioned it to anyone at that time. I know now that when my day comes I'll be welcoming the new life.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-30T00:00:02.093321+00:00",
-  "source_checksum": "be857df82e524c853070b4c997173d6548dad3728f1fb6a5bf6223e36f7af92c",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "be857df82e524c853070b4c997173d6548dad3728f1fb6a5bf6223e36f7af92c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T11:51:40.451999+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,7 +16,8 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "not_mentioned",
+        "observations_made": "no",
+        "observations_verified": "not_applicable",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "not_mentioned",
         "separation_sensations": [
@@ -25,7 +25,7 @@
           "peace",
           "other"
         ],
-        "separation_sensations_other": "felt great calmness"
+        "separation_sensations_other": "Felt great calmness; \"felt great calmness\" / \"felt at peace.\""
       },
       "tunnel": {
         "passage_type": "no",
@@ -37,12 +37,8 @@
       },
       "arrival": {
         "environment_description": "minimal",
-        "light_encounter": [
-          "brilliant_light"
-        ],
-        "being_identifications": [
-          "no_being_encountered"
-        ],
+        "light_encounter": "brilliant_light",
+        "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
         "greeting_types": [],
@@ -51,20 +47,24 @@
     },
     "world_of_spirits": {
       "environment": {
-        "environment_description": "brief",
+        "environment_description": "detailed",
         "environment_features": [
           "light",
           "other"
         ],
-        "environment_other_detail": "swirling bright light; light dust particles; tingling of bells; 'special place without time or space; just being'",
+        "environment_other_detail": "Swirling bright light with \"light dust particles\" and \"a tingling of bells\"; described as \"a special place without time or space; just being.\"",
         "comparative_reality": "not_mentioned",
         "thought_responsiveness": "not_mentioned"
       },
       "encounters": {
         "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "nonverbal",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [
+          "telepathic",
+          "nonverbal"
+        ],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -74,33 +74,39 @@
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
-      "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "presentation_modes": [],
+      "perspective_of_others": "no",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
       "universal_knowledge": "implied",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "none",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "implied",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
-      "earth_alienation": "not_mentioned",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
+      "earth_alienation": "no",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "not_mentioned",
-      "return_choice": "not_mentioned",
-      "return_reason": "not_mentioned",
+      "return_agency": "not_mentioned",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
       "return_description": "not_mentioned",
       "return_method": "not_specified",
@@ -113,44 +119,56 @@
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "no_fear",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "timeless",
       "thought_speed": "not_mentioned",
       "sensory_vividness": "not_mentioned",
-      "ineffability": "implied",
+      "ineffability": "not_mentioned",
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "void_darkness",
+      "realm_types": [
+        "clearly_unearthly"
+      ],
       "overall_valence": "pleasant",
-      "veridical_perception": "not_mentioned",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [],
+      "veridical_verification": "not_applicable",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "illness",
       "nde_cause_other_detail": null,
-      "clinical_status": "implied",
+      "clinical_status": "unknown",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -163,29 +181,29 @@
         "environment",
         "communication"
       ],
-      "elements_other_detail": "nonverbal 'all knowing without words'; auditory-like 'tingling of bells'",
-      "canonical_sequence": "indeterminate",
-      "sequence_variation_description": null,
+      "elements_other_detail": "Nonverbal/wordless knowing; auditory-like \"tingling of bells.\"",
+      "canonical_sequence": "partial",
+      "sequence_variation_description": "OBE described first, then swirling bright light/special timeless place; no tunnel, beings, boundary, or explicit return described.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "swirling bright light with 'light dust particles' and a 'tingling of bells'",
-      "notable_quotes": "“It was a special place without time or space; just being.”"
+      "nonstandard_elements": "Light described as containing \"light dust particles\" and accompanied by \"a tingling of bells.\"",
+      "notable_quotes": "\"I remember me above my body floating.\" / \"There was a swirling bright light.\" / \"It was a special place without time or space; just being.\" / \"I never heard anyone speak. It was all knowing without words.\" / \"I know now that when my day comes I'll be welcoming the new life.\""
     }
   },
-  "response_id": "resp_0e19eb20cd8d111100695315f08708819793eb626aa93fe056",
+  "response_id": "resp_02849680a54cb60300695cf72c763c8194b80b9380e2e29cc7",
   "usage": {
-    "input_tokens": 9228,
+    "input_tokens": 11442,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1426,
+    "output_tokens": 1716,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10654
+    "total_tokens": 13158
   }
 }

@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\03330_harold-d-probable-nde-22840.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\03330_harold-d-probable-nde-22840.json",
   "source_url": "https://www.nderf.org/Experiences/1harold_d_probable_nde.html",
   "title": "Harold D Probable NDE 22840",
   "date": "April 2000",
-  "content": "I was really badly sick with the flu and I laid down on the couch , and I remember thinking I never felt this bad , so I laid there a few minutes with my eyes closed because I felt so bad. Then suddenly I thought I feel pretty good and when I opened my eyes I was hovering above my body but I wasn't scared. The next thing I know I'm floating in a big tunnel. If I had to guess, maybe 25-30 ft. in diameter the walls were black and there were shiny black rocks of different sizes. I floated for a few seconds and I could see a light at the far end. The tunnel was cone-shaped. Then all of a sudden, I was sucked to the light and I came out on the other side. I saw it was a clear sky with a few little clouds and there was rolling hills really beautiful and the grass was a little below my knee, maybe 7 or 8 inches high. There was also a small creek winding down from the hills. Then I noticed a group of people across the creek. They were older people, all dressed in white. I didn't know any of them. Now here's the kicker. My wife had died 2 yrs. earlier and she came from around the back of them. She came to me. I was standing at the edge of the creek. She walks to the other side of the creek up to the edge and then tells me, ‘It's not my time. You have to go back.’ I told her I want to stay with her. Then she says, ‘Harold you have to go back, it's not your time.’ She told me we would be together again. Then it felt like I was being sucked back, like I was dropped into my body.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-30T00:50:22.458371+00:00",
-  "source_checksum": "a7241e6bbafce9431fd676e056560aaaaa1a3541b9338aa4d94046d47ac6a71e",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "a7241e6bbafce9431fd676e056560aaaaa1a3541b9338aa4d94046d47ac6a71e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T12:12:32.280936+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,10 +16,13 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "no",
+        "observations_made": "no",
+        "observations_verified": "not_applicable",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "clear_identity",
-        "separation_sensations": [],
+        "separation_sensations": [
+          "none_specified"
+        ],
         "separation_sensations_other": null
       },
       "tunnel": {
@@ -28,8 +30,8 @@
         "passage_other_detail": null,
         "movement_sensations": [
           "floating",
-          "rapid",
-          "pulled"
+          "pulled",
+          "rapid"
         ],
         "movement_other_detail": null,
         "light_visibility": "bright",
@@ -37,13 +39,13 @@
       },
       "arrival": {
         "environment_description": "detailed",
-        "light_encounter": [],
+        "light_encounter": "no",
         "being_identifications": [
           "deceased_relative_guide",
           "other"
         ],
         "religious_figure_detail": null,
-        "other_being_detail": "A group of older people across the creek, all dressed in white; he did not know any of them.",
+        "other_being_detail": "A group of unknown older people, all dressed in white, across the creek.",
         "greeting_types": [
           "deceased_loved_ones"
         ],
@@ -55,19 +57,24 @@
         "environment_description": "detailed",
         "environment_features": [
           "landscape",
-          "sky",
           "water",
-          "colors"
+          "sky"
         ],
         "environment_other_detail": null,
         "comparative_reality": "not_mentioned",
-        "thought_responsiveness": "not_mentioned"
+        "thought_responsiveness": "no"
       },
       "encounters": {
         "deceased_relatives": "named",
         "spiritual_beings": [],
-        "communication_mode": "normal_speech",
-        "guidance_level": "significant_guidance",
+        "communication_modes": [
+          "normal_speech"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "directional",
+          "comfort"
+        ],
         "other_souls_presence": "many"
       },
       "self_perception": {
@@ -77,63 +84,79 @@
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
-      "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "presentation_modes": [],
+      "perspective_of_others": "no",
+      "judgment_source": "none",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
-      "earth_alienation": "not_mentioned",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
+      "earth_alienation": "no",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "physical_barrier",
-      "return_choice": "told_to_return",
-      "return_reason": "not_your_time",
+      "return_agency": "external_being",
+      "return_willingness": "reluctant",
+      "return_reasons": [
+        "not_your_time"
+      ],
       "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "rapid",
       "return_method_other_detail": null,
-      "return_feeling": "neutral",
+      "return_feeling": "not_mentioned",
       "mission_commissioned": "no",
       "mission_types": [],
       "mission_detail": null,
-      "volunteer_language": "not_mentioned"
+      "volunteer_language": "no"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
       "thought_speed": "not_mentioned",
       "sensory_vividness": "not_mentioned",
-      "ineffability": "not_mentioned",
+      "ineffability": "no",
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
-      "unity_experience": "not_mentioned",
-      "realm_type": "heavenly",
+      "unity_experience": "no",
+      "realm_types": [
+        "heavenly",
+        "clearly_unearthly"
+      ],
       "overall_valence": "pleasant",
-      "veridical_perception": "none",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [],
+      "veridical_verification": "not_applicable",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
@@ -143,17 +166,22 @@
       "experience_duration": "seconds_to_minutes"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -170,27 +198,27 @@
       ],
       "elements_other_detail": null,
       "canonical_sequence": "mostly",
-      "sequence_variation_description": null,
-      "repeated_stages": "not_mentioned",
+      "sequence_variation_description": "OBE hovering above body, then floating through a dark tunnel toward a light, then emerging into a pastoral landscape, meeting deceased wife at a creek (boundary), told to return, then pulled back into body.",
+      "repeated_stages": "no",
       "repeated_stage_detail": null,
-      "simultaneous_stages": "not_mentioned",
+      "simultaneous_stages": "no",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": null,
+      "nonstandard_elements": "Tunnel described as cone-shaped with black walls and shiny black rocks; diameter estimated 25-30 ft.",
       "notable_quotes": "Wife: 'It's not my time. You have to go back.' / 'Harold you have to go back, it's not your time.' / 'We would be together again.'"
     }
   },
-  "response_id": "resp_0587d684d83bb55800695321b8a614819695c49c6b24a2e91d",
+  "response_id": "resp_052d3a353004c8d500695cfc08b0ec81969349dcd583dae291",
   "usage": {
-    "input_tokens": 9464,
+    "input_tokens": 11678,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1435,
+    "output_tokens": 1703,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10899
+    "total_tokens": 13381
   }
 }

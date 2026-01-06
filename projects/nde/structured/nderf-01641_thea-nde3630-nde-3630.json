@@ -1,26 +1,29 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01641_thea-nde3630-nde-3630.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01641_thea-nde3630-nde-3630.json",
   "source_url": "https://www.nderf.org/Experiences/1thea_nde.html",
   "title": "Thea NDE3630 NDE 3630",
   "date": "martie1976 si iulie1979",
-  "content": "The first time: I was a little over four years old at the time. I remember being in an ambulance which was taking me to a hospital in another city when, all of a sudden, I found myself way, way up high watching the ambulance on the road. I could see the landscape in minute detail and the colors were quite intense. I could see very far all the way around, but at the same time I was focusing on the winding road, I remember this very well. Many years after, I was on a bus, which followed the same route. I decided to walk, I had this strange feeling that I should not have been in that place at all. The second time: I was with my uncle, aunt and two cousins when I decided to go swimming in the river. I wanted to show off that I was a good swimmer but the river undercurrent took me away to this drop off near the foot of a bridge. They told me later that a professional swimmer who happened to be there on vacation at his grandparents' got me out of the water but that I did not look scared at all. What I did not tell them was that I had panicked and struggled for a several minutes before I decided to completely give up. When I did give up, the water disappeared and all around me there was this gentle light that did not hurt my eyes, and I experienced a sense of total peace and calm. I remember thinking that if that was death it was fine with me. I would like to tell you that I had an unhappy childhood, with an alcoholic father and a mother who did not have much time for me, so being there in that place was a wonderful thing for me, indescribable.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T21:55:45.411472+00:00",
-  "source_checksum": "c8b6de213ace15747c771b23af08438716b0de759475197258aa238c5715538b",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "c8b6de213ace15747c771b23af08438716b0de759475197258aa238c5715538b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T10:57:52.468149+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
         "vantage_points": [
+          "moving_through_spaces",
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "unverified",
         "heightened_perception": "yes_explicit",
         "identity_continuity": "clear_identity",
-        "separation_sensations": [],
+        "separation_sensations": [
+          "none_specified"
+        ],
         "separation_sensations_other": null
       },
       "tunnel": {
@@ -33,83 +36,95 @@
       },
       "arrival": {
         "environment_description": "minimal",
-        "light_encounter": [
-          "brilliant_light"
-        ],
+        "light_encounter": "brilliant_light",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
         "greeting_types": [],
-        "sense_of_belonging": "not_mentioned"
+        "sense_of_belonging": "implied"
       }
     },
     "world_of_spirits": {
       "environment": {
         "environment_description": "brief",
         "environment_features": [
-          "light"
+          "light",
+          "colors",
+          "landscape"
         ],
         "environment_other_detail": null,
         "comparative_reality": "not_mentioned",
-        "thought_responsiveness": "not_mentioned"
+        "thought_responsiveness": "no"
       },
       "encounters": {
-        "deceased_relatives": "not_mentioned",
+        "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
+        "self_form": "no_description",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
-      "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "presentation_modes": [],
+      "perspective_of_others": "no",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_specified",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [
+        "spiritual_realm"
+      ],
       "earth_alienation": "implied",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
-      "boundary_encounter": "not_mentioned",
-      "return_choice": "not_mentioned",
-      "return_reason": "not_mentioned",
+      "boundary_encounter": "none",
+      "return_agency": "not_mentioned",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
-      "return_description": "not_mentioned",
+      "return_description": "no",
       "return_method": "not_specified",
       "return_method_other_detail": null,
       "return_feeling": "not_mentioned",
-      "mission_commissioned": "not_mentioned",
+      "mission_commissioned": "no",
       "mission_types": [],
       "mission_detail": null,
-      "volunteer_language": "not_mentioned"
+      "volunteer_language": "no"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "minimal",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -118,32 +133,43 @@
       "ineffability": "yes_explicit",
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
-      "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "unity_experience": "no",
+      "realm_types": [
+        "vaguely_unearthly"
+      ],
       "overall_valence": "incredibly_pleasant",
-      "veridical_perception": "none",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "claimed_unverified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "yes_explicit"
     },
     "context": {
       "nde_cause": "accident",
-      "nde_cause_other_detail": "Two episodes described: (1) as a little over four years old, in an ambulance en route to a hospital; (2) nearly drowning while swimming in a river with an undercurrent near a bridge drop-off.",
+      "nde_cause_other_detail": "Two childhood incidents: (1) ambulance transport to hospital (cause not specified); (2) drowning incident while swimming in a river.",
       "clinical_status": "unknown",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": true,
-      "age_years": 4,
+      "age_at_nde_reported": true,
+      "age_at_nde": 4,
+      "years_since_nde": null,
       "gender": "not_mentioned",
-      "location_country": "not_mentioned",
-      "location_state_province": "not_mentioned",
-      "location_city": "not_mentioned",
-      "nationality_ethnicity": "not_mentioned",
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "location_country": null,
+      "location_state_province": null,
+      "location_city": null,
+      "nationality_ethnicity": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -152,32 +178,32 @@
     "stage_sequence": {
       "present_elements": [
         "obe",
-        "environment",
-        "light_encounter"
+        "light_encounter",
+        "environment"
       ],
-      "elements_other_detail": "Two separate NDE-like events: an out-of-body observation high above an ambulance route; and a drowning episode followed by water disappearing, gentle light, and total peace/calm.",
+      "elements_other_detail": "Second episode includes cessation of struggle, disappearance of water, gentle light, and profound peace/calm with acceptance of death.",
       "canonical_sequence": "partial",
-      "sequence_variation_description": "Event 1 emphasizes OBE vantage over an ambulance/landscape without tunnel/light. Event 2 emphasizes panic then surrender, followed by disappearance of water and gentle light/peace, without tunnel, beings, boundary, or return description.",
+      "sequence_variation_description": "Episode 1: OBE above ambulance with detailed panoramic viewing. Episode 2: drowning/panic → giving up → water disappears → gentle light and peace (no tunnel or beings).",
       "repeated_stages": "yes",
-      "repeated_stage_detail": "Two distinct events (1976 and 1979) are described.",
+      "repeated_stage_detail": "Two separate near-death episodes reported; both include altered state with strong perceptual qualities (OBE in first; light/peace in second).",
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "In the first event, the experiencer reports being very high above the ambulance and seeing the landscape and winding road in minute detail with intense colors; later recognition of the same route while on a bus and a feeling they 'should not have been in that place at all.' In the second event, upon giving up during drowning, 'the water disappeared' and was replaced by a gentle, non-hurting light and total peace.",
-      "notable_quotes": "“I found myself way, way up high watching the ambulance on the road.” “I could see the landscape in minute detail and the colors were quite intense.” “When I did give up, the water disappeared and all around me there was this gentle light that did not hurt my eyes, and I experienced a sense of total peace and calm.” “I remember thinking that if that was death it was fine with me.” “...being there in that place was a wonderful thing for me, indescribable.”"
+      "nonstandard_elements": "Episode 2: the water 'disappeared' upon surrender, replaced by a gentle light; no tunnel/beings described. Episode 1: high-altitude viewing of ambulance route with later recognition of the same road while on a bus years later and a strong feeling of not belonging there.",
+      "notable_quotes": "“I found myself way, way up high watching the ambulance on the road.” / “the water disappeared and all around me there was this gentle light that did not hurt my eyes, and I experienced a sense of total peace and calm.” / “if that was death it was fine with me.” / “being there in that place was a wonderful thing for me, indescribable.”"
     }
   },
-  "response_id": "resp_0dc0ecb917f961ea006952f8cb9bc08195be70456a456138c3",
+  "response_id": "resp_07122625b3fcf11600695cea8f17648190ac37f79cc4b296df",
   "usage": {
-    "input_tokens": 9461,
+    "input_tokens": 11675,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1659,
+    "output_tokens": 1784,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 11120
+    "total_tokens": 13459
   }
 }

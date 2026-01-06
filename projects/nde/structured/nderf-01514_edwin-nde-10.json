@@ -1,26 +1,29 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01514_edwin-nde-10.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01514_edwin-nde-10.json",
   "source_url": "https://www.nderf.org/Experiences/1edwin_nde_10.html",
   "title": "Edwin NDE 10",
   "date": null,
-  "content": "It was accidental. While changing a light bulb in the toilet, I was later informed that I had suffered a severe electric shock of two hundred and forty volts. I was informed that due to the electrocution; I had fallen of the ladder, and had hit my head on the toilet bowl. I believe I actually left my body in the toilet. However, I did follow it to the hospital and watched in awe, as my body lay limp, while ambulance officers and doctors attempted to revive me. I was aware of other 'spirits' around me. Some were grey in color, while others were transparent like myself. After ten minutes, I was pronounced dead by the doctors, it was however thirty minutes later, according to the records that I 'recovered'.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T21:41:42.327391+00:00",
-  "source_checksum": "f847bb475d73ec07d731e0ec38926c7ae1e81a0941c0bf6c23348c1af9ac5b27",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "f847bb475d73ec07d731e0ec38926c7ae1e81a0941c0bf6c23348c1af9ac5b27",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T10:52:27.705280+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
         "vantage_points": [
-          "moving_through_spaces"
+          "moving_through_spaces",
+          "multiple_locations"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
-        "heightened_perception": "not_mentioned",
-        "identity_continuity": "not_mentioned",
-        "separation_sensations": [],
+        "observations_made": "yes",
+        "observations_verified": "unverified",
+        "heightened_perception": "implied",
+        "identity_continuity": "clear_identity",
+        "separation_sensations": [
+          "none_specified"
+        ],
         "separation_sensations_other": null
       },
       "tunnel": {
@@ -32,11 +35,13 @@
         "emotional_tone": "not_mentioned"
       },
       "arrival": {
-        "environment_description": "not_mentioned",
-        "light_encounter": [],
-        "being_identifications": [],
+        "environment_description": "remained_transitional",
+        "light_encounter": "not_mentioned",
+        "being_identifications": [
+          "other"
+        ],
         "religious_figure_detail": null,
-        "other_being_detail": null,
+        "other_being_detail": "Aware of other 'spirits' around him; some grey in color, others transparent like himself.",
         "greeting_types": [],
         "sense_of_belonging": "not_mentioned"
       }
@@ -52,46 +57,53 @@
       "encounters": {
         "deceased_relatives": "not_mentioned",
         "spiritual_beings": [],
-        "communication_mode": "not_specified",
-        "guidance_level": "not_mentioned",
-        "other_souls_presence": "many"
+        "communication_modes": [],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
+        "other_souls_presence": "few"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
+        "self_form": "no_description",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
-      "occurrence": "no",
-      "presentation": "not_specified",
+      "occurrence": "not_mentioned",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_specified",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "not_mentioned",
-      "return_choice": "not_mentioned",
-      "return_reason": "not_mentioned",
+      "return_agency": "not_mentioned",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
-      "return_description": "not_mentioned",
+      "return_description": "no",
       "return_method": "not_specified",
       "return_method_other_detail": null,
       "return_feeling": "not_mentioned",
@@ -102,10 +114,13 @@
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -115,31 +130,40 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "realm_types": [],
       "overall_valence": "not_mentioned",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "claimed_unverified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "accident",
-      "nde_cause_other_detail": "Severe electric shock (240 volts) while changing a light bulb; fell off ladder and hit head on toilet bowl.",
+      "nde_cause_other_detail": "Severe electric shock (240 volts) while changing a light bulb; fell off ladder and hit head.",
       "clinical_status": "verified",
-      "experience_duration": "not_specified"
+      "experience_duration": "minutes_to_hours"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -147,31 +171,32 @@
     },
     "stage_sequence": {
       "present_elements": [
-        "obe"
+        "obe",
+        "environment"
       ],
-      "elements_other_detail": "Observed other 'spirits' around him (grey or transparent) while out of body; followed body to hospital and watched resuscitation attempts.",
+      "elements_other_detail": "Observed medical resuscitation attempts in hospital; awareness of other 'spirits' nearby (grey/transparent).",
       "canonical_sequence": "indeterminate",
-      "sequence_variation_description": null,
+      "sequence_variation_description": "Reports leaving body in the toilet, then following body to the hospital and observing resuscitation.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Other 'spirits' present during the OBE were described as grey in color or transparent.",
+      "nonstandard_elements": "Other 'spirits' described as grey or transparent present during the OBE/resuscitation observation.",
       "notable_quotes": "“I did follow it to the hospital and watched in awe, as my body lay limp, while ambulance officers and doctors attempted to revive me.”"
     }
   },
-  "response_id": "resp_000fe9972ba604a2006952f58151708196bff1b6edbefe3b78",
+  "response_id": "resp_09acde0da4c0dad000695ce94d516881939bfe88802f74304f",
   "usage": {
-    "input_tokens": 9252,
+    "input_tokens": 11466,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1405,
+    "output_tokens": 1675,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10657
+    "total_tokens": 13141
   }
 }

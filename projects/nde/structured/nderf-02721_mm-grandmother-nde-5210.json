@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\02721_mm-grandmother-nde-5210.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\02721_mm-grandmother-nde-5210.json",
   "source_url": "https://www.nderf.org/Experiences/1mm_gma_nde.html",
   "title": "MM Grandmother NDE 5210",
   "date": "November 1934",
-  "content": "This is my grandmother's story, passed down to my mother, and then to me. My grandmother gave birth to my mother in November 1934. They lived on an isolated farm, and so she gave birth at home. There were few neighbors and the local midwife attended. Just after the birth, my grandmother became very ill with a postpartum infection. Her fever rose and there was little anyone could do about it. There was no such thing as antibiotics at that time. A physician was sent for, but by the time he got there, my grandmother was dead. Her heart stopped for a few minutes. A minister was sent for, along with a mortician, and the family was prepared. During this time, my grandmother said that she found herself suddenly somewhere near the ceiling, looking down at all the people surrounding her bed. She saw the midwife's panic and her husband coming to her bedside, crying in despair. She also saw her two eldest daughters near the door, and then her mother pushing them into the next room. My grandmother turned around then and saw a bright light in the distance, as if it was through the wall of the bedroom. Then her own grandmother appeared beside her and said 'Not yet.' Then she experienced just blackness. A few days later she emerged from a coma, and then was bedridden for weeks before she recovered.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T23:47:36.614043+00:00",
-  "source_checksum": "dd3a9c5bad337dc3effa622a82d31c390864ab7fe17c48e7fed92c4978768136",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "dd3a9c5bad337dc3effa622a82d31c390864ab7fe17c48e7fed92c4978768136",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T11:46:21.430795+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,9 +16,10 @@
           "ceiling"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
-        "identity_continuity": "not_mentioned",
+        "identity_continuity": "clear_identity",
         "separation_sensations": [],
         "separation_sensations_other": null
       },
@@ -33,17 +33,13 @@
       },
       "arrival": {
         "environment_description": "remained_transitional",
-        "light_encounter": [
-          "brilliant_light"
-        ],
+        "light_encounter": "brilliant_light",
         "being_identifications": [
           "deceased_relative_guide"
         ],
         "religious_figure_detail": null,
-        "other_being_detail": "Her own grandmother appeared beside her.",
-        "greeting_types": [
-          "deceased_loved_ones"
-        ],
+        "other_being_detail": "Her own grandmother appeared beside her and said, 'Not yet.'",
+        "greeting_types": [],
         "sense_of_belonging": "not_mentioned"
       }
     },
@@ -56,48 +52,61 @@
         "thought_responsiveness": "not_mentioned"
       },
       "encounters": {
-        "deceased_relatives": "unnamed",
+        "deceased_relatives": "named",
         "spiritual_beings": [],
-        "communication_mode": "normal_speech",
-        "guidance_level": "significant_guidance",
+        "communication_modes": [
+          "normal_speech"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "directional"
+        ],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
+        "self_form": "no_description",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "verbal_limit",
-      "return_choice": "told_to_return",
-      "return_reason": "not_your_time",
+      "return_agency": "external_being",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [
+        "not_your_time"
+      ],
       "return_reason_other_detail": null,
-      "return_description": "brief",
+      "return_description": "no",
       "return_method": "not_specified",
       "return_method_other_detail": null,
       "return_feeling": "not_mentioned",
@@ -108,10 +117,13 @@
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -121,31 +133,42 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "void_darkness",
-      "overall_valence": "mixed",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "realm_types": [
+        "void_darkness"
+      ],
+      "overall_valence": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "not_mentioned",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "childbirth",
-      "nde_cause_other_detail": "Postpartum infection; heart stopped for a few minutes.",
+      "nde_cause_other_detail": "Postpartum infection with high fever; heart stopped for a few minutes.",
       "clinical_status": "verified",
-      "experience_duration": "seconds_to_minutes"
+      "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "female",
-      "location_country": "not_mentioned",
-      "location_state_province": "not_mentioned",
-      "location_city": "not_mentioned",
+      "location_country": null,
+      "location_state_province": null,
+      "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": true,
       "number_of_children": null,
@@ -159,29 +182,29 @@
         "boundary",
         "return_choice"
       ],
-      "elements_other_detail": "Blackness after being told 'Not yet.'",
-      "canonical_sequence": "mostly",
-      "sequence_variation_description": "OBE near ceiling viewing the room, then saw a bright light through the wall, encountered her grandmother who said 'Not yet,' then experienced blackness, later returned (awoke from coma days later).",
+      "elements_other_detail": "After being told 'Not yet,' she experienced 'blackness' and later emerged from a coma.",
+      "canonical_sequence": "partial",
+      "sequence_variation_description": "OBE near ceiling observing room events; then bright light seen through wall; then deceased grandmother appears and says 'Not yet'; then blackness; later return via coma recovery.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Bright light appeared as if it was through the wall of the bedroom; after 'Not yet' she experienced 'just blackness.'",
-      "notable_quotes": "'Not yet.'"
+      "nonstandard_elements": "Bright light perceived 'as if it was through the wall of the bedroom'; experience shifted to 'blackness' after being told 'Not yet.'",
+      "notable_quotes": "'Not yet.'; 'just blackness.'"
     }
   },
-  "response_id": "resp_0d1bf7489317b31c0069531306a01c8194a065d0e903859e5b",
+  "response_id": "resp_00790f6411e74d9e00695cf5ea08048190a514aa96d7da00f9",
   "usage": {
-    "input_tokens": 9381,
+    "input_tokens": 11595,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1456,
+    "output_tokens": 1697,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10837
+    "total_tokens": 13292
   }
 }

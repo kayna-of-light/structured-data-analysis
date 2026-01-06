@@ -1,21 +1,21 @@
 {
   "dataset": "iands",
-  "source_file": "data\\iands\\sample-nde-accounts.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\iands\\sample-nde-accounts.json",
   "source_url": null,
   "title": "Sample NDE Accounts",
   "date": "Last Updated: 12 September 2016",
-  "content": "These pages are sample excerpts from various published accounts of near-death experiences or from the archives maintained by IANDS. Note to researchers and authors : IANDS cannot grant permission to publish quotations from these NDE accounts because we have not received permission from the NDE authors to do so. However, we advise authors who wish to use quotations from these accounts to follow the Fair Use Doctrine . See our Copyright Policy for more information. We recommend adopting this practice for quotations from our web site before you have written your book or article.\n\nA Business Man's NDEs\n\nAscension\n\nLife/Death/?\n\nMy Spiritual Enlightenment\n\nNearing Divine Enclosure: My Story\n\nAn NDE experienced while Giving Birth\n\nSummaries of 17 NDEs from PMH Atwater's book Beyond the Light\n\nNear-Death-Like Experiences (NDLE) -- not the result of health trauma\n\nA Near-Death Experience while Sleeping\n\nA Near-Death-Like Experience—The Crystal Egg\n\nOther NDE accounts and links to sites with experiences\n\nThe IANDS archives includes many more NDE and NDLE accounts\n\nA site with many NDE accounts, and with some statistical analysis\n\nA multilingual site with many NDE accounts, and commentary",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T18:11:38.411313+00:00",
-  "source_checksum": "29e46612e224ba6fd61e41966120701f087dbfca5feb20d38c2d3ebb467489e7",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "29e46612e224ba6fd61e41966120701f087dbfca5feb20d38c2d3ebb467489e7",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T14:32:33.234171+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "not_mentioned",
         "vantage_points": [],
         "vantage_other_detail": null,
-        "observation_accuracy": "not_mentioned",
+        "observations_made": "not_mentioned",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "not_mentioned",
         "separation_sensations": [],
@@ -31,7 +31,7 @@
       },
       "arrival": {
         "environment_description": "not_mentioned",
-        "light_encounter": [],
+        "light_encounter": "not_mentioned",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -50,8 +50,9 @@
       "encounters": {
         "deceased_relatives": "not_mentioned",
         "spiritual_beings": [],
-        "communication_mode": "not_specified",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -61,33 +62,39 @@
     },
     "life_review": {
       "occurrence": "not_mentioned",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_specified",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "not_mentioned",
-      "return_choice": "not_mentioned",
-      "return_reason": "not_mentioned",
+      "return_agency": "not_mentioned",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
       "return_description": "not_mentioned",
       "return_method": "not_specified",
@@ -100,10 +107,13 @@
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -113,11 +123,13 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "realm_types": [],
       "overall_valence": "not_mentioned",
-      "veridical_perception": "not_mentioned",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [],
+      "veridical_verification": "not_mentioned",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
@@ -127,17 +139,22 @@
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -145,8 +162,8 @@
     },
     "stage_sequence": {
       "present_elements": [],
-      "elements_other_detail": null,
-      "canonical_sequence": "indeterminate",
+      "elements_other_detail": "The provided text is an index/listing of sample NDE account links and a copyright/fair-use notice; it contains no actual NDE phenomenology from an experiencer.",
+      "canonical_sequence": "not_applicable",
       "sequence_variation_description": null,
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
@@ -154,20 +171,20 @@
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "This is an index/listing page of sample NDE/NDLE account links and copyright guidance; it contains no actual NDE phenomenology narrative details to code.",
+      "nonstandard_elements": "This entry is not an NDE narrative; it is a webpage description listing categories/links to multiple NDE/NDLE accounts and a note that IANDS cannot grant permission to publish quotations from the underlying accounts.",
       "notable_quotes": null
     }
   },
-  "response_id": "resp_097db1d18aca6fe2006952c446e6e48196973eba551b4ef35c",
+  "response_id": "resp_08504bdc11c5993900695d1ce4a93081939d1f0a12f2c8d819",
   "usage": {
-    "input_tokens": 9336,
+    "input_tokens": 11550,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1332,
+    "output_tokens": 1591,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10668
+    "total_tokens": 13141
   }
 }

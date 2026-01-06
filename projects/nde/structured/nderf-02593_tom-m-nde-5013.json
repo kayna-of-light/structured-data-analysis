@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\02593_tom-m-nde-5013.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\02593_tom-m-nde-5013.json",
   "source_url": "https://www.nderf.org/Experiences/1tom_m_nde.html",
   "title": "Tom M NDE 5013",
   "date": "1981",
-  "content": "When I was eighteen years of age, I was severely beaten to the point of causing respiratory cardiac failure, after which, I experienced all the phenomena related to such events, as narrated by others that have suffered near death experiences. First of all I saw my body down below me and when I realized I was dead I became extremely agitated and worried, I kept thinking to myself 'You are dead, what are you going to do now?' The thought was persistent and I became more and more disturbed, at this point I heard or though I heard a voice that came from elsewhere and it said, 'Don't worry all your problems are left behind with that body.' At this point, I felt as if I was liberated from a great burden, I never felt before or since such a state of wellbeing. I began a journey at a great speed through a tunnel of light; all that I have narrated to this point is very vivid in my memory, what seems like a dream is what happened after. I have no clear memory of the events that occurred after the trip in the tunnel of light; in fact, the memory of it seems to me more like a dream than an actual event. In this dream, I arrived somewhere or to be more precise I was intercepted before my arrival. My dead sister and grandmother told me that it was not yet my time and that I must get back. I am a forty-seven year old man now and have no recollection as to how I got back to my body when I was revived.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T23:34:17.027118+00:00",
-  "source_checksum": "feb834f362d08e8efd783ef98a7c1672cdc7caf27b470649ebc51e8df7ea461b",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "feb834f362d08e8efd783ef98a7c1672cdc7caf27b470649ebc51e8df7ea461b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T11:40:54.911418+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,7 +16,8 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "no",
+        "observations_verified": "not_applicable",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "clear_identity",
         "separation_sensations": [
@@ -36,13 +36,13 @@
         "emotional_tone": "mixed"
       },
       "arrival": {
-        "environment_description": "remained_transitional",
-        "light_encounter": [],
+        "environment_description": "minimal",
+        "light_encounter": "not_mentioned",
         "being_identifications": [
           "deceased_relative_guide"
         ],
         "religious_figure_detail": null,
-        "other_being_detail": "He heard (or thought he heard) a voice from elsewhere: “Don't worry all your problems are left behind with that body.”",
+        "other_being_detail": "Deceased sister and grandmother intercepted him before arrival and told him it was not his time.",
         "greeting_types": [
           "deceased_loved_ones"
         ],
@@ -51,7 +51,7 @@
     },
     "world_of_spirits": {
       "environment": {
-        "environment_description": "no",
+        "environment_description": "brief",
         "environment_features": [],
         "environment_other_detail": null,
         "comparative_reality": "not_mentioned",
@@ -60,60 +60,77 @@
       "encounters": {
         "deceased_relatives": "named",
         "spiritual_beings": [],
-        "communication_mode": "mixed",
-        "guidance_level": "significant_guidance",
+        "communication_modes": [
+          "telepathic"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "comfort",
+          "directional"
+        ],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
+        "self_form": "no_description",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
-      "boundary_encounter": "not_mentioned",
-      "return_choice": "told_to_return",
-      "return_reason": "not_your_time",
+      "boundary_encounter": "threshold",
+      "return_agency": "external_being",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [
+        "not_your_time"
+      ],
       "return_reason_other_detail": null,
       "return_description": "no",
       "return_method": "not_specified",
       "return_method_other_detail": null,
       "return_feeling": "not_mentioned",
-      "mission_commissioned": "not_mentioned",
+      "mission_commissioned": "no",
       "mission_types": [],
       "mission_detail": null,
-      "volunteer_language": "not_mentioned"
+      "volunteer_language": "no"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -121,69 +138,77 @@
       "sensory_vividness": "not_mentioned",
       "ineffability": "not_mentioned",
       "memory_persistence": "more_vivid_than_normal",
-      "reality_assessment": "not_mentioned",
+      "reality_assessment": "definitely_real",
       "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "realm_types": [
+        "clearly_unearthly"
+      ],
       "overall_valence": "mixed",
-      "veridical_perception": "none",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
-      "multiple_ndes": "not_mentioned"
+      "veridical_claim_types": [],
+      "veridical_verification": "not_applicable",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
+      "multiple_ndes": "no"
     },
     "context": {
       "nde_cause": "combat_or_violence",
-      "nde_cause_other_detail": "Severely beaten, causing “respiratory cardiac failure.”",
+      "nde_cause_other_detail": "Severely beaten causing respiratory cardiac failure.",
       "clinical_status": "implied",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": true,
-      "age_years": 18,
+      "age_at_nde_reported": true,
+      "age_at_nde": 18,
+      "years_since_nde": 29,
       "gender": "male",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
-      "prior_nde_knowledge": "aware"
+      "prior_nde_knowledge": "not_mentioned"
     },
     "stage_sequence": {
       "present_elements": [
         "obe",
         "tunnel",
         "loved_ones",
-        "communication",
-        "return_choice"
+        "boundary"
       ],
-      "elements_other_detail": null,
+      "elements_other_detail": "He heard (or thought he heard) a reassuring voice: 'Don't worry all your problems are left behind with that body.'",
       "canonical_sequence": "mostly",
-      "sequence_variation_description": "OBE followed by tunnel of light; then an indistinct/dreamlike phase where he was intercepted by deceased relatives and told to return.",
+      "sequence_variation_description": "OBE with distress and a reassuring voice, then rapid travel through a tunnel of light; later (dreamlike) intercepted by deceased sister and grandmother and told to return.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "He reports a clear/vivid early phase (OBE and tunnel) followed by a later phase that “seems to me more like a dream than an actual event,” with no clear memory after the tunnel.",
-      "notable_quotes": "“You are dead, what are you going to do now?” / “Don't worry all your problems are left behind with that body.” / “it was not yet my time and that I must get back.”"
+      "nonstandard_elements": "He reports the early portion (OBE and tunnel) as very vivid, while what followed felt 'more like a dream than an actual event.'",
+      "notable_quotes": "'You are dead, what are you going to do now?'; 'Don't worry all your problems are left behind with that body.'; 'it was not yet my time and that I must get back.'"
     }
   },
-  "response_id": "resp_05e751805602966e0069530fe4c67c8197b41bfb1e8cf4c6ab",
+  "response_id": "resp_07a421b4e031463100695cf4a0b57c81968cbb5d6387dbf7c3",
   "usage": {
-    "input_tokens": 9408,
+    "input_tokens": 11622,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1500,
+    "output_tokens": 1712,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10908
+    "total_tokens": 13334
   }
 }

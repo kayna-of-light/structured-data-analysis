@@ -1,21 +1,21 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01201_kevin-m-nde-3230.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01201_kevin-m-nde-3230.json",
   "source_url": "https://www.nderf.org/Experiences/1kevin_m_nde.html",
   "title": "Kevin M NDE 3230",
   "date": "'April 8, 2006'",
-  "content": "A spike in blood pressure caused a blood vessel to burst in my nose. I tried for several hours to get it to stop, but to no avail. I eventually had my wife take me to the local hospital, while waiting to get help; I started to go into shock. The triage nurse measured my blood pressure as (approximately) 170 over 120. When a doctor came to take me to an examination room, my legs gave out and was carried into the exam room. I remember nurses continually asking if I was still with them, and I thought, 'How absurd, of course I am still here.' I then found myself walking through a grassy field, the sun warm on my face, the trees off in the distance turning fall colors. The grass was about thigh high, but not difficult to walk through. I felt absolute happiness and peacefulness. I got the feeling that someone was just over the rise waiting for me. I then found myself back in that ugly green exam room with the doctors holding my legs up over my head and saying, 'He's back. We've got him.' I was so disappointed, almost angry to be back. I was only gone a few seconds.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T21:08:28.912103+00:00",
-  "source_checksum": "2846d09f4685f5d9c163235a6d019336b9554a56d72a428c2ccc96f2dbfe0a5d",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "2846d09f4685f5d9c163235a6d019336b9554a56d72a428c2ccc96f2dbfe0a5d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T10:38:45.270983+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "not_mentioned",
         "vantage_points": [],
         "vantage_other_detail": null,
-        "observation_accuracy": "not_mentioned",
+        "observations_made": "not_mentioned",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "not_mentioned",
         "separation_sensations": [],
@@ -31,7 +31,7 @@
       },
       "arrival": {
         "environment_description": "detailed",
-        "light_encounter": [],
+        "light_encounter": "no",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -54,44 +54,53 @@
       "encounters": {
         "deceased_relatives": "not_mentioned",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
-        "physical_limitations": "not_mentioned"
+        "self_form": "current_self",
+        "physical_limitations": "none"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [
+        "spiritual_realm"
+      ],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
-      "boundary_encounter": "not_mentioned",
-      "return_choice": "involuntary",
-      "return_reason": "no_reason_given",
+      "boundary_encounter": "threshold",
+      "return_agency": "involuntary",
+      "return_willingness": "reluctant",
+      "return_reasons": [],
       "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "instant",
@@ -103,11 +112,14 @@
       "volunteer_language": "not_mentioned"
     },
     "transformative_effects": {
-      "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "readjustment": "brief",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -117,31 +129,40 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "heavenly",
-      "overall_valence": "incredibly_pleasant",
-      "veridical_perception": "not_mentioned",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "realm_types": [
+        "familiar_earthlike"
+      ],
+      "overall_valence": "pleasant",
+      "veridical_claim_types": [],
+      "veridical_verification": "not_applicable",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "illness",
-      "nde_cause_other_detail": "A spike in blood pressure caused a blood vessel to burst in my nose; he went into shock while waiting for help at the hospital.",
+      "nde_cause_other_detail": "Severe nosebleed from burst blood vessel due to spike in blood pressure; went into shock in hospital triage/exam room.",
       "clinical_status": "unknown",
       "experience_duration": "seconds_to_minutes"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "married",
       "has_children": null,
       "number_of_children": null,
@@ -150,31 +171,32 @@
     "stage_sequence": {
       "present_elements": [
         "environment",
+        "boundary",
         "return_choice"
       ],
-      "elements_other_detail": null,
+      "elements_other_detail": "Transition from hospital awareness to walking in a grassy field; sensed someone just over a rise; abrupt return to exam room.",
       "canonical_sequence": "partial",
-      "sequence_variation_description": "No OBE or tunnel described; he abruptly found himself walking in a grassy field and then suddenly returned to the exam room.",
-      "repeated_stages": "not_mentioned",
+      "sequence_variation_description": "No reported OBE/tunnel/light; directly found himself in a peaceful field environment, then abruptly back in the exam room.",
+      "repeated_stages": "no",
       "repeated_stage_detail": null,
-      "simultaneous_stages": "not_mentioned",
+      "simultaneous_stages": "no",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "He experienced being 'walking through a grassy field' with warm sun and fall-colored trees, and had the feeling 'someone was just over the rise waiting for me,' without seeing any beings.",
-      "notable_quotes": "“How absurd, of course I am still here.”; “I then found myself walking through a grassy field, the sun warm on my face…”; “He's back. We've got him.”; “I was so disappointed, almost angry to be back.”; “I was only gone a few seconds.”"
+      "nonstandard_elements": "NDE content primarily a peaceful, earthlike grassy field with warm sun and fall-colored trees; strong disappointment/anger on return; very brief duration ('only gone a few seconds').",
+      "notable_quotes": "“I then found myself walking through a grassy field, the sun warm on my face, the trees off in the distance turning fall colors.” “I felt absolute happiness and peacefulness.” “I got the feeling that someone was just over the rise waiting for me.” “He's back. We've got him.” “I was so disappointed, almost angry to be back.”"
     }
   },
-  "response_id": "resp_0418156ebd38c0b3006952edba85f08194a8c8104a8553e59e",
+  "response_id": "resp_0fe97574adde639b00695ce6165e0481979890793af99a7d2a",
   "usage": {
-    "input_tokens": 9349,
+    "input_tokens": 11563,
     "input_tokens_details": {
-      "cached_tokens": 8832
+      "cached_tokens": 0
     },
-    "output_tokens": 1462,
+    "output_tokens": 1715,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10811
+    "total_tokens": 13278
   }
 }

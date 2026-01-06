@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\33161_ernestino-a.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\33161_ernestino-a.json",
   "source_url": "https://www.nderf.org/experience.html?entrynum=33161",
   "title": "Ernestino A",
   "date": "11/06/1979",
-  "content": "I was seven years old when I had the near-death experience. I had a severe asthma attack and was not breathing. Then, I saw myself with my father carrying me on his shoulder. It was like a scene in a movie with the camera zooming out so I could see my father rushing me to our family doctor's clinic. Then, it quickly cut to the next scene. I saw myself from a top-down view with our family doctor performing CPR on me, pumping my chest. My father and another doctor were by my bedside. I saw some rays of light shining from my back, but I did not look at the light. Suddenly, I felt like I was being sucked back into my body. Then I woke up.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-30T06:26:09.186738+00:00",
-  "source_checksum": "b90607cf505793a236b90354ff834824f7b55023a332f0147f3a247895593bf4",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "b90607cf505793a236b90354ff834824f7b55023a332f0147f3a247895593bf4",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T13:59:09.864848+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -18,7 +17,8 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "clear_identity",
         "separation_sensations": [
@@ -29,18 +29,14 @@
       "tunnel": {
         "passage_type": "no",
         "passage_other_detail": null,
-        "movement_sensations": [
-          "other"
-        ],
-        "movement_other_detail": "Felt like being 'sucked back into my body.'",
+        "movement_sensations": [],
+        "movement_other_detail": null,
         "light_visibility": "not_mentioned",
         "emotional_tone": "not_mentioned"
       },
       "arrival": {
-        "environment_description": "remained_transitional",
-        "light_encounter": [
-          "not_mentioned"
-        ],
+        "environment_description": "not_mentioned",
+        "light_encounter": "not_mentioned",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -59,44 +55,51 @@
       "encounters": {
         "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
+        "self_form": "no_description",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "none",
-      "return_choice": "involuntary",
-      "return_reason": "no_reason_given",
+      "return_agency": "involuntary",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "rapid",
@@ -109,10 +112,13 @@
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -122,31 +128,40 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "realm_types": [],
       "overall_valence": "not_mentioned",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "not_mentioned",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "illness",
-      "nde_cause_other_detail": "Severe asthma attack; not breathing.",
-      "clinical_status": "unknown",
+      "nde_cause_other_detail": "Severe asthma attack; not breathing; CPR performed.",
+      "clinical_status": "implied",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": true,
-      "age_years": 7,
+      "age_at_nde_reported": true,
+      "age_at_nde": 7,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -157,29 +172,29 @@
         "obe",
         "return_choice"
       ],
-      "elements_other_detail": "Observed father carrying him to doctor; observed CPR from top-down view; saw rays of light from his back; felt sucked back into body; woke up.",
+      "elements_other_detail": "Observed father carrying him to clinic; observed CPR from top-down view; saw rays of light from his back; felt 'sucked back' into body.",
       "canonical_sequence": "partial",
-      "sequence_variation_description": "OBE scenes (father carrying to clinic; CPR top-down), then rapid involuntary return ('sucked back into my body') and awakening; no tunnel/realm described.",
+      "sequence_variation_description": "OBE with scene changes (father carrying to clinic; then top-down view of CPR), then rapid return to body.",
       "repeated_stages": "no",
       "repeated_stage_detail": null,
-      "simultaneous_stages": "no",
+      "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Experience described as movie-like with 'camera zooming out' and scene cuts; saw 'rays of light shining from my back' but did not look at the light.",
-      "notable_quotes": "“It was like a scene in a movie with the camera zooming out…”; “I saw some rays of light shining from my back…”; “Suddenly, I felt like I was being sucked back into my body.”"
+      "nonstandard_elements": "Cinematic framing: 'like a scene in a movie' with 'camera zooming out' and quick cuts between scenes; rays of light shining from his back.",
+      "notable_quotes": "“It was like a scene in a movie with the camera zooming out…”; “I saw myself from a top-down view with our family doctor performing CPR on me…”; “Suddenly, I felt like I was being sucked back into my body.”"
     }
   },
-  "response_id": "resp_0bc0a3a348a741aa00695370640c908194b0b895b0f8290674",
+  "response_id": "resp_07010705efcb3cc700695d151640bc8196853791cfc4b4896e",
   "usage": {
-    "input_tokens": 9249,
+    "input_tokens": 11463,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1490,
+    "output_tokens": 1682,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10739
+    "total_tokens": 13145
   }
 }

@@ -1,28 +1,28 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\00385_cinthia-nde.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\00385_cinthia-nde.json",
   "source_url": "https://www.nderf.org/Experiences/1cinthia_nde.html",
   "title": "Cinthia NDE 910",
   "date": "7-07-2002",
-  "content": "This is difficult to explain. I experienced deep calmness, just as if I was somewhere else. It was earth, but also not. On the one hand, it did frighten me, but on the other hand, it did not, because it just felt good. I remember that I had conversations, but I cannot recall with whom. I wanted to stay here, because my life on earth was not so precious to me anymore -- here I had found peace. I had to come back and finish things off. I was promised that I would experience more prosperous times, but I did not want to go back and was angry with 'them'. This is also how I woke up -- being very angry. An angel next to my bed stayed with me until I was awake. I saw many energies around my bed. I could not see anything but colors. When I could open my eyes I was still very angry and upset, upset for being back on earth. I remained angry for quite some time.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T19:14:51.437449+00:00",
-  "source_checksum": "e6ca4a9adaa5f78de0a3f5ed431755e14bb09c0e404fad153862af1a900ad045",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "e6ca4a9adaa5f78de0a3f5ed431755e14bb09c0e404fad153862af1a900ad045",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T09:51:34.922860+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "not_mentioned",
         "vantage_points": [],
         "vantage_other_detail": null,
-        "observation_accuracy": "not_mentioned",
+        "observations_made": "not_mentioned",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "not_mentioned",
         "separation_sensations": [],
         "separation_sensations_other": null
       },
       "tunnel": {
-        "passage_type": "not_mentioned",
+        "passage_type": "no",
         "passage_other_detail": null,
         "movement_sensations": [],
         "movement_other_detail": null,
@@ -31,21 +31,22 @@
       },
       "arrival": {
         "environment_description": "minimal",
-        "light_encounter": [],
+        "light_encounter": "no",
         "being_identifications": [],
         "religious_figure_detail": null,
-        "other_being_detail": null,
+        "other_being_detail": "Had conversations but could not recall with whom; later reported an 'angel next to my bed' after waking/return.",
         "greeting_types": [],
-        "sense_of_belonging": "explicit"
+        "sense_of_belonging": "implied"
       }
     },
     "world_of_spirits": {
       "environment": {
         "environment_description": "brief",
         "environment_features": [
-          "colors"
+          "colors",
+          "other"
         ],
-        "environment_other_detail": "Described as \"earth, but also not.\" Later reported seeing \"many energies\" and \"colors\" around the bed.",
+        "environment_other_detail": "Described as 'earth, but also not'; saw 'many energies' and 'could not see anything but colors' around the bed upon waking.",
         "comparative_reality": "not_mentioned",
         "thought_responsiveness": "not_mentioned"
       },
@@ -54,8 +55,14 @@
         "spiritual_beings": [
           "guides_or_angels"
         ],
-        "communication_mode": "not_specified",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [
+          "not_specified"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "life_guidance",
+          "informational"
+        ],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -64,35 +71,46 @@
       }
     },
     "life_review": {
-      "occurrence": "not_mentioned",
-      "presentation": "not_specified",
+      "occurrence": "no",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "personal_future",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "yes_explicit",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "spiritual_realm",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [
+        "spiritual_realm"
+      ],
       "earth_alienation": "implied",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
-      "boundary_encounter": "not_mentioned",
-      "return_choice": "told_to_return",
-      "return_reason": "other",
-      "return_reason_other_detail": "Had to \"come back and finish things off.\"",
+      "boundary_encounter": "verbal_limit",
+      "return_agency": "external_being",
+      "return_willingness": "reluctant",
+      "return_reasons": [
+        "unfinished_business",
+        "not_your_time"
+      ],
+      "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "not_specified",
       "return_method_other_detail": null,
@@ -101,17 +119,18 @@
       "mission_types": [
         "other"
       ],
-      "mission_detail": "To return and \"finish things off.\"",
-      "volunteer_language": "not_mentioned"
+      "mission_detail": "Told to 'come back and finish things off.'",
+      "volunteer_language": "no"
     },
     "transformative_effects": {
       "readjustment": "significant",
-      "post_ability_changes": [
-        "not_mentioned"
-      ],
-      "belief_change": "not_mentioned",
-      "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
+      "value_shift": "subtle",
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -121,11 +140,15 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "multiple_realms",
+      "realm_types": [
+        "vaguely_unearthly"
+      ],
       "overall_valence": "mixed",
-      "veridical_perception": "not_mentioned",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [],
+      "veridical_verification": "not_applicable",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
@@ -135,17 +158,22 @@
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
-      "gender": "not_mentioned",
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
+      "gender": "female",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -155,32 +183,33 @@
       "present_elements": [
         "environment",
         "communication",
+        "boundary",
         "return_choice",
-        "return_choice"
+        "other"
       ],
-      "elements_other_detail": "Reported conversations with unknown others; later an angel next to the bed and many energies/colors around the bed.",
-      "canonical_sequence": "indeterminate",
-      "sequence_variation_description": null,
+      "elements_other_detail": "Post-return bedside perception: 'An angel next to my bed' and 'many energies... colors.'",
+      "canonical_sequence": "partial",
+      "sequence_variation_description": "No OBE/tunnel described; experience centered on calm other-place, communication, reluctance/anger at return, and post-return angel/energies.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "After waking: \"An angel next to my bed stayed with me until I was awake\" and \"many energies around my bed\" seen as colors.",
-      "notable_quotes": "“It was earth, but also not.”; “I wanted to stay here… here I had found peace.”; “I had to come back and finish things off.”; “I did not want to go back and was angry with 'them'.”; “An angel next to my bed stayed with me until I was awake.”; “I saw many energies around my bed. I could not see anything but colors.”"
+      "nonstandard_elements": "Strong anger at being returned; perceived an angel beside the bed and many energies/colors around the bed while waking.",
+      "notable_quotes": "“It was earth, but also not.”; “I wanted to stay here... here I had found peace.”; “I had to come back and finish things off.”; “I was promised that I would experience more prosperous times... I did not want to go back and was angry with 'them'.”"
     }
   },
-  "response_id": "resp_05f76254b4403d1c006952d3103e28819592f3f314fa64b804",
+  "response_id": "resp_0e02c966c508d69600695cdafa946881909be6c6a57037649b",
   "usage": {
-    "input_tokens": 9309,
+    "input_tokens": 11523,
     "input_tokens_details": {
-      "cached_tokens": 0
+      "cached_tokens": 11136
     },
-    "output_tokens": 1512,
+    "output_tokens": 1762,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10821
+    "total_tokens": 13285
   }
 }
