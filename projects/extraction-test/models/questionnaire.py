@@ -21,11 +21,19 @@ class MentionResponse(str, Enum):
     NOT_MENTIONED = "not_mentioned"
 
 
-class ObservationVerification(str, Enum):
-    VERIFIED = "verified"
-    UNVERIFIED = "unverified"
-    NO = "no"
+class OBEObservationsMade(str, Enum):
+    """Did they report observing real-world events during OBE?"""
+    YES = "yes"  # Reported seeing events (in room, elsewhere)
+    NO = "no"  # Explicitly stated no observations
     NOT_MENTIONED = "not_mentioned"
+
+
+class OBEObservationsVerified(str, Enum):
+    """Were the OBE observations verified by others?"""
+    VERIFIED = "verified"  # Confirmed accurate by medical staff, family, etc.
+    UNVERIFIED = "unverified"  # Claimed but not confirmed
+    NOT_APPLICABLE = "not_applicable"  # No observations were made
+    NOT_MENTIONED = "not_mentioned"  # Verification status not addressed
 
 
 class IdentityContinuity(str, Enum):
@@ -99,14 +107,22 @@ class ArrivalDescription(str, Enum):
 
 
 class LightEncounter(str, Enum):
-    BRILLIANT_LIGHT = "brilliant_light"
-    BEING_OF_LIGHT = "being_of_light"
-    PRESENCE_WITHOUT_VISUAL = "presence_without_visual"
+    """Type of light encounter. Select ONE value.
+    
+    Precedence: being_of_light > brilliant_light > presence_without_visual
+    
+    If the experiencer describes both a brilliant light AND a being of light,
+    select being_of_light - the being inherently indicates presence of light.
+    """
+    BEING_OF_LIGHT = "being_of_light"  # Takes precedence - implies light
+    BRILLIANT_LIGHT = "brilliant_light"  # Light without identified being
+    PRESENCE_WITHOUT_VISUAL = "presence_without_visual"  # Felt but not seen
     NO = "no"
     NOT_MENTIONED = "not_mentioned"
 
 
 class BeingIdentification(str, Enum):
+    """Individual type of being encountered. Use as List field."""
     JESUS = "jesus"
     GOD = "god"
     ANGELS = "angels"
@@ -114,18 +130,15 @@ class BeingIdentification(str, Enum):
     RELIGIOUS_FIGURE_SPECIFIED = "religious_figure_specified"
     DECEASED_RELATIVE_GUIDE = "deceased_relative_guide"
     UNKNOWN_PRESENCE = "unknown_presence"
-    MULTIPLE_BEINGS = "multiple_beings"
     OTHER = "other"
-    NONE = "no_being_encountered"
-    NOT_SPECIFIED = "not_specified"
 
 
 class GreetingType(str, Enum):
+    """Type of greeting upon arrival. Use as List field - empty list means not mentioned."""
     DECEASED_LOVED_ONES = "deceased_loved_ones"
     SPIRITUAL_BEINGS = "spiritual_beings"
     UNIDENTIFIED_PRESENCE = "unidentified_presence"
-    SOLITARY = "solitary_arrival"
-    NOT_MENTIONED = "not_mentioned"
+    SOLITARY = "solitary_arrival"  # Arrived alone, no greeting
 
 
 class BelongingSense(str, Enum):
@@ -167,27 +180,36 @@ class EncounteredRelatives(str, Enum):
 
 
 class SpiritualBeingEncounter(str, Enum):
+    """Type of spiritual being encountered. Use as List field - empty list means none/not mentioned."""
     GUIDES_OR_ANGELS = "guides_or_angels"
     RELIGIOUS_FIGURES = "religious_figures"
     UNIDENTIFIED_BENEVOLENT = "unidentified_benevolent"
+
+
+class CommunicationModeItem(str, Enum):
+    """Individual communication mode. Use as List field."""
+    TELEPATHIC = "telepathic"  # Direct mind-to-mind communication
+    NONVERBAL = "nonverbal"  # Gestures, feelings, knowing without words
+    NORMAL_SPEECH = "normal_speech"  # Audible spoken words
+    NOT_SPECIFIED = "not_specified"  # Communication occurred but mode unclear
+    NONE = "no_communication"  # No communication with beings
+
+
+class GuidanceReceived(str, Enum):
+    """Was guidance received from beings?"""
+    YES = "yes"
     NO = "no"
     NOT_MENTIONED = "not_mentioned"
 
 
-class CommunicationMode(str, Enum):
-    TELEPATHIC = "telepathic"
-    NONVERBAL = "nonverbal"
-    NORMAL_SPEECH = "normal_speech"
-    MIXED = "mixed"
-    NOT_SPECIFIED = "not_specified"
-    NONE = "no_communication"
-
-
-class GuidanceLevel(str, Enum):
-    SIGNIFICANT_GUIDANCE = "significant_guidance"
-    COMFORT_OR_REASSURANCE = "comfort_or_reassurance"
-    NONE = "none"
-    NOT_MENTIONED = "not_mentioned"
+class GuidanceTypeItem(str, Enum):
+    """Individual type of guidance received. Use as List field."""
+    DIRECTIONAL = "directional"  # Told what to do, where to go
+    INFORMATIONAL = "informational"  # Given knowledge or explanations
+    LIFE_GUIDANCE = "life_guidance"  # Advice about how to live
+    COMFORT = "comfort"  # Emotional support, reassurance
+    TEACHING = "teaching"  # Spiritual lessons or instruction
+    OTHER = "other"  # Other type of guidance
 
 
 class OtherSoulsPresence(str, Enum):
@@ -219,12 +241,12 @@ class LifeReviewOccurrence(str, Enum):
     NOT_MENTIONED = "not_mentioned"
 
 
-class LifeReviewPresentation(str, Enum):
-    PANORAMIC = "panoramic"
-    SEQUENTIAL = "sequential"
-    REEXPERIENCE = "reexperience"
-    MIXED = "mixed"
-    NOT_SPECIFIED = "not_specified"
+class LifeReviewPresentationItem(str, Enum):
+    """Individual presentation mode of life review. Use as List field."""
+    PANORAMIC = "panoramic"  # All-at-once, 360-degree, holographic view
+    SEQUENTIAL = "sequential"  # Events shown in chronological order
+    REEXPERIENCE = "reexperience"  # Reliving events as if there again
+    NOT_SPECIFIED = "not_specified"  # Life review occurred but presentation unclear
 
 
 class JudgmentSource(str, Enum):
@@ -238,21 +260,33 @@ class JudgmentSource(str, Enum):
 
 
 class JudgmentIntensity(str, Enum):
-    """How intense/severe was the judgment?"""
-    LOVING_GENTLE = "loving_gentle"  # Supportive, educational, compassionate
+    """How intense/severe was the judgment FROM THE SOURCE?
+    
+    This captures the CHARACTER of the judgment itself - how the judging
+    entity (self, being, etc.) delivered the evaluation. This is about
+    the judgment's nature, not the experiencer's emotional response.
+    """
+    LOVING_GENTLE = "loving_gentle"  # Supportive, educational, compassionate evaluation
     NEUTRAL = "neutral"  # Matter-of-fact observation without emotional weight
-    UNCOMFORTABLE = "uncomfortable"  # Caused shame/regret but not condemning
+    UNCOMFORTABLE = "uncomfortable"  # Critical but not condemning
     HARSH_CONDEMNING = "harsh_condemning"  # Punitive, hellish, fear-inducing
     NOT_APPLICABLE = "not_applicable"  # No judgment occurred (source=none)
     NOT_SPECIFIED = "not_specified"  # Judgment happened but intensity unclear
 
 
 class ReviewEmotionalTone(str, Enum):
-    LOVE = "love"
-    NEUTRAL = "neutral"
-    SHAME_OR_REGRET = "shame_or_regret"
-    MIXED = "mixed"
-    NOT_SPECIFIED = "not_specified"
+    """What was the EXPERIENCER'S emotional state during the life review?
+    
+    This captures how the experiencer FELT while going through the review,
+    regardless of judgment source or intensity. Someone may feel shame
+    from self-judgment even with a loving guide, or feel love despite
+    uncomfortable moments.
+    """
+    LOVE = "love"  # Felt loved, accepted, understood throughout
+    NEUTRAL = "neutral"  # No strong emotional response
+    SHAME_OR_REGRET = "shame_or_regret"  # Felt shame, guilt, or regret
+    MIXED = "mixed"  # Multiple emotions, varying throughout
+    NOT_SPECIFIED = "not_specified"  # Emotional response not described
 
 
 class BoundaryEncounter(str, Enum):
@@ -263,21 +297,31 @@ class BoundaryEncounter(str, Enum):
     NOT_MENTIONED = "not_mentioned"
 
 
-class ReturnChoice(str, Enum):
-    CHOSE_TO_RETURN = "chose_to_return"
-    RELUCTANT_RETURN = "reluctant_return"
-    TOLD_TO_RETURN = "told_to_return"
-    INVOLUNTARY = "involuntary"
+class ReturnAgency(str, Enum):
+    """Who made the decision to return?"""
+    SELF = "self"  # Experiencer decided to return
+    EXTERNAL_BEING = "external_being"  # A being/entity sent them back
+    MUTUAL = "mutual"  # Joint decision between experiencer and being
+    INVOLUNTARY = "involuntary"  # No decision - just happened
     NOT_MENTIONED = "not_mentioned"
 
 
-class ReturnReason(str, Enum):
-    EARTHLY_MISSION = "earthly_mission"
-    FAMILY_RESPONSIBILITY = "family_responsibility"
-    NOT_YOUR_TIME = "not_your_time"
-    NO_REASON_GIVEN = "no_reason_given"
-    OTHER = "other"
+class ReturnWillingness(str, Enum):
+    """What was the experiencer's attitude toward returning?"""
+    WILLING = "willing"  # Wanted to return
+    RELUCTANT = "reluctant"  # Did not want to return
+    NEUTRAL = "neutral"  # No strong feeling either way
+    MIXED = "mixed"  # Conflicted feelings
     NOT_MENTIONED = "not_mentioned"
+
+
+class ReturnReasonType(str, Enum):
+    """Individual reason for returning. Use as List field."""
+    EARTHLY_MISSION = "earthly_mission"  # Has a purpose/mission to fulfill
+    FAMILY_RESPONSIBILITY = "family_responsibility"  # Children, spouse, parents need them
+    NOT_YOUR_TIME = "not_your_time"  # Told it wasn't their time
+    UNFINISHED_BUSINESS = "unfinished_business"  # Something left undone
+    OTHER = "other"  # Other reason given
 
 
 class ReturnDescriptionDetail(str, Enum):
@@ -309,18 +353,17 @@ class ReadjustmentDifficulty(str, Enum):
     NOT_MENTIONED = "not_mentioned"
 
 
-class PostAbilityChange(str, Enum):
-    PSYCHIC = "psychic"
-    EMPATHY = "empathy"
-    ELECTRICAL = "electrical"
-    NONE = "none"
-    NOT_MENTIONED = "not_mentioned"
+# PostAbilityChange removed - consolidated into PostExperienceGift
+# which provides a more comprehensive list of post-NDE abilities
 
 
-class BeliefChange(str, Enum):
-    NO_FEAR = "no_fear"
-    SOME_FEAR = "some_fear"
-    NO_CHANGE = "no_change"
+class DeathFearChange(str, Enum):
+    """Change in fear of death after the NDE."""
+    NO_FEAR = "no_fear"  # No longer fears death
+    REDUCED_FEAR = "reduced_fear"  # Less fear than before
+    SOME_FEAR = "some_fear"  # Still has some fear
+    NO_CHANGE = "no_change"  # Fear level unchanged
+    INCREASED_FEAR = "increased_fear"  # More afraid (rare, distressing NDEs)
     NOT_MENTIONED = "not_mentioned"
 
 
@@ -331,33 +374,34 @@ class ValueShift(str, Enum):
     NOT_MENTIONED = "not_mentioned"
 
 
-class SpiritualityShift(str, Enum):
-    MORE_SPIRITUAL = "more_spiritual"
-    MORE_RELIGIOUS = "more_religious"
+class SpiritualityChange(str, Enum):
+    """Change in spirituality after the NDE."""
+    INCREASED = "increased"
+    DECREASED = "decreased"
     NO_CHANGE = "no_change"
-    LESS_RELIGIOUS_MORE_SPIRITUAL = "less_religious_more_spiritual"
+    NOT_MENTIONED = "not_mentioned"
+
+
+class ReligiosityChange(str, Enum):
+    """Change in religious involvement/belief after the NDE."""
+    INCREASED = "increased"
+    DECREASED = "decreased"
+    NO_CHANGE = "no_change"
     NOT_MENTIONED = "not_mentioned"
 
 
 # === Cosmic Knowledge & Pre-Existence Enums ===
 
 
-class IncarnationChoiceType(str, Enum):
-    """Whether the experiencer described choosing to incarnate."""
-    CHOSE_PARENTS = "chose_parents"
-    CHOSE_MISSION = "chose_mission"
-    CHOSE_BOTH = "chose_both"
-    NO_CHOICE = "no_choice"
-    NOT_MENTIONED = "not_mentioned"
+# IncarnationChoiceType removed - split into separate MentionResponse fields:
+# - chose_parents: MentionResponse
+# - chose_mission: MentionResponse
+# - chose_life_circumstances: MentionResponse
 
 
-class FutureKnowledgeType(str, Enum):
-    """Type of future knowledge received."""
-    PERSONAL_FUTURE = "personal_future"
-    GLOBAL_FUTURE = "global_future"
-    BOTH = "both"
-    NONE = "none"
-    NOT_MENTIONED = "not_mentioned"
+# FutureKnowledgeType removed - split into separate MentionResponse fields:
+# - personal_future_knowledge: MentionResponse  
+# - global_future_knowledge: MentionResponse
 
 
 class DeathMemoryType(str, Enum):
@@ -369,22 +413,26 @@ class DeathMemoryType(str, Enum):
     NOT_MENTIONED = "not_mentioned"
 
 
-class SoulAgeType(str, Enum):
-    """Indication of soul age or incarnation history."""
-    OLD_SOUL = "old_soul"
-    NEW_SOUL = "new_soul"
-    FIRST_INCARNATION = "first_incarnation"
-    MANY_LIVES = "many_lives"
+class SoulAgeCharacterization(str, Enum):
+    """How was their soul characterized in terms of age/maturity?"""
+    OLD_SOUL = "old_soul"  # Described as ancient, wise, experienced
+    NEW_SOUL = "new_soul"  # Described as young, new, inexperienced
     NOT_MENTIONED = "not_mentioned"
 
 
-class HomeIdentificationType(str, Enum):
-    """Where the experiencer identified as 'home'."""
+class IncarnationHistory(str, Enum):
+    """What was indicated about their incarnation count/history?"""
+    FIRST_INCARNATION = "first_incarnation"  # This is their first life
+    FEW_LIVES = "few_lives"  # A small number of previous lives
+    MANY_LIVES = "many_lives"  # Many previous incarnations
+    NOT_MENTIONED = "not_mentioned"
+
+
+class HomeIdentificationItem(str, Enum):
+    """Individual home identification. Use as List field."""
     SPIRITUAL_REALM = "spiritual_realm"
     EARTH = "earth"
-    BOTH = "both"
     NEITHER = "neither"
-    NOT_MENTIONED = "not_mentioned"
 
 
 class MissionType(str, Enum):
@@ -447,16 +495,14 @@ class RealityAssessment(str, Enum):
     NOT_MENTIONED = "not_mentioned"
 
 
-class RealmType(str, Enum):
-    """Type of realm or environment experienced."""
+class RealmTypeItem(str, Enum):
+    """Individual realm type experienced. Use as List field."""
     CLEARLY_UNEARTHLY = "clearly_unearthly"
     VAGUELY_UNEARTHLY = "vaguely_unearthly"
     FAMILIAR_EARTHLIKE = "familiar_earthlike"
     HEAVENLY = "heavenly"
     HELLISH = "hellish"
     VOID_DARKNESS = "void_darkness"
-    MULTIPLE_REALMS = "multiple_realms"
-    NOT_MENTIONED = "not_mentioned"
 
 
 class ExperienceValence(str, Enum):
@@ -470,12 +516,22 @@ class ExperienceValence(str, Enum):
     NOT_MENTIONED = "not_mentioned"
 
 
-class VeridicalPerception(str, Enum):
-    """Whether experiencer reported verifiable out-of-body perceptions."""
-    VERIFIED_ACCURATE = "verified_accurate"  # Confirmed accurate OBE observations
-    CLAIMED_UNVERIFIED = "claimed_unverified"  # Claims remote perception but unverified
-    ESP_CLAIMED = "esp_claimed"  # General ESP/remote viewing claimed
-    NONE = "none"
+class VeridicalClaimType(str, Enum):
+    """Individual type of verifiable perception claimed. Use as List field."""
+    OBE_OBSERVATION = "obe_observation"  # Saw events during OBE
+    REMOTE_VIEWING = "remote_viewing"  # Saw distant events
+    FUTURE_EVENT = "future_event"  # Predicted something that came true
+    DECEASED_INFO = "deceased_info"  # Received verifiable info from deceased
+    OTHER = "other"  # Other verifiable claim
+
+
+class VeridicalVerificationStatus(str, Enum):
+    """Was the verifiable claim verified?"""
+    VERIFIED = "verified"  # Confirmed accurate by others
+    PARTIALLY_VERIFIED = "partially_verified"  # Some details confirmed
+    CLAIMED_UNVERIFIED = "claimed_unverified"  # Claimed but not confirmed
+    CONTRADICTED = "contradicted"  # Found to be inaccurate
+    NOT_APPLICABLE = "not_applicable"  # No veridical claim made
     NOT_MENTIONED = "not_mentioned"
 
 
@@ -488,17 +544,16 @@ class BeliefConsistency(str, Enum):
     NOT_MENTIONED = "not_mentioned"
 
 
-class PostExperienceGifts(str, Enum):
-    """Psychic or unusual abilities reported after the NDE."""
-    PSYCHIC_ABILITIES = "psychic_abilities"  # General psychic gifts
-    HEALING_ABILITIES = "healing_abilities"  # Healing touch/energy
-    PRECOGNITION = "precognition"  # Seeing future events
-    MEDIUMSHIP = "mediumship"  # Communication with deceased
-    INCREASED_INTUITION = "increased_intuition"  # Enhanced intuition
-    ELECTRICAL_SENSITIVITY = "electrical_sensitivity"  # Affects electronics
-    MULTIPLE = "multiple"  # Multiple gifts reported
-    NONE = "none"
-    NOT_MENTIONED = "not_mentioned"
+class PostExperienceGift(str, Enum):
+    """Individual psychic or unusual ability reported after NDE. Use as List field."""
+    PSYCHIC_ABILITIES = "psychic_abilities"
+    HEALING_ABILITIES = "healing_abilities"
+    PRECOGNITION = "precognition"
+    MEDIUMSHIP = "mediumship"
+    INCREASED_INTUITION = "increased_intuition"
+    ELECTRICAL_SENSITIVITY = "electrical_sensitivity"
+    ENHANCED_EMPATHY = "enhanced_empathy"
+    OTHER = "other"
 
 
 class NDECause(str, Enum):
@@ -549,6 +604,8 @@ class MaritalStatus(str, Enum):
 
 
 class ReligiousAffiliation(str, Enum):
+    """Broad religious tradition. Use NOT_MENTIONED only when no information provided."""
+
     CHRISTIAN = "christian"
     JEWISH = "jewish"
     MUSLIM = "muslim"
@@ -558,6 +615,23 @@ class ReligiousAffiliation(str, Enum):
     SPIRITUAL_NOT_RELIGIOUS = "spiritual_not_religious"
     OTHER = "other"
     NOT_MENTIONED = "not_mentioned"
+
+
+class ChristianDenomination(str, Enum):
+    """
+    Christian denomination categories. These have significant theological
+    differences regarding afterlife beliefs that may influence NDE interpretation.
+    """
+
+    CATHOLIC = "catholic"  # Roman Catholic - purgatory, saints, intercession
+    ORTHODOX = "orthodox"  # Eastern/Greek/Russian Orthodox - theosis tradition
+    MAINLINE_PROTESTANT = "mainline_protestant"  # Methodist, Lutheran, Presbyterian, Episcopal
+    EVANGELICAL_BAPTIST = "evangelical_baptist"  # Baptist, Pentecostal, Assembly of God, non-denom evangelical
+    MORMON_LDS = "mormon_lds"  # Latter-day Saints - three kingdoms, pre-existence
+    JEHOVAHS_WITNESS = "jehovahs_witness"  # No immortal soul doctrine
+    SEVENTH_DAY_ADVENTIST = "seventh_day_adventist"  # Soul sleep doctrine
+    OTHER_CHRISTIAN = "other_christian"  # Quaker, Unitarian, etc.
+    NOT_SPECIFIED = "not_specified"  # Christian but denomination not mentioned
 
 
 class CanonicalSequenceAdherence(str, Enum):
@@ -606,21 +680,25 @@ class OutOfBodyExperience(QuestionnaireBaseModel):
     vantage_other_detail: Optional[str] = Field(
         None, description="Detail when 'other' vantage is selected."
     )
-    observation_accuracy: ObservationVerification = Field(
+    observations_made: OBEObservationsMade = Field(
         ...,
-        description="Q1.1.3 — Did they report observing events and were they verified?",
+        description="Q1.1.3 — Did they report observing real-world events during OBE?",
+    )
+    observations_verified: OBEObservationsVerified = Field(
+        ...,
+        description="Q1.1.4 — Were the OBE observations verified by others?",
     )
     heightened_perception: MentionResponse = Field(
         ...,
-        description="Q1.1.4 — Sense of enhanced clarity or heightened perception.",
+        description="Q1.1.5 — Sense of enhanced clarity or heightened perception.",
     )
     identity_continuity: IdentityContinuity = Field(
         ...,
-        description="Q1.1.5 — Continuity of identity and self-awareness during the OBE.",
+        description="Q1.1.6 — Continuity of identity and self-awareness during the OBE.",
     )
     separation_sensations: List[SeparationSensation] = Field(
         default_factory=list,
-        description="Q1.1.6 — Sensations accompanying separation from the body.",
+        description="Q1.1.7 — Sensations accompanying separation from the body.",
     )
     separation_sensations_other: Optional[str] = Field(
         None, description="Detail for other separation sensations."
@@ -657,9 +735,9 @@ class ArrivalExperience(QuestionnaireBaseModel):
         ...,
         description="Q1.3.1 — Emergence into a new environment or realm.",
     )
-    light_encounter: List[LightEncounter] = Field(
-        default_factory=list,
-        description="Q1.3.2 — Encounter with light, being of light, or presence of love.",
+    light_encounter: LightEncounter = Field(
+        ...,
+        description="Q1.3.2 — Encounter with light or being of light. If both light and a being of light are described, select being_of_light (it implies the light).",
     )
     being_identifications: List[BeingIdentification] = Field(
         default_factory=list,
@@ -677,7 +755,7 @@ class ArrivalExperience(QuestionnaireBaseModel):
     )
     sense_of_belonging: BelongingSense = Field(
         ...,
-        description="Q1.3.4 (duplicate number) — Sense of coming home or belonging.",
+        description="Q1.3.5 — Sense of coming home or belonging.",
     )
 
 
@@ -718,17 +796,21 @@ class EncountersSection(QuestionnaireBaseModel):
         default_factory=list,
         description="Q2.2.2 — Encounters with guides, angels, or religious figures.",
     )
-    communication_mode: CommunicationMode = Field(
-        ...,
-        description="Q2.2.3 — Mode of communication with beings.",
+    communication_modes: List[CommunicationModeItem] = Field(
+        default_factory=list,
+        description="Q2.2.3 — Modes of communication with beings (can include multiple).",
     )
-    guidance_level: GuidanceLevel = Field(
+    guidance_received: GuidanceReceived = Field(
         ...,
-        description="Q2.2.4 — Whether beings provided guidance or comfort.",
+        description="Q2.2.4 — Was guidance received from beings?",
+    )
+    guidance_types: List[GuidanceTypeItem] = Field(
+        default_factory=list,
+        description="Q2.2.5 — Types of guidance received (empty list if none).",
     )
     other_souls_presence: OtherSoulsPresence = Field(
         ...,
-        description="Q2.2.5 — Presence of other souls not personally known.",
+        description="Q2.2.6 — Presence of other souls not personally known.",
     )
 
 
@@ -754,9 +836,9 @@ class LifeReviewSection(QuestionnaireBaseModel):
         ...,
         description="Q3.1.1 — Whether a life review occurred.",
     )
-    presentation: LifeReviewPresentation = Field(
-        ...,
-        description="Q3.1.2 — How the life review was presented.",
+    presentation_modes: List[LifeReviewPresentationItem] = Field(
+        default_factory=list,
+        description="Q3.1.2 — How the life review was presented (can include multiple modes).",
     )
     perspective_of_others: MentionResponse = Field(
         ...,
@@ -795,17 +877,25 @@ class CosmicKnowledgeSection(QuestionnaireBaseModel):
         ...,
         description="Q3.2.2 — Did they describe a pre-birth spiritual realm?",
     )
-    incarnation_choice: IncarnationChoiceType = Field(
+    chose_parents: MentionResponse = Field(
         ...,
-        description="Q3.2.3 — Did they describe choosing to incarnate (parents/mission/both)?",
+        description="Q3.2.3 — Did they describe choosing their parents?",
+    )
+    chose_mission: MentionResponse = Field(
+        ...,
+        description="Q3.2.4 — Did they describe choosing a mission/purpose before birth?",
+    )
+    chose_life_circumstances: MentionResponse = Field(
+        ...,
+        description="Q3.2.5 — Did they describe choosing life circumstances (time, place, challenges)?",
     )
     life_preview: MentionResponse = Field(
         ...,
-        description="Q3.2.4 — Were they shown a preview of this life before birth?",
+        description="Q3.2.6 — Were they shown a preview of this life before birth?",
     )
     pre_incarnation_covenant: MentionResponse = Field(
         ...,
-        description="Q3.2.5 — Memory of a contract/agreement made before birth?",
+        description="Q3.2.7 — Memory of a contract/agreement made before birth?",
     )
     
     # Cosmic/Universal Knowledge
@@ -817,13 +907,17 @@ class CosmicKnowledgeSection(QuestionnaireBaseModel):
         ...,
         description="Q3.3.2 — Understanding of how the universe works?",
     )
-    future_knowledge: FutureKnowledgeType = Field(
+    personal_future_knowledge: MentionResponse = Field(
         ...,
-        description="Q3.3.3 — Information about future events (personal/global/both)?",
+        description="Q3.3.3 — Did they receive information about their personal future?",
+    )
+    global_future_knowledge: MentionResponse = Field(
+        ...,
+        description="Q3.3.4 — Did they receive information about global/world future events?",
     )
     purpose_of_existence: MentionResponse = Field(
         ...,
-        description="Q3.3.4 — Understanding of why existence/creation exists?",
+        description="Q3.3.5 — Understanding of why existence/creation exists?",
     )
     
     # Reincarnation Markers (for Restorative vs. Volunteer discrimination)
@@ -839,15 +933,19 @@ class CosmicKnowledgeSection(QuestionnaireBaseModel):
         ...,
         description="Q3.4.3 — Memory of time between lives (intermission)?",
     )
-    soul_age_indication: SoulAgeType = Field(
+    soul_age_characterization: SoulAgeCharacterization = Field(
         ...,
-        description="Q3.4.4 — Any indication of soul age or incarnation history?",
+        description="Q3.4.4 — How was their soul characterized (old/new)?",
+    )
+    incarnation_history: IncarnationHistory = Field(
+        ...,
+        description="Q3.4.5 — What was indicated about incarnation count/history?",
     )
     
     # Ontological Markers (soul type indicators)
-    home_identification: HomeIdentificationType = Field(
-        ...,
-        description="Q3.5.1 — Where did they identify as 'home' (spiritual realm/earth/both)?",
+    home_identifications: List[HomeIdentificationItem] = Field(
+        default_factory=list,
+        description="Q3.5.1 — Where did they identify as 'home'? (empty list if not mentioned)",
     )
     earth_alienation: MentionResponse = Field(
         ...,
@@ -864,13 +962,17 @@ class BoundarySection(QuestionnaireBaseModel):
         ...,
         description="Q4.1.1 — Encountering a boundary or point of no return.",
     )
-    return_choice: ReturnChoice = Field(
+    return_agency: ReturnAgency = Field(
         ...,
-        description="Q4.1.2 — Whether there was a choice involved in returning.",
+        description="Q4.1.2 — Who made the decision to return?",
     )
-    return_reason: ReturnReason = Field(
+    return_willingness: ReturnWillingness = Field(
         ...,
-        description="Q4.1.3 — Reason provided for the return.",
+        description="Q4.1.3 — What was the experiencer's attitude toward returning?",
+    )
+    return_reasons: List[ReturnReasonType] = Field(
+        default_factory=list,
+        description="Q4.1.4 — Reasons provided for the return (can be multiple).",
     )
     return_reason_other_detail: Optional[str] = Field(
         None, description="Detail for other reasons to return."
@@ -914,21 +1016,22 @@ class AftereffectsSection(QuestionnaireBaseModel):
         ...,
         description="Q5.1.1 — Difficulty readjusting to physical reality.",
     )
-    post_ability_changes: List[PostAbilityChange] = Field(
-        default_factory=list,
-        description="Q5.1.2 — Reported abilities or sensitivities after the NDE.",
-    )
-    belief_change: BeliefChange = Field(
+    # Note: post_experience_gifts moved to ExperienceQualitySection to avoid duplication
+    death_fear_change: DeathFearChange = Field(
         ...,
-        description="Q5.2.1 — Change in beliefs about death.",
+        description="Q5.2.1 — Change in fear of death after the NDE.",
     )
     value_shift: ValueShift = Field(
         ...,
         description="Q5.2.2 — Changes in values, priorities, or life purpose.",
     )
-    spirituality_shift: SpiritualityShift = Field(
+    spirituality_change: SpiritualityChange = Field(
         ...,
-        description="Q5.2.3 — Changes in spirituality or religious involvement.",
+        description="Q5.2.3 — Change in spirituality after the NDE.",
+    )
+    religiosity_change: ReligiosityChange = Field(
+        ...,
+        description="Q5.2.4 — Change in religious involvement after the NDE.",
     )
 
 
@@ -977,9 +1080,9 @@ class ExperienceQualitySection(QuestionnaireBaseModel):
     )
     
     # Realm Classification
-    realm_type: RealmType = Field(
-        ...,
-        description="Q5.3.8 — Type of realm or environment experienced.",
+    realm_types: List[RealmTypeItem] = Field(
+        default_factory=list,
+        description="Q5.3.8 — Types of realm or environment experienced (empty list if not mentioned).",
     )
     
     # Overall Valence
@@ -989,27 +1092,31 @@ class ExperienceQualitySection(QuestionnaireBaseModel):
     )
     
     # Veridical/Paranormal Markers
-    veridical_perception: VeridicalPerception = Field(
+    veridical_claim_types: List[VeridicalClaimType] = Field(
+        default_factory=list,
+        description="Q5.3.10 — Types of verifiable perception claimed (can be multiple).",
+    )
+    veridical_verification: VeridicalVerificationStatus = Field(
         ...,
-        description="Q5.3.10 — Did they report verifiable OBE observations or ESP?",
+        description="Q5.3.11 — Were the verifiable claims verified?",
     )
     
     # Belief-Experience Alignment (cultural influence analysis)
     belief_consistency: BeliefConsistency = Field(
         ...,
-        description="Q5.3.11 — Was the experience consistent with prior religious/spiritual beliefs?",
+        description="Q5.3.12 — Was the experience consistent with prior religious/spiritual beliefs?",
     )
     
     # Post-Experience Paranormal Gifts
-    post_experience_gifts: PostExperienceGifts = Field(
-        ...,
-        description="Q5.3.12 — Any psychic or unusual abilities reported after the NDE?",
+    post_experience_gifts: List[PostExperienceGift] = Field(
+        default_factory=list,
+        description="Q5.3.13 — Psychic or unusual abilities reported after the NDE.",
     )
     
     # Multiple NDE Flag
     multiple_ndes: MentionResponse = Field(
         ...,
-        description="Q5.3.13 — Has the experiencer had more than one NDE?",
+        description="Q5.3.14 — Has the experiencer had more than one NDE?",
     )
 
 
@@ -1055,32 +1162,60 @@ class PersonDemographicsSection(QuestionnaireBaseModel):
     nationality_ethnicity: Optional[str] = Field(
         None, description="Q6.2.4 — Nationality or ethnicity if mentioned."
     )
-    religious_affiliation: ReligiousAffiliation = Field(
+
+    # Religious Background (what raised in / family religion)
+    religious_background: ReligiousAffiliation = Field(
         ...,
-        description="Q6.2.5 — Religious affiliation or spiritual background.",
+        description="Q6.2.5a — Religious tradition the experiencer was RAISED in or family religion. "
+        "This captures childhood/formative religious exposure regardless of current belief.",
     )
-    religious_affiliation_detail: Optional[str] = Field(
-        None, description="Detail for Christian denomination or other religious affiliation."
+    religious_background_denomination: Optional[ChristianDenomination] = Field(
+        None,
+        description="Q6.2.5b — If religious_background is CHRISTIAN, specify denomination.",
     )
+    religious_background_detail: Optional[str] = Field(
+        None,
+        description="Q6.2.5c — Additional detail for background (e.g., 'strict Catholic family', "
+        "'Reform Jewish', 'Sunni Muslim').",
+    )
+
+    # Religious Belief at Time of NDE (active belief/practice when NDE occurred)
+    religious_belief_at_nde: ReligiousAffiliation = Field(
+        ...,
+        description="Q6.2.6a — Religious belief or practice ACTIVE at the time of the NDE. "
+        "May differ from background (e.g., raised Catholic but atheist at time of NDE). "
+        "Use SPIRITUAL_NOT_RELIGIOUS if they explicitly rejected organized religion but "
+        "maintained spiritual beliefs. Use ATHEIST_AGNOSTIC if they explicitly had no "
+        "religious/spiritual beliefs at the time.",
+    )
+    religious_belief_at_nde_denomination: Optional[ChristianDenomination] = Field(
+        None,
+        description="Q6.2.6b — If religious_belief_at_nde is CHRISTIAN, specify denomination.",
+    )
+    religious_belief_at_nde_detail: Optional[str] = Field(
+        None,
+        description="Q6.2.6c — Additional detail for belief at time of NDE.",
+    )
+
     occupation: Optional[str] = Field(
-        None, description="Q6.2.6 — Occupation or professional background."
+        None, description="Q6.2.7 — Occupation or professional background."
     )
     education_level: Optional[str] = Field(
-        None, description="Q6.2.7 — Highest educational level mentioned."
+        None, description="Q6.2.8 — Highest educational level mentioned."
     )
     marital_status: MaritalStatus = Field(
         ...,
-        description="Q6.2.8 — Marital status if mentioned.",
+        description="Q6.2.9 — Marital status if mentioned.",
     )
     has_children: Optional[bool] = Field(
-        None, description="Q6.2.8 — Whether the experiencer has children."
+        None, description="Q6.2.10 — Whether the experiencer has children."
     )
     number_of_children: Optional[int] = Field(
-        None, ge=0, description="Q6.2.8 — Number of children if specified."
+        None, ge=0, description="Q6.2.10 — Number of children if specified."
     )
     prior_nde_knowledge: PriorKnowledgeStatus = Field(
         ...,
-        description="Q6.2.9 — Prior knowledge or belief in NDEs.",
+        description="Q6.2.11 — Prior knowledge or belief in NDEs.",
     )
 
     @model_validator(mode="after")
