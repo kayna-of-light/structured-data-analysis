@@ -1,20 +1,23 @@
 # IANDS Test Samples Registry
-# Selected 2 diverse NDE accounts for extraction optimization testing
+# Selected diverse NDE accounts for extraction optimization testing
 #
 # Expected Classifications:
 # LOVE: hiker-has-merging-experience (merging/love experience)
 # SHAME_OR_REGRET: young-man-in-diving-accident ("life has been lived to placate others")
+# JUDGMENT TEST: archive-through-april-10-2003-019 - Buddha shows images of life (should be guide_or_light)
 
 name: iands_test_samples
 description: Selected IANDS samples for extraction optimization testing
-version: "1.0.0"
+version: "1.1.0"
 
 datasets:
   iands:
-    description: IANDS test samples (2 files)
+    description: IANDS test samples (3 files)
     source_path: ../../../data/iands
     files:
       # LOVE - merging/love experience - should be LOVE
       - hiker-has-merging-experience-during-near-fatal-fall.json
       # SHAME_OR_REGRET - "life has been lived to placate others" - self-judgment theme
       - young-man-in-diving-accident-is-shown-his-life-has-been-lived-to-placate-others.json
+      # JUDGMENT - Buddha shows images of pregnant girlfriend, family - should be guide_or_light (not not_mentioned)
+      - archive-through-april-10-2003-019.json

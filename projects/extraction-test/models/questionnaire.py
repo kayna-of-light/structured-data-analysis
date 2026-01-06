@@ -227,11 +227,24 @@ class LifeReviewPresentation(str, Enum):
     NOT_SPECIFIED = "not_specified"
 
 
-class ReviewJudgment(str, Enum):
-    GUIDE_OR_LIGHT = "guide_or_light"
-    SELF = "self_judgment"
-    NONE = "none"
-    NOT_MENTIONED = "not_mentioned"
+class JudgmentSource(str, Enum):
+    """Who passed judgment during the life review?"""
+    SELF = "self"  # Experiencer judged themselves
+    BEING_OF_LIGHT = "being_of_light"  # Being of Light evaluated
+    GUIDE_OR_ENTITY = "guide_or_entity"  # Other spiritual guide or entity
+    DECEASED_RELATIVE = "deceased_relative"  # Family member or friend who passed
+    NONE = "none"  # Explicitly stated no judgment occurred
+    NOT_MENTIONED = "not_mentioned"  # Account doesn't address judgment
+
+
+class JudgmentIntensity(str, Enum):
+    """How intense/severe was the judgment?"""
+    LOVING_GENTLE = "loving_gentle"  # Supportive, educational, compassionate
+    NEUTRAL = "neutral"  # Matter-of-fact observation without emotional weight
+    UNCOMFORTABLE = "uncomfortable"  # Caused shame/regret but not condemning
+    HARSH_CONDEMNING = "harsh_condemning"  # Punitive, hellish, fear-inducing
+    NOT_APPLICABLE = "not_applicable"  # No judgment occurred (source=none)
+    NOT_SPECIFIED = "not_specified"  # Judgment happened but intensity unclear
 
 
 class ReviewEmotionalTone(str, Enum):
@@ -749,13 +762,17 @@ class LifeReviewSection(QuestionnaireBaseModel):
         ...,
         description="Q3.1.3 — Experiencing emotions/perspectives of others.",
     )
-    judgment: ReviewJudgment = Field(
+    judgment_source: JudgmentSource = Field(
         ...,
-        description="Q3.1.4 — Presence of judgment or evaluation.",
+        description="Q3.1.4 — Who passed judgment during the life review?",
+    )
+    judgment_intensity: JudgmentIntensity = Field(
+        ...,
+        description="Q3.1.5 — How intense or severe was the judgment?",
     )
     emotional_tone: ReviewEmotionalTone = Field(
         ...,
-        description="Q3.1.5 — Emotional tone of the life review.",
+        description="Q3.1.6 — Emotional tone of the life review.",
     )
 
 
