@@ -397,16 +397,127 @@ The new schema provides these advantages over the archived notebooks:
 | 2026-01-06 | Plan created | Initial structure |
 | 2026-01-06 | All 7 notebooks analyzed | Complete analysis of archived content |
 | 2026-01-06 | Proposed structure defined | 4 new notebooks replacing 7 archived |
+| 2026-01-06 | Schema review complete | Reviewed questionnaire.py and schema changes doc |
+| 2026-01-06 | Starting notebook creation | Beginning with 01_being_of_light_analysis.ipynb |
+| 2026-01-06 | Notebook 01 COMPLETE | 27 cells, 1,143 lines - Being of Light / Conceptual Framework |
+| 2026-01-06 | Notebook 02 COMPLETE | 23 cells, 924 lines - Normative Path Validation |
+| 2026-01-06 | Notebook 03 COMPLETE | 19 cells, 756 lines - Soul Path Classification |
+| 2026-01-06 | Notebook 04 COMPLETE | 19 cells, 779 lines - Volunteer Soul Profile |
+
+---
+
+## Completeness Comparison: New vs Archived Notebooks
+
+### Coverage Matrix
+
+| Archived Analysis | Source Notebook(s) | New Location | Status |
+|-------------------|-------------------|--------------|--------|
+| **Being of Light Analyses** | | | |
+| Light Being vs Other Beings distinction | conceptual_framework | 01_being_of_light | ✅ |
+| Monotheistic pattern (singular being) | conceptual_framework | 01_being_of_light | ✅ |
+| Love vs Judgment analysis | conceptual_framework | 01_being_of_light | ✅ |
+| Personal entity markers | conceptual_framework | 01_being_of_light | ✅ |
+| Belief correction mechanism | conceptual_framework | 01_being_of_light | ✅ |
+| Cultural interpretation analysis | conceptual_framework, light_being | 01_being_of_light | ✅ |
+| Cross-cultural validation | conceptual_framework | 01_being_of_light | ✅ |
+| Predictive modeling (ML) | conceptual_framework | 01_being_of_light | ✅ |
+| Light phenomenology (tunnel, arrival) | light_being | 01_being_of_light | ✅ |
+| Demographics (gender, age) | light_being | 01_being_of_light | ✅ |
+| **Normative Path Analyses** | | | |
+| Return as exception pattern | conceptual_framework | 02_normative_path | ✅ |
+| Deceased relatives present | conceptual_framework | 02_normative_path | ✅ |
+| Identity/memory preservation | conceptual_framework | 02_normative_path | ✅ |
+| Reincarnation indicators | conceptual_framework | 02_normative_path | ✅ |
+| 4-stage journey validation | threefold_path | 02_normative_path | ✅ |
+| Death fear transformation | threefold_path | 02_normative_path | ✅ |
+| **Soul Path Classification** | | | |
+| Volunteer identification criteria | volunteer_discriminant | 03_soul_path | ✅ |
+| Return reason analysis | volunteer_discriminant | 03_soul_path | ✅ |
+| Volunteer language detection | volunteer_discriminant | 03_soul_path | ✅ |
+| Pre-birth indicators (Ohkado) | ohkado_pattern | 03_soul_path | ✅ |
+| Trauma markers (Restorative) | volunteer_discriminant | 03_soul_path | ✅ |
+| Multi-path classification | volunteer_discriminant | 03_soul_path | ✅ |
+| Discriminant analysis (LDA, RF) | volunteer_discriminant | 03_soul_path | ✅ |
+| **Volunteer Soul Profile** | | | |
+| Demographic profile | volunteer_soul_profile | 04_volunteer_soul | ✅ |
+| NDE phenomenology comparison | volunteer_soul_profile | 04_volunteer_soul | ✅ |
+| Return dynamics analysis | volunteer_soul_profile | 04_volunteer_soul | ✅ |
+| Mission content analysis | volunteer_soul_profile | 04_volunteer_soul | ✅ |
+| Transformation profile | volunteer_soul_profile | 04_volunteer_soul | ✅ |
+
+### Schema Improvements Applied
+
+| New Schema Field | Archived Field | Applied In |
+|------------------|---------------|------------|
+| `judgment_source` + `judgment_intensity` + `review_emotional_tone` | Single judgment field | 01_being_of_light |
+| `death_fear_before` + `death_fear_after` | Change only | 01, 02, 04 |
+| `spirituality_before` + `spirituality_after` | Change only | 01, 02, 04 |
+| `return_agency` + `return_willingness` | Combined field | 02, 03, 04 |
+| `chose_parents` + `chose_mission` + `chose_life_circumstances` | Combined field | 03, 04 |
+| `guidance_types` (List) | N/A | 01, 04 |
+| `return_reasons` (List) | N/A | 02, 03, 04 |
+| `communication_mode` (List) | N/A | 01 |
+| `doctrine_consistency` vs `personal_expectation_consistency` | Combined field | 01 |
+
+### Removed / Not Carried Forward
+
+| Item | Reason |
+|------|--------|
+| `nde_statistical_analysis.ipynb` | Empty notebook - no content |
+| Duplicate CFT Tests 1-4 | Existed in both conceptual_framework and light_being - consolidated to 01 |
+| Duplicate religious cross-tabs | Existed in both conceptual_framework and light_being - consolidated to 01 |
+| Report generation cells | Will be separate report generation step |
+
+### New Analyses Added (not in archived)
+
+| Analysis | Notebook | Schema Feature Used |
+|----------|----------|---------------------|
+| Baseline vs outcome comparison (not just change) | 01, 02, 04 | `*_before` + `*_after` temporal fields |
+| Independent return dimensions | 02, 03, 04 | `return_agency` × `return_willingness` matrix |
+| Pre-birth choice decomposition | 03, 04 | Split `chose_*` fields |
+| Multi-value guidance analysis | 01, 04 | `guidance_types` List field |
+| Multi-value return reason analysis | 02, 03, 04 | `return_reasons` List field |
+| Judgment WHO vs HOW SEVERE separation | 01 | Split judgment fields |
+
+### Line Count Comparison
+
+| Metric | Archived | New | Change |
+|--------|----------|-----|--------|
+| Total notebooks | 7 | 4 | -3 |
+| Total cells | ~215 | 88 | -127 |
+| Total lines | ~10,382 | 3,602 | -6,780 |
+| Unique analyses | ~35 | ~35 | 0 |
+| Duplicated analyses | ~12 | 0 | -12 |
+
+**Result**: The new notebooks consolidate all unique analyses from the archived notebooks while eliminating duplicates and leveraging the improved schema fields.
 
 ---
 
 ## Next Steps
 
-1. [ ] Review proposed notebook structure with user
-2. [ ] Create `01_being_of_light_analysis.ipynb` 
-3. [ ] Create `02_normative_path_validation.ipynb`
-4. [ ] Create `03_soul_path_classification.ipynb`
-5. [ ] Create `04_volunteer_soul_profile.ipynb`
+1. [x] Review proposed notebook structure with user
+2. [x] Create `01_being_of_light_analysis.ipynb` ← COMPLETE (27 cells, 1,143 lines)
+3. [x] Create `02_normative_path_validation.ipynb` ← COMPLETE (23 cells, 924 lines)
+4. [x] Create `03_soul_path_classification.ipynb` ← COMPLETE (19 cells, 756 lines)
+5. [x] Create `04_volunteer_soul_profile.ipynb` ← COMPLETE (19 cells, 779 lines)
 6. [ ] Compare new notebooks to archived versions for completeness
 7. [ ] Generate updated reports from new notebooks
+
+---
+
+## Schema Key Changes to Leverage
+
+From `questionnaire_schema_changes_2026-01-06.md`:
+
+| New Capability | Analysis Opportunity |
+|---------------|---------------------|
+| `death_fear_before` + `death_fear_after` | Baseline comparison, not just "change" |
+| `spirituality_before/after` vs `religiosity_before/after` | Independent dimensions, inverse relationships |
+| `JudgmentSource` + `JudgmentIntensity` + `ReviewEmotionalTone` | Separate WHO, HOW SEVERE, and EXPERIENCER'S FEELINGS |
+| `DoctrineConsistency` vs `PersonalExpectationConsistency` | Official vs personal belief alignment |
+| `ReturnAgency` + `ReturnWillingness` | Sent back but willing vs chose but reluctant |
+| `religious_background` vs `religious_belief_at_nde` | Childhood vs current beliefs |
+| Christian denomination detail | Catholic vs Evangelical vs Mormon phenomenology |
+| `chose_parents`, `chose_mission`, `chose_life_circumstances` | Independent binary fields |
+| List fields for multi-value data | Proper counting, no "multiple" enum values |
 
