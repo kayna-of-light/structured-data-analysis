@@ -1,23 +1,50 @@
 # IANDS Test Samples Registry
 # Selected diverse NDE accounts for extraction optimization testing
 #
-# Expected Classifications:
-# LOVE: hiker-has-merging-experience (merging/love experience)
-# SHAME_OR_REGRET: young-man-in-diving-accident ("life has been lived to placate others")
-# JUDGMENT TEST: archive-through-april-10-2003-019 - Buddha shows images of life (should be guide_or_light)
+# Schema Features Tested:
+# - emotional_tone: LOVE, SHAME_OR_REGRET, MIXED
+# - judgment_source + judgment_intensity split
+# - light_encounter precedence (being_of_light > brilliant_light)
+# - communication_modes as List (telepathic + normal_speech)
+# - presentation_modes as List (panoramic + sequential)
+# - pre-existence/volunteer markers
+# - distressing NDE handling
 
 name: iands_test_samples
-description: Selected IANDS samples for extraction optimization testing
-version: "1.1.0"
+description: Selected IANDS samples for comprehensive schema testing
+version: "2.0.0"
 
 datasets:
   iands:
-    description: IANDS test samples (3 files)
+    description: IANDS test samples (8 files)
     source_path: ../../../data/iands
     files:
-      # LOVE - merging/love experience - should be LOVE
+      # === EMOTIONAL TONE TESTS ===
+      # LOVE - merging/love experience
       - hiker-has-merging-experience-during-near-fatal-fall.json
       # SHAME_OR_REGRET - "life has been lived to placate others" - self-judgment theme
       - young-man-in-diving-accident-is-shown-his-life-has-been-lived-to-placate-others.json
-      # JUDGMENT - Buddha shows images of pregnant girlfriend, family - should be guide_or_light (not not_mentioned)
+      
+      # === JUDGMENT SOURCE/INTENSITY TESTS ===
+      # Buddha shows images of pregnant girlfriend - tests judgment_source: guide_or_entity
       - archive-through-april-10-2003-019.json
+      
+      # === LIGHT ENCOUNTER PRECEDENCE TEST ===
+      # "being of light" mentioned - should select being_of_light over brilliant_light
+      - archive-through-december-5-2003-001.json
+      
+      # === COMMUNICATION MODES LIST TEST ===
+      # Mixed communication - 360-degree vision experience with varied communication
+      - 360-degree-vision.json
+      
+      # === LIFE REVIEW PRESENTATION LIST TEST ===
+      # Panoramic life review - tests presentation_modes extraction
+      - archive-through-january-3-2005-008.json
+      
+      # === PRE-EXISTENCE / VOLUNTEER MARKERS TEST ===
+      # "chose this life" / volunteer language - tests cosmic_knowledge section
+      - archive-through-august-11-2003-021.json
+      
+      # === DISTRESSING NDE TEST ===
+      # Distressing/terrifying experience - tests negative valence handling
+      - archive-through-august-11-2003-002.json
