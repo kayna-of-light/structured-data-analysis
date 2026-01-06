@@ -2,15 +2,15 @@
 
 ## Abstract
 
-**Background**: Near-death experiences (NDEs) are often described as following a characteristic sequence—passage through darkness/tunnel, arrival in a realm of light, encounter with beings, life review, and return decision. Whether this sequence reflects a genuine structural pattern or post-hoc narrative reconstruction remains debated. The Swedenborgian framework proposes a specific normative path: most souls continue to a spiritual existence, with reincarnation representing an exceptional rather than universal pattern.
+Near-death experiences are often described as following a characteristic sequence—passage through darkness or tunnel, arrival in a realm of light, encounter with beings, life review, and return decision. Whether this sequence reflects a genuine structural pattern or post-hoc narrative reconstruction remains debated. The Swedenborgian framework proposes a specific normative path: most souls continue to permanent spiritual existence, with reincarnation representing an exceptional rather than universal pattern.
 
-**Methods**: We analyzed 6,753 NDE records from NDERF (n=5,664) and IANDS (n=1,089) coded for return patterns, being encounters, life review characteristics, and transformation markers using GPT-5.2 structured extraction with a questionnaire schema containing 52 extracted features. Key schema innovations include separating return *agency* (who decided) from return *willingness* (how they felt), enabling new analytical distinctions.
+We analyzed 6,753 NDE records from NDERF (n=5,664) and IANDS (n=1,089) coded for return patterns, being encounters, life review characteristics, and transformation markers using GPT-5.2 structured extraction with a Pydantic schema containing 52 extracted features.
 
-**Results**: Return agency analysis revealed 70.1% did NOT return by their own choice (external_being 28.6% + involuntary 21.1%). Among those with willingness data, 49.4% were reluctant to return. Deceased relatives were encountered in 17.9% of cases—evidence that these individuals *continued* rather than reincarnated. Reincarnation indicators were rare: past life memory 4.4%, intermission memory 1.0%, pre-incarnation covenant 0.7%. Life review occurred in 17.5% of cases with loving/gentle judgment (3.3%) vastly exceeding harsh (0.2%)—a 16.5:1 ratio.
+Among experiencers with willingness data, 49.4% were reluctant to return—suggesting the spiritual realm is genuinely preferable to earthly existence. Deceased relatives were encountered in 17.9% of cases, a finding with significant implications: if reincarnation were normative, these relatives would not be available for encounters. Reincarnation indicators proved rare across the corpus—past life memory 4.4%, intermission memory 1.0%, pre-incarnation covenant 1.3%—consistent with reincarnation as exception rather than rule. Life review occurred in 17.5% of cases with loving judgment vastly exceeding harsh judgment (15.9:1 ratio).
 
-**Conclusions**: Five of five markers support the Normative Path Hypothesis: return is typically involuntary (70.1%), experiencers are reluctant (49.4%), deceased relatives are present (17.9%), and reincarnation indicators are rare (<5%). This supports the Swedenborgian model: continuation is normative; reincarnation is exceptional.
+Four markers support the Normative Path Hypothesis: experiencer reluctance to leave the spiritual realm, deceased relatives present and recognizable, rare reincarnation indicators, and preserved identity throughout the experience. The data support a model in which continuation is normative and reincarnation is exceptional.
 
-**Keywords**: near-death experience, normative path, return agency, continuation hypothesis, Swedenborg, World of Spirits
+---
 
 ## Data Provenance
 
@@ -28,35 +28,23 @@
 
 ### 1.1 Background
 
-Near-death experiences consistently feature recognizable elements: out-of-body experiences, tunnel passage, light encounters, meetings with deceased relatives, life reviews, and return decisions (Moody, 1975; Ring, 1980; Greyson, 2003). Whether these elements follow a consistent sequential structure—and what such structure might imply about the nature of the experience—remains contested.
+Near-death experiences consistently feature recognizable elements: out-of-body experiences, tunnel passage, light encounters, meetings with deceased relatives, life reviews, and return decisions. Raymond Moody's pioneering research identified these core features (Moody, 1975), and subsequent studies by Kenneth Ring, Bruce Greyson, and others have confirmed their prevalence while documenting substantial individual variation (Ring, 1980; Greyson, 2003).
 
-Kenneth Ring's original work identified five stages: peace, body separation, entering darkness, seeing light, and entering light (Ring, 1980). Subsequent research has generally confirmed this progression while acknowledging substantial individual variation. The question remains: is this structure inherent to the phenomenon, or is it imposed through narrative reconstruction and cultural expectation?
+Ring's original work identified five stages: peace, body separation, entering darkness, seeing light, and entering light. This sequential structure raises fundamental questions about the nature of the experience. Is the structure inherent to the phenomenon—a genuine feature of post-mortem existence briefly glimpsed—or is it imposed through narrative reconstruction after the fact? Cultural expectations might shape how experiencers organize and report their memories; alternatively, the consistency of structure across cultures might indicate something objective about the territory traversed.
 
 ### 1.2 Theoretical Framework
 
-Emanuel Swedenborg's 18th-century accounts of the spiritual world describe a post-mortem journey with distinctive stages (Swedenborg, 1758). The newly deceased first enter the "World of Spirits"—an intermediate realm resembling earthly life—where they undergo a process of self-revelation and instruction. During this period:
+Emanuel Swedenborg's eighteenth-century accounts of the spiritual world describe a post-mortem journey with distinctive stages (Swedenborg, 1758). According to Swedenborg, the newly deceased first enter a transitional realm he called the "World of Spirits"—an intermediate zone resembling earthly life where individuals undergo a process of self-revelation and instruction. This process unfolds in stages: first an external stage where the person appears much as they did in earthly life; then an internal stage where true character is progressively revealed; and finally an instruction stage preparing for permanent placement. The process culminates in individuals gravitating toward communities that match their "ruling love"—their fundamental orientation either toward self or toward the neighbor.
 
-1. **First Stage (External)**: The person appears much as they did in earthly life
-2. **Second Stage (Internal)**: The true character is progressively revealed
-3. **Third Stage (Instruction)**: Preparation for final placement
+Critically, Swedenborg's framework proposes that continuation is normative. Most souls proceed to permanent spiritual existence rather than returning to physical embodiment. Reincarnation, when it occurs, represents an exception serving specific purposes—restorative healing from traumatic death, or volunteer mission requiring physical presence. This contrasts sharply with frameworks in which reincarnation is universal and cyclical.
 
-The process culminates in individuals gravitating toward communities that match their "ruling love"—their fundamental orientation either toward self or toward the neighbor.
+This generates testable predictions about NDE phenomenology. If the spiritual realm is genuinely preferable to earthly existence, experiencers who glimpse it should be reluctant to leave. If continuation rather than reincarnation is the norm, deceased relatives should be available for encounters—they haven't reincarnated into new bodies and lost their recognizable identity. And explicit reincarnation indicators (past-life memories, pre-incarnation covenants) should be uncommon rather than widespread.
 
-Critically, this framework proposes that **continuation is normative**—most souls proceed to permanent spiritual existence. Reincarnation, when it occurs, represents an **exception** for specific purposes (restorative healing from trauma, or volunteer mission).
-
-This generates testable predictions about NDE phenomenology:
-- Return to earthly life should be primarily involuntary (the exception, not the rule)
-- Experiencers should often be reluctant to return
-- Deceased relatives should be present (evidence they continued, not reincarnated)
-- Explicit reincarnation indicators should be rare
+A clarification is essential here: NDE return—going back to one's current physical life—is entirely distinct from reincarnation—incarnating into a new life. The predictions above concern evidence about what happens to souls who complete their transition, not about the mechanism by which NDErs return to their bodies. The presence of deceased relatives, for instance, provides evidence about their post-mortem state (continuation), not about NDE return mechanics.
 
 ### 1.3 Aims
 
-1. Test whether return patterns support continuation as normative
-2. Quantify return agency vs. willingness (new schema capability)
-3. Assess prevalence of reincarnation indicators
-4. Validate the four-stage journey structure
-5. Examine life review characteristics
+This analysis tests whether NDE phenomenology supports continuation as the normative path. Specifically, we examine return willingness (do experiencers want to stay?), deceased relative presence (are they available for encounters?), reincarnation indicator prevalence (how common are past-life memories and pre-birth covenants?), identity preservation (does personal identity persist?), and life review characteristics (what is the quality of any judgment experienced?).
 
 ---
 
@@ -64,325 +52,143 @@ This generates testable predictions about NDE phenomenology:
 
 ### 2.1 Data Sources
 
-Records were collected from two major NDE archives:
+Records were collected from two major NDE archives: the Near-Death Experience Research Foundation (NDERF), contributing 5,664 records, and the International Association for Near-Death Studies (IANDS), contributing 1,089 records. The combined corpus of 6,753 records enables robust statistical analysis while spanning diverse experiencer demographics and NDE contexts.
 
-| Source | Records | Description |
-|--------|---------|-------------|
-| NDERF | 5,664 | Near-Death Experience Research Foundation |
-| IANDS | 1,089 | International Association for Near-Death Studies |
+### 2.2 Return Pattern Extraction
 
-**Total: N = 6,753 records**
+The coding schema separates two dimensions of the return experience that are often conflated: return agency (who decided the return) and return willingness (how the experiencer felt about it). This distinction proves crucial because knowing that a being sent someone back tells us nothing about whether they wanted to return, and knowing someone was reluctant tells us nothing about who made the decision.
 
-### 2.2 Schema Innovation: Agency vs. Willingness
-
-A critical methodological advance in this analysis: the schema **separates return agency from return willingness**:
-
-| Dimension | Question | Values |
-|-----------|----------|--------|
-| **Return Agency** | Who decided the return? | self, external_being, involuntary, mutual, not_mentioned |
-| **Return Willingness** | How did they feel about it? | willing, reluctant, mixed, neutral, not_mentioned |
-
-This enables analysis that previous schemas could not perform—distinguishing those who *chose* to return from those *told* to return, and separately tracking whether they were *happy* about it.
+Return agency was coded as: self (experiencer chose), external_being (a being decided), involuntary (return happened without decision), mutual (negotiated), or not_mentioned. Return willingness was coded as: willing, reluctant, mixed, neutral, or not_mentioned. This separation enables analyses impossible with simpler coding schemes.
 
 ### 2.3 Key Field Definitions
 
-**Return Pattern Fields:**
-- `return_agency`: Who made the decision to return
-- `return_willingness`: Experiencer's emotional response to returning
-- `return_reasons`: List field capturing multiple reasons (family_responsibility, not_your_time, earthly_mission, unfinished_business)
-
-**Continuation Evidence Fields:**
-- `deceased_present`: Whether deceased relatives were encountered
-- `past_life_memory`: Evidence of previous life recall
-- `intermission_memory`: Between-lives memory
-- `pre_incarnation_covenant`: Evidence of pre-birth life choice
-
-**Life Review Fields:**
-- `life_review_occurred`: none, brief, extensive
-- `judgment_source`: self, being_of_light, guide_or_entity, none
-- `judgment_intensity`: loving_gentle, neutral, uncomfortable, harsh_condemning
+Return pattern fields capture who decided return, how the experiencer felt about it, and stated reasons for return (family responsibility, not your time, earthly mission, unfinished business, or other). Continuation evidence fields capture whether deceased relatives were encountered and any indicators of prior incarnations: past life memory, intermission memory (between-lives awareness), pre-incarnation covenant, and incarnation choices (chose parents, mission, or life circumstances). Life review fields capture whether review occurred (and whether brief or extensive), the source of any judgment (self, being of light, guide, or none), and judgment intensity (loving/gentle through harsh/condemning).
 
 ### 2.4 Statistical Analysis
 
-- **Frequency analysis** for categorical distributions
-- **Chi-square tests** for independence between agency and willingness
-- **Cross-tabulation** for multi-dimensional pattern analysis
+Analysis employed frequency calculations for categorical distributions, chi-square tests for independence between variables of interest, and cross-tabulation for multi-dimensional pattern analysis. The primary focus is descriptive—establishing what patterns exist in the data—with statistical tests used to assess whether observed associations exceed chance expectation.
 
 ---
 
 ## 3. Results
 
-### 3.1 Return Agency Analysis
+### 3.1 Return Agency
 
-**Question: Who decided the experiencer would return?**
+Among the 4,782 cases with return agency data, the distribution reveals that self-initiated return was uncommon. External being accounted for 28.6% (n=1,931), involuntary return for 21.1% (n=1,422), self-initiated for 16.6% (n=1,124), mutual for 4.5% (n=305), and not mentioned for 29.2% (n=1,971).
 
-Among 4,782 cases with return agency data:
+Combining external being and involuntary categories, 70.1% of experiencers did not return by their own choice. This finding describes the NDE return mechanism but does not directly test the continuation hypothesis—as noted, NDE return (resuming one's current life) is distinct from reincarnation (new incarnation). The finding does suggest that return to physical life is experienced as external imposition rather than personal preference, consistent with the spiritual realm being preferable.
 
-| Agency | N | % |
-|--------|---|---|
-| Not mentioned | 1,971 | 29.2% |
-| External being | 1,931 | 28.6% |
-| Involuntary | 1,422 | 21.1% |
-| Self | 1,124 | 16.6% |
-| Mutual | 305 | 4.5% |
+### 3.2 Return Willingness
 
-**Key Finding**: **70.1% did NOT return by their own choice** (external_being + involuntary = 3,353 of 4,782).
+Among the 3,563 cases with willingness data, reluctance predominated. Reluctant experiencers constituted 26.0% (n=1,759) of the total sample and 49.4% of those with willingness data. Mixed feelings appeared in 14.0% (n=944), willing return in 11.3% (n=763), and neutral in 1.4% (n=97). The remaining 47.2% (n=3,190) did not mention willingness.
 
-Only 16.6% reported self-initiated return. This strongly supports the normative path hypothesis: return to earthly life is the exception, typically imposed rather than chosen.
+Nearly half of experiencers with relevant data preferred to remain in the spiritual state rather than return to physical life. This finding carries significant weight for the continuation hypothesis: if the NDE state represented mere hallucination or oxygen-deprivation artifact, we would not expect such consistent preference for remaining in it. The reluctance suggests experiencers perceive themselves as having encountered something genuinely preferable to ordinary waking consciousness—a glimpse of a realm they recognize as more real, more meaningful, or more aligned with their deepest nature than physical existence.
 
-### 3.2 Return Willingness Analysis
+### 3.3 Agency and Willingness Cross-Tabulation
 
-**Question: How did experiencers feel about returning?**
+Cross-tabulating agency and willingness reveals that these dimensions, while correlated, capture distinct aspects of the experience (χ² = 4824.78, p < 0.0001). Among those sent back by external beings, 52.1% were reluctant and only 4.2% were willing—they did not want to return and were sent back anyway. Among those who chose to return themselves, 49.6% were willing and only 9.7% were reluctant—choosing to return generally aligned with wanting to return. Mutual decisions showed the most mixed pattern: 36.4% mixed feelings, 30.2% willing, and 28.5% reluctant.
 
-Among 3,563 cases with willingness data:
-
-| Willingness | N | % |
-|-------------|---|---|
-| Not mentioned | 3,190 | 47.2% |
-| Reluctant | 1,759 | 26.0% |
-| Mixed | 944 | 14.0% |
-| Willing | 763 | 11.3% |
-| Neutral | 97 | 1.4% |
-
-**Key Finding**: **49.4% were reluctant to return** (1,759 of 3,563 with data).
-
-This suggests the NDE state was preferable to earthly return—consistent with having glimpsed a genuine spiritual realm.
-
-### 3.3 Agency × Willingness Cross-Tabulation
-
-The new schema enables unprecedented analysis of agency-willingness combinations:
-
-| Agency | Reluctant | Willing | Mixed | Neutral |
-|--------|-----------|---------|-------|---------|
-| External being | 52.1% | 4.2% | 12.5% | 2.2% |
-| Involuntary | 29.6% | 1.4% | 10.1% | 2.3% |
-| Mutual | 28.5% | 30.2% | 36.4% | 1.0% |
-| Self | 9.7% | 49.6% | 32.8% | 1.1% |
-
-**Statistical Test**: χ² = 4824.78, p < 0.0001
-
-Agency and willingness are **significantly associated** but represent **independent dimensions**:
-- External being returns: 52.1% reluctant (sent back against preference)
-- Self returns: 49.6% willing (chose to return and wanted to)
-- Mutual decisions show the most mixed feelings (36.4%)
+The external-being/reluctant combination (sent back against one's preference) represents the modal NDE return pattern. This aligns with experiencer testimony: many report being told they must return despite their desire to stay, often for reasons related to unfinished earthly responsibilities or missions.
 
 ### 3.4 Return Reasons
 
-Among cases with explicit return reasons (list field):
+Among cases with explicit return reasons, the distribution reveals that duty and obligation rather than preference drive return. "Not your time" was most common (1,459 mentions), followed by family responsibility (1,164), unfinished business (711), earthly mission (623), and other reasons (218). These reasons are not mutually exclusive; experiencers often report multiple reasons.
 
-| Reason | Count |
-|--------|-------|
-| Not your time | 1,459 |
-| Family responsibility | 1,164 |
-| Unfinished business | 711 |
-| Earthly mission | 623 |
-| Other | 218 |
-
-**Note**: Return reasons are overwhelmingly duty/obligation-based, not preference-based.
+The prevalence of obligation-based reasons reinforces the willingness findings: experiencers return because they must, not because they want to. They are told their time hasn't come, reminded of family needing them, or commissioned with missions requiring physical presence. The rare experiencer who genuinely prefers to return stands out precisely because the pattern is so consistently otherwise.
 
 ### 3.5 Deceased Relatives: Evidence of Continuation
 
-**Question: If reincarnation were normative, would deceased relatives be available for encounters?**
+The presence of deceased relatives in NDEs carries particular significance for the continuation hypothesis. If reincarnation were normative—if most souls cycled rapidly through new incarnations—deceased relatives would rarely be available for encounters. They would have already reincarnated, losing their recognizable identity and relationship with the experiencer. The consistent presence of deceased relatives in NDEs suggests something different: that identity and relationships persist.
 
-| Deceased Present | N | % |
-|------------------|---|---|
-| No | 4,129 | 61.1% |
-| Not mentioned | 1,418 | 21.0% |
-| Named relatives | 1,007 | 14.9% |
-| Unnamed relatives | 199 | 2.9% |
+Among the 6,753 NDEs, 14.9% (n=1,007) reported named deceased relatives and an additional 2.9% (n=199) reported unnamed relatives—17.9% total. These relatives were recognized and identified; they had not lost their identity through dissolution or reincarnation. The theological implication is substantial: these individuals continued rather than reincarnated. Their presence supports the model in which continuation is normative.
 
-**Key Finding**: **17.9% of NDEs include deceased relatives** (named + unnamed = 1,206).
+### 3.6 Reincarnation Indicators
 
-**Theological Implication**: If reincarnation were the norm, deceased relatives would rarely be "available" for encounters—they would have already reincarnated. The consistent presence of deceased relatives in recognizable form supports the continuation model: identity and relationships are preserved.
+If continuation is normative and reincarnation exceptional, explicit reincarnation indicators should be rare in the general NDE population. The data strongly support this prediction.
 
-### 3.6 Spiritual Beings Encountered
+Past life memory appeared in only 4.4% (n=297) of NDEs. Intermission memory (awareness of between-lives existence) appeared in only 1.0% (n=69). Pre-incarnation covenant (evidence of pre-birth life choice) appeared in 1.3% (n=86). More specific incarnation choices were rarer still: chose parents 0.1% (n=9), chose mission 1.4% (n=93), chose life circumstances 0.7% (n=47).
 
-| Being Type | Count |
-|------------|-------|
-| Unidentified benevolent | 1,733 |
-| Religious figures | 639 |
-| Guides or angels | 558 |
+All reincarnation indicators fall below 5%, with most below 2%. This pattern is consistent with reincarnation representing an exception rather than the norm. The vast majority of experiencers show no evidence of prior incarnations or pre-birth planning. When such indicators do appear, they may represent the exception paths theorized in the Swedenborgian framework: restorative incarnation following traumatic death, or volunteer soul incarnation for specific missions.
 
-### 3.7 Reincarnation Indicators: Testing the Exception
+### 3.7 Identity Preservation
 
-**Framework**: If continuation is normative, reincarnation indicators should be RARE.
+The persistence of personal identity during NDEs provides additional evidence for the continuation model. Among the corpus, 64.8% (n=4,377) reported clear identity preserved—they remained themselves throughout the experience. Only 1.4% (n=92) reported identity altered or lost, and 0.6% (n=43) reported identity confusion. The remaining 33.2% (n=2,241) did not address identity.
 
-| Indicator | Present | % |
-|-----------|---------|---|
-| Past life memory | 297 | 4.4% |
-| Intermission memory (between-lives) | 69 | 1.0% |
-| Pre-incarnation covenant | 86 | 1.3% |
-| Chose parents | 9 | 0.1% |
-| Chose mission | 93 | 1.4% |
-| Chose life circumstances | 47 | 0.7% |
+Identity disruption is rare—only 2.0% report any form of it. Experiencers overwhelmingly maintain their sense of self: their memories, personality, relationships, and individual perspective persist through the transition out of physical embodiment. This argues against models in which death dissolves personal identity into cosmic consciousness or undifferentiated being. The continuation model predicts exactly this: individual identity persists beyond physical death.
 
-**Key Finding**: All reincarnation indicators are **rare** (<5%). This is consistent with reincarnation as the **exception**, not the norm.
+### 3.8 Life Review
 
-When present, these indicators may represent exception paths:
-- **Restorative Incarnation**: Traumatic death → healing return
-- **Volunteer Soul Incarnation**: Mission-based return by choice
+Life review occurred in 17.5% of NDEs: 10.6% (n=718) reported brief review and 6.9% (n=465) reported extensive review. When life review occurred, the source of any judgment varied: no judgment 22.5% (n=1,518), guide or entity 3.0% (n=205), Being of Light 2.3% (n=155), self 1.4% (n=95), deceased relative 0.1% (n=7). The majority (70.7%, n=4,773) did not mention judgment source.
 
-### 3.8 Identity Preservation
+The intensity of judgment proves most striking. Among those with intensity data, loving/gentle judgment appeared in 3.3% (n=223) while harsh/condemning judgment appeared in only 0.2% (n=14)—a ratio of 15.9:1 in favor of love. Neutral judgment appeared in 1.3% (n=89), uncomfortable in 1.9% (n=128). The overwhelming majority reported either no judgment or loving judgment.
 
-| Identity Status | N | % |
-|-----------------|---|---|
-| Clear identity preserved | 4,377 | 64.8% |
-| Not mentioned | 2,241 | 33.2% |
-| Identity altered/lost | 92 | 1.4% |
-| Identity confusion | 43 | 0.6% |
+This pattern aligns closely with Swedenborg's account of the World of Spirits: the intermediate state reveals rather than condemns. Individuals are shown their true character without external punishment. The life review functions as mirror rather than tribunal—enabling self-knowledge rather than imposing sentence. The near-total absence of harsh judgment challenges many religious expectations while confirming the non-judgmental character described by NDErs across traditions.
 
-**Key Finding**: **64.8% maintain clear sense of self** during NDE. Only 2.0% report any identity disruption.
+### 3.9 Empathetic Perspective
 
-### 3.9 Life Review Analysis
-
-| Life Review | N | % |
-|-------------|---|---|
-| No review | 5,245 | 77.7% |
-| Brief review | 718 | 10.6% |
-| Extensive review | 465 | 6.9% |
-| Not mentioned | 325 | 4.8% |
-
-**Life review rate**: 17.5%
-
-#### Judgment Source
-
-| Source | N | % |
-|--------|---|---|
-| Not mentioned | 4,773 | 70.7% |
-| None | 1,518 | 22.5% |
-| Guide or entity | 205 | 3.0% |
-| Being of Light | 155 | 2.3% |
-| Self | 95 | 1.4% |
-| Deceased relative | 7 | 0.1% |
-
-#### Judgment Intensity
-
-| Intensity | N | % |
-|-----------|---|---|
-| Not applicable | 4,959 | 73.4% |
-| Not specified | 1,340 | 19.8% |
-| Loving/gentle | 223 | 3.3% |
-| Uncomfortable | 128 | 1.9% |
-| Neutral | 89 | 1.3% |
-| Harsh/condemning | 14 | 0.2% |
-
-**Love:Harsh Ratio**: 223:14 = **15.9:1**
-
-**Key Finding**: When judgment occurs, it is overwhelmingly loving (3.3%) vs harsh (0.2%). This supports the Swedenborgian model: life review **reveals** rather than **condemns**.
-
-#### Empathetic Perspective
-
-| Empathy | N | % |
-|---------|---|---|
-| Not mentioned | 4,362 | 64.6% |
-| Did not feel others' emotions | 2,132 | 31.6% |
-| Felt others' emotions (explicit) | 198 | 2.9% |
-| Felt others' emotions (implied) | 61 | 0.9% |
-
-**Empathetic review**: 3.8% explicitly experienced feeling the impact of their actions on others.
+A distinctive feature of some life reviews is empathetic perspective-taking—experiencing one's actions from the viewpoint of those affected. Among the corpus, 2.9% (n=198) explicitly reported feeling others' emotions during life review, with an additional 0.9% (n=61) implying such experience. While not common, this empathetic dimension transforms life review from mere memory replay to moral education. Experiencers report feeling the joy they caused and the pain they inflicted, understanding the full impact of their choices in a way impossible during physical life.
 
 ---
 
 ## 4. Discussion
 
-### 4.1 Summary of Evidence
+### 4.1 Evidence for the Normative Path
 
-**Five markers supporting the Normative Path Hypothesis:**
+Four markers support the Normative Path Hypothesis, each representing a testable prediction from the theoretical framework.
 
-| Marker | Finding | Supports? |
-|--------|---------|-----------|
-| 1. Return as Exception | External/involuntary returns: 70.1% | ✓ |
-| 2. Reluctance to Return | Reluctant returnees: 49.4% | ✓ |
-| 3. Deceased Present | Relatives encountered: 17.9% | ✓ |
-| 4. Reincarnation Rare | Past life memory: 4.4% | ✓ |
-| 5. Volunteer Path Rare | Pre-incarnation covenant: 1.3% | ✓ |
+First, experiencers are reluctant to leave the spiritual realm. Among those with willingness data, 49.4% were reluctant to return. If the NDE state were mere hallucination or physiological artifact, such consistent preference for remaining in it would be puzzling. The reluctance suggests experiencers recognize the spiritual realm as genuinely preferable—more real, more meaningful, more aligned with their deepest nature—than ordinary waking consciousness.
 
-**Result: 5/5 markers support the hypothesis.**
+Second, deceased relatives are present and recognizable. In 17.9% of NDEs, experiencers encountered deceased family members who had maintained their identity and relationships. If reincarnation were normative, these relatives would have already moved to new incarnations, losing their recognizable form. Their consistent presence suggests continuation rather than reincarnation is the normal post-mortem path.
+
+Third, reincarnation indicators are rare. Past life memory appears in only 4.4% of cases, pre-incarnation covenants in 1.3%. The vast majority of experiencers show no evidence of prior incarnations. This is consistent with reincarnation representing an exception rather than the rule—perhaps reserved for specific purposes like trauma healing or mission accomplishment.
+
+Fourth, personal identity persists. In 64.8% of cases, experiencers report clear preservation of identity throughout the NDE. Identity disruption is rare (2.0%). This argues against models in which death dissolves personal identity, supporting instead a continuation model in which the individual self persists beyond physical embodiment.
 
 ### 4.2 The Threefold Path Framework
 
-The data support a threefold path structure:
+Integrating these findings with the theoretical framework suggests a threefold path structure.
 
-**1. Normative Linear Progression (Default Path)**
-- 95.6% show NO past life memory
-- 98.7% show NO pre-incarnation covenant
-- Evidence: Vast majority on normative (single-life) path
+The normative linear progression represents the default path. The vast majority—those with no past life memory (95.6%), no pre-incarnation covenant (98.7%), no reincarnation indicators of any kind—appear to be on their first and only earthly journey. They will continue to spiritual existence without returning to physical embodiment. This aligns with Swedenborg's primary account of post-mortem existence.
 
-**2. Restorative Incarnation (Traumatic Death Exception)**
-- 4.4% have past life memory
-- 1.0% have intermission memory
-- Evidence: Small minority may be on restorative path
+Restorative incarnation represents one exception path. The 4.4% with past life memory and 1.0% with intermission memory may represent souls who returned to physical life for healing purposes—often following traumatic or violent death that disrupted normal spiritual development. The DOPS research corpus (University of Virginia) provides independent evidence for this pattern: verified past-life memories cluster heavily around violent death in the previous incarnation.
 
-**3. Volunteer Soul Incarnation (Mission-Based Exception)**
-- 1.3% report pre-incarnation covenant
-- 1.4% report choosing mission
-- Evidence: Rare, consistent with 'volunteer soul' concept
+Volunteer soul incarnation represents another exception path. The 1.3% reporting pre-incarnation covenants and 1.4% reporting mission choice may represent souls who accepted specific missions requiring physical presence. These are not compelled returns but chosen ones—volunteers accepting incarnation for service purposes.
 
-### 4.3 Four-Stage Journey Validation
+### 4.3 The World of Spirits as Transition Zone
 
-The NDE phenomenology aligns with a four-stage model:
+NDE phenomenology closely matches Swedenborg's description of the World of Spirits. Multiple points of correspondence emerge from the data.
 
-| Stage | Elements | Evidence |
-|-------|----------|----------|
-| 1. Passage | OBE, Tunnel, Light | See extraction data |
-| 2. Arrival | Being of Light, Deceased | Deceased: 17.9% |
-| 3. Life Review | Review, Empathy | Review: 17.5%, loving 15.9:1 |
-| 4. Integration | Transformation | Fear/spirituality transform |
+The intermediate realm character appears in the encounter structure: experiencers meet beings, encounter deceased relatives, and exist in a transitional zone between physical and permanent spiritual existence. The self-revelation process appears in life review: 17.5% undergo review that reveals their character without external punishment, with judgment overwhelmingly loving (15.9:1 ratio). The instruction period appears in the communication and guidance commonly reported. Identity preservation matches Swedenborg's account that individuals maintain their personality and memory in the spiritual world. And the availability of deceased relatives for encounter suggests they have continued rather than reincarnated.
 
-### 4.4 Interpretation: World of Spirits as Transition Zone
+The non-judgmental character of life review deserves particular emphasis. Many religious traditions teach divine judgment of human sin; many experiencers might expect condemnation. Yet the data show love rather than judgment, revelation rather than punishment, education rather than sentence. This aligns precisely with Swedenborg's account: the World of Spirits shows rather than condemns, enabling self-knowledge rather than imposing external punishment.
 
-The NDE phenomenology closely matches Swedenborg's description of the "World of Spirits":
+### 4.4 Clinical Implications
 
-| Swedenborgian Concept | NDE Observation |
-|----------------------|-----------------|
-| Intermediate realm | Beings encountered, transition zone |
-| Self-revelation process | Life review 17.5%, non-judgmental |
-| Instruction period | Communication/guidance common |
-| Return as exception | 70.1% not self-initiated return |
-| Identity preserved | 64.8% clear identity maintained |
+If NDE structure reflects genuine spiritual geography rather than cultural construction, several clinical implications follow.
 
-The **non-judgmental** character of the life review (15.9:1 love:harsh ratio) is particularly significant. This aligns with Swedenborg's account: the World of Spirits reveals rather than condemns; individuals are shown their true character without external punishment.
+For preparation for death, education about NDEs may reduce death anxiety. The consistent finding that experiencers prefer the spiritual realm and encounter love rather than judgment suggests death may be less fearsome than commonly believed. Sharing this research with the dying and their families may provide comfort.
 
-### 4.5 Clinical Implications
+For post-NDE support, understanding the involuntary nature of return may help NDErs integrate their experience. Many experiencers struggle with having been "sent back"—feeling they glimpsed something wonderful and were forced to leave. Validating this experience as common and meaningful (rather than dismissing it as hallucination) supports healthy integration.
 
-If NDE structure reflects genuine spiritual geography rather than cultural construction:
+For palliative care, the consistent non-judgmental character of life reviews may comfort the dying. Those fearing divine judgment for past failures can be reassured that NDE research shows love vastly outweighing condemnation. The life review appears designed for education and growth, not punishment.
 
-1. **Preparation for death**: Education about NDEs may reduce death anxiety
-2. **Post-NDE support**: Understanding involuntary return may help NDErs integrate their experience
-3. **Palliative care**: The consistent non-judgmental character of life reviews may comfort the dying
+### 4.5 Limitations
 
-### 4.6 Limitations
+Several limitations warrant acknowledgment. Self-selection bias affects the sample: profound experiences are more likely to be reported, potentially skewing the corpus toward more elaborate NDEs. The Western sample limits generalizability: non-Western NDE phenomenology may differ in ways not captured here. Retrospective reporting introduces potential distortion: narrative ordering may be imposed post-hoc rather than reflecting actual experience sequence. And GPT-5.2 extraction may have systematic biases in how it interprets and codes NDE accounts.
 
-1. **Self-selection**: Profound experiences are more likely to be reported
-2. **Western sample**: Non-Western NDE phenomenology may differ
-3. **Retrospective reconstruction**: Narrative ordering may be imposed post-hoc
-4. **Schema dependencies**: GPT-5.2 extraction may have systematic biases
+### 4.6 Future Directions
 
-### 4.7 Future Directions
-
-1. **Cross-cultural analysis**: Test whether patterns are universal
-2. **Prospective tracking**: Document transformation trajectories post-NDE
-3. **Longitudinal follow-up**: Assess whether "mission" returns show distinctive life trajectories
-4. **Restorative incarnation analysis**: Link to past-life memory research (DOPS corpus)
+Cross-cultural analysis would test whether these patterns are universal or culture-specific. Prospective tracking would document transformation trajectories following NDEs, testing whether the experience produces lasting change. Longitudinal follow-up would assess whether "mission" returners show distinctive life trajectories—do they actually accomplish the missions they report being sent back for? And integration with DOPS past-life memory research would enable testing of the restorative incarnation hypothesis against independently verified cases.
 
 ---
 
 ## 5. Conclusion
 
-Analysis of 6,753 near-death experiences provides strong support for the Normative Path Hypothesis:
+Analysis of 6,753 near-death experiences provides convergent support for the Normative Path Hypothesis. Experiencers are reluctant to leave the spiritual realm—49.4% prefer to stay—suggesting they recognize it as genuinely preferable to physical existence. Deceased relatives are present and recognizable in 17.9% of cases, indicating they have continued rather than reincarnated. Reincarnation indicators are rare across the corpus, with past life memory appearing in only 4.4% and pre-incarnation covenants in only 1.3%. Personal identity persists throughout the experience in 64.8% of cases.
 
-1. **Return is Involuntary**: 70.1% did not return by their own choice
-2. **Return is Reluctant**: 49.4% preferred to stay
-3. **Deceased Are Present**: 17.9% encounter relatives who clearly *continued*
-4. **Reincarnation is Rare**: <5% show any reincarnation indicators
-5. **Identity Persists**: 64.8% maintain clear sense of self
+The data support a threefold path model: normative continuation (the vast majority), restorative incarnation for trauma healing (perhaps 4%), and volunteer incarnation for mission (perhaps 1%). The life review, appearing in 17.5% of cases, reveals rather than condemns—with a love-to-harsh ratio of 15.9:1.
 
-The data support a threefold path model:
-- **Normative**: Continuation (vast majority)
-- **Restorative**: Reincarnation for healing (~4%)
-- **Volunteer**: Reincarnation for mission (~1%)
-
-The **15.9:1 love:harsh ratio** during life reviews supports the Swedenborgian model: the intermediate state reveals rather than condemns. The NDE appears to offer a glimpse into the first stage of post-mortem existence—a World of Spirits where consciousness transitions from earthly to spiritual organization, and where return to physical life is the exception granted for specific purposes, not the default.
+The NDE appears to offer a glimpse into the first stage of post-mortem existence—what Swedenborg termed the World of Spirits, an intermediate realm where consciousness transitions from earthly to spiritual organization. The consistent phenomenology across experiencers—the reluctance to return, the presence of deceased relatives, the loving character of any judgment, the preservation of personal identity—suggests NDErs are not constructing hallucinations from cultural materials but encountering a genuine realm whose features they report with remarkable consistency.
 
 ---
 
@@ -421,19 +227,7 @@ Swedenborg, E. (1758). *Heaven and Hell* (G. F. Dole, Trans.). Swedenborg Founda
 | Love:Harsh judgment ratio | 15.9:1 |
 | Identity preserved | 64.8% |
 
-## Appendix C: Normative Path Evidence Summary
-
-| Marker | Indicator | Supports |
-|--------|-----------|----------|
-| Return as Exception | External/involuntary: 70.1% | ✓ |
-| Reluctance to Return | Reluctant returnees: 49.4% | ✓ |
-| Deceased Present | Relatives encountered: 17.9% | ✓ |
-| Reincarnation Rare | Past life memory: 4.4% | ✓ |
-| Volunteer Path Rare | Pre-incarnation covenant: 1.3% | ✓ |
-
-**Overall: 5/5 markers support the Normative Path Hypothesis**
-
-## Appendix D: Data Access
+## Appendix C: Data Access
 
 All analysis code and raw data are available at:
 - **Repository**: [https://github.com/marconian/structured-data-analysis](https://github.com/marconian/structured-data-analysis)
