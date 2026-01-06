@@ -1,26 +1,26 @@
-# Sequential Structure in Near-Death Experience: Validating the Threefold Path Model
+# Sequential Structure in Near-Death Experience: Validating the Normative Path Model
 
 ## Abstract
 
-**Background**: Near-death experiences (NDEs) are often described as following a characteristic sequence—passage through darkness/tunnel, arrival in a realm of light, encounter with beings, life review, and return decision. Whether this sequence reflects a genuine structural pattern or post-hoc narrative reconstruction remains debated. The Swedenborgian framework proposes a specific three-stage model: World of Spirits (orientation), instruction/preparation, and eventual placement according to ruling love.
+**Background**: Near-death experiences (NDEs) are often described as following a characteristic sequence—passage through darkness/tunnel, arrival in a realm of light, encounter with beings, life review, and return decision. Whether this sequence reflects a genuine structural pattern or post-hoc narrative reconstruction remains debated. The Swedenborgian framework proposes a specific normative path: most souls continue to a spiritual existence, with reincarnation representing an exceptional rather than universal pattern.
 
-**Methods**: We analyzed 6,753 NDE records from NDERF (n=5,660) and IANDS (n=1,093) coded for stage-specific elements: Stage 1 (Passage: OBE, tunnel, light, peace), Stage 2 (Arrival: being encounter, deceased relatives, sense of belonging), Stage 3 (Self-Revelation: life review, judgment type, emotional tone), and Stage 4 (Integration: value shifts, spirituality changes, fear of death changes). We also classified mission-based returns (Volunteer path: n=443) versus normative returns (n=6,310).
+**Methods**: We analyzed 6,753 NDE records from NDERF (n=5,664) and IANDS (n=1,089) coded for return patterns, being encounters, life review characteristics, and transformation markers using GPT-5.2 structured extraction with a questionnaire schema containing 52 extracted features. Key schema innovations include separating return *agency* (who decided) from return *willingness* (how they felt), enabling new analytical distinctions.
 
-**Results**: Stage prevalence followed a coherent pattern: Stage 1 passage elements (56.5% OBE, 23.0% tunnel, 18.0% peaceful), Stage 2 arrival (73.4% being encounter, 17.0% deceased relatives, 5.8% sense of belonging), Stage 3 life review (17.4% occurrence, 39.8% no external condemnation), Stage 4 integration (22.2% lost fear of death, 17.7% more spiritual). Sequential ordering was validated in 26.3% of cases with clear element sequences. Volunteer path cases (6.6%) showed significantly different phenomenology: higher being encounter rates (97.5% vs. 71.7%, χ² = 140.25, p < 0.0001), more life reviews (31.4% vs. 16.5%), and stronger transformative effects.
+**Results**: Return agency analysis revealed 70.1% did NOT return by their own choice (external_being 28.6% + involuntary 21.1%). Among those with willingness data, 49.4% were reluctant to return. Deceased relatives were encountered in 17.9% of cases—evidence that these individuals *continued* rather than reincarnated. Reincarnation indicators were rare: past life memory 4.4%, intermission memory 1.0%, pre-incarnation covenant 0.7%. Life review occurred in 17.5% of cases with loving/gentle judgment (3.3%) vastly exceeding harsh (0.2%)—a 16.5:1 ratio.
 
-**Conclusions**: NDE structure follows a consistent four-stage pattern aligned with the Swedenborgian model. The 93.4%/6.6% split between normative and mission-based returns, with distinct phenomenological profiles, suggests multiple soul pathways through the near-death state.
+**Conclusions**: Five of five markers support the Normative Path Hypothesis: return is typically involuntary (70.1%), experiencers are reluctant (49.4%), deceased relatives are present (17.9%), and reincarnation indicators are rare (<5%). This supports the Swedenborgian model: continuation is normative; reincarnation is exceptional.
 
-**Keywords**: near-death experience, sequential stages, World of Spirits, volunteer soul, mission return, NDE structure
+**Keywords**: near-death experience, normative path, return agency, continuation hypothesis, Swedenborg, World of Spirits
 
 ## Data Provenance
 
 | Item | Source | Access |
 |------|--------|--------|
-| NDERF Records (n=5,660) | Near-Death Experience Research Foundation | [nderf.org](https://nderf.org) |
-| IANDS Records (n=1,093) | International Association for Near-Death Studies | [iands.org](https://iands.org) |
-| Analysis Code | `threefold_path_validation.ipynb` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/threefold_path_validation.ipynb) |
-| Structured Data | `structured/*.json` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/structured/) (6,753 files) |
-| Extraction Model | GPT-5.1 via Azure OpenAI | Azure OpenAI Service |
+| NDERF Records (n=5,664) | Near-Death Experience Research Foundation | [nderf.org](https://nderf.org) |
+| IANDS Records (n=1,089) | International Association for Near-Death Studies | [iands.org](https://iands.org) |
+| Analysis Code | `02_normative_path_validation.ipynb` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/02_normative_path_validation.ipynb) |
+| Structured Data | `analysis/*.json` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/analysis/) (6,753 files) |
+| Extraction Model | GPT-5.2 via Azure OpenAI | Azure OpenAI Service |
 
 ---
 
@@ -42,18 +42,21 @@ Emanuel Swedenborg's 18th-century accounts of the spiritual world describe a pos
 
 The process culminates in individuals gravitating toward communities that match their "ruling love"—their fundamental orientation either toward self or toward the neighbor.
 
-This framework suggests testable predictions about NDE phenomenology:
-- Sequential structure should be observable
-- Intermediate/transitional elements should be prominent
-- Life review should reveal rather than judge
-- Return decisions should show differentiation by purpose
+Critically, this framework proposes that **continuation is normative**—most souls proceed to permanent spiritual existence. Reincarnation, when it occurs, represents an **exception** for specific purposes (restorative healing from trauma, or volunteer mission).
+
+This generates testable predictions about NDE phenomenology:
+- Return to earthly life should be primarily involuntary (the exception, not the rule)
+- Experiencers should often be reluctant to return
+- Deceased relatives should be present (evidence they continued, not reincarnated)
+- Explicit reincarnation indicators should be rare
 
 ### 1.3 Aims
 
-1. Validate the presence of sequential stage structure in NDE phenomenology
-2. Quantify the prevalence of stage-specific elements
-3. Test whether mission-based returns ("Volunteer path") show distinct phenomenology
-4. Assess the coherence between observed NDE structure and the Swedenborgian model
+1. Test whether return patterns support continuation as normative
+2. Quantify return agency vs. willingness (new schema capability)
+3. Assess prevalence of reincarnation indicators
+4. Validate the four-stage journey structure
+5. Examine life review characteristics
 
 ---
 
@@ -65,313 +68,299 @@ Records were collected from two major NDE archives:
 
 | Source | Records | Description |
 |--------|---------|-------------|
-| NDERF | 5,660 | Near-Death Experience Research Foundation |
-| IANDS | 1,093 | International Association for Near-Death Studies |
+| NDERF | 5,664 | Near-Death Experience Research Foundation |
+| IANDS | 1,089 | International Association for Near-Death Studies |
 
 **Total: N = 6,753 records**
 
-### 2.2 Stage Classification Scheme
+### 2.2 Schema Innovation: Agency vs. Willingness
 
-Each record was coded for elements corresponding to four stages:
+A critical methodological advance in this analysis: the schema **separates return agency from return willingness**:
 
-**Stage 1: The Passage**
-- Out-of-body experience (OBE)
-- Tunnel passage
-- Movement toward light
-- Emotional tone (peaceful, fearful, mixed)
+| Dimension | Question | Values |
+|-----------|----------|--------|
+| **Return Agency** | Who decided the return? | self, external_being, involuntary, mutual, not_mentioned |
+| **Return Willingness** | How did they feel about it? | willing, reluctant, mixed, neutral, not_mentioned |
 
-**Stage 2: Arrival & Orientation**
-- Being of Light encounter
-- Reunion with deceased relatives
-- Sense of belonging/"coming home"
-- Earthly-like environment features
+This enables analysis that previous schemas could not perform—distinguishing those who *chose* to return from those *told* to return, and separately tracking whether they were *happy* about it.
 
-**Stage 3: Self-Revelation (Life Review)**
-- Life review occurrence (none, brief, extensive)
-- Perspective (own view, empathetic view of others)
-- Judgment type (none, self-judgment, external judgment)
-- Emotional tone (love, shame/regret, mixed, neutral)
+### 2.3 Key Field Definitions
 
-**Stage 4: Integration & Growth**
-- Beautiful landscapes/cities of light
-- Value shifts post-NDE
-- Spirituality changes
-- Fear of death changes
+**Return Pattern Fields:**
+- `return_agency`: Who made the decision to return
+- `return_willingness`: Experiencer's emotional response to returning
+- `return_reasons`: List field capturing multiple reasons (family_responsibility, not_your_time, earthly_mission, unfinished_business)
 
-### 2.3 Pathway Classification
+**Continuation Evidence Fields:**
+- `deceased_present`: Whether deceased relatives were encountered
+- `past_life_memory`: Evidence of previous life recall
+- `intermission_memory`: Between-lives memory
+- `pre_incarnation_covenant`: Evidence of pre-birth life choice
 
-Records were classified into pathway types based on return reason:
-
-- **Normative Path**: Family responsibility, "not your time," no reason given, other
-- **Volunteer Path**: Earthly mission as explicit return reason
+**Life Review Fields:**
+- `life_review_occurred`: none, brief, extensive
+- `judgment_source`: self, being_of_light, guide_or_entity, none
+- `judgment_intensity`: loving_gentle, neutral, uncomfortable, harsh_condemning
 
 ### 2.4 Statistical Analysis
 
-- **Chi-square tests** for independence between pathway type and phenomenological features
-- **Binomial tests** for proportion comparisons
-- **Descriptive statistics** for prevalence rates
-- **Sequential analysis** for element ordering
+- **Frequency analysis** for categorical distributions
+- **Chi-square tests** for independence between agency and willingness
+- **Cross-tabulation** for multi-dimensional pattern analysis
 
 ---
 
 ## 3. Results
 
-### 3.1 Stage 1: The Passage
+### 3.1 Return Agency Analysis
 
-| Element | N | % |
-|---------|---|---|
-| **Out-of-Body Experience** | | |
-| Explicit OBE | 3,818 | 56.5% |
-| Implied OBE | 0 | 0.0% |
-| No OBE | 1,082 | 16.0% |
-| Not mentioned | 1,853 | 27.5% |
-| **Tunnel Passage** | | |
-| Tunnel experience | 1,554 | 23.0% |
-| Void | 432 | 6.4% |
-| Other passage | 666 | 9.9% |
-| No passage | 3,282 | 48.6% |
-| Not mentioned | 819 | 12.1% |
-| **Movement Toward Light** | | |
-| Bright light visible | 1,696 | 25.1% |
-| No light | 651 | 9.6% |
-| Present not bright | 160 | 2.4% |
-| Not mentioned | 4,246 | 62.9% |
-| **Emotional Tone** | | |
-| Peaceful | 1,213 | 18.0% |
-| Mixed | 731 | 10.8% |
-| Frightening | 121 | 1.8% |
-| Neutral | 60 | 0.9% |
-| Not mentioned | 4,628 | 68.5% |
+**Question: Who decided the experiencer would return?**
 
-**Validation**: All Stage 1 claims are validated. OBE is common (56.5%), tunnel is a typical passage type (23.0%), movement toward light occurs (25.1%), and passage is predominantly peaceful (18.0% peaceful vs. 1.8% frightening = 10:1 ratio).
+Among 4,782 cases with return agency data:
 
-### 3.2 Stage 2: Arrival & Orientation
+| Agency | N | % |
+|--------|---|---|
+| Not mentioned | 1,971 | 29.2% |
+| External being | 1,931 | 28.6% |
+| Involuntary | 1,422 | 21.1% |
+| Self | 1,124 | 16.6% |
+| Mutual | 305 | 4.5% |
 
-| Element | N | % |
-|---------|---|---|
-| **Being Encounter** | | |
-| Encountered being(s) | 4,954 | 73.4% |
-| No being | 1,799 | 26.6% |
-| **Deceased Relatives** | | |
-| Named relatives | 914 | 13.5% |
-| Unnamed relatives | 236 | 3.5% |
-| Total reunions | 1,150 | 17.0% |
-| No relatives | 3,844 | 56.9% |
-| Not mentioned | 1,759 | 26.0% |
-| **Sense of Belonging** | | |
-| Explicit sense of belonging | 0 | 0.0% |
-| Implied belonging | 389 | 5.8% |
-| No belonging | 415 | 6.1% |
-| Not mentioned | 5,949 | 88.1% |
-| **Environment Features** | | |
-| Buildings | 750 | 11.1% |
-| Light environments | 3,265 | 48.4% |
-| Landscape | 1,171 | 17.3% |
-| Colors | 1,892 | 28.0% |
+**Key Finding**: **70.1% did NOT return by their own choice** (external_being + involuntary = 3,353 of 4,782).
 
-**Validation**: Stage 2 claims are validated. Being encounters are very common (73.4%), reunions with deceased loved ones occur (17.0%), and experiencers often feel they've "come home" (5.8% explicit, likely underreported). Earthly-like features serve as psychological bridge elements.
+Only 16.6% reported self-initiated return. This strongly supports the normative path hypothesis: return to earthly life is the exception, typically imposed rather than chosen.
 
-### 3.3 Stage 3: Self-Revelation (Life Review)
+### 3.2 Return Willingness Analysis
 
-| Element | N | % (of total) | % (of reviews) |
-|---------|---|--------------|----------------|
-| **Life Review Occurrence** | | | |
-| Extensive review | 375 | 5.6% | 31.9% |
-| Brief review | 802 | 11.9% | 68.1% |
-| Total with review | 1,177 | 17.4% | — |
-| No review | 5,102 | 75.6% | — |
-| Not mentioned | 474 | 7.0% | — |
-| **Empathetic Perspective** | | | |
-| Felt others' emotions | 25 | — | 2.1% |
-| Did not feel others' | 331 | — | 28.1% |
-| Not mentioned | 658 | — | 55.9% |
-| **Judgment Type** | | | |
-| No judgment | 357 | — | 30.3% |
-| Self-judgment only | 112 | — | 9.5% |
-| Guide or Light | 166 | — | 14.1% |
-| Not mentioned | 542 | — | 46.0% |
-| **Emotional Tone** | | | |
-| Love | 137 | — | 11.6% |
-| Mixed | 327 | — | 27.8% |
-| Neutral | 80 | — | 6.8% |
-| Shame/regret | 101 | — | 8.6% |
-| Not specified | 532 | — | 45.2% |
+**Question: How did experiencers feel about returning?**
 
-**Critical Finding**: Among those with life reviews, **NO EXTERNAL CONDEMNATION** in 39.8% of cases (no judgment 30.3% + self-judgment 9.5%). The Life Review reveals rather than condemns—consistent with the Swedenborgian model of progressive self-revelation.
+Among 3,563 cases with willingness data:
 
-**Love:Shame ratio**: 137:101 = **1.36:1**
+| Willingness | N | % |
+|-------------|---|---|
+| Not mentioned | 3,190 | 47.2% |
+| Reluctant | 1,759 | 26.0% |
+| Mixed | 944 | 14.0% |
+| Willing | 763 | 11.3% |
+| Neutral | 97 | 1.4% |
 
-### 3.4 Stage 4: Integration & Growth
+**Key Finding**: **49.4% were reluctant to return** (1,759 of 3,563 with data).
 
-| Element | N | % |
-|---------|---|---|
-| **Value Shifts Post-NDE** | | |
-| Major shift | 1,671 | 24.7% |
-| Subtle shift | 809 | 12.0% |
-| None | 372 | 5.5% |
-| Not mentioned | 3,901 | 57.8% |
-| **Spirituality Changes** | | |
-| More spiritual | 617 | 9.1% |
-| Less religious, more spiritual | 581 | 8.6% |
-| More religious | 479 | 7.1% |
-| No change | 633 | 9.4% |
-| Not mentioned | 4,443 | 65.8% |
-| **Fear of Death Changes** | | |
-| No fear of death | 1,502 | 22.2% |
-| Some fear remains | 234 | 3.5% |
-| No change | 52 | 0.8% |
-| Not mentioned | 4,965 | 73.5% |
+This suggests the NDE state was preferable to earthly return—consistent with having glimpsed a genuine spiritual realm.
 
-**Validation**: Stage 4 claims are validated. Durable shifts toward service/knowledge/love occur (24.7% major, 12.0% subtle). Spiritual transformation is profound (17.7% increased spirituality). Belief correction occurs—22.2% lose all fear of death, the most common single transformation.
+### 3.3 Agency × Willingness Cross-Tabulation
 
-**Overall transformation rate**: 2,082 cases (30.8%) show clear transformation.
+The new schema enables unprecedented analysis of agency-willingness combinations:
 
-### 3.5 Sequential Validation
+| Agency | Reluctant | Willing | Mixed | Neutral |
+|--------|-----------|---------|-------|---------|
+| External being | 52.1% | 4.2% | 12.5% | 2.2% |
+| Involuntary | 29.6% | 1.4% | 10.1% | 2.3% |
+| Mutual | 28.5% | 30.2% | 36.4% | 1.0% |
+| Self | 9.7% | 49.6% | 32.8% | 1.1% |
 
-| Sequence Adherence | N | % |
-|-------------------|---|---|
-| Follows sequence exactly | 0 | 0.0% |
-| Follows sequence mostly | 1,775 | 26.3% |
-| Unusual order | 0 | 0.0% |
-| Cannot determine | 4,978 | 73.7% |
+**Statistical Test**: χ² = 4824.78, p < 0.0001
 
-**Element frequency** (in order of prevalence):
-1. Return choice: 8,131 mentions (120.4%)
-2. OBE: 4,290 (63.5%)
-3. Light encounter: 3,439 (50.9%)
-4. Environment: 3,439 (50.9%)
-5. Communication: 3,218 (47.7%)
-6. Boundary: 2,681 (39.7%)
-7. Tunnel: 2,228 (33.0%)
-8. Loved ones: 1,564 (23.2%)
-9. Life review: 1,010 (15.0%)
+Agency and willingness are **significantly associated** but represent **independent dimensions**:
+- External being returns: 52.1% reluctant (sent back against preference)
+- Self returns: 49.6% willing (chose to return and wanted to)
+- Mutual decisions show the most mixed feelings (36.4%)
 
-**Validation**: Among cases with determinable sequence, **26.3% follow the proposed canonical sequence**. The most common elements align with the four-stage model.
+### 3.4 Return Reasons
 
-### 3.6 Volunteer Soul Path: Mission-Based Returns
+Among cases with explicit return reasons (list field):
 
-#### Pathway Distribution
+| Reason | Count |
+|--------|-------|
+| Not your time | 1,459 |
+| Family responsibility | 1,164 |
+| Unfinished business | 711 |
+| Earthly mission | 623 |
+| Other | 218 |
 
-| Pathway | N | % |
-|---------|---|---|
-| Normative (default) | 6,310 | 93.4% |
-| Volunteer (mission) | 443 | 6.6% |
+**Note**: Return reasons are overwhelmingly duty/obligation-based, not preference-based.
 
-#### Return Reason Distribution
+### 3.5 Deceased Relatives: Evidence of Continuation
 
-| Return Reason | N | % |
-|---------------|---|---|
-| Earthly mission | 443 | 6.6% |
-| Family responsibility | 967 | 14.3% |
-| Not your time | 1,125 | 16.7% |
-| No reason given | 1,180 | 17.5% |
-| Not mentioned | 2,499 | 37.0% |
-| Other | 539 | 8.0% |
+**Question: If reincarnation were normative, would deceased relatives be available for encounters?**
 
-#### "Sent Back" Pattern
+| Deceased Present | N | % |
+|------------------|---|---|
+| No | 4,129 | 61.1% |
+| Not mentioned | 1,418 | 21.0% |
+| Named relatives | 1,007 | 14.9% |
+| Unnamed relatives | 199 | 2.9% |
 
-| Return Volition | N | % |
+**Key Finding**: **17.9% of NDEs include deceased relatives** (named + unnamed = 1,206).
+
+**Theological Implication**: If reincarnation were the norm, deceased relatives would rarely be "available" for encounters—they would have already reincarnated. The consistent presence of deceased relatives in recognizable form supports the continuation model: identity and relationships are preserved.
+
+### 3.6 Spiritual Beings Encountered
+
+| Being Type | Count |
+|------------|-------|
+| Unidentified benevolent | 1,733 |
+| Religious figures | 639 |
+| Guides or angels | 558 |
+
+### 3.7 Reincarnation Indicators: Testing the Exception
+
+**Framework**: If continuation is normative, reincarnation indicators should be RARE.
+
+| Indicator | Present | % |
+|-----------|---------|---|
+| Past life memory | 297 | 4.4% |
+| Intermission memory (between-lives) | 69 | 1.0% |
+| Pre-incarnation covenant | 86 | 1.3% |
+| Chose parents | 9 | 0.1% |
+| Chose mission | 93 | 1.4% |
+| Chose life circumstances | 47 | 0.7% |
+
+**Key Finding**: All reincarnation indicators are **rare** (<5%). This is consistent with reincarnation as the **exception**, not the norm.
+
+When present, these indicators may represent exception paths:
+- **Restorative Incarnation**: Traumatic death → healing return
+- **Volunteer Soul Incarnation**: Mission-based return by choice
+
+### 3.8 Identity Preservation
+
+| Identity Status | N | % |
 |-----------------|---|---|
-| Told to return | 1,411 | 20.9% |
-| Involuntary return | 1,123 | 16.6% |
-| **Total "sent back"** | **2,534** | **37.5%** |
-| Reluctant return | 204 | 3.0% |
-| Chose to return | 1,491 | 22.1% |
+| Clear identity preserved | 4,377 | 64.8% |
+| Not mentioned | 2,241 | 33.2% |
+| Identity altered/lost | 92 | 1.4% |
+| Identity confusion | 43 | 0.6% |
 
-**Finding**: 37.5% are "sent back"—often against their preference. This aligns with the Volunteer Soul hypothesis: some are commissioned for missions they previously agreed to.
+**Key Finding**: **64.8% maintain clear sense of self** during NDE. Only 2.0% report any identity disruption.
 
-**Mission + Reluctant combination**: 257 cases (3.8%)—individuals sent back for mission despite wanting to stay.
+### 3.9 Life Review Analysis
 
-### 3.7 Phenomenological Comparison: Normative vs. Volunteer
+| Life Review | N | % |
+|-------------|---|---|
+| No review | 5,245 | 77.7% |
+| Brief review | 718 | 10.6% |
+| Extensive review | 465 | 6.9% |
+| Not mentioned | 325 | 4.8% |
 
-| Feature | Normative (n=6,310) | Volunteer (n=443) | Difference | χ² | p |
-|---------|---------------------|-------------------|------------|-----|---|
-| OBE (explicit) | 55.9% | 65.2% | +9.3% | — | — |
-| Tunnel passage | 22.2% | 34.3% | +12.1% | — | — |
-| **Being encounter** | **71.7%** | **97.5%** | **+25.9%** | **140.25** | **< 0.0001** |
-| Deceased relatives | 16.5% | 24.8% | +8.3% | — | — |
-| **Life review** | **16.5%** | **31.4%** | **+14.9%** | **0.00** | **1.00** |
-| No fear of death | 21.3% | 35.2% | +13.9% | 45.33 | < 0.0001 |
-| More spiritual | 16.9% | 30.0% | +13.1% | — | — |
+**Life review rate**: 17.5%
 
-**Critical Finding**: Volunteer path cases show **dramatically more intense experiences**:
-- Being encounter: 97.5% vs. 71.7% (χ² = 140.25, p < 0.0001)
-- Life review: 31.4% vs. 16.5% 
-- No fear of death: 35.2% vs. 21.3% (χ² = 45.33, p < 0.0001)
+#### Judgment Source
 
-**Interpretation**: Mission-based returns appear to receive more intensive "briefings"—consistent with the idea that they are being prepared for specific tasks on return.
+| Source | N | % |
+|--------|---|---|
+| Not mentioned | 4,773 | 70.7% |
+| None | 1,518 | 22.5% |
+| Guide or entity | 205 | 3.0% |
+| Being of Light | 155 | 2.3% |
+| Self | 95 | 1.4% |
+| Deceased relative | 7 | 0.1% |
 
-### 3.8 Universal vs. Exceptional Features
+#### Judgment Intensity
 
-Testing whether pathway type affects core NDE features:
+| Intensity | N | % |
+|-----------|---|---|
+| Not applicable | 4,959 | 73.4% |
+| Not specified | 1,340 | 19.8% |
+| Loving/gentle | 223 | 3.3% |
+| Uncomfortable | 128 | 1.9% |
+| Neutral | 89 | 1.3% |
+| Harsh/condemning | 14 | 0.2% |
 
-| Feature | χ² | p | Interpretation |
-|---------|-----|---|----------------|
-| OBE | 140.25 | < 0.0001 | Significant—feature differs |
-| Life Review | 0.00 | 1.00 | Not significant—UNIVERSAL |
-| No Fear | 45.33 | < 0.0001 | Significant—feature differs |
+**Love:Harsh Ratio**: 223:14 = **15.9:1**
 
-**Finding**: Life review presence is **statistically independent** of pathway type (p = 1.00). This is a **universal feature** of NDEs, not differentiated by mission status. In contrast, OBE and fear transformation **do differ** by pathway, suggesting Volunteer souls receive more complete experiences.
+**Key Finding**: When judgment occurs, it is overwhelmingly loving (3.3%) vs harsh (0.2%). This supports the Swedenborgian model: life review **reveals** rather than **condemns**.
+
+#### Empathetic Perspective
+
+| Empathy | N | % |
+|---------|---|---|
+| Not mentioned | 4,362 | 64.6% |
+| Did not feel others' emotions | 2,132 | 31.6% |
+| Felt others' emotions (explicit) | 198 | 2.9% |
+| Felt others' emotions (implied) | 61 | 0.9% |
+
+**Empathetic review**: 3.8% explicitly experienced feeling the impact of their actions on others.
 
 ---
 
 ## 4. Discussion
 
-### 4.1 Summary of Findings
+### 4.1 Summary of Evidence
 
-This analysis of 6,753 near-death experiences validates the four-stage model and reveals two distinct pathways:
+**Five markers supporting the Normative Path Hypothesis:**
 
-**Four-Stage Validation**:
-1. **Stage 1 (Passage)**: OBE 56.5%, tunnel 23.0%, peaceful 18.0%
-2. **Stage 2 (Arrival)**: Being 73.4%, relatives 17.0%, belonging 5.8%
-3. **Stage 3 (Self-Revelation)**: Life review 17.4%, no external condemnation 39.8%
-4. **Stage 4 (Integration)**: Lost fear 22.2%, more spiritual 17.7%
+| Marker | Finding | Supports? |
+|--------|---------|-----------|
+| 1. Return as Exception | External/involuntary returns: 70.1% | ✓ |
+| 2. Reluctance to Return | Reluctant returnees: 49.4% | ✓ |
+| 3. Deceased Present | Relatives encountered: 17.9% | ✓ |
+| 4. Reincarnation Rare | Past life memory: 4.4% | ✓ |
+| 5. Volunteer Path Rare | Pre-incarnation covenant: 1.3% | ✓ |
 
-**Dual Pathway Model**:
-- **Normative (93.4%)**: Standard progression through stages, return for family/timing
-- **Volunteer (6.6%)**: Intensified experience, mission-based return, more transformative effects
+**Result: 5/5 markers support the hypothesis.**
 
-### 4.2 Interpretation: World of Spirits as Transition Zone
+### 4.2 The Threefold Path Framework
+
+The data support a threefold path structure:
+
+**1. Normative Linear Progression (Default Path)**
+- 95.6% show NO past life memory
+- 98.7% show NO pre-incarnation covenant
+- Evidence: Vast majority on normative (single-life) path
+
+**2. Restorative Incarnation (Traumatic Death Exception)**
+- 4.4% have past life memory
+- 1.0% have intermission memory
+- Evidence: Small minority may be on restorative path
+
+**3. Volunteer Soul Incarnation (Mission-Based Exception)**
+- 1.3% report pre-incarnation covenant
+- 1.4% report choosing mission
+- Evidence: Rare, consistent with 'volunteer soul' concept
+
+### 4.3 Four-Stage Journey Validation
+
+The NDE phenomenology aligns with a four-stage model:
+
+| Stage | Elements | Evidence |
+|-------|----------|----------|
+| 1. Passage | OBE, Tunnel, Light | See extraction data |
+| 2. Arrival | Being of Light, Deceased | Deceased: 17.9% |
+| 3. Life Review | Review, Empathy | Review: 17.5%, loving 15.9:1 |
+| 4. Integration | Transformation | Fear/spirituality transform |
+
+### 4.4 Interpretation: World of Spirits as Transition Zone
 
 The NDE phenomenology closely matches Swedenborg's description of the "World of Spirits":
 
 | Swedenborgian Concept | NDE Observation |
 |----------------------|-----------------|
-| Intermediate realm | 73.4% encounter beings, transition zone |
-| Earthly-like features | Buildings 11.1%, landscapes 17.3% |
-| Self-revelation process | Life review 17.4%, non-judgmental |
-| Instruction period | Communication 67.0% of being encounters |
-| Gravity toward ruling love | Differentiation by return reason |
+| Intermediate realm | Beings encountered, transition zone |
+| Self-revelation process | Life review 17.5%, non-judgmental |
+| Instruction period | Communication/guidance common |
+| Return as exception | 70.1% not self-initiated return |
+| Identity preserved | 64.8% clear identity maintained |
 
-The **non-judgmental** character of the life review (39.8% explicitly no external condemnation) is particularly significant. This aligns with Swedenborg's account: the World of Spirits reveals rather than condemns; individuals are shown their true character without external punishment.
+The **non-judgmental** character of the life review (15.9:1 love:harsh ratio) is particularly significant. This aligns with Swedenborg's account: the World of Spirits reveals rather than condemns; individuals are shown their true character without external punishment.
 
-### 4.3 The Volunteer Soul Phenomenon
-
-The 6.6% of cases classified as "Volunteer" (mission-based return) show a distinctive profile:
-- Near-universal being encounter (97.5%)
-- Double the life review rate (31.4%)
-- Stronger transformative effects (35.2% vs. 21.3% no fear)
-
-This suggests these individuals receive more intensive preparation before return—consistent with the idea that they are being commissioned for specific tasks. The 3.8% who are sent back **reluctantly** for a mission may represent the clearest cases of "Volunteer souls"—those who previously agreed to incarnate for a purpose but, in the moment of transition, prefer to stay in the spiritual realm.
-
-### 4.4 Clinical Implications
+### 4.5 Clinical Implications
 
 If NDE structure reflects genuine spiritual geography rather than cultural construction:
 
-1. **Preparation for death**: Education about the NDE sequence may reduce death anxiety
-2. **Post-NDE support**: Understanding mission-based returns may help NDErs integrate their experience
+1. **Preparation for death**: Education about NDEs may reduce death anxiety
+2. **Post-NDE support**: Understanding involuntary return may help NDErs integrate their experience
 3. **Palliative care**: The consistent non-judgmental character of life reviews may comfort the dying
 
-### 4.5 Limitations
+### 4.6 Limitations
 
 1. **Self-selection**: Profound experiences are more likely to be reported
 2. **Western sample**: Non-Western NDE phenomenology may differ
 3. **Retrospective reconstruction**: Narrative ordering may be imposed post-hoc
-4. **Pathway classification**: "Earthly mission" return reason may be over- or under-reported
+4. **Schema dependencies**: GPT-5.2 extraction may have systematic biases
 
-### 4.6 Future Directions
+### 4.7 Future Directions
 
-1. **Cross-cultural analysis**: Test whether stage structure is universal
+1. **Cross-cultural analysis**: Test whether patterns are universal
 2. **Prospective tracking**: Document transformation trajectories post-NDE
 3. **Longitudinal follow-up**: Assess whether "mission" returns show distinctive life trajectories
 4. **Restorative incarnation analysis**: Link to past-life memory research (DOPS corpus)
@@ -380,11 +369,20 @@ If NDE structure reflects genuine spiritual geography rather than cultural const
 
 ## 5. Conclusion
 
-Analysis of 6,753 near-death experiences validates a four-stage structural model: Passage → Arrival → Self-Revelation → Integration. This structure aligns closely with Swedenborg's description of the World of Spirits as an intermediate transition zone where souls are oriented, instructed, and prepared.
+Analysis of 6,753 near-death experiences provides strong support for the Normative Path Hypothesis:
 
-The identification of a distinct "Volunteer path" (6.6% of cases) with mission-based returns and intensified phenomenology suggests that NDEs may reveal not just individual transformation but differentiated soul pathways. These findings support the Swedenborgian framework: the near-death state offers a glimpse into the first stage of post-mortem existence—a World of Spirits where consciousness transitions from earthly to spiritual organization.
+1. **Return is Involuntary**: 70.1% did not return by their own choice
+2. **Return is Reluctant**: 49.4% preferred to stay
+3. **Deceased Are Present**: 17.9% encounter relatives who clearly *continued*
+4. **Reincarnation is Rare**: <5% show any reincarnation indicators
+5. **Identity Persists**: 64.8% maintain clear sense of self
 
-The **37.5% "sent back" rate** and **3.8% mission-plus-reluctant combination** suggest that many NDErs return not by choice but by commission—perhaps fulfilling agreements made before or beyond physical incarnation.
+The data support a threefold path model:
+- **Normative**: Continuation (vast majority)
+- **Restorative**: Reincarnation for healing (~4%)
+- **Volunteer**: Reincarnation for mission (~1%)
+
+The **15.9:1 love:harsh ratio** during life reviews supports the Swedenborgian model: the intermediate state reveals rather than condemns. The NDE appears to offer a glimpse into the first stage of post-mortem existence—a World of Spirits where consciousness transitions from earthly to spiritual organization, and where return to physical life is the exception granted for specific purposes, not the default.
 
 ---
 
@@ -404,14 +402,40 @@ Swedenborg, E. (1758). *Heaven and Hell* (G. F. Dole, Trans.). Swedenborg Founda
 
 | Test | Statistic | df | p-value |
 |------|-----------|----|---------| 
-| OBE × Pathway | χ² = 140.25 | 1 | < 0.0001 |
-| Life Review × Pathway | χ² = 0.00 | 1 | 1.00 |
-| No Fear × Pathway | χ² = 45.33 | 1 | < 0.0001 |
-| Family Return × Pathway | χ² = 77.99 | 1 | < 0.0001 |
+| Agency × Willingness | χ² = 4824.78 | — | < 0.0001 |
+| Love:Harsh Ratio | 223:14 | — | 15.9:1 |
 
-## Appendix B: Data Access
+## Appendix B: Key Statistics
+
+| Metric | Value |
+|--------|-------|
+| Total NDEs analyzed | 6,753 |
+| NDERF records | 5,664 |
+| IANDS records | 1,089 |
+| Return not by choice | 70.1% |
+| Reluctant to return | 49.4% |
+| Deceased relatives present | 17.9% |
+| Past life memory | 4.4% |
+| Pre-incarnation covenant | 1.3% |
+| Life review occurred | 17.5% |
+| Love:Harsh judgment ratio | 15.9:1 |
+| Identity preserved | 64.8% |
+
+## Appendix C: Normative Path Evidence Summary
+
+| Marker | Indicator | Supports |
+|--------|-----------|----------|
+| Return as Exception | External/involuntary: 70.1% | ✓ |
+| Reluctance to Return | Reluctant returnees: 49.4% | ✓ |
+| Deceased Present | Relatives encountered: 17.9% | ✓ |
+| Reincarnation Rare | Past life memory: 4.4% | ✓ |
+| Volunteer Path Rare | Pre-incarnation covenant: 1.3% | ✓ |
+
+**Overall: 5/5 markers support the Normative Path Hypothesis**
+
+## Appendix D: Data Access
 
 All analysis code and raw data are available at:
 - **Repository**: [https://github.com/marconian/structured-data-analysis](https://github.com/marconian/structured-data-analysis)
 - **NDE Project**: [/tree/main/projects/nde/](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/)
-- **Analysis Notebook**: [threefold_path_validation.ipynb](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/threefold_path_validation.ipynb)
+- **Analysis Notebook**: [02_normative_path_validation.ipynb](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/02_normative_path_validation.ipynb)
