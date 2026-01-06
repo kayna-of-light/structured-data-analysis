@@ -357,13 +357,13 @@ class ReadjustmentDifficulty(str, Enum):
 # which provides a more comprehensive list of post-NDE abilities
 
 
-class DeathFearChange(str, Enum):
-    """Change in fear of death after the NDE."""
-    NO_FEAR = "no_fear"  # No longer fears death
-    REDUCED_FEAR = "reduced_fear"  # Less fear than before
-    SOME_FEAR = "some_fear"  # Still has some fear
-    NO_CHANGE = "no_change"  # Fear level unchanged
-    INCREASED_FEAR = "increased_fear"  # More afraid (rare, distressing NDEs)
+class DeathFearLevel(str, Enum):
+    """Level of fear of death. Used for before AND after NDE."""
+    NONE = "none"  # No fear of death
+    MINIMAL = "minimal"  # Little fear
+    MODERATE = "moderate"  # Some fear
+    SIGNIFICANT = "significant"  # Strong fear
+    SEVERE = "severe"  # Overwhelming fear
     NOT_MENTIONED = "not_mentioned"
 
 
@@ -374,19 +374,39 @@ class ValueShift(str, Enum):
     NOT_MENTIONED = "not_mentioned"
 
 
-class SpiritualityChange(str, Enum):
-    """Change in spirituality after the NDE."""
-    INCREASED = "increased"
-    DECREASED = "decreased"
-    NO_CHANGE = "no_change"
+class SpiritualityLevel(str, Enum):
+    """Level of spirituality/spiritual engagement. Used for before AND after NDE.
+    
+    Spirituality here means the INTERNAL/PERSONAL dimension of engagement with
+    transcendent reality: prayer life, meditation, contemplation, sense of
+    connection to the divine, personal religious experience. This dimension
+    exists within ALL traditions - a devout Catholic with deep prayer life
+    has high spirituality, as does a Buddhist practitioner or someone practicing
+    private devotion outside any tradition.
+    
+    This is DISTINCT from religiosity (external/institutional engagement).
+    Someone can be high spirituality + low religiosity (private devotion, no church)
+    or low spirituality + high religiosity (attends services but no personal practice).
+    """
+    NONE = "none"  # No spiritual interest or practice
+    LOW = "low"  # Minimal spiritual engagement
+    MODERATE = "moderate"  # Some spiritual interest/practice
+    HIGH = "high"  # Strong spiritual focus
+    CENTRAL = "central"  # Spirituality is central to identity
     NOT_MENTIONED = "not_mentioned"
 
 
-class ReligiosityChange(str, Enum):
-    """Change in religious involvement/belief after the NDE."""
-    INCREASED = "increased"
-    DECREASED = "decreased"
-    NO_CHANGE = "no_change"
+class ReligiosityLevel(str, Enum):
+    """Level of religious involvement/practice. Used for before AND after NDE.
+    
+    Religiosity here means engagement with organized/institutional religion:
+    attendance, observance, community participation, doctrinal adherence.
+    """
+    NONE = "none"  # No religious involvement
+    LOW = "low"  # Minimal (holidays only, nominal affiliation)
+    MODERATE = "moderate"  # Regular but not central
+    HIGH = "high"  # Active involvement, regular practice
+    DEVOUT = "devout"  # Religion is central to life
     NOT_MENTIONED = "not_mentioned"
 
 
@@ -535,12 +555,32 @@ class VeridicalVerificationStatus(str, Enum):
     NOT_MENTIONED = "not_mentioned"
 
 
-class BeliefConsistency(str, Enum):
-    """Whether experience was consistent with prior beliefs."""
-    CONSISTENT = "consistent"  # Matched prior religious/spiritual expectations
-    INCONSISTENT = "inconsistent"  # Contradicted prior beliefs
-    PARTIALLY_CONSISTENT = "partially_consistent"  # Some elements matched, others didn't
-    NO_PRIOR_BELIEFS = "no_prior_beliefs"  # Had no strong beliefs before
+class DoctrineConsistency(str, Enum):
+    """Was the experience consistent with their religious DOCTRINE/TEACHING?
+    
+    This captures alignment with what their tradition officially teaches
+    about death, afterlife, judgment, etc. A Catholic seeing no purgatory
+    would be INCONSISTENT with doctrine even if personally expected.
+    """
+    CONSISTENT = "consistent"  # Matched religious/doctrinal teachings
+    INCONSISTENT = "inconsistent"  # Contradicted official doctrine
+    PARTIALLY_CONSISTENT = "partially_consistent"  # Some elements matched
+    NO_DOCTRINE = "no_doctrine"  # No religious doctrine to compare (atheist, SBNR without framework)
+    NOT_MENTIONED = "not_mentioned"
+
+
+class PersonalExpectationConsistency(str, Enum):
+    """Was the experience consistent with their PERSONAL expectations of death?
+    
+    This captures what THEY personally expected, which may differ from
+    official doctrine. Someone raised Catholic might personally expect
+    universal acceptance even if doctrine says otherwise.
+    """
+    CONSISTENT = "consistent"  # Matched what they personally expected
+    INCONSISTENT = "inconsistent"  # Contradicted personal expectations
+    PARTIALLY_CONSISTENT = "partially_consistent"  # Some elements matched
+    NO_EXPECTATIONS = "no_expectations"  # Had no expectations about death
+    SURPRISED = "surprised"  # Explicitly stated surprise at what they experienced
     NOT_MENTIONED = "not_mentioned"
 
 
@@ -1016,22 +1056,42 @@ class AftereffectsSection(QuestionnaireBaseModel):
         ...,
         description="Q5.1.1 — Difficulty readjusting to physical reality.",
     )
-    # Note: post_experience_gifts moved to ExperienceQualitySection to avoid duplication
-    death_fear_change: DeathFearChange = Field(
+    
+    # Death Fear - Before and After
+    death_fear_before: DeathFearLevel = Field(
         ...,
-        description="Q5.2.1 — Change in fear of death after the NDE.",
+        description="Q5.2.1a — Level of fear of death BEFORE the NDE.",
     )
+    death_fear_after: DeathFearLevel = Field(
+        ...,
+        description="Q5.2.1b — Level of fear of death AFTER the NDE.",
+    )
+    
     value_shift: ValueShift = Field(
         ...,
         description="Q5.2.2 — Changes in values, priorities, or life purpose.",
     )
-    spirituality_change: SpiritualityChange = Field(
+    
+    # Spirituality - Before and After
+    spirituality_before: SpiritualityLevel = Field(
         ...,
-        description="Q5.2.3 — Change in spirituality after the NDE.",
+        description="Q5.2.3a — Level of spirituality BEFORE the NDE. "
+        "Spirituality = internal/personal dimension (prayer, meditation, contemplation, divine connection).",
     )
-    religiosity_change: ReligiosityChange = Field(
+    spirituality_after: SpiritualityLevel = Field(
         ...,
-        description="Q5.2.4 — Change in religious involvement after the NDE.",
+        description="Q5.2.3b — Level of spirituality AFTER the NDE.",
+    )
+    
+    # Religiosity - Before and After  
+    religiosity_before: ReligiosityLevel = Field(
+        ...,
+        description="Q5.2.4a — Level of religious involvement BEFORE the NDE. "
+        "Religiosity = engagement with organized/institutional religion.",
+    )
+    religiosity_after: ReligiosityLevel = Field(
+        ...,
+        description="Q5.2.4b — Level of religious involvement AFTER the NDE.",
     )
 
 
@@ -1102,9 +1162,15 @@ class ExperienceQualitySection(QuestionnaireBaseModel):
     )
     
     # Belief-Experience Alignment (cultural influence analysis)
-    belief_consistency: BeliefConsistency = Field(
+    doctrine_consistency: DoctrineConsistency = Field(
         ...,
-        description="Q5.3.12 — Was the experience consistent with prior religious/spiritual beliefs?",
+        description="Q5.3.12a — Was the experience consistent with their religious DOCTRINE/TEACHING? "
+        "What their tradition officially teaches about afterlife.",
+    )
+    personal_expectation_consistency: PersonalExpectationConsistency = Field(
+        ...,
+        description="Q5.3.12b — Was the experience consistent with their PERSONAL expectations? "
+        "What THEY personally expected death to be like (may differ from doctrine).",
     )
     
     # Post-Experience Paranormal Gifts
@@ -1139,12 +1205,17 @@ class NDEContextSection(QuestionnaireBaseModel):
 
 
 class PersonDemographicsSection(QuestionnaireBaseModel):
-    age_reported: bool = Field(
+    age_at_nde_reported: bool = Field(
         ...,
-        description="Q6.2.1 — Whether age was mentioned.",
+        description="Q6.2.1a — Whether age at time of NDE was mentioned.",
     )
-    age_years: Optional[int] = Field(
-        None, ge=0, description="Age in years when reported."
+    age_at_nde: Optional[int] = Field(
+        None, ge=0, 
+        description="Q6.2.1b — Age in years when the NDE occurred."
+    )
+    years_since_nde: Optional[int] = Field(
+        None, ge=0,
+        description="Q6.2.1c — Years elapsed between NDE and writing this account (if mentioned)."
     )
     gender: Gender = Field(
         ...,
@@ -1220,11 +1291,11 @@ class PersonDemographicsSection(QuestionnaireBaseModel):
 
     @model_validator(mode="after")
     def validate_demographics(self):
-        # Allow age_reported=True with age_years=None when age is mentioned but not extractable
+        # Allow age_at_nde_reported=True with age_at_nde=None when age is mentioned but not extractable
         # (e.g., "in my early 20s", "as a child", "middle-aged")
         # Previously this raised ValueError, but vague age references are common in narratives
-        if not self.age_reported:
-            self.age_years = None
+        if not self.age_at_nde_reported:
+            self.age_at_nde = None
 
         if self.number_of_children is not None and self.number_of_children < 0:
             raise ValueError("Number of children cannot be negative.")
