@@ -4,11 +4,11 @@
 
 Near-death experience research has documented a subset of experiencers who report returning for an "earthly mission" rather than for family obligations, timing, or personal choice. The Swedenborgian framework proposes that such mission-based returns represent a distinct phenomenological category—souls who incarnate for specific spiritual purposes. Whether this represents a genuine distinction or retrospective meaning-making remains untested.
 
-We analyzed 5,263 structured NDE records from NDERF coded using GPT-5.2 for return reason, mission commission, volunteer language, pre-birth indicators, and multiple phenomenological features. A binary "Volunteer Detection" approach was employed rather than categorical soul path classification, recognizing the methodological limits of what NDE data can reveal about soul origins.
+We analyzed 6,753 structured NDE records from NDERF (n=5,664) and IANDS (n=1,089) coded using GPT-5.2 for return reason, mission commission, volunteer language, pre-birth indicators, and multiple phenomenological features. A binary "Volunteer Detection" approach was employed rather than categorical soul path classification, recognizing the methodological limits of what NDE data can reveal about soul origins.
 
-Volunteer markers were detected in 510 cases (9.7%). The "earthly mission" return reason achieved extraordinary discriminant validity: 93.7% of mission-returners reported explicit mission commissioning versus 28.8-59.5% in other return categories. Pre-birth indicators showed dramatic elevation in cases with volunteer language: incarnation choice 43.7 times higher, pre-birth realm description 24.9 times higher, premortal existence information 10.6 times higher. Chi-square tests confirmed highly significant associations across all key variables (p < 0.0001).
+Volunteer markers were detected in 695 cases (10.3%). The "earthly mission" return reason achieved extraordinary discriminant validity: 94.2% of mission-returners reported explicit mission commissioning versus 29.8-60.1% in other return categories. Pre-birth indicators showed dramatic elevation in cases with volunteer language: incarnation choice 35.8 times higher, pre-birth realm description 22.3 times higher, premortal existence information 10.6 times higher. Chi-square tests confirmed highly significant associations across all key variables (p < 0.0001).
 
-Mission-based returns represent a statistically distinct phenomenological category. The 93.7% discriminant accuracy for mission commission validates that "earthly mission" constitutes a coherent category rather than retrospective meaning-making. However, methodological humility is essential: NDE data can detect volunteer markers, not classify soul paths.
+Mission-based returns represent a statistically distinct phenomenological category. The 94.2% discriminant accuracy for mission commission validates that "earthly mission" constitutes a coherent category rather than retrospective meaning-making. However, methodological humility is essential: NDE data can detect volunteer markers, not classify soul paths.
 
 ---
 
@@ -16,9 +16,10 @@ Mission-based returns represent a statistically distinct phenomenological catego
 
 | Item | Source | Access |
 |------|--------|--------|
-| NDERF Records (n=5,263) | Near-Death Experience Research Foundation | [nderf.org](https://nderf.org) |
+| NDERF Records (n=5,664) | Near-Death Experience Research Foundation | [nderf.org](https://nderf.org) |
+| IANDS Records (n=1,089) | International Association for Near-Death Studies | [iands.org](https://iands.org) |
 | Analysis Code | `03_volunteer_soul_profile.ipynb` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/03_volunteer_soul_profile.ipynb) |
-| Structured Data | `analysis/*.json` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/analysis/) |
+| Structured Data | `structured/*.json` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/structured/) |
 | Extraction Model | GPT-5.2 via Azure OpenAI | Azure OpenAI Service |
 
 ---
@@ -59,7 +60,7 @@ This analysis tests whether mission-based return constitutes a coherent phenomen
 
 ### 2.1 Data Sources
 
-The analysis employed 5,263 records from the Near-Death Experience Research Foundation (NDERF). This corpus was selected because the NDERF questionnaire elicits detailed information about return circumstances, mission experiences, and pre-birth awareness that enables the specific analyses required.
+The analysis employed 6,753 records from two major NDE databases: 5,664 from the Near-Death Experience Research Foundation (NDERF) and 1,089 from the International Association for Near-Death Studies (IANDS). Both corpuses were selected because their questionnaires elicit detailed information about return circumstances, mission experiences, and pre-birth awareness that enables the specific analyses required.
 
 ### 2.2 Coding Scheme
 
@@ -83,7 +84,7 @@ Analysis employed frequency calculations for return reason distributions, cross-
 
 Return reasons were captured as a list field, meaning experiencers could report multiple reasons for their return. The distribution reveals the relative prevalence of different return narratives.
 
-"Not your time" was most common with 1,079 mentions (21.3% of experiences), followed by family responsibility with 865 mentions (17.1%), unfinished business with 504 mentions (10.0%), earthly mission with 441 mentions (8.7%), and other with 162 mentions (3.2%). Records with at least one return reason totaled 2,192 (43.3%), while 2,871 (56.7%) did not report explicit return reasons. Multiple reasons appeared in 756 cases (14.9%).
+"Not your time" was most common with 1,459 mentions (21.6% of experiences), followed by family responsibility with 1,164 mentions (17.2%), unfinished business with 711 mentions (10.5%), earthly mission with 623 mentions (9.2%), and other with 218 mentions (3.2%). Records with at least one return reason totaled 2,988 (44.2%), while 3,765 (55.8%) did not report explicit return reasons. Multiple reasons appeared in 1,034 cases (15.3%).
 
 Earthly mission, the category of primary interest, represents a substantial minority—nearly one in eleven cases with return reasons. This is not a marginal phenomenon but a recognizable subset of NDE return patterns.
 
@@ -91,61 +92,61 @@ Earthly mission, the category of primary interest, represents a substantial mino
 
 The central test of whether "earthly mission" represents a coherent category examines whether it predicts mission commissioning during the NDE. If experiencers who report returning for an earthly mission also report having been explicitly commissioned for that mission during their NDE—at rates far exceeding other return reasons—this suggests a genuine phenomenological pattern rather than retrospective rationalization.
 
-The results are striking. Among experiencers reporting earthly mission as their return reason (n=441), 93.7% also reported mission commission—either explicit or implied. This far exceeds all other return categories: unfinished business at 59.5%, not your time at 35.9%, other at 31.5%, and family responsibility at 28.8%.
+The results are striking. Among experiencers reporting earthly mission as their return reason (n=623), 94.2% also reported mission commission—either explicit or implied. This far exceeds all other return categories: unfinished business at 60.1%, not your time at 36.7%, other at 29.8%, and family responsibility at 31.3%.
 
-The 93.7% discriminant accuracy is remarkable. Experiencers who report returning for a mission almost universally report having received that mission during their NDE. This is not chance association; it represents a coherent phenomenological profile. The mission return reason and the mission commission experience travel together in nearly all cases.
+The 94.2% discriminant accuracy is remarkable. Experiencers who report returning for a mission almost universally report having received that mission during their NDE. This is not chance association; it represents a coherent phenomenological profile. The mission return reason and the mission commission experience travel together in nearly all cases.
 
 ### 3.3 Volunteer Detection Results
 
-Applying the volunteer detection criteria to the full corpus identified 510 cases (9.7%) with volunteer markers. The remaining 4,753 (90.3%) showed no volunteer markers. This does not mean 90.3% are "non-volunteers"—it means 90.3% did not report volunteer-type indicators in their accounts.
+Applying the volunteer detection criteria to the full corpus identified 695 cases (10.3%) with volunteer markers. The remaining 6,058 (89.7%) showed no volunteer markers. This does not mean 89.7% are "non-volunteers"—it means 89.7% did not report volunteer-type indicators in their accounts.
 
-The 9.7% detection rate suggests volunteer-type experiences are not rare but neither are they typical. Nearly one in ten NDErs shows this phenomenological pattern.
+The 10.3% detection rate suggests volunteer-type experiences are not rare but neither are they typical. Roughly one in ten NDErs shows this phenomenological pattern.
 
 ### 3.4 Volunteer Language Distribution
 
-Explicit volunteer language—terminology like "I volunteered," "I chose to come," "I agreed to this mission"—proved relatively rare in the strict sense. Only 0.2% (n=11) used explicit volunteer terminology, with an additional 0.4% (n=21) implying such language. The majority either explicitly denied volunteer language (63.9%, n=3,365) or did not address it (31.7%, n=1,666).
+Explicit volunteer language—terminology like "I volunteered," "I chose to come," "I agreed to this mission"—proved relatively rare in the strict sense. Only 0.3% (n=22) used explicit volunteer terminology, with an additional 0.5% (n=31) implying such language. The majority either explicitly denied volunteer language (68.1%, n=4,597) or did not address it (31.1%, n=2,103).
 
-However, this narrow measure underestimates the phenomenon. The convergence of mission commissioning, pre-birth indicators, and return patterns in the 9.7% volunteer-detected cases suggests the experience is more common than the specific linguistic label "volunteer."
+However, this narrow measure underestimates the phenomenon. The convergence of mission commissioning, pre-birth indicators, and return patterns in the 10.3% volunteer-detected cases suggests the experience is more common than the specific linguistic label "volunteer."
 
 ### 3.5 Pre-Birth Indicator Profiles
 
-The most striking finding concerns pre-birth indicators in cases with volunteer language. Among the 36 cases with explicit or implied volunteer language, pre-birth indicators were dramatically elevated compared to non-volunteer cases.
+The most striking finding concerns pre-birth indicators in cases with volunteer language. Among the 53 cases with explicit or implied volunteer language, pre-birth indicators were dramatically elevated compared to non-volunteer cases.
 
-Incarnation choice (any type) appeared in 69.4% of volunteer language cases versus only 1.6% of non-volunteer cases—a ratio of 43.7 to 1. Pre-birth realm description appeared in 33.3% versus 1.3%—a ratio of 24.9 to 1. Premortal existence information appeared in 66.7% versus 6.3%—a ratio of 10.6 to 1. Home identification as spiritual appeared in 52.8% versus 15.8%—a ratio of 3.3 to 1. Identity pre-body appeared in 80.6% versus 33.7%—a ratio of 2.4 to 1.
+Incarnation choice (any type) appeared in 71.7% of volunteer language cases versus only 2.0% of non-volunteer cases—a ratio of 35.8 to 1. Pre-birth realm description appeared in 34.0% versus 1.5%—a ratio of 22.3 to 1. Premortal existence information appeared in 69.8% versus 6.6%—a ratio of 10.6 to 1. Home identification as spiritual appeared in 58.5% versus 16.8%—a ratio of 3.5 to 1. Identity pre-body appeared in 79.2% versus 34.6%—a ratio of 2.3 to 1.
 
 These ratios are not statistical noise. Pre-birth memory indicators cluster dramatically with volunteer language. Experiencers who use volunteer terminology are dozens of times more likely to report remembering choosing their incarnation, describing pre-birth realms, and accessing premortal existence information. This coherent clustering suggests a genuine phenomenological profile.
 
 ### 3.6 Volunteer Profile Comparison
 
-Comparing volunteer-detected cases (n=510) with non-volunteer cases (n=4,753) across multiple dimensions reveals consistent differentiation.
+Comparing volunteer-detected cases (n=695) with non-volunteer cases (n=6,058) across multiple dimensions reveals consistent differentiation.
 
-Mission commissioned appeared in 92.2% of volunteer-detected cases versus 12.9% of non-volunteer cases—a ratio of 7.2 to 1. Continuation memory appeared in 12.7% versus 3.1%—a ratio of 4.2 to 1. Home is spiritual appeared in 39.2% versus 13.5%—a ratio of 2.9 to 1. Pre-birth awareness appeared in 71.4% versus 40.3%—a ratio of 1.8 to 1.
+Mission commissioned appeared in 92.7% of volunteer-detected cases versus 13.8% of non-volunteer cases—a ratio of 6.7 to 1. Continuation memory appeared in 14.0% versus 3.3%—a ratio of 4.2 to 1. Home is spiritual appeared in 41.4% versus 14.4%—a ratio of 2.9 to 1. Pre-birth awareness appeared in 29.4% versus 5.1%—a ratio of 5.7 to 1.
 
-The volunteer-detected profile that emerges shows mission clarity (92.2% have explicit commissioning), pre-incarnate awareness (two-thirds have premortal information), and spiritual home orientation (39.2% identify the spiritual realm as home rather than earth). These are not random co-occurrences but a coherent phenomenological constellation.
+The volunteer-detected profile that emerges shows mission clarity (92.7% have explicit commissioning), pre-incarnate awareness (nearly 70% have premortal information in volunteer language cases), and spiritual home orientation (41.4% identify the spiritual realm as home rather than earth). These are not random co-occurrences but a coherent phenomenological constellation.
 
 ### 3.7 Return Agency and Willingness
 
-Return patterns show expected distributions. Among all cases, external being accounted for 27.3% (n=1,437), involuntary for 20.6% (n=1,084), self for 15.7% (n=826), mutual for 4.1% (n=214), and not mentioned for 28.5% (n=1,502). Reluctant experiencers constituted 25.1% (n=1,321), willing 10.5% (n=553), mixed 12.9% (n=680), neutral 1.3% (n=66), and not mentioned 46.4% (n=2,443).
+Return patterns show expected distributions. Among all cases, external being accounted for 28.6% (n=1,931), involuntary for 21.1% (n=1,422), self for 16.6% (n=1,124), mutual for 4.5% (n=305), and not mentioned for 29.2% (n=1,971). Reluctant experiencers constituted 26.0% (n=1,759), willing 11.3% (n=763), mixed 14.0% (n=944), neutral 1.4% (n=97), and not mentioned 47.2% (n=3,190).
 
-Cross-tabulating agency and willingness reveals that the most common combinations were external being plus reluctant (14.9%), self plus willing (7.9%), involuntary plus reluctant (6.3%), self plus mixed (5.4%), and external being plus mixed (3.4%). These patterns provide context for understanding mission-based returns within the broader return landscape.
+Cross-tabulating agency and willingness reveals that the most common combinations were external being plus reluctant (14.9%), self plus willing (8.2%), involuntary plus reluctant (6.2%), self plus mixed (5.5%), and external being plus mixed (3.6%). These patterns provide context for understanding mission-based returns within the broader return landscape.
 
 ### 3.8 Continuation Memory Analysis
 
-Continuation memory—evidence of existence prior to current life—appeared in a small minority: past life memory (explicit or implied) in 3.7% (n=195) and intermission memory (explicit or implied) in 0.7% (n=37).
+Continuation memory—evidence of existence prior to current life—appeared in a small minority: past life memory (explicit or implied) in 4.4% (n=297) and intermission memory (explicit or implied) in 1.0% (n=69).
 
-The relationship between continuation memory and volunteer indicators is informative. Among cases with past life memory, volunteer language appeared 8.0 times more frequently than in cases without past life memory (4.3% versus 0.5%). Mission commissioned appeared 2.6 times more frequently (51.0% versus 19.3%). Earthly mission return appeared 3.2 times more frequently (25.7% versus 8.1%).
+The relationship between continuation memory and volunteer indicators is informative. Among cases with past life memory, volunteer language appeared 7.1 times more frequently than in cases without past life memory (4.4% versus 0.6%). Mission commissioned appeared 2.6 times more frequently (52.9% versus 20.5%). Earthly mission return appeared 3.0 times more frequently (25.3% versus 8.5%).
 
 If continuation memory contradicted volunteer status—if past life memory indicated restorative incarnation rather than volunteer mission—we would expect ratios near 1.0 or below. The elevated ratios suggest continuation memory may represent memory of spiritual pre-existence rather than necessarily prior earth incarnation. The two categories are not mutually exclusive: a volunteer soul would presumably have spiritual pre-existence to remember.
 
 ### 3.9 Pre-Birth Indicator Distribution
 
-The distribution of pre-birth indicators shows that most experiencers (92.9%, n=4,888) reported zero pre-birth indicators. One indicator appeared in 4.8% (n=253), two indicators in 1.8% (n=95), and three or more indicators in 0.5% (n=27).
+The distribution of pre-birth indicators shows that most experiencers (92.4%, n=6,238) reported zero pre-birth indicators. One indicator appeared in 4.9% (n=332), two indicators in 2.0% (n=136), and three or more indicators in 0.7% (n=47).
 
-Among cases with strong pre-birth awareness (three or more indicators, n=196), volunteer detection was present in 46.4% (n=91). This represents a dramatic elevation: nearly half of those with strong pre-birth awareness also show volunteer markers, compared to 9.7% in the general corpus. Strong pre-birth awareness and volunteer detection cluster together at nearly five times the base rate.
+Among cases with strong pre-birth awareness (three or more indicators, n=47), volunteer detection was present in 87.2% (n=41). This represents a dramatic elevation: nearly nine in ten of those with strong pre-birth awareness also show volunteer markers, compared to 10.3% in the general corpus. Strong pre-birth awareness and volunteer detection cluster together at nearly eight times the base rate.
 
 ### 3.10 Statistical Validation
 
-Chi-square tests confirmed that all key associations are highly significant. Mission commissioned showed χ² = 2338.8, p < 0.0001. Volunteer language showed χ² = 452.0, p < 0.0001. Return agency showed χ² = 561.0, p < 0.0001. Return willingness showed χ² = 228.6, p < 0.0001. Comparative reality showed χ² = 203.1, p < 0.0001. Pre-birth awareness showed χ² = 180.0, p < 0.0001. Continuation memory showed χ² = 110.5, p < 0.0001.
+Chi-square tests confirmed that all key associations are highly significant. Mission commissioned showed χ² = 3018.1, p < 0.0001. Volunteer language showed χ² = 599.4, p < 0.0001. Return agency showed χ² = 696.4, p < 0.0001. Return willingness showed χ² = 285.0, p < 0.0001. Comparative reality showed χ² = 223.4, p < 0.0001. Pre-birth awareness showed χ² = 515.7, p < 0.0001. Continuation memory showed χ² = 165.8, p < 0.0001.
 
 Interestingly, two variables showed no association with volunteer detection: sense of belonging (χ² = 0.0, p = 1.00) and life transformation (χ² = 0.0, p = 1.00). Volunteer detection does not predict whether experiencers feel they belong in the spiritual realm or whether they report life transformation. The profile is specific, not global.
 
@@ -155,17 +156,17 @@ Interestingly, two variables showed no association with volunteer detection: sen
 
 ### 4.1 Summary of Findings
 
-This analysis establishes mission-based returns as a statistically valid phenomenological category. The discriminant validity is remarkable: 93.7% of those reporting earthly mission return also report mission commissioning—a near-perfect correspondence. Pre-birth indicators show coherent elevation: incarnation choice 43.7 times higher, pre-birth realm 24.9 times higher, premortal existence information 10.6 times higher in volunteer language cases. Volunteer detection occurs in 9.7% of NDEs—a substantial minority. All key associations are highly significant (p < 0.0001).
+This analysis establishes mission-based returns as a statistically valid phenomenological category. The discriminant validity is remarkable: 94.2% of those reporting earthly mission return also report mission commissioning—a near-perfect correspondence. Pre-birth indicators show coherent elevation: incarnation choice 35.8 times higher, pre-birth realm 22.3 times higher, premortal existence information 10.6 times higher in volunteer language cases. Volunteer detection occurs in 10.3% of NDEs—a substantial minority. All key associations are highly significant (p < 0.0001).
 
 ### 4.2 The Coherent Volunteer Profile
 
-The volunteer-detected profile that emerges from the data forms a coherent phenomenological constellation. These experiencers show mission clarity (92.2% have explicit commissioning during their NDE), pre-incarnate awareness (66.7% have premortal existence information), choice memory (69.4% of those with volunteer language remember choosing incarnation), and home orientation (39.2% identify the spiritual realm as "home" versus 13.5% of non-volunteer cases).
+The volunteer-detected profile that emerges from the data forms a coherent phenomenological constellation. These experiencers show mission clarity (92.7% have explicit commissioning during their NDE), pre-incarnate awareness (69.8% have premortal existence information among volunteer language cases), choice memory (71.7% of those with volunteer language remember choosing incarnation), and home orientation (41.4% identify the spiritual realm as "home" versus 14.4% of non-volunteer cases).
 
 This alignment with theoretical predictions is notable. The Swedenborgian framework and volunteer soul hypothesis predict that some individuals retain pre-birth awareness and are reminded of their mission during near-death states. The data show exactly this pattern: a subset of experiencers with elevated pre-birth indicators, mission commissioning, and distinctive return patterns.
 
 ### 4.3 What the Data Support
 
-The data support several conclusions. "Earthly mission" return represents a genuine phenomenological category, not retrospective meaning-making. The 93.7% discriminant accuracy for mission commissioning cannot be explained by post-hoc rationalization—experiencers who report mission-based return almost universally report having received that mission during their NDE. Pre-birth indicators cluster meaningfully with volunteer markers. This is not random co-occurrence; ratios of 10 to 40 times baseline rates indicate genuine association. The phenomenon occurs at non-trivial rates—9.7% of NDErs show volunteer markers, representing a substantial minority.
+The data support several conclusions. "Earthly mission" return represents a genuine phenomenological category, not retrospective meaning-making. The 94.2% discriminant accuracy for mission commissioning cannot be explained by post-hoc rationalization—experiencers who report mission-based return almost universally report having received that mission during their NDE. Pre-birth indicators cluster meaningfully with volunteer markers. This is not random co-occurrence; ratios of 10 to 35 times baseline rates indicate genuine association. The phenomenon occurs at non-trivial rates—10.3% of NDErs show volunteer markers, representing a substantial minority.
 
 ### 4.4 What the Data Cannot Support
 
@@ -181,7 +182,7 @@ Non-detection does not equal non-volunteer. Absence of volunteer markers may ref
 
 ### 4.5 The "Earthly Mission" Return Category
 
-The 93.7% discriminant accuracy for mission commissioning represents the strongest finding. This validates that "earthly mission" is a genuine phenomenological category distinguished from other return reasons. Experiencers who report returning for a mission are accessing something real during their NDEs—whether we call it "volunteer soul commissioning" or simply "mission experience," the pattern is coherent and non-random.
+The 94.2% discriminant accuracy for mission commissioning represents the strongest finding. This validates that "earthly mission" is a genuine phenomenological category distinguished from other return reasons. Experiencers who report returning for a mission are accessing something real during their NDEs—whether we call it "volunteer soul commissioning" or simply "mission experience," the pattern is coherent and non-random.
 
 This has implications for how we interpret mission-based return accounts. They warrant validation rather than dismissal. When an NDEr reports returning with a mission, they are almost certainly also reporting having received that mission during their NDE. The two experiences travel together; the return narrative reflects the NDE content.
 
@@ -197,7 +198,7 @@ Theoretically, the data are consistent with the Volunteer Soul hypothesis withou
 
 ### 4.7 Limitations
 
-Several limitations warrant acknowledgment. The analysis used a single database (NDERF, n=5,263); replication with other sources would strengthen confidence. Self-report bias may affect mission language—it is a meaningful narrative that experiencers might be motivated to adopt. The Western sample limits generalizability; non-Western concepts of mission and volunteering may differ significantly. AI extraction may introduce systematic biases in how volunteer-related content is coded. And binary detection misses gradations and mixed profiles that may exist in the experiencer population.
+Several limitations warrant acknowledgment. The analysis used two databases (NDERF n=5,664, IANDS n=1,089); replication with additional sources would strengthen confidence. Self-report bias may affect mission language—it is a meaningful narrative that experiencers might be motivated to adopt. The Western sample limits generalizability; non-Western concepts of mission and volunteering may differ significantly. AI extraction may introduce systematic biases in how volunteer-related content is coded. And binary detection misses gradations and mixed profiles that may exist in the experiencer population.
 
 ### 4.8 Future Directions
 
@@ -207,9 +208,9 @@ Integration with DOPS research would enable cross-referencing volunteer-detected
 
 ## 5. Conclusion
 
-Analysis of 5,263 near-death experiences establishes mission-based returns as a statistically valid phenomenological category. The "earthly mission" return reason achieves 93.7% discriminant accuracy for mission commissioning—experiencers who report returning for a mission almost universally report having received that mission during their NDE. This correspondence validates mission-based return as a coherent category rather than retrospective meaning-making.
+Analysis of 6,753 near-death experiences establishes mission-based returns as a statistically valid phenomenological category. The "earthly mission" return reason achieves 94.2% discriminant accuracy for mission commissioning—experiencers who report returning for a mission almost universally report having received that mission during their NDE. This correspondence validates mission-based return as a coherent category rather than retrospective meaning-making.
 
-Pre-birth memory indicators are dramatically elevated in volunteer-detected cases: incarnation choice 43.7 times baseline, pre-birth realm description 24.9 times baseline, premortal existence information 10.6 times baseline. These ratios indicate genuine clustering, not random co-occurrence. Volunteer markers appear in 9.7% of NDEs—a substantial minority showing this distinctive phenomenological profile.
+Pre-birth memory indicators are dramatically elevated in volunteer-detected cases: incarnation choice 35.8 times baseline, pre-birth realm description 22.3 times baseline, premortal existence information 10.6 times baseline. These ratios indicate genuine clustering, not random co-occurrence. Volunteer markers appear in 10.3% of NDEs—a substantial minority showing this distinctive phenomenological profile.
 
 Methodological humility is essential. We detect markers, not classify paths. Pre-birth awareness during NDE differs methodologically from child pre-birth memory research. Continuation memory is ambiguous in source. Non-detection does not establish non-volunteer status.
 
@@ -233,25 +234,27 @@ Ring, K. (1998). *Lessons from the Light: What We Can Learn from the Near-Death 
 
 | Test | Variable | χ² | p-value |
 |------|----------|-----|---------|
-| Independence | Volunteer × Mission | 2338.8 | < 0.0001 |
-| Independence | Volunteer × Return Agency | 561.0 | < 0.0001 |
-| Independence | Volunteer × Return Willingness | 228.6 | < 0.0001 |
-| Independence | Volunteer × Pre-birth Awareness | 180.0 | < 0.0001 |
-| Independence | Volunteer × Continuation Memory | 110.5 | < 0.0001 |
+| Independence | Volunteer × Mission | 3018.1 | < 0.0001 |
+| Independence | Volunteer × Return Agency | 696.4 | < 0.0001 |
+| Independence | Volunteer × Return Willingness | 285.0 | < 0.0001 |
+| Independence | Volunteer × Pre-birth Awareness | 515.7 | < 0.0001 |
+| Independence | Volunteer × Continuation Memory | 165.8 | < 0.0001 |
 
 ## Appendix B: Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total NDEs analyzed | 5,263 |
-| Volunteer markers detected | 510 (9.7%) |
-| Mission commission rate (earthly mission) | 93.7% |
-| Pre-birth awareness rate | 7.1% |
-| Continuation memory rate | 4.0% |
-| Home is spiritual (volunteer) | 39.2% |
-| Home is spiritual (non-volunteer) | 13.5% |
-| Incarnation choice ratio | 43.7× |
-| Pre-birth realm ratio | 24.9× |
+| Total NDEs analyzed | 6,753 |
+| NDERF records | 5,664 |
+| IANDS records | 1,089 |
+| Volunteer markers detected | 695 (10.3%) |
+| Mission commission rate (earthly mission) | 94.2% |
+| Pre-birth awareness rate | 7.6% |
+| Continuation memory rate | 4.4% |
+| Home is spiritual (volunteer) | 41.4% |
+| Home is spiritual (non-volunteer) | 14.4% |
+| Incarnation choice ratio | 35.8× |
+| Pre-birth realm ratio | 22.3× |
 | Premortal existence ratio | 10.6× |
 
 ## Appendix C: Methodological Notes
