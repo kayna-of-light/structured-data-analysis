@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\03860_henry-s-mother-s-nde-7538.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\03860_henry-s-mother-s-nde-7538.json",
   "source_url": "https://www.nderf.org/Experiences/1henry_mother_nde.html",
   "title": "Henry's Mother's NDE 7538",
   "date": "1954",
-  "content": "As told by my mother: As a consistently sick child, my mother had many ear infections and was having tubes inserted to improve drainage. Mom said that during the beginning of the procedure she ascended to the ceiling of the operating room. She observed the physician and nurse for a few minutes and heard the doctor tell the nurse in a rushed tone, ‘Turn off the ether!’ realizing they had given her too much. The next thing she remembers, she was sitting on her bed at home and as she looked down on her bed sheets, she realized they were now sequin sheets as opposed to her normal sheets. She was unable to be revived afterward and stayed in a coma for four days. When she awoke and was stabilized, she was bed-ridden for a week, and then developed symptoms of Type 1 Diabetes. The interesting thing is that she said she wanted so badly to 'just be back home.' To her amazement, when she arrived home and was bed-ridden for a week, she found that her mother had replaced her bed sheets with sequin sheets while she was in the hospital. This was her only memory of the ordeal other than she said that she missed home very badly during the time that she was out. She said that the physicians had told her parents that she would be needing rest for some time after coming home, so her mother prepared for this by purchasing all new sheets that would be pleasant for her upon her arrival.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-30T01:50:10.404646+00:00",
-  "source_checksum": "963464057236877a524e229c51e40356834ab6acf370fa94d2082b2127647bd9",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "963464057236877a524e229c51e40356834ab6acf370fa94d2082b2127647bd9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T12:34:10.887363+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,10 +16,13 @@
           "ceiling"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "verified",
         "heightened_perception": "not_mentioned",
-        "identity_continuity": "not_mentioned",
-        "separation_sensations": [],
+        "identity_continuity": "clear_identity",
+        "separation_sensations": [
+          "none_specified"
+        ],
         "separation_sensations_other": null
       },
       "tunnel": {
@@ -33,7 +35,7 @@
       },
       "arrival": {
         "environment_description": "minimal",
-        "light_encounter": [],
+        "light_encounter": "not_mentioned",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -52,8 +54,11 @@
       "encounters": {
         "deceased_relatives": "not_mentioned",
         "spiritual_beings": [],
-        "communication_mode": "normal_speech",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [
+          "normal_speech"
+        ],
+        "guidance_received": "no",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -63,49 +68,60 @@
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "earth",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [
+        "earth"
+      ],
       "earth_alienation": "no",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "none",
-      "return_choice": "not_mentioned",
-      "return_reason": "not_mentioned",
+      "return_agency": "not_mentioned",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
-      "return_description": "brief",
+      "return_description": "not_mentioned",
       "return_method": "not_specified",
       "return_method_other_detail": null,
       "return_feeling": "not_mentioned",
-      "mission_commissioned": "no",
+      "mission_commissioned": "not_mentioned",
       "mission_types": [],
       "mission_detail": null,
-      "volunteer_language": "no"
+      "volunteer_language": "not_mentioned"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -115,31 +131,40 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "familiar_earthlike",
+      "realm_types": [],
       "overall_valence": "not_mentioned",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "verified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "surgery",
-      "nde_cause_other_detail": "Ear procedure (tubes inserted) with ether anesthesia; doctor said, 'Turn off the ether!' after too much was given.",
-      "clinical_status": "unknown",
+      "nde_cause_other_detail": "Ear procedure (tubes inserted) with ether anesthesia overdose implied ('Turn off the ether!').",
+      "clinical_status": "implied",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "female",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -148,31 +173,32 @@
     "stage_sequence": {
       "present_elements": [
         "obe",
-        "return_choice"
+        "return_choice",
+        "other"
       ],
-      "elements_other_detail": "After the OBE in the operating room, she next remembers being at home and noticing the bed sheets were sequin sheets.",
+      "elements_other_detail": "Abrupt transition to being 'sitting on her bed at home' and noticing sequin sheets; strong desire to be home.",
       "canonical_sequence": "partial",
-      "sequence_variation_description": "OBE in operating room ceiling observing staff; then next memory is being at home in bed noticing sequin sheets (no tunnel/light/life review described).",
+      "sequence_variation_description": "OBE in operating room followed by abrupt 'at home' scene; no tunnel/light/life review/boundary described.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Veridical-like detail: she later confirmed her mother had replaced her sheets with sequin sheets while she was hospitalized; also heard doctor say, 'Turn off the ether!' during OBE.",
-      "notable_quotes": "‘Turn off the ether!’; wanted so badly to 'just be back home.'"
+      "nonstandard_elements": "Perceived being at home in bed (seeing changed sequin sheets) while physically in hospital coma; later verified the sheets had been replaced during hospitalization.",
+      "notable_quotes": "Heard the doctor tell the nurse in a rushed tone, 'Turn off the ether!'"
     }
   },
-  "response_id": "resp_0afbb60ef480105c0069532fbc77448197b707e9c78a50f8cf",
+  "response_id": "resp_026ce107f09e9a2a00695d0120a93881948d36411abdb9797a",
   "usage": {
-    "input_tokens": 9397,
+    "input_tokens": 11611,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1430,
+    "output_tokens": 1657,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10827
+    "total_tokens": 13268
   }
 }

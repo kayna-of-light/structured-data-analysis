@@ -1,15 +1,14 @@
 {
   "dataset": "iands",
-  "source_file": "data\\iands\\archive-through-december-19-2002-006.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\iands\\archive-through-december-19-2002-006.json",
   "source_url": null,
   "title": "Archive through December 19, 2002 - Anonymous (Sunday, December 1, 2002 - 12:31 pm)",
   "date": "Sunday, December 1, 2002 - 12:31 pm",
-  "content": "In August 1964 my daughter had just been born. I hemorrhaged and lost three pints of blood, which the midwife had just been weighing and had left the room. As I was lying there I started to leave my body. I floated above the bed gradually seeing my body growing smaller and smaller. I kept on looking at it as though I was viewing the inside of a doll's house with the roof off. There was darkness all around me, no white lights and tunnels, just blackness. When my body on the bed was a tiny speck it was as though I realized what was happening and I told myself that it was not my time to go, and just as I thought this, I whooshed straight down into my body. I was never given a blood transfusion and it took nearly two weeks before I was strong enough to walk. Two years later I had a son in hospital and was given a drug to stop me from hemorrhaging again, and 17 months after that I had another son, again in the hospital. My daughter has since had two daughters of her own, but five years ago Contracted meningitis, was in a semi-coma for a month, and experienced the same NDE, but hers was slightly different to mine. I didn't know I'd had a NDE till a long time later but always knew something had stopped me from dying.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T16:41:01.118577+00:00",
-  "source_checksum": "68685b7469723196f7e0543735c465eb6189c810966c6ecf778ca8ad15dad8ec",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "68685b7469723196f7e0543735c465eb6189c810966c6ecf778ca8ad15dad8ec",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T14:05:12.052334+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,27 +16,29 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "not_mentioned",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "clear_identity",
         "separation_sensations": [
-          "other"
+          "weightlessness"
         ],
-        "separation_sensations_other": "Floated above the bed gradually, seeing her body growing smaller and smaller; described it like viewing the inside of a doll's house with the roof off."
+        "separation_sensations_other": null
       },
       "tunnel": {
-        "passage_type": "no",
+        "passage_type": "void",
         "passage_other_detail": null,
-        "movement_sensations": [],
-        "movement_other_detail": null,
+        "movement_sensations": [
+          "floating",
+          "other"
+        ],
+        "movement_other_detail": "Floated away from the body; later 'whooshed straight down into my body.'",
         "light_visibility": "no",
         "emotional_tone": "not_mentioned"
       },
       "arrival": {
         "environment_description": "remained_transitional",
-        "light_encounter": [
-          "no"
-        ],
+        "light_encounter": "no",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -49,15 +50,18 @@
       "environment": {
         "environment_description": "brief",
         "environment_features": [],
-        "environment_other_detail": null,
+        "environment_other_detail": "Darkness/blackness all around; no tunnel; no white light.",
         "comparative_reality": "not_mentioned",
         "thought_responsiveness": "not_mentioned"
       },
       "encounters": {
-        "deceased_relatives": "not_mentioned",
+        "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [
+          "no_communication"
+        ],
+        "guidance_received": "no",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -67,49 +71,60 @@
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "none",
-      "return_choice": "chose_to_return",
-      "return_reason": "not_your_time",
+      "return_agency": "self",
+      "return_willingness": "willing",
+      "return_reasons": [
+        "not_your_time"
+      ],
       "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "rapid",
       "return_method_other_detail": null,
       "return_feeling": "not_mentioned",
-      "mission_commissioned": "not_mentioned",
+      "mission_commissioned": "no",
       "mission_types": [],
       "mission_detail": null,
-      "volunteer_language": "not_mentioned"
+      "volunteer_language": "no"
     },
     "transformative_effects": {
-      "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "readjustment": "significant",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -117,68 +132,77 @@
       "sensory_vividness": "not_mentioned",
       "ineffability": "not_mentioned",
       "memory_persistence": "not_mentioned",
-      "reality_assessment": "not_mentioned",
+      "reality_assessment": "definitely_real",
       "unity_experience": "not_mentioned",
-      "realm_type": "void_darkness",
+      "realm_types": [
+        "void_darkness"
+      ],
       "overall_valence": "not_mentioned",
-      "veridical_perception": "not_mentioned",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
-      "multiple_ndes": "not_mentioned"
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "claimed_unverified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
+      "multiple_ndes": "no"
     },
     "context": {
       "nde_cause": "childbirth",
-      "nde_cause_other_detail": "Postpartum hemorrhage after daughter was born; lost three pints of blood.",
+      "nde_cause_other_detail": "Postpartum hemorrhage (lost three pints of blood).",
       "clinical_status": "unknown",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "female",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": true,
-      "number_of_children": null,
+      "number_of_children": 3,
       "prior_nde_knowledge": "not_mentioned"
     },
     "stage_sequence": {
       "present_elements": [
         "obe",
-        "return_choice",
-        "return_choice",
-        "other"
+        "return_choice"
       ],
-      "elements_other_detail": "Darkness/blackness surrounding the experiencer; no tunnel and no white light.",
+      "elements_other_detail": "Darkness/blackness surrounding during OBE; no light/tunnel/beings; rapid return ('whooshed straight down').",
       "canonical_sequence": "partial",
-      "sequence_variation_description": "OBE with increasing distance/scale (body becoming a tiny speck) in surrounding blackness; no tunnel/light; return occurred immediately after deciding 'it was not my time to go.'",
+      "sequence_variation_description": "OBE with surrounding blackness; no tunnel/light; decision 'not my time' immediately followed by rapid return to body.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Body perceived as shrinking to a tiny speck; described like viewing the inside of a doll's house with the roof off. No tunnel or white light, only blackness.",
-      "notable_quotes": "“I floated above the bed gradually seeing my body growing smaller and smaller.” “There was darkness all around me, no white lights and tunnels, just blackness.” “I told myself that it was not my time to go, and just as I thought this, I whooshed straight down into my body.”"
+      "nonstandard_elements": "Perceived body as if viewing 'the inside of a doll's house with the roof off' while floating above; no light/tunnel—only blackness.",
+      "notable_quotes": "“I floated above the bed gradually seeing my body growing smaller and smaller.” “There was darkness all around me, no white lights and tunnels, just blackness.” “I told myself that it was not my time to go… I whooshed straight down into my body.” “I didn't know I'd had a NDE till a long time later but always knew something had stopped me from dying.”"
     }
   },
-  "response_id": "resp_042efe30cd603819006952af097ef081939a09db8c2e8e0e65",
+  "response_id": "resp_083183d95c9ead0d00695d167609d0819392b4a8f8af5c2a5b",
   "usage": {
-    "input_tokens": 9396,
+    "input_tokens": 11610,
     "input_tokens_details": {
-      "cached_tokens": 0
+      "cached_tokens": 11136
     },
-    "output_tokens": 1518,
+    "output_tokens": 1723,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10914
+    "total_tokens": 13333
   }
 }

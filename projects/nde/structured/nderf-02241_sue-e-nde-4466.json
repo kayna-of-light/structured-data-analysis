@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\02241_sue-e-nde-4466.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\02241_sue-e-nde-4466.json",
   "source_url": "https://www.nderf.org/Experiences/1sue_e_nde.html",
   "title": "Sue E NDE 4466",
   "date": "'Jan 21, 1971'",
-  "content": "I was shot in the abdomen with a 22. I remember lying down on my bed and asking someone to put my feet on top of the laundry basket in the room so I wouldn't go into shock. I remember talking to the emergency medical technicians en-route and then there is a blank area in my memory. I heard them saying I had no blood pressure or pulse. I couldn't open my eyes to see but heard all the conversation relating to my injury and condition. I could feel them poking me and starting IVs but there was no pain. Not even the kidney pain. Prior to this time, I had a severe pain in my left kidney area that felt like I was lying on a broken coke bottle and it was sticking into me. I heard them asking for my mother to come sign the operative permit. I tried to talk to them - to tell them I could sign it myself - but no one could hear me. The next thing I remember I was looking down at myself. It was as if I was up on the ceiling. I could see them still sticking needles in me to start even more IVs. I saw there were at least four bottles of fluids hanging and going wide open. I remember them asking for blood and hanging that. I could not feel any of this and did not have the severe pain in my kidney area. My mother came in the room and I remember thinking how beautiful she was, and how well dressed, but how awful the camel wool dress she was wearing looked on her. I have such a clear memory of the shoes, purse, dress she was wearing. I was devastated at how upset she looked and it was as if I could feel how she felt. How this was going to ruin her life (I am her only child) and how was this brokenhearted woman going to raise my son. (I had a six-month-old baby, and it was my husband who had shot me.) I knew I had to get better to raise my son and be there for my mother. The next thing I remember I was looking at mother from the stretcher - or rather I woke up and saw her as I was lying on the stretcher and the pain was back. Shortly after that, they took me to x-ray for an intravenous pyelogram (IVP). They injected the dye into my arm and I blacked out. The next thing I was aware of I was still in x-ray but had an endotracheal tube (used) on my chest. They told me I had a respiratory arrest when the dye was injected. I went to surgery from there and was told later that I was given sixteen units of blood.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T22:59:18.590567+00:00",
-  "source_checksum": "f1672270f17a43b8571a691603bc962bcf6c3ba4789ec2e8e45591728836f81a",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "f1672270f17a43b8571a691603bc962bcf6c3ba4789ec2e8e45591728836f81a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T11:25:52.028104+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -18,16 +17,19 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "implied",
         "identity_continuity": "clear_identity",
         "separation_sensations": [
-          "none_specified"
+          "weightlessness",
+          "relief",
+          "other"
         ],
-        "separation_sensations_other": null
+        "separation_sensations_other": "No pain despite procedures; could not get staff to hear her."
       },
       "tunnel": {
-        "passage_type": "no",
+        "passage_type": "not_mentioned",
         "passage_other_detail": null,
         "movement_sensations": [],
         "movement_other_detail": null,
@@ -36,7 +38,7 @@
       },
       "arrival": {
         "environment_description": "not_mentioned",
-        "light_encounter": [],
+        "light_encounter": "not_mentioned",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -55,44 +57,53 @@
       "encounters": {
         "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [
+          "no_communication"
+        ],
+        "guidance_received": "no",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
-        "physical_limitations": "not_mentioned"
+        "self_form": "no_description",
+        "physical_limitations": "none"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "yes_explicit",
-      "judgment": "not_mentioned",
+      "judgment_source": "none",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "no",
-      "pre_birth_realm_description": "no",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "no",
-      "pre_incarnation_covenant": "no",
-      "universal_knowledge": "no",
-      "cosmic_understanding": "no",
-      "future_knowledge": "none",
-      "purpose_of_existence": "no",
-      "past_life_memory": "no",
-      "death_memory": "none",
-      "intermission_memory": "no",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
-      "earth_alienation": "no",
-      "identity_pre_body": "not_mentioned"
+      "premortal_existence_info": "not_mentioned",
+      "pre_birth_realm_description": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
+      "life_preview": "not_mentioned",
+      "pre_incarnation_covenant": "not_mentioned",
+      "universal_knowledge": "not_mentioned",
+      "cosmic_understanding": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
+      "purpose_of_existence": "not_mentioned",
+      "past_life_memory": "not_mentioned",
+      "death_memory": "not_mentioned",
+      "intermission_memory": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
+      "earth_alienation": "not_mentioned",
+      "identity_pre_body": "implied"
     },
     "boundary_and_return": {
       "boundary_encounter": "none",
-      "return_choice": "involuntary",
-      "return_reason": "family_responsibility",
+      "return_agency": "not_mentioned",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "instant",
@@ -101,14 +112,17 @@
       "mission_commissioned": "no",
       "mission_types": [],
       "mission_detail": null,
-      "volunteer_language": "no"
+      "volunteer_language": "not_mentioned"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -118,31 +132,40 @@
       "memory_persistence": "more_vivid_than_normal",
       "reality_assessment": "definitely_real",
       "unity_experience": "no",
-      "realm_type": "not_mentioned",
+      "realm_types": [],
       "overall_valence": "mixed",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
-      "multiple_ndes": "no"
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "claimed_unverified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
+      "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "combat_or_violence",
-      "nde_cause_other_detail": "Shot in the abdomen with a .22 (by husband).",
+      "nde_cause_other_detail": "Shot in the abdomen with a .22 by husband.",
       "clinical_status": "implied",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "female",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "married",
       "has_children": true,
       "number_of_children": 1,
@@ -151,31 +174,32 @@
     "stage_sequence": {
       "present_elements": [
         "obe",
+        "environment",
         "return_choice"
       ],
-      "elements_other_detail": "Auditory awareness during resuscitation/transport; inability to be heard; later respiratory arrest during IVP dye injection (not described as an NDE sequence).",
+      "elements_other_detail": "Auditory awareness of resuscitation/medical conversation while unable to open eyes; empathic feeling of mother's emotions; return to body with pain returning; later respiratory arrest during IV dye injection.",
       "canonical_sequence": "partial",
-      "sequence_variation_description": "OBE occurred after a period of hearing EMTs and staff while unable to open eyes; returned to body and pain resumed.",
-      "repeated_stages": "not_mentioned",
+      "sequence_variation_description": "Auditory awareness/analgesia and inability to communicate preceded the ceiling-perspective OBE; then abrupt return to body (pain back).",
+      "repeated_stages": "no",
       "repeated_stage_detail": null,
-      "simultaneous_stages": "not_mentioned",
-      "simultaneous_stage_detail": null
+      "simultaneous_stages": "yes",
+      "simultaneous_stage_detail": "During OBE she simultaneously observed procedures and experienced strong emotional/empathic response to her mother."
     },
     "unique_elements": {
-      "nonstandard_elements": "Clear auditory awareness and tactile awareness (poking/IV starts) without pain while unable to respond; strong detailed perception of mother's clothing; empathic sense of mother's feelings and future concerns.",
-      "notable_quotes": "“The next thing I remember I was looking down at myself. It was as if I was up on the ceiling.”"
+      "nonstandard_elements": "Marked analgesia and inability to communicate while hearing EMT/medical staff; detailed observation of mother’s clothing; empathic 'felt how she felt' without a formal life review.",
+      "notable_quotes": "“I heard them saying I had no blood pressure or pulse.”; “The next thing I remember I was looking down at myself. It was as if I was up on the ceiling.”; “I was devastated at how upset she looked and it was as if I could feel how she felt.”"
     }
   },
-  "response_id": "resp_09589f5c5582459100695307ac56648196a9fc3cea1a5862a5",
+  "response_id": "resp_00d024cb67b7d09e00695cf0f8212c8190b15d69a84ecee615",
   "usage": {
-    "input_tokens": 9646,
+    "input_tokens": 11860,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1408,
+    "output_tokens": 1737,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 11054
+    "total_tokens": 13597
   }
 }

@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01313_jools-g-nde-3367.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01313_jools-g-nde-3367.json",
   "source_url": "https://www.nderf.org/Experiences/1jools_g_nde.html",
   "title": "Jools G NDE 3367",
   "date": "3rd July 2007",
-  "content": "I remember the suffocating feeling of the asthma and next thing I realized that the panic surrounding this feeling had gone and I felt totally unaware of my physical body. I was falling down a well lined with the most strikingly white soft material I'd ever seen. I remember the wonderful feeling that there was nothing I could hurt myself on. I have no idea how long I was in this blissful state. Before I got to the bottom, I saw that the ambulance had arrived outside the doors to the hospital Accident and Emergency Department. As I became aware of this, I had this instinct to return to my body. As I looked at everything as back in my body it was like everything was made out of mercury - it was truly bizarre. As they took my body into resuscitation, I was aware of the wall to the cubical and as they fought to save me the wall was fragmenting into pieces like a sort of jigsaw puzzle. I knew that if I really wanted to get back to my body for good I had to solve the puzzle and think the pieces back into the right places before 'time ran out'. As I did this I then experienced a feeling like my entire body was on fire, which I assume now was the point when they injected me with something and I was back in my body once more. I had a brief moment of wondering whether to face the pain or try to return to the white tunnel. I have no idea if at that point, I would have had any choice in the matter but here I am today. I have mixed feelings about this whole experience but feel blessed to have had it in a sense as it made me realize how much I had to put right now I have a second chance.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T21:20:24.393810+00:00",
-  "source_checksum": "7f0d1b1f33f38d0a1687474c5c8fa64d1cc1ee25bf76929b8467914e25de2d57",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "7f0d1b1f33f38d0a1687474c5c8fa64d1cc1ee25bf76929b8467914e25de2d57",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T10:44:03.424910+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,18 +16,21 @@
           "moving_through_spaces"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "implied",
         "identity_continuity": "clear_identity",
         "separation_sensations": [
           "relief",
-          "peace"
+          "peace",
+          "joy",
+          "weightlessness"
         ],
         "separation_sensations_other": null
       },
       "tunnel": {
         "passage_type": "tunnel",
-        "passage_other_detail": "Falling down a well lined with strikingly white, soft material; felt there was nothing to hurt herself on.",
+        "passage_other_detail": "Falling down a well lined with strikingly white soft material.",
         "movement_sensations": [
           "pulled",
           "floating"
@@ -39,7 +41,7 @@
       },
       "arrival": {
         "environment_description": "remained_transitional",
-        "light_encounter": [],
+        "light_encounter": "not_mentioned",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -49,57 +51,69 @@
     },
     "world_of_spirits": {
       "environment": {
-        "environment_description": "no",
-        "environment_features": [],
-        "environment_other_detail": null,
+        "environment_description": "brief",
+        "environment_features": [
+          "light",
+          "colors"
+        ],
+        "environment_other_detail": "White, soft tunnel/well; later visual distortion described as 'everything was made out of mercury'.",
         "comparative_reality": "not_mentioned",
         "thought_responsiveness": "yes_explicit"
       },
       "encounters": {
         "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
         "self_form": "no_description",
-        "physical_limitations": "not_mentioned"
+        "physical_limitations": "none"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_specified",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "implied"
     },
     "boundary_and_return": {
-      "boundary_encounter": "threshold",
-      "return_choice": "chose_to_return",
-      "return_reason": "not_mentioned",
-      "return_reason_other_detail": null,
+      "boundary_encounter": "not_mentioned",
+      "return_agency": "self",
+      "return_willingness": "mixed",
+      "return_reasons": [
+        "other"
+      ],
+      "return_reason_other_detail": "Instinct to return upon becoming aware the ambulance had arrived; later weighed 'whether to face the pain or try to return to the white tunnel'.",
       "return_description": "detailed",
       "return_method": "other",
-      "return_method_other_detail": "Solved/mentally reassembled a fragmenting wall 'puzzle' to get back before 'time ran out,' then felt body 'on fire' and was back in body.",
+      "return_method_other_detail": "Gradual reintegration while solving a 'jigsaw' wall/puzzle to get back before 'time ran out', followed by sudden painful re-entry 'like my entire body was on fire'.",
       "return_feeling": "unpleasant",
       "mission_commissioned": "no",
       "mission_types": [],
@@ -108,44 +122,58 @@
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "subtle",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
       "thought_speed": "not_mentioned",
-      "sensory_vividness": "not_mentioned",
-      "ineffability": "not_mentioned",
+      "sensory_vividness": "more_vivid",
+      "ineffability": "no",
       "memory_persistence": "not_mentioned",
-      "reality_assessment": "not_mentioned",
-      "unity_experience": "not_mentioned",
-      "realm_type": "void_darkness",
+      "reality_assessment": "definitely_real",
+      "unity_experience": "no",
+      "realm_types": [
+        "clearly_unearthly"
+      ],
       "overall_valence": "mixed",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
-      "multiple_ndes": "not_mentioned"
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "not_mentioned",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
+      "multiple_ndes": "no"
     },
     "context": {
       "nde_cause": "illness",
-      "nde_cause_other_detail": "Asthma attack with suffocating feeling.",
+      "nde_cause_other_detail": "Severe asthma attack with suffocating feeling; resuscitation described.",
       "clinical_status": "unknown",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -155,32 +183,31 @@
       "present_elements": [
         "obe",
         "tunnel",
-        "boundary",
         "return_choice"
       ],
-      "elements_other_detail": "Perceived ambulance arriving; visual distortions ('everything was made out of mercury'); wall fragmenting into a jigsaw puzzle that had to be mentally reassembled to return.",
+      "elements_other_detail": "Perceived hospital/ambulance arrival while out of body; wall/cubicle 'jigsaw puzzle' thought-controlled reintegration; painful re-entry.",
       "canonical_sequence": "mostly",
-      "sequence_variation_description": "OBE-like detachment and falling through a white well/tunnel, then perception of ambulance arrival and resuscitation area, then an unusual 'puzzle wall' task enabling return.",
+      "sequence_variation_description": "OBE/tunnel-like fall, then perception of real-world hospital/ambulance and resuscitation during return process.",
       "repeated_stages": "no",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Wall to the cubicle fragmenting into pieces like a jigsaw puzzle; belief that she had to 'think the pieces back into the right places' before 'time ran out' to return to her body; perception that everything looked like it was made of mercury upon re-entering.",
-      "notable_quotes": "“I was falling down a well lined with the most strikingly white soft material I'd ever seen.” “As I looked at everything as back in my body it was like everything was made out of mercury.” “...the wall was fragmenting into pieces like a sort of jigsaw puzzle.” “...I had to solve the puzzle and think the pieces back into the right places before 'time ran out'.” “...a feeling like my entire body was on fire...”"
+      "nonstandard_elements": "Wall/cubicle fragmenting into jigsaw pieces; experiencer believed they had to 'solve the puzzle' and 'think the pieces back' before 'time ran out' to return to the body; visual distortion 'everything was made out of mercury'.",
+      "notable_quotes": "“I was falling down a well lined with the most strikingly white soft material I'd ever seen.” “As I looked at everything as back in my body it was like everything was made out of mercury.” “I knew that if I really wanted to get back to my body for good I had to solve the puzzle and think the pieces back into the right places before 'time ran out'.”"
     }
   },
-  "response_id": "resp_07f5015c7495ef30006952f0814f6c8197a092701c94985154",
+  "response_id": "resp_05d448ceaf612c4e00695ce74641948197b40d55c3c05d3db3",
   "usage": {
-    "input_tokens": 9457,
+    "input_tokens": 11671,
     "input_tokens_details": {
-      "cached_tokens": 0
+      "cached_tokens": 11136
     },
-    "output_tokens": 1607,
+    "output_tokens": 1831,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 11064
+    "total_tokens": 13502
   }
 }

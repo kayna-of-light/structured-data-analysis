@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\03014_jack-nde-6252.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\03014_jack-nde-6252.json",
   "source_url": "https://www.nderf.org/Experiences/1jack_nde_6252.html",
   "title": "Jack NDE 6252",
   "date": "1972",
-  "content": "My parents tell me I was two years old. I don't remember much. I just know I came out of my body and looked at myself and the next thing I knew, for whatever reason, my dad smacked me in the face. I could see him hit my face while still out of my body. I don't remember anything after that just waking up in the hospital bouncing off the wall full of energy. Well that's funny because my mom tells me that before the NDE I was not hyper at all. That's all I remember about that. I dream dreams and they come true.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-30T00:16:28.088066+00:00",
-  "source_checksum": "793cb9192b2f5261546fffac2d7e0d8f137451a8832f22eb2908cbf211e860df",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "793cb9192b2f5261546fffac2d7e0d8f137451a8832f22eb2908cbf211e860df",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T11:59:01.747884+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,14 +16,15 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "unverified",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "not_mentioned",
         "separation_sensations": [],
         "separation_sensations_other": null
       },
       "tunnel": {
-        "passage_type": "not_mentioned",
+        "passage_type": "no",
         "passage_other_detail": null,
         "movement_sensations": [],
         "movement_other_detail": null,
@@ -33,7 +33,7 @@
       },
       "arrival": {
         "environment_description": "not_mentioned",
-        "light_encounter": [],
+        "light_encounter": "not_mentioned",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -52,8 +52,9 @@
       "encounters": {
         "deceased_relatives": "not_mentioned",
         "spiritual_beings": [],
-        "communication_mode": "not_specified",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -62,38 +63,44 @@
       }
     },
     "life_review": {
-      "occurrence": "not_mentioned",
-      "presentation": "not_specified",
+      "occurrence": "no",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "not_mentioned",
-      "return_choice": "not_mentioned",
-      "return_reason": "not_mentioned",
+      "return_agency": "not_mentioned",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
       "return_description": "brief",
-      "return_method": "other",
-      "return_method_other_detail": "Returned to body after seeing father smack/hit his face while still out of body; then 'just waking up in the hospital.'",
+      "return_method": "not_specified",
+      "return_method_other_detail": null,
       "return_feeling": "not_mentioned",
       "mission_commissioned": "not_mentioned",
       "mission_types": [],
@@ -102,12 +109,13 @@
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [
-        "psychic"
-      ],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -117,11 +125,17 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "realm_types": [],
       "overall_valence": "not_mentioned",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "precognition",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "claimed_unverified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [
+        "precognition"
+      ],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
@@ -131,17 +145,22 @@
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": true,
-      "age_years": 2,
+      "age_at_nde_reported": true,
+      "age_at_nde": 2,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -154,27 +173,27 @@
       ],
       "elements_other_detail": null,
       "canonical_sequence": "indeterminate",
-      "sequence_variation_description": "OBE (saw self and father hit face) followed by awakening in hospital; no other stages described.",
+      "sequence_variation_description": "OBE with visual observation of father striking his face, followed by waking up in the hospital.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "Father smacked/hit his face during the OBE; afterward he woke in the hospital 'bouncing off the wall full of energy' and was reportedly not hyper before the NDE; later reports: 'I dream dreams and they come true.'",
-      "notable_quotes": "“I came out of my body and looked at myself.” “I could see him hit my face while still out of my body.” “just waking up in the hospital bouncing off the wall full of energy.” “I dream dreams and they come true.”"
+      "nonstandard_elements": "While out of body, he reports seeing his father smack/hit his face; then he later woke up in the hospital \"bouncing off the wall full of energy.\" Mother reportedly said he was not hyper before the NDE. He also reports: \"I dream dreams and they come true.\"",
+      "notable_quotes": "“I came out of my body and looked at myself… I could see him hit my face while still out of my body.”; “just waking up in the hospital bouncing off the wall full of energy.”; “I dream dreams and they come true.”"
     }
   },
-  "response_id": "resp_04f08e468bb8beee00695319cac0c08193bfa387e620f4fc08",
+  "response_id": "resp_038d8ea10612df7800695cf8e0dce48190be5fd302fd2d0076",
   "usage": {
-    "input_tokens": 9221,
+    "input_tokens": 11435,
     "input_tokens_details": {
-      "cached_tokens": 0
+      "cached_tokens": 6400
     },
-    "output_tokens": 1468,
+    "output_tokens": 1668,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10689
+    "total_tokens": 13103
   }
 }

@@ -1,21 +1,21 @@
 {
   "dataset": "iands",
-  "source_file": "data\\iands\\donor-visits.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\iands\\donor-visits.json",
   "source_url": null,
   "title": "Donor Visits",
   "date": "17 January 2012",
-  "content": "I am a liver transplant recipient, and my NDE was the result of complications from an initial operation.\n\nThey decided to take a liver biopsy as other tests failed to find why my condition was deteriorating so rapidly. This went horrendously wrong. The probe tore a gash in the side of the liver and punctured my right lung and diaphragm. This resulted in my death for six minutes.\n\nI felt the presence of my donor with me during the NDE. For the next week I lay in a coma and was aware of myself as a \"dual\" body. Whenever I tried to move, it was as if there was another body shadowing me.\n\nI referred to my donor as \"she\" when I spoke with my doctor next. My doctor asked, “How do you know the donor is female?” I was right. She is always with me and visits in dreams. We talk, sort of, but I never remember what about. It’s not scary, but rather comforting mostly.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T17:32:53.852719+00:00",
-  "source_checksum": "a2510cbc2d6154802a63fa2396c4df75ddf51303de9ddd6e2afa5ed4fd16284c",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "a2510cbc2d6154802a63fa2396c4df75ddf51303de9ddd6e2afa5ed4fd16284c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T14:20:59.679550+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "implied",
         "vantage_points": [],
         "vantage_other_detail": null,
-        "observation_accuracy": "not_mentioned",
+        "observations_made": "no",
+        "observations_verified": "not_applicable",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "not_mentioned",
         "separation_sensations": [],
@@ -31,12 +31,12 @@
       },
       "arrival": {
         "environment_description": "not_mentioned",
-        "light_encounter": [],
+        "light_encounter": "not_mentioned",
         "being_identifications": [
           "other"
         ],
         "religious_figure_detail": null,
-        "other_being_detail": "Presence of liver donor (identified as female).",
+        "other_being_detail": "Felt the presence of the liver donor (referred to as 'she') with them during the NDE; later reported donor 'always with me' and 'visits in dreams.'",
         "greeting_types": [
           "unidentified_presence"
         ],
@@ -52,12 +52,13 @@
         "thought_responsiveness": "not_mentioned"
       },
       "encounters": {
-        "deceased_relatives": "not_mentioned",
-        "spiritual_beings": [
-          "not_mentioned"
+        "deceased_relatives": "no",
+        "spiritual_beings": [],
+        "communication_modes": [
+          "not_specified"
         ],
-        "communication_mode": "not_specified",
-        "guidance_level": "comfort_or_reassurance",
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -66,36 +67,42 @@
       }
     },
     "life_review": {
-      "occurrence": "not_mentioned",
-      "presentation": "not_specified",
+      "occurrence": "no",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "not_mentioned",
       "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "not_mentioned",
+      "chose_mission": "not_mentioned",
+      "chose_life_circumstances": "not_mentioned",
       "life_preview": "not_mentioned",
       "pre_incarnation_covenant": "not_mentioned",
       "universal_knowledge": "not_mentioned",
       "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
+      "personal_future_knowledge": "not_mentioned",
+      "global_future_knowledge": "not_mentioned",
       "purpose_of_existence": "not_mentioned",
       "past_life_memory": "not_mentioned",
       "death_memory": "not_mentioned",
       "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "not_mentioned",
-      "return_choice": "not_mentioned",
-      "return_reason": "not_mentioned",
+      "return_agency": "not_mentioned",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
-      "return_description": "not_mentioned",
+      "return_description": "no",
       "return_method": "not_specified",
       "return_method_other_detail": null,
       "return_feeling": "not_mentioned",
@@ -106,10 +113,13 @@
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -119,31 +129,40 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "realm_types": [],
       "overall_valence": "pleasant",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "deceased_info"
+      ],
+      "veridical_verification": "verified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "surgery",
-      "nde_cause_other_detail": "Complications from liver biopsy after transplant; liver torn and lung/diaphragm punctured.",
+      "nde_cause_other_detail": "Complications during liver biopsy after transplant; probe tore liver and punctured right lung and diaphragm; reported death for six minutes.",
       "clinical_status": "verified",
       "experience_duration": "seconds_to_minutes"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -153,10 +172,9 @@
       "present_elements": [
         "obe",
         "loved_ones",
-        "communication",
-        "other"
+        "communication"
       ],
-      "elements_other_detail": "Awareness of a 'dual' body during coma; donor presence and dream visits.",
+      "elements_other_detail": "Reported awareness in coma for a week as a 'dual' body with a shadowing body when trying to move.",
       "canonical_sequence": "indeterminate",
       "sequence_variation_description": null,
       "repeated_stages": "not_mentioned",
@@ -165,20 +183,20 @@
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "For the next week in coma, awareness of a 'dual' body shadowing movement; ongoing donor presence and dream visits.",
-      "notable_quotes": "“dual” body; “How do you know the donor is female?”; “We talk, sort of, but I never remember what about. It’s not scary, but rather comforting mostly.”"
+      "nonstandard_elements": "Post-event week-long coma with persistent 'dual body' sensation: 'aware of myself as a \"dual\" body' and 'another body shadowing me.' Also ongoing donor presence and dream visits with partial/forgotten communication.",
+      "notable_quotes": "“This resulted in my death for six minutes.” / “aware of myself as a ‘dual’ body.” / “Whenever I tried to move, it was as if there was another body shadowing me.” / “How do you know the donor is female?” / “It’s not scary, but rather comforting mostly.”"
     }
   },
-  "response_id": "resp_0ca4281ca0c0484a006952bb2cb3c88196a49c0ee6307f82f1",
+  "response_id": "resp_0472f650a17fad1c00695d1a2fe04081958a2f2a473ad90e1e",
   "usage": {
-    "input_tokens": 9281,
+    "input_tokens": 11495,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1449,
+    "output_tokens": 1741,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10730
+    "total_tokens": 13236
   }
 }

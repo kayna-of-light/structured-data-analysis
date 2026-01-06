@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01453_richard-b-nde.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01453_richard-b-nde.json",
   "source_url": "https://www.nderf.org/Experiences/1richard_b_nde_144.html",
   "title": "Richard B NDE 144",
   "date": "June 2, 1985",
-  "content": "I was on my way to work, 1:30 in the afternoon, temperature was 105 degrees, I was riding my motorcycle, car turned at last second, I hit car approximately two feet from front bumper (passenger side), traveling at a high rate of speed. Accident resulted in both femurs being broken (multiple fractures); left femur was shattered into over one hundred pieces (x-rays prove that); right femur broken in four places; both arms broke; collapsed right lung; bleeding profusely from left femoral artery. I was rushed to local hospital by ground ambulance, local hospital not able to treat my injuries -- transferred by air ambulance to Augusta, Georgia hospital. Was being given two units of blood at a time, one in arm, the other into jugular vein in neck, to replace the blood I was losing. Attendant was 'squeezing' the blood bags and rolling them in a manner like you would roll up a tube of toothpaste -- to increase flow of blood into my body. I had 'no' blood pressure due to massive bleeding in left leg, was told before I was loaded onto helicopter that, 'You will not live to see Augusta,' was offered my 'last rites' by priest on duty. I declined, being that I am not Catholic. While en-route to Augusta (by helicopter) the attendant in rear of helicopter was talking to the emergency room that was expecting me in Augusta. I heard him numerous times inform them the 'victim has NO blood pressure.' Shortly after flight began, I remember the pain going away. A feeling of peace came over me, and I remember 'leaving' my body, and starting 'through' a tunnel of multicolored lights. I was suddenly very happy, calm, comfortable, and happy in the knowledge that I was going 'into' heaven. Just before I reached the end of the tunnel, I was stopped by the voice of my father (who had been dead five years at the time) telling me I must go back, that my mother needed me (for what I don't know). I replied that I didn't want to go 'back', but my father's voice insisted. The next thing that happened was I was looking down on my body in the helicopter -- as the attendant worked on my body, trying to 'save' my life. I saw (and heard) him pick up the radio microphone and inform the emergency room that they should 'scrub the crash team, the victim has expired'. I knew he was talking about me. About that same time, I remember 'feeling' the pain come back into my body. I knew that I was 'back' from the dead. I opened my eyes and told the attendant that 'I am not dead' he almost freaked out, picked up the microphone and told the emergency room that the 'victim is still alive. I repeat - victim is alive.'",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T21:34:51.737192+00:00",
-  "source_checksum": "382a0e55aa9834a643e71e953b840fb3c188bf08ba54142026c04ca5516011de",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "382a0e55aa9834a643e71e953b840fb3c188bf08ba54142026c04ca5516011de",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T10:50:31.053491+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,7 +16,8 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "clear_identity",
         "separation_sensations": [
@@ -31,26 +31,24 @@
         "passage_type": "tunnel",
         "passage_other_detail": null,
         "movement_sensations": [
-          "other"
+          "none_specified"
         ],
-        "movement_other_detail": "Starting 'through' a tunnel of multicolored lights.",
+        "movement_other_detail": null,
         "light_visibility": "not_mentioned",
         "emotional_tone": "peaceful"
       },
       "arrival": {
         "environment_description": "remained_transitional",
-        "light_encounter": [
-          "not_mentioned"
-        ],
+        "light_encounter": "no",
         "being_identifications": [
           "deceased_relative_guide"
         ],
         "religious_figure_detail": null,
-        "other_being_detail": null,
+        "other_being_detail": "Voice of deceased father stopped him near end of tunnel and told him to go back because his mother needed him.",
         "greeting_types": [
-          "not_mentioned"
+          "unidentified_presence"
         ],
-        "sense_of_belonging": "not_mentioned"
+        "sense_of_belonging": "implied"
       }
     },
     "world_of_spirits": {
@@ -62,10 +60,15 @@
         "thought_responsiveness": "not_mentioned"
       },
       "encounters": {
-        "deceased_relatives": "unnamed",
+        "deceased_relatives": "named",
         "spiritual_beings": [],
-        "communication_mode": "normal_speech",
-        "guidance_level": "significant_guidance",
+        "communication_modes": [
+          "normal_speech"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "directional"
+        ],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -75,49 +78,60 @@
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
-      "identity_pre_body": "not_mentioned"
+      "identity_pre_body": "implied"
     },
     "boundary_and_return": {
       "boundary_encounter": "verbal_limit",
-      "return_choice": "reluctant_return",
-      "return_reason": "family_responsibility",
+      "return_agency": "external_being",
+      "return_willingness": "reluctant",
+      "return_reasons": [
+        "family_responsibility"
+      ],
       "return_reason_other_detail": null,
       "return_description": "detailed",
       "return_method": "instant",
       "return_method_other_detail": null,
       "return_feeling": "unpleasant",
-      "mission_commissioned": "not_mentioned",
+      "mission_commissioned": "no",
       "mission_types": [],
       "mission_detail": null,
-      "volunteer_language": "not_mentioned"
+      "volunteer_language": "no"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -125,33 +139,44 @@
       "sensory_vividness": "not_mentioned",
       "ineffability": "not_mentioned",
       "memory_persistence": "not_mentioned",
-      "reality_assessment": "not_mentioned",
+      "reality_assessment": "definitely_real",
       "unity_experience": "not_mentioned",
-      "realm_type": "heavenly",
-      "overall_valence": "incredibly_pleasant",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "realm_types": [
+        "clearly_unearthly"
+      ],
+      "overall_valence": "pleasant",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "claimed_unverified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "accident",
-      "nde_cause_other_detail": "Motorcycle collision with a car; massive trauma and bleeding.",
+      "nde_cause_other_detail": "Motorcycle collision with car; massive trauma and bleeding.",
       "clinical_status": "implied",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
-      "location_country": null,
-      "location_state_province": null,
-      "location_city": null,
+      "location_country": "United States",
+      "location_state_province": "Georgia",
+      "location_city": "Augusta",
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "christian",
+      "religious_background_denomination": "not_specified",
+      "religious_background_detail": "Not Catholic (declined last rites).",
+      "religious_belief_at_nde": "christian",
+      "religious_belief_at_nde_denomination": "not_specified",
+      "religious_belief_at_nde_detail": "Declined Catholic last rites; believed he was going 'into heaven.'",
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -161,33 +186,33 @@
       "present_elements": [
         "obe",
         "tunnel",
+        "loved_ones",
         "boundary",
-        "return_choice",
-        "communication"
+        "return_choice"
       ],
       "elements_other_detail": null,
       "canonical_sequence": "mostly",
-      "sequence_variation_description": "Pain stopped and peace came; he left his body and went through a multicolored-light tunnel; before reaching the end he was stopped by his deceased father's voice and told to go back; then he was looking down on his body in the helicopter and later felt pain return as he re-entered.",
-      "repeated_stages": "not_mentioned",
+      "sequence_variation_description": "Left body and entered tunnel; near end of tunnel was stopped by deceased father's voice and told to return; then observed body from above in helicopter; then returned to body with pain.",
+      "repeated_stages": "no",
       "repeated_stage_detail": null,
-      "simultaneous_stages": "not_mentioned",
+      "simultaneous_stages": "no",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "He reported hearing the attendant radio that the 'victim has expired' while he was out of body, then waking and correcting them.",
-      "notable_quotes": "“starting 'through' a tunnel of multicolored lights.”; “I was suddenly very happy, calm, comfortable, and happy in the knowledge that I was going 'into' heaven.”; “scrub the crash team, the victim has expired”"
+      "nonstandard_elements": "OBE observation occurred after the tunnel sequence (tunnel first, then looking down on body).",
+      "notable_quotes": "Attendant radioed: 'scrub the crash team, the victim has expired' ... then after he revived: 'victim is still alive. I repeat - victim is alive.'"
     }
   },
-  "response_id": "resp_0c3eaa526b9938cb006952f3e7a9108196a709e92e27bb1163",
+  "response_id": "resp_0e29300a699a961d00695ce8c03208819489cd2c429098c48b",
   "usage": {
-    "input_tokens": 9700,
+    "input_tokens": 11914,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1528,
+    "output_tokens": 1724,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 11228
+    "total_tokens": 13638
   }
 }

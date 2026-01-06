@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\03116_grady-nde-6374.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\03116_grady-nde-6374.json",
   "source_url": "https://www.nderf.org/Experiences/1grady_nde.html",
   "title": "Grady NDE 6374",
   "date": "05-14-2008",
-  "content": "I suffered a cardiac arrest after 4 bypass surgeries. The first time was for 7 minutes. They had taken me off life support. I was wired, stapled, and stitched up when I had a drug reaction. The doctors had to hurry up and re-open my chest in order to do hand message of the heart. During this, I could hear the thumping of my heart slowing and I was in this Pure White area kind of like a train car of sorts. I was falling and the thumping noise stopped and then 2 angel figures, one at each hip, and 1 angel behind my head put their arms under me and as clear as I am sitting here the one behind me said, 'We have you.' At that moment, I could hear the thumping noise (my heart beat) and I was back on the table. A few minutes later, I went back into cardiac arrest again. This time, since they had to re-open my chest, they were able to hook me back up to the heart-lung machine for 35 minutes. The doctors struggled to get me back. This time I was in the purest white that you could never describe. I was watching the doctors scrambling to figure out why I was gone again. I kept telling them that I was still there, not in a panic way; but I knew that if they quit then I was gone. I could hear the doctor cussing. The nurses were frantic and the anesthesiologist, who I had never met named Steve, was all going nuts. They stuck with me. After a drug induced coma for 5 days, they woke me up, I asked my surgeon why he kept trying to keep me alive and he said he didn't know, that something kept urging him on. That's when I repeated to him some of the things that were being said during that frantic hour that I witnessed above the table. The surgeon and the nurse verified some of the things that I told them I heard. I ended up with both vocal chords paralyzed because of a damaged nerve when they were in there doing the heart message and had the right side vocal chords removed to open airway to breath without a trachea tube. It sure was a bad day but not my turn to go!",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-30T00:27:30.136307+00:00",
-  "source_checksum": "ee5b7b21e8ac0661443b1c4fc39e34624a46a7bddf3c88feaffbf9e752d1496f",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "ee5b7b21e8ac0661443b1c4fc39e34624a46a7bddf3c88feaffbf9e752d1496f",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T12:03:05.263959+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,9 +16,10 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "verified",
-        "heightened_perception": "not_mentioned",
-        "identity_continuity": "not_mentioned",
+        "observations_made": "yes",
+        "observations_verified": "verified",
+        "heightened_perception": "implied",
+        "identity_continuity": "clear_identity",
         "separation_sensations": [
           "none_specified"
         ],
@@ -29,18 +29,15 @@
         "passage_type": "no",
         "passage_other_detail": null,
         "movement_sensations": [
-          "floating",
           "other"
         ],
-        "movement_other_detail": "He described 'falling' in a pure white area.",
+        "movement_other_detail": "Described 'falling' in a pure white area.",
         "light_visibility": "not_mentioned",
         "emotional_tone": "not_mentioned"
       },
       "arrival": {
         "environment_description": "minimal",
-        "light_encounter": [
-          "not_mentioned"
-        ],
+        "light_encounter": "no",
         "being_identifications": [
           "angels"
         ],
@@ -56,105 +53,133 @@
       "environment": {
         "environment_description": "brief",
         "environment_features": [
-          "light"
+          "light",
+          "colors",
+          "buildings"
         ],
-        "environment_other_detail": null,
+        "environment_other_detail": "A 'Pure White area kind of like a train car of sorts' and later 'the purest white.'",
         "comparative_reality": "not_mentioned",
-        "thought_responsiveness": "not_mentioned"
+        "thought_responsiveness": "no"
       },
       "encounters": {
-        "deceased_relatives": "not_mentioned",
+        "deceased_relatives": "no",
         "spiritual_beings": [
           "guides_or_angels"
         ],
-        "communication_mode": "normal_speech",
-        "guidance_level": "comfort_or_reassurance",
+        "communication_modes": [
+          "normal_speech"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "comfort"
+        ],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
+        "self_form": "no_description",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
-      "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "presentation_modes": [],
+      "perspective_of_others": "no",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_specified",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
-      "earth_alienation": "not_mentioned",
-      "identity_pre_body": "not_mentioned"
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
+      "earth_alienation": "no",
+      "identity_pre_body": "implied"
     },
     "boundary_and_return": {
       "boundary_encounter": "none",
-      "return_choice": "involuntary",
-      "return_reason": "not_your_time",
+      "return_agency": "involuntary",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [],
       "return_reason_other_detail": null,
-      "return_description": "detailed",
+      "return_description": "brief",
       "return_method": "instant",
       "return_method_other_detail": null,
       "return_feeling": "not_mentioned",
-      "mission_commissioned": "not_mentioned",
+      "mission_commissioned": "no",
       "mission_types": [],
       "mission_detail": null,
-      "volunteer_language": "not_mentioned"
+      "volunteer_language": "no"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
       "thought_speed": "not_mentioned",
-      "sensory_vividness": "not_mentioned",
+      "sensory_vividness": "more_vivid",
       "ineffability": "yes_explicit",
       "memory_persistence": "not_mentioned",
-      "reality_assessment": "not_mentioned",
-      "unity_experience": "not_mentioned",
-      "realm_type": "void_darkness",
-      "overall_valence": "not_mentioned",
-      "veridical_perception": "verified_accurate",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "reality_assessment": "definitely_real",
+      "unity_experience": "no",
+      "realm_types": [
+        "heavenly",
+        "void_darkness"
+      ],
+      "overall_valence": "mixed",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "verified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "yes_explicit"
     },
     "context": {
       "nde_cause": "cardiac_arrest",
-      "nde_cause_other_detail": "Cardiac arrest after bypass surgeries; drug reaction during/after being taken off life support; chest re-opened for manual heart massage; later a second cardiac arrest while chest was open and he was placed back on a heart-lung machine.",
+      "nde_cause_other_detail": "Cardiac arrest after four bypass surgeries; drug reaction during post-op period requiring reopening chest and manual heart massage; second arrest while chest open and on heart-lung machine.",
       "clinical_status": "implied",
-      "experience_duration": "not_specified"
+      "experience_duration": "minutes_to_hours"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -163,33 +188,34 @@
     "stage_sequence": {
       "present_elements": [
         "obe",
+        "loved_ones",
+        "return_choice",
         "light_encounter",
-        "communication",
-        "return_choice"
+        "communication"
       ],
-      "elements_other_detail": "Two episodes during separate cardiac arrests; first included hearing heartbeat slowing/stopping, being in a pure white area, three angels lifting/supporting him and saying 'We have you,' then returning to his body; second included observing the medical team from above the table and hearing their speech.",
+      "elements_other_detail": "Angelic beings supported him and spoke; he perceived medical staff activity and speech during resuscitation.",
       "canonical_sequence": "partial",
-      "sequence_variation_description": "OBE with veridical observations occurred during the second arrest; the first arrest emphasized a white realm/space and angelic assistance before return.",
+      "sequence_variation_description": "First event: white area + falling + angels + immediate return to body with heartbeat sound. Second event: in pure white while observing doctors from above table; then eventual return after resuscitation.",
       "repeated_stages": "yes",
-      "repeated_stage_detail": "Two separate NDE/OBE episodes associated with two cardiac arrests.",
-      "simultaneous_stages": "not_mentioned",
+      "repeated_stage_detail": "Two separate cardiac arrest episodes with similar 'pure white' setting; OBE observation described in second episode.",
+      "simultaneous_stages": "no",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "He described the white area as \"kind of like a train car of sorts\" and reported hearing his heartbeat as a \"thumping noise\" that stopped and then resumed at the moment of return.",
-      "notable_quotes": "\"We have you.\"; \"I was in the purest white that you could never describe.\"; \"It sure was a bad day but not my turn to go!\""
+      "nonstandard_elements": "Pure white area described as 'like a train car of sorts'; angels positioned at hips and behind head physically supporting him; he perceived hearing heartbeat thumping slow/stop and resume with return.",
+      "notable_quotes": "'We have you.'; 'the purest white that you could never describe.'"
     }
   },
-  "response_id": "resp_0c27090f17202fe80069531c5ba4ec8193900fa781d403b8a9",
+  "response_id": "resp_0aa8a315d47c06e500695cf9db93e0819680d05a57d10ad469",
   "usage": {
-    "input_tokens": 9565,
+    "input_tokens": 11779,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1601,
+    "output_tokens": 1761,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 11166
+    "total_tokens": 13540
   }
 }

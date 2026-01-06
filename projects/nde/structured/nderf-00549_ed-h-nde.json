@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\00549_ed-h-nde.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\00549_ed-h-nde.json",
   "source_url": "https://www.nderf.org/Experiences/1ed_h_nde.html",
   "title": "Ed H NDE 121",
   "date": null,
-  "content": "I was driving home and doing about 60mph in my Chevy van and not wearing my seatbelt, when my steering would not steer the van any more. The gearbox went, the wheels stuck in one direction and the van flipped three or four times in mid-air landing back on its wheels. Then, for me, everything was so nice and peaceful…not dark…nice temperature. I opened my eyes to see the brightest light I had ever seen. I was at a gate-like opening in the light and this nice voice said, “It is not your time, you have something to do yet”. At that moment, I was turned around so I could see the van and through it. I saw my body slumped over the steering wheel. Then I was flying back down to my body. When I got back in my body, that's when I came around [became physically conscious], and went and got some help.\n\nI was driving home and doing about 60mph in my Chevy van and not wearing my seatbelt, when my steering would not steer the van any more. The gearbox went, the wheels stuck in one direction and the van flipped three or four times in mid-air landing back on its wheels.\n\nThen, for me, everything was so nice and peaceful…not dark…nice temperature. I opened my eyes to see the brightest light I had ever seen. I was at a gate-like opening in the light and this nice voice said, “It is not your time, you have something to do yet”. At that moment, I was turned around so I could see the van and through it. I saw my body slumped over the steering wheel. Then I was flying back down to my body. When I got back in my body, that's when I came around [became physically conscious], and went and got some help.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T19:40:39.824309+00:00",
-  "source_checksum": "8fae6039f5ab8c1baa83737ca243ec928894b26cf5a90a053025c46da327377e",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "8fae6039f5ab8c1baa83737ca243ec928894b26cf5a90a053025c46da327377e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T10:01:57.962243+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,7 +16,8 @@
           "moving_through_spaces"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "clear_identity",
         "separation_sensations": [
@@ -35,12 +35,8 @@
       },
       "arrival": {
         "environment_description": "minimal",
-        "light_encounter": [
-          "brilliant_light"
-        ],
-        "being_identifications": [
-          "unknown_presence"
-        ],
+        "light_encounter": "brilliant_light",
+        "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": "A 'nice voice' spoke from the light.",
         "greeting_types": [
@@ -55,15 +51,21 @@
         "environment_features": [
           "light"
         ],
-        "environment_other_detail": "Described as 'not dark' with a 'nice temperature' and 'the brightest light I had ever seen,' at a 'gate-like opening in the light.'",
+        "environment_other_detail": "Described as 'so nice and peaceful…not dark…nice temperature' with 'the brightest light I had ever seen' and a 'gate-like opening in the light.'",
         "comparative_reality": "not_mentioned",
         "thought_responsiveness": "not_mentioned"
       },
       "encounters": {
-        "deceased_relatives": "not_mentioned",
+        "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "not_specified",
-        "guidance_level": "significant_guidance",
+        "communication_modes": [
+          "normal_speech"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "informational",
+          "directional"
+        ],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -73,51 +75,63 @@
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
-      "identity_pre_body": "not_mentioned"
+      "identity_pre_body": "yes_explicit"
     },
     "boundary_and_return": {
       "boundary_encounter": "physical_barrier",
-      "return_choice": "told_to_return",
-      "return_reason": "not_your_time",
+      "return_agency": "external_being",
+      "return_willingness": "not_mentioned",
+      "return_reasons": [
+        "not_your_time",
+        "earthly_mission"
+      ],
       "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "rapid",
       "return_method_other_detail": null,
-      "return_feeling": "neutral",
-      "mission_commissioned": "implied",
+      "return_feeling": "not_mentioned",
+      "mission_commissioned": "yes_explicit",
       "mission_types": [
         "other"
       ],
-      "mission_detail": "A voice said, \"It is not your time, you have something to do yet\".",
+      "mission_detail": "Told: 'It is not your time, you have something to do yet.'",
       "volunteer_language": "not_mentioned"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
@@ -127,31 +141,42 @@
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
       "unity_experience": "not_mentioned",
-      "realm_type": "vaguely_unearthly",
+      "realm_types": [
+        "clearly_unearthly"
+      ],
       "overall_valence": "pleasant",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "not_mentioned",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "accident",
-      "nde_cause_other_detail": "Vehicle accident: steering failed, van flipped three or four times.",
+      "nde_cause_other_detail": "Vehicle accident: steering failure; van flipped multiple times.",
       "clinical_status": "unknown",
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -164,29 +189,29 @@
         "boundary",
         "return_choice"
       ],
-      "elements_other_detail": "Gate-like opening in the light; heard a voice; saw his body in the van; flew back into the body.",
+      "elements_other_detail": "Gate-like opening in the light; heard a voice stating it was not his time; then saw his body in the van and returned.",
       "canonical_sequence": "mostly",
-      "sequence_variation_description": "After the peaceful/light/boundary/voice, he was turned around to view the van and his body, then returned to the body.",
-      "repeated_stages": "not_mentioned",
+      "sequence_variation_description": "Light/gate and voice occurred before (or alongside) the OBE view of the body; then rapid return to body.",
+      "repeated_stages": "no",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "He reports being able to see the van and 'through it' to see his body slumped over the steering wheel.",
-      "notable_quotes": "“It is not your time, you have something to do yet”."
+      "nonstandard_elements": "Saw the van and his body 'through' the van after being turned around.",
+      "notable_quotes": "\"It is not your time, you have something to do yet\"; \"everything was so nice and peaceful…not dark…nice temperature\"; \"the brightest light I had ever seen\"; \"I saw my body slumped over the steering wheel.\""
     }
   },
-  "response_id": "resp_0395ae3ae4b69d4f006952d919e91c819394d1843aed0e8864",
+  "response_id": "resp_01190a39875f4c0700695cdd722a7081958ec8a3822c272bc4",
   "usage": {
-    "input_tokens": 9467,
+    "input_tokens": 11681,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1514,
+    "output_tokens": 1757,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10981
+    "total_tokens": 13438
   }
 }

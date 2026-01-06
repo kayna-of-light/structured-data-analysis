@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\01636_vicky-m-nde-3627.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\01636_vicky-m-nde-3627.json",
   "source_url": "https://www.nderf.org/Experiences/1vicky_m_nde.html",
   "title": "Vicky M NDE 3627",
   "date": "Spring 1977",
-  "content": "I was six years old, diagnosed with meningitis and pneumonia and a collapsed lung. It was after 'bedtime' as the nurses had gone back to their station; I had nobody else in the room. I was alone. Then I was suddenly looking down at my body. I was keenly aware in my young mind what had happened. I could look around the room, seeing everything clearly but noticing nothing mattered - in a material sense. I was very aware of the fact I had died, and I had a choice to go to heaven or return to life on earth. I also felt very connected to the universe and could feel how we are all connected. I knew what I had to do - as I felt, knew, I had work to do on earth; I was here to help others. I knew it was too soon to die. It was not a frightening experience, but definitely a life changing experience. It has affected everything I've done to this day and will to the end of my days.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-29T21:55:09.081265+00:00",
-  "source_checksum": "d039aaea0c5e3b0cfae42c22c48a174323bc30ec93e3ef0b70240dcf7d7d4529",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "d039aaea0c5e3b0cfae42c22c48a174323bc30ec93e3ef0b70240dcf7d7d4529",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T10:57:45.605068+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,7 +16,8 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "yes_explicit",
         "identity_continuity": "clear_identity",
         "separation_sensations": [
@@ -26,7 +26,7 @@
         "separation_sensations_other": null
       },
       "tunnel": {
-        "passage_type": "not_mentioned",
+        "passage_type": "no",
         "passage_other_detail": null,
         "movement_sensations": [],
         "movement_other_detail": null,
@@ -35,7 +35,7 @@
       },
       "arrival": {
         "environment_description": "not_mentioned",
-        "light_encounter": [],
+        "light_encounter": "not_mentioned",
         "being_identifications": [],
         "religious_figure_detail": null,
         "other_being_detail": null,
@@ -45,17 +45,18 @@
     },
     "world_of_spirits": {
       "environment": {
-        "environment_description": "brief",
+        "environment_description": "no",
         "environment_features": [],
         "environment_other_detail": null,
         "comparative_reality": "not_mentioned",
         "thought_responsiveness": "not_mentioned"
       },
       "encounters": {
-        "deceased_relatives": "not_mentioned",
+        "deceased_relatives": "no",
         "spiritual_beings": [],
-        "communication_mode": "no_communication",
-        "guidance_level": "not_mentioned",
+        "communication_modes": [],
+        "guidance_received": "not_mentioned",
+        "guidance_types": [],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
@@ -65,35 +66,44 @@
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
       "premortal_existence_info": "no",
       "pre_birth_realm_description": "no",
-      "incarnation_choice": "not_mentioned",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
       "life_preview": "no",
       "pre_incarnation_covenant": "no",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
+      "universal_knowledge": "implied",
+      "cosmic_understanding": "yes_explicit",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "implied",
       "past_life_memory": "no",
       "death_memory": "not_mentioned",
       "intermission_memory": "no",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "not_mentioned",
-      "return_choice": "chose_to_return",
-      "return_reason": "earthly_mission",
+      "return_agency": "self",
+      "return_willingness": "willing",
+      "return_reasons": [
+        "earthly_mission",
+        "not_your_time"
+      ],
       "return_reason_other_detail": null,
-      "return_description": "not_mentioned",
+      "return_description": "no",
       "return_method": "not_specified",
       "return_method_other_detail": null,
       "return_feeling": "not_mentioned",
@@ -101,29 +111,34 @@
       "mission_types": [
         "service"
       ],
-      "mission_detail": "She reports she \"had work to do on earth\" and was \"here to help others.\"",
+      "mission_detail": "Felt she had \"work to do on earth\" and was \"here to help others.\"",
       "volunteer_language": "no"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "major",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
       "thought_speed": "not_mentioned",
       "sensory_vividness": "more_vivid",
-      "ineffability": "not_mentioned",
+      "ineffability": "no",
       "memory_persistence": "not_mentioned",
       "reality_assessment": "definitely_real",
       "unity_experience": "yes_explicit",
-      "realm_type": "not_mentioned",
+      "realm_types": [],
       "overall_valence": "pleasant",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [],
+      "veridical_verification": "not_mentioned",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
@@ -133,17 +148,22 @@
       "experience_duration": "not_specified"
     },
     "person_demographics": {
-      "age_reported": true,
-      "age_years": 6,
+      "age_at_nde_reported": true,
+      "age_at_nde": 6,
+      "years_since_nde": null,
       "gender": "female",
       "location_country": null,
       "location_state_province": null,
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -155,29 +175,29 @@
         "return_choice",
         "other"
       ],
-      "elements_other_detail": "Explicit awareness of being dead; choice to go to heaven or return; unity/connectedness with the universe; sense of mission to help others.",
+      "elements_other_detail": "Explicit choice to go to heaven or return; unity/connection with the universe; sense of mission/work to do on Earth.",
       "canonical_sequence": "partial",
-      "sequence_variation_description": "OBE with awareness of death and a choice to return; no tunnel/light/arrival described.",
+      "sequence_variation_description": "OBE with awareness of death and a choice to return; no tunnel/light/realm described.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "She reports being \"very aware\" she had died and having \"a choice to go to heaven or return to life on earth,\" without describing a tunnel, beings, or a distinct otherworld environment.",
-      "notable_quotes": "\"I was suddenly looking down at my body.\" \"I was very aware of the fact I had died, and I had a choice to go to heaven or return to life on earth.\" \"I had work to do on earth; I was here to help others.\""
+      "nonstandard_elements": "Stated she had a choice to go to heaven or return, with an immediate sense of mission to help others, but without describing any heavenly realm, beings, or boundary.",
+      "notable_quotes": "\"Then I was suddenly looking down at my body.\"; \"I was very aware of the fact I had died, and I had a choice to go to heaven or return to life on earth.\"; \"I was here to help others.\""
     }
   },
-  "response_id": "resp_00ac02e25e074f64006952f8aa553c8194ba755b462dea8ed7",
+  "response_id": "resp_0b39c0e9d352d1cf00695cea84688c8193955b08516f874f45",
   "usage": {
-    "input_tokens": 9309,
+    "input_tokens": 11523,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1478,
+    "output_tokens": 1668,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 10787
+    "total_tokens": 13191
   }
 }

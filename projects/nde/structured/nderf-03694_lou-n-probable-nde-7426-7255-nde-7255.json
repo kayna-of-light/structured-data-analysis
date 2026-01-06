@@ -1,15 +1,14 @@
 {
   "dataset": "nderf",
-  "source_file": "data\\nderf\\03694_lou-n-probable-nde-7426-7255-nde-7255.json",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\nde\\registries\\..\\..\\..\\data\\nderf\\03694_lou-n-probable-nde-7426-7255-nde-7255.json",
   "source_url": "https://www.nderf.org/Experiences/1lou_n_probable_nde.html",
   "title": "Lou N Probable NDE 7426/7255 NDE 7255",
   "date": "1949 | 1947",
-  "content": "7255 I was living in Iowa. It felt like my stomach had exploded. The next thing I knew when I woke up, I was in an ambulance. I was rushed into surgery. While I was in recovery, my parents said everything went OK. As I sat up a little to talk to them, everything burst wide open again. I was rushed into emergency surgery again. As I was being operated on, I remember looking down at the surgeons working on me. I tried to tell my parents everything was OK. After a few seconds or minutes, I felt a warm, glowing light; it felt so warm and so good. I met a person who said she would take care of me. I asked, 'Who are you?' Her reply was, 'I am your grandmother's mother.' I had never met this person. After a few seconds or minutes, I told her I was starting to get cold. Her reply was, 'You will need to go back now.' I did not want to go back. She said, 'You must; it is not time yet.' The next thing I remember was waking up in the recovery room with my parents.\n\nI was living in Iowa. It felt like my stomach had exploded. The next thing I knew when I woke up, I was in an ambulance. I was rushed into surgery. While I was in recovery, my parents said everything went OK. As I sat up a little to talk to them, everything burst wide open again. I was rushed into emergency surgery again. As I was being operated on, I remember looking down at the surgeons working on me. I tried to tell my parents everything was OK. After a few seconds or minutes, I felt a warm, glowing light; it felt so warm and so good. I met a person who said she would take care of me. I asked, 'Who are you?' Her reply was, 'I am your grandmother's mother.' I had never met this person. After a few seconds or minutes, I told her I was starting to get cold. Her reply was, 'You will need to go back now.' I did not want to go back. She said, 'You must; it is not time yet.' The next thing I remember was waking up in the recovery room with my parents.",
-  "analysis_model": "gpt-5.2",
-  "analysis_timestamp": "2025-12-30T01:31:40.370988+00:00",
-  "source_checksum": "20a2070a24552ab9959bb31dc5018af79c1eb8429ebe20513568a0b67f340b54",
-  "questionnaire_schema": "NDEAnalysisResponse",
-  "analysis": {
+  "content_checksum": "20a2070a24552ab9959bb31dc5018af79c1eb8429ebe20513568a0b67f340b54",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T12:28:08.856682+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": {
     "passage": {
       "out_of_body": {
         "separation": "yes_explicit",
@@ -17,10 +16,13 @@
           "above_body"
         ],
         "vantage_other_detail": null,
-        "observation_accuracy": "unverified",
+        "observations_made": "yes",
+        "observations_verified": "not_mentioned",
         "heightened_perception": "not_mentioned",
         "identity_continuity": "clear_identity",
-        "separation_sensations": [],
+        "separation_sensations": [
+          "none_specified"
+        ],
         "separation_sensations_other": null
       },
       "tunnel": {
@@ -33,16 +35,14 @@
       },
       "arrival": {
         "environment_description": "not_mentioned",
-        "light_encounter": [
-          "brilliant_light"
-        ],
+        "light_encounter": "brilliant_light",
         "being_identifications": [
           "deceased_relative_guide"
         ],
         "religious_figure_detail": null,
-        "other_being_detail": "A woman identified herself as 'your grandmother's mother' (unknown to the experiencer in life) and said she would take care of the experiencer.",
+        "other_being_detail": "A woman identified herself as 'your grandmother's mother' (experiencer had never met her).",
         "greeting_types": [
-          "deceased_loved_ones"
+          "spiritual_beings"
         ],
         "sense_of_belonging": "not_mentioned"
       }
@@ -58,94 +58,119 @@
       "encounters": {
         "deceased_relatives": "named",
         "spiritual_beings": [],
-        "communication_mode": "normal_speech",
-        "guidance_level": "comfort_or_reassurance",
+        "communication_modes": [
+          "normal_speech"
+        ],
+        "guidance_received": "yes",
+        "guidance_types": [
+          "directional"
+        ],
         "other_souls_presence": "not_mentioned"
       },
       "self_perception": {
-        "self_form": "not_mentioned",
+        "self_form": "no_description",
         "physical_limitations": "not_mentioned"
       }
     },
     "life_review": {
       "occurrence": "no",
-      "presentation": "not_specified",
+      "presentation_modes": [],
       "perspective_of_others": "not_mentioned",
-      "judgment": "not_mentioned",
+      "judgment_source": "not_mentioned",
+      "judgment_intensity": "not_applicable",
       "emotional_tone": "not_specified"
     },
     "cosmic_knowledge": {
-      "premortal_existence_info": "not_mentioned",
-      "pre_birth_realm_description": "not_mentioned",
-      "incarnation_choice": "not_mentioned",
-      "life_preview": "not_mentioned",
-      "pre_incarnation_covenant": "not_mentioned",
-      "universal_knowledge": "not_mentioned",
-      "cosmic_understanding": "not_mentioned",
-      "future_knowledge": "not_mentioned",
-      "purpose_of_existence": "not_mentioned",
-      "past_life_memory": "not_mentioned",
+      "premortal_existence_info": "no",
+      "pre_birth_realm_description": "no",
+      "chose_parents": "no",
+      "chose_mission": "no",
+      "chose_life_circumstances": "no",
+      "life_preview": "no",
+      "pre_incarnation_covenant": "no",
+      "universal_knowledge": "no",
+      "cosmic_understanding": "no",
+      "personal_future_knowledge": "no",
+      "global_future_knowledge": "no",
+      "purpose_of_existence": "no",
+      "past_life_memory": "no",
       "death_memory": "not_mentioned",
-      "intermission_memory": "not_mentioned",
-      "soul_age_indication": "not_mentioned",
-      "home_identification": "not_mentioned",
+      "intermission_memory": "no",
+      "soul_age_characterization": "not_mentioned",
+      "incarnation_history": "not_mentioned",
+      "home_identifications": [],
       "earth_alienation": "not_mentioned",
       "identity_pre_body": "not_mentioned"
     },
     "boundary_and_return": {
       "boundary_encounter": "verbal_limit",
-      "return_choice": "told_to_return",
-      "return_reason": "not_your_time",
+      "return_agency": "external_being",
+      "return_willingness": "reluctant",
+      "return_reasons": [
+        "not_your_time"
+      ],
       "return_reason_other_detail": null,
       "return_description": "brief",
       "return_method": "not_specified",
       "return_method_other_detail": null,
       "return_feeling": "not_mentioned",
-      "mission_commissioned": "not_mentioned",
+      "mission_commissioned": "no",
       "mission_types": [],
       "mission_detail": null,
-      "volunteer_language": "not_mentioned"
+      "volunteer_language": "no"
     },
     "transformative_effects": {
       "readjustment": "not_mentioned",
-      "post_ability_changes": [],
-      "belief_change": "not_mentioned",
+      "death_fear_before": "not_mentioned",
+      "death_fear_after": "not_mentioned",
       "value_shift": "not_mentioned",
-      "spirituality_shift": "not_mentioned"
+      "spirituality_before": "not_mentioned",
+      "spirituality_after": "not_mentioned",
+      "religiosity_before": "not_mentioned",
+      "religiosity_after": "not_mentioned"
     },
     "experience_quality": {
       "time_perception": "not_mentioned",
       "thought_speed": "not_mentioned",
       "sensory_vividness": "not_mentioned",
-      "ineffability": "not_mentioned",
+      "ineffability": "no",
       "memory_persistence": "not_mentioned",
       "reality_assessment": "not_mentioned",
-      "unity_experience": "not_mentioned",
-      "realm_type": "not_mentioned",
+      "unity_experience": "no",
+      "realm_types": [],
       "overall_valence": "pleasant",
-      "veridical_perception": "claimed_unverified",
-      "belief_consistency": "not_mentioned",
-      "post_experience_gifts": "not_mentioned",
+      "veridical_claim_types": [
+        "obe_observation"
+      ],
+      "veridical_verification": "claimed_unverified",
+      "doctrine_consistency": "not_mentioned",
+      "personal_expectation_consistency": "not_mentioned",
+      "post_experience_gifts": [],
       "multiple_ndes": "not_mentioned"
     },
     "context": {
       "nde_cause": "surgery",
-      "nde_cause_other_detail": "Emergency abdominal surgery after the experiencer felt like their stomach 'had exploded' and then 'burst wide open again' in recovery.",
+      "nde_cause_other_detail": "Emergency surgery following a severe abdominal event ('stomach had exploded' / 'burst wide open again').",
       "clinical_status": "unknown",
       "experience_duration": "seconds_to_minutes"
     },
     "person_demographics": {
-      "age_reported": false,
-      "age_years": null,
+      "age_at_nde_reported": false,
+      "age_at_nde": null,
+      "years_since_nde": null,
       "gender": "not_mentioned",
-      "location_country": null,
+      "location_country": "not_mentioned",
       "location_state_province": "Iowa",
       "location_city": null,
       "nationality_ethnicity": null,
-      "religious_affiliation": "not_mentioned",
-      "religious_affiliation_detail": null,
+      "religious_background": "not_mentioned",
+      "religious_background_denomination": null,
+      "religious_background_detail": null,
+      "religious_belief_at_nde": "not_mentioned",
+      "religious_belief_at_nde_denomination": null,
+      "religious_belief_at_nde_detail": null,
       "occupation": null,
-      "education_level": null,
+      "education_level": "not_mentioned",
       "marital_status": "not_mentioned",
       "has_children": null,
       "number_of_children": null,
@@ -156,31 +181,33 @@
         "obe",
         "light_encounter",
         "loved_ones",
-        "return_choice"
+        "boundary",
+        "return_choice",
+        "communication"
       ],
       "elements_other_detail": null,
       "canonical_sequence": "mostly",
-      "sequence_variation_description": "OBE during surgery, then warm glowing light and encounter with deceased relative, then told to return ('not time yet') and awakening in recovery.",
+      "sequence_variation_description": "OBE (viewed surgeons) followed by warm glowing light and encounter/communication with a deceased relative (grandmother's mother), then told to return because 'it is not time yet,' then awakening in recovery.",
       "repeated_stages": "not_mentioned",
       "repeated_stage_detail": null,
       "simultaneous_stages": "not_mentioned",
       "simultaneous_stage_detail": null
     },
     "unique_elements": {
-      "nonstandard_elements": "The encountered deceased relative was identified as 'your grandmother's mother,' whom the experiencer had never met.",
+      "nonstandard_elements": "The encountered figure identified herself as 'your grandmother's mother' (a relative unknown to the experiencer).",
       "notable_quotes": "“I am your grandmother's mother.” / “You will need to go back now.” / “You must; it is not time yet.”"
     }
   },
-  "response_id": "resp_0a704cc74ee243400069532b64db9081908d7f6724639c4c70",
+  "response_id": "resp_0847b7c1f8708a2500695cffa89f3481908a62b9abcfe6b3f3",
   "usage": {
-    "input_tokens": 9585,
+    "input_tokens": 11799,
     "input_tokens_details": {
       "cached_tokens": 0
     },
-    "output_tokens": 1482,
+    "output_tokens": 1693,
     "output_tokens_details": {
       "reasoning_tokens": 0
     },
-    "total_tokens": 11067
+    "total_tokens": 13492
   }
 }
