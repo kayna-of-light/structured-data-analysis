@@ -376,7 +376,7 @@ class StructuredExtractor:
                 if getattr(response, "usage", None):
                     usage_obj = response.usage
                     if hasattr(usage_obj, "model_dump"):
-                        usage = usage_obj.model_dump()
+                        usage = usage_obj.model_dump() # type: ignore
                     else:
                         usage = json.loads(json.dumps(usage_obj))
                 return analysis, usage, getattr(response, "id", None)
@@ -589,8 +589,8 @@ class StructuredExtractor:
         parser.add_argument(
             "--max-concurrency",
             type=int,
-            default=4,
-            help="Maximum concurrent Azure OpenAI calls (default: 4).",
+            default=10,
+            help="Maximum concurrent Azure OpenAI calls (default: 10).",
         )
         parser.add_argument(
             "--temperature",
