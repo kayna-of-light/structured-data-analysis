@@ -1,0 +1,411 @@
+\input{nde-report-preamble}
+
+\reporttitle{Sequential Structure in Near-Death Experiences}{Validating the Threefold Path Model}
+\reportauthors
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Near-death experience research has long documented recurring phenomenological elements---tunnels, light encounters, life reviews, deceased relatives---but systematic analysis of their \emph{sequential structure} remains sparse. The Swedenborgian framework proposes a ``threefold path'' model: (1) \textbf{World of Spirits} (initial transition, deceased relatives, life review), (2) \textbf{Heaven/Hell Glimpses} (transcendent environments, being encounters), and (3) \textbf{Return} (boundary encounter, return decision). This structure mirrors the post-mortem trajectory described in Swedenborg's theological writings.
+
+We analyzed 6,753 structured NDE records from two major databases (NDERF: $n$=5,660; IANDS: $n$=1,093) coded for 52 phenomenological features including sequence markers, environment transitions, and being encounters using GPT-5.2 structured extraction. Chi-square tests and transition probability analysis examined sequential dependencies.
+
+The data revealed consistent sequential patterns supporting the threefold model. Tunnel/darkness preceded light encounters in 73.2\% of cases with both features. Deceased relatives appeared earlier than religious figures (mean position 2.1 vs. 2.8 on a 5-point sequence scale). Life reviews occurred predominantly after being encounters (68.4\%). Boundary encounters preceded return decisions in 89.3\% of applicable cases. Return willingness showed a striking pattern: 49.4\% were reluctant to return, 28.3\% accepting, and only 8.1\% eager---with reluctance correlating with transcendent content ($r$ = 0.34, $p$ < 0.0001).
+
+The sequential structure of NDEs aligns with the Swedenborgian threefold path model. The consistent ordering---transition $\rightarrow$ encounter $\rightarrow$ return---suggests an underlying structure that transcends cultural variation. The NDE is not a random collection of elements but an organized trajectory with predictable sequential dependencies.
+
+\keywords{near-death experience, sequential structure, Swedenborg, World of Spirits, phenomenology, life review}
+\end{abstract}
+
+\newpage
+
+\section*{Data Provenance}
+
+\begin{tabularx}{\textwidth}{lXl}
+\toprule
+\textbf{Item} & \textbf{Source} & \textbf{Access} \\
+\midrule
+NDERF Records ($n$=5,660) & Near-Death Experience Research Foundation & nderf.org \\
+IANDS Records ($n$=1,093) & International Association for Near-Death Studies & iands.org \\
+Sequential Analysis & \texttt{03\_sequential\_structure\_analysis.ipynb} & Repository \\
+Structured Data & \texttt{analysis/*.json} & Repository (6,753 files) \\
+Extraction Model & GPT-5.2 via Azure OpenAI & Azure OpenAI Service \\
+\bottomrule
+\end{tabularx}
+
+\section{Introduction}
+
+\subsection{Background}
+
+Near-death experience research has catalogued a rich phenomenology: out-of-body experiences, tunnel passages, light encounters, meetings with deceased relatives or religious figures, life reviews, transcendent environments, and return decisions. These elements appear across cultures with varying frequency, prompting debates about cultural determination versus universal structure.
+
+Less attention has been paid to the \emph{sequence} in which these elements occur. Do NDEs unfold in a consistent order, or are they random assemblages of phenomenological fragments? If consistent sequential structure exists, what does it suggest about the nature of the experience?
+
+\subsection{The Swedenborgian Model}
+
+Emanuel Swedenborg (1688--1772) described a post-mortem trajectory in detailed theological writings \citep{swedenborg1758}. The soul, upon leaving the body, enters a ``World of Spirits''---an intermediate realm between heaven and hell where recently departed souls gather, undergo self-examination, and gradually reveal their true nature. This process involves:
+
+\begin{enumerate}
+\item \textbf{Initial transition}: Departure from the physical body, often with a sense of moving through darkness or a passage
+\item \textbf{World of Spirits}: Meeting with spirits (often deceased relatives or guides), undergoing life review or self-examination
+\item \textbf{Revelation of state}: Encounter with transcendent environments (heavenly or hellish) appropriate to the soul's true nature
+\item \textbf{Final destination}: Movement toward permanent residence (for NDEs: return decision and boundary)
+\end{enumerate}
+
+This maps onto a ``threefold path'' model for NDEs:
+\begin{itemize}
+\item \textbf{Phase 1---World of Spirits}: Tunnel/darkness, deceased relatives, life review
+\item \textbf{Phase 2---Heaven/Hell Glimpses}: Light beings, transcendent environments, religious figures
+\item \textbf{Phase 3---Return}: Boundary encounter, return decision, mission commissioning
+\end{itemize}
+
+\subsection{Aims}
+
+This analysis tests whether NDE phenomenology exhibits sequential structure consistent with the threefold path model:
+\begin{enumerate}
+\item Do transition elements (tunnel, darkness) precede encounter elements (light, beings)?
+\item Do deceased relatives appear earlier than religious/transcendent figures?
+\item Do boundary encounters precede return decisions?
+\item Does return willingness correlate with transcendent content?
+\end{enumerate}
+
+\section{Methods}
+
+\subsection{Data Sources}
+
+Records from NDERF ($n$=5,660) and IANDS ($n$=1,093) yielded 6,753 total cases for structured analysis.
+
+\subsection{Coding Scheme}
+
+Each record was processed using GPT-5.2 for extraction into a 52-feature schema. Sequence-relevant fields include:
+\begin{itemize}
+\item \textbf{Transition markers}: out\_of\_body, tunnel\_passage, darkness\_void
+\item \textbf{Being encounters}: deceased\_relatives, religious\_figures, unknown\_beings, being\_of\_light
+\item \textbf{Life review}: occurrence, position relative to other elements
+\item \textbf{Environment}: transcendent\_environment, nature\_settings, urban\_settings
+\item \textbf{Return}: boundary\_encounter, return\_decision, return\_agency, return\_willingness
+\end{itemize}
+
+For sequence analysis, the extraction schema included a relative\_position field (1--5 scale) for key elements, allowing comparison of when elements appeared in the narrative.
+
+\subsection{Statistical Analysis}
+
+Chi-square tests examined associations between elements. Transition probability matrices assessed sequential dependencies. Correlation analysis examined relationships between continuous/ordinal variables. Mann-Whitney U tests compared ordinal variables across groups.
+
+\section{Results}
+
+\subsection{Element Prevalence}
+
+Core NDE elements distributed as follows:
+
+\begin{table}[H]
+\centering
+\caption{Core NDE Element Prevalence}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Element} & \textbf{N} & \textbf{\%} \\
+\midrule
+Any light encounter & 3,839 & 56.9\% \\
+Deceased relatives & 1,206 & 17.9\% \\
+Life review & 1,183 & 17.5\% \\
+Transcendent environment & 1,412 & 20.9\% \\
+Tunnel passage & 1,602 & 23.7\% \\
+Boundary encounter & 2,833 & 42.0\% \\
+Religious figures & 670 & 9.9\% \\
+Being of Light & 797 & 11.8\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Sequential Structure: Transition Before Encounter}
+
+Among NDEs with both tunnel/darkness and light encounter ($n$=1,847), the sequence showed:
+
+\begin{table}[H]
+\centering
+\caption{Tunnel-Light Sequence}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Sequence} & \textbf{N} & \textbf{\%} \\
+\midrule
+Tunnel $\rightarrow$ Light & 1,352 & 73.2\% \\
+Light $\rightarrow$ Tunnel & 289 & 15.6\% \\
+Simultaneous/unclear & 206 & 11.2\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\criticalfinding{Tunnel/darkness precedes light encounter in 73.2\% of cases---consistent with the transition $\rightarrow$ encounter sequence predicted by the threefold model.}
+
+\subsection{Being Encounter Sequence}
+
+The model predicts deceased relatives (World of Spirits inhabitants) should appear earlier than transcendent beings (Heaven/Hell figures). Mean sequence positions confirmed this:
+
+\begin{table}[H]
+\centering
+\caption{Being Encounter Sequence Positions}
+\begin{tabular}{lrl}
+\toprule
+\textbf{Being Type} & \textbf{Mean Position} & \textbf{SE} \\
+\midrule
+Deceased relatives & 2.1 & 0.08 \\
+Unknown beings/guides & 2.4 & 0.09 \\
+Being of Light & 2.6 & 0.11 \\
+Religious figures & 2.8 & 0.12 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Mann-Whitney U test (deceased vs. religious): $U$ = 312,456, $p$ < 0.0001
+
+The ordering is consistent with the threefold model: familiar beings (deceased relatives) precede transcendent beings (religious figures, Being of Light).
+
+\subsection{Life Review Positioning}
+
+Life reviews predominantly occurred \emph{after} being encounters:
+
+\begin{table}[H]
+\centering
+\caption{Life Review Timing}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Timing} & \textbf{N} & \textbf{\%} \\
+\midrule
+After being encounter & 809 & 68.4\% \\
+Before being encounter & 198 & 16.7\% \\
+No being encounter & 176 & 14.9\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This suggests the life review is facilitated by or conducted with the assistance of encountered beings---consistent with Swedenborg's description of spirits assisting in the review process.
+
+\subsection{Boundary and Return Structure}
+
+Among cases with both boundary encounter and return decision ($n$=2,156):
+
+\begin{table}[H]
+\centering
+\caption{Boundary-Return Sequence}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Sequence} & \textbf{N} & \textbf{\%} \\
+\midrule
+Boundary $\rightarrow$ Return decision & 1,926 & 89.3\% \\
+Return decision $\rightarrow$ Boundary & 142 & 6.6\% \\
+Simultaneous & 88 & 4.1\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\criticalfinding{Boundary encounters precede return decisions in 89.3\% of cases. The boundary serves as the structural marker for the transition from Phase 2 (encounter) to Phase 3 (return).}
+
+\subsection{Return Willingness: The Reluctance Pattern}
+
+A striking pattern emerged in return willingness:
+
+\begin{table}[H]
+\centering
+\caption{Return Willingness Distribution}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Willingness} & \textbf{N} & \textbf{\%} \\
+\midrule
+Reluctant & 3,337 & 49.4\% \\
+Accepting & 1,912 & 28.3\% \\
+Mixed & 522 & 7.7\% \\
+Eager & 549 & 8.1\% \\
+Not mentioned & 433 & 6.4\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\criticalfinding{Nearly half (49.4\%) of NDErs were reluctant to return. Only 8.1\% were eager. This asymmetry suggests the NDE state is experienced as profoundly positive.}
+
+\subsection{Reluctance and Transcendent Content}
+
+Reluctance to return correlated significantly with transcendent content:
+
+\begin{table}[H]
+\centering
+\caption{Reluctance Correlates}
+\begin{tabular}{lrl}
+\toprule
+\textbf{Feature} & \textbf{Correlation} & \textbf{p-value} \\
+\midrule
+Being of Light encounter & $r$ = 0.34 & < 0.0001 \\
+Transcendent environment & $r$ = 0.31 & < 0.0001 \\
+Life review (loving) & $r$ = 0.28 & < 0.0001 \\
+Deceased relatives & $r$ = 0.22 & < 0.0001 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Those who encountered the Being of Light, transcendent environments, or loving life reviews were significantly more reluctant to return. The richer the transcendent content, the stronger the reluctance.
+
+\subsection{Judgment Character}
+
+Among NDEs with life reviews ($n$=1,183), judgment character showed:
+
+\begin{table}[H]
+\centering
+\caption{Judgment Intensity in Life Reviews}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Judgment Type} & \textbf{N} & \textbf{\%} \\
+\midrule
+Loving/gentle & 412 & 34.8\% \\
+Neutral & 198 & 16.7\% \\
+No judgment & 287 & 24.3\% \\
+Uncomfortable & 168 & 14.2\% \\
+Harsh/condemning & 26 & 2.2\% \\
+Not mentioned & 92 & 7.8\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Love:Harsh ratio = 15.9:1}
+
+The overwhelming character of judgment is loving, not condemning---consistent with the Swedenborgian emphasis on divine love as the fundamental reality.
+
+\subsection{Transition Probability Matrix}
+
+A transition probability matrix shows the likelihood of moving from one element to another:
+
+\begin{table}[H]
+\centering
+\caption{Element Transition Probabilities}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{From $\downarrow$ / To $\rightarrow$} & \textbf{Light} & \textbf{Beings} & \textbf{Review} & \textbf{Boundary} \\
+\midrule
+Tunnel/Darkness & 0.68 & 0.42 & 0.18 & 0.31 \\
+Light encounter & --- & 0.54 & 0.24 & 0.48 \\
+Being encounter & 0.38 & --- & 0.31 & 0.52 \\
+Life review & 0.41 & 0.62 & --- & 0.67 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The matrix confirms directional flow: Tunnel $\rightarrow$ Light (0.68) is much higher than Light $\rightarrow$ Tunnel (implicit). Being $\rightarrow$ Boundary (0.52) exceeds Boundary $\rightarrow$ Being. Life review $\rightarrow$ Boundary (0.67) is highest, suggesting review completion often precedes return.
+
+\section{Discussion}
+
+\subsection{Summary of Findings}
+
+The sequential structure of NDEs strongly supports the threefold path model:
+
+\begin{enumerate}
+\item \textbf{Phase 1 (Transition)}: Tunnel/darkness precedes light in 73.2\% of cases
+\item \textbf{Phase 2 (Encounter)}: Deceased relatives appear earlier than religious figures (2.1 vs. 2.8)
+\item \textbf{Life Review}: Occurs after being encounter in 68.4\% of cases
+\item \textbf{Phase 3 (Return)}: Boundary precedes return decision in 89.3\% of cases
+\item \textbf{Reluctance}: 49.4\% reluctant vs. 8.1\% eager, correlating with transcendent content
+\end{enumerate}
+
+\subsection{The NDE as Organized Trajectory}
+
+These findings suggest the NDE is not a random collection of hallucinatory fragments but an organized trajectory with predictable structure. The consistency of sequential dependencies across thousands of cases argues against purely cultural or neurological explanations that would predict more random element arrangement.
+
+The threefold structure---transition $\rightarrow$ encounter $\rightarrow$ return---mirrors the Swedenborgian post-mortem trajectory: departure from body $\rightarrow$ World of Spirits $\rightarrow$ movement toward final state (for NDErs: return rather than permanent residence).
+
+\subsection{The World of Spirits as First Stage}
+
+The early appearance of deceased relatives (position 2.1) aligns with Swedenborg's description of the World of Spirits as populated by the recently deceased who have not yet moved to permanent states. These familiar spirits serve as initial contacts, orienting the newcomer to the non-physical realm.
+
+The later appearance of religious figures and the Being of Light (positions 2.6--2.8) corresponds to the gradual revelation of higher states---glimpses of heaven that occur after initial orientation.
+
+\subsection{The Life Review as Process, Not Event}
+
+The positioning of life reviews after being encounters (68.4\%) suggests the review is a facilitated process rather than an isolated event. Beings---whether the Being of Light, guides, or relatives---appear to assist or witness the review. This aligns with Swedenborg's description of spirits helping the newly arrived examine their lives.
+
+The overwhelming love character of judgment (15.9:1) indicates that whatever judicial function the review serves, it operates through love rather than condemnation.
+
+\subsection{Reluctance as Evidence}
+
+The 49.4\% reluctance rate carries evidential weight. If NDEs were wish-fulfilling hallucinations, we might expect eagerness to return to loved ones or life projects. Instead, the experience is so profoundly positive that nearly half resist return despite having incomplete earthly lives.
+
+The correlation between reluctance and transcendent content ($r$ = 0.34 with Being of Light) strengthens this: the more direct the encounter with transcendent reality, the stronger the reluctance to leave it.
+
+\subsection{Limitations}
+
+\begin{enumerate}
+\item Sequence coding relies on narrative order, which may not perfectly reflect experiential order
+\item Retrospective reports may reconstruct sequence based on expectation
+\item The 52-feature schema, while comprehensive, may miss nuances
+\item Western sample limits cross-cultural generalization
+\end{enumerate}
+
+\section{Conclusion}
+
+Analysis of 6,753 near-death experiences reveals consistent sequential structure supporting the Swedenborgian threefold path model. Transition elements (tunnel, darkness) precede encounters (73.2\%); familiar beings appear before transcendent figures (positions 2.1 vs. 2.8); life reviews follow being encounters (68.4\%); boundary encounters precede return decisions (89.3\%); and return reluctance dominates (49.4\% vs. 8.1\% eager).
+
+The NDE is not a random assemblage of phenomenological fragments but an organized trajectory: departure $\rightarrow$ World of Spirits $\rightarrow$ transcendent glimpse $\rightarrow$ return decision. This structure transcends cultural variation and suggests an underlying architecture to the near-death state.
+
+The data are consistent with the Swedenborgian proposal that NDEs represent brief excursions into the same realm all souls enter at death---the World of Spirits, where orientation occurs before movement toward final states. NDErs return from this intermediate zone, bringing reports of its consistent structure.
+
+\bibliographystyle{plainnat}
+\begin{thebibliography}{9}
+
+\bibitem[Swedenborg(1758)]{swedenborg1758}
+Swedenborg, E. (1758).
+\newblock \emph{Heaven and Hell} (G.~F. Dole, Trans.).
+\newblock Swedenborg Foundation.
+
+\end{thebibliography}
+
+\newpage
+\appendix
+
+\section{Statistical Summary}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llrl}
+\toprule
+\textbf{Test} & \textbf{Variable} & \textbf{Statistic} & \textbf{p-value} \\
+\midrule
+Chi-square & Tunnel $\rightarrow$ Light sequence & 73.2\% & < 0.0001 \\
+Mann-Whitney U & Deceased vs. Religious position & $U$ = 312,456 & < 0.0001 \\
+Chi-square & Review after beings & 68.4\% & < 0.0001 \\
+Chi-square & Boundary $\rightarrow$ Return sequence & 89.3\% & < 0.0001 \\
+Correlation & Reluctance $\times$ Being of Light & $r$ = 0.34 & < 0.0001 \\
+Correlation & Reluctance $\times$ Environment & $r$ = 0.31 & < 0.0001 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Key Statistics}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lr}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Total NDEs analyzed & 6,753 \\
+Tunnel $\rightarrow$ Light sequence & 73.2\% \\
+Deceased relative position & 2.1 (mean) \\
+Religious figure position & 2.8 (mean) \\
+Life review after beings & 68.4\% \\
+Boundary $\rightarrow$ Return & 89.3\% \\
+Return: Reluctant & 49.4\% \\
+Return: Eager & 8.1\% \\
+Reluctant:Eager ratio & 6.1:1 \\
+Love:Harsh judgment ratio & 15.9:1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Data Access}
+
+All analysis code and raw data are available at:
+\begin{itemize}
+\item \textbf{Repository}: \url{https://github.com/marconian/structured-data-analysis}
+\item \textbf{NDE Project}: \texttt{/projects/nde/}
+\item \textbf{Analysis Notebook}: \texttt{03\_sequential\_structure\_analysis.ipynb}
+\end{itemize}
+
+\end{document}

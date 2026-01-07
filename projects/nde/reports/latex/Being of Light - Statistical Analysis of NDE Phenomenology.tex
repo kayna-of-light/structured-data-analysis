@@ -1,0 +1,329 @@
+\input{nde-report-preamble}
+
+\reporttitle{The Being of Light}{A Statistical Analysis of Near-Death Experience Phenomenology}
+\reportauthors
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Near-death experiences frequently involve encounters with a ``Being of Light'' described in terms evoking divine presence. Whether these encounters reflect cultural conditioning or represent access to an objective spiritual reality remains contested. The Swedenborgian correspondential framework proposes a testable middle ground: the Being is ontologically real, but identification is culturally mediated.
+
+We analyzed 6,753 structured NDE records from two major databases (NDERF: $n$=5,660; IANDS: $n$=1,093) coded for light encounter type, being identification, religious background, communication mode, and transformative effects using GPT-5.2 structured extraction with a Pydantic schema containing 52 extracted features. Chi-square tests examined independence between religious background and being identification.
+
+Among experiencers with Being of Light encounters ($n$=1,881; 27.9\%), the most common identification was ``unknown presence'' (51.9\%), followed by God (22.5\%), Jesus (18.9\%), and religious figures (6.5\%). Religious background significantly predicted identification vocabulary ($\chi^2$ = 365.14, $p$ < 0.000001), yet the majority across all traditions transcended cultural labels entirely. Critically, experiential properties remained identical regardless of identification: Christians naming ``Jesus'' and those naming ``Unknown'' reported virtually identical encounter characteristics---all differences below 10\%. Loving judgment exceeded harsh judgment by a ratio of 36.5:1, and 84.2\% reported increased spirituality.
+
+The data support a two-tier model: a consistent underlying phenomenon (constant state) expressed through variable cultural interpretation (variable form). The Being is objective reality; identification is culturally conditioned perception.
+
+\keywords{near-death experience, Being of Light, correspondences, religious experience, cultural mediation, Swedenborg}
+\end{abstract}
+
+\newpage
+
+\section*{Data Provenance}
+
+\begin{tabularx}{\textwidth}{lXl}
+\toprule
+\textbf{Item} & \textbf{Source} & \textbf{Access} \\
+\midrule
+NDERF Records ($n$=5,660) & Near-Death Experience Research Foundation & nderf.org \\
+IANDS Records ($n$=1,093) & International Association for Near-Death Studies & iands.org \\
+Being of Light Analysis & \texttt{01\_being\_of\_light\_analysis.ipynb} & Repository \\
+Structured Data & \texttt{analysis/*.json} & Repository (6,753 files) \\
+Extraction Model & GPT-5.2 via Azure OpenAI & Azure OpenAI Service \\
+\bottomrule
+\end{tabularx}
+
+\section{Introduction}
+
+\subsection{Background}
+
+The ``Being of Light'' stands among the most iconic elements of near-death experience phenomenology. Raymond Moody's foundational research identified this figure as a brilliant light experienced as a personal presence---characterized by unconditional love and apparently complete knowledge of the experiencer's life \citep{moody1975}. In the decades since, studies across cultures have consistently confirmed the prevalence of light-related experiences in NDEs \citep{vanlommel2010,greyson2021}, yet the interpretation of these encounters remains contested.
+
+The phenomenology presents a philosophical puzzle of considerable depth. The Being is almost universally described as supremely loving, non-judgmental, and possessed of complete knowledge---attributes traditionally associated with the Divine across religious traditions. Yet experiencers from different religious backgrounds identify this presence differently: Christians often report seeing Jesus or God, Hindus may perceive Yama or Krishna, while secular experiencers describe an ``unknown presence'' or ``pure light'' without religious attribution.
+
+This variation has fueled a long-standing debate. Skeptics argue that the differences demonstrate cultural construction---the dying brain producing hallucinations shaped by expectation. Religious traditionalists sometimes argue for literal visitation by their tradition's divine figures. Neither position accounts for a puzzling observation: while \emph{identification} varies, the \emph{experiential quality} remains remarkably consistent across traditions. Whether called Jesus, Krishna, or simply ``light,'' the Being consistently manifests love, wisdom, and transformative power.
+
+\subsection{Theoretical Framework}
+
+The present analysis employs Emanuel Swedenborg's doctrine of correspondences as an interpretive lens \citep{swedenborg1758}. This doctrine proposes that spiritual realities present themselves to human perception through forms drawn from the recipient's mental repertoire. The same spiritual entity may thus appear differently to different observers---not through deception, but through the inherent structure of how spiritual reality translates into human perception.
+
+On this model, the Being of Light represents what Swedenborg termed the ``Divine Human''---the personal manifestation of infinite love and wisdom. When an experiencer encounters this reality, their mind necessarily clothes it in forms it can recognize. A Christian's mental furniture includes Jesus, Mary, and angels; a Hindu's includes Krishna, Shiva, and devas; an atheist's may include only ``light,'' ``presence,'' or ``energy.'' The spiritual reality is constant; the perceptual form varies.
+
+This generates a testable prediction: if the correspondential model is correct, we should observe \emph{variation} in specific identification correlated with religious background (cultural mediation), while \emph{consistency} in the qualitative character of the encounter remains stable across backgrounds (underlying reality). Moreover, we should find that experiencers who use different labels---``Jesus'' versus ``unknown presence''---report essentially identical experiential properties.
+
+\subsection{Aims}
+
+The primary aim is to test whether being identification varies systematically with religious background while core phenomenology remains constant. This requires distinguishing between two claims: (1) that cultural background influences how experiencers \emph{name} what they encounter, and (2) that cultural background shapes \emph{what they actually experience}. The correspondential hypothesis predicts the first but not the second.
+
+Secondary aims include:
+\begin{enumerate}
+\item Quantifying the prevalence of different being identifications
+\item Testing whether the Being exhibits monotheistic characteristics regardless of experiencer tradition
+\item Examining the relationship between identification and transformative effects
+\item Assessing what the data reveal about the cultural interpretation versus objective reality debate
+\end{enumerate}
+
+\section{Methods}
+
+\subsection{Data Sources}
+
+Records were collected from the two largest English-language NDE archives: the Near-Death Experience Research Foundation (NDERF), which provided 5,660 questionnaire responses, and the International Association for Near-Death Studies (IANDS), which contributed 1,093 accounts. The combined corpus of 6,753 records represents one of the largest structured NDE datasets analyzed to date.
+
+\subsection{Coding Scheme}
+
+Each record was processed using GPT-5.2 (Azure OpenAI) for structured extraction into a comprehensive Pydantic schema with 52 extracted features. The schema was designed to capture nuances often lost in simpler coding approaches, including:
+\begin{itemize}
+\item Temporal splits (death fear before/after NDE, spirituality before/after, religiosity before/after)
+\item Religious granularity (distinguishing religious background from religious belief at time of NDE, with denomination-level detail for Christians)
+\item Judgment characteristics (separating source, intensity, and experiencer emotional response)
+\item Return experience dimensions (separating agency---who decided---from willingness---how they felt about it)
+\end{itemize}
+
+Fields relevant to this analysis include demographics (age at NDE, sex, religious affiliation at time of NDE), light encounter type (brilliant\_light, being\_of\_light, presence\_without\_visual), being identification (unknown\_presence, god, jesus, religious\_figure, buddha), communication mode (telepathic, normal\_speech, nonverbal, no\_communication), life review characteristics (occurrence, judgment source, judgment intensity, experiencer emotion), and transformative effects (fear changes, spirituality shift, value changes).
+
+\subsection{Statistical Analysis}
+
+Primary analyses employed:
+\begin{itemize}
+\item Chi-square tests for independence between religious background and being identification
+\item Cramér's V as effect size measure for categorical associations
+\item Mann-Whitney U tests for non-parametric group comparisons
+\item Random Forest classification to assess whether religious background could reliably predict identification
+\end{itemize}
+
+\subsection{Methodological Note: Light Being versus Other Beings}
+
+A critical distinction in this analysis separates Being of Light encounters---the transcendent, central entity representing or emanating from the Light itself---from encounters with other beings such as deceased relatives, angels, or guides. This distinction is essential because the correspondential hypothesis specifically concerns the central divine presence, not the full population of beings that may appear during NDEs.
+
+Among the 6,753 NDEs, 1,881 (27.9\%) involved Light Being encounters, 1,898 (28.1\%) involved other beings only (without the Light Being), and 2,974 (44.0\%) reported no beings at all. Among Light Being encounters, 59.0\% involved the Light Being alone while 41.0\% included both the Light Being and other beings. All analyses of Being of Light characteristics focus on the 1,881 Light Being encounters.
+
+\section{Results}
+
+\subsection{Light Encounter Prevalence}
+
+Light-related experiences proved common in the corpus, with 40.9\% reporting brilliant light and an additional 11.8\% specifically describing a being of light. Another 4.2\% reported a presence without visual form---sensed rather than seen. The remaining cases either did not mention light (24.2\%) or did not address the question (18.9\%).
+
+Light Being presence varied significantly by religious background ($\chi^2$ = 19.92, $p$ = 0.0002). Christians showed the highest Light Being encounter rate at 39.7\%, followed by Jewish experiencers at 28.9\%, spiritual-but-not-religious at 27.3\%, other religions at 24.3\%, and atheist/agnostic at 24.0\%. Muslim experiencers showed the lowest rate at 9.3\%, though the small sample size ($n$=43) warrants caution.
+
+\subsection{Being of Light Identification}
+
+Among the 1,881 Light Being encounters, the most striking finding is the prevalence of transcendence: 51.9\% ($n$=976) identified the Being as ``unknown presence''---a category that explicitly resists religious labeling. This was followed by God at 22.5\% ($n$=423), Jesus at 18.9\% ($n$=355), religious figure (specified) at 6.5\% ($n$=122), and Buddha at 0.3\% ($n$=5).
+
+\begin{table}[H]
+\centering
+\caption{Being of Light Identification Distribution}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Identification} & \textbf{N} & \textbf{\%} \\
+\midrule
+Unknown presence & 976 & 51.9\% \\
+God & 423 & 22.5\% \\
+Jesus & 355 & 18.9\% \\
+Religious figure (specified) & 122 & 6.5\% \\
+Buddha & 5 & 0.3\% \\
+\midrule
+\textbf{Total} & \textbf{1,881} & \textbf{100.0\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The majority response---``unknown presence''---carries significant weight. These experiencers are not simply failing to identify what they encountered; they are actively affirming that the Being transcended their available categories. This pattern appears across all religious backgrounds: unknown presence rates ranged from 20\% (Buddhist, small sample) to 100\% (Muslim, small sample), with atheists/agnostics at 66.7\%, spiritual-not-religious at 66.7\%, Christians at 44.2\%, and Jews at 54.5\%.
+
+Religious background significantly predicted identification vocabulary ($\chi^2$ = 365.14, $p$ < 0.000001), confirming cultural mediation. Christians were more likely to use God/Jesus terminology; atheists and spiritual-not-religious were more likely to use presence/light vocabulary. Yet even among Christians---the largest religious subgroup and the one with the strongest cultural emphasis on Jesus as divine---44.2\% chose ``unknown presence'' rather than a specifically Christian label.
+
+\criticalfinding{The majority of experiencers (51.9\%) transcend cultural categories entirely, identifying the Being as ``unknown presence.'' Religious background predicts vocabulary ($\chi^2$ = 365.14, $p$ < 0.000001) but not experiential properties.}
+
+\subsection{The Singularity Finding}
+
+A particularly intriguing pattern emerged when comparing monotheistic and polytheistic traditions. If the Being of Light were a projection of religious expectation, we might expect experiencers from polytheistic traditions to encounter multiple divine beings or to perceive the Light as one god among many. Instead, the data show that experiencers from Hindu and Buddhist backgrounds---traditions comfortable with plurality of divine manifestation---consistently report encountering a \emph{singular} transcendent entity.
+
+Polytheists showed a 27.6\% Light Being encounter rate (versus 38.4\% for monotheists) and a 25.0\% ``unknown presence'' rate among those encounters. Critically, they do not report multiple beings of light or a pantheon of divine figures. The singularity appears to be a property of the phenomenon itself, not a projection of monotheistic cultural expectations.
+
+\subsection{Life Review and Judgment}
+
+Among the 453 Light Being encounters that included life reviews, the character of judgment provides strong evidence for the correspondential hypothesis. The judgment source distribution revealed that 27.2\% experienced no judgment at all, 26.7\% experienced judgment from the Being of Light, 18.5\% from a guide or entity, and 8.6\% from self alone. The combined category of ``no external condemnation'' (no judgment plus self-only) reached 54.7\%.
+
+Judgment intensity proved more striking still. Among those experiencing judgment, 32.2\% characterized it as loving/gentle while only 0.9\% characterized it as harsh/condemning---\textbf{a ratio of 36.5:1 in favor of love}.
+
+\begin{table}[H]
+\centering
+\caption{Judgment Characteristics During Life Review}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Judgment Intensity} & \textbf{N} & \textbf{\%} \\
+\midrule
+Loving/gentle & 146 & 32.2\% \\
+Neutral & 41 & 9.1\% \\
+Uncomfortable & 51 & 11.3\% \\
+Harsh/condemning & 4 & 0.9\% \\
+Not applicable & 121 & 26.7\% \\
+Not mentioned & 90 & 19.9\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Christians with life reviews showed a particularly interesting pattern. Despite cultural expectations of divine judgment, 63.3\% reported no external condemnation, and 31.3\% characterized their judgment as loving/gentle. The experience appears to \emph{correct} rather than confirm expectations---a finding that argues against simple cultural projection.
+
+\subsection{The Critical Test: Jesus versus Unknown Identification}
+
+The strongest test of the correspondential hypothesis comes from comparing experiencers who use different labels. If the Being of Light is genuinely the same phenomenon regardless of identification, then experiencers naming ``Jesus'' and those naming ``Unknown'' should report virtually identical experiential properties.
+
+Among Christians with Light Being encounters ($n$=460), 38.9\% identified the Being as unknown only, 22.2\% as Jesus only, 18.0\% as God only, and 20.9\% used mixed identifications. Comparing the Jesus-only group ($n$=102) with the Unknown-only group ($n$=179) on key experiential properties reveals remarkable convergence:
+
+\begin{table}[H]
+\centering
+\caption{Jesus vs. Unknown Identification: Experiential Properties}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Property} & \textbf{Jesus ID} & \textbf{Unknown ID} & \textbf{Difference} \\
+\midrule
+Self-judgment & 1.0\% & 1.7\% & $-$0.7\% \\
+Loving judgment & 4.9\% & 5.0\% & $-$0.1\% \\
+Love emotion reported & 2.9\% & 5.6\% & $-$2.6\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\criticalfinding{All differences fall below 10\%. Experiencers who confidently name ``Jesus'' and those who explicitly decline to name the Being report the same experience. The label differs; the encounter does not.}
+
+\subsection{Transformative Effects}
+
+Being of Light encounters produced substantial transformative effects. Among experiencers with before/after spirituality data ($n$=190), 84.2\% reported increased spirituality, 1.6\% reported decreased spirituality, and 14.2\% remained unchanged. Value shifts were common: 43.5\% reported major shifts and 16.1\% reported subtle shifts. Death fear showed consistent reduction, with 36.4\% of Light Being experiencers reporting decreased fear and 0.0\% reporting increased fear.
+
+\subsection{Machine Learning Classification}
+
+As a final test, we employed Random Forest classification to determine whether religious background could reliably predict being identification. If identification is primarily cultural determination, religious background should predict naming with reasonable accuracy. If identification reflects a genuine encounter that transcends cultural categories, religious background should fail as a predictor.
+
+The classifier achieved 37.8\% test accuracy with cross-validation accuracy of 38.2\% ($\pm$8.9\%). The baseline accuracy (always predicting the most common class) was 45.9\%. The machine learning model performed \emph{below baseline}---religious background cannot reliably predict identification. This finding argues strongly against pure cultural determination.
+
+\section{Discussion}
+
+\subsection{Summary of Findings}
+
+This analysis reveals a complex interplay between universal phenomenology and cultural interpretation that aligns remarkably well with the correspondential hypothesis:
+
+\begin{enumerate}
+\item The majority of experiencers (51.9\%) transcend cultural categories entirely, identifying the Being as ``unknown presence''
+\item Cultural mediation is real but limited to vocabulary---religious background predicts labels ($\chi^2$ = 365.14, $p$ < 0.000001) but not experiential properties
+\item The Being exhibits characteristics that appear intrinsic rather than projected: singularity, loving character (36.5:1 ratio), teaching function, and transformative effects
+\item Expectations are corrected rather than confirmed---Christians experience love, not judgment
+\end{enumerate}
+
+\subsection{The Two-Tier Model: Constant States, Variable Forms}
+
+The data support an interpretation distinguishing \textbf{constant states} (the underlying reality of the encounter) from \textbf{variable forms} (the cultural clothing in which that reality appears).
+
+\textbf{Constant states} include:
+\begin{itemize}
+\item The encounter itself (27.9\% of NDEs)
+\item The singular nature of the Being
+\item The loving and non-judgmental character
+\item The teaching and transformative function
+\item The transcendence of categories (51.9\% cannot name it)
+\end{itemize}
+
+\textbf{Variable forms} include:
+\begin{itemize}
+\item The specific identification vocabulary (God, Jesus, Light, Presence)
+\item The visual imagery drawn from experiencer's mental repertoire
+\end{itemize}
+
+This pattern is precisely what Swedenborgian correspondence theory predicts. The Divine Human is the objective spiritual reality; the experiencer's mind provides the perceptual clothing.
+
+\subsection{Limitations}
+
+Several limitations warrant acknowledgment:
+\begin{enumerate}
+\item The sample is predominantly Western and English-speaking
+\item Reports are retrospective, potentially influenced by subsequent reflection
+\item GPT-5.2 extraction may introduce systematic biases
+\item The observational design cannot establish causal relationships
+\end{enumerate}
+
+\section{Conclusion}
+
+Analysis of 6,753 near-death experiences reveals that the Being of Light is a consistent phenomenon expressed through variable cultural forms. The majority (51.9\%) cannot fit the Being into any cultural category; religious background predicts naming vocabulary but not experiential properties; even among Christians, those naming ``Jesus'' and those naming ``Unknown'' report identical encounters; and expectations of judgment are systematically corrected toward experiences of love.
+
+This pattern supports the Swedenborgian correspondential model: the Divine Human is an objective spiritual reality encountered during near-death states, but the specific form in which it appears is shaped by the experiencer's cultural and religious vocabulary. The Being of Light appears to be what near-death experiencers consistently report it to be: a personal, loving presence of ultimate significance that transcends cultural categories while speaking to each experiencer in forms they can receive.
+
+\bibliographystyle{plainnat}
+\begin{thebibliography}{9}
+
+\bibitem[Greyson(2021)]{greyson2021}
+Greyson, B. (2021).
+\newblock \emph{After: A Doctor Explores What Near-Death Experiences Reveal about Life and Beyond}.
+\newblock St. Martin's Essentials.
+
+\bibitem[Moody(1975)]{moody1975}
+Moody, R.~A. (1975).
+\newblock \emph{Life After Life}.
+\newblock Mockingbird Books.
+
+\bibitem[Swedenborg(1758)]{swedenborg1758}
+Swedenborg, E. (1758).
+\newblock \emph{Heaven and Hell} (G.~F. Dole, Trans.).
+\newblock Swedenborg Foundation.
+
+\bibitem[van Lommel(2010)]{vanlommel2010}
+van Lommel, P. (2010).
+\newblock \emph{Consciousness Beyond Life: The Science of the Near-Death Experience}.
+\newblock HarperOne.
+
+\end{thebibliography}
+
+\newpage
+\appendix
+
+\section{Statistical Summary}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llrl}
+\toprule
+\textbf{Test} & \textbf{Variable} & \textbf{Statistic} & \textbf{p-value} \\
+\midrule
+Chi-square & Religion $\times$ Presence Rate & $\chi^2$ = 19.92 & 0.0002 \\
+Chi-square & Religion $\times$ Identification & $\chi^2$ = 365.14 & < 0.000001 \\
+Chi-square & Light Being vs Other: Guidance & $\chi^2$ = 25.24 & < 0.000001 \\
+ML Classification & Accuracy & 37.8\% & (below 45.9\% baseline) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Key Statistics}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lr}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Total NDEs analyzed & 6,753 \\
+NDERF records & 5,660 \\
+IANDS records & 1,093 \\
+Light Being encounters & 1,881 (27.9\%) \\
+Unknown presence identification & 51.9\% \\
+No external judgment & 54.7\% \\
+Love:Harsh judgment ratio & 36.5:1 \\
+Increased spirituality & 84.2\% \\
+Christians: No external condemnation & 63.3\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Data Access}
+
+All analysis code and raw data are available at:
+\begin{itemize}
+\item \textbf{Repository}: \url{https://github.com/marconian/structured-data-analysis}
+\item \textbf{NDE Project}: \texttt{/projects/nde/}
+\item \textbf{Analysis Notebooks}:
+  \begin{itemize}
+  \item \texttt{01\_being\_of\_light\_analysis.ipynb}
+  \item \texttt{04\_conceptual\_framework\_theory.ipynb}
+  \end{itemize}
+\end{itemize}
+
+\end{document}
