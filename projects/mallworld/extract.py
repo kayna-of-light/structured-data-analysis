@@ -45,64 +45,64 @@ When images are provided:
 - Set has_image=true for any attached image
 - Use visual information to supplement text descriptions
 
-=== STEP 1: POST CLASSIFICATION (ALWAYS DO THIS FIRST) ===
-
-Before extracting dream data, classify the post:
+=== POST CLASSIFICATION ===
 
 POST TYPES:
-- dream_report: Actual dream narrative (PRIMARY - extract fully)
-- dream_report_with_map: Dream + mentions map drawing/image
-- map_only: Just showing a map, no dream narrative
-- ai_visualization: AI-generated images of dream locations
-- question: "Does anyone else experience X?"
-- theory: Proposing explanation for Mall World
-- meta_discussion: About the subreddit or phenomenon itself
-- survey_research: Surveys, polls, data collection
-- introduction: "Just found this sub" type posts
-- media_reference: "This song/movie reminds me of MW"
-- lucid_technique: Tips for lucid dreaming
-- shared_dream_claim: Claims of meeting others in dreams
-- other: Doesn't fit categories
+- dream_report: Actual dream narrative
+- dream_report_with_map: Dream narrative + map image
+- map_only: Map showing dream layout without narrative
+- ai_visualization: AI-generated dream imagery
+- question: Asking about experiences
+- theory: Proposing explanations
+- meta_discussion: About subreddit/phenomenon
+- survey_research: Data collection
+- introduction: New member posts
+- media_reference: Songs/movies/media
+- lucid_technique: Lucid dreaming methods
+- shared_dream_claim: Claims of meeting others
+- off_topic: Unrelated to Mall World dreams
+- spam_troll: Spam, trolling, nonsense
+- other: Doesn't fit above
 
-CONTENT FLAGS (mark all that apply):
-- has_image, has_map_drawing, has_ai_image
-- multiple_dreams, childhood_dream, recent_dream, recurring_dream
-- lucid_dream, nightmare, mentions_other_dreamers
+CONTENT FLAGS: has_image, has_map_drawing, has_ai_image, has_survey_link, has_external_link,
+multiple_dreams, childhood_dream, recent_dream, recurring_dream, lucid_dream, nightmare, 
+mentions_other_dreamers
 
-SET should_skip_extraction=true IF:
-- Post is pure question with no dream content
-- Post is theory/meta with no dream narrative
-- Post is introduction without dream details
-NOTE: If a post has ONLY images but they show meaningful dream content (maps, 
-visualizations), should_skip_extraction should be FALSE - extract from the images.
+=== EXTRACTION FOCUS ===
 
-=== STEP 2: DREAM EXTRACTION (only if has_extractable_dream=true) ===
+Extract phenomenological data from actual dream experiences. This includes:
+- Dream narratives (text descriptions)
+- Maps showing spatial layouts (image analysis)
+- AI visualizations illustrating experienced dreams (image analysis)
 
-=== CRITICAL PRINCIPLES ===
+Validation posts ("does this match the vibe?") typically lack extractable dream content.
 
-1. EXTRACT, DON'T INTERPRET
-   - Capture "disgusting bathroom with no privacy" NOT "excrementitious correspondence"
-   - Capture "elevator going down to basement" NOT "descent to lower spiritual states"
-   - Capture "couldn't pay, card didn't work" NOT "frustrated worldly attachment"
-   - The analysis phase will map raw data to meanings
+=== RAW PHENOMENOLOGY EXTRACTION ===
 
-2. HIERARCHICAL DATA STRUCTURE
-   - DREAM-LEVEL: Overall qualities (map coherence, recurrence, time flow, author demographics)
-   - LOCATION-LEVEL: Each place with its specific qualities and position
-   - CONNECTION-LEVEL: Paths between locations with traversal qualities
-   - BOUNDARY-LEVEL: Edges, walls, and limits of the dream world
-   - INTERACTION-LEVEL: Events that happen at specific locations
-   
-3. SPATIAL RELATIONSHIPS ARE FIRST-CLASS DATA
-   - Note vertical position: upper floors, ground level, basement, underground
-   - Note horizontal position: center, edge, entrance, back
-   - Note relative positions: "the school is above the mall", "bathroom is behind the food court"
-   - Note cardinal directions if mentioned (rare but important)
-   
-4. CONNECTIONS MATTER AS MUCH AS LOCATIONS
-   - How do locations connect? (elevator, stairs, hallway, door, tunnel, teleport)
-   - What direction? (up, down, horizontal)
-   - How does the mechanism function? (working, broken, unpredictable, dangerous)
+=== RAW PHENOMENOLOGY EXTRACTION ===
+
+Capture what is described, not interpretations:
+- Extract "disgusting bathroom with no privacy" NOT "excrementitious correspondence"
+- Extract "elevator going down to basement" NOT "descent to lower states"
+- Extract "couldn't pay, card didn't work" NOT "frustrated worldly attachment"
+
+HIERARCHICAL DATA STRUCTURE:
+- DREAM-LEVEL: Map coherence, recurrence, time flow, author demographics
+- LOCATION-LEVEL: Each place with qualities and spatial position
+- CONNECTION-LEVEL: Paths between locations with traversal qualities
+- BOUNDARY-LEVEL: Edges, walls, limits
+- INTERACTION-LEVEL: Events at specific locations
+
+SPATIAL RELATIONSHIPS:
+- Vertical: upper floors, ground level, basement, underground
+- Horizontal: center, edge, entrance, back
+- Relative: "school is above the mall", "bathroom behind food court"
+- Cardinal: north/south/east/west (when mentioned)
+
+CONNECTIONS AS DATA:
+- Type: elevator, stairs, hallway, door, tunnel, teleport
+- Direction: up, down, horizontal
+- Function: working, broken, unpredictable, dangerous
    - Did traversal succeed? (reached destination, got lost, got stuck)
 
 5. BOUNDARIES AND EDGES ARE CRITICAL
