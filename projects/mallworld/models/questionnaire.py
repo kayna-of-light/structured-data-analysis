@@ -368,11 +368,123 @@ class InteractionType(str, Enum):
 class InteractionOutcome(str, Enum):
     """Result of the interaction."""
     SUCCEEDED = "succeeded"
-    FAILED = "failed"
-    PREVENTED = "prevented"            # Blocked from attempting
+    FAILED = "failed"                 # Any unsuccessful outcome
     INTERRUPTED = "interrupted"
     ABANDONED = "abandoned"            # Gave up
     ONGOING = "ongoing"                # Still happening
+    NOT_MENTIONED = "not_mentioned"
+
+
+class FailureType(str, Enum):
+    """WHY the action failed - captures mechanism, not interpretation."""
+    PHYSICAL_INABILITY = "physical_inability"     # Paralysis, can't move, can't speak, passed through
+    ENVIRONMENTAL_BLOCK = "environmental_block"   # Door locked, phone broken, object won't budge
+    NO_EFFECT = "no_effect"                       # Action executed but produced no change
+    SKILL_FAILURE = "skill_failure"               # Tried but executed poorly
+    EXTERNAL_INTERVENTION = "external_intervention" # Someone/something stopped them
+    UNCLEAR = "unclear"                           # Failed but mechanism unknown
+    NOT_APPLICABLE = "not_applicable"             # Interaction didn't fail
+
+
+# --- SWEDENBORGIAN STATE MARKERS ---
+
+class LightTemperature(str, Enum):
+    """The perceived 'temperature' or feeling of the light."""
+    WARM_GOLDEN = "warm_golden"           # Sunlight, fire, 'morning' feel (Truth + Good)
+    COLD_WHITE = "cold_white"             # Fluorescent, LED, hospital bright (Truth - Good)
+    NEUTRAL = "neutral"
+    NOT_MENTIONED = "not_mentioned"
+
+
+class SomaticResponse(str, Enum):
+    """Physical sensations indicating sphere incompatibility."""
+    NAUSEA = "nausea"                     # Sick to stomach, vomiting
+    DIZZINESS = "dizziness"               # Vertigo, spinning
+    PARALYSIS = "paralysis"               # Can't move/breathe/scream
+    HEAVINESS = "heaviness"               # Weighted down, slow movement
+    HEADACHE = "headache"                 # Pain in head
+    SLEEPINESS = "sleepiness"             # Sudden forced drowsiness (swoon)
+    GLITCHING = "glitching"               # Reality breaking/lagging/pixelating
+    EJECTION = "ejection"                 # Sudden wake-up/forced exit
+    COMFORT = "comfort"                   # Physical ease/breathing well
+    NONE = "none"
+
+
+class AffectiveResponse(str, Enum):
+    """The dreamer's specific emotional reaction TO the location."""
+    DELIGHT = "delight"                   # Joy, love, "amazing", "beautiful"
+    COMFORT = "comfort"                   # Feeling at home/safe
+    CURIOSITY = "curiosity"               # Intellectual interest
+    INDIFFERENCE = "indifference"         # "Didn't care" (even if filthy)
+    BOREDOM = "boredom"                   # Wanting to leave due to lack of interest
+    ANXIETY = "anxiety"                   # Unease, stress
+    DISGUST = "disgust"                   # Revulsion (gross)
+    HORROR = "horror"                     # Deep fear/terror
+    CONFUSION = "confusion"               # Disorientation
+    NOT_MENTIONED = "not_mentioned"
+
+
+class TransitMode(str, Enum):
+    """How the dreamer moves through a connection."""
+    PASSIVE = "passive"                   # Elevator, train, being pulled (Influx)
+    DIRECTED_ACTIVE = "directed_active"   # Walking with purpose (Reformation/Effort)
+    WANDERING = "wandering"               # Walking without destination (World of Spirits)
+    FLEEING = "fleeing"                   # Running away (Rejection)
+    DRIFTING = "drifting"                 # Moving without effort/aim (Flow)
+    INSTANT = "instant"                   # Teleportation (State Change)
+    STRUGGLE = "struggle"                 # Crawling, squeezing (Vastation)
+    NOT_MENTIONED = "not_mentioned"
+
+
+class RealityStability(str, Enum):
+    """Does the environment hold its form or dissolve? (Babylon Detector)"""
+    SOLID = "solid"                       # Permanent, fixed structure
+    HYPER_REAL = "hyper_real"             # Vivid, more real than waking
+    PLASTIC = "plastic"                   # Looks fake, cheap, stage-set
+    SHIFTING = "shifting"                 # Layout changes when looking away
+    DECAYING = "decaying"                 # Luxury turning to rot
+    NOT_MENTIONED = "not_mentioned"
+
+
+class IntellectualFocus(str, Enum):
+    """Nature of learning/information. (Empty Intellect Detector)"""
+    PRACTICAL = "practical"               # Learning a skill, doing a task
+    ARCHIVAL = "archival"                 # Searching for missing files/books
+    TESTING = "testing"                   # Taking exams, being judged
+    ARGUMENTATIVE = "argumentative"       # Debating, confusing logic
+    OBSCURED = "obscured"                 # Blurred text, unreadable
+    NOT_MENTIONED = "not_mentioned"
+
+
+class AuthorityNature(str, Enum):
+    """Quality of authority figures. (Punishing Spirit Detector)"""
+    GUIDING = "guiding"                   # Shows the way, helpful
+    BLOCKING = "blocking"                 # "Do not enter", stops progress
+    PURSUING = "pursuing"                 # Chasing the dreamer
+    OBSERVING = "observing"               # Silent watching
+    PUNITIVE = "punitive"                 # Detaining, arresting, hurting
+    NOT_MENTIONED = "not_mentioned"
+
+
+class CrowdBehavior(str, Enum):
+    """How entities in the space are acting."""
+    COORDINATED = "coordinated"           # Acting in unison, purposeful (Society)
+    SOCIALIZING = "socializing"           # Talking in groups
+    WANDERING = "wandering"               # Aimless movement
+    WAITING = "waiting"                   # Queues, waiting rooms
+    PANIC = "panic"                       # Fleeing, chaotic
+    MOB = "mob"                           # Aggressive/disordered heap
+    ZOMBIE_LIKE = "zombie_like"           # Unresponsive, shuffling
+    NOT_MENTIONED = "not_mentioned"
+
+
+class PrivacyStatus(str, Enum):
+    """Level of privacy/enclosure (critical for Bathroom archetype)."""
+    PRIVATE = "private"                   # Standard doors/walls
+    EXPOSED = "exposed"                   # No doors, no walls, open concept (Shame)
+    COMPROMISED = "compromised"           # Glass walls, large gaps, broken locks (Fear)
+    CROWDED_EXPOSURE = "crowded_exposure" # Toilets/showers in full public view (Hellish)
+    NATURAL_SECLUSION = "natural_seclusion" # Hidden by nature/trees, peaceful (Innocent)
     NOT_MENTIONED = "not_mentioned"
 
 
@@ -479,6 +591,10 @@ class LocationQualities(QuestionnaireBaseModel):
         default=LightQuality.NOT_MENTIONED,
         description="Quality of light at this specific location"
     )
+    light_temperature: LightTemperature = Field(
+        default=LightTemperature.NOT_MENTIONED,
+        description="The 'feeling' of the light (warm/golden vs cold/sterile)"
+    )
     time_of_day: TimeOfDay = Field(
         default=TimeOfDay.NOT_MENTIONED,
         description="Perceived time of day at this location"
@@ -491,17 +607,37 @@ class LocationQualities(QuestionnaireBaseModel):
         default=Atmosphere.NOT_MENTIONED,
         description="Emotional atmosphere at this location"
     )
+    reality_stability: RealityStability = Field(
+        default=RealityStability.NOT_MENTIONED,
+        description="Does the location feel solid/real or plastic/shifting?"
+    )
     crowding: Crowding = Field(
         default=Crowding.NOT_MENTIONED,
         description="How crowded this location is"
+    )
+    crowd_behavior: CrowdBehavior = Field(
+        default=CrowdBehavior.NOT_MENTIONED,
+        description="How the crowd/entities are behaving"
+    )
+    intellectual_focus: IntellectualFocus = Field(
+        default=IntellectualFocus.NOT_MENTIONED,
+        description="If a school/library: is the learning practical or archival/testing?"
     )
     cleanliness: Cleanliness = Field(
         default=Cleanliness.NOT_MENTIONED,
         description="Cleanliness state - especially note disgusting conditions"
     )
+    privacy_status: PrivacyStatus = Field(
+        default=PrivacyStatus.NOT_MENTIONED,
+        description="For bathrooms/changing rooms: is it private, exposed, or compromised?"
+    )
     water_presence: WaterPresence = Field(
         default=WaterPresence.NOT_MENTIONED,
         description="Any water features and their state"
+    )
+    water_clarity: Optional[str] = Field(
+        default=None,
+        description="If water is present: is it clear, murky, stagnant, or flowing?"
     )
     
     raw_description: Optional[str] = Field(
@@ -559,6 +695,15 @@ class LocationVisit(QuestionnaireBaseModel):
         description="Raw phenomenological qualities of this location"
     )
     
+    affective_response: AffectiveResponse = Field(
+        default=AffectiveResponse.NOT_MENTIONED,
+        description="Dreamer's specific emotional reaction TO this place (e.g. delighted by casino vs. disgusted)"
+    )
+    somatic_response: SomaticResponse = Field(
+        default=SomaticResponse.NONE,
+        description="Physical symptoms experienced HERE (nausea, paralysis, sleepiness, glitching)"
+    )
+    
     is_familiar: MentionResponse = Field(
         default=MentionResponse.NOT_MENTIONED,
         description="Does the dreamer recognize this as a recurring location?"
@@ -591,6 +736,10 @@ class Connection(QuestionnaireBaseModel):
     
     connection_type: ConnectionType = Field(
         description="How these locations connect"
+    )
+    transit_mode: TransitMode = Field(
+        default=TransitMode.NOT_MENTIONED,
+        description="How they moved: Passive (elevator), Directed (walking), Wandering, or Fleeing?"
     )
     direction: MovementDirection = Field(
         default=MovementDirection.UNKNOWN,
@@ -630,6 +779,10 @@ class Entity(QuestionnaireBaseModel):
         default=EntityRole.NOT_MENTIONED,
         description="What role this entity plays in the dream"
     )
+    authority_nature: AuthorityNature = Field(
+        default=AuthorityNature.NOT_MENTIONED,
+        description="If authority figure: are they guiding, blocking, or punishing?"
+    )
     
     is_known: MentionResponse = Field(
         default=MentionResponse.NOT_MENTIONED,
@@ -667,6 +820,17 @@ class Interaction(QuestionnaireBaseModel):
     outcome: InteractionOutcome = Field(
         default=InteractionOutcome.NOT_MENTIONED,
         description="Result of the interaction"
+    )
+    
+    failure_type: FailureType = Field(
+        default=FailureType.NOT_APPLICABLE,
+        description="""If outcome is 'failed', what was the mechanism?
+        - physical_inability: Can't execute (paralysis, passing through, can't speak)
+        - environmental_block: External obstacle (locked door, broken phone)
+        - no_effect: Action happened but produced no change (pushed but nothing moved)
+        - skill_failure: Executed poorly
+        - external_intervention: Someone/something stopped them
+        Set to not_applicable if outcome is not 'failed'."""
     )
     
     entities_involved: List[Entity] = Field(

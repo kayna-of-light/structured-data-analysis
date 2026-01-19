@@ -479,12 +479,14 @@ class StructuredExtractor:
         datasets: Sequence[str],
         *,
         limit: Optional[int] = None,
+        file_filter: Optional[List[str]] = None,
     ) -> List[ExtractionJob]:
         """Collect all files to be processed.
 
         Args:
             datasets: List of dataset names to process
             limit: Optional maximum number of jobs
+            file_filter: Optional list of specific file names to include
 
         Returns:
             List of ExtractionJob instances
@@ -512,6 +514,10 @@ class StructuredExtractor:
                     for reg_dataset_name in registry.list_datasets():
                         files = registry.get_files(reg_dataset_name)
                         for path in sorted(files):
+                            # Apply file filter if specified
+                            if file_filter and path.name not in file_filter:
+                                continue
+                            
                             target_name = f"{dataset}-{path.name}"
                             jobs.append(
                                 ExtractionJob(
@@ -534,6 +540,10 @@ class StructuredExtractor:
                     continue
 
                 for path in sorted(source_dir.glob("*.json")):
+                    # Apply file filter if specified
+                    if file_filter and path.name not in file_filter:
+                        continue
+                    
                     target_name = f"{dataset}-{path.name}"
                     jobs.append(
                         ExtractionJob(
@@ -782,7 +792,7 @@ class StructuredExtractor:
             Dictionary of status counts
         """
         datasets = args.datasets or list(self.config.supported_datasets)
-        jobs = self.collect_jobs(datasets, limit=args.limit)
+        jobs = self.collect_jobs(datasets, limit=args.limit, file_filter=args.files)
 
         if not jobs:
             logging.warning("No files found to process.")
@@ -847,6 +857,12 @@ class StructuredExtractor:
             type=int,
             default=None,
             help="Maximum number of files to process.",
+        )
+        parser.add_argument(
+            "--files",
+            nargs="+",
+            default=None,
+            help="Specific file names to extract (e.g., 'i-tried-to-scream.json'). Filters across all selected datasets.",
         )
         parser.add_argument(
             "--max-concurrency",
