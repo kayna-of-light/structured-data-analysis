@@ -156,62 +156,91 @@ def download_image(
                 cache_path = cached_files[0]
                 ext = cache_path.suffix
                 media_type = _get_media_type(ext)
-                logging.info(f"✓ Using cached image: {cache_path.name}")
+                logging.debug(f"Using cached image: {cache_path.name}")
                 return cache_path.read_bytes(), media_type
     
-    try:
-        headers = {
-            "User-Agent": "MallWorldResearch/1.0 (Academic research)",
-            "Accept": "image/*",
-        }
-        response = requests.get(url, headers=headers, timeout=timeout)
-        response.raise_for_status()
-        
-        # Determine media type from content-type header or URL
-        content_type = response.headers.get("content-type", "")
-        if "jpeg" in content_type or "jpg" in content_type:
-            media_type = "image/jpeg"
-            ext = ".jpg"
-        elif "png" in content_type:
-            media_type = "image/png"
-            ext = ".png"
-        elif "gif" in content_type:
-            media_type = "image/gif"
-            ext = ".gif"
-        elif "webp" in content_type:
-            media_type = "image/webp"
-            ext = ".webp"
-        else:
-            # Fallback to URL extension
-            ext = Path(url.split("?")[0]).suffix.lower() or ".jpg"
-            media_type = _get_media_type(ext)
-        
-        image_bytes = response.content
-        
-        # Cache if enabled - use content hash to avoid duplicates
-        if cache_dir:
-            content_hash = sha256(image_bytes).hexdigest()
-            cache_path = cache_dir / f"{content_hash}{ext}"
+    # For Reddit images, check if available in Internet Archive (many old images deleted from Reddit)
+    archive_url = None
+    if "i.redd.it" in url or "preview.redd.it" in url:
+        try:
+            # Check Wayback Machine availability
+            wayback_api = f"https://archive.org/wayback/available?url={url}"
+            wayback_response = requests.get(wayback_api, timeout=5)
+            wayback_data = wayback_response.json()
             
-            # Check if this content already cached (content deduplication)
-            if cache_path.exists():
-                logging.info(f"✓ Image content already cached: {cache_path.name}")
+            closest = wayback_data.get("archived_snapshots", {}).get("closest")
+            if closest and closest.get("available"):
+                archive_url = closest["url"]
+                logging.debug(f"Archive available for {url.split('/')[-1]}")
+        except Exception as exc:
+            logging.debug(f"Wayback check failed for {url}: {exc}")
+    
+    # Try archive first if available, then fallback to direct URL
+    urls_to_try = [archive_url, url] if archive_url else [url]
+    
+    for attempt_url in urls_to_try:
+        try:
+            headers = {
+                "User-Agent": "MallWorldResearch/1.0 (Academic research)",
+                "Accept": "image/*",
+            }
+            response = requests.get(attempt_url, headers=headers, timeout=timeout)
+            response.raise_for_status()
+            
+            # Determine media type from content-type header or original URL
+            content_type = response.headers.get("content-type", "")
+            if "jpeg" in content_type or "jpg" in content_type:
+                media_type = "image/jpeg"
+                ext = ".jpg"
+            elif "png" in content_type:
+                media_type = "image/png"
+                ext = ".png"
+            elif "gif" in content_type:
+                media_type = "image/gif"
+                ext = ".gif"
+            elif "webp" in content_type:
+                media_type = "image/webp"
+                ext = ".webp"
             else:
-                # Save image to cache
-                cache_path.parent.mkdir(parents=True, exist_ok=True)
-                cache_path.write_bytes(image_bytes)
-                logging.info(f"✓ Cached new image: {cache_path.name}")
+                # Fallback to original URL extension (not archive URL)
+                ext = Path(url.split("?")[0]).suffix.lower() or ".jpg"
+                media_type = _get_media_type(ext)
             
-            # Create URL marker for fast lookup next time
-            url_hash = sha256(url.encode()).hexdigest()[:16]
-            url_marker = cache_dir / f".url_{url_hash}"
-            url_marker.write_text(content_hash)
-        
-        return image_bytes, media_type
-        
-    except Exception as exc:
-        logging.warning("Failed to download image %s: %s", url, exc)
-        return None
+            image_bytes = response.content
+            
+            # Cache if enabled - use content hash to avoid duplicates
+            if cache_dir:
+                content_hash = sha256(image_bytes).hexdigest()
+                cache_path = cache_dir / f"{content_hash}{ext}"
+                
+                # Check if this content already cached (content deduplication)
+                if cache_path.exists():
+                    logging.debug(f"Image content already cached: {cache_path.name}")
+                else:
+                    # Save image to cache
+                    cache_path.parent.mkdir(parents=True, exist_ok=True)
+                    cache_path.write_bytes(image_bytes)
+                    source = "archive" if attempt_url == archive_url else "reddit"
+                    logging.debug(f"Cached new image from {source}: {cache_path.name}")
+                
+                # Create URL marker for fast lookup next time
+                url_hash = sha256(url.encode()).hexdigest()[:16]
+                url_marker = cache_dir / f".url_{url_hash}"
+                url_marker.write_text(content_hash)
+            
+            return image_bytes, media_type
+            
+        except Exception as exc:
+            # If archive failed, try direct URL; if direct failed, return None
+            if attempt_url == archive_url:
+                logging.debug(f"Archive download failed for {url.split('/')[-1]}, trying Reddit")
+                continue
+            else:
+                logging.debug("Failed to download image %s: %s", url, exc)
+                return None
+    
+    # All attempts failed
+    return None
 
 
 def _get_media_type(ext: str) -> str:
@@ -273,6 +302,7 @@ def fetch_images_for_extraction(
         List of image content blocks for OpenAI API
     """
     image_contents: List[Dict[str, Any]] = []
+    failed_count = 0
     
     for url in image_urls[:max_images]:
         result = download_image(url, cache_dir=cache_dir)
@@ -280,6 +310,14 @@ def fetch_images_for_extraction(
             image_bytes, media_type = result
             content = build_image_content(image_bytes, media_type, detail)
             image_contents.append(content)
+        else:
+            failed_count += 1
+    
+    # Log summary if any images were processed
+    if image_urls:
+        success_count = len(image_contents)
+        if failed_count > 0:
+            logging.debug(f"Images: {success_count} retrieved, {failed_count} unavailable")
     
     return image_contents
 

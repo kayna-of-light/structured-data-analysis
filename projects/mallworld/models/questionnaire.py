@@ -781,6 +781,15 @@ class PostContentFlag(str, Enum):
     MENTIONS_OTHER_DREAMERS = "mentions_other_dreamers"  # References shared experience
 
 
+class DetailLevel(str, Enum):
+    """How much detail/information the post contains."""
+    MINIMAL = "minimal"          # Brief mention, no specific details
+    LOW = "low"                  # Basic description, few details
+    MODERATE = "moderate"        # Reasonable detail, some specifics
+    HIGH = "high"                # Rich detail, many specifics
+    EXTENSIVE = "extensive"      # Very detailed, comprehensive narrative
+
+
 # ============================================================================
 # BOUNDARY AND DEMOGRAPHIC MODELS
 # ============================================================================
@@ -860,6 +869,11 @@ class PostClassification(QuestionnaireBaseModel):
     content_flags: List[PostContentFlag] = Field(
         default_factory=list,
         description="Content characteristics flags"
+    )
+    
+    detail_level: DetailLevel = Field(
+        default=DetailLevel.MODERATE,
+        description="How much detail/information this post contains"
     )
     
     # Usefulness for our analysis
