@@ -1,0 +1,177 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pfqq3s.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pfqq3s/abandoned_fair/",
+  "title": "Abandoned Fair",
+  "date": null,
+  "content_checksum": "dce3517f2e00a27f077f547861a5291ed3593ea9412dd0e1fdcc7d317ca58061",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:59:24.147050+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have experienced a similar dream scenario (fair/market that becomes abandoned/unsafe, people encouraging the dreamer to stay).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "carnival",
+        "location_name": "fair/market",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "night",
+          "state": "mixed",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "At a fair/market at night; seemed like a normal fair; closer to morning people became nicer; almost morning shops became super bug infested; out of nowhere the fair looked like it had been abandoned for years; told it had been abandoned for a while and exploring it was unsafe."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "little shops and booths",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the fair/market",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "inconsistent",
+          "state": "mixed",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "disgusting",
+          "water_presence": "none",
+          "raw_description": "Little shops and booths; closer to morning people in/around them became nicer, giving free stuff and trying to convince the dreamer to stay; almost morning all of the shops became super bug infested."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "transaction",
+        "description": "People at the shops/booths gave the dreamer a ton of free stuff.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people in the little shops and booths; became nicer closer to morning",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "free stuff (a ton of free stuff)",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "People tried to convince the dreamer to stay as it got closer to morning.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people in the little shops and booths; nicer closer to morning",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "The dreamer was told the fair had been abandoned for a while and that they needed to leave because exploring it was unsafe.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "authority",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "an unspecified speaker who told the dreamer to leave because it was unsafe",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial layout beyond 'fair/market' with shops/booths is not described (no paths, directions, or connections). Time progression is described (night → almost morning) and correlates with changes in people and the fair's condition."
+  },
+  "response_id": "resp_06d7f3bc5620ea8a00696e2a962ac88194a1ceab46338b5d9e",
+  "usage": {
+    "input_tokens": 10142,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1365,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11507
+  }
+}

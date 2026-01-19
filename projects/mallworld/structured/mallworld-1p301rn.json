@@ -1,0 +1,178 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1p301rn.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1p301rn/cosplay_competition_at_the_stage/",
+  "title": "Cosplay Competition At the Stage",
+  "date": null,
+  "content_checksum": "4252ab5ace89e8de7f6737d8589ecfb4233babec53ed46b5b22afa5adf1ae85b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:54:44.683673+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have similar dreams like this",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "variation",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "multiple",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "woke up after the MC/hostess was defeated (emotion not explicitly stated)",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "large comic-con event stage",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "multiple people were participating in a cosplay contest at a large comic-con event; this was at a stage; the “stage” changes its vibes for me often"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "performer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "theater",
+        "location_name": "audience area (viewpoint as audience member)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "associated with the stage",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "All of a sudden I was a member of the audience, loudly BOO-ing"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "audience",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "not_applicable",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "dreamer reports an ability to 'zoom around different perspectives'; viewpoint shifts from being a contestant to being an audience member"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "The MC/hostess running the event tried to disqualify the dreamer for their costume.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "unfriendly",
+            "role": "authority",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "MC/hostess running the event",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "As an audience member, the dreamer loudly booed the MC/hostess who tried to disqualify the 'other me' until the lady was defeated.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "authority",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "the lady/MC-hostess who tried to disqualify the contestant",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "audience (dreamer becomes a member of it)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only a single event setting is described (comic-con stage) with a perspective shift to the audience; no concrete layout, directions, or connections beyond viewpoint change. 'Stage changes its vibes for me often' suggests recurrence/variation of the stage setting but details of prior instances are not provided."
+  },
+  "response_id": "resp_094090a518e1805c00696e297fb384819799a5fee7b3d54cd6",
+  "usage": {
+    "input_tokens": 10156,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1366,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11522
+  }
+}

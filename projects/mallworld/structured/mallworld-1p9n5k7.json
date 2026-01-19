@@ -1,0 +1,267 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1p9n5k7.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1p9n5k7/does_anyone_have_an_old_style_town_accessible/",
+  "title": "Does anyone have an old style town accessible only by a bridge that has some almost unnavigable scary spots?",
+  "date": null,
+  "content_checksum": "8f3f4a3e110fa43135a967d64de79c9ad611ccff8d4fc24995514f2e1027064f",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:57:44.864033+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have a recurring old-style town/vacation land accessible only by a scary/unnavigable bridge/highway; mentions other recurring dream settings (mall/underground area) and recurring themes (teeth falling out, flying/climbing), plus recurring dreams involving deceased father.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "middle_aged",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "former employee (at/connected to the mall)",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "old style town / postcard vacation land",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "beyond the scary mega bridge/highway",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "nostalgic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“old school vibes… 50’s beach vibe… 1960’s Tarpon Springs, Florida area… little open court yard houses and motels like 1950’s cheap Miami vibe”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "scary mega bridge/highway",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“road trip dream… beyond the scary mega bridge/highway”; “almost unnavigable scary spots” (in title)"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "parking_structure",
+        "location_name": "underground kinda cave/parking garage/sidewalk under the mall",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "under the mall",
+          "relative_to_id": "loc_4"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“underground kinda cave/parking garage/sidewalk under the mall”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "employee",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "mall",
+        "location_name": "the mall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“the mall is a place where a lot of us go”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "employee",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "bridge",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Access to the old-style town/vacation land is via a “scary mega bridge/highway” with “almost unnavigable scary spots”; described as a “road trip dream.”"
+      },
+      {
+        "from_location_id": "loc_4",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Connection implied by “sidewalk under the mall” / “underground… under the mall.”"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Arrives at an “old style town / postcard vacation land” after traveling over a scary bridge/highway; the place has 50s/60s beach-town vibes with courtyard houses and motels.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Travel over a “scary mega bridge/highway” with “almost unnavigable scary spots” to reach the vacation land.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "other",
+        "description": "Dreamer identifies as a “former employee” in the mall-related dream context.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Presence/setting described as an “underground kinda cave/parking garage/sidewalk under the mall.”",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_5",
+        "interaction_type": "other",
+        "description": "Recurring dream theme: “loose tooth/teeth/falling out dreams.”",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_6",
+        "interaction_type": "observation",
+        "description": "Recurring dream ability/theme: being able to “fly/swing/climb with my hands” and “vividly see the tops of buildings roads from above.”",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_7",
+        "interaction_type": "search",
+        "description": "Recurring dream scenario involving father: dreamer sometimes sees Dad drive by or finds him; discovers “he didn't die, but just left us and has another family and life.” Dreamer tries to get him to stop and “come home,” but “it never works out” and he “dies again” or “runs off.”",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "deceased",
+            "demeanor": "confusing",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "yes_explicit",
+            "description": "Dad who died when dreamer was 18; in dreams he is alive/left and has another family; sometimes drives by; later ‘dies again’ or runs off.",
+            "name_or_relation": "my Dad"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "He ‘dies again’ or runs off; ‘it never works out.’"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question plus brief descriptions of several recurring dream settings/themes. Spatial data is clearest for the bridge/highway leading to the old-style town and the underground area under the mall. The father-related dreams are described without a specific physical setting; a placeholder interaction/location_id (loc_7) is used to attach that recurring scenario."
+  },
+  "response_id": "resp_0c8d5e1a83d6101000696e2a28eb348195a29031c4b96a96fe",
+  "usage": {
+    "input_tokens": 10396,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2352,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12748
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pvc6mv.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pvc6mv/sometimes_i_visit_this_place/",
+  "title": "Sometimes I visit this place",
+  "date": null,
+  "content_checksum": "5872f6c45734568bddb42ff96e222620b3cc2252f6fcf62b7f40dcb177f32ad6",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:05:35.517868+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/korznomqdc9g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "magical place for me",
+      "final_emotion": "feels like I shouldn't stay there for too long",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "ruins",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "decaying",
+          "atmosphere": "eerie",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "river",
+          "raw_description": "(image) Concrete ruin/monument complex in a forested valley; stepped terraces and angular concrete walls; a narrow water channel/canal running through the center; large, tall central concrete structure/monolith at the far end; greenery/vegetation growing on and around the concrete; one lone human figure standing on a walkway/steps."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer visits a place described as 'magical' but feels they 'shouldn't stay there for too long.'",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Text provides minimal narrative; most phenomenological detail derived from the attached image. Image appears AI-generated (highly photoreal, cinematic composition). No explicit boundaries or traversed connections described."
+  },
+  "response_id": "resp_0d913113e5c5e7bc00696e2c0630e88196ae3fbb53c782ba10",
+  "usage": {
+    "input_tokens": 10965,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 531,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11496
+  }
+}

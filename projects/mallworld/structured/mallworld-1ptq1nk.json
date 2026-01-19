@@ -1,0 +1,271 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ptq1nk.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ptq1nk/vampire_store/",
+  "title": "Vampire store",
+  "date": null,
+  "content_checksum": "3bad25385302da16d52d0d2960161039aae38a4080ea90a7ffdd78c00a9838de",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:04:37.830765+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "childhood_dream",
+        "nightmare"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "child_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "at ease",
+      "author_theory": "Feels like a test of sacrificing self for family; chooses family's life over own each time.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "waterpark",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "falling asleep I can see and hear waves of water"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "old beat up grey metal van",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "We arrive in a old beat up grey metal van"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "mall_store",
+        "location_name": "convenience store (revealed not a convenience store)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "We enter and immediately we realize it's not a convenience store; multiple ottomans all around the building; red velvet cusions with black leather around the edges; on each ottoman there is a very attractive vampire women sitting on them waiting"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "mountain",
+        "location_name": "mountain road (escape route)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "away from the store",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "sped away down the mountain; wind smacked against me"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "enter the store from the van"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "escape back to the van while being grabbed/picked up"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_4",
+        "connection_type": "vehicle",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "interrupted",
+        "qualities": "grandma sped away down the mountain; dreamer on top of van roof; wakes up before getting far enough away"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Enter expecting a convenience store for snacks; immediately realize it is not a convenience store; see multiple red velvet/black leather ottomans around the building with attractive vampire women sitting on them.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "threatening",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "multiple very attractive vampire women sitting on ottomans",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "snacks",
+        "transaction_blocker": "realize it's not a convenience store; immediate danger/presence of vampire women"
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "escape",
+        "description": "Family members (aunt, sister, brother, grandma, mom, etc.) hide under an ottoman; dreamer does not fit and is pushed out; a vampire woman picks the dreamer up and looks at them; dreamer becomes a distraction and lets family escape; dreamer gets away and jumps onto the van with superhuman strength.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "aunt, sister, brother, grandma, mom, etc.",
+            "name_or_relation": "family"
+          },
+          {
+            "entity_type": "creature",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "vampire woman who picked me up and looked at me",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Dreamer jumps on top of the van; grandma drives away; dreamer yells 'please slow down so I dont fall off!'; roof is frosted; wind smacks against dreamer; dreamer feels at ease while driving off; wakes up before getting far away.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "grandma driving the van",
+            "name_or_relation": "grandma"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Location loc_1 captures pre-spawn hypnagogic imagery ('see and hear waves of water') rather than a fully visited place; store described as a convenience store but immediately revealed to be something else; no explicit light/time-of-day details given."
+  },
+  "response_id": "resp_051d37ffb33c3eec00696e2bc946d4819594390a60220409a4",
+  "usage": {
+    "input_tokens": 10350,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2245,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12595
+  }
+}

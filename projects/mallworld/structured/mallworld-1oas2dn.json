@@ -1,0 +1,132 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1oas2dn.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1oas2dn/looking_for_feedback/",
+  "title": "Looking for feedback",
+  "date": null,
+  "content_checksum": "76f37347c91731ffd356432e6a92eb3fdb0d166fe9d503aee7941827d178dfe5",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:39:41.964956+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "lucid_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "seeking feedback/insights about a lucid dream experience and surroundings realism",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "first_visit",
+      "time_flow": "compressed",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "young_adult",
+        "age_explicit": 19,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "pit in stomach as about to speak; then lost full consciousness and returned to normal dreaming",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "mix of a high school, a subway station and a mall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "an area ... a mix of a high school, a subway station and a mall; snapped into complete consciousness; astonished by how much detail there was; felt no different than real life"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer became fully conscious/lucid and deliberately focused on surroundings; noted high level of detail and that it felt no different than real life.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer was surrounded by people they went to school with; upon realizing it was a dream, they intended to tell someone but felt a pit in their stomach as they were about to open their mouth.",
+        "outcome": "abandoned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "people I went to school with",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Lucid state lasted about a minute; then a false awakening occurred (dream of waking up), which disrupted full consciousness and returned the dreamer to normal (non-lucid) dreaming.",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Single blended environment described without specific internal layout details. Crowding inferred from 'surrounded by people'. Time described as lasting about a minute and then transitioning via a false awakening."
+  },
+  "response_id": "resp_01b94ff6ec67b13e00696e25f9bf408196a1d716204b3f4d73",
+  "usage": {
+    "input_tokens": 10284,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 986,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11270
+  }
+}

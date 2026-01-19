@@ -1,0 +1,123 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\zqcdu1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/zqcdu1/the_library/",
+  "title": "The library",
+  "date": null,
+  "content_checksum": "28cbc1cc3b7fc3018187e4368dffd4b1dae25cd8a81c87b71f472d91600a483f",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:22:57.613117+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others dream of a large library with many rooms and important/rare books",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "very curious",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "library",
+        "location_name": "The library",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "large library with rooms full of rare books… not rare enough that you have to wear gloves, but they seem very important; books arranged in topical order; many, many rooms; style like a really large Carnegie library (classical, grand feel)"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "go from room to room to room; weave in and out of many rooms"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Goes from room to room looking for answers (doesn't remember to what).",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Notices large illustrated books of animals in an Audubon style; books arranged in topical order; rooms full of rare/important books.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Single primary location (library) with internal multi-room layout. Recurrence and familiarity explicitly stated. Time flow not described; has_temporal_data marked true only for visit sequence (room-to-room searching) and recurrence."
+  },
+  "response_id": "resp_05188ea441ca309700696e301f8a188194b8394fa5fe45cfa7",
+  "usage": {
+    "input_tokens": 10166,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 883,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11049
+  }
+}

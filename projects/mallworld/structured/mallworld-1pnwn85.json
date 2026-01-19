@@ -1,0 +1,180 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pnwn85.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pnwn85/school/",
+  "title": "school",
+  "date": null,
+  "content_checksum": "162aace8de7a6e3951443e1fe4cb4a9d3a3734cb81dbc093c2b7342090f6a692",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:02:31.406232+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking others to describe their Mall World 'school' and sharing their own recurring experience of being unable to find a classroom due to looping floors",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "looping",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "school",
+        "location_name": null,
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "multiple floors; dreamer unsure what floor the classroom is on",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"every time i’m at mine, i’m looking for a classroom but can never find it\"; \"not sure what floor it’s on\"; \"floors are sort of an infinite loop that i just keep circling around\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "lost",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "school_classroom",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "somewhere in the school; floor unknown to dreamer",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Sought classroom that cannot be found"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "no",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "direction": "unknown",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "interrupted",
+        "qualities": "Floors form an \"infinite loop\"; dreamer keeps circling around and cannot reach the intended classroom floor"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "impossible",
+        "mechanism_function": "not_applicable",
+        "outcome": "failed",
+        "qualities": "Searching/navigating for classroom but never finds it; floor location unknown"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "Implicit navigational boundary: looping floors prevent reaching the classroom; the school layout behaves like an infinite loop"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Dreamer searches for a classroom but cannot find it; keeps circling the looping floors.",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "helpful",
+            "role": "guide",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"people try to help me\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer is unsure what floor the classroom is on; continues moving through floors that loop infinitely.",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question, but includes a brief recurring dream description: school with multiple floors that loop infinitely; classroom is inaccessible/never found. Specific architectural connectors (stairs/elevators) are not explicitly named—movement between floors inferred from 'floors' and 'circling around.'"
+  },
+  "response_id": "resp_03c996053e5cddbe00696e2b4753c08194aa2dbea75a24519c",
+  "usage": {
+    "input_tokens": 10069,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1004,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11073
+  }
+}

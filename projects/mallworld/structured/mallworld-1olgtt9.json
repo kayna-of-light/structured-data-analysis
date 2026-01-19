@@ -1,0 +1,180 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1olgtt9.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1olgtt9/seems_so_familiar/",
+  "title": "Seems So Familiar…",
+  "date": null,
+  "content_checksum": "5d3a805fc8b2a05b2753d9d46d4abd58064ff24ce8d3cb292242be473d7931dd",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:44:49.027365+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/hhpwb7dw9lyf1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "elevated highway/overpass interchange",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "over ocean water; curves around an island/peninsula with buildings",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "multiple elevated roadways/ramps over water; one very tall arched/looping roadway segment; viewed through glass with raindrops"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hospital",
+        "location_name": "hospital complex (two tall buildings with medical cross symbols)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "adjacent to the elevated highway; on land by the ocean",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "two modern high-rise buildings marked with medical cross icons"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "school",
+        "location_name": "building labeled 'SCHOOL'",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "near hospital complex; beside elevated roadway; waterfront",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "modern building with large 'SCHOOL' sign and a book icon"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "elevated highway/overpass runs alongside/into the area with the hospital buildings"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "elevated roadway curves around the school building area"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "ocean_water",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "elevated roads are surrounded by open ocean water"
+      }
+    ],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Text provides minimal narrative ('I’ve definitely traveled through here!'). Most extractable phenomenology comes from the attached image, which appears AI-generated (coastal elevated highway interchange with hospital and school signage; raindrops on a viewing window)."
+  },
+  "response_id": "resp_0f727828d7e599df00696e271807688190aa05efe4c5a55831",
+  "usage": {
+    "input_tokens": 11125,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 961,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12086
+  }
+}

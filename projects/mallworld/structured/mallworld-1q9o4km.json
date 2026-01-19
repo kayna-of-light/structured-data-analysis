@@ -1,0 +1,155 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1q9o4km.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1q9o4km/just_found_this_sub/",
+  "title": "Just found this sub",
+  "date": null,
+  "content_checksum": "0ca6301cf113b2f61f02da81e677e3d219d70cea1cc3f9c399618277fa87af8e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:11:45.306557+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "introduction",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": "Author suggests Mall World may be a real shared place / \"DreamHQ\".",
+      "question_topic": "Why multiple people dream the same places (mall, tangled freeways); whether it's a real shared location.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "not_mentioned",
+      "final_emotion": "not_mentioned",
+      "author_theory": "Convinced it's a real place; asks if there's a \"DreamHQ\" people go to; says their dream world is an accumulation of places they've lived or visited.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“the shopping mall” (recurring); “I always go to the same store”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "corner",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the shopping mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“always go to the same store”; “lookin through the same shelves in the same corner”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "freeways",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“the freeways… all tangled like that” (mentioned as a recurring/recognizable feature from a pic in the sub)"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "search",
+        "description": "Dreamer repeatedly goes to the same store and looks through the same shelves in the same corner.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is mostly an intro/question; includes limited but clear recurring spatial details (same store, same shelves, same corner; tangled freeways). No explicit dream sequence timing, but recurrence over “a few years ago” is mentioned."
+  },
+  "response_id": "resp_05e5c9c14428ce5900696e2d78bc3c81948a35f53d5e7ffc9f",
+  "usage": {
+    "input_tokens": 10159,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1185,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11344
+  }
+}

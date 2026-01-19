@@ -1,0 +1,88 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1qf0ejb.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1qf0ejb/every_damn_night/",
+  "title": "Every damn night",
+  "date": null,
+  "content_checksum": "ad6e0fc69d74a8ac2b7982c527bf8fbd463c2a88f636471ca16f29e58ceaa3c2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:12:49.159300+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_map_drawing",
+        "recurring_dream"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unknown",
+        "interaction_type": "conflict",
+        "description": "Security hates me.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "hostile",
+            "role": "security",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Security",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "low",
+    "extraction_notes": "Only text provided is 'Every damn night' and 'Security hates me'. A linked image is present but not available in the provided prompt content for visual analysis, so no locations/connections/boundaries could be extracted from it."
+  },
+  "response_id": "resp_0580059903fa5ade00696e2dc796d88197962624439a3f862a",
+  "usage": {
+    "input_tokens": 10069,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 501,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10570
+  }
+}

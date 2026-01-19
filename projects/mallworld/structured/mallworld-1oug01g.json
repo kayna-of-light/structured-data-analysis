@@ -1,0 +1,138 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1oug01g.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1oug01g/aquarium/",
+  "title": "Aquarium",
+  "date": null,
+  "content_checksum": "8fa0f051e6590b76c4a7603391dc32d43f16bb5635d8abf74d966583123afd59",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:48:36.996187+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "completely calm (while asleep)",
+      "final_emotion": "kind of creepy when I wake up and think about it",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "aquarium",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "walking through an aquarium after hours; hallway with tanks on either side; floor is black carpet; short stairs with wooden railings; lights are off but the tanks are letting out a blue glow"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "Aquarium tank corridor / tank-lined hallway",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the aquarium",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "walking down the middle of the hallway with tanks on either side; tanks are floor to ceiling and completely empty (no animals), just full of water that looks like the middle of the ocean; lights off; blue glow from tanks; black carpet; short stairs with wooden railings"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer walks down the middle of a tank-lined hallway inside an aquarium after hours.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer observes floor-to-ceiling tanks on both sides that are empty of animals but filled with water that looks like the middle of the ocean; lights are off and tanks emit a blue glow.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single coherent setting described. 'After hours' treated as nighttime; no explicit clock time given. No distinct transitions to other locations described."
+  },
+  "response_id": "resp_00c39ca04225a0a500696e2816207081949767b52f77920527",
+  "usage": {
+    "input_tokens": 10109,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1031,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11140
+  }
+}

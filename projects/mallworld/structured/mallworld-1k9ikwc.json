@@ -1,0 +1,145 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k9ikwc.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k9ikwc/had_this_dream_when_i_was_a_kid_and_still_go_back/",
+  "title": "Had this dream when I was a kid and still go back here sometimes.",
+  "date": null,
+  "content_checksum": "88d6c04c94bc2327cc968612149effbdb92f477c150d6f60d769a13b8e047baf",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:29:34.597384+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/1a8ruovaygxe1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "childhood_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have had the same/ similar recurring childhood dream location shown in the image",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "beach",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "adjacent to ocean shoreline; beach with palm trees and lounge chairs",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "peaceful",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "ocean_calm",
+          "raw_description": "Bright sunny beach; turquoise ocean water; sandy shore; palm trees and beach lounge chairs/umbrellas visible along the right side"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "pool",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "rectangular pool structure set into the sand near the shoreline; connected to a large waterslide that rises into the sky",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "pool_clean",
+          "raw_description": "A rectangular, framed pool filled with clear blue water placed on the beach; waterslide empties into it"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Pool appears installed on the beach and directly accessible from the sand"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "diagonal_down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Very tall, winding white waterslide that descends into the rectangular pool"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Text narrative contains minimal description ('Had this dream when I was a kid and still go back here sometimes. Anyone else?'). Most phenomenological detail is extracted from the attached image, which appears to be an AI visualization rather than a hand-drawn map. No explicit actions, entities, or boundaries described."
+  },
+  "response_id": "resp_063c04c07a05046800696e238fe8408197a6187f2d44461ba5",
+  "usage": {
+    "input_tokens": 11875,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 765,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12640
+  }
+}

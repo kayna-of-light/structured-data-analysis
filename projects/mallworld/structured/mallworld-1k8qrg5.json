@@ -1,0 +1,137 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k8qrg5.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k8qrg5/psychedelics_and_repeated_spaceportairport_dreams/",
+  "title": "Psychedelics and repeated spaceport/airport dreams?",
+  "date": null,
+  "content_checksum": "e2670c9826c92e6ed23045ab7735a69ee07023f7687fad796b980317555f9576",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:28:55.267620+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "lucid_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have recurring fully-lucid 'skyport/airport/spaceport' dream locations, especially associated with a specific psychedelic",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "not_mentioned",
+      "final_emotion": "not_mentioned",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "airport",
+        "location_name": "sky high airport / skyport / spaceport",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "very high in the sky or possibly in space; floating; nothing surrounding it",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "same sky high airport type space; very high in the sky or possibly in space; don't see anything surrounding it; just sort of floating; built out of a concrete looking material; each building connected by bridges; each building very tall, castle like"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "bridge",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "each building is connected to one another by bridges"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "void",
+        "direction": "not_mentioned",
+        "beyond": "void_nothing",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "very high in the sky or possibly in space; don't see anything surrounding it; just sort of floating"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Wandering and exploring the skyport/airport space.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "people I know",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Report describes a recurring, fully lucid 'skyport/airport' setting with structural details (floating, concrete, tall castle-like buildings, bridges). Temporal sequencing is implied via repeated occurrences tied to psychedelic use, but no within-dream timeflow details are provided."
+  },
+  "response_id": "resp_0866f67b3908b3f100696e2376e4188190867f733970b0c1f3",
+  "usage": {
+    "input_tokens": 10246,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1019,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11265
+  }
+}

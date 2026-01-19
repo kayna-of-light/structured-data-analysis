@@ -1,0 +1,388 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pt2dyn.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pt2dyn/dreamland/",
+  "title": "DreamLand",
+  "date": null,
+  "content_checksum": "30f156abc4dee40fe4bae1bb8d6d014e878a07a98b73461d74fe5bf91c4c8922",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:04:35.181391+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "freaky; woke up with goosebumps",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "amusement_park",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "in the amusement park; a security guard was chasing me"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "DreamLand",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "area within/adjacent to the amusement park (entered while being chased)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "mixed",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a really big sign that said DreamLand; a strange maze of rooms; found a bunch of different rooms, like old studio apartments"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "apartment",
+        "location_name": "DreamLand rooms (old studio apartments)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside DreamLand",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "eerie",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "inside each one was somebody dreaming something; people in every room were visible to me; they were stuck and couldn’t see me"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "apartment",
+        "location_name": "Room with VCR/box TV",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the maze of DreamLand rooms",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "one kid was watching old movies on a VCR and box tv over and over endlessly"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 4
+      },
+      {
+        "location_id": "loc_5",
+        "location_type": "other",
+        "location_name": "Abandoned/run down area of DreamLand",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "deeper within DreamLand rooms/maze",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "abandoned",
+          "atmosphere": "oppressive",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a more abandoned run down area; the rooms here reeked of despair and hopelessness"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 5
+      },
+      {
+        "location_id": "loc_6",
+        "location_type": "other",
+        "location_name": "The BEAN (bean sculpture)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "destination to escape from DreamLand/security",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "we had to get to the BEAN as fast as possible to escape; got to the bean, and then I woke up"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 6
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "snuck into this area while being chased by a security guard"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "strange maze of rooms"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_5",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "walked through the maze of rooms to a more abandoned run down area"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_6",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "had to get to the BEAN as fast as possible to escape; chased by security again"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "A security guard was chasing the dreamer in the amusement park; dreamer snuck into DreamLand.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "hostile",
+            "role": "security",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "security guard chasing the dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer observes people in rooms dreaming; dreamer can see them and what they are dreaming, but they cannot see the dreamer and are described as stuck.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "indifferent",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "people in every room, visible to the dreamer; stuck and couldn’t see the dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "observation",
+        "description": "Dreamer sees a kid watching old movies on a VCR and box TV repeatedly.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "one kid watching old movies on a VCR and box tv over and over endlessly",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_5",
+        "interaction_type": "observation",
+        "description": "Dreamer enters a more abandoned/run down area; rooms 'reeked of despair and hopelessness'; sees people trapped in nightmares.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "people trapped in nightmares in the abandoned/run down rooms",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Dreamer is chased by security again; someone says they must get to the BEAN to escape or be trapped forever.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "hostile",
+            "role": "security",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "security chasing the dreamer again",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "other",
+            "demeanor": "helpful",
+            "role": "guide",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "somebody I was with told me we had to get to the BEAN as fast as possible to escape",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_6",
+        "interaction_type": "escape",
+        "description": "Dreamer throws a chocolate ice cream to distract the guard, reaches the BEAN, then wakes up.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "hostile",
+            "role": "security",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "guard distracted by thrown chocolate ice cream",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "chocolate ice cream (thrown as distraction)",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Some elements are described generally (e.g., layout of the maze, exact placement of the BEAN), so locations and connections are modeled at a coarse level. Time-period variation is noted via observed room content (VCR/box TV), but no explicit time-flow mechanic (looping/slow) is stated for the dream as a whole."
+  },
+  "response_id": "resp_076d70015377e89b00696e2bb6980c81909411878fffa7db60",
+  "usage": {
+    "input_tokens": 10528,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 3202,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13730
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\sq6fr0.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/sq6fr0/i_think_i_have_been_going_to_this_world_for/",
+  "title": "I think I have been going to this world for months and found this sub today, here's my dream from last night",
+  "date": null,
+  "content_checksum": "1ad4a6e1e9af548a1479b60753b7f8656426200aea75059434f900238a0febb3",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:15:42.706805+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "blown my mind",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant",
+        "location_name": "futuristic looking bar",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "in a futuristic looking bar; may have only served fruit; every order came in a small potted plant which the fruit grew in and you ate it from the plant"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": "different area of this mall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Everything felt incredibly realistic and very familiar, like I knew everyone and knew this place. It was my second \"home\" in a way."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "mall_store",
+        "location_name": "store that had pretty much everything",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in a different area of this mall",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "looking around a store that had pretty much everything; shopping for something for her son"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "went to a different area of this mall with a woman"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "unspecified",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "we were looking around a store"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Talking to the bartenders about what to order; ordered fruit served in a small potted plant; accidentally ate someone else's order (small bunch of grapes picked off the plant); apologized profusely.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "cashier",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "bartenders",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "fruit (served in a small potted plant); grapes (ate someone else's order)",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Went to a different area of the mall with a woman (thought to be a friend from a prior mall dream in December).",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "implied",
+            "is_recurring": "implied",
+            "description": "a woman; I think she is a friend of mine",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "search",
+        "description": "Looked around a store that had pretty much everything; shopping for something for her son.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "implied",
+            "is_recurring": "implied",
+            "description": "woman friend",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "her son (not directly present, referenced as shopping target)",
+            "name_or_relation": "friend's son"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial details are limited to movement from a bar to a different area of the mall and into a general store; no explicit layout, directions, floors, or boundaries described. Time is present only as sequence/visit order and reference to a prior similar dream in December."
+  },
+  "response_id": "resp_0321724344587e4d00696e2e596d288195a18290e49682767a",
+  "usage": {
+    "input_tokens": 10245,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 1811,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12056
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ob0qih.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ob0qih/more_dreams_less_details/",
+  "title": "more dreams less details",
+  "date": null,
+  "content_checksum": "eb98d275afb5bdcd30901d035815c30fcd27d5c24f0508c84b250eb6451d69f7",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:39:48.767926+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unspecified_1",
+        "interaction_type": "conflict",
+        "description": "Dreams (previously) ending with “the ‘police(?)’ chasing me and shooting me for something”.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "implied",
+            "description": "“the ‘police(?)’” chasing and shooting the dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified_1",
+        "interaction_type": "observation",
+        "description": "In recent nights: can “hardly even remember small pieces”; only “flashes of places” or “very faint memory that i cant visualize”.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "low",
+    "extraction_notes": "No specific mall-world locations, layout, or connections described; only general recurrence frequency and a recurring chase/shooting ending by ‘police(?)’ in earlier dreams."
+  },
+  "response_id": "resp_041e45924c07885300696e2609aa4081959d9b01dc950cc866",
+  "usage": {
+    "input_tokens": 10117,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 447,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10564
+  }
+}

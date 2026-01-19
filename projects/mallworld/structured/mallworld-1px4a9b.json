@@ -1,0 +1,124 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1px4a9b.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1px4a9b/ferryman_do_you_ever_cross_a_body_of_water/",
+  "title": "Ferryman? Do you ever cross a body of water?",
+  "date": null,
+  "content_checksum": "0d1ef72c3d2b28fc303f270734d87d687ce0d5c77f390066049f6704627855be",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:06:44.069042+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Recurring ferry/water crossing with a ferryman who charges a fee; asking if others experience this",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Mentions it echoes River Styx/Charon (comparison), but states it does not feel dark, just necessary.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "ferry crossing",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "river",
+          "raw_description": "Repeatedly encounter a ferry crossing; it doesn't feel dark, just necessary."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "vehicle",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "Ferry crossing over a body of water; requires paying a fee to the ferryman almost every time."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "There is a fee for the ferryman almost every time during the ferry crossing.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "guide",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "ferryman",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "fee/payment to ferryman",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only one setting is described (a recurring ferry crossing over water) with a recurring transactional interaction; origin/destination shores and crossing outcome are not specified."
+  },
+  "response_id": "resp_0a872e2bd24eeccf00696e2c5681488196beb45a78b19c2b61",
+  "usage": {
+    "input_tokens": 10064,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 600,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10664
+  }
+}

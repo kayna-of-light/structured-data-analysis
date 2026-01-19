@@ -1,0 +1,155 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1oxadxc.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1oxadxc/ai_created_the_place_ive_been_visiting_for_the/",
+  "title": "AI created the place I’ve been visiting for the past 3 nights. Better than the never ending stalls with gross toilets that I’ve been to!",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:51:25.040261+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/m5p1a6c2sa1g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "beach",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "evening",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "crowding": "moderate",
+          "cleanliness": "clean",
+          "water_presence": "ocean_calm",
+          "raw_description": "Oceanfront/tropical promenade with palm trees; two rows of thatched-roof shop buildings; central open plaza/walkway leading to the beach and ocean; stone/rock landscaping; small waterfalls; tiki-style fire bowls; benches; wooden railings; stairs/steps connecting terrace levels; people walking and standing; small hut/gazebo near the beach"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "along both sides of the central promenade/plaza",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "evening",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "crowding": "sparse",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Open-front shops with displays visible inside; signage above entrances; thatched roofs and carved/tiki-style columns; shops line the left and right sides of the walkway"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Open pedestrian promenade connecting shopfronts to central plaza and toward the beach"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "direction": "diagonal_down",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Multiple stairways/steps between terraced levels around rocks and water features leading toward the beachfront"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "ocean_water",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "Beachfront edge where the promenade opens onto sand and ocean; horizon visible"
+      }
+    ],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text beyond title; recurrence inferred from title phrase 'past 3 nights'. Image appears AI-generated and depicts a single primary oceanfront mall/plaza scene. Mention of 'never ending stalls with gross toilets' in title suggests another recurring bathroom setting but no visual/locational details provided, so not extracted as a separate location."
+  },
+  "response_id": "resp_0947bcfde620dd1000696e28a899448195908f1b1224863dbf",
+  "usage": {
+    "input_tokens": 11275,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 849,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12124
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jaecdz.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jaecdz/anyone_else_have_a_hostage_situation_mall_dream/",
+  "title": "Anyone else have a hostage situation mall dream on 3/11",
+  "date": null,
+  "content_checksum": "0a1eb2c692fefbb5f76b70b2de2cea6ab5d033b64c4a671c8842efc2b8311fa8",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:10:55.501605+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "nightmare",
+        "lucid_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others had a similar hostage/active-shooter mall dream on 3/11 around 4am EST; mentions learning about shared 'mallworld' dreams via TikTok.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "fear (frozen in fear; hiding)",
+      "final_emotion": "confused and panicked upon waking; felt in limbo; upset",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "huge mall; lots of floors; glass windows; huge crowded staircases; huge open floorplan; people everywhere; not many hiding spots; everyone still and frozen in fear"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "under a black metal bench",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "hiding under a black metal bench"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "not_applicable",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "moved from being in the open mall space to hiding under a bench (limited hiding spots mentioned)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Many people trying to hide; not many hiding spots; people were still and frozen in fear during an active-shooter hostage situation.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people everywhere; many trying to hide; frozen in fear",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "An armed man held everyone hostage with an elaborate planned 'show'. A woman shakily walked around offering refreshments as directed by him; she was a hostage obeying to save herself.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "authority",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "armed man; active shooter; had everyone hostage; planned 'show'",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "threatening",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "woman shakily walking around offering refreshments; hostage obeying to save herself",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "refreshments / 'cold beverage'",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "A teenaged autistic boy near the dreamer interrupted the spectacle to ask for a 'cold beverage' from the woman offering refreshments; this angered the shooter and he shot the boy.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "teenaged autistic boy",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "authority",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "shooter angered by interruption; shot the boy",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "cold beverage",
+        "transaction_blocker": "shooter angered because request interrupted the flow of the event"
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "While the dreamer was hiding under a black metal bench, the shooter saw them, called them out by name, referenced the boy, and shot the dreamer in the ear.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "shooter called the dreamer out by name; shot dreamer in the ear",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "other",
+        "description": "After being shot, the dreamer realized they had been shot and became lucid; believed they wouldn't die because they had never died in a dream before and realized they were in a dreamworld; then it became clear they would die within seconds and everything faded.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Before everything faded, the dreamer managed to scream out a message to their sister.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "sister (recipient of message)",
+            "name_or_relation": "sister"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Temporal anchor provided: 3/11 around 4am EST (waking-time reference). Mall described with multiple floors, glass windows, crowded staircases, open floorplan; no cardinal directions or explicit adjacency beyond 'in the mall' and hiding under a bench. Entities include shooter, crowd, hostage woman serving refreshments, teen boy, and sister (message recipient)."
+  },
+  "response_id": "resp_009469ef1fd0887400696e1f31383c8190a13fe4abb960c3c1",
+  "usage": {
+    "input_tokens": 10432,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2126,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12558
+  }
+}

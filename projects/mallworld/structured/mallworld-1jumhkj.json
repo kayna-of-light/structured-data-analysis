@@ -1,0 +1,93 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jumhkj.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jumhkj/i_found_my_virginia_beach_resorthotel/",
+  "title": "I found my “Virginia Beach” resort/hotel",
+  "date": null,
+  "content_checksum": "816b00b7f95830dfe53397a433d59fdcfc695ec843298ef82e3dd46d94922676",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:21:40.216762+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to the same recurring Mall World resort/hotel location; mentions an IRL hotel that matches their dream reference.",
+      "should_skip_extraction": false,
+      "skip_reason": "Contains some extractable phenomenological details about a recurring dream location (resort/hotel) despite being framed as a question/IRL comparison."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "unsettling and astounding",
+      "final_emotion": "geeked out",
+      "author_theory": "Mentions making connections between Mall World places and real-life places; says their MW reference for a place 'checks out' in real life.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": "“Virginia Beach” resort/hotel",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Resort/hotel associated with “Virginia Beach”; “always storming outside”; “the dorm floors start at Floor 2.”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "guest",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No actual hotel name, layout, or explicit navigation described; images referenced but not provided here, so visual details cannot be extracted. Extracted only the stated recurring qualities: storming outside and floors starting at 2."
+  },
+  "response_id": "resp_01d46ffe1aaefc2e00696e21b942588195b5f25b586ddbff2f",
+  "usage": {
+    "input_tokens": 10105,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 677,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10782
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1joexzp.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1joexzp/anyone_recognize_this/",
+  "title": "Anyone recognize this?",
+  "date": null,
+  "content_checksum": "81a1ee6cece82c7dcb1cf8b7b68ca60ca041f43359531f20016bb00616937c61",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:17:58.592162+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others recognize / have been to a similar place seen in the dream (dark tunnel under a bridge while floating in a floatie).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "first_visit",
+      "time_flow": "slow",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Mentions 'first encounters with the phenomenon' and that they have been lurking in the sub; no explicit explanation offered.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "water channel/ride approaching a tunnel under a bridge (AI recreation)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "river",
+          "raw_description": "“in a floatie that I couldn't get out of, slowly heading for a pitch black tunnel under a bridge like some kind of twisted amusement park ride.” AI-generated recreation is “pretty close” but “not 100% accurate.”"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "theater",
+        "location_name": "pitch black tunnel (under a bridge)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "under a bridge / ahead along the water route",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "absent",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“pitch black tunnel under a bridge.”"
+        },
+        "is_familiar": "no",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "swimming",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "still_in_progress",
+        "qualities": "Slow forward movement on water while stuck in a floatie; approaching tunnel under a bridge."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "darkness",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "no",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "still_in_progress",
+        "description": "Tunnel entrance described as “pitch black,” visibility beyond not described."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer is in a floatie and “couldn't get out of” it while moving toward the tunnel.",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Unable to get out of the floatie."
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Slowly heading toward a tunnel under a bridge along the water route.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only a brief dream segment is described; the attached image is stated to be an AI-generated recreation, but the prompt did not include the image pixels for direct visual analysis beyond the text description and link."
+  },
+  "response_id": "resp_02e1b03440c0740300696e20d937888195a92bfa2333eb1201",
+  "usage": {
+    "input_tokens": 10162,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1244,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11406
+  }
+}

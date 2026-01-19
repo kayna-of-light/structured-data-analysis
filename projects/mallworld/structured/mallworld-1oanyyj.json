@@ -1,0 +1,193 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1oanyyj.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1oanyyj/my_latest_malldreams/",
+  "title": "My latest Mall-Dreams",
+  "date": null,
+  "content_checksum": "97330a045144f2b3c37a0e8524424200dcdf53e0d567a635f4d1559e9bd2dcb7",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:39:58.965066+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/rjf0ohka72wf1.jpg",
+    "https://i.redd.it/vowedgka72wf1.jpg",
+    "https://i.redd.it/gowy2hka72wf1.jpg",
+    "https://i.redd.it/yr6sahka72wf1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "inconsistent",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "parking_lot",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the mall / mall exterior area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"landed on the parkinglot in summer heat\"; image shows outdoor concrete area with stairs/railings and chain-link fencing"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "inconsistent",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"wasn‘t able to get in\"; images show mall exterior with signage ('SHOPPING MALL' / 'MALL'), building facade, entrance doors, lit windows at night"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "no",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "mall exterior / entrance area in winter",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the mall near entrance",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "rain",
+          "raw_description": "\"Timejump: winter an snow outside?\"; images show snow-covered ground, bare trees, lampposts, mall entrance lit at night; snow falling"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "blocked",
+        "mechanism_function": "not_applicable",
+        "outcome": "failed",
+        "qualities": "Attempted to enter mall from outside/parking lot but \"wasn‘t able to get in\""
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "unknown",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "\"Timejump\" from summer heat to winter/snow outside"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "Mall entry boundary: \"wasn‘t able to get in\" (access blocked)"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Tried to get into the mall but could not enter.",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Access blocked / unable to get in"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Narrative is very brief; images provide exterior/parking-lot/entrance visuals but do not confirm whether they are exact dream screenshots vs illustrative. No interior locations described."
+  },
+  "response_id": "resp_0843d943ddc9cb9100696e25e9e8948190996062065b06c4f7",
+  "usage": {
+    "input_tokens": 16185,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 996,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17181
+  }
+}

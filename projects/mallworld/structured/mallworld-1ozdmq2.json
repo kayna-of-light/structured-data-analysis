@@ -1,0 +1,133 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ozdmq2.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ozdmq2/my_bathroom_world/",
+  "title": "My bathroom world",
+  "date": null,
+  "content_checksum": "2d49ecc52faa69759fc70c34b90f265f7c567b2696b8667f3cc01458dd2277d4",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:53:20.501038+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/0cz9lukgws1g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_map_drawing"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_public",
+        "location_name": "bathroom world",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "like a labyrinth; with no doors; some maybe had a thin curtain; no privacy; for both male and female; very exposed feeling"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "other",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "bathroom_public",
+        "location_name": "small platform toilet area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the bathroom labyrinth",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "one was even on a small platform; very exposed feeling"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "other",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "open access within a maze-like bathroom layout (no doors; some thin curtains)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears to be a hand-drawn sketch of a maze-like bathroom layout with multiple toilets in open/partially partitioned areas and one toilet drawn on a raised rectangular platform; no explicit doors are shown. Text indicates mixed-gender use and lack of privacy; no lighting/cleanliness/time details provided."
+  },
+  "response_id": "resp_0f5b9c3a2355e3b500696e2917a3288195b4b8ea98e22bea13",
+  "usage": {
+    "input_tokens": 11869,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 929,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12798
+  }
+}

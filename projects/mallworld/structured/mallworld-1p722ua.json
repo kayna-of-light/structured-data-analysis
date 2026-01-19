@@ -1,0 +1,197 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1p722ua.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1p722ua/a_dream_about_a_black_cube_a_glowing_symbol_and_a/",
+  "title": "A dream about a black cube, a glowing symbol, and a name whispered before I woke up",
+  "date": null,
+  "content_checksum": "9884ea1ff0dfc405aa8a768a0267989eb0aa18f4c9d5ecfc97dc1fdeae0e0380",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:57:10.365791+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/8hyeobnl5k3g1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asks for interpretations of a vivid dream featuring a ruined fortress, red-tinted lake, black cube with glowing red symbol, and a whispered phrase.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "woke up immediately after the phrase was spoken",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "ruins",
+        "location_name": "ruins of an old stone fortress",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "eerie",
+          "crowding": "sparse",
+          "cleanliness": "dirty",
+          "water_presence": "not_mentioned",
+          "raw_description": "standing inside the ruins of an old stone fortress; walls tall, cracked, and partially collapsed; abandoned for centuries; sky filled with dark red clouds; sun barely visible behind them"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "pool",
+        "location_name": "small lake in the center of the fortress",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the center of the fortress",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "pool_dirty",
+          "raw_description": "water was transparent but tinted red; ground around it was muddy"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "black stone cube (partially submerged)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "partially submerged in the lake",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "submerged",
+          "raw_description": "black stone cube; on one side a red symbol glowing faintly, almost like a quiet flame; not bright, but clearly alive in some way"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": 3
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer stood at the edge of the lake with another figure and looked at the black cube and its glowing red symbol.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "human silhouette without clear features; 'just a presence'",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "The figure next to the dreamer very quietly said: \"Lectorium Rosicrucianum.\"",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "human silhouette without clear features",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "other",
+        "description": "Immediately after the phrase was spoken, the dreamer woke up.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Image appears to be a recreated/illustrated scene (not a hand-drawn map): ruined stone walls surrounding a central red-tinted pool/lake; a black cube sits partially in the water with concentric ripples; a glowing red triangular-like symbol on the cube; two human silhouettes stand at the near edge facing the cube; sky is dark red with a faint sun behind clouds."
+  },
+  "response_id": "resp_0f2786e81c35b97500696e29e76990819597bda1031138bc1b",
+  "usage": {
+    "input_tokens": 12247,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1525,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13772
+  }
+}

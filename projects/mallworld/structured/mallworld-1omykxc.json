@@ -1,0 +1,186 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1omykxc.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1omykxc/endless_suburbia/",
+  "title": "Endless suburbia",
+  "date": null,
+  "content_checksum": "901f9bf0a10a78cc1c00bb868bc5bcf94d3e7c0d291f8ac197c434716b2faa13",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:46:10.313034+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/w53n4dx80yyf1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "multiple_dreams",
+        "childhood_dream",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have experienced a recurring liminal-space dream of an endless, empty suburban neighborhood with a stalking presence and an uncrossable/growing fence boundary.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "compressed",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "adult",
+        "age_explicit": null,
+        "dreams_since_age": 5,
+        "dreams_duration_years": 20
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "feeling of unease",
+      "final_emotion": "wake up terrified (especially as a kid)",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "neighborhood",
+        "location_name": "endless suburbia / dead, endless neighborhood",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "threatening",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "walking down a street at night with a feeling of unease; all of the houses look the exact same; none of the houses have lights on, or cars in the driveway, and there are no people around; run for what feels like hours through a dead, endless neighborhood"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "suburb",
+        "location_name": "backyard with wooden fence",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "off the street / within the neighborhood",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "threatening",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "run into one of the backyards thinking I could hop a wooden fence; as I get my hands on the top the fence it shoots up higher, knocking me to the ground; it grows taller yet again; it's now about 50 feet tall"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "runs from street through neighborhood into a backyard to try to hop a fence"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "fence",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "yes_explicit",
+        "crossing_outcome": "failed",
+        "description": "wooden fence that 'shoots up higher' when grabbed/climbed; knocks dreamer down; eventually 'about 50 feet tall'"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dream starts with walking down a street at night; dreamer realizes something is stalking them (cannot make out what it is); runs for what feels like hours; tries to scream for help but no noise escapes lungs.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "something stalking/pursuing; when young associated it with a werewolf but 'wasn't exactly that'; later appears as glowing red eyes in darkness with a low gutteral sound",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Dreamer runs into a backyard to hop a wooden fence; each time they grab/scramble up it grows taller and knocks them to the ground; hears pursuer getting closer; looks up and fence is ~50 feet tall; hears low gutteral sound; turns to see a pair of glowing red eyes staring from darkness; wakes up just before being attacked.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "pair of glowing red eyes in the darkness; low gutteral sound; closes in as dreamer is blocked by fence",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Image appears to be a real aerial photo of uniform suburban houses used as a visual reference (not a hand-drawn map). Spatial layout is described narratively: street → backyard → wooden fence that becomes an uncrossable boundary by increasing height."
+  },
+  "response_id": "resp_0373af6d88592c1a00696e27506c90819799f23a5364031604",
+  "usage": {
+    "input_tokens": 11251,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1166,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12417
+  }
+}

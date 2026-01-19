@@ -1,0 +1,269 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pa7zf0.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pa7zf0/i_think_i_might_have_been_to_the_hotel_once_is/",
+  "title": "I think I might have been to the hotel once. Is this accurate to anyone else's account of the hotel?",
+  "date": null,
+  "content_checksum": "54cd9503afe29a124c855b1a594eb35c7fed35da9e88c32e513510633159b46d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:57:57.075372+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking whether their described 'hotel' matches others' accounts of the hotel in Mall World.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "unnerving feeling that I did something wrong and needed to leave immediately",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Luxury interior; dark and warm colored walls and lighting; dark brown wood; red velvet or dark leather furniture; yellow/orange lighting. Needed certain clearances/permission to get to higher layers."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel_ballroom",
+        "location_name": "top floor dinner party room",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "highest level / top floor of the hotel",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Super fancy dinner party. Top floor was only really one room, ~20x50 ft. Long dining table with fancy spread, silverware; table slightly off to the left side to make room for people to stand and congregate. People dressed their best (suits and dresses); some seated, some standing and chatting; no more than ~20 people."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "hotel",
+        "location_name": "short hall near back of top room",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "near the back of the top-floor dinner party room",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Short hall leading to another room; no doors."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "hotel_ballroom",
+        "location_name": "parallel business meeting room",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "off the short hall; running parallel to the top-floor dinner party room",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Another room about the same size or a bit smaller than the first; runs parallel. Another table centered in the room. Men in business suits talking. When they noticed the dreamer entered, they stopped and stared."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "trespasser",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "elevator",
+        "direction": "up",
+        "difficulty": "normal",
+        "mechanism_function": "working_normal",
+        "outcome": "succeeded",
+        "qualities": "Elevators were more like fancy booths that would take you to the higher levels; access/permission needed for higher layers; dreamer somehow got access/permission to the highest level."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Short hall near the back of the room; no doors."
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Turned the corner from the short hall into the second room."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "elevator",
+        "direction": "down",
+        "difficulty": "normal",
+        "mechanism_function": "working_normal",
+        "outcome": "succeeded",
+        "qualities": "Quickly descending on the booth elevator after returning to the previous room."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Needed certain clearances/permission (or something similar) to get to higher layers; dreamer somehow got access/permission to the highest level.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Attended a super fancy dinner party wearing a fancy dress; people in suits and dresses were seated and standing around chatting (no more than ~20 people).",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Well-dressed party attendees in suits and dresses; some at the table, some standing and chatting.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "observation",
+        "description": "Entered the parallel room and saw men in business suits talking around a centered table; when they noticed the dreamer, they stopped and stared as if the dreamer wasn't supposed to be there; dreamer carefully backed away.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "watching",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Men in business suits talking to each other; stopped and stared when the dreamer entered.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Returned to the previous room and decided not to stay on the top level; quickly descended via the booth elevator due to an unnerving feeling they did something wrong and needed to leave immediately.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Recurrence is ambiguous: title suggests possibly a one-time visit ('once') but classification flags include recurring_dream due to the broader 'Mall World hotel' framing; no explicit recurrence stated in narrative. Lighting is described for the hotel generally (yellow/orange, warm/dark); specific room lighting not separately described."
+  },
+  "response_id": "resp_0d6972db52effe1600696e2a2e8b388194a2abd58cfd27c8e7",
+  "usage": {
+    "input_tokens": 10399,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2332,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12731
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1oyafdl.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1oyafdl/im_more_than_shocked/",
+  "title": "I'm more than shocked",
+  "date": null,
+  "content_checksum": "4bad13fd5752476c0e8fd0c40de2fb59484488647d5637a1d3dd0223c1404c96",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:51:54.663509+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking whether others' Mall World features match theirs (theater type; dinosaurs on beach; tsunamis vs earthquakes/volcanoes; caves) and noting similarity to shared maps",
+      "should_skip_extraction": true,
+      "skip_reason": "No concrete first-person scene descriptions of specific locations/events beyond general recurrence; mostly questions about others' experiences."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": 2
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "comforting and scary at the same time",
+      "final_emotion": null,
+      "author_theory": "Never thought it was a shared experience; finding others is comforting and scary; notes others' maps are similar to theirs.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_theater",
+        "location_name": "the theater",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Asked whether it is like a cinema or more like an acting stage with a big screen behind."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "beach",
+        "location_name": "the beach",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Mentions dinosaurs on the beach as a possible seen feature (asked if others have seen this)."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "cave",
+        "location_name": "the caves",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Asked whether others have visited the caves."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Topic raised: dinosaurs on the beach (posed as a question to others).",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "not_mentioned",
+            "role": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "dinosaurs",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Topic raised: tsunamis; also asks if others experience earthquakes or volcano eruptions.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question/meta post with minimal first-person phenomenology. Extracted only explicitly mentioned recurring visitation frequency (\"every night\" over 2 years) and referenced/shared location motifs (theater, beach, caves; tsunamis/earthquakes/volcanoes; dinosaurs) without assuming they were personally experienced unless implied."
+  },
+  "response_id": "resp_04ded585caabe67700696e28cf25a08194b0e864218bd678e7",
+  "usage": {
+    "input_tokens": 10178,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1364,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11542
+  }
+}

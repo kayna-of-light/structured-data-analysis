@@ -1,0 +1,224 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1kcji40.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1kcji40/the_dream_that_started_it_all/",
+  "title": "The Dream That Started it All",
+  "date": null,
+  "content_checksum": "a4bb6b36777de10d791e19a68c8c99ad954cff15c35467ffb7355f22f4d25648",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:23:33.300996+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "childhood_dream",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others had the same recurring childhood dream of a black wolf chasing them; whether it relates to 'Mall World'",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": 7,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "child_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "woke up in a cold sweat",
+      "author_theory": "Was this our introduction to the Mall World? Like some kind of test to see what we could handle.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "my home at the time",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "In my home at the time, at night; it would be circling our house; jump through the window and get me."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "long stretch of highway in an expansive desert",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Riding in a vehicle in the middle of a long stretch of highway in the middle of a expansive desert; it was running alongside the vehicle."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "vehicle interior / floorboard area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "beneath my feet (inside the vehicle)",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "destroyed",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "The floorboard beneath my feet would be torn away and I would be pulled through the floor."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 3
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Tried to find a hiding spot while a huge, tall black wolf circled the house; it jumped through the window and got me.",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "huge, tall black wolf with glowing red eyes; like it was made of smoke but somehow still solid; never made noise; you could sense its vibrations/energy; screamed danger",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Riding in a vehicle on a long desert highway; realized the wolf was running alongside the vehicle.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "huge, tall black wolf with glowing red eyes; like smoke but solid; silent; sensed vibrations/energy",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "conflict",
+        "description": "The wolf vanished; when I felt safe, the floorboard beneath my feet was torn away and I was pulled through the floor.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "vanished and then attacked by tearing away the floorboard; silent but sensed as danger",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Just before it landed its decisive attack lunge, I would wake up in a cold sweat.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "decisive attack lunge immediately precedes waking",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Two distinct recurring nightmare scenarios are described (home at night; vehicle on desert highway). No explicit Mall World locations (mall/hotel/school) are mentioned. Time flow details within dreams are not described beyond 'just before' waking."
+  },
+  "response_id": "resp_0bf86cdd937854da00696e303d63908196b123d25d6d8d8af2",
+  "usage": {
+    "input_tokens": 10259,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1799,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12058
+  }
+}

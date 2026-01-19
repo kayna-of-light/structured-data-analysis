@@ -1,0 +1,127 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1q4befl.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1q4befl/tubeworld/",
+  "title": "Tubeworld?",
+  "date": null,
+  "content_checksum": "dfb04bc6880b06339f7fddcf5d250a4943a4fcc0d7314e25fb09a9414b501c34",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:10:18.428130+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/fwyvmkukfgbg1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have seen a tube/pod transport system and where the pods go",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "first_visit",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "tube/pod transport area (rows of vertical tubes with pods)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"several rows of probably hundreds of people waiting in line to get into these pods\"; pods with \"little window-like compartments\" that open/close; pods \"zoom up those tubes at ludicrous speeds\"; destination \"somewhere unknown\""
+        },
+        "is_familiar": "no",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_fast",
+        "outcome": "succeeded",
+        "qualities": "Pods enter vertical tubes and then \"zoom up those tubes at ludicrous speeds\"; window-like compartment opens for entry and closes after someone gets in; transport destination not seen/unknown"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer observes multiple rows of people queued to enter pods that transport them upward through tubes at very high speed; destination is not shown/unknown.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"several rows of probably hundreds of people waiting in line\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears to be a reference photo (industrial room with many vertical transparent tubes and white pods). The text says the dream matched the image but included large queues of people and pod entry/exit behavior; exact surrounding setting (mall/school/etc.) not specified."
+  },
+  "response_id": "resp_0cb82e1c7fa1e50f00696e2d1708c48190a448658ffa5ed58f",
+  "usage": {
+    "input_tokens": 11850,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 679,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12529
+  }
+}

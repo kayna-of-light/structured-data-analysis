@@ -1,0 +1,117 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jz4ts4.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jz4ts4/anyone_been_here/",
+  "title": "Anyone been here?",
+  "date": null,
+  "content_checksum": "8cc769d611457f2347cb6c10bc15e15ae6572a4ab6dbaa3f5acd0759183c1af7",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:24:21.652583+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/5s7snjps6uue1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "excited",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel_pool",
+        "location_name": "spa (for 'cleansing')",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "fountain",
+          "raw_description": "\"going to a spa\"; \"euphoric/blissful but also a little eerie\"; \"space is echoey and goes on forever\"; \"I’m always the only one there\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "elevator",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "working_normal",
+        "outcome": "succeeded",
+        "qualities": "\"I go up an elevator with a towel or whatever and I go here\" (elevator ride to the spa)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer goes up an elevator carrying a towel to reach the spa space; arrives alone and feels excited/euphoric but also eerie due to echoey, seemingly endless space.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears to depict a modern indoor circular fountain/pool area with blue lighting and tiled floor; treated as illustrative of the described spa-like place. Connection modeled as elevator travel to the location; starting location not described, so elevator origin is unspecified."
+  },
+  "response_id": "resp_0dc946376701904500696e2253bc9c8194a72ec48ecf7410d1",
+  "usage": {
+    "input_tokens": 11295,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 587,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11882
+  }
+}

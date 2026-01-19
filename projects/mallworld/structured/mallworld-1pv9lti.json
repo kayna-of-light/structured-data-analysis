@@ -1,0 +1,268 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pv9lti.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pv9lti/hospital_hell_pt_1/",
+  "title": "Hospital hell PT 1",
+  "date": null,
+  "content_checksum": "b28536a792a94a064d1dcd000b4ca37d5e768d4f1f4c59af872edbd28bba74ed",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:05:35.362854+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "nightmare"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "variation",
+      "time_flow": "normal",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "freaking out after noticing scars/organ harvesting",
+      "final_emotion": "fear/urgency; wakes while covering body with a towel",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hospital",
+        "location_name": null,
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "top floors where surgery rooms were in this 12 floor hospital",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "awoke in a hospital bed; scars under my boobs and on each side like my organs were harvested; top floors where surgery rooms were in this 12 floor hospital; doctors tried to calm me down saying everything was fine; doctors finally abducted me and stole organs from me"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "patient",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hospital",
+        "location_name": "lower levels",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "lower levels of the same hospital (visited in other dreams)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "been in the lower levels in other dreams and visited dying family members, ran into scary people and been chased by psychos"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "pool",
+        "location_name": "pool below beside the hospital (physiotherapy)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "below beside the hospital",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "pool_clean",
+          "raw_description": "pool below beside the hospital for physiotherapy; fell 12 stories into a pool; made it to the pool and swam to the edge and got out"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "restaurant",
+        "location_name": "tiki&towel bar by the hospital",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "by the hospital",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "There was a tiki&towel bar by the hospital"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "falling",
+        "direction": "down",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "ran through a glass window and fell 12 stories; feared hitting cement if not far enough; landed in pool"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "got out of the pool and went to the tiki&towel bar by the hospital"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Doctors tried to calm the dreamer down saying everything was fine; dreamer believed nothing was fine.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "unfriendly",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "doctors",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Doctors abducted the dreamer and stole organs; dreamer had scars under boobs and on each side.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "hostile",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "doctors",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer decided to escape by running through a glass window to reach the pool below beside the hospital.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "implied pursuers/doctors (reason for escape)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "After landing in the pool, dreamer swam to the edge and got out.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "transaction",
+        "description": "Dreamer apologized for being naked and asked for a towel; began covering scarred body.",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": "towel",
+        "transaction_blocker": "woke up"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Elevator is mentioned as memorable and feared ('falling elevator' / being drugged in elevator) but no specific elevator ride or traversal is described in this part, so no elevator connection was instantiated."
+  },
+  "response_id": "resp_0c876df0f83d266e00696e2bfb99a88190a3cf30ecf6ed1fad",
+  "usage": {
+    "input_tokens": 10311,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2125,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12436
+  }
+}

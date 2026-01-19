@@ -1,0 +1,181 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jbqywg.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jbqywg/a_humongous_bridge_that_goes_across_an_entire/",
+  "title": "A humongous bridge that goes across an entire ocean leading out of mallworld into another world / city / place.",
+  "date": null,
+  "content_checksum": "f6714a03f511c96ea7f2f80cafe60c4b02747a64264daf68902249dad0613b16",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:12:20.215511+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/bd4s5clhitoe1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have seen a recurring bridge leading out of Mall World across an ocean",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "mallworld",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Leaving mallworld and attempting a trek back home"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "humongous bridge across an entire ocean",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "leading out of mallworld",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "raw_description": "Humongous futuristic metal strong structure; sometimes open air and swaying; sometimes has a glass tunnel; goes for miles and miles and takes an age to cross"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "city_street",
+        "location_name": "another world / city / place (destination beyond bridge)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the far end of the bridge",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Another world / city / place; where I reside (home)"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "resident",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "bridge",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Bridge goes across an entire ocean; miles and miles; takes an age to cross; sometimes open air and swaying; sometimes enclosed as a glass tunnel"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "visible_location",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "yes_explicit",
+        "crossing_outcome": "not_mentioned",
+        "description": "An entire ocean separates mallworld from another world/city/place; the bridge is the route out"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Attempting to cross the bridge to leave mallworld and get back home; crossing is difficult and takes a long time ('takes an age to cross')",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears AI-generated and used as a visual match to the dream; specific mall interior details are not provided. Time is described as duration to cross ('takes an age'), but no broader time-flow descriptors are given."
+  },
+  "response_id": "resp_00310bf13c7a2b8400696e1f706eec819086cb89e5a745f7d1",
+  "usage": {
+    "input_tokens": 11924,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1376,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13300
+  }
+}

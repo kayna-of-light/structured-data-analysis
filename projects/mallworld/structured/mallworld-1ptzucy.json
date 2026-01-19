@@ -1,0 +1,598 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ptzucy.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ptzucy/my_mallworld_has_become_very_consistent_and/",
+  "title": "My MallWorld has become very consistent and layered recently.",
+  "date": null,
+  "content_checksum": "b14b049ef2c1624063d99bf2543ebcc9c3860a1d6fb1ac8cf934d76bc125e5f0",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:05:32.324315+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "recent_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others remember/experience Mall World similarly and in similar detail; whether they may have met",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "downtown",
+        "location_name": "major city",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "surrounds/contains the giant mall in the middle of it",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“a major city that has many different areas”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": "giant mall (center of the city)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the middle of the major city; has parking lots and walkways like a New York style building / Tokyo’s Shibuya crossing",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "varies",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“a giant mall with parking lots and walkways like a new york style building or like Tokyos Shibuya crossing… Theres many levels to this Mall.”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "parking_lot",
+        "location_name": "parking lots (around/with the mall)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "associated with the giant mall",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“a giant mall with parking lots and walkways”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "walkways / crossing-like area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "by/with the mall; described as like Shibuya crossing / New York style building area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“walkways like a new york style building or like Tokyos Shibuya crossing”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_5",
+        "location_type": "other",
+        "location_name": "mall lower levels (active/crowded levels)",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the mall; contrasted with higher levels that have fewer people",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“Inside, the lower levels active and crowded”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_6",
+        "location_type": "mall_theater",
+        "location_name": "movie theatres",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the mall / in the active lower levels area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“the movie theatres”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_7",
+        "location_type": "restaurant",
+        "location_name": "restaurants",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the mall / in the active lower levels area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“restaurants”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_8",
+        "location_type": "other",
+        "location_name": "bars",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the mall / in the active lower levels area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“bars”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_9",
+        "location_type": "other",
+        "location_name": "nightclubs",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the mall / in the active lower levels area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“nightclubs”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_10",
+        "location_type": "mall_store",
+        "location_name": "shops",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the mall; mentioned as part of active lower levels",
+          "relative_to_id": "loc_5"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“shops”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_11",
+        "location_type": "theater",
+        "location_name": "concert stages",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the mall / in the active lower levels area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“even concert stages”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "audience",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_12",
+        "location_type": "hotel",
+        "location_name": "hotel section (goes on forever)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "part of/connected to the mall; described as a ‘section’",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "mixed",
+          "atmosphere": "not_mentioned",
+          "crowding": "varies",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“a hotel that seems to go on forever… the hotel section is another part.”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_13",
+        "location_type": "hotel_room",
+        "location_name": "hotel rooms (varied by floor)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "each floor of the hotel has different rooms",
+          "relative_to_id": "loc_12"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "varies",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“each floor has different rooms consisting of parties, room mates, people’s rooms”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "guest",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_14",
+        "location_type": "waterpark",
+        "location_name": "waterpark(s) (multiple; themed differently)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "recurring area of the mall world; relationship to mall/hotel not specified",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“one of the most recurring dreams i have of this mall world is the waterpark… theres like multiple waterparks i think… themed differently”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_15",
+        "location_type": "waterpark",
+        "location_name": "waterpark visited ‘last night’ (with $2 slide)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "one of the multiple waterparks",
+          "relative_to_id": "loc_14"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“this one last night had a water slide that costed 2$”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_16",
+        "location_type": "waterpark",
+        "location_name": "water slide (cost $2)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the waterpark visited last night",
+          "relative_to_id": "loc_15"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“a water slide that costed 2$… ive dreamed of going down the slide more than once… the physical sensation is vivid… that feeling… the big drop”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_17",
+        "location_type": "hotel",
+        "location_name": "higher floors/upper areas of hotel or mall (less populated)",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "higher you go on this hotel or mall; contrasted with going back down",
+          "relative_to_id": "loc_12"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "abandoned",
+          "atmosphere": "uncomfortable",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“the higher you go… the less people you find… almost like the backrooms and it’s abandoned but not really abandoned… i always find myself going back down because it’s lonely and sometimes scary.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_5",
+        "connection_type": "unspecified",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Movement implied between mall areas/levels; lower levels described as active/crowded."
+      },
+      {
+        "from_location_id": "loc_12",
+        "to_location_id": "loc_13",
+        "connection_type": "elevator",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "“many people in the elevators trying to get to their rooms”"
+      },
+      {
+        "from_location_id": "loc_12",
+        "to_location_id": "loc_17",
+        "connection_type": "elevator",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "Going higher results in fewer people; upper areas feel lonely/sometimes scary."
+      },
+      {
+        "from_location_id": "loc_17",
+        "to_location_id": "loc_5",
+        "connection_type": "elevator",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "“i always find myself going back down”"
+      },
+      {
+        "from_location_id": "loc_12",
+        "to_location_id": "loc_12",
+        "connection_type": "elevator",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "“a secret elevator for staff that is rarely used and i somehow managed to use it constantly when im there” (staff elevator within the hotel section)."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_16",
+        "interaction_type": "transaction",
+        "description": "Water slide costs $2; dreamer notes it was a toonie (Canada).",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": "water slide ride",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_16",
+        "interaction_type": "task",
+        "description": "Dreamer goes down the water slide more than once; worries about getting their phone wet; reports vivid physical sensation like a big drop; says the big drop kind of hurt.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_12",
+        "interaction_type": "navigation",
+        "description": "Dreamer uses a secret staff elevator (rarely used) and manages to use it constantly when there.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_17",
+        "interaction_type": "navigation",
+        "description": "Dreamer goes to higher areas where there are fewer people; feels lonely and sometimes scared; goes back down.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Many sub-areas (shops, bars, nightclubs, theaters, stages) are listed without distinct spatial positions or visit order; treated as separate locations but with limited qualities. No explicit boundary/edge-of-world described. ‘Abandoned but not really’ coded as state=abandoned and atmosphere=uncomfortable based on ‘lonely and sometimes scary’ phrasing."
+  },
+  "response_id": "resp_0a356a7e4f7c43aa00696e2bd22f5481908cdabccce147a7d5",
+  "usage": {
+    "input_tokens": 10484,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 5220,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15704
+  }
+}

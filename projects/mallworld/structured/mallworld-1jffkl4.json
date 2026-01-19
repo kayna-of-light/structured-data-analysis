@@ -1,0 +1,298 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jffkl4.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jffkl4/the_most_eerie_place_in_mall_world/",
+  "title": "The most eerie place in mall world.",
+  "date": null,
+  "content_checksum": "506a270075a164fb3f11d2dc0743b1eb39ef1428e69a056a66b2e9479585b9f7",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:14:37.599632+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/7kcu1wcnhrpe1.jpg",
+    "https://i.redd.it/mo56fwcnhrpe1.jpg",
+    "https://i.redd.it/3hkjiwcnhrpe1.jpg",
+    "https://i.redd.it/1m9m4wcnhrpe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "neighborhood",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "train/mineshaft cart runs through it",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "inconsistent",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "A train, more like a mineshaft cart runs through a neighborhood. People live there but all the children are gone and they don’t come outside after dark."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "train",
+        "location_name": "train / mineshaft cart",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "runs through neighborhood; takes you into tunnels; later takes you to amusement park",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "A train, more like a mineshaft cart... The train cart takes you into creepy tunnels... Once you get out the train takes you to a weird amusement park... The train makes you fall in the whale water every time."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "train_station",
+        "location_name": "creepy tunnels",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "entered via train/mineshaft cart from the neighborhood",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "The train cart takes you into creepy tunnels. You can see broken toys scattered about and there’s different rooms... It takes a long time to get out because it’s dark."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "different rooms (in tunnels)",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the creepy tunnels",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "...there’s different rooms. You can see broken toys scattered about."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 4
+      },
+      {
+        "location_id": "loc_5",
+        "location_type": "amusement_park",
+        "location_name": "weird amusement park",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "reached by train after getting out of tunnels",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Once you get out the train takes you to a weird amusement park with an orca whale."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 5
+      },
+      {
+        "location_id": "loc_6",
+        "location_type": "pool",
+        "location_name": "orca whale water",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the weird amusement park; dreamer falls into it from the train",
+          "relative_to_id": "loc_5"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "pool_clean",
+          "raw_description": "...an orca whale. The train makes you fall in the whale water every time."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 6
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "vehicle",
+        "direction": "diagonal_down",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "train/mineshaft cart takes you into creepy tunnels"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_5",
+        "connection_type": "vehicle",
+        "direction": "diagonal_up",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "takes a long time to get out because it’s dark; once you get out the train takes you to a weird amusement park"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_6",
+        "connection_type": "falling",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "The train makes you fall in the whale water every time"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_3",
+        "interaction_type": "escape",
+        "description": "Trying to get out of the creepy tunnels; it takes a long time because it’s dark.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "conflict",
+        "description": "A guy tries to keep you there (in the tunnels).",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "threatening",
+            "role": "blocker",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a guy that tries to keep you there",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_6",
+        "interaction_type": "other",
+        "description": "Falling into the whale water from the train every time.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear AI-generated (not a hand-drawn map). Visuals depict an eerie neighborhood with old buildings/trees and a rail tunnel entrance; tunnel interior with tracks, door, and scattered toys; these visuals were used only to support general setting but specific dream details were taken from the provided narrative."
+  },
+  "response_id": "resp_036e61a2bc957cb900696e1fe3715881939d50141d763df7db",
+  "usage": {
+    "input_tokens": 15040,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1713,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16753
+  }
+}

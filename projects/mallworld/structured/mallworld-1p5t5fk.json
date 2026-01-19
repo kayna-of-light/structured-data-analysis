@@ -1,0 +1,121 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1p5t5fk.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1p5t5fk/the_worlds_first_floating_hotel_was_opened_in/",
+  "title": "The world's first floating hotel was opened in Australia and it ended up in North Korea",
+  "date": null,
+  "content_checksum": "9d961bae08c839245c9f11261f5b1432fe2eedc85312cf5a92320a026f63bb23",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:56:09.514733+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/9djrd2mzy63g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "media_reference",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": true,
+      "skip_reason": "Post is a media reference (floating hotel photo/link) with only a brief comparison to a mallworld dream; no actual dream narrative or describable dream events/locations beyond mentioning a 'huge water slide'."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": "floating hotel (referenced media)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "Photo shows a large multi-deck floating hotel structure on open water; attached floating platform with a fenced tennis court; boats/dock structures alongside."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "waterpark",
+        "location_name": "huge water slide (mentioned as missing from media vs dream)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "associated with mallworld dream; contrasted with floating hotel image",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"the huge water slide\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "low",
+    "extraction_notes": "No dream scene description provided; only a single dream element ('huge water slide') is mentioned. Spatial details extracted are from the attached real-world photo (floating hotel on ocean with adjacent tennis-court platform)."
+  },
+  "response_id": "resp_0e9686c623f1889900696e29c9d3a8819480ac984873bef69c",
+  "usage": {
+    "input_tokens": 11791,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 629,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12420
+  }
+}

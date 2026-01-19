@@ -1,0 +1,153 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1prere7.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1prere7/new_dream/",
+  "title": "New Dream",
+  "date": null,
+  "content_checksum": "5ea93314ef92a803c2410e45362269b68eaca1ead0df8391d3de3da3ed096616",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:04:08.356617+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/vnicg9lv5d8g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "first_visit",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "bummed (woke up; wanted to continue sleeping)",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel_room",
+        "location_name": "resort-looking hotel room (with balcony, closet)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"at a resort looking hotel, in a room\"; has a closet; balcony present"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Opened the closet door and saw a copperhead snake in the closet.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "copperhead snake (in closet)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer had their husband grab the snake and throw it over the balcony.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "helpful",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "husband",
+            "name_or_relation": "husband"
+          },
+          {
+            "entity_type": "creature",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "copperhead snake",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Wanted to lay down and go to sleep; was saying/thinking \"what if there’s more in there\" and wanted to go back to the closet door and open it again; this urge coincided with waking up.",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears to be a reference photo the author found (not a dream map). Visuals suggest a hotel room interior with large window/door and balcony railing overlooking trees/courtyard; used only to support stated features (balcony/room)."
+  },
+  "response_id": "resp_0c4ba40cbd0593e800696e2ba75a208190967aa2cffd7cb401",
+  "usage": {
+    "input_tokens": 11727,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 760,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12487
+  }
+}

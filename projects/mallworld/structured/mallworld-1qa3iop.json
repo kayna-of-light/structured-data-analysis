@@ -1,0 +1,232 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1qa3iop.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1qa3iop/dentist_office_in_a_mall/",
+  "title": "Dentist Office in a Mall:",
+  "date": null,
+  "content_checksum": "abc8122d2b59ea97a6ce4181b4c7c4a41f58303fa171ca74ac044c03a1ad17ab",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:11:57.115022+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "not_mentioned",
+      "final_emotion": "embarrassment",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_food_court",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "middle of the mall / food court",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a mall with a huge tree growing in the middle of the food court; giant, beautiful trees around the mall; birds in some of these trees and they echoed throughout the mall; almost empty save for a few shoppers here and there"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "open dentist waiting/lounge area in the middle of the mall",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "open lounge/waiting area in the middle between some stores that lined each side; out in the open (no walls)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "fountain",
+          "raw_description": "Everything you expect out of a typical waiting area of a dentists office… all out in the middle of the mall, out in the open, no walls… like those massage vendors you see around the mall. There was even a long fish tank behind a row of waiting chairs."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "patient",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "second-floor dental rooms / stations (food-court-like area with endless dentist chairs)",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "up the escalator to the second floor; stations at the top of the escalator",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "The stations at the top of the escalator were larger. It looked like a food court but instead of restaurants, tables and chairs it was just endless dentist chairs."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "patient",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "escalator",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "working_normal",
+        "outcome": "succeeded",
+        "qualities": "dentist said I needed “special work” and to “go up the escalator to the second floor” to more rooms"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "Dreamer receives dental surgery in the open in the middle of the mall; “no such thing as pain or anesthesia.” Dreamer feels embarrassment because “my teeth were so bad” and people could walk over and see.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "dentist",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "indifferent",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a few shoppers here and there who could walk over and see",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dentist says dreamer needs “special work” and to “go up the escalator to the second floor” to more rooms; dreamer goes up.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "dentist",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "task",
+        "description": "Process repeats in larger second-floor stations: painless dental surgery and “even more embarrassment” because “everyone I know was there watching it happen.”",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "dentist (implied continuing care)",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "known_person",
+            "demeanor": "watching",
+            "role": "bystander",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "everyone I know watching it happen",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Location loc_2 and loc_3 are dental-treatment areas situated within the mall; classified as location_type=other because there is no dedicated 'dentist office' type in the schema. Fish tank recorded as water_presence=fountain due to closest available category."
+  },
+  "response_id": "resp_0e08606ad430c19200696e2d82cdf4819587986c9243c73076",
+  "usage": {
+    "input_tokens": 10549,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1915,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12464
+  }
+}

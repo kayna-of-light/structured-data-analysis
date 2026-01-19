@@ -1,0 +1,226 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1omq0t0.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1omq0t0/plane_crashes/",
+  "title": "Plane crashes",
+  "date": null,
+  "content_checksum": "3935380001e9af3dcde995d1ffb053b75ce10781935a9efd99a3d543f6b50501",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:46:14.424183+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/lb9v4np78wyf1.jpg",
+    "https://i.redd.it/pkt2ncm78wyf1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have seen recurring plane crashes (including crashes into a mall/airport area and into the ocean near a beach).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "airplane",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Often board a plane, get seated, take off, and then start to fall down; never actually been in a crash (wake up before it hits the ground)."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "mall/airport outside area",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the mall/airport",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "A plane crashed into the mall/airport outside and just sits there nose into the ground, smoking from the tail. (Image shows a mall facade with large 'MALL' sign and an aircraft stuck nose-down near the entrance; people nearby.)"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "other",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "beach",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "ocean in front; mountains in the distance",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "Plane crash seen over the beach with the mountains in the distance; dreamer is always sitting on the brick wall. (Image shows sandy beach, ocean, distant mountains, and a brick wall in foreground.)"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "audience",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "brick wall (beach wall)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the beach overlooking the ocean",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "Always sitting on the brick wall when the beach-plane crash happens."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "audience",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_3",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "ocean_water",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Ocean at the beach; plane nosedives into the ocean."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Boards a plane, gets seated, takes off, then the plane starts to fall down; wakes up before impact and has never experienced the crash itself.",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Observes a crashed plane outside the mall/airport: it is nose-first into the ground and smoking from the tail; dreamer points out 'oh that was the plane I was on!'",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "People present near the mall entrance (visible in image).",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "From the beach (while sitting on a brick wall), watches a plane flying peacefully overhead before it randomly nosedives into the ocean; mountains are visible in the distance.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes recurring scenarios rather than a single continuous dream. Images appear to be illustrative/AI-style visuals of the described scenes (mall facade with crashed plane; beach with brick wall and burning plane over ocean). Specific indoor mall/airport layout and exact connections are not described."
+  },
+  "response_id": "resp_059efa3d3eed8bd300696e27424d948195b4edd9a77c4519e9",
+  "usage": {
+    "input_tokens": 13260,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1822,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15082
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1qb9duy.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1qb9duy/stupid_question_to_see_if_this_is_a_gift_or_just/",
+  "title": "Stupid question to see if this is a gift or just paranoia",
+  "date": null,
+  "content_checksum": "d4519d3fc47920c0c61c32b3c558748a6908e04b4048f5cb781a2657ff65058d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:12:03.748767+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "multiple_dreams"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking whether recurring pattern of dreams seeming to be followed by opposite outcomes in waking life is a “gift” or paranoia/delusion; includes several brief dream examples (exams, hanging out with friend, buying bass guitar, boyfriend).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "not sure how to feel; stressed",
+      "final_emotion": "stressed",
+      "author_theory": "They describe a perceived pattern: whatever they dream of, the opposite happens later; asks if it is a gift or paranoia/delusion.",
+      "is_asking_if_shared": false
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "task",
+        "description": "Dream about an exam; in the dream they did not pass.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "social",
+        "description": "Dream involving a new friend/talking stage; they were \"just hanging out or something like that\"; nothing negative seen.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "new friend/talking stage; hanging out",
+            "name_or_relation": "new friend/talking stage"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "transaction",
+        "description": "Dream about buying an electric bass guitar.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": "electric bass guitar",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "social",
+        "description": "Dream about boyfriend at the time; nothing negative seen.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "boyfriend at the time; appeared in dream; nothing negative",
+            "name_or_relation": "bf at the time"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "task",
+        "description": "Recent dream (a few days ago) about an upcoming language exam in ~2 months; in the dream they passed and were very happy.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post contains multiple brief dream snippets without described settings/locations, navigation, or environment qualities. Time references are relative to waking life (e.g., ‘about a week later’, ‘August’, ‘a few days ago’, ‘in two months’) rather than in-dream time flow."
+  },
+  "response_id": "resp_062f8b754dc9765d00696e2d900cbc8194baac857fd10f4645",
+  "usage": {
+    "input_tokens": 10522,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1000,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11522
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jq5813.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jq5813/creepy_grocery_store/",
+  "title": "Creepy grocery store",
+  "date": null,
+  "content_checksum": "c3b312572891174defd5850f590438253b9f8b2812ff77f8ce8085cb59f80a71",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:19:51.810481+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/4w736iokrise1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others also dream about a grocery store with a creepy cooler in the back (shown via AI image).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "grocery store",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "normal",
+          "water_presence": "none",
+          "raw_description": "grocery store with a creepy cooler in the back; cooler aisle with glass-door refrigerators/freezers on left, right, and across the back; fluorescent ceiling lights; tiled floor with dark wet-looking patches; shelves stocked with drinks/food; large text 'ENTRY' above the back coolers"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "creepy cooler in the back",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the back of the grocery store",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "normal",
+          "water_presence": "none",
+          "raw_description": "cooler area/aisle: glass-door refrigerated cases lining both sides and the back wall; blue-tinted interior lighting in back cases; stocked bottles/cans; visible signage including 'ENTRY' above and small labels like 'COLD'; shopping cart with items near the right side"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post text provides minimal narrative; most phenomenological detail is derived from the attached AI-generated image representing the 'creepy cooler in the back'. Location types for grocery/cooler are captured as 'other' because 'grocery store/cooler' is not a predefined location_type in the schema."
+  },
+  "response_id": "resp_0d2963f58115fc6900696e213edcdc8190a91f0209fdb3773a",
+  "usage": {
+    "input_tokens": 10517,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 922,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11439
+  }
+}

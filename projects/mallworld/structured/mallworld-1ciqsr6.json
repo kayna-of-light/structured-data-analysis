@@ -1,0 +1,129 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ciqsr6.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ciqsr6/evil_house/",
+  "title": "Evil House",
+  "date": null,
+  "content_checksum": "a207d09a716a765f4f78a68b3c8a17697a0d284c8ffd1572f1b05af0a222c36a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:26:02.674510+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [],
+      "detail_level": "moderate",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have similar recurring dreams/nightmares about living in a large old boarding-house-like house with dark/negative vibes; mentions generating images that resemble it.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "It always has negative energy/dark vibes even if the dream isn’t a nightmare; not necessarily haunted.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "large old house (boarding house vibes)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "oppressive",
+          "crowding": "moderate",
+          "cleanliness": "dirty",
+          "water_presence": "not_mentioned",
+          "raw_description": "A large old house with boarding house vibes; several people live there with you in separate rooms. Always has negative energy/dark vibes even if the dream isn’t a nightmare; not necessarily haunted. Drab and dusty; wood-paneled walls and floors; wooden exterior."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Living in the house with several other people who each have separate rooms.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "friends/acquaintances from irl (sometimes)",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "family (sometimes)",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "nonexistent people (sometimes)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is framed as a question about recurring dreams/nightmares rather than a single detailed dream report. No explicit layout beyond 'large old house' and 'separate rooms'; no specific navigation/sequence or boundaries described. Mentions generating images that resemble the house, but no images were provided in the dataset excerpt."
+  },
+  "response_id": "resp_03486c95b02f856e00696e30d9a3488195bcf2552d46a8dbdf",
+  "usage": {
+    "input_tokens": 10123,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 959,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11082
+  }
+}

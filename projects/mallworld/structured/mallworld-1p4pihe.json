@@ -1,0 +1,170 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1p4pihe.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1p4pihe/look_familiar_i_ended_up_here_last_night_the/",
+  "title": "Look familiar? I ended up here last night. The landfill was bigger than this with things covering the bicycle trail and it was hard to walk through.",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:55:53.472740+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/v7bfg75iz03g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "landfill / bicycle trail area (with nearby 'convenience store' doorway and bar-like counter)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "uncomfortable",
+          "crowding": "empty",
+          "cleanliness": "filthy",
+          "water_presence": "none",
+          "raw_description": "Author text: \"The landfill was bigger than this with things covering the bicycle trail and it was hard to walk through.\" Image shows a narrow passage/trail-like floor path through heavy clutter: scattered toys/blocks/balls, trash, boxes, toppled furniture, sleeping bags/blankets; a door labeled \"CONVENIENCE STORE\" with \"BACK ENTRANCE\"; a wooden counter/shelves with many bottles (bar-like); concrete/gray walls; overall messy, obstructed walkway."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "doorway marked \"CONVENIENCE STORE\" / \"BACK ENTRANCE\"",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the end of the cluttered corridor/trail",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "dirty",
+          "water_presence": "none",
+          "raw_description": "Doorway at far end with sign text visible: \"CONVENIENCE STORE\" and \"BACK ENTRANCE\"; interior beyond doorway appears dark."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "restaurant",
+        "location_name": "wooden counter/bar area with bottles",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "along the right side of the cluttered corridor/trail",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "dirty",
+          "water_presence": "none",
+          "raw_description": "Wooden counter with posts and shelves holding many bottles; adjacent floor area cluttered with debris and objects."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "A narrow passage/trail-like corridor with the walking path obstructed by \"things covering the bicycle trail\"; described as hard to walk through."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Walking/moving through a bicycle-trail-like path in a landfill/cluttered area; the trail is covered with objects and difficult to traverse.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative beyond title text; most details extracted from the single attached image. Image appears AI-generated (highly cinematic, uniform detail, stylized clutter). No explicit boundaries, entities, or completed traversal outcome described."
+  },
+  "response_id": "resp_086648018d1ebd1200696e29a1daf88190aeadd3704128a9f9",
+  "usage": {
+    "input_tokens": 11275,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1351,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12626
+  }
+}

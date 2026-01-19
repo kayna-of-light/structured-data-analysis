@@ -1,0 +1,145 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pl9gfz.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pl9gfz/made_some_familiar_locations_using_ai_with_other/",
+  "title": "Made some familiar locations using AI with other images I've found here.",
+  "date": null,
+  "content_checksum": "489be73b2bd16ef469a39a8c0655c195f1ac422d2538a86369a72097fab9d21f",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:01:36.849203+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/ury2v6ijmv6g1.jpg",
+    "https://i.redd.it/bovmp7bkmv6g1.png",
+    "https://i.redd.it/xsk5jkflmv6g1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "wide open mall-courtyard area (glass ceiling)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "found once after slipping through a crack in a wall in my old elementary school",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "wide open mall-courtyard area; glass ceiling; multi-level balconies/railings; tall columns; tiled floor; large glowing rectangular outline on floor (pink/red and cyan/blue); neon/pink accent lighting along balcony edges"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "school",
+        "location_name": "old elementary school",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "old elementary school; a wall with a crack"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "crawlspace",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "slipping through a crack in a wall"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer slips through a crack in a wall in their old elementary school and finds a wide open mall-courtyard area.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily AI visualizations; only one explicit dream-linked spatial transition is described in text (school wall crack -> mall courtyard). Visuals show an empty multi-level atrium/courtyard with glass ceiling and neon lighting; treated as depiction of the referenced courtyard area."
+  },
+  "response_id": "resp_0d0080882eab570600696e2b0b9e8881979cfc60ea58cad720",
+  "usage": {
+    "input_tokens": 14098,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 734,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14832
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1kasbb7.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1kasbb7/onion_factory/",
+  "title": "Onion Factory",
+  "date": null,
+  "content_checksum": "03e543bb22a5b120e7d854f469cf8564d9ca58d6c681c944d728fac3203391e1",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:32:15.292999+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/6q95jafjvsxe1.png",
+    "https://i.redd.it/aitm5afjvsxe1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "childhood_dream",
+        "nightmare"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": 5,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "child_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "carnival",
+        "location_name": "yellow car",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside an onion factory",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "being trapped in a yellow car; have to get my seatbelt off"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "prisoner",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "factory",
+        "location_name": "onion factory",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "onion factory that is going to explode"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Trapped in the yellow car; had to get seatbelt off.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Had to rescue everyone else in the car.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "everyone else in the car",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Two attached images appear AI-generated: view from inside a yellow-toned car looking out across a flat field toward an industrial building with tall smokestacks in yellow haze. No hand-drawn map present. Location_type for 'yellow car' forced to closest available enum; treated as a distinct location."
+  },
+  "response_id": "resp_0acf4809f8c0527a00696e23ceff4c8194ad79ed72d27491e4",
+  "usage": {
+    "input_tokens": 12505,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 728,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13233
+  }
+}

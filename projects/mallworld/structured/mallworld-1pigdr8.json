@@ -1,0 +1,206 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pigdr8.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pigdr8/hole_in_the_closet/",
+  "title": "Hole in the closet",
+  "date": null,
+  "content_checksum": "576727f4f3745601be7802dd84f59ad7ce0a5dbcf9ab3362cd53399278eb68bd",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:00:32.308322+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have encountered a hole in the back of a walk-in closet leading to a windowless dark room with a clothing rack, and possibly further holes to similar rooms",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "walk-in closet",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "hole in the back of your walk in closet, which you can crawl through"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "windowless room with clothing rack",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "accessed by crawling through a hole in the back of the walk-in closet",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "absent",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "windowless room with a rack of clothing; no light in the room; difficult to look through the garments; most of them are button-ups (belief)"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "another similar room (beyond second hole)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "reached via another hole dug in the wall in the windowless room",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "another similar room (mentioned as in other dreams / belief)"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "crawlspace",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "hole in the back of the walk-in closet; can crawl through; hole seems to be getting smaller over recurring dreams"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "crawlspace",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "another hole dug in the wall in the windowless room, which leads to another similar room"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "visible_location",
+        "can_see_beyond": "no",
+        "crossing_attempted": "yes_explicit",
+        "crossing_outcome": "succeeded",
+        "description": "hole in the back of the walk-in closet; crawl-through access; hole seems to be getting smaller"
+      },
+      {
+        "location_id": "loc_2",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "visible_location",
+        "can_see_beyond": "no",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "not_mentioned",
+        "description": "another hole dug in the wall in this room, which leads to another similar room"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "search",
+        "description": "tries to look through garments on the clothing rack; difficult due to no light; believes most garments are button-ups",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "crawls through a hole in the back of the walk-in closet to access a windowless room",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Dream report is described in question form; recurrence is explicit. The second hole/next room is described as 'I believe' and 'I've also had dreams where', so details and traversal outcome are uncertain. Time data is limited to recurrence plus the noted change that the closet hole 'seems to be getting smaller' while the room 'stays the same.'"
+  },
+  "response_id": "resp_0b94192956ec0d4d00696e2ad25900819085d37b973a800f67",
+  "usage": {
+    "input_tokens": 10122,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1685,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11807
+  }
+}

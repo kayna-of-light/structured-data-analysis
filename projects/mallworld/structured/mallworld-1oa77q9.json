@@ -1,0 +1,200 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1oa77q9.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1oa77q9/the_underground_apartment_complex/",
+  "title": "The underground apartment complex",
+  "date": null,
+  "content_checksum": "c9f292024a4d2139e035d1ec11d4f1d22a4f439293035cd78ed7518346532ffa",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:39:32.019538+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/of7lpupdpxvf1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recurring_dream",
+        "lucid_dream",
+        "nightmare"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "variation",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "woke up in a jolt",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "elevator (to far underground)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "took an elevator far underground"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "apartment",
+        "location_name": "underground town / apartment-like complex",
+        "position": {
+          "vertical": "lowest",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "reached by elevator far underground",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "timeless",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "crowding": "moderate",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "a town which had a liminal apartment-like layout with the center of the town in the middle and all the houses lining the walls and stacked on top of each other like an apartment building; off-white color"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "lost",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "parking_lot",
+        "location_name": "central park/courtyard area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the center of the underground town/complex",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "timeless",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "crowding": "moderate",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "a park in the center with astroturf where everyone congregated"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "elevator",
+        "direction": "down",
+        "difficulty": "easy",
+        "mechanism_function": "working_normal",
+        "outcome": "succeeded",
+        "qualities": "took an elevator far underground"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "Observed people congregating in the central astroturf park/courtyard; they wore white garments (kimonos/linen). Initially they did not notice the dreamer.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "indifferent",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people in white garments like kimonos and linen clothing",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "conflict",
+        "description": "After noticing the dreamer, the group formed a circle around the dreamer and started singing in off-putting harmonies; the dreamer became paralyzed, fell back, floated a few feet off the ground, and felt heavy vibrations; woke up in a jolt.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "threatening",
+            "role": "blocker",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "formed a circle around me and started singing in these off putting harmonies; wore white garments",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Image appears to be a photo of an interior courtyard/atrium with off-white walls and many windows surrounding a central yard with green turf and paved cross paths; treated as reference imagery rather than a hand-drawn map. Some qualities (e.g., bright artificial light, maintained/clean) are inferred from the provided image matching the described place."
+  },
+  "response_id": "resp_0a50e52d66bc8c3400696e25d0b27481909ebc98fc4f93b92e",
+  "usage": {
+    "input_tokens": 10473,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1105,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11578
+  }
+}

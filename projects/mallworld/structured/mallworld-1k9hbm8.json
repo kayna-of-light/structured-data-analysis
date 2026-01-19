@@ -1,0 +1,192 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k9hbm8.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k9hbm8/anyone_been_to_this_place/",
+  "title": "Anyone been to this place?",
+  "date": null,
+  "content_checksum": "576739ab33ae81a6a46b167a3e711f9382ee23187e86d7e62e620a2ac5826125",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:30:15.373823+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/jjfns110ngxe1.jpg",
+    "https://i.redd.it/j3175110ngxe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to the same mall-like dream place (friendlier sections vs nightmare mall).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "Friendlier sections of my mall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "clean",
+          "water_presence": "not_mentioned",
+          "raw_description": "“friendlier” sections; floor is “extremely polished”; “sunset type glow throughout the dream”; feels “somehow present day but also somehow not” (temporal feel). Visual: bright orange/pink sunset glow; large skylight/clerestory; reflective polished tile; storefronts labeled “TOYS” and “ELECTRONICS”; central escalator; multi-level atrium with railings."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": "Nightmare mall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "Contrasted with the friendlier sections of the same mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "filthy",
+          "water_presence": "not_mentioned",
+          "raw_description": "“Nightmare mall”; “escalators are very prominent”; “Some of them go very quickly with a gap in between platforms”; “most have no railings”; “The orange glow is more prominent here”; “feels filthy and apocalyptic.” Visual: abandoned/derelict mall interior; debris/dirt; darkened storefronts; heavy orange light through large arched glass roof; multiple escalators descending toward a lower level; scuffed floors and worn surfaces."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "bathroom_public",
+        "location_name": "Bathroom mazes (in nightmare mall)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "Within/associated with the nightmare mall",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“Bathroom mazes are prominent.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "Visual: central escalator in friendlier mall atrium connecting levels; railings present (image)."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "escalator",
+        "direction": "unknown",
+        "difficulty": "difficult",
+        "mechanism_function": "dangerous",
+        "outcome": "not_mentioned",
+        "qualities": "“escalators are very prominent”; “Some of them go very quickly with a gap in between platforms”; “most have no railings.” Visual: multiple escalators descending toward a lower level."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Dreamer feels pursued in the nightmare mall; cannot see what is pursuing them; it “always seems to know where I am.”",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Unseen pursuer; “I can never see it” but it knows where the dreamer is.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Two attached images appear AI-generated (not hand-drawn maps). Spatial details inferred from images: multi-level mall atriums, skylight/arched roof, storefronts, and escalators. Bathroom maze is mentioned but not visually shown; no explicit route between friendlier and nightmare sections described."
+  },
+  "response_id": "resp_05778697445d517300696e238f2f1c81969ad308818a6663f6",
+  "usage": {
+    "input_tokens": 13802,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1205,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15007
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pvue91.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pvue91/pics_from_my_upcoming_mall_horror_game/",
+  "title": "Pics from my upcoming mall horror game.",
+  "date": null,
+  "content_checksum": "9539bf97a02701649e05a4c52d9383e8e6457cd9a0e47e305ec8518ef792adcd",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:06:40.568913+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/x9ibq43cwg9g1.png",
+    "https://i.redd.it/r959b13cwg9g1.png",
+    "https://i.redd.it/9jiasz2cwg9g1.png",
+    "https://i.redd.it/8oyr9z2cwg9g1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "other",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "crowding": "sparse",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Large open mall atrium with tiled floor; wide escalator rising to an upper level; tall colored columns (blue/green/orange/red); dark/closed storefronts; freestanding illuminated kiosk/advertising display; a few mannequin-like human figures standing at distance."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "varies",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "upper levels overlooking a central atrium",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Multi-level mall interior with railings/balconies; ceiling with many recessed lights; strong purple/blue neon strip lighting; triangular pennant bunting hanging across; escalators visible in distance; silhouettes of palm trees on an upper level."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "corridor leading toward escalators",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Long mall corridor with glossy tiled floor; purple/pink ambient lighting; dark storefronts on both sides; a lit storefront entry on the left (blue light); escalator staircase at the far end; upper-level balconies overhead."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "amusement_park",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Indoor play structure/soft-play area with colorful tubular climbing frames; red lighting; inflatable/soft slide-like structure in foreground; surrounding darkness with small multicolored points of light in the background."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "escalator",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "not_mentioned",
+        "outcome": "not_mentioned",
+        "qualities": "Wide escalator from ground-level atrium up to an upper balcony level."
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_2",
+        "connection_type": "escalator",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "not_mentioned",
+        "outcome": "not_mentioned",
+        "qualities": "Escalator visible at end of corridor leading up toward upper levels."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is not a dream report; it shares screenshots from an upcoming mall horror game. Extracted only visible environmental/spatial features from the images (no narrative events, no explicit traversal, no entities described beyond mannequin-like figures shown)."
+  },
+  "response_id": "resp_0cbe7178486ea70400696e2c1d83f881949cb7d122f1a2b741",
+  "usage": {
+    "input_tokens": 17152,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1084,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 18236
+  }
+}

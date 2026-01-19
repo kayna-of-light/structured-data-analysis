@@ -1,0 +1,314 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1q2w7in.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1q2w7in/last_night_i_dreamt_about_mall_world_food_court/",
+  "title": "Last night I dreamt about mall world food court",
+  "date": null,
+  "content_checksum": "8c474020c358ecfea2b47fec5421bc5e9159429997ebeecd5d2486e0ee857a9c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:09:45.990255+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "first_visit",
+      "time_flow": "normal",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_food_court",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "food court at the mall; dining room; almost every table was filled"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "Baskin Robbins",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the food court",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "in line at baskin robins"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "Food court dining room / seating area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "part of the food court",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "went into the dining room; almost every table was filled; empty seats hard to find; note on a seat said \"RV will be right back!\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "Outside (walking area outside the mall)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside after leaving the mall/food court",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "walking outside trying to come up with something else to do since it was the weekend"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "went into the dining room from the Baskin Robbins line/area"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_4",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "left the food court/mall area and were walking outside"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "transaction",
+        "description": "Waited in line at Baskin Robbins. Girl in front ordered a small ice cream with a sprinkle waffle cup, then changed to a medium. Dreamer ordered a medium cotton candy ice cream with sprinkle waffle cone/cup; it was put in a regular cup and dreamer asked for the sprinkle cup again.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "girl in front of us ordering ice cream; changed order from small to medium",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "cashier",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "ice cream server/cashier who initially put it in a regular cup",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "boyfriend with the dreamer",
+            "name_or_relation": "boyfriend"
+          }
+        ],
+        "transaction_item": "medium cotton candy ice cream with sprinkle waffle cone/cup",
+        "transaction_blocker": "served in a regular cup; dreamer had to ask for the sprinkle cup again"
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Looked for seats in the dining room; almost every table was filled. Saw what seemed like an empty seat but there was a note that said \"RV will be right back!\" and someone told them the seat was taken. Eventually found two empty seats together and sat down.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "boyfriend with the dreamer",
+            "name_or_relation": "boyfriend"
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "someone told us the seat was taken",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "other",
+        "description": "A server came over with fries that were barely filled; dreamer said it wasn't enough even though they knew they didn't order fries. Server came back with 2 cheeseburgers and more fries and left them at the table. A girl stared at them because she knew the food was hers. Dreamer did not eat the burgers because they had ketchup; they finished ice cream, threw the food out, and left.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "server who brought fries, then returned with 2 cheeseburgers and more fries",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "watching",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "some girl was staring at us because she knew the food was hers",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "boyfriend with the dreamer",
+            "name_or_relation": "boyfriend"
+          }
+        ],
+        "transaction_item": "fries; 2 cheeseburgers and more fries (brought to table without ordering)",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "search",
+        "description": "Walking outside trying to come up with something else to do since it was the weekend; considered going to a live music bar but couldn't think of anything to do.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "boyfriend with the dreamer",
+            "name_or_relation": "boyfriend"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Some places are described functionally (e.g., 'dining room' and 'outside') without specific visual qualities like lighting or cleanliness. 'Sprinkle waffle cup/cone' is preserved as written though wording varies."
+  },
+  "response_id": "resp_02861ae7292a60fc00696e2cf70a1481949d0324c19ebc4e2b",
+  "usage": {
+    "input_tokens": 10343,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2624,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12967
+  }
+}

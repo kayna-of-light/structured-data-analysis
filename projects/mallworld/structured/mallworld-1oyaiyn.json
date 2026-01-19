@@ -1,0 +1,126 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1oyaiyn.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1oyaiyn/has_anyone_dreamed_about_a_daycare_center/",
+  "title": "Has anyone dreamed about a daycare center?",
+  "date": null,
+  "content_checksum": "60d27b630f6a9cb299570d9af4210b6594192efa6d943ecd9c5e599c96d702ea",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:51:46.741180+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "nightmare",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have dreamed about a daycare center like the one described",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "looping",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "unclear",
+      "occupation_in_dream": null,
+      "initial_emotion": "in danger; trying to leave",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "daycare center",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“daycare center but it looks like the circus from the amazing digital circus”… “room with bright rainbow colored mats, walls, toys, cribs”… “The lights are always off, it’s always dark, and the windows are always closed with curtains so there’s very little light but just enough to be able to see colors and things just not clearly.”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "prisoner",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "no",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "Windows are “always closed with curtains”; dreamer “try to find different ways to leave but end up getting caught.”"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer tries to find different ways to leave but gets caught each time; after being caught they “only see black” and then are in the daycare room again.",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Kidnapper/someone the dreamer is in danger from",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only one primary location is described (a daycare room). Spatial layout beyond closed/curtained windows is not described. The ‘only see black’ moment is treated as a repeated transition/reset back into the daycare room."
+  },
+  "response_id": "resp_0e1e8da0eb8939e800696e28d309548197a7a1999eff60fd6d",
+  "usage": {
+    "input_tokens": 10248,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 931,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11179
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1oyympg.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1oyympg/saw_this_at_the_live_casino_hotel_in_philadelphia/",
+  "title": "Saw this at the Live! Casino Hotel in Philadelphia",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:52:44.477560+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/i19k6qhizo1g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "media_reference",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": true,
+      "skip_reason": "No dream narrative; post is a real-world photo taken at a casino hotel."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": "Live! Casino Hotel (Philadelphia) - hotel lobby/entry area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "moderate",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Interior hotel lobby with large 'HOTEL' sign overhead; patterned metallic wall panels; glossy floor; blue-and-gold patterned carpet/rug; seating area with chairs on right; holiday decor including lit Christmas trees; hallway/entrance ahead with red carpet and a lit archway; overhead chandelier-like hanging fixtures; EXIT sign visible."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "View down a corridor/open passage from lobby area toward a darker entrance framed by lights and red carpet."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single real-world photo; no dream events described. Spatial data limited to visible lobby layout and forward corridor/entrance."
+  },
+  "response_id": "resp_07d8a5155a65286c00696e290001f481968279558693261c6d",
+  "usage": {
+    "input_tokens": 11267,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 719,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11986
+  }
+}

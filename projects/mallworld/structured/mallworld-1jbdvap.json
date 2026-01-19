@@ -1,0 +1,259 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jbdvap.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jbdvap/anyone_else_have_a_reoccurring_house_thats/",
+  "title": "Anyone else have a reoccurring house that’s familiar but never seen irl? Maybe Victorian looking?Lots of wood and an huge finished but empty endless attic? I always know the house and neighborhood in my dream. Also I keep finding a little random shop in this never ending attic.",
+  "date": null,
+  "content_checksum": "639b2d4218a5f07ec3230a2818d64f87666be6c0b13d23330238ce4414fe659d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:11:27.359078+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have a recurring familiar-but-not-IRL house/attic with a hidden shop; asks if someone can explain what it means",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“white sided house with lots of dark wood inside”; staircase railing with “white spindles” and “dark cherry colored wood,” “pretty swirly and polished”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "attic",
+        "location_name": null,
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "attic of the house",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“huge finished but empty endless attic”; “giant empty huge dark wood attic”; “vast attic”; dreamer gets “lost” in it; has a “little attic window” looking out over streets below"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "neighborhood",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "seen/overlooked from the attic window",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Neighborhood seen often in dreams; “very Americana looking and upper middle class”; “Lawns and sidewalks”; dreamer is “always watching the streets below”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "mall_store",
+        "location_name": "little shop / bodega (in attic)",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "appears within the attic; found by wrong turns while lost",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "A “little random shop in this never ending attic”; “Has some Christmas lights; dim yellowy lighting”; “small isles”; “a few refrigerated cases for drinks”; sells “snacks” and “random items”; “always very stocked bordering on cluttery”; “Seems to just appear out of nowhere in this vast attic”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Staircase described with “white spindles” and “dark cherry colored wood” railing"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_4",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Shop is reached by “taking a wrong turn” while lost in the attic; dreamer “can never directly find it” and “can never willingly find it,” only “stumble upon it”; it “just appears”"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Visual access: attic “overlooks” the neighborhood; dreamer watches streets below from the attic window"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_4",
+        "interaction_type": "social",
+        "description": "Dreamer finds dad working the register “like it was totally normal.” Dad says he’s “here all the time.”",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "neutral",
+            "role": "cashier",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": null,
+            "name_or_relation": "dad"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "transaction",
+        "description": "Dreamer often buys items at the attic shop: “a soda and or some antique toy from my youth.”",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "neutral",
+            "role": "cashier",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": null,
+            "name_or_relation": "dad"
+          }
+        ],
+        "transaction_item": "soda; antique toy from youth",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer gets lost in the “giant empty” attic; finds the shop by accident via “a wrong turn.” Cannot find it intentionally; surprised when found; describes it like “finding new secret passageways in places you know.”",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer watches the streets below from the attic window; attic overlooks a familiar dream neighborhood.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "No explicit time-of-day or time-flow described; temporal data marked true due to repeated/recurring pattern (“often,” “always,” “twice,” “one day”). No explicit boundary/edge-of-world described."
+  },
+  "response_id": "resp_046cada47887aef300696e1f504fc081938a7f172b18842d83",
+  "usage": {
+    "input_tokens": 10419,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2201,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12620
+  }
+}

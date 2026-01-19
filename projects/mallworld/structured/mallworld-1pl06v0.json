@@ -1,0 +1,235 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pl06v0.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pl06v0/my_reoccurring_dream_about_a_artificial_world/",
+  "title": "My reoccurring dream about a “artificial world”…",
+  "date": null,
+  "content_checksum": "cad2f380f11fc58b106248e3725433b3b46dffcc2c312e827afffe184d829f83",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:01:30.458862+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have experienced similar recurring dreams of an artificial/fake world (stores, neighborhoods, forbidden gated area with police).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "excited to go shopping (before realizing it is not real)",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "grocery/department store",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Store appears normal/real at first with 'name brand food' but on closer look items are 'off brand/ not exactly real'; 'everything is always super super cheap'; dreamer gets excited to 'go shopping' before realizing it 'not even the real thing'."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "neighborhood",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "A simple 'world' that 'almost felt like a video game'; dreamer walking past people in a neighborhood; with strangers; dreamer tried to drink a cup of water but 'couldn’t' (physically couldn’t); could walk (I think) but couldn’t 'eat, drink, sleep ect'."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "neighborhood",
+        "location_name": "forbidden gated community",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "forbidden area within the artificial world",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "A 'forbidden' area: 'basically like a gated community'; 'always nighttime'/'always dark' when seen; 'big closed in gated community neighborhood thing'; surrounded by a 'white fence'; neighborhood/community is 'very big' and 'seems like it goes on for a time'; cops seen when trying to climb over the fence."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "no",
+        "dreamer_role": "trespasser",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Dreamer encounters/sees a 'forbidden area' within the world; approach implied."
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_3",
+        "connection_type": "flying",
+        "direction": "diagonal_up",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "failed",
+        "qualities": "To enter, dreamer would have to 'climb over the white fence'; attempt made but cops seen; dreamer 'never get in there'."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_3",
+        "boundary_type": "fence",
+        "direction": "not_mentioned",
+        "beyond": "visible_location",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "yes_explicit",
+        "crossing_outcome": "failed",
+        "description": "White fence enclosing a large gated community/forbidden area; dreamer would have to climb over; cops present when trying; dreamer never gets inside."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Dreamer goes shopping; items appear real at first (name brand) but on closer look are off-brand/not exactly real; prices are 'super super cheap'.",
+        "outcome": "abandoned",
+        "entities_involved": [],
+        "transaction_item": "groceries/name-brand-looking food items",
+        "transaction_blocker": "Realization that items are off-brand/not exactly real (artificial)."
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Dreamer is with strangers; they say 'you can’t do anything physical here.'",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Strangers accompanying the dreamer in the neighborhood/world.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "Dreamer tries to drink a cup of water but physically cannot; also cannot eat/drink/sleep, though can walk (I think).",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "escape",
+        "description": "Dreamer attempts to climb over the white fence to enter the forbidden gated community but sees cops; never gets in (either woke up or did not make it through).",
+        "outcome": "prevented",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "blocker",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Cops seen when dreamer tried to climb over the fence.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Presence of cops; fenced perimeter."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes multiple recurring dream scenarios rather than a single continuous dream. Spatial detail is strongest for the forbidden gated community (white fence boundary, nighttime/dark). Other areas have limited layout specifics."
+  },
+  "response_id": "resp_09e518922db46e3c00696e2b04a7a08196b7ff6f71cf4ef679",
+  "usage": {
+    "input_tokens": 10576,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2046,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12622
+  }
+}

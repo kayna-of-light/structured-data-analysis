@@ -1,0 +1,314 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jji56a.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jji56a/creepy_theater_and_elevator/",
+  "title": "Creepy theater and elevator",
+  "date": null,
+  "content_checksum": "3fc7694165ea52b4427736affab772422a8757a20a61cce8978d1b76b5bd9524",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:17:10.066098+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/kf6lno2axtqe1.png",
+    "https://i.redd.it/lnxbot7axtqe1.jpg",
+    "https://i.redd.it/3fhkcrbaxtqe1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recent_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have had a similar dream (creepy theater/elevator/basement hallway with eyes)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "freaked out; 'one of the freakiest dreams I've had in a while'",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_theater",
+        "location_name": "creepy old movie theater lobby",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“giant lobby of this creepy old movie theater”; “small circular concession area”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "theater entrance / theater door at top of stairs",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the top of tall red velvet stairs from the lobby",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Entrance to the theater; warned “not to go into the theater or I'd be taken or affected in some way”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "elevator (near theater lobby)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "near the ticket person / near the stairs in the theater lobby",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“nearby elevator with 3 other people inside”; elevator rises quickly, maxes at “floor 136”, then quickly descends below main level"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "cave",
+        "location_name": "purple cave-like hallway (basement/underground) with eyes on every surface",
+        "position": {
+          "vertical": "lowest",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "below the main level; reached by elevator after descending",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "timeless",
+          "state": "not_mentioned",
+          "atmosphere": "oppressive",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“purple cave like hallway with eyes on every surface… walls, the floor, the ceiling, and pillars all had eyes”; “deathly quiet”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "direction": "up",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "partial",
+        "qualities": "“tall red velvet stairs”; later clarified “much taller, without any railings, leading up to the theater door at the top”"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "direction": "down",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Returned back down the tall red velvet stairs to near the ticket person"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Moved from the lobby area into a nearby elevator"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_3",
+        "connection_type": "elevator",
+        "direction": "up",
+        "difficulty": "normal",
+        "mechanism_function": "working_fast",
+        "outcome": "succeeded",
+        "qualities": "Elevator “started quickly rising”; “maxing out at floor 136”"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "elevator",
+        "direction": "down",
+        "difficulty": "difficult",
+        "mechanism_function": "working_fast",
+        "outcome": "succeeded",
+        "qualities": "Then “quickly starts descending”; goes “below the main level and keeps falling”; stops and doors open to the purple cave-like hallway"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Ticket person told the dreamer not to go into the theater or they'd be taken/affected in some way.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "unfriendly",
+            "role": "cashier",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "ticket person",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer walked up to the theater entrance but decided not to go in.",
+        "outcome": "abandoned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "A giant color-changing transparent liquid came out of the theater and formed into a head; it said “SMOKE. SMOKE. SMOKE.”",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "threatening",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "giant color-changing transparent liquid forming into a head; spoke the words “SMOKE. SMOKE. SMOKE.”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "escape",
+        "description": "Dreamer freaked out and entered the elevator with 3 other people; elevator rose to floor 136 then descended below main level.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "3 other people inside the elevator",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "observation",
+        "description": "Doors opened to a deathly quiet purple cave-like hallway with eyes on walls, floor, ceiling, and pillars; felt like they were supposed to go out, but none wanted to leave the safety of the elevator.",
+        "outcome": "prevented",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "same 3 other people present; none wanted to leave the elevator",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Unwillingness/fear of leaving the elevator into the hallway"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Images appear AI-generated (not a hand-drawn map). Visuals reinforce: ornate theater lobby with red-carpet stairs; smoky/transparent head; elevator opening to a purple organic-looking corridor covered in eyes. Author notes AI images are not exact; basement/eyes close but 'more cave-like' in the dream; stairs taller and without railings."
+  },
+  "response_id": "resp_046bade9108ca1b000696e20579c808196ae95fcd26a7da90f",
+  "usage": {
+    "input_tokens": 12780,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 2611,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15391
+  }
+}

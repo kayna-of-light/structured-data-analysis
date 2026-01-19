@@ -1,0 +1,220 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1osmtnv.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1osmtnv/no_electricity_sundays/",
+  "title": "No electricity sundays ??",
+  "date": null,
+  "content_checksum": "c1b13685788d95a4fcb56bfbce885347f957341da58342601db1af8aca4d50ec",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:47:13.285607+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "main road",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "morphs into the train station; right outside the big doors for the theatre",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“Streets full and lit up, full of people late at night.” After “late night party festival city nights”."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "train_station",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": "right outside the big doors for the theatre; the main road sort of morphs into it",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Trying to get on the train; station is where the main road “sort of morphs into” it."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "theater",
+        "location_name": "the theatre",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": "big doors adjacent to/outside the train station area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“big doors for the theatre” near the train station."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "hotel",
+        "location_name": "current hotel allocation",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Dreamer trying to get home “or to my current hotel allocation.”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "guest",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "“the main road sort of morphs into” the train station"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer tried to get on the train to get home / to their current hotel allocation, but was told trains were down and no buses were running due to a “no electricity Sunday”.",
+        "outcome": "prevented",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "East Asian female working at/near the train station; “clearly nervous to tell us.”",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "confusing",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Crowd present at the station; “We were all confused and annoyed.”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Trains down; no buses running; “no electricity Sunday”."
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Fireworks / sky symbols and events were present; described as coinciding with big party nights; streets full and lit up late at night.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Some elements (recurrence, crowding/light qualities for specific sub-areas) are implied from phrasing like “the station” and “many late night party festival city nights,” but explicit recurrence frequency is not stated."
+  },
+  "response_id": "resp_035664c05456dc5f00696e27b7729881909cd7507472d9f527",
+  "usage": {
+    "input_tokens": 10152,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1730,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11882
+  }
+}

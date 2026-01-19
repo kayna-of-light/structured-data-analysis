@@ -1,0 +1,162 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ob3354.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ob3354/the_weather_outside_mall/",
+  "title": "The weather outside mall",
+  "date": null,
+  "content_checksum": "f39e6448a3ba9b1c4174802973d3edbc790e6546af76bbe79506c48eb1fdbcde",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:40:24.620988+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/7acqe6zo95wf1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "train_station",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "waiting for the train to arrive to mall world",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"It's always foggy but with sun peaking through. Here as I wait for the train to arrive to mall world.\" \"Everyone is silhouette and minding their business yet I hear lots of chattering.\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": "mall world",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "destination reached by train from the station/platform",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Mentioned as \"mall world\"; train is arriving to it."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "vehicle",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "still_in_progress",
+        "qualities": "Waiting for the train to arrive to mall world"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Waiting for the train to arrive to mall world.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "indifferent",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"Everyone is silhouette and minding their business\"; \"lots of chattering\"",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "family_member",
+            "demeanor": "indifferent",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "Traveling with a family member; \"even they are not talking to me\"",
+            "name_or_relation": "family member"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears to depict a foggy train platform/terminal with strong light beams and silhouetted people; treated as illustrative of the described scene (not a hand-drawn map). No explicit sequence beyond waiting; recurrence inferred from \"always\" phrasing."
+  },
+  "response_id": "resp_0160b8e5a365b2c300696e2615ae2881908a029469ec6fc6e8",
+  "usage": {
+    "input_tokens": 11467,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 826,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12293
+  }
+}

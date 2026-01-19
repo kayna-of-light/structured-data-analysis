@@ -1,0 +1,217 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ploogr.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ploogr/large_dinning_hall_in_mansion_and_the_trail_in/",
+  "title": "Large dinning hall in mansion and the trail in the woods outside the house",
+  "date": null,
+  "content_checksum": "7dee2078d8f21053d83c0fdc7f0e99b504d347035689747b5aa474ca5901dafc",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:03:19.654059+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/z777szakuz6g1.jpg",
+    "https://i.redd.it/nr2y10bkuz6g1.jpg",
+    "https://i.redd.it/bg8970bkuz6g1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "enjoying the peaceful night",
+      "final_emotion": "scared; shot; woke up",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mansion",
+        "location_name": "large dining hall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside mansion/castle-like house",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "peaceful",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "large dining hall; 'one table'; 'peaceful night through all the glass windows around the room'; outside of this room was like a castle almost"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mansion",
+        "location_name": "small bedroom in the back",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the back of the mansion",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "small bedroom in the back; exited through the window"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "forest",
+        "location_name": "trail of candles in the woods",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the mansion, reached from the back bedroom window",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "trail of candles in the woods; walking the trail; through the trees could see a little girl jumping rope in the forest"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "leaving the mansion through a small bedroom's window; it led to a candle-lit trail in the woods"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Standing in the dining hall enjoying the peaceful night through glass windows around the room.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Ropes and legs appeared in all the windows; FBI busted in every window dropping down off ropes; they yelled 'stop put your hands up'. Dreamer turned to run; they had surrounded the dreamer and told them to put their hands up; dreamer was shot and woke up.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "hostile",
+            "role": "authority",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "FBI agents dropping down off ropes into every window; yelling commands",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Walking the candle trail in the woods.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "Through the trees, the dreamer could see a little girl jumping rope in the forest.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "little girl jumping rope",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear to be photos of two paintings (castle-like exterior/structure; candle-lit forest trail at night). Not a hand-drawn map layout; treated as illustrative images. Some qualities (lighting/time) inferred from explicit 'peaceful night' and visual night sky/moon depiction in paintings."
+  },
+  "response_id": "resp_0947f1ebd0e640da00696e2b1c62288195b2d70898df9edde9",
+  "usage": {
+    "input_tokens": 14266,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1667,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15933
+  }
+}

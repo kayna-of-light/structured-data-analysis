@@ -1,0 +1,195 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\rxxd6n.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/rxxd6n/toy_store_huge_slide/",
+  "title": "Toy store huge slide",
+  "date": null,
+  "content_checksum": "ba49cf777d40337857917773b58152384f5af17c350b68fa3a9eac2bf65282d4",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:15:27.695542+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_external_link"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "inconsistent",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "doesn't want to go down the slide; pressured by people behind",
+      "final_emotion": null,
+      "author_theory": "Author is unsure whether this is a dream, a memory, or both; mentions possible real-life hotel waterslide and a video game toy store level as associations.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "large toy store / seemingly never-ending room with a tall slide",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "crowding": "crowded",
+          "cleanliness": "sterile",
+          "water_presence": "not_mentioned",
+          "raw_description": "A \"seemingly never-ending room\" that \"goes on longer than I can even see\"; \"large toy store\" with \"tall boxes of colorful toys\" against \"sterilized clean silver\" of most of the store; contains a \"very tall\" dark green half-tube slide; there is a line behind the dreamer pushing and getting irritated."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "top of the tall slide (in the toy store room)",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the never-ending toy store room",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Dreamer is \"on top of a very tall slide\"; doesn't want to go down; \"there's a line behind me and they won't let me back off\"; people are \"pushing up against me\" and saying \"just go!\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "front of the place with glass doors",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": "front of the toy store / infinity room",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "After somehow getting down, the dreamer is \"headed for the glass doors at the front of the place.\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "A very tall dark green half-tube slide; dreamer eventually goes down but does not remember the act of going down; transition is fragmented (\"I don't remember doing so\")."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "still_in_progress",
+        "qualities": "Dreamer is headed toward glass doors at the front of the place."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "A line/crowd behind the dreamer prevents backing off the slide; they push forward and become increasingly irritated, telling the dreamer to go down (\"just go!\").",
+        "outcome": "prevented",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "unfriendly",
+            "role": "blocker",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "People in line behind the dreamer, pushing up against them, sounding more and more irritated.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer eventually goes down the slide, but does not remember doing so; next awareness is being headed toward the front glass doors.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Author reports the experience as fragmented and is unsure whether it is a dream, a memory, or both. External links describe possible real-life/video-game associations but are not treated as dream locations."
+  },
+  "response_id": "resp_0d867fcee49fb03500696e2e4e8f2c81979c22cd67ad1976e8",
+  "usage": {
+    "input_tokens": 10433,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1661,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12094
+  }
+}

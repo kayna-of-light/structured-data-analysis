@@ -1,0 +1,135 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jljpdw.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jljpdw/welcome_to_alt_vegas/",
+  "title": "Welcome to Alt Vegas",
+  "date": null,
+  "content_checksum": "9e9df8d8018f97569797e781aa1069674a0f2577b052ed1f5feed38953eb07f9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:17:20.652580+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/hmniog9d3cre1.jpg",
+    "https://i.redd.it/17yqid9d3cre1.jpg",
+    "https://i.redd.it/z0owod9d3cre1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "single desert street (Alt Vegas)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "along which older atrium-style buildings/casinos are located",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "uncomfortable",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“series of older atrium style buildings along a single desert street”… “constant sandstorms making it difficult to walk between buildings”… “nobody appears to live here”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "casino",
+        "location_name": "atrium-style casino buildings (handful of casinos)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "located along the single desert street",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "neutral",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“Every casino is an atrium style building, incredibly small by Vegas standards with a casino in the middle.” “Nothing… touched since the 1970’s… slot machines haven’t been updated in 50 years.” (Images show tall block-like buildings in a desert; interior atriums with multiple balcony levels, skylight ceilings, rows of slot machines and gambling tables; warm lighting; patterned carpet.)"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Walking between buildings; “constant sandstorms making it difficult to walk between buildings.”"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear AI-generated and used as visual support: desert cluster of atrium-topped buildings and large interior atrium casino floors. No specific named casinos, no explicit sequence of visiting multiple casinos, and no explicit interactions (e.g., gambling) described."
+  },
+  "response_id": "resp_09d9541c599f832c00696e2096d23c819687583b3846a86c38",
+  "usage": {
+    "input_tokens": 13792,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1007,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14799
+  }
+}

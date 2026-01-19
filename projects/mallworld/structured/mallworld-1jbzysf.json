@@ -1,0 +1,149 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jbzysf.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jbzysf/strip_of_bars/",
+  "title": "Strip of bars?",
+  "date": null,
+  "content_checksum": "a1c485a1f3094cd4fee612d1d19e53d43fabefc8e3f5f5366e1832f5ccf9293b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:11:58.138591+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "shared_dream_claim",
+      "content_flags": [
+        "mentions_other_dreamers",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been met in the same recurring strip of bars / if others have been there",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "longing / constantly returning and longing",
+      "final_emotion": null,
+      "author_theory": "Almost as if they are walking too (other people not like regular dream characters).",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "strip of bars",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "Area stretches about five or six blocks; bars lined up next to each other along the street",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“area stretches about five or six blocks, with bars lined up next to each other, all with open-style seating”; “always breezy”; “streets are filled with people and friends”; “always dimly lit with candles and string lights.”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "restaurant",
+        "location_name": "horseshoe-shaped / semi-circular bar",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "Within the strip of bars area; one of multiple bars lined up next to each other",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "People “sit at a horseshoe-shaped or semi-circular bar, drinking incredible cocktails.” Lighting: “dimly lit with candles and string lights.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Dreamer strikes up conversation at the bar and meets new people.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "New people met at the bar; described as not seeming like “regular dream characters.”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "transaction",
+        "description": "People drink cocktails at the bar (including the dreamer implied by being there).",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": "incredible cocktails",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No explicit sequence of visits or specific bar names; recurrence inferred from “constantly returning.” Lighting sources (candles, string lights) and breezy street are treated as location qualities. Mentions of “other walkers” captured as strangers encountered, without asserting shared-dream validity."
+  },
+  "response_id": "resp_0cc7c935d472846500696e1f769288819591057525b60330db",
+  "usage": {
+    "input_tokens": 10132,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1177,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11309
+  }
+}

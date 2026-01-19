@@ -1,0 +1,143 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jigsww.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jigsww/do_these_escalators_and_the_abandoned_pool_look/",
+  "title": "Do these escalators and the abandoned pool look familiar to anyone?",
+  "date": null,
+  "content_checksum": "735b06ac218fec489b913917b4848a8ccd80f2af407321a31c1547d54cf85419",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:15:30.342230+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/v1rqm4ervjqe1.jpg",
+    "https://i.redd.it/ui5htcervjqe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if escalators and an abandoned pool look familiar to others / shared location recognition",
+      "should_skip_extraction": true,
+      "skip_reason": "No dream narrative provided beyond a single atmosphere statement; images appear to be reference photos rather than a drawn dream map."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "off putting",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "not_mentioned",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "uncomfortable",
+          "crowding": "empty",
+          "cleanliness": "normal",
+          "water_presence": "none",
+          "raw_description": "Large indoor atrium with tiled floors; circular/flower-like raised platforms around a central recessed area described as an 'abandoned pool'; multiple escalators; glass elevator shaft with 'ELEVATOR' signage; railings and upper-level openings/curved balcony edges. Author text: 'The whole place felt off putting.'"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "pool",
+        "location_name": "abandoned pool (as titled)",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the center of the mall atrium, below surrounding walkways/railings",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "abandoned",
+          "atmosphere": "uncomfortable",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Central recessed circular basin/area surrounded by low walls and railings; adjacent raised circular platforms with segmented 'petal' pattern surfaces (blue/gray/yellow tones). No visible water."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "direction": "diagonal_up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "Multiple escalators visible; one close-up on right in image 1; two parallel escalators crossing the frame in image 2 with yellow step-edge markings."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "elevator",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_mentioned",
+        "outcome": "not_mentioned",
+        "qualities": "Glass elevator shaft/doors visible with large 'ELEVATOR' sign; additional wall sign with arrow pointing toward elevator."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a recognition question with two attached images; minimal dream text. Spatial/architectural details extracted from images; no explicit dream actions, traversal outcomes, or entities mentioned."
+  },
+  "response_id": "resp_0736fca4784f7df700696e203da6f48195b34f33dc3e27727f",
+  "usage": {
+    "input_tokens": 13576,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 828,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14404
+  }
+}

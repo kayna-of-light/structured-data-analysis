@@ -1,0 +1,160 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ownuh6.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ownuh6/this_is_exactly_what_the_buildings_in_my/",
+  "title": "This is exactly what the buildings in my reoccurring dreams look like",
+  "date": null,
+  "content_checksum": "7ef107dd790c4cac86401d36b257a4c051fb049358e4b07d925a4ae59b20fde9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:51:08.001114+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/6nmuiby8p51g1.jpg",
+    "https://i.redd.it/2wtmufy8p51g1.jpg",
+    "https://i.redd.it/yze7ba09p51g1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "flipping out",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "shanty town / poorer part of mall world (city)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "chaotic",
+          "crowding": "crowded",
+          "cleanliness": "dirty",
+          "water_presence": "none",
+          "raw_description": "walking around in a city made of “shanty” like buildings; poorer part of mall world; weather always overcast; tons of parties, addicts, trash; borderline post apocalyptic aesthetic; run down"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "high speed rollercoaster train (in the distance)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "visible from the shanty-city area, in the distance",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "high speed rollercoaster train which I commonly saw in my dreams; in the distance"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "house",
+        "location_name": "building type shown in attached pictures (reference for dream buildings)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "replicates the buildings that surround me in my dreams while I’m looking at the high speed rollercoaster train in the distance",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "pictures perfectly replicate the buildings that surround me in my dreams; shanty-like, run down; (image) tall irregular multi-story wooden structure with many add-on sections, exposed framing/scaffolding, broken/missing panels, many windows/openings; overcast/gray sky in some views"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer walks around a shanty-like city area and looks toward a high speed rollercoaster train in the distance.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a recurring dream setting (shanty/poorer city area) and a distant high-speed rollercoaster train; attached images are real-world reference photos used to match dream building appearance (not a hand-drawn map). No explicit routes/doors/elevators or clear sequence beyond walking/looking."
+  },
+  "response_id": "resp_0642d4ebf3545cff00696e2891d9e08195a0a0d699054a8b48",
+  "usage": {
+    "input_tokens": 15617,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 929,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16546
+  }
+}

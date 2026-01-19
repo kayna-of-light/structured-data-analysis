@@ -1,0 +1,280 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pqfd6f.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pqfd6f/is_my_dream_mallworld/",
+  "title": "Is my dream MallWorld?",
+  "date": null,
+  "content_checksum": "f8410a1c958f9adbb6f66dc06f5acccf0c3f357a4aed09cd2d99c68bd4e0bf68",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:03:34.966575+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream",
+        "childhood_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking whether their recurring connected dream setting (mall/theme park/motel-inside with hallways and outside-of-nothing windows; shadow figures; anxious searching) is 'MallWorld' and why people have similar dreams",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "inconsistent",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "adult",
+        "age_explicit": 30,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "observer_only",
+      "occupation_in_dream": null,
+      "initial_emotion": "anxious",
+      "final_emotion": "relief",
+      "author_theory": "Mentions possibility that dreams could be linked; asks why people have similar dreams",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "in a mall (walking through the hallways)"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "amusement_park",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "uncomfortable",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a theme park (solely stuck on a beat up roller coaster i can't get off of)"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "prisoner",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "hotel",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a motel but built inside... like a motel but when you walk out the door its a window looking out to the outside of nothing... feels like where i stay in the dream, like a home... can't go no where except my room and \"hallways\"; not a hotel where its back to back doors down a long hallway"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "outside of nothing",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "seen through window when walking out the motel-room door",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "a window looking out to the outside of nothing"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "no",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "hallway",
+        "direction": "unknown",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "they are all connected; like hallways but in a blink of an eye"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "hallway",
+        "direction": "unknown",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "connected; transitions happen \"in a blink of an eye\""
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_3",
+        "boundary_type": "void",
+        "direction": "not_mentioned",
+        "beyond": "void_nothing",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "when you walk out the door its a window looking out to the outside of nothing"
+      },
+      {
+        "location_id": "loc_3",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "can't go no where except my room and \"hallways\""
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "stuck on a beat up roller coaster; can't get off of it",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "always anxiously looking for something but has no idea what they are looking for",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "sees shadow figures lurk from the darkness of corners; when turning to see it disappears; not afraid of them",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "shadow",
+            "demeanor": "watching",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "shadow figures lurk from the darkness of corners; disappear when looked at",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "rarely ever with someone; if with someone it's older brother (rarely talk to him)",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "older brother",
+            "name_or_relation": "older brother"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "dream is seen like a movie camera sees the actor; can't see own face (blurry) but knows it's them; aware of everything around them; anxious",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Sequence/visit order is not fixed; author describes recurring setting with rapid 'blink of an eye' transitions. Motel/hotel description is ambiguous ('not a hotel...' but 'built inside' with long hallway); encoded as hotel-type with motel-like corridor/rooms. Crowd level inferred from 'never see people or animals' and 'rarely ever with someone'."
+  },
+  "response_id": "resp_00f8b2d61bc9a2e100696e2b83827081978b7bf2862535204a",
+  "usage": {
+    "input_tokens": 10461,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2287,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12748
+  }
+}
