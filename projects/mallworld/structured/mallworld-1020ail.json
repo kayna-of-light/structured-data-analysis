@@ -1,0 +1,89 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1020ail.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1020ail/what_does_this_all_mean/",
+  "title": "What does this all mean?",
+  "date": null,
+  "content_checksum": "4152868cb1f75f8c451e117643e280d29320a11026c0d6cbec517090997628c4",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T06:45:35.911029+00:00",
+  "schema": "MallworldResponse",
+  "extraction": {
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Author says the place is \"PARTLY connected to my past life.\"",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "this place",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "Multiple \"actual places\" that \"flow into each other\""
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Dreaming of \"this place\"; \"much of the actual places that flow into each other.\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "unspecified",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Places \"flow into each other\" (no specific mechanism described)."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Author asks whether others run into \"lost or dead lovers or parents\" there.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          "deceased"
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "is_dream_report": false,
+    "extraction_notes": "Post is primarily meta-discussion/question about recurring dreams of a place where multiple places flow into each other; no concrete location types (mall/school/hotel) or sensory qualities described."
+  },
+  "response_id": "resp_0f75b7e1b2f2df4a00696dd305905c8193a9e6778bea4d91af",
+  "usage": {
+    "input_tokens": 5788,
+    "input_tokens_details": {
+      "cached_tokens": 5504
+    },
+    "output_tokens": 582,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 6370
+  }
+}

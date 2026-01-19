@@ -510,26 +510,42 @@ class MallWorldScraper(BaseScraper):
     
     def scrape_historical(self, chunk_days: int = 30) -> List[ScrapedCase]:
         """
-        Scrape complete historical data using PullPush API.
+        Scrape complete historical data.
         
-        Iterates backwards through time in chunks to get all posts
-        since the subreddit was created.
+        Strategy:
+        1. First scrape recent posts from Reddit API (archive lags behind)
+        2. Then scrape historical posts from PullPush archive
         
         Args:
-            chunk_days: Size of each time chunk in days
+            chunk_days: Size of each time chunk in days for archive scraping
             
         Returns:
             List of scraped cases
         """
         import math
         
+        all_cases: List[ScrapedCase] = []
+        
+        # =================================================================
+        # PHASE 1: Scrape recent posts from Reddit API
+        # PullPush archive lags behind, so we need Reddit for recent posts
+        # =================================================================
+        self.logger.info("Phase 1: Scraping recent posts from Reddit API...")
+        reddit_cases = self.scrape_all(max_posts=None, sort="new")
+        all_cases.extend(reddit_cases)
+        self.logger.info(f"Phase 1 complete: {len(reddit_cases)} posts from Reddit API")
+        
+        # =================================================================
+        # PHASE 2: Scrape historical posts from PullPush archive
+        # =================================================================
+        self.logger.info("Phase 2: Scraping historical posts from PullPush archive...")
+        
         now = int(datetime.now(timezone.utc).timestamp())
         chunk_seconds = chunk_days * 24 * 60 * 60
         
-        self.logger.info(f"Starting historical scrape from subreddit creation to now")
         self.logger.info(f"Using {chunk_days}-day chunks, this may take a while...")
         
-        cases: List[ScrapedCase] = []
+        archive_cases: List[ScrapedCase] = []
         current_before = now
         total_chunks = math.ceil((now - SUBREDDIT_CREATED) / chunk_seconds)
         chunk_num = 0
@@ -579,7 +595,7 @@ class MallWorldScraper(BaseScraper):
                     case = self.post_to_case(post_data)
                     self.save_case(case)
                     self.seen_ids.add(post_id)
-                    cases.append(case)
+                    archive_cases.append(case)
                     chunk_saved += 1
             
             if chunk_saved > 0:
@@ -596,8 +612,10 @@ class MallWorldScraper(BaseScraper):
                 self.logger.info("Multiple empty chunks, likely reached start of subreddit")
                 break
         
-        self.logger.info(f"Historical scrape complete: {len(cases)} new posts saved")
-        return cases
+        all_cases.extend(archive_cases)
+        self.logger.info(f"Phase 2 complete: {len(archive_cases)} posts from PullPush archive")
+        self.logger.info(f"Total: {len(all_cases)} posts scraped")
+        return all_cases
 
 
 # =============================================================================
