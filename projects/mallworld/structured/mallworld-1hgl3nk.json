@@ -1,0 +1,173 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hgl3nk.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hgl3nk/i_had_a_deja_vu_experience_walking_around_a_mall/",
+  "title": "I had a “Deja vu” experience walking around a mall and it gave me a “flashback” to my recurring mall dreams",
+  "date": null,
+  "content_checksum": "66d533c9ff5cb5d964276643396c30aa881bdd1f3b18c5529cc136f0b41e0266",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:40:33.069091+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "meta_discussion",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": true,
+      "skip_reason": "Post describes a waking-life deja vu/flashback in a real mall and references recurring mall dreams, but does not narrate a specific dream episode with distinct locations/connections/events."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "nostalgic",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Real mall visited for online order pickup; 'much quieter than it used to be, with only a few people around'; 'outdated aesthetic... late 90s early 2000s interior'; 'decorated for Christmas'; 'place that used to be much busier'; 'used to be a very popular mall... in the last couple of years a lot of stores have left and the mall was almost dead'; 'giant space... so quiet and barely anyone'."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "giant Christmas tree area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "nostalgic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "'walking by this giant Christmas tree and the decorations'."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "Santa line/visit area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "near the giant Christmas tree/decorations",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "nostalgic",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "'remembered when the line to see Santa was so long but now it was just empty'."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Went to the mall to do an online order pickup.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": "online order pickup",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Noted the mall was much quieter than before, with only a few people; many stores had left; the space felt very large and almost empty; interior looked late 90s/early 2000s; decorated for Christmas.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "Observed/remembered that the Santa line used to be very long but was now empty.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Text contains strong phenomenological description of a mall environment and long-term recurrence of mall-themed dreams, but no discrete dream scene(s) are described; extracted locations reflect described mall sub-areas in waking context."
+  },
+  "response_id": "resp_0fc0b870df8fedc800696e181f1b8081959d6757485e236ecb",
+  "usage": {
+    "input_tokens": 10302,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1021,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11323
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1cbf210.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1cbf210/ai_pictures_of_my_dream_mall/",
+  "title": "Ai Pictures Of My Dream Mall",
+  "date": null,
+  "content_checksum": "09efa006b80036c5e55db62347d6c31b92c62535c9a46fcc56cac450b7b00df1",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:14:15.666487+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/2ua57y13hawc1.jpg",
+    "https://i.redd.it/zo96yy13hawc1.jpg",
+    "https://i.redd.it/9sc5vx13hawc1.jpg",
+    "https://i.redd.it/ik2a8z13hawc1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Large multi-level mall atrium with multiple escalators; neon/LED strip lighting in blue/orange/pink; tall central vertical structure; open ceiling showing starry/space-like sky."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "sparse",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Multi-story mall interior with a glass dome/skylight ceiling; very long central escalator rising upward; curved balcony levels with neon accent lighting; storefronts with signs/graphics; ground-floor open area with a small kiddie ride/vehicle (yellow/orange, cartoon face) centered in front of the escalator."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "aquarium",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside/adjacent to mall (implied by post context)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "pool_clean",
+          "raw_description": "Indoor aquarium viewing room with a very large wall tank/window showing fish and coral; strong blue underwater light beams; ceiling made of multicolored luminous square panels; patterned carpet; group of children standing and watching the tank; arcade/cabinet-like machines along side walls."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Very large multi-level mall atrium packed with bright lights and displays; central corridor with escalators; many store windows filled with toys/figures; large decorative illuminated structures resembling towers/castles; dense visual clutter and glowing signage; many people visible on multiple levels."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "Multiple escalators in the central atrium connecting several balcony levels."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "escalator",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "Single very long central escalator rising through many stories toward the upper levels under a glass dome."
+      },
+      {
+        "from_location_id": "loc_4",
+        "to_location_id": "loc_4",
+        "connection_type": "escalator",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "Escalators running along the central axis of the atrium between multiple floors."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "A group of children stand facing a large aquarium window watching fish in the tank.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Group of children gathered in front of aquarium window.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post text provides minimal narrative; most details are inferred from attached AI images representing the dream mall. Exact adjacency between depicted scenes is not specified."
+  },
+  "response_id": "resp_051fb5197fbc8b4400696e11d06d808190957c74d7c70926f6",
+  "usage": {
+    "input_tokens": 14946,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1273,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16219
+  }
+}

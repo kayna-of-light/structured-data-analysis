@@ -1,0 +1,107 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1irejo6.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1irejo6/been_here_only_one_time_anyone_else_people_lived/",
+  "title": "Been here only one time. Anyone else? People lived normal(ish) lives here",
+  "date": null,
+  "content_checksum": "d998eb2d9be3c3e5e63a0f8f52eee111d63b0a3457281107e16b2655d969830e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:53:11.799177+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/5xvl0l3sknje1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": "Asking if anyone else has been to this place (only one time) where people lived normal-ish lives",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "first_visit",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "decaying",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Blocks of buildings; less floors and longer, more rectangular and almost all the same height. No walls and you can see everything your neighbors are doing. (Image shows a dense grid of tall, worn/ruined-looking buildings with multiple glowing orange-red channels/trenches running between blocks.)"
+        },
+        "is_familiar": "no",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "bridge",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "(Image) elevated enclosed walkway/skybridge connecting two building blocks over a glowing orange-red channel/trench."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Text provides limited narrative; most spatial structure comes from the attached image. The image appears AI-generated (not a hand-drawn map). The author notes the image is an imperfect reference: in the dream the building blocks had fewer floors, were longer/more rectangular, and were nearly the same height; 'no walls' with high visibility into neighbors’ activities. People 'lived normal(ish) lives here' but no specific events/entities are described."
+  },
+  "response_id": "resp_0ed21a1307820f4600696e1b08ea388195b7f31c38e6dc4098",
+  "usage": {
+    "input_tokens": 11318,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 593,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11911
+  }
+}

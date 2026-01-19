@@ -1,0 +1,104 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ftoia2.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ftoia2/roads/",
+  "title": "Roads?",
+  "date": null,
+  "content_checksum": "3ab07350de12a89bd5abe6d81c9277de00d5d64d0ea5aa41fee51cffd9b188eb",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:29:46.239132+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to the same recurring dream highway/road that goes into the sky and causes cars to launch/fall off",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "giant highway that goes into the sky",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "a giant highway that goes into the sky, and curves so hard that sometimes the cars fall off, or 'Launch off' and then it goes straight down"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Traveling on a giant highway that goes into the sky; the curve is so hard that cars sometimes fall off/launch off; dreamer has 'definitely launched off before'. Sometimes dreamer is driving; sometimes dreamer is a passenger; sometimes there is no driver.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Single primary location described (highway/road). No explicit lighting/time-of-day or broader map layout beyond verticality (into the sky) and the road curving then going straight down. Mention of father having a similar dream is noted as 'mentions_other_dreamers' but father's version is not described."
+  },
+  "response_id": "resp_0c7a14440ebdbecc00696e159cdf548196b105de680b842d1c",
+  "usage": {
+    "input_tokens": 10094,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 765,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10859
+  }
+}

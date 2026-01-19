@@ -1,0 +1,115 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hj07c4.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hj07c4/really_steep_drop_off_road_on_the_side_of_a_cliff/",
+  "title": "Really steep drop off road on the side of a cliff?",
+  "date": null,
+  "content_checksum": "cb6f10f6af0c9969c3b0518efd356f800ba5bb464f721142d12c95c877b6ab28",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:41:07.430548+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "scary to drive on",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "steep cliffside/mountainside road",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "on the side of a mountain / side of a cliff",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“make a left turn and it’s the STEEPEST way down this road on the side of a mountain… changes from being a couple of small side by side lanes to being one lane… kinda really scary to drive on.”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "cliff",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Road runs on the side of a cliff/mountain with a very steep drop-off implied."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Driving and turning left onto an extremely steep descending cliffside road; the road narrows from two small side-by-side lanes to one lane.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Single-location description focused on a steep descending cliffside road; recurrence indicated by “I’ve been there before.” No explicit broader Mall World context or additional locations/connections described."
+  },
+  "response_id": "resp_0d7b33e81671be6400696e1844fcd08190bb0efa4504c44c4e",
+  "usage": {
+    "input_tokens": 10098,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 811,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10909
+  }
+}

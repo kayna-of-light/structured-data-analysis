@@ -1,0 +1,134 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j6vgd8.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j6vgd8/these_pics_of_the_food_court_at_the_canal_walk/",
+  "title": "These pics of the food court at the Canal Walk Shopping Centre in Cape Town, South Africa gave me serious deja rêvé. First time seeing these pics, but I swear I’ve dreamed here.",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:58:39.734272+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/f7dm85i58kne1.jpg",
+    "https://i.redd.it/i04ay4i58kne1.jpg",
+    "https://i.redd.it/7ftmqyh58kne1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Photo-triggered deja rêvé of a mall food court; author claims they have dreamed of this place",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_food_court",
+        "location_name": "Canal Walk Shopping Centre food court (Cape Town, South Africa)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside a large multi-level mall atrium",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "moderate",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Large open atrium food court with many small tables; bright daylight through tall glass/arched roof; multiple levels of storefronts and signage; prominent oversized yellow McDonald's arches; large hanging/display screens; visible railings and upper-level balconies."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": "Canal Walk Shopping Centre interior atrium / upper-level walkways",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "overlooking the central atrium/void",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "moderate",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Curved upper-level balconies with railings; people standing/walking along edges looking down into the atrium; ornate/white interior with columns and arches visible in one image; tall interior palm trees in the atrium."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Open vertical atrium/void connecting upper-level walkways to the food court level; no specific stairs/escalators/elevators visible in the provided images."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post contains no dream narrative; extraction is based on attached photos that the author reports causing deja rêvé ('I swear I’ve dreamed here'). Spatial data reflects visible multi-level atrium structure. Specific routes (stairs/escalators) are not clearly shown."
+  },
+  "response_id": "resp_0ef741217dde6e2600696e1c4372f48190822f1629241c1947",
+  "usage": {
+    "input_tokens": 13998,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1007,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15005
+  }
+}

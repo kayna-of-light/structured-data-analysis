@@ -1,0 +1,191 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1c262r1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1c262r1/been_stuck_in_mall_world_for_a_week/",
+  "title": "Been stuck in Mall World for a week",
+  "date": null,
+  "content_checksum": "eb83b7a21250837417f24a411baa637ab0bdaee492caa8bbcc4d40867e752b52",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:12:54.807431+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "recurring_dream",
+        "lucid_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "sick of it; upsetting; anxiety inducing",
+      "final_emotion": "increasing exhaustion",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "MallWorld",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "varies",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "dreams are never good; typically anxiety inducing; sometimes incredibly crowded; underlying anxiety of the mall collapsing while I'm in there; hallways will grow as I walk down them to keep me from escaping; each visit to MallWorld, the mall is bigger"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "outside (outside the mall)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "exit",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "once we got outside, I woke up immediately"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "managed to find people also looking to escape the mall; once we got outside, woke up immediately"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "hallways will grow as I walk down them to keep me from escaping"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "edge_of_map",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "yes_explicit",
+        "crossing_outcome": "succeeded",
+        "description": "can't escape; hallways will grow as I walk down them to keep me from escaping; last night: got outside then woke up immediately"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Tried to escape MallWorld; reports being fully aware and somewhat able to control actions but still can't escape.",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "can't escape (no specific blocker described beyond hallways growing)"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Found people also looking to escape the mall; left together.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people also looking to escape the mall",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "other",
+        "description": "Upon getting outside, woke up immediately.",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a week of recurring MallWorld dreams with variable nightly content; most details are generalized across multiple dreams. One specific 'last night' episode includes escaping outside followed by immediate awakening. Spatial data includes the mall growing larger each visit and hallways expanding while walking."
+  },
+  "response_id": "resp_03c2be4132dbc55b00696e119e49c481979122e46d073d2d1f",
+  "usage": {
+    "input_tokens": 10297,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1465,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11762
+  }
+}

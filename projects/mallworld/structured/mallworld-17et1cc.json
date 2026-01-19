@@ -1,0 +1,171 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17et1cc.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17et1cc/i_guess_im_married/",
+  "title": "I guess I'm married",
+  "date": null,
+  "content_checksum": "8367238e1f72406d6b9c147a371b91936aaebe7f4e07eee9626fd4dd15cb05e7",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:52:37.043211+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "multiple_dreams"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Forgetting about a dream-wife in recurring classroom dreams; asking what they are forgetting",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "multiple",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Author says they are sure their subconscious is trying to tell them something.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "school_classroom",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Dreams about the same classrooms and teachers and students for years; lately they’ve been different. Teacher’s child is a student in class who sits behind the dreamer."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "student",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Teacher’s child is a student in class who sits behind the dreamer; dreamer 'guesses' she is their wife.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "student",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Teacher’s child; a student who sits behind the dreamer; described as the dreamer’s wife.",
+            "name_or_relation": "wife"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "The student body is upset with the dreamer for forgetting about the wife; dreamer cannot go anywhere without being reminded of the wife.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "unfriendly",
+            "role": "student",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Student body upset with the dreamer.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "An 'alien looking but fleshy dwarf guy' who 'acts like he's from Detroit' is commonly seen and is furious with the dreamer because the dreamer forgot about the wife.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "hostile",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "Alien looking but fleshy dwarf guy; acts like he's from Detroit; furious with the dreamer.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer reports 'always seeing different versions of myself in my dreams.'",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "yes_explicit",
+            "description": "Different versions of the dreamer.",
+            "name_or_relation": "self (alternate versions)"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only one explicit setting (classroom) is described; no concrete layout, navigation routes, or boundaries given. Time is implied via long-term recurrence ('for years') but no within-dream time flow is described."
+  },
+  "response_id": "resp_0dac5a06b555a6ba00696e0cdcb9708197b3754b42b5dffb64",
+  "usage": {
+    "input_tokens": 10163,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1288,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11451
+  }
+}

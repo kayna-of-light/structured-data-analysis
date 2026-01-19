@@ -1,0 +1,168 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\16j5iwb.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/16j5iwb/winding_hilly_row_of_restaurants_at_night/",
+  "title": "Winding hilly row of restaurants at night.",
+  "date": null,
+  "content_checksum": "40c14526319fe982828fde43114b097f2a8b62731012a181b74be4a08546bc79",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:44:58.901764+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "lost / trying to reorient and get help (often after car runs out of gas or breaks down)",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"a narrow street on a hill with plenty of stairs and dirt roads lined with an assortment of restaurants\"; \"weirdly late hour, like three AM\"; \"everywhere is open\"; \"a few other hungry night owls milling about\"; \"I get the sense it’s never day here\"; sometimes feels like \"I’m in Latin America\" / \"might be in Peru\" / \"a foreigner\"; sometimes senses not having \"my ID or wallet\""
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "lost",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "restaurant",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "lined along the narrow hilly street",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"an assortment of restaurants, from Asian cuisine to Latin American food\"; \"hole in the wall type places\"; \"not fancy\"; \"food is legit and authentic and cheap and amazing\"; \"everywhere is open\" at ~\"three AM\""
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Restaurants line the street; access via the street’s \"plenty of stairs and dirt roads\""
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer ends up on the narrow hilly street because they are lost; car \"runs out of gas or breaks down\" and they look for a place to \"reorient\" and \"get help\".",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "At around \"three AM\" the area is open and there are \"a few other hungry night owls milling about\"; dreamer senses it is \"never day here\".",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"a few other hungry night owls\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Dreamer sometimes senses they do not have \"my ID or wallet\" and may be a \"foreigner\"; place feels like Latin America (possibly \"Peru\").",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "No specific restaurant names or distinct sub-locations given; restaurants treated as a grouped location type connected to the street."
+  },
+  "response_id": "resp_0fff49395b17b66600696e0b1623c8819688b39a9676f3e598",
+  "usage": {
+    "input_tokens": 10216,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1017,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11233
+  }
+}

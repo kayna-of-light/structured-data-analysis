@@ -1,0 +1,198 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\18lncd2.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/18lncd2/i_have_been_to_the_mall_wth_i_am_stumped/",
+  "title": "I have been to... the mall? Wth I am stumped",
+  "date": null,
+  "content_checksum": "738ea166209e2d2edad25b6881990fe9da9d0c075166b982c4f4735d4f8f29d7",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:00:42.854412+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "nightmare"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have had similarly vivid/real-feeling dreams (set in a mall/gallery) and what to make of it",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "first_visit",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "felt like had done something pretty bad; hiding; later scared",
+      "final_emotion": "confused; scared; physical symptoms (dizzy, blurry vision, nauseous) after waking",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "gallery / mall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "inside a gallery / mall full of different stores (clothes, electronics, games, etc.); it was night; felt like hiding there; later chased and shot; everything went black; later vision blurry; blood all over me felt weird and warm"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "a specific store (destination)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the mall/gallery",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "walking to a specific store in there"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "interrupted",
+        "qualities": "walking through the mall toward a specific store"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "got bored and decided to walk around the gallery"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer is walking around the gallery/mall after getting bored.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer sees a guy coming around the corner; dreamer turns around and runs; the guy later intercepts the dreamer.",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "no",
+            "description": "a guy coming right around the corner; intercepts dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "After being intercepted, dreamer says: \"So, this is it? Ok, do what you gotta do.\" The guy raises a gun and shoots the dreamer in the face; dreamer falls; everything goes black; then dreamer opens eyes with blurry vision and sees the guy walking away; there is a lot of blood all over the dreamer from the wound; blood feels weird and warm.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "no",
+            "description": "raises a gun and shoots; walks away afterward",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer thinks \"ok, enough. I have to get out of here\" and then wakes up.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial structure is minimal (primarily a single mall/gallery with a specific store inside). Many store types are mentioned generally but not visited as distinct locations. Post-waking physical sensations reported but not treated as dream locations."
+  },
+  "response_id": "resp_00780e02af15b79400696e0ea9999481908c1f42c341fa8aa9",
+  "usage": {
+    "input_tokens": 10545,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1579,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12124
+  }
+}

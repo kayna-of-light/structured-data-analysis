@@ -1,0 +1,114 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j3welg.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j3welg/i_never_get_to_swim/",
+  "title": "I never get to swim",
+  "date": null,
+  "content_checksum": "eb7a7456ee2ec59377b018f54e3c1e728dbd3f705fcff6163aadbfdfcd1b243a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:56:14.426926+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Recurring dream pattern of being prevented from swimming/using the pool; asking if others experience being unable to get to the pool",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "pool",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "area they are leaving (implied proximity to departure/exit timing)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "mixed",
+          "atmosphere": "not_mentioned",
+          "crowding": "varies",
+          "cleanliness": "dirty",
+          "water_presence": "pool_dirty",
+          "raw_description": "Swimming dreams: pool suddenly closed for the day/season/cleaning; too cold; too dirty; too full for the size; being entirely rebuilt; did not bring a swim suit; can’t find my husband who promised to come with me; never have time to go until we’re literally leaving the area."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "no",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Attempts/plans to swim but is prevented by changing conditions or constraints (closed pool, cold water, dirty water, overcrowding, pool under rebuild, missing swimsuit, missing husband, lack of time until leaving).",
+        "outcome": "prevented",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "husband who promised to come with me",
+            "name_or_relation": "husband"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Pool closed (day/season/cleaning); too cold; too dirty; too full; being rebuilt; no swimsuit; can’t find husband; no time until leaving"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a recurring pattern across many dreams rather than a single dream episode; only one consistent location (a pool) is explicitly referenced. Temporal element present via closures (day/season) and 'until we’re literally leaving the area.'"
+  },
+  "response_id": "resp_0b0520e63016c74c00696e1bcdbd1c81938aaeef0d3abdb3ee",
+  "usage": {
+    "input_tokens": 10125,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 875,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11000
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1fm0qur.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1fm0qur/i_visit_the_mall_2020/",
+  "title": "I visit The Mall 2020",
+  "date": null,
+  "content_checksum": "2b6185468202274de4bb0ad30da5f9db1168ccd7cdb8014f2e637b404e9845a9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:29:56.032148+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/6bz9gt9mc5qd1.jpg",
+    "https://i.redd.it/okic6p9mc5qd1.jpg",
+    "https://i.redd.it/a1grgq9mc5qd1.jpg",
+    "https://i.redd.it/ipuqhw9mc5qd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "has a storefront office; receives customer phone call for an item",
+      "initial_emotion": "happy",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "The Mall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"usual noise of people moving around the mall\"; \"mostly shadow beings that fill the mall\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "Top of the escalator",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"meet my wife at the top of the escalator\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "office",
+        "location_name": "storefront office / my new office",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the mall; reached by walking from escalator area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"gaudiest - over-the-top design\"; \"walls are covered in saffron wallpaper with golden Fleur-de-lis accents\"; \"visitor’s chairs are Luis XV styled in gold\"; \"My desk is a huge oak affair\"; \"a nameplate on the front of the desk has my name on it\"; \"more suited to be inside an old haunted mansion\"; \"papers stacked and tossed around\"; \"old Victorian styled telephone\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "employee",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "escalator",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "working_normal",
+        "outcome": "succeeded",
+        "qualities": "meeting point is \"the top of the escalator\""
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "\"We walk over to my storefront office\""
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "\"I open the door\" into the office"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Dreamer meets his wife at the top of the escalator; a shadowy being is accompanying her; dreamer also notices a shadow being next to him.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "wife",
+            "name_or_relation": "my wife"
+          },
+          {
+            "entity_type": "shadow",
+            "demeanor": "neutral",
+            "role": "guide",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"shadowy being\" accompanying wife",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "shadow",
+            "demeanor": "neutral",
+            "role": "guide",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "shadow being next to dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer observes the mall is filled with mostly shadow beings; there is usual noise of people moving around.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"mostly shadow beings that fill the mall\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Dreamer opens the door to the storefront office and enters; shows wife the new office; later notices wife is no longer there and assumes she is out shopping in the mall.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "wife; later absent",
+            "name_or_relation": "my wife"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "task",
+        "description": "Victorian-style telephone rings; dreamer answers; familiar voice of one of his customers asks for an item; dreamer picks up a black marker and scribbles on a strip of paper the word \"Creation\".",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "customer",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "\"familiar voice of one of my customers\" (heard on the phone)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "an item requested by a customer (unspecified); dreamer writes \"Creation\"",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Images appear to be illustrative reference photos of office furnishings/wallpaper/phone/chairs rather than a map; no additional spatial layout extracted from images."
+  },
+  "response_id": "resp_02a95e04c498c76600696e15511e5481969dc467adca80aa1f",
+  "usage": {
+    "input_tokens": 12230,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1548,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13778
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1azvkzr.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1azvkzr/relationships/",
+  "title": "Relationships",
+  "date": null,
+  "content_checksum": "96f8032400ca24ed02759a2e9dba2cd5de22ea8d303a267ade5fadbdb843b8fe",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:08:03.277257+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream",
+        "lucid_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "How to control/remove an ex appearing in recurring Mall World dreams; also asking why many people experience 'Mall World'",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "theater",
+        "location_name": "auditorium type room",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“an auditorium type room with people I grew up with, including an ex … in front of all our adult childhood friends”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "audience",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer is in an auditorium with people they grew up with (adult childhood friends) including an ex; dreamer embarrasses themself in front of them.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "people I grew up with; adult childhood friends",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "ex (real life person the dreamer loved)",
+            "name_or_relation": "ex"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Dreamer reports having some degree of control in dreams (especially Mall World dreams) but cannot control the ex being part of the dreams.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "ex appears despite dreamer trying not to have him there",
+            "name_or_relation": "ex"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily about relationships/lucid control and includes only one explicit scene location (“auditorium type room”). ‘Mall world’ is referenced as a recurring dream setting but not described spatially here. Entity blending described (one recurring male figure blending husband/grandpa/brother) is noted conceptually but no specific location/event details were provided for that figure."
+  },
+  "response_id": "resp_0c1cabff304c90ca00696e1080e0b4819086597da65772fb6b",
+  "usage": {
+    "input_tokens": 10352,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1051,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11403
+  }
+}

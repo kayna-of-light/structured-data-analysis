@@ -1,0 +1,120 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17b6hep.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17b6hep/my_dream_location/",
+  "title": "My dream location",
+  "date": null,
+  "content_checksum": "91578954594cb254d5192500a398d47ac9a03f611c8674936b04f3ab2aad5082",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:51:51.880093+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/18120k5f52vb1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "childhood_dream",
+        "recurring_dream",
+        "lucid_dream",
+        "nightmare"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "happy (\"always so happy to come back\")",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "beach",
+        "location_name": "same cove / favorite place",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "\"same cove\"; image shows a curved sandy/pebbly beach in a cove with ocean water, rocky shoreline/rocks in foreground, waves, and cliffs/bluffs with greenery above"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "Cove opens to the ocean; horizon visible in image"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer returns repeatedly to the same cove; reports being happy to come back to this favorite place.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Narrative provides minimal sensory detail; most physical qualities inferred from attached image (coastal cove with cliffs and ocean). Temporal data includes long-term recurrence since high school and reference to a night terror in 2005; no within-dream time flow described."
+  },
+  "response_id": "resp_046ba8242ed5138b00696e0cac660c8197ba7f640051c5760e",
+  "usage": {
+    "input_tokens": 11838,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 596,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12434
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1azuukn.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1azuukn/dream_of_tasting_gasoline_during_class_at_mall/",
+  "title": "Dream Of Tasting Gasoline During Class At Mall",
+  "date": null,
+  "content_checksum": "215b21d9f5ff4df03f92631e0fdb6631d9ab22ce8a87e3614b7cfc5538ce7754",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:08:27.374854+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "inconsistent",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "during the gasoline drinking, we were on ground level",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "uncomfortable",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "in one of the malls ive been in before; task in a group class thing; expected to drink/taste test about 10 different gasolines; possibly siphoned from cars inside the mall; mall has two levels; maybe a few shops and is mostly dead space; lots of dead space; details are same as a mall ive been in in reality, more or less"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "student",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "a different location from the second floor (still in the mall)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "in a different location from the second floor yelling at the people some more"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "student",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": "part of the mall where you'd find the entrance and a bunch of other parts of the mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "when i chased down the guy, it felt like a part of the mall whered youd find the entrance and a bunch of other parts of the mall; people were dispersing"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "transition from ground level area to second floor area (method not described)"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "moved to an entrance-area part of the mall while chasing someone (route not described)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Participating in a group class where the task was to drink/taste test about 10 different gasolines; dreamer became mad and yelled about it being unsafe/stupid/pointless.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "teacher",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a huge woman was facilitating it",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "indifferent",
+            "role": "student",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "some were participating",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "From a second-floor location, dreamer continued yelling at the people about the gasoline task; afterwards people were dispersing.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "indifferent",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "people were dispersing",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "conflict",
+        "description": "Dreamer chased down a guy who was drinking gasoline and told him he doesn't have to listen to those people; the guy became enraged and ready to fight; dreamer said they were just letting him know.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "hostile",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "dishevelled, older version of a hard ass I knew in High school; looked so awful up close",
+            "name_or_relation": "a hard ass I knew in High school"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Exact routes between mall areas not described; siphoning gasoline from cars is uncertain ('cant remember if we siphoned it from cars inside the mall'). Recurrence noted for this mall as the setting for recent 'group school type dreams'; other malls also occur in other dreams but not detailed here."
+  },
+  "response_id": "resp_0455c963f63d73d500696e107f183c819497a5f324337fbe64",
+  "usage": {
+    "input_tokens": 10483,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1898,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12381
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\16qfgm3.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/16qfgm3/spa_part_of_mall_world/",
+  "title": "Spa part of mall world",
+  "date": null,
+  "content_checksum": "17db9d9a06f21b2a9d68eedd27536d0320dd09ce0f93ece4aca6383c5b0c519e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:45:57.250999+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have experienced a spa area as part of Mall World",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "spa area of mall world",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "part of mall world",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“Super elegant high ceilings red and gold accents looked like a country club.” Staff “looked so pissed I was there”… “can’t emphasize enough how mad the staff was that I was there.”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer is left at the spa by mom; workers appear angry that the dreamer is there.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": null,
+            "name_or_relation": "mom"
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "unfriendly",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "EVERY worker “looked so pissed” / “straight up” mad the dreamer was there",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Haircut/facial appointment starts but staff leave halfway through and do not finish the services.",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "unfriendly",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Workers abandon the appointment halfway through; services not completed",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "haircut / facial services (appointment)",
+        "transaction_blocker": "staff left halfway through and didn’t finish the services"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Spa described as part of Mall World with aesthetic details (high ceilings, red/gold accents). Limited broader layout info beyond being an area within the mall. Timing given as “two nights ago.”"
+  },
+  "response_id": "resp_001927825b78a8f300696e0b4aea9081979e102729b364f0bd",
+  "usage": {
+    "input_tokens": 10107,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1011,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11118
+  }
+}

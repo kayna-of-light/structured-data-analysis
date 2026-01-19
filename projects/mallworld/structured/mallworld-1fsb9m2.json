@@ -1,0 +1,193 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1fsb9m2.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1fsb9m2/not_sure_if_anyone_has_been_here_used_ai_to/",
+  "title": "Not sure if anyone has been here, used AI to create my dream",
+  "date": null,
+  "content_checksum": "481ffca7af0b1652d7b8fb02c80c5e78de43fc79f4ef6cc3cf46f47a0e38bd4b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:30:02.535356+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/nkcqalwdlsrd1.jpg",
+    "https://i.redd.it/er7vglwdlsrd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if anyone has been to this cabin location",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "scary, stressful",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "cabin",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "cabin (seen multiple times); animals (lions and bears) trying to break in; AI image shows a large wooden multi-story cabin in snowy forest; interior shows a big open room with a damaged roof letting light in, snow on floor, scattered furniture/debris"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "forest",
+        "location_name": "snowy woods around cabin",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the cabin",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "outside in snow; conifer trees surrounding cabin; dreamer outside scooping up cats while lions and bears are hunting"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "still_in_progress",
+        "qualities": "trying to bring cats inside the cabin while animals try to break in"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Dreamer is outside 'scooping up my cats' and trying to bring them inside while 'lions and bears are hunting us.'",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "implied",
+            "description": "lions trying to break in and eat my cats; used to be friends with cats; then started attacking after hanging around bears",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "creature",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "implied",
+            "description": "bears trying to break in and eat my cats; hunting us",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "my cats (multiple) being targeted; dreamer gathers them up",
+            "name_or_relation": "my cats"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Lions and bears try to break into the cabin; dreamer attempts to get cats inside for safety.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "implied",
+            "description": "lions and bears trying to break in",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "AI images provide visual details (snowy forest, multi-story wooden cabin, damaged roof/open interior). Narrative does not specify exact layout beyond inside vs outside and entry attempt. Time-flow not described; temporal data marked true due to event sequence and recurrence mention."
+  },
+  "response_id": "resp_0e3926e094a4750400696e1584180c8196a03e45926387ae6e",
+  "usage": {
+    "input_tokens": 13671,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1040,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14711
+  }
+}

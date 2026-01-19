@@ -1,0 +1,199 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hmkcfp.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hmkcfp/flying_in_mallworld/",
+  "title": "Flying in MallWorld?",
+  "date": null,
+  "content_checksum": "b14f85bc0ba87164d5f345471c569332d97f451ffca26b1dcd3f44380a703634",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:42:51.319632+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream",
+        "lucid_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others can successfully fly inside their Mall World; describes flying over escalators, being chased by guards, fleeing to parking lot to find car/exit",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "wake up right after flying out / leaving",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "Mall World / my Mall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Flying inside the mall; flying over escalators; flying to escape and find exits; chased out of my mall world by mall guards"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "parking_lot",
+        "location_name": "parking lot",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the mall (chased out into the parking lot)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Into the parking lot where I have to tirelessly and quickly find my car after the mall goose chase"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_mentioned",
+        "outcome": "not_attempted",
+        "qualities": "Dreamer flies over escalators instead of using them"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Chased out of the mall by mall guards into the parking lot"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": null,
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "not_mentioned",
+        "description": "If I can't find a car, usually I give up and fly out of there and wake up right after"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Flying over escalators to escape and find the exits needed, often when becoming lucid",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "When the dream becomes lucid, the dreamer gets chased out of the mall world by mall guards",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "hostile",
+            "role": "security",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "mall guards",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "search",
+        "description": "In the parking lot, has to tirelessly and quickly find their car after the mall goose chase; if they can't find a car they give up",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Can't find a car"
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "If unable to find a car, the dreamer flies out of there and wakes up right after",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question but includes recurring-dream fragments: flying over escalators, chased by mall guards, fleeing to parking lot to find car, then flying out and waking. No concrete layout details beyond mall -> parking lot transition and presence of escalators/exits."
+  },
+  "response_id": "resp_09e3603e41d8eaaf00696e18a35f7881959ccf352e9c17c115",
+  "usage": {
+    "input_tokens": 10122,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1554,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11676
+  }
+}

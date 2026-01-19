@@ -1,0 +1,131 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gff7o5.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gff7o5/military_like_feild_i_see_with_black_shipping/",
+  "title": "Military like Feild I see with black shipping containers.",
+  "date": null,
+  "content_checksum": "6e05d6306348f6c23fa2196ae1d63e80135b41bb6cd9ab19195b6cd5a0d25d9f",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:33:04.618078+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/1x25hcmyutxd1.jpg",
+    "https://i.redd.it/60px5bmyutxd1.jpg",
+    "https://i.redd.it/u6xmzamyutxd1.jpg",
+    "https://i.redd.it/ppimecmyutxd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "fear",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "military-like field / abandoned football field turned military storage",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "night",
+          "state": "abandoned",
+          "atmosphere": "threatening",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"fields that looks like a old abandoned football field that has now turned into a military storage\"; \"huge barbed wire fence that’s silver\"; \"military vehicles driving around, spotlights and guards\"; \"big black shipping containers in grids of rows all stacked on top of each other\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "fence",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "Huge silver barbed-wire fence enclosing the area (military storage field)."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer is running and trying to hide while at the military storage field.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "threatening",
+            "role": "security",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "guards",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear AI-generated visualizations (nighttime fenced field with stacked black shipping containers in grid rows, bright spotlights, military vehicles). No explicit route/paths between multiple distinct locations described."
+  },
+  "response_id": "resp_09eaaa733651f09f00696e164c5cec81908efba5dfa7953a0f",
+  "usage": {
+    "input_tokens": 11351,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 622,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11973
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1cnksz6.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1cnksz6/somewhat_similar_environments/",
+  "title": "Somewhat similar environments",
+  "date": null,
+  "content_checksum": "5f3448e437826547bf5b9186d2d83471b9b6286284bb8f8e958f81837d8bb2a6",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:15:38.511038+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/kxymphkyvazc1.jpg",
+    "https://i.redd.it/sbaxmhkyvazc1.jpg",
+    "https://i.redd.it/nq5tznkyvazc1.jpg",
+    "https://i.redd.it/oz7ghhkyvazc1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "floating cities / towers area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“a lot of people roaming”, “floating cities”, “towers”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "clean",
+          "water_presence": "not_mentioned",
+          "raw_description": "(from images) large atrium-like interior with multiple levels/balconies, ornate railings, grand staircases, chandeliers, patterned carpet, lounge seating; one image shows a piano; other images show café/bar seating and people sitting"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "(from images) wide, curved/ornate staircases connecting multiple interior levels/balconies"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "(from images) open atrium circulation with surrounding upper-level walkways/railings"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observes many people roaming and high-tech environment with floating cities, towers, and giant flying machines producing loud industrial noises as they fly around the towers.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "“a lot of people roaming”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear to be illustrative photos of grand multi-level atrium interiors (mall/cruise-ship-like). Text describes a different setting (floating cities/towers with flying machines). No explicit linkage between text and images is stated, so the interior location is captured as a separate depicted environment."
+  },
+  "response_id": "resp_0c2ad0315bdb41b700696e1225769c81908bff433b70d0596e",
+  "usage": {
+    "input_tokens": 13268,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 859,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14127
+  }
+}

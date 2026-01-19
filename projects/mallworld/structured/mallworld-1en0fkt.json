@@ -1,0 +1,157 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1en0fkt.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1en0fkt/a_dream_world_i_visited_a_few_times/",
+  "title": "A dream world I visited a few times",
+  "date": null,
+  "content_checksum": "c2883fe84b6c43efecad64556d7615b7076675a3448496daa6cf0ad78b0d77df",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:24:13.148627+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others resonate with dreams of a dimmer parallel world with a beautiful Australia-like region and interconnected underground caves",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Author calls it a kind of \"shadow\" world; described as more empty.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "Australia equivalent",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "peaceful",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“equivalent to Australia, where the light is more beautiful… the sun sets early (few hours of light during the day)… one of the most beautiful places… more light and the sky had this blue tone, different from usual… It was a safe place”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "World similar to ours (overall setting)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“a world similar to ours, but with less light perhaps… some kind of ‘shadow’ world, more empty… continents may be different”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "cave",
+        "location_name": "Big underground caves (network)",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "underground in the world",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "timeless",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“caves, big underground caves with some light, connected to each other and where there is some sense of adventure”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_3",
+        "connection_type": "tunnel",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Caves are “connected to each other” (implies tunnel/passages within cave network)."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a recurring ‘world’ with an Australia-equivalent region (safe, brighter light, early sunset) and a connected underground cave network. No explicit routes between surface regions and caves were described; cave-to-cave connectivity inferred as tunnels/passages. ‘More empty’ and ‘shadow world’ are included only as raw descriptors."
+  },
+  "response_id": "resp_0474a502cf9c638000696e14460a9c8197a3b0b35663bc4be2",
+  "usage": {
+    "input_tokens": 10219,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1244,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11463
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1htuwif.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1htuwif/dreams_taking_place_where_youre_sleeping_but/",
+  "title": "dreams taking place where you’re sleeping but crazy things happening also….",
+  "date": null,
+  "content_checksum": "1222fd6eebc9e6615dab9888be69e8c6ad719244cd5e0a8e3dc416bc7347e6a0",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:44:30.559551+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "nightmare",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Dreams that occur in the exact real sleeping location/bedroom with traumatic attacker present; asking if others have similar experiences and advice.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "young_adult",
+        "age_explicit": 21,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "freaking me out",
+      "final_emotion": "freaking me out",
+      "author_theory": "environment bringing it back up (moved out for 5 months then moved back in; due to move out again in a few weeks)",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "my room / my bed (where I'm sleeping)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Dreams take place in the exact place I am (my bed); my room is set up the way it is; everything’s the same; he’s there trying to attack me."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "A boy who used to live in the same house appears in the dream in the dreamer’s bed/room and is 'trying to attack me' and 'doing horrible things to me.'",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "boy that used to live in the same house as me",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Dreamer reports 'imagining other people I live with doing the same things to me in my sleep' and being disturbed by 'imagining minors abusing me.'",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "threatening",
+            "role": "other",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "other people I live with",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "child",
+            "demeanor": "threatening",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "minors",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single-location dream setting described as matching the real bedroom/bed exactly; sequence details and specific time-of-day/light not provided. Waking-life timeline mentioned (abuse ages 9–15; author age 21; not seen since 2019; moving timeline), but in-dream time flow not described."
+  },
+  "response_id": "resp_0974873373ad6ed900696e190869b48197a556931d88b6254b",
+  "usage": {
+    "input_tokens": 10208,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1092,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11300
+  }
+}

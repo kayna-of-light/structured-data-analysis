@@ -1,0 +1,114 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j4je3g.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j4je3g/32nd_floor/",
+  "title": "32nd Floor?",
+  "date": null,
+  "content_checksum": "e815c8478ffcf31be074ee040aa1831b0384b501e95011db04deb7831ce0f08f",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:56:30.161700+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "adult",
+        "age_explicit": 35,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "child like giddyness",
+      "final_emotion": "nervous tension",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel_room",
+        "location_name": "beautiful, ornate bedroom (32nd floor)",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "32nd floor",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Exited onto the 32nd floor right into a beautiful, ornate bedroom. Beach views."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "elevator",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_mentioned",
+        "outcome": "succeeded",
+        "qualities": "Exited onto the 32nd floor"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Explored the ornate bedroom; noticed a canary yellow PA speaker positioned under a wood framed study chair; jumped onto the edge of the bed.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only one explicit location described (32nd-floor ornate bedroom). A vertical transition is implied by 'Exited onto the 32nd floor' but the starting location/vehicle is not specified; connection recorded as elevator due to typical 'floor' transition but could be stairs/other."
+  },
+  "response_id": "resp_0774ca6e467e1f3400696e1bdf410c81978a60170fde3449ac",
+  "usage": {
+    "input_tokens": 10101,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 780,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10881
+  }
+}

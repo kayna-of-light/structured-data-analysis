@@ -1,0 +1,186 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17vb5fn.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17vb5fn/this_is_a_weird_one_that_i_had_years_ago_way/",
+  "title": "This is a weird one that I had years ago, way before I found this sub, and always found fascinating",
+  "date": null,
+  "content_checksum": "8f144b5a01bc3420fcc96d4d1b4edeb33fe9fafb83d20ba053cd57052276d3f8",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:55:41.255683+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "adult",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "pretty carefree (roller blading around)",
+      "final_emotion": "one of the coolest dreams I've ever had",
+      "author_theory": "vision of like parallel universes where I somehow existed in all of them and was meeting my actual family members from those different universes at various points in time",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "old closed mall in my city (similar to dream mall)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "two floors, white tile interior, glass windows in the high ceilings; almost always empty"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": "darker-version mall (in other dreams)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "same mall but in darker dreams",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "uncomfortable",
+          "crowding": "crowded",
+          "cleanliness": "dirty",
+          "water_presence": "none",
+          "raw_description": "when I have dreams that are darker the mall itself becomes old, dingy, and crowded"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "junction with glass elevator and water fountain thing (inside mall)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "fountain",
+          "raw_description": "came to a junction with a glass elevator and a water fountain thing; I was the only one there"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "arrived at a junction inside the mall"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "Met mom and aunt at the junction; they were excited to meet; \"we seemed to all know it was a dream\"; dreamer explained where they were in life and thought they were about 36 at the time; mom said \"My CaptainFuzzyBootz is 10!\" and aunt said \"Ours is 23!\"",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "friendly",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "no",
+            "description": null,
+            "name_or_relation": "Mom"
+          },
+          {
+            "entity_type": "family_member",
+            "demeanor": "friendly",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "no",
+            "description": null,
+            "name_or_relation": "Aunt"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a recurring mall setting plus one standout dream at a mall junction. Exact floor/placement of the junction and elevator travel details are not provided; visit order is only clear for the junction within the highlighted dream. Age 'about 36' is stated as the dreamer's estimate at the time of that dream, not necessarily current age."
+  },
+  "response_id": "resp_063f023a00d5c4df00696e0d98140481908f0cb4a05163e793",
+  "usage": {
+    "input_tokens": 10340,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1460,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11800
+  }
+}

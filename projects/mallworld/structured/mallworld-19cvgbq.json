@@ -1,0 +1,167 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\19cvgbq.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/19cvgbq/the_pudding_cake_shop_in_the_food_court/",
+  "title": "The pudding cake shop in the food court",
+  "date": null,
+  "content_checksum": "381bd686acaa3e864c490de96323df8ebd65753cfd6419f8526a739589bf1769",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:04:17.413945+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "first_visit",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_food_court",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "in a food court at some place (don't know where, just that it seemed like a food court)"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "pudding cake shop",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "freestanding shop in the middle of a hall (in/near the food court)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "freestanding shop in the middle of a hall that sold pudding cakes"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "transaction",
+        "description": "Shop staff told the dreamer they were running out of a limited edition flavor called 'Hippie Dream' and that the dreamer should try it; the dreamer tasted it and was given Kool-aid to drink with it.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "they (shop staff at pudding cake shop)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "limited edition pudding cake flavor 'Hippie Dream' and Kool-aid",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Dreamer wanted to find their spouse to try the pudding cake too, but couldn't find them.",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "spouse (not found/located)",
+            "name_or_relation": "spouse"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "couldn't find spouse"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer had to leave to go do something else, but does not remember what.",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single main setting described (food court) with a specific freestanding shop positioned 'in the middle of a hall'. No explicit lighting/time-of-day/state details provided. Temporal data present as a simple sequence of events (try flavor → search for spouse → leave)."
+  },
+  "response_id": "resp_0c93be303d2f88ea00696e0f971aac8195bb3c8ee57a99ea86",
+  "usage": {
+    "input_tokens": 10171,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1242,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11413
+  }
+}

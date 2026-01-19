@@ -1,0 +1,279 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17ahqcr.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17ahqcr/been_in_the_neighborhood_behind_mall_world_lately/",
+  "title": "Been in the neighborhood behind Mall World lately",
+  "date": null,
+  "content_checksum": "aec701cb30454f006e49c429126e34e01aed726e1a944915b10f4fb60100d8a0",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:51:23.339682+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": "Whether dreamers take on different roles/characters within Mall World dreams",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "inconsistent",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "different_person",
+      "occupation_in_dream": "nannied all day (valley girl from wealthy money)",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "neighborhood",
+        "location_name": "beautiful neighborhood behind mall world",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "behind mall world",
+          "relative_to_id": "loc_4"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "beautiful neighborhood behind mall world, super green and hilly with life size “dollhouses” super close together"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "forest",
+        "location_name": "woods / stone gravel walkway",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "near/within the neighborhood behind mall world",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "stone gravel walkway in the woods we were meant to take; it was pitch black going in; had to turn around because the “clowns” were in there"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "parking_lot",
+        "location_name": "parking lot of mall world (car)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside mall world entrance area",
+          "relative_to_id": "loc_4"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "back in the parking lot of mall world; getting ready in the car beforehand"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "mall",
+        "location_name": "Mall World (inside for dinner)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "going inside to get dinner"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "partial",
+        "qualities": "group walk toward a stone gravel walkway in the woods; turned around because it was pitch black and “clowns” were in there"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "unknown",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "after turning around, ‘somehow’ back in the parking lot of mall world"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "went inside from the parking lot to get dinner"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Chilling/hanging out around the neighborhood area with girlfriends.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "friendly",
+            "role": "companion",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "girlfriends",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Group walk intended to take the stone gravel walkway in the woods; it was pitch black going in; turned around because the 'clowns' were in there.",
+        "outcome": "prevented",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "friends / probably guy friends",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "child",
+            "demeanor": "neutral",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "some kids we were looking after",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "blocker",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "“clowns” in the woods/walkway",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "task",
+        "description": "Getting ready in the car beforehand in the Mall World parking lot.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "task",
+        "description": "Going inside Mall World to get dinner.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": "dinner",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image referenced as a photo swipe showing the neighborhood backyard/stone gravel walkway; visual details not provided in the text beyond those descriptions, so location qualities are primarily text-based. Dream includes an abrupt transition (‘somehow’ back in the parking lot), so connection is marked as other/unknown."
+  },
+  "response_id": "resp_01fb8298a212812900696e0c8d2254819490ca8416202f8276",
+  "usage": {
+    "input_tokens": 10291,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1534,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11825
+  }
+}

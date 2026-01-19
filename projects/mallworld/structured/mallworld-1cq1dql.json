@@ -1,0 +1,104 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1cq1dql.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1cq1dql/the_dream_is_killing_me/",
+  "title": "The dream is killing me",
+  "date": null,
+  "content_checksum": "7974438b441462ad398201abf61ca3842e0514921f6994b32be3c4c0482c1f17",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:15:34.668818+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Recurring realistic-feeling dream about an unknown woman; asking why it happens / what it means",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "woke up so happy; still confused after waking",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "social",
+        "description": "Dreamer is with a woman from a recurring dream; in the latest dream he met her daughter and she met his kids.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "Woman appears different every time (clothes, makeup, hair).",
+            "name_or_relation": "the woman from the dream"
+          },
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Her daughter, around 5 years old.",
+            "name_or_relation": "the woman's daughter"
+          },
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "Dreamer's kids (count: 2).",
+            "name_or_relation": "my kids"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No specific Mall World locations described; phenomenology is primarily social/relational and recurrence/realism. Latest dream event described (meeting each other's children)."
+  },
+  "response_id": "resp_09fd04f146c85d1a00696e1245adc8819381312a7a8b25510f",
+  "usage": {
+    "input_tokens": 10178,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 687,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10865
+  }
+}

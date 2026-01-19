@@ -1,0 +1,118 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1glincr.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1glincr/this_is_the_cliff_beach_area_i_see_usually_a_lot/",
+  "title": "This is the cliff/ beach area I see (usually a lot of people are on it and it’s at sunset )",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:34:29.044791+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/tllcvaajtezd1.jpg",
+    "https://i.redd.it/k717jaajtezd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "beach",
+        "location_name": "cliff/beach area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "evening",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "\"cliff/ beach area\"; \"usually a lot of people are on it\"; \"it’s at sunset\". Images show a sandy beach between two tall rocky cliffs forming a cove/inlet; ocean waves coming in; wet sand reflecting the sky; sunset sky with orange/pink clouds."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "Open ocean at the end of the beach/cove; cliffs form lateral boundaries on both sides."
+      },
+      {
+        "location_id": "loc_1",
+        "boundary_type": "cliff",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "High rock cliff faces on left and right sides of the beach/cove."
+      }
+    ],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text beyond the title; extraction relies on title phrases and two attached images that appear AI-generated beach-at-sunset visuals. People are mentioned in the title but not visible in the provided images."
+  },
+  "response_id": "resp_0f07d8b5a66b1c3600696e16a611f881908e1a9ca8c43e973d",
+  "usage": {
+    "input_tokens": 10660,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 600,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11260
+  }
+}

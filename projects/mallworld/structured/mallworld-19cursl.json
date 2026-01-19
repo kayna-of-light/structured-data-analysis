@@ -1,0 +1,122 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\19cursl.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/19cursl/got_photo_taken_last_night_in_dreamworld/",
+  "title": "Got Photo Taken Last Night in Dreamworld",
+  "date": null,
+  "content_checksum": "d7b23d1535dd0b81e8231d13e3f164f0a1c9f0751447727b055f1a2209c80bea",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:04:08.995328+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if technology has been showing up more in others' dreams",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "fully conscious of what just happened (surprised/alert)",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "giant orientation style spot",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "giant orientation style spot with all these people; everyone was sitting cross cross applesauce looking forward"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "A white man stands up, slowly turns around, and takes a quick flash picture of the dreamer with a big boxy camera; he was watching the dreamer the whole time.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "watching",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "white man with a big boxy ass camera; stands up slowly, turns around, takes a flash picture really quick",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Dreamer becomes fully conscious/aware after the photo is taken.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single described setting ('orientation style spot') with minimal spatial layout details; sequence is clear (group seated -> man stands/turns -> flash photo -> dreamer becomes conscious)."
+  },
+  "response_id": "resp_0f3f23286d3e2b0c00696e0f9695c48197b944baafeea3216b",
+  "usage": {
+    "input_tokens": 10131,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 849,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10980
+  }
+}

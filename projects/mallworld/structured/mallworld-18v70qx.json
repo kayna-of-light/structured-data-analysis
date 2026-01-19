@@ -1,0 +1,157 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\18v70qx.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/18v70qx/asteroid_city/",
+  "title": "Asteroid City",
+  "date": null,
+  "content_checksum": "1fdede94af8aba941d597fa7fe051dc9d74ccb1f5f8ac35955e5299926f36cf9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:01:17.998151+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "media_reference",
+      "content_flags": [],
+      "detail_level": "moderate",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others get similar Mall World/dream vibes from the film 'Asteroid City' and whether they’ve seen similar themes (desert, closed highway ramp to nowhere, dusk/dawn color-lighting, cop chase ignored by bystanders) in dreams",
+      "should_skip_extraction": true,
+      "skip_reason": "Post is primarily a media reference/recommendation describing film elements as dream-like; no specific dream episode is narrated with in-dream actions/sequence to extract as a single dream report."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "completely captivated",
+      "final_emotion": "thoroughly enjoyed",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "The desert (as depicted in 'Asteroid City'; described as matching a recurring dream desert)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Movie takes place in a desert; author says it feels like 'THE DESERT I’ve dreamt about many times'. Also noted as 'fictional scenery and backdrops' (play-like), making it feel dream-like."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "Closed highway ramp that leads to nowhere",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the first 'Act' of the movie",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "A 'closed highway ramp that leads to nowhere'."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "end_of_road",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "Closed highway ramp that leads to nowhere."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "not_specified",
+        "interaction_type": "conflict",
+        "description": "Scenes where a 'bad guy' is being chased by a cop car; 'bullets spewing everywhere' from them shooting at one another; action is close to actors but 'nobody pays much mind'.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Cop car chasing a 'bad guy'; shooting with bullets 'spewing everywhere'.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Author notes depiction of times of day via colors in the sky and reflections on buildings & actors; specifically 'dusk' and 'dawn' emulated with dramatic colors & lighting.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes film elements that match the author’s recurring dream themes (desert; closed ramp to nowhere) but does not narrate a specific dream event sequence. Locations/interactions are extracted as referenced themes rather than in-dream visits."
+  },
+  "response_id": "resp_0aab314e1481860900696e0ee1197c8190bc6dbccef09ebf0d",
+  "usage": {
+    "input_tokens": 10402,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1315,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11717
+  }
+}

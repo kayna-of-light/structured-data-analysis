@@ -1,0 +1,104 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1cgii82.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1cgii82/anyone_else_dream_of_this_place_or_something/",
+  "title": "Anyone else dream of this place? Or something similar?",
+  "date": null,
+  "content_checksum": "c09f7d9f6d8c2473b293651052d3224836e710946b0903c904f970ae94628bcb",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:14:07.928217+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_external_link",
+        "nightmare"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have dreamed of the same/similar place; describes nightmares of being trapped in an endless maze of twisting yarn/plastic tunnels seen in an external video.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "mini-panic attack (on seeing the video); nightmares associated with the place",
+      "final_emotion": null,
+      "author_theory": "I swear, this thing has to be a Backroom somewhere...",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "amusement_park",
+        "location_name": "endless maze of twisting yarn or plastic tunnels (play area/tunnel maze seen in linked video)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“trapped in an endless maze of twisting yarn or plastic tunnels”; “fun play area” (as it might appear to others); described as “literal nightmares of this place.”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "trespasser",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer is trapped in an endless maze of twisting yarn/plastic tunnels and cannot get out (nightmare scenario).",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Dream description is brief and centered on a single recurring nightmare setting: an “endless maze” of tunnels. External links likely show the real-world structure that resembles the dream, but the linked content was not provided here to analyze visually."
+  },
+  "response_id": "resp_0d6bab8c99901f0200696e11f002088190a8f9dd029b620dc8",
+  "usage": {
+    "input_tokens": 10167,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 767,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10934
+  }
+}

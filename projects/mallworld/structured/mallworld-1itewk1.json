@@ -1,0 +1,224 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1itewk1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1itewk1/mall_world_restaurant_and_sweets/",
+  "title": "Mall World Restaurant and Sweets",
+  "date": null,
+  "content_checksum": "64821d88e2102a9ff932c5fffba106248a9ea1165f5fd49d2132939160323d14",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:53:42.996971+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have seen similar mall-world sweets/dessert build-your-own places",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_food_court",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "fountain",
+          "raw_description": "separate eating area, like a food court, except fancier; restaurant-style table; fountain in back of us"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "anime store",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "stores near/around the eating area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a cool anime store"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "mall_store",
+        "location_name": "sweets/dessert place",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "near/among the stores while waiting for food",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "new",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a just-opened sweets/dessert place; create your own dessert by picking step-by-step options; the steps seemed very important; weird vibe from the man behind the counter; his smile was fake"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "left the eating area to check out some of the stores while waiting"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "saw a just-opened sweets/dessert place after the anime store"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Sitting at a restaurant-style table with parents waiting for appetizers; food/appetizers were late.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": null,
+            "name_or_relation": "parents"
+          }
+        ],
+        "transaction_item": "appetizers",
+        "transaction_blocker": "food was late"
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "transaction",
+        "description": "Considered ordering a build-your-own dessert with step-by-step required options: first cheesecake, then ice cream, then macarons, last candy/syrup toppings; felt tempted because hungry; noted lactose intolerance would make cheesecake and ice cream bad ideas.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "cashier",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "man behind the counter; smile seemed fake; gave a weird vibe",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "custom dessert (cheesecake + ice cream + macarons + candy/syrup toppings)",
+        "transaction_blocker": "not_mentioned"
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "Perceived strict ordering rules for dessert assembly and feared the counter man would get angry if a step was skipped (e.g., not adding ice cream).",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "threatening",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "man behind the counter",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "No explicit lighting/state/crowding details beyond 'fancier food-court-like area', a fountain behind the table, and a 'just-opened' dessert shop. Outcome of dessert purchase not stated."
+  },
+  "response_id": "resp_05c8bc8ac43a47bd00696e1b28fcdc8194980714cf47800b25",
+  "usage": {
+    "input_tokens": 10302,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1775,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12077
+  }
+}

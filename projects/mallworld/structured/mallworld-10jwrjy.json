@@ -1,0 +1,328 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\10jwrjy.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/10jwrjy/i_tried_to_take_pics_again_but_this_time_i_was/",
+  "title": "I tried to take pics again, but this time I was was caught",
+  "date": null,
+  "content_checksum": "e42e9279ab9819cf98e4231b69c6ae650bbffcab371147a36c6a5bb63b90fdc4",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:38:20.237772+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "nightmare",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "“oh fuck I’m back here.”; wants to cry; determined",
+      "final_emotion": "scared; stressed (after waking)",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "mall/hotel-like interior with stairs and elevators",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“stairs, elevators, rows of stores/hotel rooms”; crowd/throngs of people pushing through; cheerleaders tossed in the air to block the shot"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "back seat of an SUV",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Dreamer is in the back seat; mom is there; “men in suits” threaten to drive them off a cliff; dreamer gives phone to delete pics"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "prisoner",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "amusement_park",
+        "location_name": "amusement park/carnival outside",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“We end up at an amusement park/carnival outside.” Being watched; kids acting as “security”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "restaurant",
+        "location_name": "amusement park restaurant (escape route)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the amusement park/carnival area",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Escape by “making a break through one of these amusement park restaurants”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "unspecified",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Sudden shift: “Suddenly, I’m in the back seat of an suv”"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "vehicle",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Driven to “an amusement park/carnival outside”"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Escape route goes through an amusement park restaurant"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "cliff",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Threat: “They threaten to drive us off a cliff”"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer tries to take pictures of the staircase with their phone; crowd blocks; cheerleaders tossed in the air to block the shot; throngs push through; dreamer snaps anyway.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "unfriendly",
+            "role": "blocker",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "crowd/throngs of people pushing through; blocking the shot",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "blocker",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "cheerleaders tossed in the air to block the shot",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "Men in suits threaten to drive the dreamer and their mom off a cliff; dreamer promises to delete pictures and hands over the phone for them to delete.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "mom is in the SUV with the dreamer",
+            "name_or_relation": "mom"
+          },
+          {
+            "entity_type": "authority",
+            "demeanor": "threatening",
+            "role": "authority",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "“men in suits”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "escape",
+        "description": "Dreamer and mom are being watched; kids are present acting as “security” watching people; dreamer does not have their phone.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "watching",
+            "role": "security",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "kids who are actually “security” watching people",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "mom is with the dreamer",
+            "name_or_relation": "mom"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "escape",
+        "description": "Dreamer and mom make a break through an amusement park restaurant; three kids chase them; they escape and make it out the final door.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "“These 3 kids chase us” (described as easy to escape)",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "mom escapes with the dreamer",
+            "name_or_relation": "mom"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Some spatial transitions are abrupt/unspecified (sudden shift to SUV; unclear how interior connects to vehicle scene). Interior described as mall/hotel-like with stairs/elevators and rows of stores/hotel rooms; amusement park is explicitly outside; final escape is through a restaurant and out a door."
+  },
+  "response_id": "resp_0b76af96c7bbf5de00696e0949b6d88195ad1b57f09fa10185",
+  "usage": {
+    "input_tokens": 10343,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2678,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13021
+  }
+}

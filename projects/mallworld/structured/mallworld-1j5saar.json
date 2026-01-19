@@ -1,0 +1,109 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j5saar.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j5saar/my_dream_world/",
+  "title": "My Dream World",
+  "date": null,
+  "content_checksum": "c6eaa7e6a83eb41da05b61e96eac9fbaf2a6442d97fb5e84b5ea442d35d47227",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:57:35.239647+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/h3644e5ulane1.jpg",
+    "https://i.redd.it/6s87b85ulane1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether anyone else has seen the same tall, futuristic, busy dream mall",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "huge mall that is super tall and seems to go on infinitely; escalators going every which way; futuristic feel; usually really busy"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_mentioned",
+        "outcome": "not_mentioned",
+        "qualities": "escalators going every which way (multiple escalators connecting many levels)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear to be AI-generated reference pictures rather than a hand-drawn map. Visuals show an extremely tall multi-level mall atrium with many stacked floors, crisscrossing escalators, bright colorful lighting, and a skylight/central ceiling feature; the text provides the core phenomenology (infinite-tall, futuristic, busy). No specific stores/areas, entities, or events described."
+  },
+  "response_id": "resp_0c42b26e2f1ff18d00696e1c12a2148193a042546be8b605de",
+  "usage": {
+    "input_tokens": 13173,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 545,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13718
+  }
+}

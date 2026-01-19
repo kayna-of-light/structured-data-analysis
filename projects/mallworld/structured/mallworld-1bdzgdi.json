@@ -1,0 +1,115 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1bdzgdi.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1bdzgdi/part_of_my_mall/",
+  "title": "Part of my mall",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:09:38.173219+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/691fsvdde5oc1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "map_only",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "not_mentioned",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "moderate",
+          "cleanliness": "clean",
+          "water_presence": "not_mentioned",
+          "raw_description": "Indoor mall area resembling a city street: cobblestone/brick-looking floor reflecting colored lights; storefront facades on both sides; overhead ceiling with many small string lights; neon signage including “Times Square Hot Dogs”; bar/food counter along left; café-style round tables and chairs on right; visible building-style fire escape structure on right; people walking and sitting."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Scene includes multiple people walking through the indoor street-like mall area; some seated at tables; a stroller present; food/bar counter visible.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Mixed group of people in an indoor street-like mall area; some walking, some seated; one stroller.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text; extraction is based solely on the attached image. Image appears to be a real photo-like depiction rather than a hand-drawn map. Specific dreamer actions/route not shown."
+  },
+  "response_id": "resp_0440ba94f76f4b8400696e10cb08d4819489afb478e76d13e1",
+  "usage": {
+    "input_tokens": 10936,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 582,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11518
+  }
+}

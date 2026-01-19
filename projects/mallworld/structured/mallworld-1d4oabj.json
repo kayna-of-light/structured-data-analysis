@@ -1,0 +1,197 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1d4oabj.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1d4oabj/fashion_show/",
+  "title": "Fashion Show",
+  "date": null,
+  "content_checksum": "04d2a2d71eb66458b531032842d30157188e051db2d21d8ba80d876dc9534797",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:17:27.353677+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "fashion department/workshop",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "below the mall or just a lower level",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "fashion department/workshop located below the mall or just a lower level; many people getting ready for a fashion show; everyone was busy with a task; people creating designs, sewing bizarre outfits; interview taking place at a table"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "theater",
+        "location_name": "fashion show / catwalk area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "associated with the fashion department/workshop",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "individuals walking up and down the catwalk; bizarre outfits with different varieties of colours and materials; fluffy materials stood out; cliche early-2000s-style pop song playing in the background"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "audience",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "unspecified",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "transition from interview/workshop activity to the fashion show/catwalk"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observed a busy fashion department/workshop with people creating designs and sewing outfits.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "many people getting ready; everyone busy with a task; creating designs and sewing bizarre outfits",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Interview at a table: interviewer questioned models or managers; one interviewee stood out (well dressed, black-and-white striped suit, bowtie, masculine presence, no head; clothes hanger where head should be; rested hanger on a human-like hand; appeared disappointed or stressed).",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "interviewer at a table questioning models/managers",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "well dressed; black and white striped suit; bowtie; masculine presence; no head; clothes hanger in place of head; rests hanger on human-like hand; disappointed/stressed",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Watched the fashion show: individuals walked up and down the catwalk wearing bizarre outfits; many colours/materials; fluffy materials stood out; background music was an authentic-sounding but cliche early-2000s pop song; repetitive lyrics; song remained stuck in head upon waking and was unfamiliar/unknown in waking life.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "individuals walking up and down the catwalk (models/show participants)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial detail is limited but includes a clear vertical relation (fashion department/workshop on a lower level/below the mall) and a shift from workshop/interview area to catwalk/show area. Time flow not described, but a sequence of events is present and the song persisting on waking is reported."
+  },
+  "response_id": "resp_0044898807843ba200696e12aa5c1081968211119231f92ec4",
+  "usage": {
+    "input_tokens": 10316,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1626,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11942
+  }
+}

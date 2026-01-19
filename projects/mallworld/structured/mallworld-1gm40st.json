@@ -1,0 +1,135 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gm40st.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gm40st/the_play_zone/",
+  "title": "The Play Zone",
+  "date": null,
+  "content_checksum": "c02e3a4b64881c19cd5db9044bf73c4667413e6ed465b8092bb9131086eccddb",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:35:13.792710+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/2luc4y8bakzd1.jpg",
+    "https://i.redd.it/rl016z8bakzd1.jpg",
+    "https://i.redd.it/9fonlt9bakzd1.jpg",
+    "https://i.redd.it/69ebhy8bakzd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others can generate/recall the carpark where you lose your car; mentions chainlink fence and many cars in an urban setting",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "The Play Zone",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the Malls and arcade areas",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"play zones in the Malls and arcade areas\"; visually: enclosed netted tunnels and multi-level indoor play structure with slides, tubes, platforms; bright saturated colors (red/yellow/blue), overhead industrial ceiling/lighting"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "parking_lot",
+        "location_name": "Carpark",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "associated with the mall setting",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"carpark\" where \"you always lose your car\"; \"so many cars\"; \"chainlink fence\"; \"urban setting\""
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "search",
+        "description": "In the carpark, the dreamer 'always lose[s] your car' (searching/trying to find the car among many cars).",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Text provides minimal narrative; main extractable phenomenology comes from described recurring 'play zones' in mall/arcade areas and the carpark description, plus AI-generated images depicting an indoor play structure (not a hand-drawn map)."
+  },
+  "response_id": "resp_0d16972a7d53146200696e16c598948193aaf65f8592afd800",
+  "usage": {
+    "input_tokens": 14995,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 709,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15704
+  }
+}

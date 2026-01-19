@@ -1,0 +1,211 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1dd9dna.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1dd9dna/the_calm_aquarium_store/",
+  "title": "The calm aquarium store",
+  "date": null,
+  "content_checksum": "97b52eb9436bfa7ccfb2b8571ee5ea58e177002847e0b88c060e21349246e817",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:18:54.320309+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "quiet aquarium store",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "peaceful",
+          "crowding": "not_mentioned",
+          "cleanliness": "clean",
+          "water_presence": "not_mentioned",
+          "raw_description": "quiet aquarium store; calm and quiet; very clean, white linoleum floors, white walls, and white ceiling with thin, long light bulbs; mostly all fishtanks instead of shelves; some tanks have water and stones; some full of familiar fish; others have alien looking sealife; one wall has a big printed poster of an atmospheric aquatic scene of fresh water or seagrass; a few aisles over is shelves of other pet items"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "basement",
+        "location_name": "tall-ceiling maintenance room",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "down into the basement from the aquarium store via catwalk-style stairway",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "leak",
+          "raw_description": "tall-ceiling maintenance room with concrete floors and white walls; one wall made of painted cinderblock; floor a bit wet; whirr of machinery (pumping/filtration for fishtanks)"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "mall_store",
+        "location_name": "pet store (previously seen)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "most likely connected to the aquarium shop/basement area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "peaceful",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "pet store I've seen before that is part of shops along a east coast style wide wooden boardwalk; similar vibe of calming stillness"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "east coast style wide wooden boardwalk (shops along it)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "pet store is part of shops along this boardwalk; aquarium store may connect to that pet store",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "peaceful",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "east coast style wide wooden boardwalk; shops along it"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "industrial catwalk-style stairway that goes down into the basement"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "unspecified",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "most likely connects to the pet store I've seen before"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "shopping there and filling a hand basket full of fishtank Nic-nacs that were on clearance",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": "fishtank Nic-nacs (on clearance)",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "has enough recollection from previous dreams to have a sense of the layout; notes that a few aisles over is shelves of other pet items",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Some elements are described as uncertain ('I don't remember 100 percent, but it most likely connects...'); connection to pet store/boardwalk recorded as unspecified/uncertain. Background sound is mentioned as usually not noticed, but here 'calm and quiet' and a 'whirr of machinery' in basement maintenance room."
+  },
+  "response_id": "resp_0a5d11a8cecf321f00696e130647fc8190b1164fddcc005011",
+  "usage": {
+    "input_tokens": 10306,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1775,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12081
+  }
+}

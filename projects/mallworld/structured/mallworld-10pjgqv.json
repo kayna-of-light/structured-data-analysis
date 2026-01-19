@@ -1,0 +1,133 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\10pjgqv.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/10pjgqv/staircase_jumping/",
+  "title": "Staircase jumping",
+  "date": null,
+  "content_checksum": "eab73b925de135dedefa096f57fdfd14cf25a4caba558873ac6191c97fa5baa0",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:38:40.741857+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have similar recurring dreams involving descending staircases and a specific step-skipping/banister-swing jumping move while being chased",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "staircase (with landings and a middle banister)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "descending; includes landings and multiple flights",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Dreamer is descending a staircase while running away from someone or multiple people; staircase has a banister in the middle; there are landings and multiple flights; dreamer grabs the banister about halfway up from a landing and jumps/swing-pivots to land in the middle of the next flight."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Descending staircase with landings; dreamer skips steps by grabbing the middle banister and doing a swinging pivot jump to the middle of the next flight."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Running away from someone or multiple people while descending; to outrun them, the dreamer skips steps using a swinging pivot move: grabs the banister in the middle of the staircase (about halfway up from a landing), jumps up, swings legs, and lands in the middle of the next flight of stairs; described as 'super-human, physics-defying'.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "someone or multiple people chasing the dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer reports knowing it's a dream; when thinking of it later, it feels like a memory of something that actually happened.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Only the staircase scene is described; no broader setting (mall/school/hotel) or additional locations are provided. The chased-by entity/entities are unspecified. Time flow is not described, but a sequence of actions is present (descending, grabbing banister, jumping to next flight)."
+  },
+  "response_id": "resp_0a10ebafe7fcc2f200696e099db3b881908031eb6064538bfa",
+  "usage": {
+    "input_tokens": 10185,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1077,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11262
+  }
+}

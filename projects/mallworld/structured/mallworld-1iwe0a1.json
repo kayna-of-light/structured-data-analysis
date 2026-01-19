@@ -1,0 +1,159 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1iwe0a1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1iwe0a1/apartment_garden/",
+  "title": "apartment garden?",
+  "date": null,
+  "content_checksum": "01fa943aea224506b50eb9012d885dceed3001df90d111af3a2bc6c2515fd544",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:54:38.089691+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether anyone else has been to the small apartment complex with a courtyard vegetable garden in Mall World dreams",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "apartment",
+        "location_name": "small apartment complex",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "not_mentioned",
+          "crowding": "varies",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "small apartment complex, probably like 8-12 units; apartments are not super nice, pretty run down"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "balcony courtyard (upper-level connecting courtyard)",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "connects all of the upper level apartments",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "peaceful",
+          "crowding": "varies",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "a balcony courtyard thing that connects all of the upper level ones; there’s a vegetable garden in the courtyard; a weird calm spot"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "balcony courtyard connects all of the upper level apartments"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Other people sometimes sit in the garden reading and smoking.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people sitting in the garden reading and smoking",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer spends a lot of time in this apartment courtyard/garden area.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "No explicit mention of light/time-of-day or specific sequence of visits; recurrence inferred from 'keep dreaming' and 'I spend a lot of time here'. Mall World context mentioned as usually chaotic but not described as a specific location."
+  },
+  "response_id": "resp_0c6d4bb9f5d338cb00696e1b6b70848196b62ac14e56c18bfd",
+  "usage": {
+    "input_tokens": 10101,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1146,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11247
+  }
+}

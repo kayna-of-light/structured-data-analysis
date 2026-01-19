@@ -1,0 +1,119 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\19apzen.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/19apzen/image_morphing_in_mirror/",
+  "title": "Image morphing in mirror",
+  "date": null,
+  "content_checksum": "0040b86be67d5546e1f2e64b927ff1aa504f91d4ea97dad1c4b38d8a527eb24d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:03:49.309470+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Mirrors in dreams: reflection starts normal then morphs/scary if looked at too long; includes episodes of makeup peeling/skin coming off and facial features changing; asking if others have experienced this",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "panicky bad feeling",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "mirror / in front of a mirror",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Looking into a mirror in a dream; reflection is normal at first; if standing too long, image starts changing/morphing and can get scary; quickly checking reflection is okay"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer looks into mirror; reflection starts normal, but the longer they look, it becomes weird/scary and morphs.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "In one dream, dreamer is doing makeup; notices makeup looks like it is peeling off; rubs it and their skin comes off; they peel off face skin; there is normal skin under it but facial features look 'kind of messed up.'",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Another time, dreamer looks in mirror and realizes that's not what they look like; gets a panicky bad feeling; face starts morphing more and becomes scary-looking.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Post describes recurring mirror-focused dream events with a time-dependent change (normal at first; gets weird/scary the longer they look). No broader Mall World environment or layout described."
+  },
+  "response_id": "resp_07b6b9ee7e4dcbee00696e0f7929ec819482e7c2ee8a6a176f",
+  "usage": {
+    "input_tokens": 10160,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 913,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11073
+  }
+}
