@@ -1,0 +1,224 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j9exm6.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j9exm6/beyond/",
+  "title": "Beyond",
+  "date": null,
+  "content_checksum": "98a7f8c28c22718795655f39fd2ccc8c894d6a647378c54e8c6208225b2dbb7a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:10:05.913497+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have recurring watcher entities in their Mall World",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "theater",
+        "location_name": "Madison Square Garden/ The Sphere arena (backstage)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "backstage area of the arena where a performance is happening",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "being taken backstage in the big Madison Square Garden/ The Sphere arena; Kelly Clarkson was performing"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "audience",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "different terrains (while running to get out)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "between the arena backstage and the castle gates",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "I start running through the different terrains to get out"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "Castle in the middle (grandiose gates)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the middle",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "the grandiose gates of the Castle in the middle"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "escapee",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "running through different terrains"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "stopped at the grandiose gates"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer is being taken backstage while a performer (Kelly Clarkson) is performing.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "someone/people taking the dreamer backstage",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "Kelly Clarkson performing",
+            "name_or_relation": "Kelly Clarkson"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer realizes they are dreaming and starts running to get out.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "At the castle gates, an entity is floating in front: described as a 'deatheater mixed with the night mother'. Dreamer names the entity 'beyond' and states it is always there regardless of dream location.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "watcher",
+            "demeanor": "watching",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "floating there; 'a deatheater mixed with the night mother'; referred to as 'her'; named 'beyond'",
+            "name_or_relation": "beyond"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Many qualities (light, crowding, cleanliness, time of day) are not described. 'Different terrains' and 'castle' are treated as locations for spatial sequencing. The recurring entity 'beyond' is described as present across dream states but only visually detailed at the castle gates."
+  },
+  "response_id": "resp_025a795087f1bf7f00696e1efb9db48194bf83221b875be23b",
+  "usage": {
+    "input_tokens": 10133,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1738,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11871
+  }
+}

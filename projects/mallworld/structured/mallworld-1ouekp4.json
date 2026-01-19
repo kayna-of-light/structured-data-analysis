@@ -1,0 +1,269 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ouekp4.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ouekp4/does_anyone_else_have_an_elevator_that_only_goes/",
+  "title": "does anyone else have an elevator that only goes up?",
+  "date": null,
+  "content_checksum": "88de51840c8a590ce923127a86de81d5698304875d6c11236c673653b52e098c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:48:41.639521+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Recurring clear glass elevator in hotel/apartment hallways that is 'out of order' and only goes up; asking if others have this",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "not_mentioned",
+      "final_emotion": "not_mentioned",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "hallways inside the hotels; elevator is at the end of one side of the hallways"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "apartment",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "sometimes in the apartment buildings (similar elevator situation)"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "clear glass elevator",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the end of one side of the hallways",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "clear glass elevator; perceived as 'out of order'; no matter what buttons you press it just shoots up all the way to the top and it keeps you there"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "amusement_park",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "above/through the ceiling from the elevator path",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "elevator keeps going through the ceiling and you fall onto the amusement park"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "chased down the hallways into the elevator; elevator located at end of one side of the hallways"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "elevator",
+        "direction": "up",
+        "difficulty": "varies",
+        "mechanism_function": "dangerous",
+        "outcome": "partial",
+        "qualities": "no matter what buttons you press it just shoots up all the way to the top; keeps you there; sometimes continues through the ceiling leading to a fall onto the amusement park"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_3",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "elevator reaches 'all the way to the top' and 'keeps you there' (unable to leave until someone comes / someone fixes it); sometimes goes through the ceiling"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer is chased down the hallways and forced into the elevator they don't want to enter because it is 'out of order'.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "someone/something chasing the dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Inside the clear glass elevator, the dreamer presses buttons but it only goes up, shoots to the top, and traps them there.",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "other",
+        "description": "Resolution conditions described: (1) someone comes to get you out, (2) someone inside with you knows exactly how to fix it, or (3) the elevator goes through the ceiling and you fall onto the amusement park.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "guide",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "someone comes to get you out",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "helpful",
+            "role": "guide",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "someone inside the elevator with you who knows exactly how to fix it",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "other",
+        "description": "Elevator continues through the ceiling; the dreamer falls onto the amusement park.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Dream described as recurring scenario across hotels and sometimes apartment buildings; specific chaser identity and exact 'top' location not described. Time sequence is implied (chase -> elevator ascent -> trapped or ceiling breakthrough), but no explicit time-of-day or time distortion described."
+  },
+  "response_id": "resp_09e5f49fc495d37500696e280e32fc8194a82ae035cdc843d3",
+  "usage": {
+    "input_tokens": 10149,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2205,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12354
+  }
+}

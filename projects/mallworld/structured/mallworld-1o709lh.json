@@ -1,0 +1,158 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1o709lh.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1o709lh/hotel_in_the_distance/",
+  "title": "Hotel in the distance.",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:35:42.026095+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/r3z4ynxs17vf1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": "Hotel in the distance",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "surrounded by darkness; appears isolated on a green landmass",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "A large multi-story hotel with a red roof and a central cupola/tower; many warm yellow/orange lit windows and arches; set on a green ground area with a mostly black surrounding sky/background."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "house",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "to the right of the hotel building",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "A smaller separate building/house-like structure adjacent to the hotel on the right; dark exterior with a few lit windows."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "Distant lights/horizon",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "far left in the distance against the dark background",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "A line of small orange/yellow lights in the far distance on the left side of the scene."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": null,
+        "boundary_type": "darkness",
+        "direction": "not_mentioned",
+        "beyond": "darkness",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "The scene is dominated by black/darkness surrounding an isolated lit hotel on a green land area; beyond the immediate area is mostly dark with only distant points of light."
+      }
+    ],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text; extraction based solely on the attached image. Image appears like a stylized/painted visualization rather than a hand-drawn map; no explicit paths/doors/route information shown."
+  },
+  "response_id": "resp_06f774ad129533d300696e24e2ec1c81938eb5c9dc6cf96478",
+  "usage": {
+    "input_tokens": 11768,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1169,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12937
+  }
+}

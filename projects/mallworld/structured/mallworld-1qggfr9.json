@@ -1,0 +1,128 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1qggfr9.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1qggfr9/office_building/",
+  "title": "Office building",
+  "date": null,
+  "content_checksum": "653e68b098a7b48269ec6aa42221efc061137add3584884f67cb8d5ebc92e86c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:13:28.275102+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others visit an office building area in Mall World; describes multi-floor building with elevators, many people, and locker-room-like bathrooms.",
+      "should_skip_extraction": true,
+      "skip_reason": "No specific dream episode is narrated; the post is primarily a question with a brief generic description."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "office",
+        "location_name": "office building",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "Several floors (multi-floor building)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Several floors, elevators, a TON of people usually"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "bathroom_locker_room",
+        "location_name": "locker room-esque bathrooms",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "Within/associated with the office building",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "locker room-esque bathrooms"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "elevator",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_mentioned",
+        "outcome": "not_mentioned",
+        "qualities": "Elevators connecting several floors within the office building."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is a question with a generic description rather than a specific dream narrative. Extracted described environment elements as locations and a within-building elevator connection; no concrete traversal events, timing, or emotions provided."
+  },
+  "response_id": "resp_0605a1439db9061100696e2de5af748196a3f1b85f19ac7803",
+  "usage": {
+    "input_tokens": 10032,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 921,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10953
+  }
+}

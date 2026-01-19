@@ -1,0 +1,132 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ovpzf6.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ovpzf6/to_the_person_i_ran_into_last_night_at_the_toy/",
+  "title": "To the person I ran into last night at the toy store...",
+  "date": null,
+  "content_checksum": "92081274a484816ad7196feb0904bb28e77229c233f58c5308600b2d1d4d9283",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:50:00.787979+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "shared_dream_claim",
+      "content_flags": [
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "toy store",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "toy store with vintage action figures on the pegs"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer ran into another person at the toy store; dreamer says they weren't paying attention to them.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "person the dreamer ran into at the toy store",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Dreamer got/bought 'The Flash' action figure; the other person was after a G.I. Joe.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "person who was after a G.I. Joe",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "The Flash action figure (dreamer); G.I. Joe (other person)",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only a single location (toy store) is mentioned; no explicit mall layout, time-of-day, or environmental qualities beyond 'vintage action figures on the pegs'. Social encounter is addressed as if to another dreamer, but no verification details are provided."
+  },
+  "response_id": "resp_0eb9e6fab81336e100696e28675074819797871fe4c8b201c3",
+  "usage": {
+    "input_tokens": 10068,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 908,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10976
+  }
+}

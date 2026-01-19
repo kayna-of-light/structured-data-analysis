@@ -1,0 +1,117 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pboc7h.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pboc7h/library/",
+  "title": "Library",
+  "date": null,
+  "content_checksum": "3c331875ee4d6c3372c85e8f41985cea20d286649ee56bc064d4636e6e535ed2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:58:14.393963+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to a specific recurring/recognizable modern library setting (silver, square, many floors, orange beds on upper floors, cleaners, students in uniforms studying).",
+      "should_skip_extraction": true,
+      "skip_reason": "Post is a question describing a setting; no first-person dream narrative or events are reported."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "library",
+        "location_name": "modern library",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Modern library, kind of silver, lots of floors, square shape. Further up you go some floors have beds on them (usually orange). Floors are filled with people from schools in uniforms studying. There is cleaners."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "upper floors with beds",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "further up you go (within the library)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Some upper floors have beds on them, usually orange."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Setting description includes spatial structure (square shape, lots of floors, 'further up' indicates vertical layering) and population (students in uniforms studying, cleaners). No explicit dream events, traversal mechanisms (stairs/elevators), emotions, or boundaries were described."
+  },
+  "response_id": "resp_0de6f4bf10abfcc400696e2a5627b481978d2f9c02dfaad4d9",
+  "usage": {
+    "input_tokens": 10053,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 881,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10934
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jdu3ua.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jdu3ua/forbidden_campground_with_a_portal_closet/",
+  "title": "Forbidden campground with a portal closet",
+  "date": null,
+  "content_checksum": "9a37ffbd790e2d96d48c8751a3f5000e946fb95e0001967e24773cfc2ba931f3",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:24:48.829356+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/zjw4m0tdtcpe1.jpg",
+    "https://i.redd.it/3g7fnpsdtcpe1.jpg",
+    "https://i.redd.it/e81uxqsdtcpe1.jpg",
+    "https://i.redd.it/9hh8yqsdtcpe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "carnival",
+        "location_name": "campground/cabins area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "evening",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "river",
+          "raw_description": "“These cabins are like a campground it’s always sundown/dark.” Visuals: fenced campground with multiple cabins; dirt paths; a narrow stream/creek; tall trees/forest; a swing set/playground; cabin lights on; smoke from a chimney; mist/fog in the air; gate/fence at foreground; lantern near gate in one image."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "house",
+        "location_name": "inside one of the cabins (portal closet access point)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside one of the cabins at the campground",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“The third image is accessible from inside one of the cabins.” (Portal access described as from inside a cabin; closet mentioned in title.)"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "parking_lot",
+        "location_name": "night field/yard with vehicles (accessible from cabin)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "accessible from inside one of the cabins",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Visual (third image): nighttime outdoor area with a small shed/building with a lit doorway; dirt road/track; a pickup truck in foreground; an RV/van further back; fence sections; starry sky; surrounding dark tree line/forest."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "mountain",
+        "location_name": "mountains (destination if you keep walking)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "reached by continuing to walk from the cabin-accessible area",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "morning",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“If you keep walking it will take you to mountains.” Visual (fourth image): snowy mountain landscape with sunrise/low sun on horizon; snow-covered ridges/valley; conifer trees; footprints in snow; viewpoint shows legs/boots."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Access to inside of a cabin from the campground area (implied)."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "portal",
+        "direction": "horizontal",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "“The third image is accessible from inside one of the cabins.” Title references a “portal closet,” implying the portal is via a closet."
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "“If you keep walking it will take you to mountains.”"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Presence of a caretaker described as an old man at the campground/cabins area.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "staff",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "old man caretaker",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post provides a brief narrative plus 4 attached images that appear AI-generated (not a hand-drawn map). Spatial chain inferred from text: campground/cabin interior -> third-image area -> mountains. Many qualities (emotion, crowding) not explicitly stated."
+  },
+  "response_id": "resp_07d30ef3c6fe063c00696e3068adf48190aa78e49ab883bc01",
+  "usage": {
+    "input_tokens": 14979,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1360,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16339
+  }
+}

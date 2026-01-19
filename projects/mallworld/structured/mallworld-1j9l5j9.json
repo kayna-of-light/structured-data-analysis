@@ -1,0 +1,127 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j9l5j9.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j9l5j9/highway/",
+  "title": "Highway",
+  "date": null,
+  "content_checksum": "40a0b59239425953040cd8b73946c11859dfd4c2f11b5826e4fbbeef0c28b8de",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:10:22.418412+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/46fdojqdp9oe1.jpg",
+    "https://i.redd.it/yt2zojqdp9oe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been on a specific high-speed highway/interchange where cars go ~100 mph and it's easy to miss an exit",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "Highway / highway interchange",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Cars usually go like 100 mph; super easy to miss an exit. Multi-level freeway interchange with looping ramps and overpasses; many lanes; green freeway signs visible; dry/brushy embankments; nearby industrial/commercial buildings in one image."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "diagonal_up",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Elevated looping ramps/overpasses connecting different highway levels; exits present and easy to miss"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Traveling/driving on a highway where traffic moves very fast (~100 mph) and it is easy to miss an exit.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Other cars/traffic moving at high speed",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is phrased as a question and does not provide a full dream narrative; phenomenology extracted from the brief text plus the two attached aerial photos showing a complex multi-level freeway interchange. Images appear to be real photographs (not a hand-drawn map)."
+  },
+  "response_id": "resp_09ca2b510328181e00696e1f030b4481969c015d2025ca5fa3",
+  "usage": {
+    "input_tokens": 13681,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 900,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14581
+  }
+}

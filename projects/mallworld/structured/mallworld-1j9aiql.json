@@ -1,0 +1,137 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j9aiql.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j9aiql/clothes_warehouse/",
+  "title": "Clothes warehouse",
+  "date": null,
+  "content_checksum": "45a2e72afebcac180e8a6a7e652b39c987162c2a9df8c60009f4b53490b3d89e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:10:09.725966+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/cnpp23m1n6oe1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others recognize the recurring 'clothes warehouse' location",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "warehouse",
+        "location_name": "clothes warehouse",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "normal",
+          "water_presence": "none",
+          "raw_description": "Large dark warehouse-like space with many overhead strip lights; rows of circular clothing racks filled with clothes; concrete floor; shelving/racks visible along the perimeter; 'lives here in the shadows' / 'monster or something' feeling."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "Exit is difficult/impossible to reach; when reaching it, sometimes it is not a real door—only an exit sign on a blank wall."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Attempts to reach the exit door; it 'always seems' impossible to get to it. Sometimes when arriving at the 'exit' it is only a sign on a blank wall rather than a door.",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Exit is unreachable or is not an actual door (sign on blank wall)."
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Sense/feeling that there is 'a monster or something' in the shadows of the warehouse.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"a monster or something\" that 'lives here in the shadows'",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears to be a visual depiction (not a hand-drawn map): a large dim warehouse with many clothing racks and overhead strip lighting. No explicit connections to other Mall World locations described; spatial data mainly concerns the exit/door anomaly."
+  },
+  "response_id": "resp_08c5710ada21afe600696e1efb85cc819098efed7ff5c200a8",
+  "usage": {
+    "input_tokens": 10392,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 740,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11132
+  }
+}

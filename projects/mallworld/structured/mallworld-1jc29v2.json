@@ -1,0 +1,172 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jc29v2.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jc29v2/the_run_down_part_of_the_food_court/",
+  "title": "the run down part of the food court",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:12:26.562666+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/8soasctzgwoe1.png",
+    "https://i.redd.it/xyhws680hwoe1.png",
+    "https://i.redd.it/t7o5xxw0hwoe1.png",
+    "https://i.redd.it/xinjldh1hwoe1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_food_court",
+        "location_name": "the run down part of the food court",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "eerie",
+          "crowding": "sparse",
+          "cleanliness": "dirty",
+          "water_presence": "none",
+          "raw_description": "Long, corridor-like food court with neon strip lighting (red/green/blue). Food stalls line both sides; tiled floor reflects colored light. Some shutters down/closed storefronts; minimal people visible in one corridor. Seating area with many long bench tables; ceiling and walls show peeling/patchy surfaces in the green-lit area."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "food stalls / counters along corridor",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "along both sides of a long corridor",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "mixed",
+          "atmosphere": "neutral",
+          "crowding": "sparse",
+          "cleanliness": "normal",
+          "water_presence": "none",
+          "raw_description": "Multiple food counters with illuminated menu boards and signage; some appear open with lit interiors, others closed behind metal roll-down shutters. One stall shows steam/smoke from cooking area; signage includes pizza imagery and non-English characters."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "mall_food_court",
+        "location_name": "seating hall section",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "adjacent to/within the food court area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "dirty",
+          "water_presence": "none",
+          "raw_description": "Large open seating area with many long tables and benches; green neon perimeter lighting on ceiling. Debris/litter on floor; walls/ceiling show peeling paint or water-damaged patches; counters at far wall look inactive/closed."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Food stalls/counters open directly off the main corridor; line-of-sight down a long straight passage."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Corridor opens into a larger seating hall area with tables/benches."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text; extraction based on four attached images depicting a run-down neon-lit food court corridor, stalls, and seating area. Images appear AI-generated; no explicit dream events, entities, or boundaries described."
+  },
+  "response_id": "resp_0c4b898bf2bbb25f00696e1f81b6fc819781f2842cfa211ba1",
+  "usage": {
+    "input_tokens": 14938,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 958,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15896
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ozskkf.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ozskkf/last_night_i_had_to_go_to_court/",
+  "title": "Last Night I had to go to court",
+  "date": null,
+  "content_checksum": "a62dca545fd017986a5f8c5f4f583f270e67cea76bed57f3ea39d09ea6a5f302",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:53:26.874382+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if the described court/lobby/front-office area is familiar to others",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Author notes it could be a carry over from a regular dream, but thinks both dreams had the mall world \"feel\"",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "courtroom (judge's court)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "accessed after being admitted by lobby people / through an entry area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Needed to be in her court specifically (African American female judge)."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "other",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "entry area / lobby admission area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "To get to the courtroom I had to be admitted by the lobby people. The entry area looked like your typical American school front office."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "inmate visitation / permission office (prior visit memory)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "associated with the same place the dreamer has been before",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Have been there before to get permission to visit an \"inmate\"."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "guest",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Access required being \"admitted by the lobby people\" before reaching the courtroom."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer had to be admitted by lobby people to get to the courtroom.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "staff",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "lobby people",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dream involved needing to be in a specific judge's court; reason described as a misunderstanding (details not remembered).",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "authority",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "African American female judge",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Sparse narrative. Courtroom access is described via an admission step at a lobby/entry area resembling an American school front office. Prior familiarity is mentioned via a remembered earlier visit to get permission to visit an \"inmate\"; exact spatial relation is unclear but appears to be the same complex/entry system."
+  },
+  "response_id": "resp_0502e7fa4d9eb1dc00696e2926fd3881939a997b3452c45bed",
+  "usage": {
+    "input_tokens": 10154,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1504,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11658
+  }
+}

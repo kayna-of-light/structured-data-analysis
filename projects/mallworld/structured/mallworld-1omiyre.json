@@ -1,0 +1,194 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1omiyre.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1omiyre/which_one_of_you_did_i_meet_last_night/",
+  "title": "Which one of you did I meet last night",
+  "date": null,
+  "content_checksum": "1bc2ec29575b4719f2f63878afe297f2bc14a30da9eab51ab58137f119a29dfe",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:45:03.400091+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "shared_dream_claim",
+      "content_flags": [
+        "mentions_other_dreamers",
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking which subreddit member they met in a dream; describes meeting a person in the mall area and doing a work task near a Whole Foods-type deli.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": "put to work to fix some clothes that were messed up on a display",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "mall area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "We spawned together in the mall area"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "employee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "restaurant_buffet",
+        "location_name": "Whole Foods type deli place",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "near the clothes display area",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "near the Whole Foods type deli place"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "mall_store",
+        "location_name": "clothes display",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "near the Whole Foods type deli place",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "fix some clothes that were messed up on a display"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "employee",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Met a short/stocky, kinda awkward person; they said they were an engineer, interested in creative writing, and on reddit.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Short/stocky, kinda awkward",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "task",
+        "description": "Immediately put to work to fix clothes that were messed up on a display.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "search",
+        "description": "Investigating a weird bag of stuff hidden in the clothes; it looked like dog food or ginger bread men.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Somebody had tried to hide some weird bag of stuff (looked like dog food or ginger bread men) in the clothes",
+            "name_or_relation": "Somebody (unknown person who hid the bag)"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial relation explicitly given: clothes display area is near a Whole Foods-type deli place. 'Last night' provides minimal temporal anchoring but no in-dream time qualities."
+  },
+  "response_id": "resp_0937e64ddcafe97c00696e273aeed4819586ab8ccd381bfaaf",
+  "usage": {
+    "input_tokens": 10116,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1468,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11584
+  }
+}

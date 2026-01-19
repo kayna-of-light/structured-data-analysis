@@ -1,0 +1,185 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jom4pa.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jom4pa/the_huge_round_white_building/",
+  "title": "The huge round white building",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:18:58.192744+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/qtn6ximt65se1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "huge round white building",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "on the coast beside the beach/ocean",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "new",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "Large, modern, round/curved white multi-story building with wraparound glass windows; on a beachfront/coastal edge"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "beach",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "in front of the round white building",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "Sandy beach with shoreline; ocean water in foreground; rocky outcrops near the water"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "amusement_park",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "adjacent to the round white building along the coast",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "new",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Large red roller coaster structure with steep hills/loops near the coastline"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "waterpark",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "beside the round white building on the beachfront side",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "new",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "pool_clean",
+          "raw_description": "Outdoor pool area with water slides (yellow, blue, red) near the building; palm trees around pool deck"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "ocean_water",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "Coastline/shoreline forming an edge where land meets open ocean"
+      }
+    ],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text provided; extraction based solely on a single attached AI-generated image (watermark 'Meta AI'). Spatial relations inferred from visible layout: round white building adjacent to beach/ocean, with roller coaster and water slides nearby."
+  },
+  "response_id": "resp_043f3bc670f0130100696e20fd47dc8193ab01a4f53d08c61b",
+  "usage": {
+    "input_tokens": 11842,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 976,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12818
+  }
+}

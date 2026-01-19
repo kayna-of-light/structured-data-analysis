@@ -1,0 +1,138 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ob2x3j.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ob2x3j/mansionhotelballrooms/",
+  "title": "Mansion/Hotel/Ballrooms",
+  "date": null,
+  "content_checksum": "2df9096511972bd31bd2b8434946aa9ca9469ebf78c31a40aab7e54da5d9c7c2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:39:59.744552+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others visit a large mansion/possible hotel environment with expansive rooms/halls and small step-up/step-down platform transitions; describes typical room qualities (empty, nice, carpet/hardwood floors).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mansion",
+        "location_name": "large mansion/possible hotel environment",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "large mansion/possible hotel environment; lots of expansive rooms or halls; rooms usually empty but very nice; floors carpeted or very nicely done hardwood"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel",
+        "location_name": "possible hotel environment (within/overlapping the mansion setting)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "large mansion/possible hotel environment",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "possible hotel environment; expansive rooms or halls; rooms usually empty but very nice"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "diagonal_up",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Sometimes you have to step up or down a small platform level to enter the next huge space."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "diagonal_down",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Sometimes you have to step up or down a small platform level to enter the next huge space."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question but includes recurring phenomenological details about a mansion/hotel-like environment. Specific discrete rooms/halls are mentioned but not individually distinguished; step-up/step-down platform transitions are captured as generic connections within the environment."
+  },
+  "response_id": "resp_0f15be03eb709f5200696e260edce081939e95aebba5f6919d",
+  "usage": {
+    "input_tokens": 10077,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1048,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11125
+  }
+}

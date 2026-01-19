@@ -1,0 +1,160 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jd8idq.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jd8idq/mels_tiki_bar/",
+  "title": "\"Mel's Tiki Bar\"",
+  "date": null,
+  "content_checksum": "4c367475692fbe73d693af586b36361c37f4308ed329f35d0ba70721179c498c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:12:57.564909+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Why the dream ends before the dreamer gets to eat the food / feels not 'allowed' to eat dream foods",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "The place seems to be run by employees that feel like potentially other dreamers (not just background people). Felt almost like I got woken up like I wasn't \"allowed\" to eat the dream foods.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant_fast_food",
+        "location_name": "Mel's Tiki Bar",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "common food place in my mallworld",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Common food place in my mallworld; almost always really busy; \"people were practically jumping over each other for food\"; strong smell of food; feels like an irl contemporary fast food/pick up type place, not a retro restaurant; dream usually ends before I get to try the food; employees/staff \"super chill\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Dreamer \"ordered\" a large amount of food at Mel's Tiki Bar while it was extremely busy; staff were chill about it.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "employees/staff running the place; \"super chill\"; felt like potentially other dreamers (not just background people)",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "confusing",
+            "role": "customer",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "people \"practically jumping over each other for food\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "a whole pizza; three boxes of buttered shrimp and orange chicken; a whole chocolate cake; 2 plates of strawberry sherbet",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer finally found a seat after ordering.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "After sitting, dreamer was \"getting stared down by large families of other people still waiting to be served\".",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "unfriendly",
+            "role": "customer",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "large families staring down the dreamer while waiting to be served",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Dream usually ends/wake-up occurs before dreamer gets to try the food; closest remembered was trying some sort of smoothie; felt like getting woken up as if not \"allowed\" to eat the dream foods.",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": "some sort of smoothie (closest the dreamer remembers managing to try)",
+        "transaction_blocker": "Dream ends / wake-up before eating; described as feeling like not \"allowed\""
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Only one explicit location is described (Mel's Tiki Bar) as a recurring food place within the broader 'mallworld'. No explicit routes/connections or physical layout details beyond seating and crowd behavior."
+  },
+  "response_id": "resp_0f549c67ad09664700696e1fa4e0248193bb4b37c120bfcba1",
+  "usage": {
+    "input_tokens": 10285,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1331,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11616
+  }
+}

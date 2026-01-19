@@ -1,0 +1,104 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\q5boys.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/q5boys/does_anyone_have_locker_room_public_bathroom/",
+  "title": "Does anyone have locker room / public bathroom dreams?",
+  "date": null,
+  "content_checksum": "48a71ac4c0784f1da29b80271b44425a5e9de4c9aa91efbaeca689fbd7e16c9c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:14:22.536013+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking whether others have recurring dreams of huge locker rooms/public bathrooms that extend endlessly with winding corridors and hidden areas",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_locker_room",
+        "location_name": "HUGE locker rooms / public bathrooms",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "dreams of HUGE locker rooms or public bathrooms that seem to go on and on, with different areas with showers, sinks, lockers; winding corridors and hidden areas"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "winding corridors; hidden areas; seems to keep going on and on"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is a brief question but includes recurring dream setting details: very large locker room/public bathroom with multiple sub-areas (showers/sinks/lockers) and maze-like corridors/hidden areas. No entities, events, or boundaries described."
+  },
+  "response_id": "resp_0a25df5ae47ab30300696e2e202dec8194b821bc3742352b8b",
+  "usage": {
+    "input_tokens": 10062,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 724,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10786
+  }
+}

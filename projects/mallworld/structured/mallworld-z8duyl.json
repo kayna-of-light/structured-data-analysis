@@ -1,0 +1,184 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\z8duyl.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/z8duyl/the_brown_gym/",
+  "title": "The brown gym",
+  "date": null,
+  "content_checksum": "7b938c89dfd348c2d04f473eda881d389aa6fdb67ed5bff72cf5d9f57c7f3b64",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:22:22.124224+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others see a specific recurring-feeling gym area (two-story brown gym with balcony cardio machines, hallway to indoor pool) similar to mall/beach world dreams",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "school_gym",
+        "location_name": "the brown gym",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "neutral",
+          "crowding": "sparse",
+          "cleanliness": "dirty",
+          "water_presence": "none",
+          "raw_description": "Two stories with the middle being open air; cardio machines on a sort of balcony second level. Everything feels old, maybe from the 80’s; walls and carpet are all shades of brown. The whole area is very dimly lit and seems slightly dirty. Only ever two or three other people in the area, even though it is huge."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "downstairs hallway (brown carpet)",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "downstairs from the gym",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Downstairs there is a long, dimly lit hallway with brown carpet that leads to an indoor pool."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "pool",
+        "location_name": "indoor pool",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the end of the downstairs hallway",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "dirty",
+          "water_presence": "not_mentioned",
+          "raw_description": "Indoor pool reached by a long, dimly lit hallway; the whole area is very dimly lit and seems slightly dirty."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Downstairs from the two-story gym to a long, dimly lit hallway with brown carpet."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Long hallway, dimly lit, brown carpet; leads to an indoor pool."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observes the gym as huge but with only two or three other people present.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "two or three other people in the area",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Post is framed as a question but includes a coherent description of a gym/pool area with clear vertical (two-story; downstairs) and connective (hallway to indoor pool) spatial details. No explicit actions/traversal outcomes described."
+  },
+  "response_id": "resp_0562873157c494c000696e2ff594248195813b386207fea567",
+  "usage": {
+    "input_tokens": 10128,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1449,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11577
+  }
+}

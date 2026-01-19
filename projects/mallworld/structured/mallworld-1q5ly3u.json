@@ -1,0 +1,235 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1q5ly3u.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1q5ly3u/deep_lucid_dream/",
+  "title": "Deep lucid dream",
+  "date": null,
+  "content_checksum": "f9d723f9283f906e5b65029fcc898444456e0b9d8a24387d0da042a37e62e919",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:11:04.885098+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "lucid_dream",
+        "recent_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "inconsistent",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "panicked (after dream began to shift quickly)",
+      "final_emotion": "uncanny/unnerved; 'haven't been able to shake it'",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "theater",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "in a full theater; 'very uncanny valley'; felt 'very grounded like in waking life'"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "audience",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "restaurant",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "in a packed restaurant; 'very uncanny valley'; realism 'very grounded like in waking life'"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "restaurant",
+        "location_name": "outdoor patio / beer garden (kind of like)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "on an outdoor patio, kind of like a beer garden; 'very uncanny valley'; felt 'so real and so tangible'"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "teleport",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "dream 'began to shift quickly' from full theater to packed restaurant"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "teleport",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "dream 'began to shift quickly' from packed restaurant to outdoor patio/beer garden"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Began asking people if they were in a dream; most laughed.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "unfriendly",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people in a full theater; most laughed at the question",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "A few people offered to take pictures on their phones to prove the dreamer wasn't dreaming; each photo shown was off-center and obscured the dreamer enough that it 'wasn't right.'",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "offered to take pictures on their phones; showed off-center photos that obscured the dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "Dreamer became more forceful with questioning; people got 'mad' and 'aggressively mad'; dreamer backed off for safety.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "hostile",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people became aggressively mad when questioned forcefully",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Dreamer reports inability to use usual lucid-dream mechanics (e.g., flying) and had to walk through the dream 'stuck in whatever was happening.'",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Locations are described as rapid scene-shifts (theater -> restaurant -> outdoor patio). No explicit architectural links (doors/hallways) are given; connections encoded as teleport/scene shift. Crowding is explicit for theater and restaurant; patio crowding not stated. Emotional/atmospheric descriptors ('uncanny valley', aggression) applied generally across the dream."
+  },
+  "response_id": "resp_04fba72283a19a7400696e2d43351c8190805511c9996eb520",
+  "usage": {
+    "input_tokens": 10400,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1857,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12257
+  }
+}

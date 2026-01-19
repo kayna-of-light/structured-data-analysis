@@ -1,0 +1,142 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\yyczrr.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/yyczrr/frequenting_a_boardwalk_with_an_early_1900s_vibe/",
+  "title": "Frequenting a boardwalk with an early 1900s vibe; lots of numbered doors. Door #22 leads to an empty theater with a stage. Anyone been here?",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:22:14.315619+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/l08spgon1p0a1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to a recurring boardwalk/numbered-doors location; specifically door #22 leading to an empty theater with a stage.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "Boardwalk (early 1900s vibe)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "worn",
+          "atmosphere": "not_mentioned",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Boardwalk with an early 1900s vibe; wooden planks; storefront-like structures along the walkway; appears outdoors in daylight."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "theater",
+        "location_name": "Empty theater (Door #22)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "Accessed from a numbered door on the boardwalk",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Door #22 leads to an empty theater with a stage."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "audience",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Numbered doors along the boardwalk; Door #22 specifically is an entry to the theater."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Theater interior is empty; there is a stage.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text beyond the title; extraction relies on title plus one attached image showing an outdoor wooden boardwalk lined with buildings. The image appears stylized/illustrative rather than a hand-drawn map; no visible numbered doors or '22' text in the provided image."
+  },
+  "response_id": "resp_0c9a21010af2f6ef00696e2fd4834c819684ed48966e977eda",
+  "usage": {
+    "input_tokens": 11801,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1025,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12826
+  }
+}

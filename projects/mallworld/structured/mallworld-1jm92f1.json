@@ -1,0 +1,113 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jm92f1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jm92f1/anyone_been_to_any_restaurants_in_mallword/",
+  "title": "Anyone been to any restaurants in Mallword?",
+  "date": null,
+  "content_checksum": "303eeda180f0dcaf495ce0b4dc84f8215018aa65c5d2c89ef6db94663e33c094",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:17:19.021648+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have been to restaurants in Mallworld; mentions a recurring counter food vendor named 'The Duct Kitchen'.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant_fast_food",
+        "location_name": "The Duct Kitchen",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a counter food vendor with like truck stop type hot foods"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "After going by the counter food vendor 'a dozen or so times' in dreams, the dreamer asks someone working the counter what it's called; they answer: \"The Duct Kitchen, like an air duct, not a quack duck.\"",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "someone working the counter",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Only one recurring location is described (a counter food vendor/restaurant). No explicit spatial layout details beyond repeated pass-bys; temporal info is limited to recurrence count ('a dozen or so times')."
+  },
+  "response_id": "resp_01e5b87930ec458f00696e20c01d3481979e11f575ce84e22d",
+  "usage": {
+    "input_tokens": 10077,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 770,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10847
+  }
+}

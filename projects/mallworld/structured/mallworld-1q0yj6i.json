@@ -1,0 +1,141 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1q0yj6i.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1q0yj6i/conference_room_in_rec_center/",
+  "title": "Conference Room in Rec Center",
+  "date": null,
+  "content_checksum": "6098a654719d399a0219eab959e3c2eb4c868d3a2d5616814c88bab95a821ea1",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:08:51.745327+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "conference room in rec center",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "varies",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "a strange area; men inside a conference room; projector showing an NFL game; 'VR/AR components' felt from the projector; extremely realistic; room began to be filled up; once the room was all filled up, dream ended abruptly"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer sees men inside a conference room and experiences 'VR/AR components' from a projector while it shows an NFL game; the projector feels extremely realistic and excites the dreamer.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "men inside a conference room",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Dreamer encounters a woman charging 5 dollars inside the room while the conference room fills up.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "cashier",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a woman who was charging 5 dollars inside the room",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "entry/charge to be in the room (5 dollars)",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "The conference room becomes fully filled up; the dream ends abruptly at that point.",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only one explicit location (conference room in a rec center). Crowding changes from some men present to the room filling up. Temporal info is limited to waking 'about 30 minutes ago' and that sleep spanned midnight on New Year's Day; no in-dream time flow described."
+  },
+  "response_id": "resp_0a8d9dcc2c21e91600696e2ccd82d081968255d7430c4f1d9c",
+  "usage": {
+    "input_tokens": 10146,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1034,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11180
+  }
+}

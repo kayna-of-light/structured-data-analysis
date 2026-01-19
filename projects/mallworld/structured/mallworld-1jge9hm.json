@@ -1,0 +1,136 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jge9hm.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jge9hm/some_photos_of_my_dream_locations/",
+  "title": "Some photos of my dream locations",
+  "date": null,
+  "content_checksum": "08f271887ce94707da822d5263bae19d5519cb3614e0daedc4c7ce5dab7473f1",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:14:28.977324+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/owyqemk8z0qe1.jpg",
+    "https://i.redd.it/ofd9cmk8z0qe1.jpg",
+    "https://i.redd.it/svmu2mk8z0qe1.jpg",
+    "https://i.redd.it/5s9mjlk8z0qe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "formal garden / topiary courtyard with colonnade",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "manicured hedge maze-like paths; rounded and conical topiary bushes; white classical columns/colonnade; green lawn; tall hedge walls; stone pedestal planter; statue in garden; open-air courtyard"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "coastal cliff road with houses",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "along a cliff above the ocean",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "peaceful",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "winding road traced by warm streetlights; houses/buildings along a cliff; steep drop to dark ocean; coastline at night/blue hour; sea visible to the right of the cliff"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "cliff",
+        "direction": "not_mentioned",
+        "beyond": "ocean_water",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "edge of coastal cliff dropping down to the ocean"
+      }
+    ],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post text contains only the title and a single character ('M'); locations and qualities are extracted from the attached images, which appear to be illustrative photos/visualizations rather than a hand-drawn map."
+  },
+  "response_id": "resp_04dc22fb8fa72bc000696e1ff836608194a8e9e234f2e8b776",
+  "usage": {
+    "input_tokens": 11938,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 943,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12881
+  }
+}

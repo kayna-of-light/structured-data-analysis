@@ -1,0 +1,189 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pbv6tf.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pbv6tf/monkey_man/",
+  "title": "Monkey Man",
+  "date": null,
+  "content_checksum": "2c7788bbc5ac2a825de5e0d8efb11d5c7563a11bd3d997e362f81a1a42296f69",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:58:24.397715+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if anyone else has experienced a similar place/dream (“TV land”) and/or entity",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Calls the place “TV land”; notes it felt familiar/like they’d been there before",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hospital_room",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "nostalgic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“I woke up in hospital bed”; “a screen opened infront of me but it wasn’t a screen more like a window”; “everything felt so familiar like I’d been there before”; “everything looked like the color scheme of a set like you’d see on a tv show like muted colors”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "patient",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "TV land (as named by dreamer)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "seen/experienced via a “window” opening in front of the dreamer",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "nostalgic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "“more like a window”; “color scheme of a set like you’d see on a tv show like muted colors”; “He was in some flying machine over water”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "“a screen opened infront of me but it wasn’t a screen more like a window” (view/portal-like opening)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer asks the man why he was so hairy; the man laughs.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "other",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "Man in a “3 pc red velvet suit”, “no shirt under chest out”, “real hairy”, “dark skin Indian or middle eastern”, “shoulder length hair”; mouth: “bottom half mouth like a chimp or monkey maybe”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer perceives the man could read their thoughts; dreamer avoids being rude.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "Same man as above; dreamer feels “he could read my thoughts anyway”.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer observes the man in/over a flying machine above water.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "Man is “in some flying machine over water”.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial structure is limited: a hospital bed setting with a window/screen-like opening to another scene (“TV land”) where the man is over water in a flying machine. Water described but not specified as ocean vs. other body; coded as ocean_calm due to ‘over water’ with no turbulence mentioned."
+  },
+  "response_id": "resp_08649a963ce9239a00696e2a5b6f608197b5c66530f505ec73",
+  "usage": {
+    "input_tokens": 10230,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1543,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11773
+  }
+}

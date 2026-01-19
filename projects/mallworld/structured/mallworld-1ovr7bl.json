@@ -1,0 +1,128 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ovr7bl.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ovr7bl/sooo/",
+  "title": "Sooo",
+  "date": null,
+  "content_checksum": "bd09b647822fbcb0fa7268c9c074ff6b9b5ded5288f1c52d1626aece696e3b20",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:50:24.688354+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/2nb2j4s67y0g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have seen the 'pool rooms/maze' area",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "shook",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "pool",
+        "location_name": "pool rooms / maze",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "pool_clean",
+          "raw_description": "\"pool rooms? maze?\"; \"I enter or I’m already in the pool walking, and it keeps going and turning\"; sometimes \"it goes down on floor like a slide or a ramp\". Image shows a long narrow indoor pool corridor with tiled walls/floor, rectangular ceiling lights, a long bright line of light reflected/visible along the water, doorways/openings on the side, and a window-like opening."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Path within the pool area \"keeps going and turning\" (maze-like)."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "ramp",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Sometimes the route \"goes down on floor like a slide or a ramp\" (uncertain which)."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer enters or is already in the pool and walks through it as it continues, turns, and sometimes slopes down (slide/ramp-like).",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post references the last two times being in this area but provides limited sequencing details. Image is described by author as ChatGPT-generated and 'almost perfect' for the dream setting; visual details recorded as environmental qualities."
+  },
+  "response_id": "resp_07b680d06e9a944300696e286cfe208190b5ee03b31a302c93",
+  "usage": {
+    "input_tokens": 11956,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 706,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12662
+  }
+}

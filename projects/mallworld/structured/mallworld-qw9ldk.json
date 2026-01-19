@@ -1,0 +1,185 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\qw9ldk.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/qw9ldk/the_tunnelsbasement_mall/",
+  "title": "The Tunnels/Basement Mall",
+  "date": null,
+  "content_checksum": "da3fe6fbc048940d2f6a86856b1a50149d3ac57a2eba981dd6d356d88bd0b7b9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:14:53.798310+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "The Tunnels / Basement Mall",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "described as a tunnel-esque single storey mall / basement mall",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"large tunnel-esque single storey malls\"; \"yellow-tiled dated plaza malls\"; \"mishmash of independent stores\"; \"Geared towards people looking for bargains and deals\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_food_court",
+        "location_name": "Basement Mall food courts",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the Basement Mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"The coolest thing is the food courts. It's like an indoor night market with cheap and quick eats.\""
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "subway",
+        "location_name": "Mass transit / subway access from tunnels",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "connected to the tunnels/basement mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"I believe the tunnels connect to a mass transit system because I've come off or entered a subway from them.\""
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "tunnel",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "tunnels connect between the Basement Mall and a subway / mass transit system; dreamer has \"come off or entered a subway from them\""
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "food courts located within the Basement Mall"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Dreamer has entered or exited a subway via the tunnels connected to the Basement Mall.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer observes/experiences the food courts described as an indoor night market with cheap and quick eats.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post references another 'fancy mall' described elsewhere but does not describe it here; extraction limited to the Basement Mall/tunnels/subway and food court details provided."
+  },
+  "response_id": "resp_0cd0cff43f6143ed00696e2e35352c8197a26f0c10b6fc79f8",
+  "usage": {
+    "input_tokens": 10168,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1005,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11173
+  }
+}

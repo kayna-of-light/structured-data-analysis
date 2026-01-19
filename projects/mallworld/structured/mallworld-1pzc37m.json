@@ -1,0 +1,168 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pzc37m.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pzc37m/beach_cabana/",
+  "title": "Beach Cabana",
+  "date": null,
+  "content_checksum": "ff7c7d478ea7724cd88911e7e1041cd9a8f751f1fe373998036aad8bd2b7ee97",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:08:35.979263+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/9sxfddw4qaag1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "admiring; overlooking this place; 'how beautiful it is'",
+      "final_emotion": "frustrated ('I cant ever go here as much as I try')",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "beach",
+        "location_name": "Beach cabana",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "evening",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "Dreamer overlooks a beautiful beach cabana area; wants to lay in the cabana but can't ever go there. Image shows a shoreline at dusk/night with purple/pink lighting, a cabana with curtains and bed, deck platform and steps, lantern-like lights, palm trees, calm water."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "no",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel",
+        "location_name": "Hotel in the background",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the background behind the beach/cabana area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "There should be a hotel in the background (mentioned as part of the recurring location)."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "carnival",
+        "location_name": "Rave/carnival in the background",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the background behind/around the beach/cabana area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "There's always a rave/carnival in the background."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer is overlooking the beach cabana area, admiring how beautiful it is.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer tries/wants to go to the cabana and lay in it but can't ever go there 'as much as I try'.",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Unspecified in text (unable to access the place)."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a recurring location and inability to access it; image appears AI-generated and provides visual details (beachfront cabana at dusk with calm water). Hotel and rave/carnival are mentioned but not clearly visible in the provided image."
+  },
+  "response_id": "resp_0812b0c40e451a5000696e2caccbc08190afacefa207c71d45",
+  "usage": {
+    "input_tokens": 11337,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 946,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12283
+  }
+}

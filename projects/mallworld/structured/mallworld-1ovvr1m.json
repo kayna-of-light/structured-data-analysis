@@ -1,0 +1,117 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ovvr1m.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ovvr1m/the_bathroom_i_went_into_in_my_mall_world/",
+  "title": "The bathroom I went into in my mall world",
+  "date": null,
+  "content_checksum": "e78b6a100681a10c50ef438953b551740285d8bf92893177e8375f200300b9c6",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:50:22.323929+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/w8t9daa3iz0g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "recent_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "adult",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_public",
+        "location_name": "bathroom in my mall world",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "uncomfortable",
+          "crowding": "sparse",
+          "cleanliness": "dirty",
+          "water_presence": "none",
+          "raw_description": "Broken urinals; \"blue urine cake on the ground\"; smell; humming noise; air vent with \"2 blue strings\" on it; communal circular sink you step on at the bottom; in dream \"it was all silver. Head to toe silver.\" Pink cheap-smelling soap that wouldn't come out."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer washed hands at a communal circular sink operated by stepping on the bottom; tried to get pink soap to dispense but couldn't. Dreamer did not urinate/use the toilet; only washed hands and felt they \"had to...like I was dirty.\"",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Children washing hands; \"uncanny\"; looking down so eyes not visible; \"almost in unison\"; nobody talked.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Soap would not come out / could not figure out how to dispense soap."
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Image appears to be a reference photo of a communal circular sink in a restroom (urinals visible behind). Post also briefly mentions an earlier mall dream: \"old yellow mall...empty\" with \"dread\"/\"breaking a law\" feeling, but lacks extractable location sequence/details beyond those phrases."
+  },
+  "response_id": "resp_01cd7f804b04f60600696e2875b5dc8197af52b44f3687c018",
+  "usage": {
+    "input_tokens": 11654,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 644,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12298
+  }
+}

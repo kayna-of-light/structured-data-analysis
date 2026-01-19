@@ -1,0 +1,207 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pjkmkb.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pjkmkb/weird_elevators_or_escalators/",
+  "title": "Weird elevators or escalators",
+  "date": null,
+  "content_checksum": "5124b6bd461a5f493e7531269c1fd917d88ca8dcad8aff6b6b39fefbe41e3d69",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:00:47.827633+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have experienced weird escalators/elevators in Mall World dreams (escalator turning into wall-less floating elevator platforms/train/rollercoaster; wrong direction; crash).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "mall world",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "multiple floors / lower levels referenced",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Dreamer trying to move to a lower floor; staff present."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "escalator / moving sidewalk that transforms into floating elevator platform (no walls)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "connects mall floors; intended to go down to lower levels but goes up",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Started looking like a moving escalator sidewalk; changed into a floating elevator platform with no walls; dreamer held onto machinery to avoid falling; later became a train/rollercoaster of floating platforms; curving upward in a spiral; no walls, no seatbelts."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "escalator",
+        "direction": "unknown",
+        "difficulty": "varies",
+        "mechanism_function": "unpredictable",
+        "outcome": "succeeded",
+        "qualities": "Staff points to the 'opposite' escalator for going down; escalator initially resembles moving sidewalk; transforms into wall-less floating elevator platform."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "up",
+        "difficulty": "difficult",
+        "mechanism_function": "dangerous",
+        "outcome": "partial",
+        "qualities": "Elevator/escalator becomes a train/rollercoaster of floating platforms going upwards; path curves like a spiral; center part slightly crashes; people pile up; near-fall event."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer asks staff which escalator goes down to a lower floor; staff points to the opposite escalator.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "staff member who gives directions to the escalator",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Dreamer rides the escalator/platform while holding onto machinery because it has no walls; later the platforms form a train/rollercoaster going upward in a spiral; a man on top appears to be maneuvering; he says 'oops!' and the center part slightly crashes; people fall on each other; a lady nearly falls off but lies on beams; dreamer screams until it is resolved; dreamer and sister are on the ride; they end up okay after a brief crash.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "other people riding the floating platforms; people fell on top of each other during the crash",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "confusing",
+            "role": "guide",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "man on the top who looked like he was maneuvering/controlling the elevator/escalator train; said 'oops!' before the crash",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "lady who almost fell off but was able to lay on some beams",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "dreamer's sister riding with them",
+            "name_or_relation": "sister"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Only one main setting explicitly named ('mall world') plus the escalator/elevator mechanism; exact floor layout and destinations not specified beyond intended 'lower floor' vs actual upward spiral."
+  },
+  "response_id": "resp_0944304892b6c94100696e2ae47244819499de563a5c2494b6",
+  "usage": {
+    "input_tokens": 10307,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1753,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12060
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1kdbnvo.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1kdbnvo/turns_out_my_mall_world_is_based_off_a_mall_i/",
+  "title": "Turns out my Mall World is based off a mall I used to go to as a child.",
+  "date": null,
+  "content_checksum": "27c6e2a06df76f2fbf73f5e3cba0b8598ca7ff4e780aff2d13a20f0adab95df6",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:31:35.846633+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/pnq1qvl0nfye1.jpg",
+    "https://i.redd.it/z3jpyul0nfye1.jpg",
+    "https://i.redd.it/boxo6vl0nfye1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "childhood_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others dream of malls they've actually visited in waking life; notes their dream mall matches photos of a nearly-empty mall from childhood.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "It felt really weird to randomly see the pictures pop up in my feed!",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "abandoned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Mall the author used to go to as a child; now 'only 3 open shops'; in dreams it's 'exactly like this' and very empty."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Author sees pictures of a mall from childhood (now mostly closed/empty) and notes it matches how the mall appears in their dreams ('exactly like this').",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No specific dream sequence described; phenomenology is inferred from the author stating the dream mall looks 'exactly like' the attached photos and that it is very empty with only a few shops open. Images show a wide tiled mall corridor with many closed storefronts, benches, planters with palm trees, and overhead artificial lighting; signage visible includes 'A2Z INTERNATIONAL' and a hanging banner reading 'DINING'."
+  },
+  "response_id": "resp_002f489e6ecb254f00696e240b5ca8819687531272751ac023",
+  "usage": {
+    "input_tokens": 14947,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 575,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15522
+  }
+}

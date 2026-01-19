@@ -1,0 +1,151 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1o5jddu.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1o5jddu/trapped_in_a_neighborhood_while_being_hunted_by/",
+  "title": "Trapped in a neighborhood while being hunted by someone",
+  "date": null,
+  "content_checksum": "86e95be4b453b67f433ec7f464d56ac9cad9a255c73d6f7549cbc36468752f99",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:33:07.024782+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others also have recurring dreams of being in an unfamiliar neighborhood while hiding from someone trying to kill them",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "neighborhood",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "always in a neighborhood that I don’t recognize; awareness that someone is trying to kill me"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "house",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the unfamiliar neighborhood",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "hiding in houses that I’ve never seen before, trying to find a place where I won’t be found"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "movement through the neighborhood into houses to hide; 'trying to find a place where I won’t be found'"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Spends the entirety of some dreams hiding in unfamiliar houses, searching for a place to avoid being found; hides in 'ridiculous places, like hide and seek with a 4 year old.'",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "someone is trying to kill me",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial detail is general (unrecognized neighborhood; multiple unfamiliar houses). Time is described only as duration/extent ('spend the entirety of some dreams hiding'), without explicit time-of-day or time-flow effects."
+  },
+  "response_id": "resp_0f6c84f84cfe762300696e247051048196a1592e410575892b",
+  "usage": {
+    "input_tokens": 10102,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1101,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11203
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1p5jyni.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1p5jyni/the_realest_dream_i_have_ever_felt/",
+  "title": "The realest dream i have ever felt",
+  "date": null,
+  "content_checksum": "8d9176ca6f87554cdc275bab2f3faa49dfffc462eed0822ea2c5fe9e8cc7dd6a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:56:11.420793+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if the dream has any meaning",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "inconsistent",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "Trying to confirm they are awake; hoping it is not a dream because there is a lot of cash",
+      "final_emotion": "Woke up immediately after being punched",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "apartment",
+        "location_name": "their apartment/bedroom (bedside table area)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "reached to my bedside table, the wooden feel of it made sure for me that i was awake; saw a worn out LV handbag full of cash"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "outside near home (a block outside my home)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside my home / a block outside my home",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "afternoon",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "teleported outside; middle of the day probably like 2pm; felt the sun beaming right down at me; everything felt like i was there nothing was out of the ordinary; about to turn the corner to my left"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "apartment",
+        "location_name": "door that led to the apartment i stayed in (entry/doorway area)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": "door to apartment",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "immediately teleported to my door that led to the apartment i stayed in; went to reach for my keys"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "teleport",
+        "direction": "not_applicable",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "After closing eyes, 'teleported outside'"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "teleport",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "When turning to run the other way, 'immedietely teleported to my door'"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Touched bedside table (wooden feel) and saw a worn out LV handbag full of cash; told self 'pls dont be a dream'.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Checked the bag: important documents (passports etc.) and a rubberband with cash; felt the texture of the passport; counted the money.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Saw 5 male figures running at them wearing all black outfits and fullfaces; turned the other way to run.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "5 male figures running at me wearing all black outfits and fullfaces",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "conflict",
+        "description": "As they reached for keys, one of the dudes grabbed them by the shirt, pushed them on the ground, got over them, and punched them; they woke up.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "one of the dudes grabbed my by my shirt and push me on the ground... punched me",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "No mall-specific locations mentioned; primary settings are apartment/bedside area, street near home, and apartment door. Two explicit teleports. Time-of-day given as 'middle of the day probably like 2pm'."
+  },
+  "response_id": "resp_0cd8e5ccec53829e00696e29c7cf3481959af4591fdef1e5ba",
+  "usage": {
+    "input_tokens": 10322,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1846,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12168
+  }
+}

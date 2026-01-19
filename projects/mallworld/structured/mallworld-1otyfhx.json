@@ -1,0 +1,166 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1otyfhx.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1otyfhx/best_i_could_do_as_far_as_my_dreams/",
+  "title": "Best I could do as far as my dreams",
+  "date": null,
+  "content_checksum": "d6c0118508bc06b53cc390be459e32af3b4924de62c15163f9661952d66cd33f",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:48:25.115403+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/5go048hbnj0g1.jpg",
+    "https://i.redd.it/a50t7bhbnj0g1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "AI-style image of a tall interior with many escalators crisscrossing multiple levels; glass/metal architecture; a group of suit-wearing figures at ground level; orange glow on the left side."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "waterpark",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "adjacent to ocean/beach",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "raw_description": "AI-style image of large intertwined water slides (orange and teal) with people on them; beach/ocean setting; an extremely large curling wave/tsunami-like swell near the slides; many people visible."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "direction": "diagonal_up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "multiple escalators crossing between many levels"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "ocean_water",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "ocean boundary present with a very large wave near the waterpark/beach"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "A group of suit-wearing figures are present at the lower level of the escalator-filled interior (as depicted).",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "multiple human figures in suits; faces not detailed",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Text provides minimal narrative; recurrence is explicit ('At least once a week I’m in either of the places'). Two attached images appear AI-generated and were used as the primary source for location qualities. No explicit connection between the two places is described."
+  },
+  "response_id": "resp_0fa07ef88bec0f6000696e27dc7c1c8196bac2786242593c41",
+  "usage": {
+    "input_tokens": 13644,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1207,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14851
+  }
+}

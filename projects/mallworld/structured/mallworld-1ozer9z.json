@@ -1,0 +1,131 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ozer9z.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ozer9z/malls_for_me_are_not_abandoned/",
+  "title": "Malls for me are not abandoned",
+  "date": null,
+  "content_checksum": "27be5e39ade26ac8f91529160d6bc01a42440601d230e56f9988b991675944c4",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:53:03.641900+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others also experience bustling, neon, multi-floor (thousands of floors) mall dreams with a casino/vegas vibe rather than abandoned malls",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "uneasy but also somewhat excited (adrenaline rush)",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Mall is \"always bustling with people\" with a \"casino/vegas type vibe\"; \"full of obnoxious neon lights and crowds\"; \"not realistic at all\"; looking up shows \"thousands upon thousands of additional floors\"; feels \"very overwhelming\"; crowds the dreamer has to \"weave my way through\"."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Weaving through crowds in a bustling neon-lit mall; dreamer is usually by themself, either starting alone or getting separated from a group.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "bustling crowds",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer gets separated from a group (group not described).",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Looking up reveals thousands upon thousands of additional floors.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single primary setting (mall) described as recurring; strong vertical spatial feature (many floors) but no specific routes/adjacent locations or explicit boundaries mentioned."
+  },
+  "response_id": "resp_01acae6544dbb92e00696e291ccaf48196be40125d231ffaa8",
+  "usage": {
+    "input_tokens": 10162,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 951,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11113
+  }
+}

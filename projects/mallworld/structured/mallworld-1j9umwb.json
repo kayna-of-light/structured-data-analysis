@@ -1,0 +1,146 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j9umwb.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j9umwb/the_hotel_resort_i_often_go_to_in_my_dream_and/",
+  "title": "The hotel resort I often go to in my dream and the beach next to the resort",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:10:38.547264+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/g20n65wynboe1.jpg",
+    "https://i.redd.it/dgdtu5wynboe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": "hotel resort",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "next to the beach",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "pool_clean",
+          "raw_description": "Large multi-level resort/hotel complex with dark wood exterior and many balconies/terraces; outdoor turquoise swimming pool with multiple white lounge chairs; surrounded by dense green vegetation; mountainous/forested hillside behind; overcast/misty sky."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "beach",
+        "location_name": "beach next to the resort",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "next to the hotel resort",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "peaceful",
+          "crowding": "sparse",
+          "cleanliness": "clean",
+          "water_presence": "ocean_calm",
+          "raw_description": "Small cove beach with pale sand; clear shallow turquoise water; rocky dark shoreline and large rocks in foreground; rocky cliffs/caves at the back of the cove; vegetation on the left; a few small human figures on the sand."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Resort is adjacent to the beach (described as 'next to the resort')."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "ocean_water",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "Ocean edge at the beach cove; water extends beyond the shoreline."
+      }
+    ],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text; extraction is based on title plus two attached images that appear AI-generated (not a hand-drawn map). Spatial relation explicitly stated: beach is next to the resort. Other qualities inferred only from visible features (lighting/crowding)."
+  },
+  "response_id": "resp_0e8fa063bab5751c00696e1f1ed9e0819580416e7f687fee69",
+  "usage": {
+    "input_tokens": 12495,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 779,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13274
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jdgkdr.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jdgkdr/have_anyone_been_to_this_place/",
+  "title": "Have anyone been to this place ?",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:13:07.135583+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/ktzrdctzy9pe1.jpg",
+    "https://i.redd.it/ghtkpxtzy9pe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to the pictured place(s)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "pool",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "peaceful",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "pool_clean",
+          "raw_description": "Indoor/covered pool of still water; warm amber lighting; wood-paneled walls and ceiling; low square lamp near pool edge; large open doorway leading into an interior corridor; smooth light-colored walkway along pool; a few rocks at pool edge; potted tree visible deeper inside."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "dirty",
+          "water_presence": "none",
+          "raw_description": "Outdoor industrial complex with brick buildings and many windows; foggy/blue lighting; steep rocky embankments; rail tracks leading into a large circular tunnel; bright light source near tunnel entrance; fenced/railed walkways and stairs along building sides; forested hillside in background."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Large open doorway from pool area into an interior corridor/room; corridor appears softly lit with tall vertical wall panels and a potted tree deeper inside."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "tunnel",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Rail tracks run directly into a large round tunnel opening; tunnel interior shows a bright point of light further in."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text; extraction is based solely on two attached images that appear AI-generated. Locations are treated as depicted scenes without confirmation they are from a specific dream sequence."
+  },
+  "response_id": "resp_021de414a9f8aeb100696e1fab505c819498cc872fd4810c3c",
+  "usage": {
+    "input_tokens": 12478,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 778,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13256
+  }
+}

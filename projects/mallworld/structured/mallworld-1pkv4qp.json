@@ -1,0 +1,161 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pkv4qp.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pkv4qp/last_night/",
+  "title": "Last night",
+  "date": null,
+  "content_checksum": "3993ee5ef000a7eff0976a658df6e97fc97b3d76ca757ea8cd28d1776cb5390f",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:01:09.396607+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if anyone else had the same dream last night",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "wondering why they were ok with living in that; worried there was rats",
+      "final_emotion": "bizarre",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "filthy",
+          "water_presence": "none",
+          "raw_description": "a house that was rotting with trash; people lived there; the floor was soft with garbage; worried there was rats"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer notices the house is rotting with trash and the floor is soft with garbage; wonders why the residents are ok with living there; worries there are rats.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people lived there",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "A good-looking man about mid-50s wearing a white dress shirt tries to hump the dreamer; the dreamer's husband is there watching.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "threatening",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "guy about mid 50s with a white dress shirt on, good looking, trying to hump me",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "known_person",
+            "demeanor": "watching",
+            "role": "bystander",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "my husband was there and watching",
+            "name_or_relation": "husband"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "After waking, the dreamer asks her husband if he had a dream like that last night; he doesn't remember.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "asked him this morning... he didn’t remember",
+            "name_or_relation": "husband"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single described setting (rotting trash-filled house). No explicit layout, directions, or connections. Some content occurs after waking (asking husband in the morning), included as reported experience."
+  },
+  "response_id": "resp_03a1453b7b6b973800696e2b04b6108193a89e1be3660b6f7d",
+  "usage": {
+    "input_tokens": 10119,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1173,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11292
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1q5u627.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1q5u627/a_store_that_had_a_tunnel_with_a_friendly_monster/",
+  "title": "A store that had a tunnel with a friendly monster at the bottom",
+  "date": null,
+  "content_checksum": "561c8e963f0fc61ba63f0adf48321eb2ff6ee5fe11e09dbe87785703bcddd9df",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:11:05.221986+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "childhood_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "child_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Author compares the monster to Toriel from Undertale and says they think the dream is about that.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "store",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“this store… there was every thing”; grabbed a cola; went to get ice cream; at the freezer there was a hole; “looked to my left and to the right there was nobody”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "hole/slide tunnel area under freezer",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the freezer in the store",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“this hole… it was long slide”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "pitch black box (bottom area)",
+        "position": {
+          "vertical": "lowest",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the bottom of the slide",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "varies",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“pitch black box”; initially “there was nobody me and that monster”; later “there was kids there was 4-5 kids down there”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "house",
+        "location_name": "home",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“i woke up and went home”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "crawlspace",
+        "direction": "down",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Hole at the freezer leading into a “long slide”"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Sliding down; dreamer “passed out” and then was in the pitch black box"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Monster “send me back again”; dreamer “passed out”"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_4",
+        "connection_type": "outside_path",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "After returning, dreamer “woke up and went home”"
+      },
+      {
+        "from_location_id": "loc_4",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "“Next day i went back”"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Returned by sliding again to the bottom area"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Dreamer grabbed a cola and went to get ice cream.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": "cola; ice cream",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer noticed a hole by the freezer, checked left and right and saw nobody, then went into the hole/slide.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "Dreamer met a friendly monster in a pitch black box; monster was kind, smiling, black and big with a tail; monster could grant unlimited wishes; dreamer asked to go back and monster agreed and told them to come back tomorrow.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "friendly",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "Black, big, tail, always smiling; “friendly”; like Toriel from Undertale",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "On returning another day, there were 4–5 kids down there; they said “welcome back my friend”; dreamer spent the best time there.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "friendly",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Group of 4–5 kids",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "creature",
+            "demeanor": "friendly",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "Same friendly monster present down there",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "other",
+        "description": "Monster became evil / a villain and the dream ended.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "hostile",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "Monster “getting evil and becoming a vilan”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "In a later repeat of the dream, the monster looked at the dreamer happily and said “i missed you” and hugged the dreamer.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "friendly",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "Monster greeted dreamer, said “i missed you,” hugged them",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Some transitions are described via ‘passed out’ and ‘sent me back’ without a clear physical route; treated as ‘other’ connection types. Time flow qualities (fast/slow/looping) not described beyond next-day and later recurrence."
+  },
+  "response_id": "resp_0ca9b7d90dba1d2800696e2d4901f8819794d0144e25ebcde0",
+  "usage": {
+    "input_tokens": 10328,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2716,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13044
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1p8l4ng.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1p8l4ng/pharmacy/",
+  "title": "Pharmacy?",
+  "date": null,
+  "content_checksum": "7f0c4621fafdb96cc41b48b8a635fa5db8fbb339e3deb6f8b29814ca9519d3d0",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:57:00.693257+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to the Mall World pharmacy / if any reader was present in the dream",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "pharmacy (like CVS but more freezers and coolers)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "pharmacy at mall world; like CVS but more freezers and coolers"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer was with people who were friends in the dream but not known outside the dream.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people who were my friends in the dream but didn’t know outside of there",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Someone said, “when the apocalypse happens, this is where I want to be,” and the dreamer agreed thinking it was hypothetical.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "someone (part of the friend group) said “when the apocalypse happens, this is where I want to be”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "They started barricading the group inside the pharmacy; dreamer protested: “it’s not the apocalypse right now, we don’t need to do this yet!”",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "confusing",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "dream-friends barricading us in there",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single described location (pharmacy store) with minimal physical detail (more freezers/coolers). No explicit mall layout, connections, or boundaries described."
+  },
+  "response_id": "resp_0cc982d2bca6e78200696e2a0a49ac8193b3a279bca2587b80",
+  "usage": {
+    "input_tokens": 10113,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1093,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11206
+  }
+}

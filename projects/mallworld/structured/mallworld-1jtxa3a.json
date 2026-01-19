@@ -1,0 +1,141 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jtxa3a.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jtxa3a/dreams_and_life_lol/",
+  "title": "dreams and life lol",
+  "date": null,
+  "content_checksum": "2a2a713611ba0a67ded4bbf40fa8830eb4e423b9e9741f6af214ff0b8877de4a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:20:55.517265+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "childhood_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "adult",
+        "age_explicit": 27,
+        "dreams_since_age": 11,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "younger_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "not_mentioned",
+      "final_emotion": "shocked; sprung awake",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "my dad’s house (front yard)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "front",
+          "cardinal": "not_mentioned",
+          "relative_to": "in front of his house / front yard",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "in front of his house; front yard; fell forward into the grass; lay bleeding out in the front yard"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Father had a shot gun and shot the dreamer in the back in front of his house; dreamer fell into the grass bleeding out; siblings circled the dreamer and stared emotionless; father shot the dreamer again; dreamer sprang awake shocked.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "hostile",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "father with a shot gun",
+            "name_or_relation": "dad/father"
+          },
+          {
+            "entity_type": "family_member",
+            "demeanor": "indifferent",
+            "role": "bystander",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "siblings (half and step) circled me; stared emotionless",
+            "name_or_relation": "siblings (half and step)"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer cried and begged for help while bleeding out; siblings did not help and only stared.",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "indifferent",
+            "role": "bystander",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "emotionless; just stared",
+            "name_or_relation": "siblings (half and step)"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "siblings did not respond/help"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Post contains one described childhood dream scene at father’s house/front yard. Author also mentions father’s house is a common nightmare spot but provides no additional dream scenes to extract."
+  },
+  "response_id": "resp_0b8cb44af2f2e96400696e2193cb348195b901b8b41e2e72be",
+  "usage": {
+    "input_tokens": 10292,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 1016,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11308
+  }
+}

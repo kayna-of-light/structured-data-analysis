@@ -1,0 +1,132 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pwmywc.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pwmywc/house_in_the_water/",
+  "title": "house in the water?",
+  "date": null,
+  "content_checksum": "fd555d6ea4022c9bfd3ef33d6e1ddca9245815535baca8b07513d5d4fc668c15",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:06:35.468353+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/fqa4s4j6xn9g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have seen a recurring house in/near water that gives an eerie feeling; has never been inside",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "happy moment outside",
+      "final_emotion": "horrible eerie feeling that sticks with me",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "house in the water",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside / in water",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "Recurring 'house' seen during a 'happy moment outside'; when looking at it the dreamer gets a 'horrible eerie feeling'. Never been inside."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "no",
+        "dreamer_role": "other",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "water surrounding the house",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "surrounding the house",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "House appears isolated with water around it (image shows open water and distant treeline/shore)."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer is outside during a happy moment; sees the house and feels a horrible eerie feeling; has never been inside the house.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is framed as a question but contains recurring dream imagery. Image provides additional visual qualities: old/decaying two-story house on a small rocky outcrop/islet, surrounded by water; one window lit; cloudy sky; distant treeline/shore. Image may be illustrative rather than an exact dream capture; extracted as raw visual content."
+  },
+  "response_id": "resp_0cea4d2e43cb5eec00696e2c35f6e481948f95bbd0c7eae853",
+  "usage": {
+    "input_tokens": 11933,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 709,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12642
+  }
+}

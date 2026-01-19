@@ -1,0 +1,84 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1o6h2z2.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1o6h2z2/pink_drink_gate/",
+  "title": "Pink drink GATE",
+  "date": null,
+  "content_checksum": "821a4cd553646b2420de91f238abf905b2e57a439ae9644d6619dc6ab02dbf08",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:34:03.683768+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [],
+      "detail_level": "minimal",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "conflict",
+        "description": "Some unspecified others were mad that the dreamer 'actually had clairvoyant powers' and tried to give the dreamer 'that fluoride drink'. The dreamer refused to drink it ('I wouldn't drink it').",
+        "outcome": "prevented",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "hostile",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Unspecified 'they' who were mad and tried to give the dreamer a drink.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "fluoride drink (described as 'that fluoride drink'; title references 'Pink drink')",
+        "transaction_blocker": "Dreamer refused to drink it."
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "No explicit setting/location described; interaction recorded with location_id as unspecified placeholder. Title suggests a 'pink drink' but narrative only explicitly says 'fluoride drink'."
+  },
+  "response_id": "resp_0cdbf9cab45934e700696e24af599081948a43a0a9bc85b6bc",
+  "usage": {
+    "input_tokens": 10046,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 545,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10591
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\voojix.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/voojix/i_thought_i_was_crazy/",
+  "title": "I thought I was crazy…",
+  "date": null,
+  "content_checksum": "b130e154f72f5c311dd21bd12e14172cff406425bea7215c266f48fa7de23c61",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:17:32.532866+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "compressed",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "pure euphoria / calm (in shower with music and perfect temperature water)",
+      "final_emotion": "relief (after finding shared experience); also inability to shake it and couldn't sleep that night",
+      "author_theory": "author states they are 'completely convinced this is real' after finding it as a shared experience",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom",
+        "location_name": "shower",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "peaceful",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "rain",
+          "raw_description": "sat down in the shower; calm shower with some music playing; water the perfect temperature; closed my eyes; in the shower for almost 45 minutes; felt exhausted/weak/out of it; hung head"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "absolutely positive I had just been to a mall; felt feet were sore as though I'd been walking around for hours; asked 'at the mall…what did we buy there?'"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "subway",
+        "location_name": "subway system (reminded me of NYC)",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "associated with the mall memory",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "weird memory of 'lowering' into the subway system that reminded me of NYC but much crazier, larger and frenetic"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "memory of 'lowering' into the subway system"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "friend knocked on the door and came in to see if I was okay",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "helpful",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": null,
+            "name_or_relation": "my friend"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "asked friend: 'wait did you end up buying anything?' and 'at the mall…what did we buy there?'",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "confusing",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "looked at me strangely / like I was crazy",
+            "name_or_relation": "my friend"
+          }
+        ],
+        "transaction_item": "unspecified purchase(s) at the mall",
+        "transaction_blocker": "friend indicates no such mall visit occurred (looked at dreamer strangely)"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "looked at phone and saw I was in the shower for almost 45 minutes",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a remembered mall/subway experience occurring during a shower with eyes closed; the mall and subway are described as memories/conviction rather than a fully narrated scene, so location qualities are sparse. Connection 'lowering into the subway' is captured as a downward transition with unspecified mechanism."
+  },
+  "response_id": "resp_08bfcdbdb82b4f8600696e2ed445a48190a88bbc053f06d389",
+  "usage": {
+    "input_tokens": 10488,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1638,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12126
+  }
+}

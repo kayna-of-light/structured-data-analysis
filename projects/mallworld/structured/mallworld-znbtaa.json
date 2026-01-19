@@ -1,0 +1,155 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\znbtaa.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/znbtaa/a_different_suburbneighborhood/",
+  "title": "a different suburb/neighborhood",
+  "date": null,
+  "content_checksum": "5bf3b6ce6f3508d4a84b424261bde23d372d4682b0825c37b8d8204a8395bd6b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:22:48.938819+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "a little lost",
+      "final_emotion": "frustrated (woke up suddenly; \"frustrates the hell out of me\")",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "neighborhood",
+        "location_name": "usual suburb/neighborhood",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "houses that all look like they were built at the same time but are slightly different; \"normal kind of lower middle class suburb without an HOA\"; owners put their own twists on their lots"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "neighborhood",
+        "location_name": "different suburb/neighborhood (this dream)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "way more winding; seemed to have a lot of hills; houses seemed to all be dark red brick with dark roofs; dreamer was \"still pretty deep in the suburb\""
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "lost",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "city_street",
+        "location_name": "somewhere with a bigger road",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the suburbs",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "dreamer was determined to find their way out of the suburbs to somewhere with a bigger road"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "no",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer \"spawn[ed] in\" to a different suburb; felt a little lost but was determined to find a way out of the suburbs to a bigger road; woke up before getting out and believes they were still deep in the suburb.",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Temporal info is limited to brief duration and abrupt waking; no explicit time-of-day or time-flow description."
+  },
+  "response_id": "resp_03bbf957defafd2b00696e301a4430819695b9b0f050a3d45a",
+  "usage": {
+    "input_tokens": 10218,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1177,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11395
+  }
+}

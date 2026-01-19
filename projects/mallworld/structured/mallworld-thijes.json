@@ -1,0 +1,103 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\thijes.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/thijes/motorway_flyovers/",
+  "title": "Motorway flyovers",
+  "date": null,
+  "content_checksum": "d9836b6dc6d12134bbc3dd110b4e48414db61a0539d051b8a186d6cd2e3cbbc6",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:15:35.379759+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others also dream of motorways/flyovers as a recurring location",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "motorways / flyovers",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "across a city",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "motorways and more specifically flyovers; walking on the road in the middle of the night; really empty; feels like walking on a really long trek across a city"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Walking on the road (motorway/flyover) at night; the emptiness makes it feel safe enough compared to daytime traffic danger.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single recurring setting described (motorways/flyovers at night). No explicit connections to other Mall World hubs mentioned."
+  },
+  "response_id": "resp_03ad1029ba0887ed00696e2e68eba081939208b2c87342af99",
+  "usage": {
+    "input_tokens": 10083,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 678,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10761
+  }
+}

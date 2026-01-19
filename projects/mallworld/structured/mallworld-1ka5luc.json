@@ -1,0 +1,158 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ka5luc.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ka5luc/written_warning_and_reprimand_in_mallworld/",
+  "title": "Written Warning And Reprimand In Mallworld.",
+  "date": null,
+  "content_checksum": "aa074781c25a4a4bbc84e233a54727ad4da455f2dd3b40024cf4bfaa96d5e645",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:29:49.873968+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "has a job in the hospital in Mallworld",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hospital",
+        "location_name": "hospital in Mallworld",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "job in the hospital in Mallworld; computer system had been changed"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "employee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "bathroom",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "bathroom trips during hospital job",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "too many trips to the bathroom; 'a 2 minute limit'"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "employee",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Given a written warning and reprimand for 'too many trips to the bathroom' with 'a 2 minute limit.'",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "unfriendly",
+            "role": "authority",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "gave warning/reprimand",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Glared at for trying to find out why the computer system had been changed; told \"it doesn't concern you\".",
+        "outcome": "prevented",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "unfriendly",
+            "role": "authority",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "glared; said \"it doesn't concern you\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only one main setting (hospital) plus bathroom mentioned; no layout/route details. Time is implied by 'last night' and event sequence, but no dream-time qualities described."
+  },
+  "response_id": "resp_0960ba546678cb7400696e23a87c98819595af15e97c4992dc",
+  "usage": {
+    "input_tokens": 10096,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 779,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10875
+  }
+}

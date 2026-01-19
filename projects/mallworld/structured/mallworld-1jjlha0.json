@@ -1,0 +1,185 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jjlha0.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jjlha0/docks_in_the_middle_of_the_water_old_man/",
+  "title": "Docks in the middle of the water . / old man / fisherman with boat .",
+  "date": null,
+  "content_checksum": "6c8d1f296629c28ea1fd54354238ef564baac73e448d004823e80fd08f3036e2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:16:06.173114+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/7renjyibpuqe1.jpg",
+    "https://i.redd.it/tgewjbibpuqe1.jpg",
+    "https://i.redd.it/4z4udbibpuqe1.jpg",
+    "https://i.redd.it/8cvb5bibpuqe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "scary (walking on dock)",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "floating dock/platform in middle of water",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "no land in sight; in the middle of the water",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "evening",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "raw_description": "\"docks in the middle of the water\"; \"square small wood platform\" with \"a long dock that stretches out into the water (no land in site)\"; \"usually foggy\"; \"air was foggy and misty\"; \"waves were starting to get harsh\"; \"basically floating on the water\"; \"moving up and down with the waves and body weight\"; \"blue hour\" and \"kept getting darker\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "fisherman's boat",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the end of the dock",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "evening",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "raw_description": "\"older fisherman at the end of the dock\" with \"his boat\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "long dock stretching out over water to the end; walking is scary because the dock/platform is floating and moves up/down with waves and body weight"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "ocean_water",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "surrounded by water with \"no land in site\"; visibility limited by fog/mist"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "An older fisherman tells people to get off the platform/dock and go on his boat.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "authority",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "older fisherman at end of dock",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "\"ppl\" on the platform/dock",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Walking on the floating dock/platform feels scary because it moves up and down with waves and body weight as the waves get harsh and it gets darker.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Images appear to be AI/stock-like visualizations of foggy docks over open water and a fisherman in a small boat; no hand-drawn map. The narrative indicates recurrence via \"usually foggy.\""
+  },
+  "response_id": "resp_0f46978165608b3a00696e2061b30481949fa779759f6fd7b6",
+  "usage": {
+    "input_tokens": 12386,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1035,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13421
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1phghh1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1phghh1/sandbox_dreams/",
+  "title": "Sandbox dreams",
+  "date": null,
+  "content_checksum": "4084d0c6e3da0d475951c49f686244fbfd2415194efc660f550aaaf7fcea8b87",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:00:04.596038+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "long_term_recurring",
+      "time_flow": "looping",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "annoying",
+      "author_theory": "Author reports discovering the 'secret identity of the entity who was causing nightmare scenarios in Mall World' and that afterward dreams changed to a 'sandbox version' of home with no 'AI characters.'",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "sandbox version of my real life home",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "not_mentioned",
+          "state": "mixed",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"inside a sandbox version of my real life home\"; \"It's just basically bedrooms with nonfunctioning lights with the same furniture as in real life\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "bed (in dream)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the home / bedroom area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"get sent back immediately to my bed\"; \"wake up again and repeat the same process\""
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "teleport",
+        "direction": "unknown",
+        "difficulty": "impossible",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Whenever the dreamer tries to go out of the home, they are \"sent back immediately\" to bed."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "not_applicable",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Loop described as \"wake up again and repeat the same process\" (returning to bed/waking repeatedly)."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "yes_explicit",
+        "crossing_outcome": "failed",
+        "description": "Attempting to leave the home results in being sent back to bed immediately (cannot exit)."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer is in a sandbox version of their real-life home; environment is mostly bedrooms with the same furniture; lights do not function.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer tries to go out of the home but is immediately sent back to bed; this repeats.",
+        "outcome": "prevented",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post contrasts prior frequent 'Mall World dreams' (pre-November) with current recurring 'sandbox home' loop. Specific mall locations and layouts are not described; current dream content centers on home/bedroom/bed and inability to exit."
+  },
+  "response_id": "resp_03d7df9b290b836b00696e2ac2b8888190b9f5cd27e7cb984d",
+  "usage": {
+    "input_tokens": 10167,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 960,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11127
+  }
+}

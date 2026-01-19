@@ -1,0 +1,317 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1kcunn5.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1kcunn5/did_anyone_had_this_dream_once_and_had_it_again/",
+  "title": "did anyone had this dream once and had it again but in the future?",
+  "date": null,
+  "content_checksum": "0bab8f1add1a7a9ef674c546a1b0b494105cc39b28f0a0f4a20feb16a85e2607",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:31:31.039506+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "childhood_dream",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Recurring/repeated dream years later; asking if others have similar and what it means",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "teen",
+        "age_explicit": 15,
+        "dreams_since_age": 11,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "observer_only",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "airport",
+        "location_name": "area where you prepare for liftoff",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "At the area where you prepare for liftoff... (this took place at night)"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "behind the bushes (near/behind the liftoff area)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "behind the liftoff area / behind bushes",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "the man and wario goes behind the bushes (I don't remember if they were behind the liftoff area...)"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "warehouse",
+        "location_name": "big warehouse",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "behind the bushes",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "behind the bushes was a big warehouse... inside the warehouse was a machine"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "warehouse",
+        "location_name": "same warehouse (found again later)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "abandoned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "when Wario finds it, it is abandoned... the cat said that it was abandoned for years"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "went behind the bushes from the liftoff area"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "behind the bushes was a big warehouse"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Wario (a pilot of a small plane) gets off his plane and meets a Chinese man at the liftoff-prep area at night.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Wario (pilot of a small plane)",
+            "name_or_relation": "Wario"
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Chinese man",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Wario and the Chinese man go behind the bushes (possibly behind the liftoff area).",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Wario",
+            "name_or_relation": "Wario"
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Chinese man",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "transaction",
+        "description": "Inside the warehouse, Wario puts a coin in a machine and it dispenses a blue bag full of Legos.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Wario",
+            "name_or_relation": "Wario"
+          }
+        ],
+        "transaction_item": "blue bag full of Legos",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "search",
+        "description": "In the later dream, Wario tries to find the warehouse again and does find it, but it is abandoned.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Wario",
+            "name_or_relation": "Wario"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "social",
+        "description": "Wario sees an anthropomorphic orange cat with a Mexican accent and asks what happened to the place; the cat says it was abandoned for years.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Wario",
+            "name_or_relation": "Wario"
+          },
+          {
+            "entity_type": "creature",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "anthropomorphic orange cat with a Mexican accent",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes two similar dreams (age 11 and age 15). Spatial layout is limited but includes a liftoff-prep area, bushes behind it, and a warehouse behind the bushes. Later dream revisits the warehouse in an abandoned state. Dreamer’s own role/perspective is unclear; Wario is the main acting character."
+  },
+  "response_id": "resp_01b2676a8f64922b00696e24011c0081968617284e31834dea",
+  "usage": {
+    "input_tokens": 10345,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2486,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12831
+  }
+}

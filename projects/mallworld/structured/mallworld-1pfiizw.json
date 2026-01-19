@@ -1,0 +1,245 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pfiizw.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pfiizw/not_exactly_mall_world_but_rooted_in_similar/",
+  "title": "Not exactly \"mall world\" but rooted in similar concepts",
+  "date": null,
+  "content_checksum": "58e60d35e79b8bd1cd2ce92a5e2940c8e017ddf009e7dfe6574fd78706407451",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:59:55.381219+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "childhood_dream",
+        "nightmare"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "compressed",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "multiple",
+      "occupation_in_dream": null,
+      "initial_emotion": "deeply disturbing; compelled/drawn toward shack",
+      "final_emotion": "disturbed; wakes after leaving the house",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "field/farmland (wheat field)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "shack/old farmhouse is far in the distance across the field",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"standing alone at what seems to be a nearly endless expanse of farmland or a field of wheat\"; \"Way out in the distance is a tiny rundown shack\"; feels like \"I HAVE to go towards it\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "house",
+        "location_name": "rundown shack / worn out old farmhouse",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the far end of the field",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "uncomfortable",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"tiny rundown shack\"; \"worn out old farm house\"; \"There is no real front door only one of those screen storm doors\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "interior rooms/thresholds (changing layout)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the farmhouse; reached after entering through the screen/storm door",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "mixed",
+          "atmosphere": "oppressive",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"The layout of the house always changes.\" \"I've been in every room, and yet I haven't been into a single one.\" \"They're always changing\"; rooms \"don't really have 'insides', only thresholds.\" \"Once I step inside a room, it's like I'm walking into a future that might come to be rather than an actual room.\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Crossing the field: starts walking, then realizes running; compelled to reach the shack"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Entry via \"screen storm door\" (no real front door); child behind the door leads dreamer inside"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Repeated movement from one \"room\" threshold to another; each room shows a different life and death sequence; after each, led back out toward the front door"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "At the screen/storm door, an odd child stands behind it; the dreamer recognizes the child as 'me as a child, but also not' and follows them inside.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "neutral",
+            "role": "guide",
+            "is_known": "yes_explicit",
+            "is_recurring": "yes_explicit",
+            "description": "\"It's ME as a child, but .... Also not....\"; \"There's something.... Off about them.\"; referred to as \"The girl, my odd little dream self\"",
+            "name_or_relation": "me as a child (dream-self)"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "In each changing 'room' threshold, the child takes the dreamer's hand and leads them to watch another version of the dreamer live an entire lifetime and then die; this happens every time and in different ways.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "neutral",
+            "role": "guide",
+            "is_known": "yes_explicit",
+            "is_recurring": "yes_explicit",
+            "description": "Leads by the hand to different rooms; silently leads out after each life ends",
+            "name_or_relation": "me as a child (dream-self)"
+          },
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "implied",
+            "is_recurring": "implied",
+            "description": "\"another version of myself\" seen living a lifetime and dying (multiple versions)",
+            "name_or_relation": "alternate self"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "After being led back to the front door, the child speaks and asks the same question: \"Why do you come back?\" Then she opens the door and the dreamer leaves; the dream ends and the dreamer wakes up.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "neutral",
+            "role": "guide",
+            "is_known": "yes_explicit",
+            "is_recurring": "yes_explicit",
+            "description": "Speaks only at the end; opens the door",
+            "name_or_relation": "me as a child (dream-self)"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Room contents are described as threshold-like scenes rather than physical interiors; specific death methods are not enumerated, only that they vary each time."
+  },
+  "response_id": "resp_05d92947fee3aeb300696e2a9427448193a232937c1b04a608",
+  "usage": {
+    "input_tokens": 10475,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 1555,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12030
+  }
+}

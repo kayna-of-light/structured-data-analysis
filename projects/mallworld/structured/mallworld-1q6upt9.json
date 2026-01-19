@@ -1,0 +1,140 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1q6upt9.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1q6upt9/found_myself_in_a_tunnel_between_roomsshops_in/",
+  "title": "Found Myself In a Tunnel Between Rooms/Shops In Mallworld The Other Night",
+  "date": null,
+  "content_checksum": "5c7ef574f4bb813d21c3307be8116283421506503fa39af121bb1301d81ba19c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:11:09.208331+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "theater",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "dirty",
+          "water_presence": "leak",
+          "raw_description": "tight dark tunnel connecting different rooms; very tight to crawl through; metal gears, sprockets; lots of oil/grease dripping; seemed super dangerous; enough room to squeeze through; maybe around 200 feet long"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "different rooms/shops in mallworld",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "connected by the tunnel",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "different rooms in mallworld (shops/rooms) connected by a tunnel"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "crawlspace",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "dangerous",
+        "outcome": "not_mentioned",
+        "qualities": "tight dark tunnel; crawl/squeeze through; ~200 feet long; metal gears and sprockets; oil/grease dripping"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer finds themself in a tight dark tunnel connecting different rooms/shops; crawls/squeezes through a space with gears/sprockets and dripping oil/grease; origin and destination not remembered/unknown.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only one clearly described location is the tunnel/crawlspace. Other endpoints are mentioned generically as rooms/shops; no distinct room details provided. Length estimate (~200 feet) captured as spatial detail. Time sequencing is minimal; 'can't remember where I came from or where I was going' noted in interaction."
+  },
+  "response_id": "resp_050c4d06a549ad8600696e2d5718d881909caec8eb0b4f578c",
+  "usage": {
+    "input_tokens": 10128,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1060,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11188
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1o73qg3.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1o73qg3/my_drawings_of_what_ive_seen/",
+  "title": "My drawings of what I’ve seen",
+  "date": null,
+  "content_checksum": "8e7338ba6748b280dfe7e75c4d2db529c9c1fdf94e6da22612893ae007874c32",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:35:53.593407+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/kio0i5ss08vf1.jpg",
+    "https://i.redd.it/f4kpp5ss08vf1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_map_drawing",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "huge indoor playground",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"The first is a huge indoor playground\"; drawing shows a large netted/climbing structure and a ball-pit-like area; a door on the right side."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "bathroom_public",
+        "location_name": "giant connected-stalls bathroom",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "to the right of the indoor playground (door leads to bathroom)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"Once in the bathroom it is a GIANT space where all the stalls are connected\"; \"some along the walls only have half doors\"; \"the rest all have doors leading to each other\". Image shows repeated toilet stalls/partitions."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "spa with black granite",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "through a door on the side (from the bathroom)",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"If you [go] through a door on the side it leads to a spa, where there is black granite.\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "\"to the right is the door to the bathroom\" (door on right side of playground in drawing)"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "\"a door on the side\" from the bathroom leads to a spa"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Between-stall doors: \"the rest all have doors leading to each other\" (stalls interconnected)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post provides a short narrative plus two images: one appears to be a simple drawing/painting of the playground area with a right-side door; the other appears to be an AI/CGI-style image of repeated bathroom stalls. No explicit emotions, time flow, or entities described."
+  },
+  "response_id": "resp_0331d2af48449ada00696e24fe3884819698510b8a3bd2d8b0",
+  "usage": {
+    "input_tokens": 12747,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1031,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13778
+  }
+}

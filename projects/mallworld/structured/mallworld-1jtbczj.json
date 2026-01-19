@@ -1,0 +1,114 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jtbczj.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jtbczj/office_world/",
+  "title": "Office World",
+  "date": null,
+  "content_checksum": "bec4e4bf74c56dba43b69a5864c2b3cf6c61ef075db07a70a48894159d617efb",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:20:34.836924+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "office",
+        "location_name": "Office World",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "lots of doors, hallways, wood paneling, fluorescent lights with the plastic covers, and that ceiling tiles with all the holes in it. There were no windows and no way outside"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "no",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "There were no windows and no way outside"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "only administrative tasks",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single described environment (office-like interior). Spatial info limited to interior layout features (doors/hallways) and explicit lack of windows/exit."
+  },
+  "response_id": "resp_0d58176e3ec7e81300696e2184ee88819684fcef2e3652fb0c",
+  "usage": {
+    "input_tokens": 10082,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 732,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10814
+  }
+}

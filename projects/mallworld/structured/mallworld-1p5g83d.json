@@ -1,0 +1,124 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1p5g83d.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1p5g83d/hotel_dreams/",
+  "title": "Hotel dreams",
+  "date": null,
+  "content_checksum": "62a4394b7c031c4db0f08b41ccc0401dde5e6a9bb27b73f0a9896bd27bea9624",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:55:43.251404+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "multiple_dreams"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking what a hotel means in dreams; mentions having multiple hotel dreams with fleeing and elevator use",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "variation",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "A few dreams where I was in a hotel; they’re always a different hotel."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "elevator",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_mentioned",
+        "outcome": "not_mentioned",
+        "qualities": "Used the elevator a couple of times."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "In some dreams, the dreamer was fleeing from someone in the hotel.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "someone the dreamer was fleeing from",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "low",
+    "extraction_notes": "Post describes multiple hotel dreams but provides minimal scene detail. Elevator use is mentioned without destinations/floors. 'Fleeing from someone' is included as an escape interaction; the pursuer is unspecified."
+  },
+  "response_id": "resp_0c9f6c94b1c5021f00696e29bf22b08196aedc082c62796e91",
+  "usage": {
+    "input_tokens": 10066,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 825,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10891
+  }
+}

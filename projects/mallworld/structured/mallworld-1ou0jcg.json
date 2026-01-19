@@ -1,0 +1,192 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ou0jcg.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ou0jcg/pink_town/",
+  "title": "Pink town",
+  "date": null,
+  "content_checksum": "cbefa9f905b59b169a6bb85fbccd6719a5e68b36598736f8b33aa3b079048e0e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:47:58.903183+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others also experience the same recurring dream location ('pink town')",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "pleasant",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "downtown",
+        "location_name": "small town square / 'pink town'",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "evening",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "small town square; evening time; sky is pink making the town look pink; pleasant feeling; nobody else is there"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "red brick road (elongated U shape)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "forms an elongated U shape in the town square",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "evening",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "red brick road in an elongated U shape"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "grass patch (middle of the U)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the middle of the U-shaped road",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "evening",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "in the middle of the U is a grass patch"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "buildings around outside of the road",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "around the outside of the U-shaped road",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "evening",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "a few buildings around the outside of the road; can't enter the buildings"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "no",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_4",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "Dreamer cannot enter the buildings."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_4",
+        "interaction_type": "navigation",
+        "description": "Attempts to enter the buildings are not possible ('I can't enter the buildings').",
+        "outcome": "prevented",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Access to buildings is blocked/locked (unspecified mechanism)."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "No explicit sequence of movement between sub-areas was described; recurrence described as occurring every couple of years; 'pleasant feeling' captured as final_emotion/atmosphere."
+  },
+  "response_id": "resp_030cf0178946824d00696e27def5f88193ba4e7d57d245ac90",
+  "usage": {
+    "input_tokens": 10123,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1426,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11549
+  }
+}

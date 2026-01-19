@@ -1,0 +1,190 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jyb23p.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jyb23p/anyone_else_been_here/",
+  "title": "Anyone else been here?",
+  "date": null,
+  "content_checksum": "bfd2a3a62015956c585139eeae19a04c7c569fcb25591f40e53d8053dd8e6f36",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:24:12.257776+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/r464kn2flmue1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_map_drawing",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": "Whether others have been in the same dream location (train transitory area)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "train_station",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Transitory place where a train comes through; kids/young adults sit on top of pillars waiting for the train (sketch shows tracks through a tree-lined area with two tall pillars/blocks beside the tracks)."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "convenience store",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "further down from the train/track transitory area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "A convenience store further down (direction along the tracks/path from the transitory train area)."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "downtown",
+        "location_name": "town square",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "the other direction from the train/track transitory area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Some sort of town square in the opposite direction from the convenience store."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Convenience store is 'further down' from the transitory train area (implies a linear route along/near the tracks)."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "'Other direction' leads from the transitory train area toward a town square."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Kids/young adults sitting on top of pillars help by telling the dreamer where to catch the train and what time it will be there.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "helpful",
+            "role": "guide",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "kids/young adults sitting on top of pillars waiting for the train",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image is a hand-drawn sketch showing train tracks receding into the distance with trees on both sides and two large pillar/block structures beside the tracks; narrative specifies a convenience store further down one direction and a town square in the other direction, but exact placement/angles are not specified."
+  },
+  "response_id": "resp_0af6bebde8d1fa7600696e222eff788190ab2b419b056862ab",
+  "usage": {
+    "input_tokens": 11160,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1061,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12221
+  }
+}

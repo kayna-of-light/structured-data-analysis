@@ -1,0 +1,216 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jlwwow.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jlwwow/what_about_the_basement/",
+  "title": "What about the basement?",
+  "date": null,
+  "content_checksum": "e440172f503ed1ceb2b086c06336dbab225844923be0337a7265f5accf211a0f",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:17:23.215086+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have been in lower/basement levels or gotten trapped; description of a library ramp with a gap leading to a dark iron-structured basement and a too-small window escape back into the mall",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Mall level seen through the window opening is usually BRIGHT; people walk by like there is nothing on the other side."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "library",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at mine (within the mallworld setting); accessed by a ramp up",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "There’s a library at mine, and there’s a ramp up to it, with a gap between it and the building."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "basement",
+        "location_name": null,
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "below/under the library ramp area; entered by falling through a gap",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Basement level that’s darker, lots of iron structures, and small. Iron walls keep changing their sizes/compression/extension everytime I look behind me, specifically."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "ramp",
+        "direction": "diagonal_up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Ramp up to the library; there is a gap between the ramp and the building."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "falling",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Fell through the gap between the ramp and the building into the basement level."
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_1",
+        "connection_type": "crawlspace",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Only way to escape is through a just-too-small window opening back into the mall; other side is usually BRIGHT."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_3",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "visible_location",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "Escape constrained by a 'just-too-small window opening' leading back into the mall; functions as a size-limiting barrier."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_3",
+        "interaction_type": "escape",
+        "description": "Trapped in a small, dark basement with iron structures; looks for escape via a window opening that is just too small.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "Iron walls change sizes/compression/extension every time the dreamer looks behind them; the mall side beyond the window is bright and people walk by as if nothing is there.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "indifferent",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "People walk by on the bright mall side of the window opening.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Post is framed as a question but contains a concrete recurring-scene description: mall/library ramp gap leading to a dark, small iron-structured basement with a too-small window opening back to a bright mall walkway."
+  },
+  "response_id": "resp_0d4e4d9246d70ce000696e20b247ac819481e4c56b8aa492bc",
+  "usage": {
+    "input_tokens": 10141,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1768,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11909
+  }
+}

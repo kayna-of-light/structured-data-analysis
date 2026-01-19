@@ -1,0 +1,179 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k64wzm.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k64wzm/recurring_dream_of_a_road_in_the_desert/",
+  "title": "Recurring dream of a Road in the desert",
+  "date": null,
+  "content_checksum": "7294ab9080d01a89468d3a08ba15183614bf01be952c8975221fec4c7fe5299e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:28:47.321253+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/qte3vkgqcmwe1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "multiple_dreams",
+        "childhood_dream",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": 7,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "child_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "Road in the desert / cliff road",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "road is straight up and down on a cliff; wall at the base/top area where the truck slams",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "threatening",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Desert landscape with a road that goes straight up and down on a cliff; a wall where a red truck repeatedly slams; other cars drive fine; people around watching."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "wall",
+        "direction": "not_mentioned",
+        "beyond": "not_mentioned",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "A wall that the red truck repeatedly slams into while trying to drive up the vertical road."
+      },
+      {
+        "location_id": "loc_1",
+        "boundary_type": "cliff",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Road positioned on a cliff with a straight up-and-down segment (vertical drop/face implied)."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "People are around watching the road; other cars drive fine on the road.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "watching",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "people around watching",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "A red truck repeatedly slams over and over into a wall trying to drive up the vertical road until it eventually stops.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "red truck",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "wall blocks the truck from driving up"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer walks over to the stopped truck and looks inside; there are 2 people inside and they were 'no longer ok'.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "2 people inside the truck (not ok / not alive implied by wording)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears AI-generated (not a hand-drawn map): desert cliff with a vertical road segment and a red pickup at the base. Text provides the recurring childhood timing (age 7) and the key event (truck repeatedly slamming into a wall). Exact placement of the wall (top vs base) is not explicitly specified."
+  },
+  "response_id": "resp_0ba5a9817184c16600696e2345e0d08196b0c57f66bf92f1c6",
+  "usage": {
+    "input_tokens": 11949,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1341,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13290
+  }
+}

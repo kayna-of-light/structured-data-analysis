@@ -1,0 +1,105 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1p02x68.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1p02x68/within_a_single_dream_session_anyone_ever_fall/",
+  "title": "Within a single dream session: Anyone ever fall asleep in Mall World and then wake up in the same place they fell asleep? I fell asleep on a couch in there once… kept waking up on the couch.",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:53:19.217425+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/zjwqnpk24y1g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Falling asleep within the Mall World dream and repeatedly waking up in the same in-dream location (a couch) within a single dream session",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "looping",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "couch",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Fell asleep on a couch in there once… kept waking up on the couch."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Dreamer falls asleep on a couch within the dream and repeatedly wakes up on the same couch within a single dream session.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question with minimal dream content. Attached image shows a green tufted vintage-style couch; no surrounding environment is visible, so location context (mall/hotel/etc.) cannot be extracted."
+  },
+  "response_id": "resp_08bd9de09e2e602300696e292b3410819788c30938bd898a58",
+  "usage": {
+    "input_tokens": 10540,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 494,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11034
+  }
+}

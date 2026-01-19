@@ -1,0 +1,221 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pvcmx2.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pvcmx2/when_god_answered_what_you_truly_wanted_unselfish/",
+  "title": "When god answered what you truly wanted (unselfish)",
+  "date": null,
+  "content_checksum": "a509bad72a9a0f44f600776b92480468ac5fa7eb4ab371e64e52e9c34edf6e95",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:05:43.900434+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "grieving; tears and sorrow",
+      "final_emotion": null,
+      "author_theory": "My true story to give people an understanding that he is there and he is listening.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "back home",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "arrived back home with two nurses at my home asking me who I was and where I was coming from"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "my room / bed",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the house",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "went to bed; lying in bed; woke up to see appeared in front of me"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "my little nephew’s bedroom",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the house",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "walked in with tears and sorrow to my little nephew’s bedroom"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "got up and walked in ... to my little nephew’s bedroom"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Two nurses at the home asked who the dreamer was and where they were coming from; dreamer replied.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "neutral",
+            "role": "staff",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "two nurses at my home asking me who I was and where I was coming from",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Mother came into the room minutes after the dreamer was lying in bed and said the nephew had just passed.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "neutral",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "my mother",
+            "name_or_relation": "mother"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "other",
+        "description": "While asleep, the nephew appeared 'like a Christmas movie came down in a beam of light' in front of the dreamer. He tried to tell the dreamer something but there was no sound; the dreamer couldn't hear him and couldn't read his lips.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "deceased",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "little nephew appeared in front of me; tried to tell me something; no sound; couldn’t read the lips",
+            "name_or_relation": "nephew"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "other",
+        "description": "Upon waking, the dreamer was 'hugging the air.'",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post contains a brief dream/vision sequence with minimal environmental detail; 'beam of light' and lack of sound are the main perceptual features. Some described events may be waking-life context; extracted only what is presented as experienced while asleep and immediate upon waking."
+  },
+  "response_id": "resp_0aadd399f8ac800c00696e2c06b194819099b6b6618856a038",
+  "usage": {
+    "input_tokens": 10323,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1728,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12051
+  }
+}

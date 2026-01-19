@@ -1,0 +1,127 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jqothn.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jqothn/just_played_miniature_golf_at_mall_world/",
+  "title": "Just played miniature golf at Mall World.",
+  "date": null,
+  "content_checksum": "a90f4ce4ce3989bedfe1a01b8477704bb7f83d71cec99106d554f9821511fac7",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:19:51.733648+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "lighting was a gentle blue from lamps all over the mall with decorative railing and vines decorating the rails and walls"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "performer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "amusement_park",
+        "location_name": "miniature golf courses",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "some courses had multiple holes to sink the ball into with a colored mesh screen at the bottom of every hole"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "Played miniature golf; scoring was not by strokes but by hole color/point value; blue holes hardest (on top of a tricky hill); orange easiest (curved pit that would roll the ball into it if it got too close); green, yellow, and red in between.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Dream content focuses on a mall interior and an embedded miniature golf setup; no explicit navigation between distinct areas beyond 'in the mall'. Dreamer role set to customer at mini golf; role at mall itself is ambiguous."
+  },
+  "response_id": "resp_092e6edfeea66d4600696e2155cae881909b43a5ba34bb4406",
+  "usage": {
+    "input_tokens": 10158,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 919,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11077
+  }
+}

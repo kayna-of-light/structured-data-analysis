@@ -1,0 +1,135 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\ysy1ea.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/ysy1ea/have_you_seen_a_homeless_man_or_blind_man_in_your/",
+  "title": "Have you seen a homeless man or blind man in your Mall World?",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:21:09.871705+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/h3vbfutj4iz91.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have seen a homeless man or blind man in their Mall World dreams",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "sparse",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Indoor mall concourse/atrium with tiled floor, columns, storefronts; central corridor leading to a brighter area; two staircases/escalator-like stair runs on left and right rising to an upper level; large hanging signs/banners; a large dark storefront sign reading 'FAII NANA…' (partially visible)."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_attempted",
+        "qualities": "Two symmetrical stair runs (left and right) visible ahead, leading upward to a brighter upper level/opening."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "A person is seated/crouched at the left edge of the concourse near a planter, appearing homeless; another person walks away down the corridor toward the brighter area and stairs.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Person seated/crouched at left edge near a planter; bundled clothing; posture suggests resting/sleeping.",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Person walking away down the central corridor, back turned, wearing a jacket/hoodie and patterned pants.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text; extraction based solely on the attached image. Image appears like an illustration/visualization (not a hand-drawn map). Any 'blind man' attribute is not visually confirmable from this single frame."
+  },
+  "response_id": "resp_08716980040571c100696e2fa51d688194af9cfedeef698416",
+  "usage": {
+    "input_tokens": 11858,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 730,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12588
+  }
+}

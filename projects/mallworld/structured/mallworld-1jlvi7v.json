@@ -1,0 +1,235 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jlvi7v.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jlvi7v/the_last_floor/",
+  "title": "The last floor",
+  "date": null,
+  "content_checksum": "f9a1cf3053260fc39d572f3eff0979b25efcf1b1110457d162d98d63a3f01034",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:17:36.716566+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asks if others have a dream narrator/third-party voice that describes movements and guides them",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "panicked, then relieved/threat gone",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "mall/campus maze",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "multi-floor structure with a 'last floor'",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "some sort of mall/campus that resemble a maze; when im there I just know the place"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "staircase area to the last floor",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the mall/campus maze",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "going up to the last floor, there were many staircases (like in squid game)"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "top of the stairs / checkpoint",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the top of the staircase area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "evening",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "girl standing at the top of the stairs preventing me from continuing to go up; 'its the last floor and the end of the day had come, you need to go back'"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "escapee",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "direction": "up",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "many staircases; maze-like; going up toward the last floor"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "stairs",
+        "direction": "up",
+        "difficulty": "blocked",
+        "mechanism_function": "not_applicable",
+        "outcome": "failed",
+        "qualities": "blocked at the top by a girl preventing further ascent"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "the girl starts going down the stairs toward the dreamer as if to kill them"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_3",
+        "boundary_type": "guarded",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "yes_explicit",
+        "crossing_outcome": "failed",
+        "description": "Access to continuing upward to the 'last floor' is blocked by a girl who tells the dreamer to go back because 'the end of the day had come'."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_3",
+        "interaction_type": "conflict",
+        "description": "A girl blocks the dreamer from continuing upward; tells them to go back. The dreamer says their things were there and they wanted to take them. When the dreamer focuses on her eyes/face, her face becomes blurry and glitchy. A narrator voice says: \"oops, you are not supposed to look at people's eyes in dreams..\" The girl then looks psychotic and moves down the stairs toward the dreamer as if to kill them. The dreamer panics, then realizes it's a dream and tries to make her head catch on fire; it doesn't work exactly, but something else happens and the threat is gone.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "threatening",
+            "role": "blocker",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "girl with a creepy smile; later a psychotic look; face goes blurry/weird with glitches when stared at",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "other",
+            "demeanor": "neutral",
+            "role": "guide",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "a narrator/third-party voice that describes movements from time to time and also guides",
+            "name_or_relation": "dream narrator"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "escape",
+        "description": "Dreamer attempts a dream-control action (saying the girl's head will catch on fire). It doesn't work exactly as intended; something else happens; the threat disappears.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "girl moves down the stairs toward the dreamer as if to kill them",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "The setting is described as a mall/campus maze with many staircases leading to a 'last floor'. The 'end of the day' is mentioned but lighting/time-of-day specifics are not otherwise described. The dream-control effect is described only as 'something else happened instead' without details."
+  },
+  "response_id": "resp_006f7ff85f57c3fa00696e20ad994c81948146d9f07a74628a",
+  "usage": {
+    "input_tokens": 10328,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2020,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12348
+  }
+}

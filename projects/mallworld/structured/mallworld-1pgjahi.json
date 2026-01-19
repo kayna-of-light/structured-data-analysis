@@ -1,0 +1,180 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pgjahi.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pgjahi/did_any_girls_have_this_dream_when_they_were/",
+  "title": "Did any girls have this dream when they were roughly in freshman year of high school, about a decade ago?",
+  "date": null,
+  "content_checksum": "ae847cf54f39e269a2751a3c0acde1fa265e2ee3c3d526028961dcbe3a51f89f",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:59:44.718778+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "shared_dream_claim",
+      "content_flags": [
+        "childhood_dream",
+        "mentions_other_dreamers",
+        "lucid_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if anyone else had the same/shared dream from ~freshman year of high school (~a decade ago)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "younger_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "disappointed",
+      "author_theory": "Possible shared dream with other girls; asks if others had it",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "church",
+        "location_name": "small group room (church-like)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "small room, maybe 20x20 feet; like a small group room at church; door open"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "school",
+        "location_name": "hallway with other similar rooms (visible through open door)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside loc_1, visible through the open door",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "a hallway to other similar rooms outside"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "door open; hallway visible"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer realizes they are dreaming and tells the other girls; they react with surprise. They talk about the dream; dreamer suggests they might all be asleep and sharing the same dream; the girls get more excited.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "friendly",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "roughly 10 girls my age sitting in chairs aligned in a circle facing each other",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "known_person",
+            "demeanor": "friendly",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "one of the girls recognized on waking (shared a class with her)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "At first, the group is sitting quietly for a little while; not talking.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "girls my age seated in a circle",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Room size given (~20x20 ft). Hallway and other similar rooms are only seen from inside via an open door; no traversal described beyond visibility. Entities include ~10 girls; two recognized upon waking but only one recalled; waking-life follow-up conversation is not part of the dream."
+  },
+  "response_id": "resp_0332da4e495e5c3500696e2aa3a93081909bca387a3cebb6cb",
+  "usage": {
+    "input_tokens": 10340,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1367,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11707
+  }
+}

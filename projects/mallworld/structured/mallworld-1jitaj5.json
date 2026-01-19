@@ -1,0 +1,118 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jitaj5.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jitaj5/im_always_looking_for_this_stationery_shop/",
+  "title": "I'm always looking for this stationery shop",
+  "date": null,
+  "content_checksum": "1562522bbd0b4a1e265dade54f8f1d4fb7154145faeed701d845b691bc2607a9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:15:38.690851+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/78wjkwzpnnqe1.png",
+    "https://i.redd.it/niqxzijqnnqe1.png",
+    "https://i.redd.it/ylvl1bfrnnqe1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "stationery shop",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in a 'mind city' / streetscape setting (not further specified)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "stationery shop being searched for; storefronts shown on a city sidewalk with display racks, large signboards, window displays full of cute character goods; adjacent shuttered storefronts in one image"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Dreamer is looking for a stationery shop; reports having visited it once in a dream with their aunt and searching for it since then.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "aunt (present in the earlier dream visit)",
+            "name_or_relation": "aunt"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post provides minimal narrative; images appear AI-generated and depict a stationery shop storefront on a city street rather than a mapped 'mall world' layout. Spatial relations beyond 'streetfront shop' are not described."
+  },
+  "response_id": "resp_0981b1c7751ff8e600696e204cb2c48194ba49f2758896b381",
+  "usage": {
+    "input_tokens": 13742,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 559,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14301
+  }
+}

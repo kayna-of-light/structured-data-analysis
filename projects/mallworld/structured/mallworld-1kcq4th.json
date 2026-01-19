@@ -1,0 +1,225 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1kcq4th.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1kcq4th/inception_style_dreams_about_dreaming_and/",
+  "title": "Inception style dreams about dreaming, and explaining these dreamdreams to the other dream characters",
+  "date": null,
+  "content_checksum": "0c3bca155e3dee319083175d6164ec81507afce975199b61f7f920d3243315fd",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:31:23.429699+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_public",
+        "location_name": "jam-packed public restroom",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in/near a busy restaurant in the bustling newly constructed end of my hometown",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "jam-packed public restroom; toilets right up against the short stall doors; woman in line to exit the restroom, 6 inches from my face while I tried to use the toilet; awkward direct eye contact"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "restaurant",
+        "location_name": "busy restaurant",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "bustling newly constructed end of my hometown",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "new",
+          "atmosphere": "chaotic",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "busy restaurant; bustling newly constructed end of my hometown; family out in the busy restaurant; they had already eaten"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "unknown",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Took me like 45 minutes or more to find the bathroom"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "unknown",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "use it and get back to my family out in the busy restaurant"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer finds the public restroom after a long search and uses the toilet in a crowded stall setup with short stall doors and toilets close to the doors.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "woman in line to exit the restroom, 6 inches from my face while I tried to use the toilet; made awkward direct eye contact",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "customer",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "other people in line to exit the restroom",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer confronts the woman for looking into the stall: \"don't look into someone else's stall!\" while others are in line nearby.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "woman in line to exit the restroom; made awkward direct eye contact",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "all those other people in line to hear it",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer returns from the restroom to their family in the busy restaurant; family is still there but has already eaten because the dreamer took too long.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "my family out in the busy restaurant; they were still there but had already eaten",
+            "name_or_relation": "my family"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Dreamer tells someone a story about the restroom incident and the awkward eye contact while using the toilet.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "No explicit mall interior described; locations inferred from narrative: public restroom associated with a busy restaurant in a newly constructed area of the dreamer's hometown. Time duration mentioned for finding/using restroom."
+  },
+  "response_id": "resp_055cdcfb552e87e100696e23f9de708194ac233be5721b79ea",
+  "usage": {
+    "input_tokens": 10225,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 1760,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11985
+  }
+}

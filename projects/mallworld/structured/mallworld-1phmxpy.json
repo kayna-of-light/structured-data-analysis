@@ -1,0 +1,354 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1phmxpy.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1phmxpy/hotel_world/",
+  "title": "Hotel world",
+  "date": null,
+  "content_checksum": "d3bd7a23d718b2fddbb8efbad89a2d424a36ef0194f3ccb2eaf3ad3c25f8dc2a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T13:00:20.992113+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "lucid_dream",
+        "nightmare"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have similar recurring hotel staircase dreams and advice on how to get out of the loop",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "looping",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "hotel staircase that’s never ending; stairs completely maroon; walls ruby painted; ceiling like a black design; always very dimly lit; causes headaches in my dreams"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel_room",
+        "location_name": "three accessible rooms on the floor",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "on the same floor as the staircase/loop area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "I can only ever go in three room and never leave the floor"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "outside (via one door)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "exit",
+          "cardinal": "not_mentioned",
+          "relative_to": "through a door from the hotel floor",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "one door leads me outside"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "house",
+        "location_name": "childhood home (via one door)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "through a door from the hotel floor",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "the other to my childhood home"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_5",
+        "location_type": "school",
+        "location_name": "school I don’t recognize (via one door)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "through a door from the hotel floor",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "the last to a school I don’t recognize"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "student",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_6",
+        "location_type": "hotel",
+        "location_name": "glass elevator (in hotel)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the hotel / connected to the staircase area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "glass elevator"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "direction": "unknown",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "hotel staircase that’s never ending; two separate stair cases; if you run fast enough they take you to different parts of the hotel"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "stuck on that floor; can only ever go in three room"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "one door leads outside"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_4",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "one door leads to childhood home"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_5",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "one door leads to a school I don’t recognize"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_6",
+        "connection_type": "elevator",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "unpredictable",
+        "outcome": "failed",
+        "qualities": "can use the glass elevator but it goes no where; I stay put but it looks like it’s moving"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "I can only ever go in three room and never leave the floor; always stuck on that floor"
+      },
+      {
+        "location_id": "loc_6",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "yes_explicit",
+        "crossing_outcome": "failed",
+        "description": "glass elevator goes nowhere; stay put but it looks like it’s moving"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "running on the stairs from something or trying to find something",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "a few times I have had to “kill” someone very violently",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "someone who caused me a lot of harm",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "faceless",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "someone with no face that’s blurred and mixed around",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_6",
+        "interaction_type": "navigation",
+        "description": "use the glass elevator but it goes nowhere; stay put though it looks like it’s moving",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Some elements are described generically (e.g., 'different parts of the hotel' without naming those areas). The 'three rooms' are treated as a single location node with three door-connections to outside/childhood home/unknown school."
+  },
+  "response_id": "resp_0efcf06a0ed804f800696e2ac4980c81938cd79ceb9bcf5895",
+  "usage": {
+    "input_tokens": 10301,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2849,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13150
+  }
+}

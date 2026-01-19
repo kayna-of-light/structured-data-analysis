@@ -1,0 +1,254 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jiqj0i.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jiqj0i/movie_theater/",
+  "title": "Movie Theater",
+  "date": null,
+  "content_checksum": "a633ecad2b1edc1555e9a8b3f74a775ec04f189660f09fdcc3e59879982f0dab",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:16:05.949495+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/uje5wtt42nqe1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "first_visit",
+      "time_flow": "normal",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "suddenly woken up after peeking around the corner",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_theater",
+        "location_name": "movie theater",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "abandoned",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "theater was running but it was dingy and abandoned; rows of seats seemed to go on forever"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "audience",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "long corridor / hallway with rooms",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within/connected to the movie theater",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "a long corridor with rooms out of my peripheral; couldn't look down the hallway"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "bathroom_public",
+        "location_name": "odd bathrooms",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in/associated with the theater",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "way too many stalls; some stalls had no doors; some were broken"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "basement",
+        "location_name": "secret passage area beneath the theater (boiler-room-like)",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "corner",
+          "cardinal": "not_mentioned",
+          "relative_to": "beneath the theater via a secret passage",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "secret passage to something beneath the theater; area reminded me of a boiler room; massive shadow lived down there; mass took up an entire corner from floor to ceiling"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "trespasser",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "long corridor; rooms visible in peripheral; dreamer couldn't look down the hallway"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "bathrooms 'made an appearance' within/connected to theater"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_4",
+        "connection_type": "tunnel",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "partial",
+        "qualities": "secret passage leading beneath the theater"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer saw a long corridor with rooms out of peripheral vision but could not look down the hallway.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "observation",
+        "description": "Dreamer peeked around a corner at a massive shadow filling an entire corner from floor to ceiling; then vision was turned away from the image and the dreamer was suddenly woken up.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "shadow",
+            "demeanor": "threatening",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "massive shadow; mass took up an entire corner from floor to ceiling; 'something lived down there'",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "escape",
+        "description": "Something 'screamed not to let it see me' and the dream ended immediately after the dreamer peeked; waking occurred suddenly.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "threatening",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "a scream/voice warning: 'not to let it see me'",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Image appears to be an AI-style visualization of an empty/dim movie theater with red seats; not a map drawing. Spatial layout beyond the theater (corridor/rooms, bathrooms, secret passage) comes from text."
+  },
+  "response_id": "resp_0bb7040309e5ccf600696e204588c88190ba59be0817cc3c80",
+  "usage": {
+    "input_tokens": 10649,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1414,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12063
+  }
+}

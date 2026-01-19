@@ -1,0 +1,332 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1oa7rde.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1oa7rde/mallworld_entities/",
+  "title": "Mallworld entities",
+  "date": null,
+  "content_checksum": "ef42c6611bce5886d978a1de3ef7b5de3f5638a757fabf3af1ddcb3d5c318103",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:40:19.165050+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/9ohf4uv5txvf1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "multiple_dreams",
+        "childhood_dream",
+        "recurring_dream",
+        "nightmare",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": 8,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "child_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "freaked out; jolts awake (after paralysis/vibration)",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "mallworld hallways",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "chased down the hallways"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "bathroom_public",
+        "location_name": "bathroom (in chase route)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "on the chase route from the hallways",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "chased ... through the bathroom"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "forest",
+        "location_name": "forest (on separate occasions)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "on separate occasions through the forest"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "corner of a room (friend’s sleep-paralysis episode)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "corner",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "in the corner of her room"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "chase route: down the hallways, through the bathroom"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "unspecified",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "separate occasions: chased through the forest"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer is chased by an 'old man with the tubes coming out of his head' who is pushed by a 'goth man'; they chase the dreamer down the hallways.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "\"old man with the tubes coming out of his head\"; in a wheelchair; catches up every time; paralyzes dreamer with his eyes; heavy vibration occurs",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "\"goth man\" pushing the old man in the wheelchair",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Chase continues through the bathroom.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "old man in wheelchair (tubes coming out of head) catches up every time",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "goth man pushing the wheelchair",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "escape",
+        "description": "On separate occasions, chased through the forest; old man catches up every time.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "old man in wheelchair (tubes coming out of head) catches up every time",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "goth man pushing the wheelchair",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Every time the old man catches up, he paralyzes the dreamer with his eyes; dreamer feels 'a heavy vibration' and then 'jolt awake'.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "old man in wheelchair; 'paralyze me with his eyes'",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "observation",
+        "description": "A girl the author met later reports waking with sleep paralysis and seeing a 'little old man in a wheelchair with black eyes' in the corner of her room; she reports flashes of the author and hearing the author's name.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "no",
+            "description": "girl met at age 16; told author about psychic experiences and her dreams; later messaged about sleep paralysis experience",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "threat",
+            "demeanor": "watching",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"little old man in a wheelchair with black eyes\" seen in corner of room during sleep paralysis",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears AI-generated and depicts an elderly man seated in a wheelchair with multiple tubes emerging from the top/back of his head; a tall dark figure stands behind the chair with hands on the handles. Text describes chase sequences through mall hallways, a bathroom, and (separately) a forest; no further layout details given. Author reports dreams mostly at ages 8–10; later (age 16) a friend reports a similar figure during sleep paralysis."
+  },
+  "response_id": "resp_07daefeac3311d1300696e25d8f9288196a83e9500a3a1a1da",
+  "usage": {
+    "input_tokens": 11342,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1888,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13230
+  }
+}

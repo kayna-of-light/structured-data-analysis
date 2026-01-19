@@ -1,0 +1,135 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1owbx3q.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1owbx3q/anyone_been_here/",
+  "title": "Anyone been here?",
+  "date": null,
+  "content_checksum": "33e7cd728c50b586003dfab029beee0c9b944dea38312d765353e4d46323e8b8",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:50:42.540108+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/1clpfcft231g1.png",
+    "https://i.redd.it/2azen29t231g1.png",
+    "https://i.redd.it/n5cj0ebt231g1.png",
+    "https://i.redd.it/m1fhb26t231g1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "has_map_drawing"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": "Asking if anyone recognizes a specific cafe-like place with blue cloud walls and a spaceship carousel",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant",
+        "location_name": "café",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"at a café\"; \"blue walls with clouds inside\"; \"floors were vinyl tiles with a colorful pattern\"; \"tables were white\"; \"chairs were different colors\"; \"kinda looked like a liminal space?\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "amusement_park",
+        "location_name": "carousel with spaceships",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "associated with/remembered at the café",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"this carousel with spaceships\"; unsure colors: \"pink and orange or blue? Perhaps both?\" (image shows two color variants)"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observed/decribed café interior: blue walls with cloud motif; colorful vinyl tile floor; white tables; multi-colored chairs; remembered a spaceship-themed carousel.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear to be illustrative drawings (not a layout map): (1) blue background with white cloud shapes (wall motif), (2) colorful checkerboard tile pattern (floor), (3-4) spaceship carousel shown in two color schemes (pink/orange and blue/teal). No spatial layout/paths provided."
+  },
+  "response_id": "resp_06a39da0dd7592c800696e28811d00819483971519d094c346",
+  "usage": {
+    "input_tokens": 17404,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 732,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 18136
+  }
+}

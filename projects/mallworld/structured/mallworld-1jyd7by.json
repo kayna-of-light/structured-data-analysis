@@ -1,0 +1,134 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jyd7by.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jyd7by/swamp/",
+  "title": "Swamp",
+  "date": null,
+  "content_checksum": "37009a200ef3e176f589237ce8fa24deb9078528ee97d1118caa720a152f3806",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:24:02.630878+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/aze1s2sw1nue1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others experience a recurring 'swamp forest' that leads to woods; requesting pictures; mentions trying to create a map of locations",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "forest",
+        "location_name": "swamp forest",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "timeless",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "river",
+          "raw_description": "“swamp forest” that I’m always traveling through; image shows dense, leafless trees; green/teal haze or mist; narrow dirt path along the edge of turquoise water"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "forest",
+        "location_name": "the woods (hiking woods)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "usually reached after traveling through the swamp forest",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“the woods that I always find myself hiking in”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Swamp forest travel route that usually leads into the woods; image suggests a winding dirt path beside water with mist"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily an AI recreation request/validation with minimal narrative. Visual details are taken from the attached AI image; no explicit events beyond recurring travel/hiking and the typical transition from swamp forest to woods."
+  },
+  "response_id": "resp_020a6921f780a24700696e2238b06881978837be2b2afeb1b7",
+  "usage": {
+    "input_tokens": 11843,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 689,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12532
+  }
+}

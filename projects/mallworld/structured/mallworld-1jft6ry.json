@@ -1,0 +1,143 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jft6ry.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jft6ry/vivid_dream/",
+  "title": "Vivid dream",
+  "date": null,
+  "content_checksum": "8c8dc8dcba659dc556cdddc07465619baaf444e13cfaf0968ec7231f596388ad",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T12:14:19.193172+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/dy3knmtqhvpe1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have had a similar recurring dream (house with waves getting closer)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "not scared (\"I don’t think I was scared in the dream\")",
+      "author_theory": "Mentions possible subconscious meaning (\"feeling trapped or something\")",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "raw_description": "In a house; waves getting closer and closer. Image reference: interior room with open double doors facing the ocean/shore; wet floor near doorway; ocean waves close to threshold; dim interior with brighter outdoor light."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "beach",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the house, directly beyond open doors",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "raw_description": "Ocean shoreline immediately outside the house doors; waves approaching the doorway/house."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Open double doors from inside the house to the beach/ocean; waves visible and approaching."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observes waves getting closer and closer to the house.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image is described as a random online picture used as a visual match; extracted only the concrete visual elements that align with the stated dream content (house interior facing ocean; waves approaching). No explicit boundaries/edges encountered beyond proximity of ocean to house."
+  },
+  "response_id": "resp_06da508294b6455300696e1fed43408195aedca15cbd47c46f",
+  "usage": {
+    "input_tokens": 11515,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1044,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12559
+  }
+}
