@@ -6,10 +6,12 @@ from .questionnaire import (
     Connection,
     Interaction,
     Boundary,
+    Entity,
     DreamMeta,
     LocationQualities,
     SpatialPosition,
     AuthorDemographics,
+    PostClassification,
     # Enums
     LocationType,
     VerticalPosition,
@@ -30,6 +32,8 @@ from .questionnaire import (
     InteractionType,
     InteractionOutcome,
     EntityType,
+    EntityDemeanor,
+    EntityRole,
     MapCoherence,
     RecurrencePattern,
     TimeFlow,
@@ -40,6 +44,8 @@ from .questionnaire import (
     BeyondBoundary,
     DreamerIdentity,
     DreamerRole,
+    PostType,
+    PostContentFlag,
 )
 
 __all__ = [
@@ -48,10 +54,12 @@ __all__ = [
     "Connection",
     "Interaction",
     "Boundary",
+    "Entity",
     "DreamMeta",
     "LocationQualities",
     "SpatialPosition",
     "AuthorDemographics",
+    "PostClassification",
     # Enums
     "LocationType",
     "VerticalPosition",
@@ -72,6 +80,8 @@ __all__ = [
     "InteractionType",
     "InteractionOutcome",
     "EntityType",
+    "EntityDemeanor",
+    "EntityRole",
     "MapCoherence",
     "RecurrencePattern",
     "TimeFlow",
@@ -82,4 +92,6 @@ __all__ = [
     "BeyondBoundary",
     "DreamerIdentity",
     "DreamerRole",
+    "PostType",
+    "PostContentFlag",
 ]
