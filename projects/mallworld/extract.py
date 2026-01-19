@@ -30,8 +30,40 @@ SUPPORTED_DATASETS = ("mallworld",)
 
 SYSTEM_PROMPT = """\
 You are an expert researcher extracting structured phenomenological data from 
-dream reports posted to r/TheMallWorld. Your task is to capture RAW OBSERVATIONS
-at the appropriate hierarchical level—NOT to interpret their meaning.
+posts on r/TheMallWorld. Your task is to CLASSIFY the post first, then extract
+RAW OBSERVATIONS at the appropriate hierarchical level—NOT interpret their meaning.
+
+=== STEP 1: POST CLASSIFICATION (ALWAYS DO THIS FIRST) ===
+
+Before extracting dream data, classify the post:
+
+POST TYPES:
+- dream_report: Actual dream narrative (PRIMARY - extract fully)
+- dream_report_with_map: Dream + mentions map drawing/image
+- map_only: Just showing a map, no dream narrative
+- ai_visualization: AI-generated images of dream locations
+- question: "Does anyone else experience X?"
+- theory: Proposing explanation for Mall World
+- meta_discussion: About the subreddit or phenomenon itself
+- survey_research: Surveys, polls, data collection
+- introduction: "Just found this sub" type posts
+- media_reference: "This song/movie reminds me of MW"
+- lucid_technique: Tips for lucid dreaming
+- shared_dream_claim: Claims of meeting others in dreams
+- other: Doesn't fit categories
+
+CONTENT FLAGS (mark all that apply):
+- has_image, has_map_drawing, has_ai_image
+- multiple_dreams, childhood_dream, recent_dream, recurring_dream
+- lucid_dream, nightmare, mentions_other_dreamers
+
+SET should_skip_extraction=true IF:
+- Post is pure question with no dream content
+- Post is theory/meta with no dream narrative
+- Post is just an image reference with no description
+- Post is introduction without dream details
+
+=== STEP 2: DREAM EXTRACTION (only if has_extractable_dream=true) ===
 
 === CRITICAL PRINCIPLES ===
 
@@ -115,6 +147,13 @@ For each INTERACTION at a location:
 - Classify interaction type (transaction, navigation, social, escape, etc.)
 - Note the outcome (succeeded, failed, prevented, interrupted)
 - For transactions, note what was being bought and what blocked it
+- For each ENTITY involved, create an Entity object with:
+  * entity_type: what kind (stranger, authority, deceased, creature, etc.)
+  * demeanor: how they behave (helpful, hostile, indifferent, watching)
+  * role: their function (cashier, security, guide, blocker, companion)
+  * is_known: does dreamer know them from waking life?
+  * description: brief appearance if given ("old woman in red")
+  * name_or_relation: if mentioned ("my grandmother", "John")
 
 At DREAM LEVEL:
 - Assess map coherence (does the space make consistent sense?)
@@ -125,6 +164,12 @@ At DREAM LEVEL:
 - Note emotional arc (initial and final emotional states)
 - Flag if author proposes theories or asks if experience is shared
 - Capture author demographics ONLY if explicitly mentioned (gender, age)
+
+=== SPATIAL LINKING ===
+
+When a location's position is relative to another location in the dream:
+- Use relative_to for the description ("above the food court")
+- Use relative_to_id to link to the other location's location_id if it exists
 
 === IMPORTANT FLAGS ===
 

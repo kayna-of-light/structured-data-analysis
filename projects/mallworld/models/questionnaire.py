@@ -388,8 +388,46 @@ class EntityType(str, Enum):
     CREATURE = "creature"              # Non-human
     SHADOW = "shadow"                  # Shadowy figure
     WATCHER = "watcher"                # Observer entity
+    CHILD = "child"                    # Child entity
+    FAMILY_MEMBER = "family_member"    # Family (alive)
+    FRIEND = "friend"                  # Friend (alive)
+    COWORKER = "coworker"              # Work colleague
+    FACELESS = "faceless"              # Entity without face
+    MANNEQUIN = "mannequin"            # Mannequin-like entity
     OTHER = "other"
     NONE = "none"
+
+
+class EntityDemeanor(str, Enum):
+    """How the entity behaves toward the dreamer."""
+    HELPFUL = "helpful"                # Actively helping
+    FRIENDLY = "friendly"              # Pleasant, welcoming
+    NEUTRAL = "neutral"                # Neither positive nor negative
+    INDIFFERENT = "indifferent"        # Ignoring the dreamer
+    UNFRIENDLY = "unfriendly"          # Cold, unwelcoming
+    HOSTILE = "hostile"                # Actively antagonistic
+    THREATENING = "threatening"        # Menacing
+    WATCHING = "watching"              # Just observing
+    CONFUSING = "confusing"            # Behavior doesn't make sense
+    NOT_MENTIONED = "not_mentioned"
+
+
+class EntityRole(str, Enum):
+    """What role the entity plays in the dream."""
+    CASHIER = "cashier"                # Working register
+    SECURITY = "security"              # Security guard
+    STAFF = "staff"                    # Generic employee
+    TEACHER = "teacher"                # Teacher/instructor
+    STUDENT = "student"                # Fellow student
+    CUSTOMER = "customer"              # Fellow customer
+    GUIDE = "guide"                    # Showing the way
+    BLOCKER = "blocker"                # Preventing access
+    CHASER = "chaser"                  # Pursuing dreamer
+    COMPANION = "companion"            # Traveling with dreamer
+    BYSTANDER = "bystander"            # Just present
+    AUTHORITY = "authority"            # Position of power
+    OTHER = "other"
+    NOT_MENTIONED = "not_mentioned"
 
 
 class DreamerIdentity(str, Enum):
@@ -492,6 +530,10 @@ class SpatialPosition(QuestionnaireBaseModel):
         default=None,
         description="What this position is relative to (e.g., 'above the food court', 'behind the school')"
     )
+    relative_to_id: Optional[str] = Field(
+        default=None,
+        description="If relative_to refers to another location in this dream, its location_id"
+    )
 
 
 class LocationVisit(QuestionnaireBaseModel):
@@ -574,6 +616,40 @@ class Connection(QuestionnaireBaseModel):
     )
 
 
+class Entity(QuestionnaireBaseModel):
+    """An entity encountered during the dream."""
+    
+    entity_type: EntityType = Field(
+        description="What type of entity this is"
+    )
+    demeanor: EntityDemeanor = Field(
+        default=EntityDemeanor.NOT_MENTIONED,
+        description="How the entity behaves toward the dreamer"
+    )
+    role: EntityRole = Field(
+        default=EntityRole.NOT_MENTIONED,
+        description="What role this entity plays in the dream"
+    )
+    
+    is_known: MentionResponse = Field(
+        default=MentionResponse.NOT_MENTIONED,
+        description="Does the dreamer know this entity from waking life?"
+    )
+    is_recurring: MentionResponse = Field(
+        default=MentionResponse.NOT_MENTIONED,
+        description="Has this entity appeared in previous dreams?"
+    )
+    
+    description: Optional[str] = Field(
+        default=None,
+        description="Brief description if given (e.g., 'old woman in red', 'faceless man in suit')"
+    )
+    name_or_relation: Optional[str] = Field(
+        default=None,
+        description="Name or relation if mentioned (e.g., 'my grandmother', 'John')"
+    )
+
+
 class Interaction(QuestionnaireBaseModel):
     """An interaction or event at a specific location."""
     
@@ -593,9 +669,9 @@ class Interaction(QuestionnaireBaseModel):
         description="Result of the interaction"
     )
     
-    entities_involved: List[EntityType] = Field(
+    entities_involved: List[Entity] = Field(
         default_factory=list,
-        description="Types of entities involved in this interaction"
+        description="Entities involved in this interaction"
     )
     
     # Transaction-specific
@@ -667,6 +743,45 @@ class BeyondBoundary(str, Enum):
 
 
 # ============================================================================
+# POST CLASSIFICATION ENUMS
+# ============================================================================
+
+class PostType(str, Enum):
+    """Primary classification of what kind of post this is."""
+    DREAM_REPORT = "dream_report"              # Actual dream experience (PRIMARY USE)
+    DREAM_REPORT_WITH_MAP = "dream_report_with_map"  # Dream + drawn map image
+    MAP_ONLY = "map_only"                      # Just a map/drawing, no narrative
+    AI_VISUALIZATION = "ai_visualization"      # AI-generated images of dreams
+    QUESTION = "question"                      # Asking if others experience X
+    THEORY = "theory"                          # Proposing explanation/theory
+    META_DISCUSSION = "meta_discussion"        # About the subreddit/phenomenon
+    SURVEY_RESEARCH = "survey_research"        # Surveys, data collection
+    INTRODUCTION = "introduction"              # "Just found this sub" posts
+    MEDIA_REFERENCE = "media_reference"        # Song/movie/game reminds of MW
+    LUCID_TECHNIQUE = "lucid_technique"        # Tips for lucid dreaming in MW
+    SHARED_DREAM_CLAIM = "shared_dream_claim"  # Claims of shared dreams
+    OFF_TOPIC = "off_topic"                    # Unrelated to Mall World dreams
+    SPAM_TROLL = "spam_troll"                  # Spam, trolling, nonsense
+    OTHER = "other"
+
+
+class PostContentFlag(str, Enum):
+    """Flags for content characteristics (can have multiple)."""
+    HAS_IMAGE = "has_image"                    # Post contains image(s)
+    HAS_MAP_DRAWING = "has_map_drawing"        # Contains hand-drawn map
+    HAS_AI_IMAGE = "has_ai_image"              # Contains AI-generated image
+    HAS_SURVEY_LINK = "has_survey_link"        # Contains survey/form link
+    HAS_EXTERNAL_LINK = "has_external_link"    # Links to other content
+    MULTIPLE_DREAMS = "multiple_dreams"        # Describes more than one dream
+    CHILDHOOD_DREAM = "childhood_dream"        # Dream from childhood
+    RECENT_DREAM = "recent_dream"              # Dream from last few days
+    RECURRING_DREAM = "recurring_dream"        # Mentions recurrence
+    LUCID_DREAM = "lucid_dream"                # Achieved lucidity
+    NIGHTMARE = "nightmare"                    # Explicitly described as nightmare
+    MENTIONS_OTHER_DREAMERS = "mentions_other_dreamers"  # References shared experience
+
+
+# ============================================================================
 # BOUNDARY AND DEMOGRAPHIC MODELS
 # ============================================================================
 
@@ -733,6 +848,52 @@ class AuthorDemographics(QuestionnaireBaseModel):
     dreams_duration_years: Optional[int] = Field(
         default=None,
         description="How many years they've had these dreams (if mentioned)"
+    )
+
+
+class PostClassification(QuestionnaireBaseModel):
+    """Classification of the post type for filtering and analysis routing."""
+    
+    post_type: PostType = Field(
+        description="Primary classification of this post"
+    )
+    content_flags: List[PostContentFlag] = Field(
+        default_factory=list,
+        description="Content characteristics flags"
+    )
+    
+    # Usefulness for our analysis
+    has_extractable_dream: bool = Field(
+        default=False,
+        description="Does this post contain a dream that can be extracted?"
+    )
+    has_spatial_information: bool = Field(
+        default=False,
+        description="Does the post contain useful spatial/map information?"
+    )
+    has_map_image: bool = Field(
+        default=False,
+        description="Does this post include a map drawing that should be manually reviewed?"
+    )
+    
+    # For non-dream posts that are still useful
+    theory_summary: Optional[str] = Field(
+        default=None,
+        description="If theory post: brief summary of the theory proposed"
+    )
+    question_topic: Optional[str] = Field(
+        default=None,
+        description="If question post: what are they asking about?"
+    )
+    
+    # Skip flag
+    should_skip_extraction: bool = Field(
+        default=False,
+        description="Should dream extraction be skipped for this post?"
+    )
+    skip_reason: Optional[str] = Field(
+        default=None,
+        description="Why extraction should be skipped"
     )
 
 
@@ -843,6 +1004,12 @@ class MallworldResponse(QuestionnaireBaseModel):
     Correspondence mapping happens in the analysis phase.
     """
     
+    # Post classification (ALWAYS extracted first)
+    classification: PostClassification = Field(
+        default_factory=PostClassification,
+        description="Classification of the post type - determines extraction routing"
+    )
+    
     # Dream-level metadata
     meta: DreamMeta = Field(
         default_factory=DreamMeta,
@@ -882,9 +1049,9 @@ class MallworldResponse(QuestionnaireBaseModel):
         default=False,
         description="Does this report contain meaningful temporal information?"
     )
-    is_dream_report: bool = Field(
-        default=True,
-        description="Is this actually a dream report (vs meta-discussion, question, etc.)?"
+    extraction_confidence: Optional[str] = Field(
+        default=None,
+        description="How confident is the extraction? (high/medium/low/minimal)"
     )
     extraction_notes: Optional[str] = Field(
         default=None,
