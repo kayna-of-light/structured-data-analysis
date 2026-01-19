@@ -1,0 +1,150 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hg7g6k.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hg7g6k/second_earth_in_night_sky/",
+  "title": "Second Earth in Night Sky",
+  "date": null,
+  "content_checksum": "159dbf28a3e01a26a54c7fd8262cae95f71b733dcd4495b8bd706b257dcb9daf",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:40:29.798522+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "environment felt extremely nice; enjoys going to that particular world; filled with genuine love",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "neighborhood",
+        "location_name": "astral version of my neighborhood",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "walking around the astral version of my neighborhood; saw a second Earth in the night sky"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "school_classroom",
+        "location_name": "classroom (in that particular world)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in that particular world (replica Earth)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "ended up inside a classroom; doing some type of vocabulary and art project; environment in that world felt extremely nice"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "student",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "teleport",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "managed to go to that particular world after seeing Earth up in the sky"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Saw a second Earth in the night sky with a moon orbiting it; there was a lone moon on one side of the sky and on the other side a replica of Earth.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "In the classroom, doing some type of vocabulary and art project; the art was used as a way to describe the words that were written.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No explicit descriptions of other people in the classroom; the transition to the 'particular world' is described without a physical pathway, so encoded as teleport. The 'second Earth' and moons are treated as an observed sky feature rather than a separate visitable location beyond the classroom."
+  },
+  "response_id": "resp_03bd96ef180093ef00696e181d3e588196ba39fef4decc1a4f",
+  "usage": {
+    "input_tokens": 10193,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1134,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11327
+  }
+}

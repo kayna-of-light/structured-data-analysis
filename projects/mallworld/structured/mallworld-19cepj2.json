@@ -1,0 +1,133 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\19cepj2.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/19cepj2/my_dreams_have_been_intense_recentlyi_dreamt_of/",
+  "title": "My dreams have been intense recently…I dreamt of my ex",
+  "date": null,
+  "content_checksum": "3b41836491d1ae37008bb031fd2cd1136c05acfb6fc6a36ea563881c19c4bab2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:04:03.172985+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "crying / intense emotion (crying my eyes out)",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "my house",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "all my friends... were meeting me at my house; my ex walked through the door"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "College boyfriend/ex arrives at the house; dreamer hugs him and embraces him; dreamer cries intensely.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "college boyfriend / ex walked through the door",
+            "name_or_relation": "ex / college boyfriend"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Other friends the dreamer hasn't seen in years are present at the house meeting the dreamer.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "all my friends; other friends that I haven’t seen in years were also there",
+            "name_or_relation": "friends"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post references 'my mall world' as a recurring dream setting but the only concretely described dream location is 'my house' with people arriving through the door. No explicit mall locations, routes, or layout details provided. Temporal sequence is minimal but includes 'last night' and event order (friends meeting at house, ex enters, hug/crying)."
+  },
+  "response_id": "resp_0ed7c44a335bfcb700696e0f8eabe88193a2410d986571fd7c",
+  "usage": {
+    "input_tokens": 10251,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 947,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11198
+  }
+}

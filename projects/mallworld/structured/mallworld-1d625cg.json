@@ -1,0 +1,161 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1d625cg.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1d625cg/i_noticed_another_pattern_in_mallworld/",
+  "title": "I Noticed Another Pattern in 'Mallworld'",
+  "date": null,
+  "content_checksum": "2daf29b992ea6cd2780b40022f2dc791c6059623b9e4ef2a43ab5f910ea7db35",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:17:54.788934+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "theory",
+      "content_flags": [
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": "Author suggests Mallworld may be a kind of purgatory with different “floors” depending on state of mind; notes a perceived pattern of “sinful” people in the setting and asks if others notice it.",
+      "question_topic": "Whether others notice a pattern of “sinful” people in Mallworld dreams",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "scared",
+      "author_theory": "Mallworld as purgatory; dream “floor” depends on state of mind; pattern of “sinful” people present.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "downtown",
+        "location_name": "a square in my city (Praça da cidade)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“the second one I dream about the most, a square in my city, but with more stores, with a lot of movement”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "“when walking to this square” (approach on foot implied)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observed many stores and lots of movement in the city square (more stores than in waking life).",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "While walking to the square, saw 3 cars passing by with images of Our Lady; the images were falling from the cars.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "3 passing cars carrying images of Our Lady; images falling from the cars",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observed people described as “trashy people, sluts, drug addicts… immersed in sin”; included ordinary strangers and also some childhood friends.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "“a lot of trashy people… drug addicts… immersed in sin”; “ordinary people I’d never met”",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "friend",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "“some childhood friends too”",
+            "name_or_relation": "childhood friends"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily theory/question with a brief dream report. An image is referenced (“A Praça da cidade na foto”) but not provided here, so map/image content cannot be analyzed. The ‘mallworld’ setting is mentioned but not described beyond the recurring city square variant."
+  },
+  "response_id": "resp_0eff5f8d67f22cff00696e12c33174819494adee49ab3303be",
+  "usage": {
+    "input_tokens": 10299,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 945,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11244
+  }
+}

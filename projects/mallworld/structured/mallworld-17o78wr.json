@@ -1,0 +1,130 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17o78wr.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17o78wr/a_wierdcore_edit_that_feels_familiar/",
+  "title": "A Wierdcore edit that feels familiar",
+  "date": null,
+  "content_checksum": "a2963a69597d9607eb401c99cbc9424186c2f9ac9ba1d75262bc9b6844d8e519",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:54:19.419782+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "inconsistent",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "seem to have \"spawned in\" to someone's house late at night or early morning; there's no one home or awake yet; feels like you accidentally stumbled into a strangers' house"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "trespasser",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "hallway",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in a house",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "inconsistent",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "hallway in a house with the same peach colored walls"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "trespasser",
+        "visit_order": 2
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer 'spawned in' inside someone's house (late at night or early morning) and experiences the house as empty/no one awake.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post references a wierdcore edit that resembles a dream hallway; no actual image provided here, so extraction is based only on the narrative text. Time-of-day is given as 'late at night or early morning' (ambiguous), so marked as inconsistent."
+  },
+  "response_id": "resp_008ded712c05a95c00696e0d4a97b08193ab9994199143ddca",
+  "usage": {
+    "input_tokens": 10097,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 917,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11014
+  }
+}

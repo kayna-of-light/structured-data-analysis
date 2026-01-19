@@ -1,0 +1,202 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\16x4esu.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/16x4esu/odd_showers/",
+  "title": "Odd showers.",
+  "date": null,
+  "content_checksum": "48ed61fb485f4f8cdb1dedb88998b34d3b2bb0f09f14af9eb3da9d964253b66c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:47:34.784624+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "shower in corner of room with carpeted floor",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "corner",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "showers in odd places... in the corner of the room and the floor is carpeted"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "bathroom",
+        "location_name": "regular bathroom with shower head shooting over the floor",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "in a regular bathroom but the shower head shoots out over the floor of the bathroom"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "house",
+        "location_name": "someone’s house (shower is far away and messed up)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "staying at someone’s house and have to walk really far to the shower and when I get there it’s messed up"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "guest",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "bathroom",
+        "location_name": "camp-type toilet shower",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "weird camp type showers where it’s like a toilet shower"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "have to walk really far to the shower"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Dreamer has to walk really far to reach the shower at someone’s house.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "observation",
+        "description": "Camp-type shower is described as a 'toilet shower'.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post summarizes recurring motifs across many dreams rather than a single continuous dream. Spatial details are limited to shower placement (corner), shower head orientation (shoots out over floor), and long walking distance to a shower at someone’s house. Connection loc_3->loc_4 represents the described long walk to a shower; the destination shower type is not explicitly stated to be the camp/toilet shower."
+  },
+  "response_id": "resp_04f7032215679c6300696e0badfff081939933ec42a4b2aee5",
+  "usage": {
+    "input_tokens": 10106,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1545,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11651
+  }
+}

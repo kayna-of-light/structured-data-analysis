@@ -1,0 +1,177 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1cas7xh.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1cas7xh/night_sweats_acrylic_painting_by_me/",
+  "title": "“Night Sweats”, acrylic painting by me.",
+  "date": null,
+  "content_checksum": "ecdc4584e50e5b5a83076efc55c914bbfc57a3f3e6736647fd90926861a2e118",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:14:10.949504+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/54yaxnx2u4wc1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "inconsistent",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "exit / clunky metal door",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "exit",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"You finally found the exit.\" \"clunky metal door\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "outside in sticky darkness",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "beyond the exit door",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "inconsistent",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"immersed in the sticky darkness\"; \"The air is so thick it’s almost hard to walk through\"; \"it smells like the Pirates of the Caribbean ride and Disney Land\"; \"It’s late. Or early.\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "outdoor scene (painting)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Image shows an orange/red sky glow, dark ground, a path/road with a bright strip down the center, several trees, and a tall vertical pole on the right; left side is very dark/black."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "working_normal",
+        "outcome": "succeeded",
+        "qualities": "\"push through the clunky metal door\""
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Finds the exit and pushes through a clunky metal door to leave.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Perceives sticky darkness; air is thick and hard to walk through; smell resembles Pirates of the Caribbean ride / Disneyland; unsure if it is late or early; believes there is a math test in the morning.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Dream text gives a door-to-outside transition with strong sensory qualities (darkness, thick air, smell) and ambiguous time-of-day. Image is an acrylic painting (not a map); treated as a depicted outdoor scene without explicit linkage to a named mall/school interior beyond the exit door. Math test implies a school context but no specific school location is described."
+  },
+  "response_id": "resp_0e1d0e6ee0d1ef0100696e11d025dc8190a9ab18c6bc224c9c",
+  "usage": {
+    "input_tokens": 11876,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 985,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12861
+  }
+}

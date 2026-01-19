@@ -1,0 +1,105 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1f70qkb.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1f70qkb/this_bathroom_tripped_me_out/",
+  "title": "This bathroom tripped me out…",
+  "date": null,
+  "content_checksum": "435f51c97dec069c3db2ba6ba7c645674a46d8930ed192f43e2d180963fd9dfd",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:26:12.910730+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/w5ibq04ikcmd1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "off_topic",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": true,
+      "skip_reason": "Waking-life report (local gym bathroom on a Texas military base), not a dream narrative."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "creepy; almost jumped back",
+      "final_emotion": "creepy to say the least",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom",
+        "location_name": "gym bathroom (Texas military base)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside a local gym on a Texas military base",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Bathroom with open shower stalls/partitions and curtain(s); small square tile floor; tiled half-walls/curved partitions; metal rails/pipes above partitions; fluorescent ceiling lights."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Walked in to use the bathroom; almost jumped back when seeing the interior; did not walk all the way in.",
+        "outcome": "abandoned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a real-world bathroom; image shows a shower area with tiled partitions and curtains under fluorescent lighting. No dream-specific spatial map or multi-location traversal described."
+  },
+  "response_id": "resp_0757a87dcad4a7f200696e14aef924819596dae779e534f1fc",
+  "usage": {
+    "input_tokens": 11852,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 702,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12554
+  }
+}

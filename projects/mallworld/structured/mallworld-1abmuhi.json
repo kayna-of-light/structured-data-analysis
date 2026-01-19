@@ -1,0 +1,107 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1abmuhi.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1abmuhi/the_lobby_of_my_haunted_mansion_sometimes_the/",
+  "title": "The lobby of my \"haunted mansion.\" Sometimes the hotel looks similar.",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:05:02.386869+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/7nbyd6jgdtec1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "map_only",
+      "content_flags": [
+        "has_image",
+        "has_map_drawing"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel_lobby",
+        "location_name": "lobby of my \"haunted mansion\" (sometimes the hotel looks similar)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Hand-drawn interior lobby/foyer with a large central arched window framed by tall draped curtains; two framed portraits on the upper walls (left and right). Upper-level balcony/railing runs across the scene with two symmetrical staircases descending on left and right. Ground level shows a central double door with two wall sconces/lamps flanking it, plus a smaller single door on the right side. Foreground includes multiple chairs and a large oval/round table; two tall pedestal/column-like stands near the center."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Two symmetrical staircases (left and right) descend from an upper balcony/landing to the lower floor; railings shown along the stairs and balcony."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text; extraction based solely on a single hand-drawn image depicting one interior lobby space. Recurrence inferred from title wording: \"Sometimes the hotel looks similar.\""
+  },
+  "response_id": "resp_0cf6abbb221d849100696e0fbd6c648193ba825a20bf558d82",
+  "usage": {
+    "input_tokens": 11260,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 590,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11850
+  }
+}

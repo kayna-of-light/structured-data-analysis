@@ -1,0 +1,114 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1dliyps.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1dliyps/snack_bar_dreams/",
+  "title": "\"Snack bar\" dreams",
+  "date": null,
+  "content_checksum": "f7c321cc00039f2711d73dffb946a8ec0ff5ce7f0f88860a7e3b274042ae5fcc",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:19:28.063241+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have recurring dreams of walking to a tucked-away snack bar/convenience store location that feels nostalgic/familiar but doesn’t exist, and rarely buying food",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "nostalgic, familiar (\"feels like a distant memory\")",
+      "final_emotion": "not_mentioned",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "tucked away snack bar / convenience store-like location",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "nostalgic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"walking to tucked away snackbar or convenience store- like location\"; \"FEELS very nostalgic and familiar, like reliving a distant memory\"; \"locations are always reminiscent of places I walked to as a kid\"; on waking: \"the place I dreamed about doesn't actually exist\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Dreamer is \"walking to\" the snack bar / convenience store-like location"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Very rarely, the dreamer ends up buying food at the snack bar / convenience store-like location.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": "food",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question with generalized recurring-dream description (\"at least 10 times\"); minimal concrete layout details. The 'outside_path' connection captures the stated action of walking to the location. Temporal data marked true due to recurrence count and 'distant memory' feel, though no explicit time-flow mechanics are described."
+  },
+  "response_id": "resp_00a2cdfb667990a800696e13305b048195ba91b35595fa9e34",
+  "usage": {
+    "input_tokens": 10113,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 652,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10765
+  }
+}

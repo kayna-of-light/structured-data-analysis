@@ -1,0 +1,226 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1283e4t.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1283e4t/the_balcony_cathedral/",
+  "title": "The Balcony Cathedral",
+  "date": null,
+  "content_checksum": "9f95c5f05df35bf82682d0844c0edd25c138d34bfc786afc5391b8df4f220352",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:40:20.946500+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "groggy",
+      "final_emotion": "not_mentioned",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "church",
+        "location_name": "The Balcony Cathedral",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "balcony overlooking a lower level through a central square opening ('down the hole')",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Extremely dated southern church sanctuary; sea foam green thick carpeting on all floors and stairs; eggshell white walls with ornate wainscoting; dark oak wood pew benches; brass organ piping; railing around the center (like a balcony) with stair rails; 'Beautiful intricate etchings on each and immaculate'."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "Balcony level with central square opening",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "above/around a lower level; four-sided balcony surrounding a square opening",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Doesn't feel like you are on a second floor; surprised to come through a door and be now on a balcony of a cathedral. Balcony is four-sided with a square shaped opening; edges clean besides two platforms inconspicuously sized. Five or six treads/platforms/levels turned ~45° or 30° so people can see downstairs 'down the hole'."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "Two small jutted platforms near the opening",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "near the central square opening ('near the hole') on the balcony",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Odd, purpose-built platforms; only room for one person to stand or sit crisscross legged; no visible railing, or railing functionality is different. Brass rail is shaped like a hook that adjusts for height of whatever is on the platforms."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "performer",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Surprised to come through a door and be now on a balcony of a cathedral."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Movement along the balcony to small jutted platforms near the central opening."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "visible_location",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Central square opening ('down the hole') in the four-sided balcony; designed so people can see downstairs."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer explains the room’s function/trick to another dreamer.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "another dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "Dreamer experiences the acoustics/reverb: different places have delays/differences in echo timing and diffusion; small platforms near the opening sound 'angelic' when humming a couple notes.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "other",
+        "description": "Dreamer is distracted before they can play around or sing; tries to get someone to leave them.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "blocker",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "someone always distracts me",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Only one primary setting described (church sanctuary with balcony). Lower level is referenced as visible through a central opening but not otherwise described as a separate distinct location. Lighting/time-of-day and crowding not specified."
+  },
+  "response_id": "resp_0ecbaea8cd75e50e00696e09ee11b081978a03c7ecd12a3a77",
+  "usage": {
+    "input_tokens": 10485,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1885,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12370
+  }
+}

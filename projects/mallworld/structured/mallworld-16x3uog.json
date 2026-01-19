@@ -1,0 +1,495 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\16x3uog.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/16x3uog/a_very_vivid_dream_i_had_recently_in_some_sort_of/",
+  "title": "A very vivid dream I had recently in some sort of large resort/town",
+  "date": null,
+  "content_checksum": "22db95f08bc12b006222144f1dca22c940f70eb3b65e514f8612349fa019b9c5",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:48:12.983183+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have experienced a similar beach/resort/town/casino/arcade/monorail/hotel-apartment complex dream setting",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "overwhelmed with exhaustion and a sense that I had to go back to bed right away (pre-dream)",
+      "final_emotion": "not_mentioned",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant",
+        "location_name": "restaurant/bar deck near the beach",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "near the beach; possibly near a boardwalk",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "sitting outside on a deck at a big wooden table under an umbrella having tropical drinks... It's a beautiful day outside, and we're near the beach. There may have been a boardwalk outside the restaurant as well"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "entrance to enclosed town/resort",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": "reached after a short Uber ride from the beach restaurant/bar",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Uber drops us off at the entrance of what appears to be some sort of enclosed town or resort... There aren't any buildings directly around us, but there are long roads or walking paths in front of us that lead straight toward the main area... It looks like there are no cars from here onward though - just people walking"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "train_station",
+        "location_name": "monorail/train station at/near resort entrance",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at/near the entrance area before riding to the main resort area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "there's some sort of monorail/train station. We get on the monorail and take a short ride to the main resort area"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "hotel",
+        "location_name": "main resort area / massive complex with multiple buildings and elevator banks",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "main area reached by monorail from the entrance",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "some sort of enclosed town or resort... main resort area... There are several buildings, each with several elevator banks... It's a massive complex"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 4
+      },
+      {
+        "location_id": "loc_5",
+        "location_type": "casino",
+        "location_name": "sprawling first level casino/arcade/resort with shops",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "first level of the building where dreamer and friend think their rooms are",
+          "relative_to_id": "loc_4"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "the entire sprawling first level is a giant casino/arcade/resort... somewhat of a cramped design, or maybe they just crammed too much stuff in there. There are lots of little shops, tons of casino games and video poker/slot machines, and a big arcade... There were lots of people around"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 5
+      },
+      {
+        "location_id": "loc_6",
+        "location_type": "other",
+        "location_name": "batting cage area inside the casino/arcade level",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside/next to casino and basketball arcade games a few feet away",
+          "relative_to_id": "loc_5"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "At one point, there was a batting cage (baseball/softball)... right inside next to the casino and basketball arcade games a few feet away"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 6
+      },
+      {
+        "location_id": "loc_7",
+        "location_type": "other",
+        "location_name": "elevator bank (in the casino/arcade level)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "found while walking through the casino/arcade/shops area",
+          "relative_to_id": "loc_5"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "We keep walking through all of this until we find what we think is our elevator bank"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 7
+      },
+      {
+        "location_id": "loc_8",
+        "location_type": "hotel",
+        "location_name": "upper floor hallway (drab, poorly lit; apartment-like doors)",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "reached by elevator/monorail-rollercoaster ride from elevator bank",
+          "relative_to_id": "loc_7"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "It's a pretty drab/nondescript floor, and it's somewhat poorly lit... The doors to the rooms look more like an older NYC apartment... thin, off-white doors with standard gold door knobs... kind of old but not rundown"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 8
+      },
+      {
+        "location_id": "loc_9",
+        "location_type": "hotel_room",
+        "location_name": "dreamer's room (hotel-like)",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "off the drab upper-floor hallway",
+          "relative_to_id": "loc_8"
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "I open a door and go into my room... pretty standard hotel room with the drapes mostly closed so it's pretty dark inside"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 9
+      },
+      {
+        "location_id": "loc_10",
+        "location_type": "other",
+        "location_name": "outdoor resort/town green space (seen during monorail/rollercoaster transit)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside along the elevated/fast transit route around the resort/town",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "peaceful",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "pool_clean",
+          "raw_description": "lots of green space, and I think there were some pools or fountains. It was still a beautiful sunny day out"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "vehicle",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "short Uber ride of maybe 10 minutes"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "long roads or walking paths leading straight toward the main area; no cars, just people walking"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "vehicle",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "working_normal",
+        "outcome": "succeeded",
+        "qualities": "monorail/train; short ride to the main resort area"
+      },
+      {
+        "from_location_id": "loc_4",
+        "to_location_id": "loc_5",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "entered the building where they think their rooms are; first level is casino/arcade/shops"
+      },
+      {
+        "from_location_id": "loc_5",
+        "to_location_id": "loc_7",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "kept walking through casino/arcade area to find what they think is their elevator bank"
+      },
+      {
+        "from_location_id": "loc_7",
+        "to_location_id": "loc_8",
+        "connection_type": "elevator",
+        "direction": "up",
+        "difficulty": "varies",
+        "mechanism_function": "unpredictable",
+        "outcome": "succeeded",
+        "qualities": "elevator ride upward; after friend exits at his floor, the elevator 'turns into a monorail cab' and behaves like a high-speed roller coaster outdoors with twists and turns around the resort/town; then returns to being a standard elevator at destination"
+      },
+      {
+        "from_location_id": "loc_8",
+        "to_location_id": "loc_9",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "opened an off-white, older apartment-like door with gold knob into the room"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Sitting outside on a deck at a big wooden table under an umbrella having tropical drinks with closest friends (friends for decades).",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "friendly",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "closest friends; friends I've had for decades",
+            "name_or_relation": "friends"
+          }
+        ],
+        "transaction_item": "tropical drinks",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "navigation",
+        "description": "Group agrees to go back to individual rooms and meet later for pizza at 11pm; split into smaller groups to find individual buildings/elevators/rooms.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "friends splitting into smaller groups",
+            "name_or_relation": "friends"
+          }
+        ],
+        "transaction_item": "pizza (planned for later)",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_6",
+        "interaction_type": "escape",
+        "description": "Nearly hit in the face by a girl's swing at an indoor batting cage; dreamer ducks away in time.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "girl swinging a bat at the batting cage",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_7",
+        "interaction_type": "navigation",
+        "description": "Friend exits elevator at his floor; dreamer stays on elevator to keep going up to find their room, unsure where room is but thinks it is on an upper floor.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "one friend traveling with dreamer; gets off at his floor",
+            "name_or_relation": "friend"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_7",
+        "interaction_type": "navigation",
+        "description": "While alone in the transforming elevator/monorail cab, rides at very high speed through outdoor twists and turns like a roller coaster track with unknown people standing inside the cab.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a few people I don't know who are on there with me",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Some areas are described as possibly hotel vs apartment/town; kept as raw uncertainty in location naming/roles. The outdoor green space/pools are only seen during transit and not clearly visited on foot."
+  },
+  "response_id": "resp_0e04be61afb7189200696e0ba520cc8190a34b843f45c2fe43",
+  "usage": {
+    "input_tokens": 11144,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 4496,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15640
+  }
+}

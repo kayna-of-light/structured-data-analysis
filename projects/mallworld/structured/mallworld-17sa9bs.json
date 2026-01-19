@@ -1,0 +1,140 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17sa9bs.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17sa9bs/went_lucid_in_mall_world/",
+  "title": "Went lucid in mall world",
+  "date": null,
+  "content_checksum": "9c436c24d2530964bb71cb6cb978c0077d701b724c92f909e0f777cd3f129bdc",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:54:54.871269+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "lucid_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "compressed",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "confused",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "Mallworld corridor",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "marching down a corridor with a bunch of people"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer asks a guy next to them if he knows where they’re going; he shrugs.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "indifferent",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "guy next to me",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "a bunch of people marching down a corridor",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Dreamer tries to scream out “is anyone from Reddit here?” but cannot speak it; tries again and still cannot speak.",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "couldn’t speak"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Woke up quickly after failing to speak.",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Only one location (a mall corridor) is described; no other areas, connections, or boundaries are mentioned. Lucidity is explicitly stated; inability to speak is described as repeated attempts."
+  },
+  "response_id": "resp_0d032c3ce542177400696e0d701a848190a18d1c75b2588330",
+  "usage": {
+    "input_tokens": 10085,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 943,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11028
+  }
+}

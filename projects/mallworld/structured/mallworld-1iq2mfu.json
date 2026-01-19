@@ -1,0 +1,127 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1iq2mfu.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1iq2mfu/random_memeories/",
+  "title": "Random memeories",
+  "date": null,
+  "content_checksum": "db391921973ac55424ee3b6cc887ebccb114608cc43d2f28290bbe82d30cb47d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:52:24.829661+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking whether others experience random vivid 'memories' that feel like past lives or dreams (example: childhood memory in an 1800s-style southern house with fields/garden during an Easter egg hunt).",
+      "should_skip_extraction": true,
+      "skip_reason": "Not a dream report; describes waking flashback-like memories and asks if others experience this. Contains only a brief example scene without a dream narrative, sequence of visited locations, or connections."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "not_mentioned",
+      "final_emotion": "not_mentioned",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "nostalgic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“huge house with huge fields and a huge garden… those old school 1800 southern houses look like”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "fields/garden/back yard",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "surrounding the huge house",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“huge fields and a huge garden… I have not… ever seen that type of back yard before”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "Easter egg hunt experienced as a vivid memory; author estimates being “4-7 maybe in age”.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is framed as waking 'random memories' rather than a dream report; extracted the example scene as location/interaction phenomenology. Emotions mentioned: “manic” and “how happy I was” during the Easter egg hunt, but no clear dream timeline beyond estimated age (4–7)."
+  },
+  "response_id": "resp_03fd9d4f6dc06a6800696e1ae8a7e88194a475f73d2a98c954",
+  "usage": {
+    "input_tokens": 10172,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 995,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11167
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1bricvz.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1bricvz/live_performances_in_mall_world/",
+  "title": "Live performances in Mall World",
+  "date": null,
+  "content_checksum": "3c4666c580a64061fe7f3e5a4afa5159d64a627e57e05481af7565cc0221b2d9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:11:16.614741+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others also experience recurring live performances/theatres, a divey restaurant after the show, and a super fast airplane pseudo space ship in Mall World dreams",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "one of the performers or in charge of production",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "theater",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Theatres are usually packed; live performances; performance or ceremony like graduation"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "performer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "restaurant",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "after the show",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a restaurant that is kinda divey after the show"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "guest",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "airplane",
+        "location_name": "super fast airplane pseudo space ship",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "super fast airplane pseudo space ship"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "unspecified",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "go to a restaurant after the show"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Live performance or ceremony (\"like graduation or something\") with the dreamer as one of the performers or in charge of production",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "packed theatres",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "After the show, being at a \"kinda divey\" restaurant",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Encountering/being associated with a \"super fast airplane pseudo space ship\"",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial layout is minimal; only a sequence/association is explicit (restaurant after the show). The airplane/space ship is mentioned as recurring alongside the performances but not spatially linked to the theater/restaurant."
+  },
+  "response_id": "resp_0460ad5fc519e2f000696e114100c88190be8d17a0fea4573a",
+  "usage": {
+    "input_tokens": 10069,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1437,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11506
+  }
+}

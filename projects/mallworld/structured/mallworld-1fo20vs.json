@@ -1,0 +1,316 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1fo20vs.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1fo20vs/any_mall_world_road_trippers/",
+  "title": "Any mall world road trippers?",
+  "date": null,
+  "content_checksum": "9a83e2dd559de771610ec0b0587375071b18afe0320832e2211279fc0b38dae2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:29:31.924963+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "multiple_dreams"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have recurring Mall World locations visited by car/road trips",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "embarrassment (at the gas station; 'not proud' and 'couldn't continue the journey')",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "Walmart",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "seemingly located among miles and miles of fields and not within a city; reached by car",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Walmart that is about to close; lights are turned off; hot food is all gone; automatic doors open; rarely see staff inside; very isolated among miles and miles of fields"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "Outdoor playground with splashground",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outdoor area; reached by car on dream road trips; sometimes arrived there after getting lost",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "pool_clean",
+          "raw_description": "playground with a little splashground attached; monkey bars that goes over a swimming pool; 'always happy times'; strangers are friendly and talkative"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "Gas station",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "stop reached by car during a journey/road trip",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "gas station where dreamer stops and ends up staying longer than anticipated; cashier not especially friendly; spot in the back with thin mattresses for people to stay the night (not advertised); back room and front room both have a fridge for soda pop"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "Gas station back room (overnight area)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the back of the gas station",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "spot in the back with thin mattresses for people to stay the night; has a fridge for soda pop"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "vehicle",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "visited by car on dream road trips (no specific route described)"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "vehicle",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "gas station is a stop during the journey; dreamer stays longer than anticipated"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "cashier eventually showed dreamer the unadvertised back sleeping area"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Dreamer goes into the Walmart to find hot food (e.g., popcorn chicken), but it is gone.",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": "popcorn chicken / hot food",
+        "transaction_blocker": "hot food is all gone; Walmart is about to close"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Automatic doors open for the dreamer; dreamer assumes it is open; staff are rarely seen inside.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "staff rarely seen inside",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Dreamer is usually there with family; strangers are friendly and talkative.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "friendly",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "family present with dreamer",
+            "name_or_relation": "my family"
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "friendly and talkative strangers",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer sometimes arrives here after getting lost (occasionally goes on their own because they got lost and wound up here).",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "transaction",
+        "description": "Dreamer stops at the gas station and ends up staying longer than anticipated; cannot continue the journey and stays overnight.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "cashier",
+            "is_known": "no",
+            "is_recurring": "no",
+            "description": "cashier is not especially friendly",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "whole family was with dreamer",
+            "name_or_relation": "my whole family"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "Cashier shows the dreamer an unadvertised back area with thin mattresses for staying the night; both front and back rooms have a fridge for soda pop.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "cashier",
+            "is_known": "no",
+            "is_recurring": "no",
+            "description": "eventually showed the back sleeping spot",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Post describes three main recurring/visited-by-car locations; Walmart and playground are recurring, gas station is a single vivid visit. Some fields (light/time/state/cleanliness) are not explicitly described and left as not_mentioned. Location types like Walmart/gas station/playground are mapped to 'other' because no specific enum exists for them."
+  },
+  "response_id": "resp_092e443e716771ad00696e156eea888196b21565f1a10309c6",
+  "usage": {
+    "input_tokens": 10374,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2610,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12984
+  }
+}

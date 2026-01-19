@@ -1,0 +1,158 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1eeuikn.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1eeuikn/mini_game_dreams/",
+  "title": "Mini Game Dreams",
+  "date": null,
+  "content_checksum": "18be840626954f4d1e4992f14a04c97fd78587d37c6f1d262e79b2abd8837df5",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:23:21.824670+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others are forced to play mini games against VR/AR cartoon characters in dreams; mentions receiving an in-dream commercial about dreams being fully controlled",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "annoyed",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "mini games (VR/AR context)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "forced to play mini games against certain VR/AR cartoon characters"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "in-dream commercial",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "received a commercial in a recent dream regarding a soldier telling me that my dreams are fully controlled"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "audience",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer is forced to play mini games against VR/AR cartoon characters.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "implied",
+            "description": "VR/AR cartoon characters (opponents in mini games)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer receives/watches an in-dream commercial where a soldier tells them their dreams are fully controlled.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "authority",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a soldier in the commercial",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question with minimal scene detail; no explicit setting/layout described. Recurrence inferred from 'I keep getting that'. Emotion captured from 'it's getting annoying'."
+  },
+  "response_id": "resp_0d7ba18cc18ccad800696e1415aca8819693d9644ac7399988",
+  "usage": {
+    "input_tokens": 10056,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1123,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11179
+  }
+}

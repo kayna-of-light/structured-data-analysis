@@ -1,0 +1,122 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1020ail.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1020ail/what_does_this_all_mean/",
+  "title": "What does this all mean?",
+  "date": null,
+  "content_checksum": "4152868cb1f75f8c451e117643e280d29320a11026c0d6cbec517090997628c4",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:36:56.322910+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others encounter lost/dead lovers or parents in the shared/recurring dream place; mentions places flowing into each other and partial connection to past life",
+      "should_skip_extraction": false,
+      "skip_reason": "No specific dream scene(s) described; only minimal phenomenological details about a recurring place and general spatial property (places flow into each other)."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Mentions the place is partly connected to their past life; asks what it all means.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "unspecified",
+        "location_name": "this place",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "actual places that flow into each other",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Dreaming of 'this place' and 'much of the actual places that flow into each other'."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "unspecified",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Places 'flow into each other' (general connectivity; no specific connector described)."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Asks whether others run into lost or dead lovers or parents there.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "deceased",
+            "demeanor": "not_mentioned",
+            "role": "not_mentioned",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "lost or dead lovers or parents",
+            "name_or_relation": "lovers or parents"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "minimal",
+    "extraction_notes": "Post is primarily a question with only broad phenomenological detail: recurring 'place' and that multiple places flow into each other. No discrete locations, routes, boundaries, or specific dream events described."
+  },
+  "response_id": "resp_0351a74c82628c0c00696e08a2f4948194bd27ba9f1b484df7",
+  "usage": {
+    "input_tokens": 10065,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 900,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10965
+  }
+}

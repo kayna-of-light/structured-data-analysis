@@ -1,0 +1,170 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hh4s23.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hh4s23/how_many_of_you_have_been_to_the_airport/",
+  "title": "How many of you have been to the airport?",
+  "date": null,
+  "content_checksum": "d66d1a212dfdcae125fe5ca2c7d882e2d6969b545ef14a59ca1b8bf1d97cd0eb",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:40:49.061479+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have visited an 'airport' area described as a large complex with overpasses, beige liminal rooms, long escalator to other levels, and halls with familiar people",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "airport",
+        "location_name": null,
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "humongous complex of beige rooms and liminal spaces; people you know are sometimes wandering the halls"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "snaking overpasses",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "lead to the airport complex",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Massive, snaking overpasses lead to a humongous complex"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "massive, snaking overpasses lead to the complex"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "long escalator to other levels"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "People you know are sometimes wandering the halls.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "people you know",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Travel down the long escalator to other levels.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is framed as a question but includes a consistent place description. No explicit time sequence beyond presence of overpasses leading to the complex and an escalator down to other levels. No explicit lighting, cleanliness, or emotional tone stated."
+  },
+  "response_id": "resp_0794273074f85b6600696e18250694819086f415ca9ddffc5a",
+  "usage": {
+    "input_tokens": 10087,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1232,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11319
+  }
+}

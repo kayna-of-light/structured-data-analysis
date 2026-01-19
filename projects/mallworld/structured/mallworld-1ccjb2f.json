@@ -1,0 +1,122 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ccjb2f.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ccjb2f/the_fine_dining_restaurant_in_the_mall/",
+  "title": "The fine dining restaurant in the mall.",
+  "date": null,
+  "content_checksum": "95ed11c4bea2b6df8acc25d1705633686d8576809006f33bb109e4c9aa089592",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:13:32.430595+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have visited a fine dining restaurant inside the mall; describes features from their dream",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant",
+        "location_name": "fine dining restaurant in the mall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the mall",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Fine dining restaurant within the mall; bar with a wide selection of alcoholic beverages on display; bartender doing his work; long tables for people to sit on; lighting quite dim; atmosphere quite elegant"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer sits at a long table full of strangers in the fine dining restaurant area.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "strangers seated at the table",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "bartender working behind the bar",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only one location is described; no explicit navigation, layout beyond 'within the mall', or time/emotional details provided. 'is_familiar' marked implied because the author asks if others have visited this place before."
+  },
+  "response_id": "resp_07efaab80078d3bd00696e11d19c1c8194a6065adc0267723c",
+  "usage": {
+    "input_tokens": 10083,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 595,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10678
+  }
+}

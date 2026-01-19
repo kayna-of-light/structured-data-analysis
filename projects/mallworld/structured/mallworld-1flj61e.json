@@ -1,0 +1,107 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1flj61e.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1flj61e/went_to_the_dream_noodle_place_last_night_have/",
+  "title": "Went to the dream noodle place last night, have you been to PHO PA",
+  "date": null,
+  "content_checksum": "dcc47689fb08f02ea9f5c6bdf77f52bea742b6341ff9695b890a72d8c7d13f6a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:28:53.424624+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/ak788k0od0qd1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant",
+        "location_name": "PHO PA (dream noodle place)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "fountain",
+          "raw_description": "\"Amazing salty noodles\"; \"menus and shop are both retro red and gold\"; \"little lucky cats and dragon statues inside\"; \"Inside feels like the air around a cool spring\"; \"energy is engaging and super friendly\"; \"tiny running water feature with a little bonsai\"; \"sometimes make ridiculous dishes to order\"; \"super crowded last night\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Ate/ordered noodles at the dream noodle place; the shop sometimes makes \"ridiculous dishes\" to order.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": "noodles / dishes to order",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears to be an AI-styled visualization of the PHO PA storefront (red building with signage and awnings, lit windows, potted plants), but the narrative’s key phenomenology is interior-focused; no explicit layout/adjacent locations described."
+  },
+  "response_id": "resp_04b6f69891a6290e00696e154c3e70819482103141bfe0585c",
+  "usage": {
+    "input_tokens": 11928,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 553,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12481
+  }
+}

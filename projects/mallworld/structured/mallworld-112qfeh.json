@@ -1,0 +1,574 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\112qfeh.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/112qfeh/this_sub_is_magical/",
+  "title": "This Sub is Magical",
+  "date": null,
+  "content_checksum": "e3bb648d5b22985aa15b3c3cf0da10fca78f7ae0d3694fbac44058637fa33911",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:40:14.218222+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "introduction",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "amusement_park",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "built into the side of an oceanside cliff; seen from a highway overlook above it (below a guardrail)",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "“amusement park built into the side of an oceanside cliff… on the highway looking over the side… notice the park below the guardrail.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "highway overlook",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "above an oceanside cliff; looking over a guardrail down toward an amusement park",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "“usually on the highway looking over the side… notice the park below the guardrail.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "country side trail",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "leads into a mountain side / cave system",
+          "relative_to_id": "loc_4"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“Usually starts on a country side trail and leads into a mountain side.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "cave",
+        "location_name": "cave system",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside a mountain side; reached from a countryside trail",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "timeless",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“Cave system… If I make it far enough (sometimes it scares me)… large open corridor of the cave I just came through.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_5",
+        "location_type": "other",
+        "location_name": "locked vault (massive)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the far end of the cave system; in a large open corridor of the cave",
+          "relative_to_id": "loc_4"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "timeless",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“a large locked vault… massive, like multiple stories high… in a large open corridor of the cave.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "no",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_6",
+        "location_type": "hotel",
+        "location_name": "motel-type layout",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "sometimes reached from the cave system; hallways go above and under each other",
+          "relative_to_id": "loc_4"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“leads to a type of motel type layout… different hallways… going above and under each other kind of like a Mario game.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_7",
+        "location_type": "hotel_room",
+        "location_name": "rooms with living rooms",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "off the motel-type hallways",
+          "relative_to_id": "loc_6"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“I'm always checking the rooms, and it's usually just people living rooms.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_8",
+        "location_type": "pool",
+        "location_name": "hot tub/pool/spa",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "multiple tubs arranged in a grid; sometimes layered like rice fields above/below each other",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "pool_clean",
+          "raw_description": "“multiple tubs that people are soaking in… grid like with each one next to the other… sometimes… like rice fields, layered above and below each other.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "guest",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_9",
+        "location_type": "library",
+        "location_name": null,
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "on the top floor of a building",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“distinctly on the top floor… dome glass ceiling… filled with white light… librarians… in the center sitting at desks.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "guest",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_10",
+        "location_type": "city_street",
+        "location_name": "riverside trail",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "west",
+          "relative_to": "by the river; followed to reach the city park",
+          "relative_to_id": "loc_11"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "river",
+          "raw_description": "“to get there you go by the river and follow the riverside trail to the west.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_11",
+        "location_type": "city_street",
+        "location_name": "river",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "runs alongside the riverside trail leading west toward the park",
+          "relative_to_id": "loc_10"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "river",
+          "raw_description": "“the river… bears… like to catch fish in the water.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_12",
+        "location_type": "city_street",
+        "location_name": "city park trail",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "west",
+          "relative_to": "the trail within/leading to the city park; farther along has more bears; ends at an abandoned parks and rec center",
+          "relative_to_id": "loc_13"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "river",
+          "raw_description": "“The further you go, the more bears there are. And they'll get ya. You have to constantly be on look out for them.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_13",
+        "location_type": "other",
+        "location_name": "abandoned parks and rec center",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "west",
+          "relative_to": "at the end of the park trail",
+          "relative_to_id": "loc_12"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "abandoned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“At the end of the park trail is an abandoned parks and rec center. With old antiques and stuff.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "diagonal_down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "visual overlook from highway above; park is below the guardrail on the cliffside"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "tunnel",
+        "direction": "down",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "trail leads into a mountainside cave system"
+      },
+      {
+        "from_location_id": "loc_4",
+        "to_location_id": "loc_5",
+        "connection_type": "tunnel",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "moving far enough through cave reaches a large open corridor with a locked vault"
+      },
+      {
+        "from_location_id": "loc_4",
+        "to_location_id": "loc_6",
+        "connection_type": "other",
+        "direction": "unknown",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "sometimes the cave is different and leads to a motel-type layout"
+      },
+      {
+        "from_location_id": "loc_6",
+        "to_location_id": "loc_7",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "hallways go above and under each other; rooms off the hallways"
+      },
+      {
+        "from_location_id": "loc_10",
+        "to_location_id": "loc_12",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "follow the riverside trail to the west to reach the park/trail area"
+      },
+      {
+        "from_location_id": "loc_12",
+        "to_location_id": "loc_13",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "progressing farther along the trail increases bear presence; end of trail reaches abandoned rec center"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_5",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "“a large locked vault… massive, like multiple stories high.”"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_5",
+        "interaction_type": "observation",
+        "description": "Dreamer reaches a massive locked vault; hooded figures are standing outside it.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "blocker",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "hooded figures standing outside the vault",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_7",
+        "interaction_type": "search",
+        "description": "Dreamer checks rooms along the motel-type hallways; rooms are usually just people’s living rooms.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_8",
+        "interaction_type": "social",
+        "description": "Dreamer moves between tubs/pools (can “dolphin flip” from one to another) and chats with people in each pool.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "friendly",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "people soaking in multiple tubs",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_9",
+        "interaction_type": "task",
+        "description": "Dreamer asks for a book or asks to use the public computers; librarians are in the center at desks.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "librarians in the center sitting at desks",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "book / access to public computers",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_12",
+        "interaction_type": "escape",
+        "description": "Dreamer must constantly watch out for bears along the riverside trail; bears catch fish in the water and “they'll get ya.”",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "bears along the trail, increasing in number farther west; catching fish in the river",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Post lists several recurring dream locations/themes rather than a single continuous dream. Some location types (e.g., trail/rec center) are approximated with closest available schema categories; the parks-and-rec center is set as location_type 'other'."
+  },
+  "response_id": "resp_097a5ab59cba8ea400696e099e1ddc819584ab02403993680e",
+  "usage": {
+    "input_tokens": 10567,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 4919,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15486
+  }
+}

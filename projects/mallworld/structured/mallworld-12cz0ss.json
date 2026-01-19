@@ -1,0 +1,143 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\12cz0ss.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/12cz0ss/crosspost_part_of_one_of_the_beaches_i_was_at/",
+  "title": "Crosspost: Part of one of the beaches I was at last night",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:40:28.280828+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/1zdaa38ai1sa1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recent_dream"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "beach",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "ocean_calm",
+          "raw_description": "Narrow sandy beach at the base of tall, layered cliffs; turquoise/green-blue ocean with gentle surf; bright sunlight and cliff shadows across sand."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mountain",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "alongside the beach",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Tall, steep cliff wall with horizontal banding/strata; casts large shadows onto the beach."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "cliff",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "Beach is bounded on one side by a tall, steep cliff wall."
+      },
+      {
+        "location_id": "loc_1",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "Beach meets open ocean water with a visible shoreline and small waves."
+      }
+    ],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text; extraction is based on the attached image and the title indicating this was part of a beach visited in the dream."
+  },
+  "response_id": "resp_061246926c2f313900696e09f3a4bc81948b080e80e2b8d65a",
+  "usage": {
+    "input_tokens": 11775,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 698,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12473
+  }
+}

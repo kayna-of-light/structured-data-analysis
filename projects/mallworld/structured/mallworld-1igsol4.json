@@ -1,0 +1,270 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1igsol4.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1igsol4/was_in_a_strange_apartment_building_that_was/",
+  "title": "Was in a strange apartment building that was partially in ruins…. Once lived in by monks",
+  "date": null,
+  "content_checksum": "f27914639499aa5194dd3640f20f202468eec56f481a80bb3a49e030c2eb9d59",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:50:29.438638+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "variation",
+      "time_flow": "inconsistent",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "weird, intense",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "town appeared to be in a canyon or steep valley with trees",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "river",
+          "raw_description": "Town in a canyon/steep valley; thin and tall buildings (maybe 15 stories) closely packed on either side of a street; small river ran adjacent to the street; buildings all dated; not in America; mind was saying 'China'; heard people speak Mandarin and instantly knew what they were saying (mundane conversation)."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "museum",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the same town",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "abandoned",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "dirty",
+          "water_presence": "not_mentioned",
+          "raw_description": "Museum was an old, dusty, and abandoned apartment building with all of the doors wide open."
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "apartment",
+        "location_name": "abandoned apartment building (museum)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "the museum building interior",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "abandoned",
+          "atmosphere": "eerie",
+          "crowding": "sparse",
+          "cleanliness": "dirty",
+          "water_presence": "not_mentioned",
+          "raw_description": "Doors wide open; small rooms; occasionally furniture covered in dust; 'no clear bathrooms or kitchens, just small rooms'; described as spartan; said it used to be where 'the monks' lived."
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "jade fireplace room",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "appeared within/after ascending in the apartment building",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "wrong",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "All at once appeared in a room with a large jade fireplace of exquisite design; everything had a price tag."
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "We went to the museum."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Apartment building doors were wide open."
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_3",
+        "connection_type": "stairs",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Went up a staircase that appeared to be carved into the rock of the canyon; as we walked up we were still in the apartment building."
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "other",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "All at once we appeared in this room (sudden transition)."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Heard people speak in Mandarin and instantly knew what they were saying; the content was mundane (e.g., 'hey let's go here next', 'do you want to go to the museum?').",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "People speaking Mandarin",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Explored/open-doored rooms in an old dusty abandoned apartment building; saw dusty furniture; noted no clear bathrooms or kitchens; learned it used to be where monks lived.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "guide",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "They told me it used to be where the monks lived",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "social",
+        "description": "Tried to convince a man to buy the large jade fireplace because it was of 'great design'; everything had a price tag.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a man (potential buyer)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "large jade fireplace (exquisite design)",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Some entities are referenced as 'people'/'they' without clear count or identity; the 'all at once we appeared' transition was modeled as an unspecified connection. 'Partially in ruins' is in the title but not described in the narrative beyond 'old/dusty/abandoned'."
+  },
+  "response_id": "resp_00dcd3d5c10ba11600696e1a648ff8819586f634bd42fb1fa8",
+  "usage": {
+    "input_tokens": 10359,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2207,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12566
+  }
+}

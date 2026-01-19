@@ -1,0 +1,136 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ip1vxw.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ip1vxw/some_familiar_places/",
+  "title": "Some familiar places",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:52:31.236664+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/it8pnxm021je1.jpg",
+    "https://i.redd.it/zlt41dp021je1.jpg",
+    "https://i.redd.it/io2pknq021je1.jpg",
+    "https://i.redd.it/1k5rjst021je1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "steep concrete chute / trench roadway",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "sparse",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Very tall concrete walls forming a deep trench; wide sloped concrete surface rising toward a distant top; multiple dark parallel grooves/lanes; small cars and many small human figures on the slope; overcast/grey sky visible at top."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "brick ruins along canal beside railway",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "alongside a canal/stream with a railway line on the opposite bank",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "decaying",
+          "atmosphere": "neutral",
+          "crowding": "sparse",
+          "cleanliness": "normal",
+          "water_presence": "river",
+          "raw_description": "Long brick structure/ruins with repeated arches and openings, heavily overgrown with green shrubs/vines; narrow canal/stream running between the brick wall and grassy bank; railway tracks running parallel on the far side; open flat fields in the distance; a few human figures standing on ledges and near arch openings; cloudy to partly sunny sky."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "wall",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "Extremely tall concrete retaining walls on both sides of the trench-like roadway/chute; top edge open to sky."
+      }
+    ],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text; extraction is based solely on four attached images that appear AI-generated. Two distinct scenes were identified (concrete trench/chute with cars/people; brick-ruin canal with adjacent railway). No explicit dreamer actions, sequence, or named places provided."
+  },
+  "response_id": "resp_0f9075ecef67ab4b00696e1add49508194ab485e6deffee40e",
+  "usage": {
+    "input_tokens": 14929,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 739,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15668
+  }
+}

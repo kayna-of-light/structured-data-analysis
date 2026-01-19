@@ -1,0 +1,212 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1esgt6b.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1esgt6b/tell_me_about_your_staircases/",
+  "title": "Tell me about your staircases",
+  "date": null,
+  "content_checksum": "bacaf1eceea9baa43add3abc50d577c9d9599329f7d4a0a892129bcba1d3d357",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:25:12.944475+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "unspecified",
+        "location_name": "stairwells in school/mall/hotel/etc",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "peaceful",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "spend a lot of time going up and down stairwells; rarely one straight forward set of stairs; wind in a rectangle; usually metal or concrete; usually feel like a safe space or a good way to get away"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "secret staircase",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the school/mall/hotel/etc environments",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "There's a secret one, ALWAYS"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "thin all-white staircase up a tower",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "goes up a tower",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "one particular thin and all white staircase that goes up a tower"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "secret room (at top of tower staircase)",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the top of the tower staircase",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "goes up a tower to a secret room"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "going up and down stairwells; rarely straight; wind in a rectangle; usually metal or concrete"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "stairs",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "thin and all white staircase; goes up a tower"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Sometimes being chased; uses stairwells as a safe space / a good way to get away from whoever is chasing.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "whoever is chasing me",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes recurring staircase features across multiple Mall World settings (school/mall/hotel/etc) but does not provide a single continuous dream sequence. Temporal info is limited to recurrence and 'haven't been there for a while' regarding the secret room."
+  },
+  "response_id": "resp_0dad53065e63746200696e147ad4bc8194a2bd2cfb20583d36",
+  "usage": {
+    "input_tokens": 10127,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1623,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11750
+  }
+}

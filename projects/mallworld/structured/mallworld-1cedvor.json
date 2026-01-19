@@ -1,0 +1,196 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1cedvor.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1cedvor/always_the_amusement_park/",
+  "title": "Always the Amusement Park",
+  "date": null,
+  "content_checksum": "87bdb36a8ea0a1ea322ac9f2d151a5061cdc9c2b348f0fb7b8f6474c649df6fb",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:13:56.541997+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others frequently visit an amusement-park location in their Mall World-type dreams (and not the mall/water park).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "amusement_park",
+        "location_name": "amusement park",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "attached to the hotel in a very open-air kind of way",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "visited the amusement park again; park attached to the hotel in a very open-air kind of way; could see parts of the park from an area where people order food, then sit and eat"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel",
+        "location_name": "hotel attached to the park",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "attached to the amusement park",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "checking out of a hotel attached to the park; complications required talking to people working hotel + park"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "restaurant",
+        "location_name": "cafeteria-style food ordering/sitting area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "one of the areas where people order food, then sit and eat; from here parts of the park are visible",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "very open-air; could see parts of the park; cafeteria style; everyone carried a green plastic tray"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "hotel attached to the park in a very open-air kind of way"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_1",
+        "connection_type": "unspecified",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "visual access: could see parts of the park from the cafeteria-style food area"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "Checking out of the hotel; there were complications requiring talking to people working hotel + park.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people working hotel + park",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "transaction",
+        "description": "Ordered two drinks (similar to mimosas, but on-theme with the park); woke up right after ordering.",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": "two drinks (similar to mimosas, on-theme with the park)",
+        "transaction_blocker": "woke up right after ordering"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Limited sensory details (light/time/crowding/cleanliness) beyond the open-air attachment and cafeteria-style area with green trays. Recurrence explicitly stated for the amusement park; mall/water park explicitly not visited."
+  },
+  "response_id": "resp_0c091a1efe46dcd000696e11dd19e08196b9ff30eb301b9072",
+  "usage": {
+    "input_tokens": 10176,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1576,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11752
+  }
+}

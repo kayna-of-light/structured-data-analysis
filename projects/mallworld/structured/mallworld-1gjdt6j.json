@@ -1,0 +1,139 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gjdt6j.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gjdt6j/mallworld_dream_meetup/",
+  "title": "MallWorld dream meetup",
+  "date": null,
+  "content_checksum": "88c04cd08d68377ba8c1d28ec434827ab1f67356993c0e500aa6c4fc833ef29d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:33:53.393223+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether people can intentionally meet/congregate in the same Mall World place while dreaming (e.g., boardwalk, middle of living complex) and whether certain people meet up there in dreams",
+      "should_skip_extraction": true,
+      "skip_reason": "No concrete dream scene is narrated; the post is primarily a proposal/question about shared meetups, with only a brief, nonspecific mention of seeing people they know."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Maybe certain people meet up here in dreams; proposes intentionally congregating in the same place while dreaming.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "beach",
+        "location_name": "boardwalk",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“the boardwalk” (suggested meetup place)"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "apartment",
+        "location_name": "living complex (middle)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“in the middle of the living complex” (suggested meetup place)"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer reports seeing “other people I know but in a different life or context.” (not tied to a specific location beyond being within the Mall World context; boardwalk is mentioned as a proposed meeting place).",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "People the dreamer knows, but “in a different life or context.”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is a question/proposal, not a dream report. Extracted only the explicitly named places (boardwalk; middle of living complex) and the nonspecific observation of seeing known people in a different context."
+  },
+  "response_id": "resp_0f20e1f85d5b18cf00696e1689e7348197bbcee07a76c366fa",
+  "usage": {
+    "input_tokens": 10073,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1067,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11140
+  }
+}

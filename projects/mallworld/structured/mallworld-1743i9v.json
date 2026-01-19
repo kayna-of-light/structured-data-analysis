@@ -1,0 +1,186 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1743i9v.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1743i9v/recurring_toyrecord_store_in_my_dreams/",
+  "title": "Recurring toy/record store in my dreams",
+  "date": null,
+  "content_checksum": "51bf696d7d2307eef7682d0f75af8ede99cdea9532c4dea118636b88fe477bb5",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:49:32.400797+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "comforted",
+      "final_emotion": "comforted",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "pretty big store (toy/record store)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in an unknown town in the middle of nowhere",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "evening",
+          "state": "mixed",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Pretty big store in an unknown town in the middle of nowhere; closes late, around 9pm; front room filled with collectible toys; huge windows show the whole front room; in the back was a huge record store (records, CDs, cassettes); record store changes from dream to dream (sometimes more disheveled, sometimes like a Victorian library) but the front room always stayed the same; little train (kiddie train that fits kids and adults) goes throughout the whole store; dreams feel comforted and 'so real'."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "front room (collectible toy area)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "front",
+          "cardinal": "not_mentioned",
+          "relative_to": "front of the store; visible from huge windows",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "evening",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Front room filled with collectible toys; huge windows that showed the whole front room; front room stays the same across dreams."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "mall_store",
+        "location_name": "back record store area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the back of the store",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "evening",
+          "state": "mixed",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Huge record store in the back with records, CDs, cassettes; changes from dream to dream; sometimes looks a little more disheveled; sometimes looks almost like a Victorian library."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "unspecified",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Front room in front; record store area in back (within same store)."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "vehicle",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Little train (kiddie train that fits kids and adults) goes throughout the whole store."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer experiences recurring dreams of a big toy/record store; notes consistent front room and variable record-store back area; notes the store closes around 9pm.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "A little train that fits kids and adults goes throughout the whole store.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Dreamer identity not specified; no explicit sequence of visits beyond front/back layout. No entities described. Time-of-day inferred only from stated closing time ('around 9pm or so')."
+  },
+  "response_id": "resp_06f59610d934dd3d00696e0c262a9c81979657d64ad4008749",
+  "usage": {
+    "input_tokens": 10247,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1526,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11773
+  }
+}

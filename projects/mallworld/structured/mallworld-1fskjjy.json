@@ -1,0 +1,232 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1fskjjy.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1fskjjy/extremely_steep_highway_and_the_new_world_trade/",
+  "title": "Extremely steep highway and the new world trade center",
+  "date": null,
+  "content_checksum": "2ce7b8f2461d0813c7baa39ffb7c1b94243fde94ec8e0e12310e591e09e42cc2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:29:41.483126+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "working (unspecified job); got off work in the dream",
+      "initial_emotion": "not_mentioned",
+      "final_emotion": "not_mentioned",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "work (in-dream workplace)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Had yet another dream about working... got off work (in the dream)"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "employee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "highway (toward home; went the other way east instead of west)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "east",
+          "relative_to": "from work, intended back home but went the other way",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "got on the highway back home, but... went the other way (east instead of west) and headed out that way for a long time"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "city_street",
+        "location_name": "different highway (super steep; truck lane present)",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "entered after exiting the first highway",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "super steep... not straight up into the sky but close... pushing my car as hard as I could and barely making it up the hill... Other cars around me were struggling too... there being a truck lane"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "building called the new world trade center / the \"9/11 building\"",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "right on top of the steep highway hill",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "right on top of it was a building that, supposedly, was the new world trade center... called it the \"9/11 building\"... near perfect replica of the original twin towers, but... combined into one gigantic tower... placed in the middle of Missouri"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "vehicle",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "got on the highway back home, but went the other way (east instead of west)"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Eventually I exited the highway and turned to get on a different highway"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "outside_path",
+        "direction": "diagonal_up",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "super steep... barely making it up the hill... other cars... struggling... finally made it up the hill; building right on top"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "got in the building"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_4",
+        "interaction_type": "social",
+        "description": "Immediately upon entering the building, someone said, \"Oh, it's YOU again.\"",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "unidentified person inside the building",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Cardinal direction only given for travel on first highway (east instead of west). Building described as located 'in the middle of Missouri' (realized upon waking), included in raw description without interpretation."
+  },
+  "response_id": "resp_00792387573c0f5500696e1585bfb8819690bb2a186496a597",
+  "usage": {
+    "input_tokens": 10329,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1902,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12231
+  }
+}

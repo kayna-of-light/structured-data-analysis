@@ -1,0 +1,106 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gts12e.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gts12e/neighborhood_with_container_style_homes/",
+  "title": "Neighborhood with container style homes",
+  "date": null,
+  "content_checksum": "5750b28a0b4e026222b20b2987f80953c76c35f2c5a0489e96a90b5e29a4ce19",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:36:22.036941+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/du6uhi9s0k1e1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have frequent dreams of a neighborhood with container-style homes like the attached picture",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "neighborhood",
+        "location_name": "Neighborhood with container style homes",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Neighborhood with container style homes like the picture; paved road curving through; large mature trees forming canopy; stacked shipping-container-like homes (some two-story); landscaped shrubs/groundcover; windows and doors visible."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Curving paved roadway/path through the neighborhood, bordered by landscaping and container homes."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is a question with an illustrative image; no specific dream episode described. Spatial/phenomenological details come from the attached picture (container-home neighborhood scene)."
+  },
+  "response_id": "resp_0eaf615db20e346400696e171d54c88197af68f5b2a941cbb1",
+  "usage": {
+    "input_tokens": 11415,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 498,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11913
+  }
+}

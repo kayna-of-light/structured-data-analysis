@@ -1,0 +1,209 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1d3zl7c.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1d3zl7c/extra_strange_or_bad_dreams_in_mallword/",
+  "title": "Extra strange or bad dreams in Mallword",
+  "date": null,
+  "content_checksum": "09b6998aed5bc8f7852dcf0f0c12c4056fd43c9132149539cf60132bae10fbcf",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:17:28.426238+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have bad dreams in Mallworld; mentions a recent bad dream involving infected people and petrified/mummified deaths",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "not_mentioned",
+      "final_emotion": "concern",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "field of old wood cabins",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "running through a field of old wood cabins with other kids; screams heard in the distance"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": "lower level of Mallworld (familiar area)",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "crowding": "crowded",
+          "cleanliness": "normal",
+          "water_presence": "none",
+          "raw_description": "generally looked normal, a familiar area; cheap linoleum floors; a few tall escalators to upper levels; a tall glass atrium ceiling; people shoving their way through the crowd"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "unspecified",
+        "direction": "diagonal_down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "eventually we ran through the site into a lower level of Mallworld"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "escalator",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "a few tall escalators to upper levels"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Running through a field of old wood cabins with other kids; screams heard in the distance.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "other kids running with the dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "People over a certain age were being found dead, as if petrified/mummified mid stride or in place in their homes.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people over a certain age found dead; petrified/mummified mid-stride or in their homes",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Entering/running into the lower level of Mallworld described as a familiar area with linoleum floors, tall escalators, and a tall glass atrium ceiling.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "People shoving their way through the crowd who were 'infected'; masses of green mold on their faces; a look in their eyes described as greedy; 'like a look from them ran the risk of infection.'",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "threatening",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "infected people shoving through the crowd; masses of green mold on their faces; perverted look of greed in their eyes",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Some qualities are inferred only where strongly implied by described features (e.g., glass atrium ceiling suggesting bright natural light; 'lower level' captured as vertical=lower). No explicit boundaries or exact traversal mechanism into the lower level were described."
+  },
+  "response_id": "resp_06249bdd5de7b20900696e12a78cb08196956d57c4f1908a72",
+  "usage": {
+    "input_tokens": 10335,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1652,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11987
+  }
+}

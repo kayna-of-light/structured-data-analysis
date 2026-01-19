@@ -1,0 +1,217 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1f8zqzv.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1f8zqzv/has_anyone_seen_such_building_and_sky_in_their/",
+  "title": "Has anyone seen such building and sky in their dream",
+  "date": null,
+  "content_checksum": "81d6f348cfbba12abf5db041f7bb4e895262b80c2056c9738b48463c88737e65",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:27:25.958944+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/hzu7jgdlytmd1.jpg",
+    "https://i.redd.it/8bbaveklytmd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have seen the same futuristic building/road/metro train and reddish sky in dreams",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Feels like it's 'something bigger' and 'not just dream' (stated by author)",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Road/rail corridor with a metro train nearby; sky is reddish; 'it just don't seem like it's earth, but everything is same'"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "Alongside/above the road/rail corridor",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Large futuristic buildings with smooth metallic/glass surfaces; massive blocky forms; elevated structures/skybridges visible in images"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "subway",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "Runs along the road/rail corridor",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Metro train present but 'not that prominent' (author); shown as a modern train on tracks in images"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "In the sky behind buildings (image 2)",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Reddish/orange sky; image shows a very large planet-like body in the sky"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Buildings border/overhang the road/rail corridor; elevated structures and skybridges connect building masses (visible in images)"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Metro train runs parallel to/within the same corridor as the road (author mentions road is same; train less prominent)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer sees futuristic buildings and a reddish sky; notes it doesn't seem like Earth though 'everything is same'.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "A little kid is with the dreamer (author states; also a small child figure appears in images)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is brief and framed as a question with AI-style images; limited narrative detail beyond recurring setting (buildings/road/metro) and reddish sky; no explicit movement sequence or boundaries described."
+  },
+  "response_id": "resp_0de9ea0117b2999f00696e14d324408195a8176f618a7f2f07",
+  "usage": {
+    "input_tokens": 12556,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 1211,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13767
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gvi2v5.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gvi2v5/red_staircase/",
+  "title": "Red staircase",
+  "date": null,
+  "content_checksum": "ffaf8a558e62e412f9bdfc3c0e5e3ed26636d56b5ac04ff2f20028480e582e4e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:37:16.442250+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/zcfpl23cpz1e1.jpg",
+    "https://i.redd.it/a21id13cpz1e1.jpg",
+    "https://i.redd.it/kgpek13cpz1e1.jpg",
+    "https://i.redd.it/6jbbt13cpz1e1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "fear; wakes up before anything goes further",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "apartment",
+        "location_name": "red staircase / stairwell of apartment building",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"red staircase\"; connected to \"probably a 7-9 story\" \"modern/ futuristic\" \"metal, rusted apartment building\"; dreamer is \"always running down the stairs\"; \"someone is always chasing me\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "parking_lot",
+        "location_name": "quiet still outside area with concrete sidewalks and empty parking lot",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside after exiting the staircase/building",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"very quite still place outside\"; \"huge concrete sidewalks\"; \"a empty parking lot with no people\"; \"trees in this area... like I'm the sidewalk planted into the concrete\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "direction": "down",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "running down the red staircase to get out; exit leads outside to sidewalks/parking lot"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer is chased (chaser not seen) and repeatedly runs down the red staircase to get away.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "implied",
+            "description": "\"someone\" chasing; never seen",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "After exiting, the outside area is quiet/still with huge concrete sidewalks, an empty parking lot, and no people; dreamer feels fear/urge that someone is still chasing them but does not see anyone; wakes up before anything further happens.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "none",
+            "demeanor": "not_mentioned",
+            "role": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": null,
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear to be AI-generated visual references of red exterior staircases attached to multi-story apartment buildings (not a hand-drawn map). Exact lighting/time-of-day not described in text."
+  },
+  "response_id": "resp_0d668c41e7f08a6d00696e174159fc819387a06c72a56a29fa",
+  "usage": {
+    "input_tokens": 11395,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 950,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12345
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1h7mqve.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1h7mqve/antique_type_arcade_but_with_futuristic_parking/",
+  "title": "Antique type arcade but with futuristic parking lot that is still indoors, impossible to leave?",
+  "date": null,
+  "content_checksum": "7102e4091c1867bc7949f7cf57fc0012f93895c520a57f652a6ce9e004282890",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:39:21.609872+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether anyone else has been to the same arcade/parking structure dream location",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_arcade",
+        "location_name": "big ass arcade/activity type place",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "multiple levels but really tight and cramped; so many people were around"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "maze of the store / antiquey side",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within/part of the arcade/activity place",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Everything is brown like an old antique store; get through the maze of the store"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "parking_structure",
+        "location_name": "whole new area of parking (indoors), futuristic side",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "once you get through the maze of the store",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "many many levels and more futuristic than the antiquey side of the place; really hard to find your way out; impossible to leave?; still indoors"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "lost",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "unspecified",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Once you get through the maze of the store it’s like a whole new area of parking"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_3",
+        "boundary_type": "edge_of_map",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "Really hard to find your way out; impossible to leave?"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Navigating through a maze-like store area to reach another area.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Trying to find the way out of the multi-level indoor parking area.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Dream sequence is described in broad strokes: antiquey maze-like arcade/store area leads into a separate multi-level futuristic indoor parking structure. No specific connectors (doors/stairs/elevators) or lighting/time-of-day details provided. Recurrence is explicit ('I’ve gone here multiple times'). Temporal data is minimal beyond visit order."
+  },
+  "response_id": "resp_00abf75d5b84219900696e17cf4fd081939fc5225377dc0d62",
+  "usage": {
+    "input_tokens": 10160,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1439,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11599
+  }
+}

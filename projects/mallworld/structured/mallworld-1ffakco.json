@@ -1,0 +1,255 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ffakco.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ffakco/has_anyone_been_to_the_dollhouse/",
+  "title": "Has anyone been to \"the dollhouse\"?",
+  "date": null,
+  "content_checksum": "e19c9947b1bead83d7aee192bf5289c0e03024fcadea620f4272cedf560ea1af",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:28:45.166670+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/4jzlg0afffod1.jpg",
+    "https://i.redd.it/ticm9xffffod1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to a place the author calls \"the dollhouse\"",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "\"the dollhouse\" (rectangular building)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Rectangular building with a bunch of \"windows\" you can walk through; inside is a maze of stairs; at the top there is a large door that can be opened by solving a puzzle."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel_lobby",
+        "location_name": "\"safehouse\" (huge lobby in the center of the building)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the center of the building (the dollhouse)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Huge lobby in the center of the building with food and sofas."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "Swampy plains beyond the structure",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "beyond the dollhouse structure",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Plains of flat swampy land beyond the structure."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "mountain",
+        "location_name": "Jagged mountains bordering the area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "borders the whole area around the dollhouse/swampy plains",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "The whole thing is bordered by jagged mountains."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Inside the dollhouse is a maze of stairs; dreamer reached the top."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "At the top, solving a puzzle opened a large door leading into the safehouse lobby."
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Approach to the dollhouse is described as walking up to it, with swampy plains beyond."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_4",
+        "boundary_type": "wall",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "Area is bordered by jagged mountains."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer reached the top and solved some sort of puzzle, which opened a large door.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer walked through the building's \"windows\" and navigated a maze of stairs inside to reach the top.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "A huge girl wearing a dress constantly peered over the top of the building; she cried if she couldn't find the dreamer; the dreamer could see her towering over the building as they walked up to it.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "watching",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Huge girl wearing a dress; peers over the top of the building; cries if she can't find me; towers over the building.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear to be AI-generated illustrative visuals (exterior: dark monolithic building on rocky terrain; interior: warm lodge-like lobby). Text provides the primary spatial relationships (windows as entrances, maze of stairs, top puzzle-door to central lobby, swampy plains beyond, jagged mountain border). Time/sequence inferred from narrative order (approach → enter → climb → puzzle → door → lobby)."
+  },
+  "response_id": "resp_0d07b36c11e1bbe700696e151ecc788197a1891f3854d06bb0",
+  "usage": {
+    "input_tokens": 13215,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1509,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14724
+  }
+}

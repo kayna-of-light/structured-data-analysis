@@ -1,0 +1,204 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gvhuid.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gvhuid/top_parking_deck_yellow_gates/",
+  "title": "Top parking deck/ yellow gates.",
+  "date": null,
+  "content_checksum": "17178b2312e6ea39f484891e59a4f6a2f1c0616799f37ebcd16be3b3d06531b4",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:37:07.315834+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/ac7m1fexmz1e1.jpg",
+    "https://i.redd.it/k01qteexmz1e1.jpg",
+    "https://i.redd.it/uxb00wexmz1e1.jpg",
+    "https://i.redd.it/xk5qfcexmz1e1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to a similar top parking deck area with yellow gates",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "parking_structure",
+        "location_name": "Top parking deck / platform with yellow gates",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the top of a parking deck",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "moderate",
+          "cleanliness": "normal",
+          "water_presence": "none",
+          "raw_description": "\"at the top of a parking deck\"; \"yellow gates all around the outside so you don’t fall off\"; \"concrete entrances\"; \"deck/platform is a huge rectangle with empty parking spots\"; \"there are always people waiting to get in to someone where\"; \"different then the normal rolls coaster/ endless parking garage\"; \"always those yellow gates that stand out\""
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "Concrete tall building attached on north side",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "north",
+          "relative_to": "attached and connecting to the platform on the north side",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"two concrete tall buildings attached and connecting one on the north side of the platform\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "Concrete tall building attached on west side",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "west",
+          "relative_to": "attached and connecting to the platform on the west side",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"two concrete tall buildings attached and connecting ... one on the west side\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "\"attached and connecting\"; access via \"concrete entrances\" (exact passage type not specified)"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "\"attached and connecting\"; access via \"concrete entrances\" (exact passage type not specified)"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "fence",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Yellow gates around the outside edge of the top deck \"so you don’t fall off\""
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "People are present on the top deck, \"always people waiting to get in to someone where\" (destination unknown).",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "implied",
+            "description": "people waiting to get in somewhere",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear AI-generated and are referenced by the author as imperfect recreations. Visuals suggest a multi-level parking structure with prominent yellow mesh/guard panels, open-air top level, and concrete bays/entrances; narrative specifies a large rectangular top platform with yellow gates, plus two tall connected buildings on the north and west sides."
+  },
+  "response_id": "resp_03a02a1bba27b39f00696e1736efcc8197aefa26e047402a45",
+  "usage": {
+    "input_tokens": 11389,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1163,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12552
+  }
+}

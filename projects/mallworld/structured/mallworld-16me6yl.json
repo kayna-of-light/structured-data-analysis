@@ -1,0 +1,141 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\16me6yl.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/16me6yl/who_do_you_feel_you_are_when_you_are_in/",
+  "title": "Who do you feel “you are” when you are in TheMallWorld?",
+  "date": null,
+  "content_checksum": "98904c3f6b373f927acf3d270206edf4afd496159adcefc7b118e0b879e43558",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:45:25.879982+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking others what identity/role they feel they have in TheMallWorld (student, customer, lost, etc.)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "not_mentioned",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_arcade",
+        "location_name": "Arcade",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“the arcade wasn’t full.” “They had games I HAVE NEVER SEEN.” “amazing to play with.”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer talked with someone who was playing in the arcade; the person was playing the game the dreamer wanted to play. The dreamer reacted excitedly; the person responded: “Yes, I know. Amazing.”",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Someone playing the game the dreamer wanted to play",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer is collecting SpongeBob cards from a Skee-Ball machine; hopes to get them all.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": "SpongeBob cards (from a Skee-Ball machine)",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "An old man was hovering around; wasn’t playing, just looking at them play. Dreamer: “Didn’t felt any vibe from him, just that it was there looking at us play.”",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "watching",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Old man hovering around; not playing; just looking",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post includes recurring-role statements (student/recruitment/lost/customer) but only one concrete scene is described (arcade with sparse crowd, novel games, Skee-Ball SpongeBob cards, two entities). ‘Yesterday’ provides limited temporal sequencing; other role experiences are mentioned without specific locations."
+  },
+  "response_id": "resp_05def07b51f09b7b00696e0b323b488194abcd37a956646ab2",
+  "usage": {
+    "input_tokens": 10202,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1073,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11275
+  }
+}

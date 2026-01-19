@@ -1,0 +1,110 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1971ij7.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1971ij7/downward_sloping_auditorium_or_lecture_hall/",
+  "title": "Downward sloping auditorium or lecture hall",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:03:07.282543+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/oons3udxmjcc1.jpg",
+    "https://i.redd.it/s4k3pgsymjcc1.jpg",
+    "https://i.redd.it/fmb8tglzmjcc1.jpg",
+    "https://i.redd.it/7asw5qv0njcc1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "theater",
+        "location_name": "Downward sloping auditorium or lecture hall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "varies",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Large auditorium/lecture-hall space with seating in rows and a strong downward slope toward a front stage/lecture area. Multiple visual examples: (1) tiered seating with side aisles/ramps and handrails; wall panels with vertical strip lighting; acoustic ceiling panels and spotlights. (2) dark cinema-like auditorium with faceted/angular acoustic wall panels and ceiling light strips; rows of seats descending toward the front. (3) very large venue with a stage, lighting rigs, and balcony/upper seating section; many rows of seats sloping down to stage. (4) lecture hall with a front lectern/desk area, projection screen/monitor, and densely seated audience; wood-paneled walls and ceiling with many recessed/strip lights; multiple stepped tiers."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "direction": "down",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Stepped, tiered seating creates descending levels; side aisles with steps and/or sloped ramps; handrails along aisles."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "minimal",
+    "extraction_notes": "No narrative text provided; extraction is based solely on attached images depicting auditorium/lecture-hall interiors. Images appear to be reference/visualization photos rather than a hand-drawn map."
+  },
+  "response_id": "resp_0e4847ea11e75e7500696e0f4e31e08190a7082460dbcac549",
+  "usage": {
+    "input_tokens": 14232,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 622,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14854
+  }
+}

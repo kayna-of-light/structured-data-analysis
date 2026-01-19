@@ -1,0 +1,153 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1in8i5l.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1in8i5l/add_some_more_details_to_the_mall_here_are_two/",
+  "title": "Add some more details to the mall, here are two pics from the food court...",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:51:52.045245+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/yss3pwvvkkie1.jpg",
+    "https://i.redd.it/xntvzbyvkkie1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "map_only",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_food_court",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "moderate",
+          "cleanliness": "clean",
+          "water_presence": "fountain",
+          "raw_description": "Indoor mall food court area with tiled floors, large white columns, railings around a central sunken water feature; multiple ceiling lights; seating/tables visible; people present in background."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "pool",
+        "location_name": "sunken fountain pool",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the food court, below the surrounding walkway/seating level",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "normal",
+          "water_presence": "fountain",
+          "raw_description": "Large recessed pool of water inside the food court with a tiled edge; water jets/fountain sprays in the middle; underwater/edge lighting creating reflections; metal cylindrical fixtures rising from the water; surrounding curved railing and stepped/rounded ledge."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "direction": "down",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Short set of steps leading down from the surrounding food court level to the recessed fountain/pool edge."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "People are visible standing/walking around the food court area near the railing; seating and tables are present adjacent to the water feature.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Several people in the background near railings and seating areas; individual details not clear.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text provided; extraction is based solely on two photos depicting a mall food court with a central recessed fountain/pool. Images are not a hand-drawn map and do not show explicit dream traversal beyond the immediate area."
+  },
+  "response_id": "resp_063b033e041b3d3400696e1aad83a88195a0390e9fa7165fc5",
+  "usage": {
+    "input_tokens": 11389,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 803,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12192
+  }
+}

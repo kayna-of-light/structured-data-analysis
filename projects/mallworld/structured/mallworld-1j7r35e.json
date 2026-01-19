@@ -1,0 +1,176 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j7r35e.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j7r35e/coffee_shop/",
+  "title": "Coffee shop?",
+  "date": null,
+  "content_checksum": "991e12eca8d682a488c50a4605f5682db90d80623c0dbc456eb482e6e41a2fda",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:59:19.886884+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have seen/visited a specific recurring coffee shop location (in/at a hotel on a street/strip of businesses).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "longing to visit the coffee shop",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant",
+        "location_name": "coffee shop",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "on a street, similar to a strip of businesses; inside some type of hotel",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "big, white and has glass windows; super inviting; lots of sunlight; incredible coffee"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "on a street / strip of businesses",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "some type of hotel (contains the coffee shop)"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "city_street",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "street with a strip of businesses",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "on a street, similar to a strip of businesses"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_2",
+        "connection_type": "unspecified",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "hotel is on/along the street/strip of businesses"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "coffee shop is inside the hotel"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer describes longing to visit the coffee shop; notes it is inviting with lots of sunlight and incredible coffee.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": "coffee",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is phrased as a question with a brief recurring-location description; no explicit traversal sequence or events beyond description/longing. Coffee shop treated as a restaurant-type location; street/strip and hotel included as contextual locations."
+  },
+  "response_id": "resp_0030f17d72d9af0800696e1c7062348197a38ccf316570f62f",
+  "usage": {
+    "input_tokens": 10057,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1326,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11383
+  }
+}

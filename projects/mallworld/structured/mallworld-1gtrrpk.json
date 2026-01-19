@@ -1,0 +1,96 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gtrrpk.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gtrrpk/airport/",
+  "title": "Airport?",
+  "date": null,
+  "content_checksum": "227d8c7181263c9ea2076393fa093e966c808c4bf2aa461afd2099a3ed3aa447",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:36:19.424478+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/nfq07falyj1e1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have recurring dreams set in the same airport; author says theirs looks similar to attached image",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "airport_terminal",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "packed",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Large modern airport interior with very high glass/arched ceiling; bright daylight; multi-level balconies/upper walkways on both sides; wide central concourse; many people; shops/retail lining both sides; glossy light-colored floor; central vertical structures resembling escalators/railings"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question with minimal dream narrative. Recurrence is explicit. Visual image used as reference for what the airport looks like; no explicit actions, routes, or distinct sub-areas (gates/security) described in text."
+  },
+  "response_id": "resp_0379e34041aeff5900696e171b911081959de54e6c5e965cd0",
+  "usage": {
+    "input_tokens": 11408,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 465,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11873
+  }
+}

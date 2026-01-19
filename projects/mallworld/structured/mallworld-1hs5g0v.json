@@ -1,0 +1,108 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hs5g0v.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hs5g0v/does_this_ring_a_bell_for_anyone_recently_visited/",
+  "title": "Does this ring a bell for anyone? Recently visited a college campus in Mallworld and this is close to what one of the \"bathrooms\" looked like.",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:44:08.164097+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/utqdswpbinae1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recent_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others recognize a college-campus bathroom location in Mallworld; provides a reference image of what it looked like.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom",
+        "location_name": "college campus 'bathroom' (reference image)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "college campus in Mallworld",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "dirty",
+          "water_presence": "none",
+          "raw_description": "Concrete/tile room with stained walls and floor; central concrete stairway with metal handrail; coat hooks lining walls; scattered backpacks/bags and hanging coats; debris/dirt on floor; low/flat overhead lighting."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Staircase rises to an upper landing/level; concrete steps with a metal handrail; stairs occupy the center of the room."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text beyond title; extraction relies on the attached reference image and title. Image appears photo/realistic; not a hand-drawn map. Recurrence inferred from 'Recently visited ... in Mallworld' and 'one of the bathrooms' (implies multiple visits/instances)."
+  },
+  "response_id": "resp_065078e0d53c850800696e18e4c4a8819784174ef63f639584",
+  "usage": {
+    "input_tokens": 11280,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 760,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12040
+  }
+}

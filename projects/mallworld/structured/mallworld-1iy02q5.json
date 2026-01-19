@@ -1,0 +1,135 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1iy02q5.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1iy02q5/dreamallpolis/",
+  "title": "Dreamallpolis",
+  "date": null,
+  "content_checksum": "2c81feb0c555c6087472ec1ff9398417f5318c023de507608c50f5fd0916d882",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:55:41.530571+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/dw6ojbv8ible1.jpg",
+    "https://i.redd.it/rmidrcv8ible1.jpg",
+    "https://i.redd.it/vm0q4bv8ible1.jpg",
+    "https://i.redd.it/o2jfebv8ible1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "other",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": true,
+      "skip_reason": "Post text describes a Designer City build ('Dreamallpolis') rather than an experienced dream narrative; images appear to be game screenshots (not a hand-drawn dream map) plus one unrelated close-up photo."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "Dreamallpolis (Designer City build)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "new",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "river",
+          "raw_description": "Isometric game screenshots of a dense futuristic city: wide gray grid streets/tiles; many high-rise towers; cable-stayed bridge structures with tall pylons and radiating white cables; central round domed building; multiple circular plazas with patterned flooring; several fountains/light-beam features; landscaped greenery; waterways/canals along the right side with bridges; a castle-like building near the water; geometric/modern buildings including a spherical black building and other domes."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "Close-up photo of object held in hand (unrelated to city screenshots)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "A hand holding a pale, wrinkled, beige/white object with a brownish end; background looks like crinkled metallic/plastic surface with light reflections; blue fabric visible at bottom right."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "bridge",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Multiple bridges shown spanning waterways/canals; prominent cable-stayed bridge-like structures integrated into central complex."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No dream narrative is provided; extraction is limited to visible environmental/spatial features in attached images. Images appear to be screenshots from a city-building game UI (not a hand-drawn map). One attached image is a close-up real-world photo not clearly related to the 'Dreamallpolis' build."
+  },
+  "response_id": "resp_0194b96db393382c00696e1b8c771c819599c07bf6ae7481d1",
+  "usage": {
+    "input_tokens": 17096,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1062,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 18158
+  }
+}

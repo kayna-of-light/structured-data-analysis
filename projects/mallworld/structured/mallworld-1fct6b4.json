@@ -1,0 +1,166 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1fct6b4.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1fct6b4/end_of_the_world_dream/",
+  "title": "End of the world dream",
+  "date": null,
+  "content_checksum": "bdbcc260eacb5ce154c961b9ae92db28d676a1537150bca37a3e4a23ba8ed030",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:27:33.067534+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "childhood_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "long_term_recurring",
+      "time_flow": "normal",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "outside (end-of-world setting)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "evening",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "late afternoon/early evening; always outside; sky gets cloudy with storm clouds; clouds become so dark it’s almost nighttime; ground cracks open with blindingly bright molten lava spewing from cracks"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mountain",
+        "location_name": "mountains in the distance",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the distance from the outside setting",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "mountains in the distance; liquid-like black clouds (like ink) swirl out from behind them"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Sky begins to get cloudy with storm clouds.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Liquid-like black clouds (almost like ink) swirl out from behind distant mountains, filling the sky.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "As the ink clouds move closer, tornados form from them and drop to the ground.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Clouds become so dark and thick that it’s almost nighttime.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Tornados keep moving closer; the ground cracks open and blindingly bright molten lava spews from the cracks.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Dream described as recurring with the same event sequence; specific geographic setting varies across instances but only an outdoor scene with distant mountains is described here. No explicit boundaries, travel connections, or other entities mentioned."
+  },
+  "response_id": "resp_00142fa0206e799200696e15034fe08196b263f3aeea274559",
+  "usage": {
+    "input_tokens": 10191,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1227,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11418
+  }
+}

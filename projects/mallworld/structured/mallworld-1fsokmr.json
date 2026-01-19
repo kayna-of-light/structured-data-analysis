@@ -1,0 +1,194 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1fsokmr.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1fsokmr/whats_the_deal_with_swimming_pools/",
+  "title": "What's the deal with swimming pools?",
+  "date": null,
+  "content_checksum": "3b346a8c20be6dd4d90570ce0f0ce3f483b0088a0d8337b2dd2ddbc1b8010ec0",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:29:31.997472+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Common theme of indoor swimming pools in dreams (dream house with full-sized indoor pool; high-end marble/water features; Alice in Wonderland style hedge mazes in backyard)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "regular looking dream house",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a regular looking dream house"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "pool",
+        "location_name": "full sized indoor swimming pool inside the house",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the dream house",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "pool_clean",
+          "raw_description": "there's a full sized indoor swimming pool inside; most times they look really high end like marble and water features"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "Alice in Wonderland style hedge mazes",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the back yard",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Alice in Wonderland style hedge mazes in the back yard"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "walk into a regular looking dream house and somehow there's a full sized indoor swimming pool inside"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "back yard contains hedge mazes"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer walks into a regular looking dream house.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer observes a full sized indoor swimming pool inside the house; often high-end with marble and water features.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "Dreamer notes Alice in Wonderland style hedge mazes in the back yard.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is framed as a question but includes recurring dream elements: dream house containing a full-sized indoor pool and backyard hedge mazes. No explicit emotions, time flow, or entities described."
+  },
+  "response_id": "resp_0d4a23c33617f37500696e1589a09c819696fe063c73e4f8b8",
+  "usage": {
+    "input_tokens": 10067,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1458,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11525
+  }
+}

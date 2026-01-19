@@ -1,0 +1,281 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1bqd853.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1bqd853/here_is_a_childhood_nightmare_of_mine_where_i_was/",
+  "title": "Here is a childhood nightmare of mine where I was introduced into the realm of the mall world. Do any of you guys have similar experiences?",
+  "date": null,
+  "content_checksum": "36c3bede0452a9bf8eb89c14889ce706ceb655662990b6641790f10dac1e2f38",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:11:19.932433+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "childhood_dream",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have similar Mall World childhood nightmare experiences",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": 3,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "child_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "unease tinged with curiosity",
+      "final_emotion": "primal terror / paralyzed with fear",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "casino",
+        "location_name": "retro-style casino",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "garish glow of neon lights; incessant symphony of slot machines; energy of the crowd; vintage décor; red Persian carpet; felt unease tinged with curiosity"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel",
+        "location_name": "upper floor / elevator view area above casino",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "above the casino floor",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "ascending in an elevator that offered a glimpse of a glittering cityscape; sensation akin to soaring above the bustling streets of Las Vegas"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "dimly lit hallway with doors",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "upper floor reached by elevator",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "dim",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "dimly lit hallway flanked by doors; liminal atmosphere; carpet echoed crimson expanse of casino floor; walls had subtle hue reminiscent of a dusky movie theater; casino echoes faded into eerie silence; soft rustle of curtains caught in an unseen breeze; air grew thick with anticipation; palpable sense of foreboding"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "dark chamber/room beyond open door",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the end of the hallway through an open door",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "chamber cloaked in impenetrable darkness; haunting melody like a ghostly piano; rustle of curtains stirred by an unseen presence; dim red light flickered to life; ancient television crackled and flickering screen illuminated the scene; door slammed shut behind me; plunged into total darkness; malevolent presence enveloped me"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "prisoner",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "elevator",
+        "direction": "up",
+        "difficulty": "normal",
+        "mechanism_function": "working_normal",
+        "outcome": "succeeded",
+        "qualities": "elevator ascent; offered a glimpse of a glittering cityscape"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "stepped into a dimly lit hallway flanked by doors"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "approached an open door at the end of the hallway; pushed the door aside"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_4",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "door slammed shut behind me, implying being trapped in the room"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Experienced the casino environment: neon lights, slot machines, crowd energy, vintage décor, red Persian carpet; felt unease/curiosity.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "crowd with jubilant cheers",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Ascended in an elevator and saw a glittering cityscape like Las Vegas from above.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Walked through a dim corridor; casino sounds faded; heard soft rustle of curtains; approached an open door at the end while feeling dread/foreboding.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "conflict",
+        "description": "A dark figure with a paddle-shaped head confronted the dreamer; the door slammed shut; room went totally dark; the entity crouched, wailed, and tickled/electrocuted the dreamer by pressing/vibrating its paddle-head handle near the dreamer’s face; dreamer felt paralyzed with fear.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "figure shrouded in darkness; form twisted into grotesque shapes; head like a paddle with handle jutting out; blank face; handle seemed to move/vibrate",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "observation",
+        "description": "Heard a haunting piano-like melody; heard curtains rustling as if by an unseen breeze; saw a dim red light flicker on; heard an ancient TV crackle and saw its flickering screen illuminate the room before darkness returned.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Exact architectural category of the upper-floor area is unclear (treated as a generic upper floor/hotel-like level). Cityscape view is described from the elevator. The ‘locked’ boundary is inferred from the door slamming shut; no explicit attempt to reopen/escape is described."
+  },
+  "response_id": "resp_05f5c2501fddaba500696e11300f248197aa1f41b4d1c6bfe0",
+  "usage": {
+    "input_tokens": 10867,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2446,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13313
+  }
+}

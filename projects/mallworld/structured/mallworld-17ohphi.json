@@ -1,0 +1,242 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17ohphi.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17ohphi/crazy_mall_world_dream_last_night/",
+  "title": "Crazy mall world dream last night",
+  "date": null,
+  "content_checksum": "991b14dc788339a92f782e8f140a343ceed15be1a2ea8db218c797e03cefeea2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:54:34.141297+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "stress due to work; 'crazy dreams'",
+      "final_emotion": null,
+      "author_theory": "New places are being unlocked every week.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "apartment",
+        "location_name": "new apartment (mirrors current apartment IRL)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "mixed",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "dirty",
+          "water_presence": "not_mentioned",
+          "raw_description": "Mirrors my current apartment IRL; had a few doors and places that didn’t exist in my normal one; previous tenants left behind a ton of crap in the cupboards; animals left behind (couple dogs, couple cats)."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "attic",
+        "location_name": "attic / unfinished rafter space",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "above the apartment (reached by attic stairs)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "under_construction",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Unfinished space—think rafters and wooden beams; 2 babies and several cats and dogs running around."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "church",
+        "location_name": "Parish Cresh (church daycare) / old church room",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "entrance above/further up from the attic area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Entrance that said “Parish Cresh”; actually a church daycare; apartment was attached to an old church; huge room with detailed paintings, like a big church room basically; people from Righteous Gemstones painted on the walls."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "trespasser",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "attic stairs"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "entrance labeled “Parish Cresh”"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Moving into the apartment; noticing previous tenants left behind 'a ton of crap' in cupboards; noticing animals left behind (couple dogs and couple cats).",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a couple dogs; a couple cats",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "husband",
+            "name_or_relation": "my husband"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Exploring the attic; seeing unfinished rafters/wooden beams; seeing '2 babies and several cats and dogs running around'; noticing an entrance labeled “Parish Cresh”.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "2 babies",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "creature",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "several cats and dogs running around",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "Walking into the church daycare / church room and looking around; NPC church people ask 'what are you doing here?'",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "unfriendly",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "NPC church people",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Time-of-day, lighting, and many emotional qualities not described. 'Parish Cresh' spelling preserved as written."
+  },
+  "response_id": "resp_07fb8cc86b33bd3400696e0d5099a881908349b98621a4ed60",
+  "usage": {
+    "input_tokens": 10284,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1895,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12179
+  }
+}

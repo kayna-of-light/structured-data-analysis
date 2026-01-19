@@ -1,0 +1,151 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ioey7m.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ioey7m/new_restaurant_in_mall_world_opened_called_brave/",
+  "title": "New restaurant in Mall World opened called “Brave New World”.",
+  "date": null,
+  "content_checksum": "e04325050ea9e16790c883496d739ebf480034f670dd9e3bcd74fd6f64af99c1",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:52:04.102499+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "recurring_dream",
+        "lucid_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether anyone else has experienced the specific dream detail: a new restaurant outside the mall called “Brave New World”",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "Mall World (mall itself)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Mall World; mall itself referenced as the main structure"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "restaurant",
+        "location_name": "“Brave New World” (new restaurant)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the mall itself",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "new",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "looked kind of like an upmarket Parisian bistro with nice tables outside; quite busy; sign called “Brave New World”"
+        },
+        "is_familiar": "no",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer noticed a new restaurant outside the mall, looked at the sign, and read the name “Brave New World”.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer observed the restaurant’s outdoor seating (“nice tables outside”) and that it was “quite busy”.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "customer",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "general population / people in Mall World; restaurant appeared busy",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial info is limited to a single relation (“outside the mall itself”). Temporal reference present (“last night / this morning”) but no in-dream time-of-day described. Lucidity described as “felt kind of lucid in a way” without specific control actions."
+  },
+  "response_id": "resp_0f20261eed32bf6e00696e1ac8fe408194b4f9e5adc086b7c6",
+  "usage": {
+    "input_tokens": 10279,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1113,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11392
+  }
+}

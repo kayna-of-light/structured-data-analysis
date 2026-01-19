@@ -1,0 +1,133 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hil43q.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hil43q/i_found_a_new_little_cove_and_someones_gorgeous/",
+  "title": "I found a new little cove and someone's gorgeous house is here.",
+  "date": null,
+  "content_checksum": "66fcb222b143d91f6b545654f13119ab8c3b3cf5cbbdcb3e9658593bab2e38b8",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:41:19.625473+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/gaib6unpl08e1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "compressed",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "awed (then 'kicked')",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "beach",
+        "location_name": "new little cove",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "cove area near a house",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "not_mentioned",
+          "atmosphere": "peaceful",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "ocean_calm",
+          "raw_description": "\"new little cove\"; image shows sandy beach with ocean visible and blue sky with clouds"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "house",
+        "location_name": "someone's gorgeous house",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at/near the cove on the beach",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "new",
+          "atmosphere": "welcoming",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "\"someone's gorgeous house\" / \"stunning\"; image depicts a large seashell/snail-shaped house with big round windows on sand near the ocean; palm tree nearby"
+        },
+        "is_familiar": "no",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer briefly sees a \"new little cove\" and is \"awed\" by a nearby \"gorgeous\"/\"stunning\" house before being abruptly removed from the dream (\"kicked from the server\").",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Narrative is brief and emphasizes short \"five minute flashes\" and abrupt interruption. Image appears AI-generated (watermark 'dream.ai') and provides most visual detail; no explicit statement that the pictured house exactly matches the dream beyond being presented with the post."
+  },
+  "response_id": "resp_0b8424c252a671a900696e183a98248197b04f363b711792bb",
+  "usage": {
+    "input_tokens": 11904,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 690,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12594
+  }
+}

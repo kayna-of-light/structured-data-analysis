@@ -1,0 +1,263 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17ab79w.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17ab79w/inter_dimensional_hotel_of_sorts/",
+  "title": "Inter dimensional hotel of sorts",
+  "date": null,
+  "content_checksum": "50bad82c56020f781bf8a0a7347f2d6738aae7550eeadc830d909dcb21018c7c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:51:26.429768+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "first_visit",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "woke up (as about to merge rooms)",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "world where currency is called Credits",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "taken out of the world we know and put into this world",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "taken out of the world we know and put into a world were the currency is just called Credits"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel",
+        "location_name": "hotel",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the Credits world",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "In this hotel all of us are given the same room number and told to enter one at a time. The floors are perfectly circular and it seems to go upwards forever."
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "hotel_room",
+        "location_name": "ordinary enough hotel room (same room number as others)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the hotel",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "I look around it’s an ordinary enough hotel room, but the first person isn’t inside anywhere. I search everywhere and nobody."
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "I and a couple other people make our way to a hotel"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "given the same room number and told to enter one at a time; I wait for the door to close and walk in the door"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "The floors are perfectly circular and it seems to go upwards forever (vertical extent/limit not reached)."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "All are given the same room number and instructed to enter one at a time.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "authority",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "whoever gives instructions/assigns the room number",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "a couple other people traveling with the dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "search",
+        "description": "Dreamer searches the hotel room for the first person who entered; cannot find them anywhere.",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "the first person who walked into the room before the dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "person not present/nowhere in room"
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "The first person contacts the dreamer via a watch gadget; says they can merge hotel rooms into one; same physical space but separate dimensional space.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "caller on watch gadget (the first person)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "dream ended before merge"
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "task",
+        "description": "Dreamer is about to merge their room with one of their companions (believed to be a love interest).",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "companion who is a love interest in the dream",
+            "name_or_relation": "love interest (in dream)"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "woke up"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No explicit descriptions of lighting, time of day, or detailed room layout. Hotel described as having perfectly circular floors and seemingly infinite upward extent. 'Boundary' recorded as an implied vertical extent/limit not reached."
+  },
+  "response_id": "resp_0c7f1a4fffed713800696e0c88819c81938831f07b4291df8d",
+  "usage": {
+    "input_tokens": 10220,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2098,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12318
+  }
+}

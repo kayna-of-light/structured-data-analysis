@@ -1,0 +1,106 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1929jpt.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1929jpt/does_anyone_have_any_specific_people_they_meet/",
+  "title": "Does anyone have any specific people they meet over and over?",
+  "date": null,
+  "content_checksum": "dcc87edcfbcee1575db52cc5f465c3f07b072712554233d8c8c534a46204e77a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:02:21.035665+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others repeatedly meet specific recurring people/entities in Mall World dreams (mentions a dancing goth-looking trans woman; a black family).",
+      "should_skip_extraction": true,
+      "skip_reason": "Post is primarily a question with minimal dream phenomenology; no describable locations/layout/sequence beyond a vague reference to 'weird train things' and recurring people."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "social",
+        "description": "Dreamer reports repeatedly meeting a 'dancing, goth looking trans woman' in dreams (author suggests it might be them).",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "yes_explicit",
+            "description": "dancing, goth looking trans woman",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "social",
+        "description": "Dreamer reports repeatedly meeting with 'this black family' in dreams; it feels like they've known them forever.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "not_mentioned",
+            "is_recurring": "yes_explicit",
+            "description": "black family",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "low",
+    "extraction_notes": "Image link is referenced as 'the weird train things in my dreams' but the post does not describe the image contents or any specific dream setting/sequence; locations and interactions are therefore left as unspecified."
+  },
+  "response_id": "resp_0653e5dd29e7997c00696e0f2b0a5081958fc65bc2a329c0c8",
+  "usage": {
+    "input_tokens": 10199,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 534,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10733
+  }
+}

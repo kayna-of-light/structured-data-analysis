@@ -1,0 +1,128 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1acnp7j.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1acnp7j/i_never_saw_the_mall/",
+  "title": "I never saw the mall",
+  "date": null,
+  "content_checksum": "95bdea3e4482a9cd6467da538598bb719669ba776ed42ad51609034c7dc1dd1a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:04:46.325542+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "introduction",
+      "content_flags": [],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": true,
+      "skip_reason": "No specific dream episode described; only general statements about recurring places (school, playground) and not dreaming of a mall."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Maybe it has a lot to do with you childhood and preteen experiences",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "school",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "I see certain places alot, a school"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "specific playground",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a specific playground, I know the way to it"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Dreamer reports knowing the way to the playground (route not described)."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post contains generalized recurrence of locations (school, specific playground) but no single dream scene, sequence, or detailed environmental qualities. 'Mall not present in dreams' noted but not modeled as a visited location."
+  },
+  "response_id": "resp_0d8a20712998431800696e0fbe475c8190be560d0c3cda7c34",
+  "usage": {
+    "input_tokens": 10078,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 899,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10977
+  }
+}

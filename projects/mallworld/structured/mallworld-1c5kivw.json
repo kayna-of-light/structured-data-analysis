@@ -1,0 +1,148 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1c5kivw.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1c5kivw/reoccurring_theme_of_red_world_vs_blue_world_with/",
+  "title": "Reoccurring theme of red world vs blue world with portal",
+  "date": null,
+  "content_checksum": "f34ace87ed647395a94a5bd6ba1d3c5a469fe22333e624a75c370ede53b70891",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:12:58.403043+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others dream about a portal to an alternate/enemy 'red world' vs living in a 'blue world', including disguising oneself to avoid being noticed as not belonging",
+      "should_skip_extraction": true,
+      "skip_reason": "Post is a question without a specific dream narrative (no concrete locations visited, sequence of events, or described scene details beyond general motif)."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "blue world",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "you live in the blue world"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "resident",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "alternate/enemy red world",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "accessed via a portal from the blue world",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a kind of “alternate” or “enemy” red world"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "other",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "portal",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "portal to a kind of “alternate” or “enemy” red world"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "other",
+        "description": "May have to disguise yourself from being noticed as not belonging.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Those who might notice you do not belong (unspecified).",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "low",
+    "extraction_notes": "Extracted only generalized motifs explicitly mentioned (blue world, red world, portal, disguising to avoid detection). No concrete scene details, sequence, or specific built-environment locations were provided."
+  },
+  "response_id": "resp_0e07ceec4e1e598a00696e11a877cc819096163303064c29a3",
+  "usage": {
+    "input_tokens": 10070,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1082,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11152
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ac9zjh.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ac9zjh/amadeus_type_gathering/",
+  "title": "Amadeus type gathering?",
+  "date": null,
+  "content_checksum": "d32a872172fa7f3f2fe50892d5b7ebb02af775f37b03e7c6affc6c1c19906165",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:05:07.686612+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have had similar dream experiences (hotel gathering/wedding with costumed staff; funeral procession outside)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": "old hotel",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“an old hotel”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel_lobby",
+        "location_name": "lobby",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the old hotel",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Hotel interior where wedding attendance and staff were present"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "outside (in front of/near the hotel)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "exit",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the hotel",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Dreamer went outside “for a little” and encountered a funeral procession"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "theater",
+        "location_name": "audience seating (for wedding)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the hotel (returned after going outside)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“sat in the audience to attend this wedding”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "audience",
+        "visit_order": 4
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Left the hotel to go outside"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "“We backed up and went back in”"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_4",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Returned inside and sat in the audience area for the wedding"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Dreamer was “in attendance for some wedding” in the hotel; staff were dressed in costume.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Staff dressed as mimes and large playing cards; mimes were in head-to-toe black cat suits covering their faces",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "staff",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Large playing card costumes",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer noticed the costumed staff; “It wasn’t menacing and I laughed at it.”",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Non-traditional mimes in black cat suits covering faces",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Dreamer went outside because they “felt out of place there” and “walked right into a funeral procession.”",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Funeral procession",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "escape",
+        "description": "“We backed up and went back in” after encountering the funeral procession.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "observation",
+        "description": "Dreamer sat in the audience to attend the wedding.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Dream includes clear inside/outside movement and an audience area for a wedding, but limited details on layout, lighting, crowding, and sequence timing. Time/sequence inferred from narrative order (went outside, returned inside)."
+  },
+  "response_id": "resp_0fc44e305ad6cfa300696e0fbe4e70819092449e5b91471c27",
+  "usage": {
+    "input_tokens": 10156,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2202,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12358
+  }
+}

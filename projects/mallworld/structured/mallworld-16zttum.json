@@ -1,0 +1,298 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\16zttum.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/16zttum/my_experiences_in_mall_world/",
+  "title": "My experiences in Mall World",
+  "date": null,
+  "content_checksum": "a5987451fb8dea9d54a4b36074df655ff75fd3cfd1e6d8f5d96df0dc3ad21086",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:48:34.811000+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": "working at this mall (with other employees, in a boardroom type room)",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a actual pretty typical shopping mall; walking around; there are crowds; usually with a companion"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "office",
+        "location_name": "boardroom type room (in the mall)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "in a boardroom type room with a group of other employees"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "employee",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "warehouse",
+        "location_name": "large industrial building (shelter)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "oppressive",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "apocalyptic type dreams; everyone is ordered into a large industrial building which is 'shelter from nuclear attack/some attack'; made to live and work inside the place"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "prisoner",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "train_station",
+        "location_name": "storm drain (escape route)",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "escape route from the large industrial building",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "trying to escape through a storm drain"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "boardroom type room accessed within the mall"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_4",
+        "connection_type": "tunnel",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "escape attempt through a storm drain"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "walking around the mall; there are crowds; usually with a companion",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "crowds in the mall",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "a companion (usually with the dreamer)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "realized I was working at this mall, and was in a boardroom type room with a group of other employees",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "staff",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "a group of other employees",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "an active shooter situation went down; nightmare of escaping",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "active shooter",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "other",
+        "description": "everyone is ordered into a large industrial building ('shelter from nuclear attack/some attack'); made to live and work inside; uniforms are silver; sometimes without shoes",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "authority",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "whoever is giving orders to move everyone into the building",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "everyone (group inside the shelter)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "escape",
+        "description": "once trying to escape through a storm drain",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes multiple recurring/related dream scenarios. Spatial details are limited (mall contains a boardroom; escape via storm drain from industrial shelter). No explicit outcomes for escape attempts or detailed layout."
+  },
+  "response_id": "resp_01607f8caa619fcf00696e0be0e2588196b2ed3e1ca77aff72",
+  "usage": {
+    "input_tokens": 10180,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2281,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12461
+  }
+}

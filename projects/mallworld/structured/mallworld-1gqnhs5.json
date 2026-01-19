@@ -1,0 +1,167 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gqnhs5.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gqnhs5/a_big_house_with_a_large_second_floor_white_walls/",
+  "title": "A big house with a large second floor, white walls in the interior, no lights &amp; a thing of haunting dread",
+  "date": null,
+  "content_checksum": "2885b5ce4843d17fa3def544104a55be3a237cc2cca4dd108640de446582a680",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:35:42.108178+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asks if anyone else has experienced a similar dream/nightmare scenario (needing to not look at something haunting).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "variation",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "observer_only",
+      "occupation_in_dream": null,
+      "initial_emotion": "not_mentioned",
+      "final_emotion": null,
+      "author_theory": "Haunting presence reflects the dreamer's fear; sense of 'looking into someone else's dream/nightmare.'",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "big house / someone else's home",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "second floor hallway; perspective from top right corner of the hallway",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "large second floor; interior white walls; lights are out; dark gloom with a bluish tint; dark varnished wood floors 'something to skid around'; all the doors are closed; hallway with a door at the end"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "public facility between a leisure centre with a pool & a youth club",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "threatening",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "pool_clean",
+          "raw_description": "empty places; a public facility somewhere between a leisure centre with a pool and a youth club; old buildings, big buildings, many hallways"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "From a viewpoint in the second-floor hallway (top right corner perspective), a haunting female-presenting figure approaches the closed door at the end of the hall and makes a sound (between a moan and an inhuman groan) that starts soft and grows louder.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "Something that used to be a woman; long dead; not rotting; 'whatever features she had in life are gone,' now 'just a husk'; outside the door at the end of the hall; vocalizes (moan/inhuman groan) increasing in volume.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer feels they cannot look at the scene/figure; if they look, 'something will happen.' They try not to look; when attempting to get away, they cannot; turning their head results in the entity being there again.",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "implied",
+            "description": "The same haunting figure that reappears when the dreamer turns their head; described as needing the dreamer to look at it.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Dreamer cannot get away; entity reappears when they turn their head; sense that looking triggers an event."
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "In similar 'empty places' (old, big buildings with many hallways), the dreamer gets caught up trying to leave the location or an event goes on there; they are left on their own instead of leaving with other people.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Primary described scene is the second-floor hallway in a large unfamiliar house; the public facility/leisure-centre/youth-club setting is mentioned as another similar nightmare location without a full scene. Time flow is not described, but there is a sequence (sound grows louder), so has_temporal_data marked true."
+  },
+  "response_id": "resp_089e633f3c63733d00696e16f2a20081958b7182ec3ac1c4bb",
+  "usage": {
+    "input_tokens": 10432,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1470,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11902
+  }
+}

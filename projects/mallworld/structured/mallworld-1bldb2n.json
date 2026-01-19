@@ -1,0 +1,93 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1bldb2n.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1bldb2n/was_in_the_bathrooms_again_last_night/",
+  "title": "Was in the bathrooms again last night",
+  "date": null,
+  "content_checksum": "8278c3e2813782a3c6c7b27f9c13be4731793a37625e6e0979db9da0432f7502",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:09:45.480810+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_public",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "filthy",
+          "water_presence": "not_mentioned",
+          "raw_description": "Bathrooms are always filthy; never any partitions between the stalls; so many stalls; ceilings are very high."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single described location (bathrooms). Recurrence inferred from 'again last night' and 'always'. Temporal data minimal but includes 'last night'."
+  },
+  "response_id": "resp_06bf125667c7dbef00696e10ee47c881978e1e6fdbf1cf2a2e",
+  "usage": {
+    "input_tokens": 10043,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 562,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10605
+  }
+}

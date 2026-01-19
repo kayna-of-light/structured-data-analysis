@@ -1,0 +1,277 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1bag22v.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1bag22v/thousands_of_us/",
+  "title": "Thousands of us…",
+  "date": null,
+  "content_checksum": "e59a573b08216e2478c4462de7e4d1e72cc56bdd184ec1c1263cca87e73e34ec",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:09:05.146228+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others’ Mall World has recently changed (more crowded/busy; family appearing)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "buzzing with excitement (that almost feels frightening)",
+      "author_theory": "Now, this could simply be my subconscious",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": "dorm resort",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "like the dorm resort “move in” was complete"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": "MW (Mall World)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "there were thousands of us at MW... everyone was looking for places to eat and things to do, things were bustling and busy"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "\"Florida\" area of MW",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within MW",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "the “Florida” area of MW"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "apartment",
+        "location_name": "weird apartment complex",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the “Florida” area of MW",
+          "relative_to_id": "loc_3"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a weird apartment complex... a bunch of two-story units"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 4
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "MW is suddenly crowded: thousands of people; bustling/busy; people looking for places to eat and things to do.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "customer",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "thousands of us; bustling and busy",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "The “people in charge” look like tall gray aliens with clipboards.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "authority",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "tall gray aliens with clipboards",
+            "name_or_relation": "“people in charge”"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "Dreamer’s mother is present in the “Florida” area of MW.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "no",
+            "description": null,
+            "name_or_relation": "mother"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "observation",
+        "description": "Aunt and uncle “live” in the apartment complex, but they’re never there.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "supposed to live there but never there",
+            "name_or_relation": "aunt"
+          },
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "supposed to live there but never there",
+            "name_or_relation": "uncle"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer has their toddler with them in MW (first time this has happened).",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "no",
+            "description": "my toddler",
+            "name_or_relation": "child"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial layout is limited to named sub-area (“Florida” area) and an apartment complex within it; no explicit connections (hallways/doors) or boundaries described. Time is only anchored as “last night” and “this week,” without in-dream time flow details."
+  },
+  "response_id": "resp_04550e5f4854c77100696e10af55d481959c6dd2e458953eec",
+  "usage": {
+    "input_tokens": 10239,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2117,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12356
+  }
+}

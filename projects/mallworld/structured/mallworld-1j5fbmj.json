@@ -1,0 +1,222 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j5fbmj.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j5fbmj/the_reappearing_graveyard/",
+  "title": "The Reappearing Graveyard",
+  "date": null,
+  "content_checksum": "3db642b575e7d10c66552cd1806544be22eb7217ca7b3ab385d89e7677500326",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:57:24.614746+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "reappearing graveyard",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "can appear in a memory location or a new random location; sometimes next to the road; sometimes far down the road; sometimes in the middle of another location",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "inconsistent",
+          "state": "maintained",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "not huge, maybe 20-60 graves; not overgrown; sometimes has stone paths; graves are older, Victorian looking; sometimes are iron; sometimes there are iron fences; 'There isn’t anything visibly wrong with the place' but 'every time I see it, I’m filled with dread'; no eerie sound, no warning signs, nothing 'out of sorts' but 'terrifying somehow'"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "other",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "forest",
+        "location_name": "large hill and woods behind my grandma's house",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "behind grandma's house",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "large hill and woods behind my grandmas house; there was a spot in the trees you could see through to the graves"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "city_street",
+        "location_name": "road (bright sunny day instance)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "graveyard next to the road",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "next to the road on a bright sunny day"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "neighborhood",
+        "location_name": "RL neighbor's yard (night instance)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "graveyard located in neighbor's yard",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "it was night and it was in my RL neighbor’s yard"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "resident",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "a spot in the trees you could see through to the graves (line-of-sight through trees)"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "graveyard positioned next to/off the road"
+      },
+      {
+        "from_location_id": "loc_4",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "graveyard located in neighbor's yard (unexpected placement)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer sees the graveyard and feels dread/terror; feels like they shouldn't go near it or look too long.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer reports never wanting to go in (avoidance of entering).",
+        "outcome": "abandoned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a recurring graveyard that appears in multiple different settings; sequence/order of visits within any single dream is not provided, so visit_order and traversal outcomes are mostly unspecified. 'Not inside or under water' captured as water_presence=none for the graveyard."
+  },
+  "response_id": "resp_0ad0fedb05f55f5c00696e1bff69d88190a6c21e12707a93bb",
+  "usage": {
+    "input_tokens": 10278,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1805,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12083
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ihmp40.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ihmp40/locker_room/",
+  "title": "Locker Room",
+  "date": null,
+  "content_checksum": "b493cf0bb90396b9b55248f355d796213a4c813df2623e92dc64c022d62a6051",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:50:21.416908+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others who work in (medical device) manufacturing have similar dreams about that environment",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "Back at old place of employment (manufacturing environment)",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Wonders if visiting the ghost of former place of employment; notes people there are people they worked with and suggests maybe they are dreaming of it also",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "locker room (at old place of employment)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within old place of employment",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "in the locker room at my locker; there were clothes on hangers and other things in there that I was looking through"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "employee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "factory",
+        "location_name": "manufacturing floor",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "part of the same facility as the locker room",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "out on the manufacturing floor wandering around the machinery; the machines were much more crowded together and I couldn’t get through some parts"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "employee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "unspecified",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "transition within the facility from locker room to manufacturing floor (path not described)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "At their locker, looking through clothes on hangers and other things inside",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Wandering around machinery; machines were crowded together; could not get through some parts",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "coworker",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "coworkers wandering around the machinery as well",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Machines crowded together blocking passage in some parts"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Author mentions this type of dream is recurring (many ‘mall world’ dreams back at old employment). Exact layout/pathways and sensory qualities (light, cleanliness, etc.) not described. Time data limited to visit sequence (locker room then manufacturing floor) and 'last night'."
+  },
+  "response_id": "resp_03bc3481fff1482500696e1a6a2c588196a1d3e370fe0ddd4c",
+  "usage": {
+    "input_tokens": 10191,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1237,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11428
+  }
+}

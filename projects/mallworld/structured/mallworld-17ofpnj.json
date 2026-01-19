@@ -1,0 +1,225 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17ofpnj.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17ofpnj/steam_tunnel_gates/",
+  "title": "Steam tunnel gates",
+  "date": null,
+  "content_checksum": "35ef1e0b1f1085b5f1b632be83edf3e0fd4b434c7f92ff64dd0904e46faaccf0",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:54:41.769228+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "inconsistent",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "manage a team in mallworld that manages the steam tunnels",
+      "initial_emotion": null,
+      "final_emotion": "feels like an asshole / guilt",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "underground",
+        "location_name": "steam tunnels under the city",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "under the entire city (and possibly the entire continent)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "leak",
+          "raw_description": "steam tunnels that run under the entire city (and possibly the entire continent); seal up leaks; walls and gates down there that make navigating really irritating"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "manager",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "city above the tunnels",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "above the steam tunnels",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "steam tunnels run under the entire city"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "office",
+        "location_name": "different office (mentioned as a shifted-to place)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "reachable by being shifted in time and space while running the program manually",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "you'll move across the room or into a different office"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "employee",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "navigating irritating due to walls and gates; gates/walls can be moved via software"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "direction": "unknown",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "manual running of the program can shift the operator in time and space (e.g., into a different office)"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "wall",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "walls and gates down there"
+      },
+      {
+        "location_id": "loc_1",
+        "boundary_type": "guarded",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "not_mentioned",
+        "description": "close and secure doors"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer manages a team that seals up leaks or closes and secures doors in the steam tunnels.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Team wrote code/software that allows them to move the gates and walls in the tunnels.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer finds out the software's manual operation causes the operator to be shifted in time and space; age can change; team resets everything so the person ends up in the right place and the right age.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "coworker",
+            "demeanor": "not_mentioned",
+            "role": "staff",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "team / one of my guys / whoever runs the program manually",
+            "name_or_relation": "my team"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Many details are conceptual/functional (tunnels, gates, software effects) with limited sensory descriptors (light, cleanliness, crowding not described). Spatial structure is implied: tunnels under city; internal barriers (walls/gates/doors); manual operation can relocate operator to another room/office. Time effects described as age change and shifting in time/space; no explicit sequence of visited places beyond these mentions."
+  },
+  "response_id": "resp_078acb0a20f267c300696e0d4f94c88190850b650883c6a4de",
+  "usage": {
+    "input_tokens": 10278,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1813,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12091
+  }
+}

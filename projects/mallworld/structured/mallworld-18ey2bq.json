@@ -1,0 +1,132 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\18ey2bq.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/18ey2bq/my_mallworld/",
+  "title": "My Mallworld",
+  "date": null,
+  "content_checksum": "37344f16b72a6ef80501121dc46b4a02c1c08fd6989c3e3b77ebab5c468a06e8",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:59:17.704525+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "exhausted on waking; can still feel his presence",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "unspecified",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Dream about my uncle who passed away a few months ago."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Uncle did not say anything; he gave his famous \"it is what it is\" shrug.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "deceased",
+            "demeanor": "neutral",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "Uncle; gave his famous \"it is what it is\" shrug; did not speak.",
+            "name_or_relation": "my uncle"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer reports: \"I can still feel his presence.\"",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "deceased",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "Presence felt after the dream.",
+            "name_or_relation": "my uncle"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "No mall/school/hotel setting described despite title; dream content is primarily an encounter with deceased uncle. Temporal info present only as sequence and waking-state exhaustion; no in-dream time cues."
+  },
+  "response_id": "resp_0c84652019033c4c00696e0e749fdc8195bfb73667002c21eb",
+  "usage": {
+    "input_tokens": 10124,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 888,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11012
+  }
+}

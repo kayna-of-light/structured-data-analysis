@@ -1,0 +1,170 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ca0fbo.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ca0fbo/meta_ai/",
+  "title": "Meta AI",
+  "date": null,
+  "content_checksum": "1bdfda3a4b8555344716d0e67cb6ab0c8fd918c5b7eac74c5379fdaed001cd3d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:13:51.255428+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/n9nrh8az6yvc1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others' Mall World entrance looks like an AI-generated 'water park turned into a highway' scene",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "stoked",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "waterpark",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "merged with/turned into a highway; appears to surround and integrate with the roadway",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "worn",
+          "atmosphere": "neutral",
+          "crowding": "sparse",
+          "cleanliness": "normal",
+          "water_presence": "river",
+          "raw_description": "AI image of a water park integrated with a highway: multiple large blue/orange tube slides, tall slide towers, and water channels running alongside/around road lanes; distant city skyline under cloudy sky; vegetation/trees around structures."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "runs through the waterpark area; a curving roadway with vehicles adjacent to water channels",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "sparse",
+          "cleanliness": "normal",
+          "water_presence": "river",
+          "raw_description": "Curving highway/roadway through the scene with cars and a large truck; water channel parallels the roadway and appears to intersect/abut the road in places."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "downtown",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the far background beyond the waterpark/highway area",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Distant skyline of tall buildings behind a broad green/forested area; cloudy sky."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Waterpark structures and water channels are interwoven with the roadway; the 'entrance' is described as a water park turned into a highway."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Roadway visually leads toward a distant city skyline (background)."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post provides minimal dream narrative; phenomenology is mostly inferred from the attached AI-generated image described as similar to the author's 'entrance to mall world'. No explicit movement sequence, entities, or boundaries described in text."
+  },
+  "response_id": "resp_0113c4fee821d3bd00696e11c39ac08195bda337a811e6c4a6",
+  "usage": {
+    "input_tokens": 11905,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 947,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12852
+  }
+}

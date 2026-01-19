@@ -1,0 +1,392 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\107m22i.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/107m22i/time_is_linear_in_mallworld/",
+  "title": "Time is linear in Mallworld",
+  "date": null,
+  "content_checksum": "41edb1c45261ffd4e0f07f8e01c2bc1d49a7e2c87784f64b8670cd3b6577c5dc",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:36:56.329909+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "theory",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": "Author reports a one-night sleep/alarm experiment with three sequential dreams that reference each other (same mall/tobacco shop status) and argues this suggests time continuity in “Mallworld.”",
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "normal",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "sad; misses parents (stated in Dream 1 dialogue: 'Because I miss you two.')",
+      "final_emotion": "unsettled (\"Very unsettling effect\")",
+      "author_theory": "Time progresses in Mallworld even when dreamer is not there; dreams show narrative continuity across awakenings.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Mall visited in Dream 1 (with dad) and Dream 2 (with mom); later used as destination for lunch in Dream 3."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "tobacco shop",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Closed in Dream 1; in Dream 2 mom says: \"They've been closed all day!\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "no",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "house",
+        "location_name": "parents' home",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“as we walk through the door of their home” dad hugs and kisses mom."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 3
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "outside (filming location)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "rain",
+          "raw_description": "Dream 3 begins outside; “celebrity crush is filming an episode of her TV show. It's raining.”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 4
+      },
+      {
+        "location_id": "loc_5",
+        "location_type": "restaurant_fast_food",
+        "location_name": "hot dog stand",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at/near the mall (destination after walking off to get lunch at the mall)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“We get to a hot dog stand and there's my Dad with my Mom.”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 5
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "unspecified",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "In Dream 1 they go to the tobacco shop; in Dream 2 mom is about to turn down toward that part of the mall."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "“as we walk through the door of their home” (transition from mall context to parents' home is implied)."
+      },
+      {
+        "from_location_id": "loc_4",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Dream 3: “We walk off to get lunch at the mall.”"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_5",
+        "connection_type": "unspecified",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Within Dream 3, they arrive at a hot dog stand after going to the mall for lunch."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "transaction",
+        "description": "Dad wants to buy a pack of cigarettes at the tobacco shop, but the shop is closed.",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "neutral",
+            "role": "customer",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "Dad",
+            "name_or_relation": "father"
+          }
+        ],
+        "transaction_item": "pack of cigarettes",
+        "transaction_blocker": "tobacco shop is closed"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Conversation with dad about finding a woman so the dreamer is not alone; dreamer says they like freedom; dad asks why dreamer is sad; dreamer says they miss parents and asks if dad fixed things with mom.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "Dad",
+            "name_or_relation": "father"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "Dad says he fixed things with mom; upon entering parents' home he hugs mom and kisses her.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "friendly",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "Dad",
+            "name_or_relation": "father"
+          },
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "Mom",
+            "name_or_relation": "mother"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Mom is about to turn down toward part of the mall where the tobacco shop is; dreamer tells her the tobacco store is closed.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "confusing",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "Mom",
+            "name_or_relation": "mother"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Mom says: \"What's going on? They've been closed all day!\" Dreamer tells mom they are glad parents are not fighting.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "confusing",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "Mom",
+            "name_or_relation": "mother"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_4",
+        "interaction_type": "social",
+        "description": "Outside in the rain, dreamer offers umbrella to celebrity crush who is filming a TV show; they walk off to get lunch at the mall; she is giggling; dreamer is smiling and feels wonderful; she says: \"I'm glad you always defer to me.\"",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "friendly",
+            "role": "companion",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "celebrity crush filming an episode of her TV show",
+            "name_or_relation": "celebrity crush"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_5",
+        "interaction_type": "observation",
+        "description": "At the hot dog stand, dreamer sees dad with mom; dad gives dreamer a look interpreted by dreamer as 'I told you so, you need somebody.'",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "Dad",
+            "name_or_relation": "father"
+          },
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "Mom",
+            "name_or_relation": "mother"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Post contains three distinct dreams in one night separated by alarm awakenings (~20 minutes awake between). Spatial detail is limited (mall + tobacco shop + parents’ home + outside/rain + hot dog stand), but repeated mall/tobacco shop status provides cross-dream continuity."
+  },
+  "response_id": "resp_0eb25d40ec4eab3000696e08a2fb5481908eb3065ea44dbc09",
+  "usage": {
+    "input_tokens": 10630,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 3271,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13901
+  }
+}

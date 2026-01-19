@@ -1,0 +1,153 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\18e6cqs.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/18e6cqs/mall_world_dream_two_new_spots/",
+  "title": "Mall world dream: two new spots",
+  "date": null,
+  "content_checksum": "c01f2c4ca89ed5e9ebd80b770c2eefd6000bc1f4d1dcd4e7666677d85c71f4e2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:59:14.019122+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [],
+      "detail_level": "minimal",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "pretzel shop",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "A pretzel shop that you decorate your pretzels and it’s self serve."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "children's shop with cafe inside",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "A childrens shop with a cafe inside."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "restaurant",
+        "location_name": "cafe (inside children's shop)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the children's shop",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Cafe inside the children's shop."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Decorate pretzels; self-serve setup.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": "pretzels",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Very brief report listing two 'new spots' with minimal descriptive detail; no explicit navigation, timing, emotions, or entities described."
+  },
+  "response_id": "resp_05fc41a7da4288a600696e0e7043788190ad3045fcdf4e3823",
+  "usage": {
+    "input_tokens": 10042,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1059,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11101
+  }
+}

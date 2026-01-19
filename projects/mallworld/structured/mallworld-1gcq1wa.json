@@ -1,0 +1,112 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gcq1wa.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gcq1wa/cinema_with_a_quiz/",
+  "title": "Cinema with a quiz",
+  "date": null,
+  "content_checksum": "a7fa4742d425997c292178c8507be489771827eaa9cec9226d99199bb7027bde",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:32:13.366942+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether anyone has had a similar Mall World-type dream involving a cinema with a quiz instead of a movie",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "first_visit",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_theater",
+        "location_name": "cinema",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Cinema/movie theatre; \"didn't look like my local cinema\"; \"It had purple seats\"; no movie playing—\"It was just a quiz\" with questions to answer; \"There was a popcorn emoji at one point.\""
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "audience",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Went into the cinema and sat down to watch the movie.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Expected a movie, but there was no movie; instead it was a quiz with questions the dreamer had to answer. A popcorn emoji appeared at one point. Dreamer woke up after the last question was asked.",
+        "outcome": "interrupted",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single-location dream report; no explicit layout/paths described beyond entering and sitting down. No entities described; quiz/questions presented without an identified presenter."
+  },
+  "response_id": "resp_03a234ab4c5cdf0800696e162e7b888194b12b28ca9a79b890",
+  "usage": {
+    "input_tokens": 10123,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 782,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10905
+  }
+}

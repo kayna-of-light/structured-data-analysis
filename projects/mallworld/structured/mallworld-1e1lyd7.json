@@ -1,0 +1,159 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1e1lyd7.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1e1lyd7/does_anyone_else_dream_of_being_stuck_in_a_giant/",
+  "title": "Does anyone else dream of being stuck in a GIANT store?",
+  "date": null,
+  "content_checksum": "e810080bf8855fdaf0c0c3e031779775604aa086f126c16b650eb3b6a49596de",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:21:26.594673+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "childhood_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "compressed",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "child_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "Walmart",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"being stuck in walmart\"; described as a \"GIANT store\" in title"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "lost",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "Outside after getting out (pitch black area)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "after getting out of Walmart",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"after I got out but it was pitch black\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Transition described as \"at the next second\"; getting out of Walmart into a pitch black area"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer is stuck in Walmart.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Dreamer screams for their mom after getting out; area is pitch black; then they wake up.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": null,
+            "name_or_relation": "mom"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Exact layout of Walmart and how the exit occurred are not described; time distortion noted (dream felt ~10 minutes vs slept 10 hours)."
+  },
+  "response_id": "resp_0ea4df2b2ac9542d00696e13aa296881978cfc3cb8b3f78989",
+  "usage": {
+    "input_tokens": 10115,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 762,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10877
+  }
+}

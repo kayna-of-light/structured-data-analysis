@@ -1,0 +1,141 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1fyxj9o.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1fyxj9o/someone_took_me_here_last_night_what_a_wild/",
+  "title": "Someone took me here last night, what a wild experience",
+  "date": null,
+  "content_checksum": "c73b655ac6fe393ee89abe225991e7cc7a3207d3726d7b4a85f07d838737654d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:30:48.044658+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/wnug4g58qitd1.jpg",
+    "https://i.redd.it/joitm398qitd1.jpg",
+    "https://i.redd.it/m79q2ic8qitd1.jpg",
+    "https://i.redd.it/7ppwuxe8qitd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "lucid_dream",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "wow, I will cherish this dream forever",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "ruins",
+        "location_name": "outdoor ruin",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "daytime",
+          "state": "decaying",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "rooms of this outdoor ruin, covered in graffiti, absolutely breathtaking towering walls made of stone"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "led me through rooms"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Someone took the dreamer by the hand and said: \"I really wanted to show you this place, and I wanted to see if I could take you here\" and led them through the rooms.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "guide",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "held the dreamer's hand; dreamer saw their hand holding theirs but \"like....infrared?\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer was fully lucid and able to look around freely.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear AI-generated and depict an outdoor stone ruin/courtyard with arches/columns, graffiti, broken stone floors, open sky through circular/arched openings, and heavy vegetation overgrowth; used to support the described 'outdoor ruin' setting. No explicit separate rooms named, so treated as one ruin complex with internal room-to-room movement."
+  },
+  "response_id": "resp_09f7e0bbad21488000696e15b8c4708190b6ec3c17e8068475",
+  "usage": {
+    "input_tokens": 17362,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 965,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 18327
+  }
+}

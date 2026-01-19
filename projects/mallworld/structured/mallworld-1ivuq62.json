@@ -1,0 +1,201 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ivuq62.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ivuq62/a_beach_city_i_always_go_to_tiered_balconies_all/",
+  "title": "A beach city I always go to! Tiered balconies, all against a beach!",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:55:10.607744+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/6mevslwumrke1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "beach city (road between skyscrapers and beach)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "between beachfront and skyscraper line",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "evening",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "A road runs between a line of beachfront skyscrapers and the beach/ocean; neon illumination along the skyscraper line; visible crosswalk markings; beachfront seating areas near buildings."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "beach",
+        "location_name": "beachfront",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "across the road from the skyscrapers",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "evening",
+          "state": "maintained",
+          "atmosphere": "peaceful",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "raw_description": "Sandy beach running parallel to the road; rows of beach umbrellas/sunshades; shoreline with gentle waves; ocean extends to the horizon."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "tiered glass skyscraper balconies / beachfront towers",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "along the road opposite the beach",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "colored",
+          "time_of_day": "evening",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "A fully-glass skyscraper that is tiered and sloped back with stacked balconies; each balcony can see the balcony below due to the tiered design; people eat at tables on balconies overlooking the ocean across the road; skyscraper line illuminated by neon lights (purple/blue tones visible)."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Skyscraper frontage connects directly to the road/sidewalk area."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Beach is across the road from the skyscraper line."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Ocean at the edge of the beach; horizon visible."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "People are eating at tables on the balconies overlooking the ocean across the road.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people seated at tables on balconies",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text beyond the title; extraction relies on the attached AI-generated visualization and the visible prompt text in the screenshot describing the scene (tiered glass skyscraper balconies, road between towers and beach, neon illumination, people dining on balconies)."
+  },
+  "response_id": "resp_04c73288b9d1818600696e1b625a388197bee5155c9d069f2e",
+  "usage": {
+    "input_tokens": 11815,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1094,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12909
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1icvp16.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1icvp16/inanimate_objects/",
+  "title": "Inanimate objects",
+  "date": null,
+  "content_checksum": "e2592a18e239cb95b0ef5b9c4ba67951b187c15747c17690d075e13e181bc7cd",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:49:24.754550+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "school",
+        "location_name": "school area of Mall World",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "in the school area of Mall World; usually filled with people, but it was extremely empty in the area I was in"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "school_classroom",
+        "location_name": "area with a teacher's desk",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the school area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "noticed an opened bag of M&Ms on a teacher's desk"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Noticed an opened bag of M&Ms on a teacher's desk.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "opened bag of M&Ms on a teacher's desk",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "Pieces of M&Ms started to jump toward the dreamer and bite the dreamer’s arms; dreamer was attacked and chased by 'inanimate objects'.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "pieces of M&Ms jumping toward me and biting my arms",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only the school area and a teacher’s desk/classroom-like area are described; no explicit connections or broader layout details. Temporal info is limited to 'yesterday night'."
+  },
+  "response_id": "resp_0dc51874889994c300696e1a35ee8c81908f6d7ba0dd92e04c",
+  "usage": {
+    "input_tokens": 10139,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 797,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10936
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gfdt74.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gfdt74/ai_images_i_tried_to_create_of_the_airport_i_see/",
+  "title": "Ai images I tried to create of the airport I see and plane.",
+  "date": null,
+  "content_checksum": "57d30d2dd20be7f2ae47a267d852083556d7e7081bea187ce3da143bfd31597b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:32:58.192928+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/42r6v7kaftxd1.jpg",
+    "https://i.redd.it/gywzupjaftxd1.jpg",
+    "https://i.redd.it/jtja7qjaftxd1.jpg",
+    "https://i.redd.it/574f2xjaftxd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "airport_terminal",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "daytime",
+          "state": "new",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "AI images of an airport terminal: very large circular/oval atrium with multi-level rings/balconies; central round platform/void; crowds of small silhouetted people on glossy floor; strong blue/teal lighting. One image shows a plane hovering over a bright circular beam/portal in the center; other images show a plane flying/hovering under a large circular skylight/open oculus with sky and clouds visible."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "airplane",
+        "location_name": null,
+        "position": {
+          "vertical": "upper",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "above the central atrium/oculus area of the terminal",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Airplane seen from below, centered in the terminal atrium; in one image it hovers over a bright circular beam/portal; in others it appears flying/hovering beneath a large skylight/open oculus."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Crowds of people present in the terminal while a plane is overhead/centered above the atrium (in some images over a bright circular beam/portal).",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "many small silhouetted figures scattered across the floor and along lower levels",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post text provides minimal narrative; extraction relies primarily on AI images. No explicit dream sequence, emotions, or connections described beyond a single airport/plane scene."
+  },
+  "response_id": "resp_0ba6920c1dd11d3a00696e1642b87c819099839c0108bb13a9",
+  "usage": {
+    "input_tokens": 11275,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 769,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12044
+  }
+}

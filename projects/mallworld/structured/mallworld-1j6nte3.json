@@ -1,0 +1,168 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j6nte3.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j6nte3/are_we_reaching_critical_masshow_has_your/",
+  "title": "Are we reaching critical mass?How has your experience been recently? Theres so many people in mallworld dreams now. It used to be sparse. Now stores and restaurants are somewhat crowded, people waiting in line spilling out the doors.",
+  "date": null,
+  "content_checksum": "f74b136abbcd7780c7d2cbfdb89241b4a85255d04fe8b259e1174a18eae314f1",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:58:28.688390+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/yvdocurtgine1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have noticed recent changes in Mall World dreams, especially increased crowding/lines compared to past sparsity",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "This is awesome, but also kinda like...yo i liked this when i had it all to meself!",
+      "final_emotion": "Relief: \"What a relief! Hope yall are doing well in there.\"",
+      "author_theory": "Calls it \"purgatory or something\" (as a stated comparison).",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "mallworld",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "crowding": "varies",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Used to be sparse; now \"stores and restaurants are somewhat crowded, people waiting in line spilling out the doors.\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "target",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in mallworld (implied recurring setting)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"Dreaming about target every night for years\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "restaurant",
+        "location_name": "restaurants (in mallworld)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within mallworld",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"restaurants are somewhat crowded\"; \"people waiting in line spilling out the doors\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Notices a change over time: mallworld used to be sparse; now stores/restaurants are crowded with lines spilling out the doors.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "customer",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Many people in mallworld; people waiting in line spilling out the doors",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Attached image appears to be a real-world photo of a mall exterior (not a hand-drawn map and not clearly an AI image). The text provides limited dream-scene detail beyond crowding/lines and long-term recurrence (\"every night for years\")."
+  },
+  "response_id": "resp_0e0346835e78e6bd00696e1c331e6c81968a85d326743a0dfa",
+  "usage": {
+    "input_tokens": 10745,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1295,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12040
+  }
+}

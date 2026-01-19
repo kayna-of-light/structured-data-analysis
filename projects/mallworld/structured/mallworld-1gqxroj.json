@@ -1,0 +1,114 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gqxroj.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gqxroj/bakery/",
+  "title": "Bakery",
+  "date": null,
+  "content_checksum": "536be360c40858eb9147c2cd3a69e3799b0085bd6ac148d435cef0885f1cd172",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:35:31.352052+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others experience a bakery location that feels close to Mall World",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Feels like the bakery is somewhere close to Mall World but cannot remember it clearly enough.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "bakery",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "somewhere close to mall world (unclear)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "really busy; amazing cakes and pastries; feels like everyone’s watching me waiting for me to hurry up and choose"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Looking at amazing cakes and pastries but never being able to choose what I want / taking too long.",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "watching",
+            "role": "customer",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Everyone feels like they’re watching and waiting for the dreamer to hurry up and choose.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "cakes and pastries",
+        "transaction_blocker": "Dreamer cannot choose / takes too long; feels pressured by others watching."
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single recurring bakery scene; no explicit layout, connections, or boundaries described."
+  },
+  "response_id": "resp_0b6e8e885604644400696e16f322a081949b5fd998c85eb785",
+  "usage": {
+    "input_tokens": 10085,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 770,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10855
+  }
+}

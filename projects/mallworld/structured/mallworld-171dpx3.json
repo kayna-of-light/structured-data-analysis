@@ -1,0 +1,210 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\171dpx3.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/171dpx3/museum_rooms_and_zoo_rooms/",
+  "title": "Museum rooms and zoo rooms",
+  "date": null,
+  "content_checksum": "58f22a3663822372f784e43847d1e96b6d5c0f5dee4f9226bcd84400d4b59ded",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:48:47.743156+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "stores that contain museum rooms tucked away inside"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "hotels that contain museum rooms tucked away inside"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "museum",
+        "location_name": "museum room (inside other spaces)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "tucked away inside stores and hotels",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "mixed",
+          "atmosphere": "peaceful",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "museum rooms tucked away inside stores and hotels; more quiet space; someone is quietly observing the room; making sure the displays are left undisturbed; offering information if asked; never approaching me or volunteering help or info; modern museum room (sometimes); caretakers/docents wear older victorian clothes"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "zoo room / aviary room (inside other spaces)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside of other spaces",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "zoo rooms inside of other spaces; no one working in them; only have giraffes, birds, walking paths, and a lot of foliage; basically aviary rooms with at least one giraffe in each one"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "Museum rooms are described as quiet spaces with displays that are kept undisturbed; a person is quietly observing the room.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "watching",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "caretakers or docents; always wearing older victorian clothes even if the museum room is modern; they just watch or go about their own small tasks unless directly approached",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "Caretaker/docent offers information only if asked; never approaches or volunteers help or info.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "guide",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "quietly observing; offering information if asked; never approaching me",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes recurring embedded 'museum rooms' within stores/hotels and 'zoo/aviary rooms' inside other spaces, but does not specify exact layout, order of visits, or explicit connections (doors/hallways). Spatial relation captured as 'tucked away inside' / 'inside of other spaces'."
+  },
+  "response_id": "resp_040ffa4b941a487200696e0bf3780081979b48a6145bb9fd26",
+  "usage": {
+    "input_tokens": 10169,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1656,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11825
+  }
+}

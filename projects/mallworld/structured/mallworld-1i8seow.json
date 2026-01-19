@@ -1,0 +1,296 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1i8seow.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1i8seow/dillards_meets_target_meets_dive_bar_sounds_fun/",
+  "title": "Dillards meets Target meets Dive Bar (sounds fun, right??)",
+  "date": null,
+  "content_checksum": "0fe7b9c2bcd6c030c8c8e3c2c7a84308ac39e053b7ebc0cefc80120c2c5d1ef5",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:48:39.728441+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "adult",
+        "age_explicit": 35,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "Dillards/Target (department store type; 'like dillards/kohls meets target')",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“department store type (like dillards/kohls meets target). Lots of escalators and event spaces within it.”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "Event spaces (within the department store)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the department store",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“event spaces within it”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "restaurant",
+        "location_name": "Dive bar with live music",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "associated with the same 'mall world' the dreamer has been going to",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“a dive bar with live music!!!”"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "guest",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "Clothes area (Limited Too clothes)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside Dillards/Target",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "“My toddlers were with me and we were looking at clothes (from limited too!!).”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_mentioned",
+        "outcome": "not_mentioned",
+        "qualities": "“Lots of escalators” (within the department store). An escalator is involved in a child tripping incident."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_4",
+        "interaction_type": "search",
+        "description": "Dreamer is with toddlers looking at clothes, specifically “from limited too!!”.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "Dreamer’s toddlers",
+            "name_or_relation": "my toddlers"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "They see another mom and her daughter trying on a “pink and white striped dress.”",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a mom",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "child",
+            "demeanor": "neutral",
+            "role": "customer",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "her daughter",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "They meet a pair of adult sisters with their kids; the sisters are “so helpful to us.”",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "helpful",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "pair of adult sisters with their kids",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "helpful",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "blonde sister",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "their kids",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Dreamer’s daughter trips on the escalator; the blonde sister catches her and helps the dreamer.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "dreamer’s daughter",
+            "name_or_relation": "my daughter"
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "helpful",
+            "role": "companion",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "the blonde sister",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial detail is limited to the department-store-like setting containing many escalators and event spaces; the dive bar is mentioned as part of the same mall world but not clearly visited in the ‘last night’ segment. ‘Last night’ provides minimal temporal anchoring but no dream-time flow qualities."
+  },
+  "response_id": "resp_0dd5f30dd0a4fa6300696e19f7ab408190a9e0de74e598c996",
+  "usage": {
+    "input_tokens": 10210,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 2255,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12465
+  }
+}

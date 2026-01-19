@@ -1,0 +1,193 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1h8j9h1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1h8j9h1/areas_outside_of_the_mall_mimic_areas_i_know_irl/",
+  "title": "areas outside of the mall mimic areas i know irl",
+  "date": null,
+  "content_checksum": "af6afec39fbc800c8efd9d92f9b8127aaac6b1b02a95bd5b3d9d6d60b0cf160d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:39:21.635999+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others experience Mall World/outside areas mimicking their real-life town; recurring phone malfunction in dreams",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "neighborhood",
+        "location_name": "(area thought to be) Mansion Park",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "area in the town i live in (real-life analog)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"ended up at where i thought was an area that we call mansion park in real life\"; asked a guy where i was and he said \"center city\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "downtown",
+        "location_name": "Center City",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "identified as the place the dreamer is in when asking a guy where they are",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Guy answers location as \"center city\""
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "mall",
+        "location_name": "(local mall)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the weird version of the town the dreamer lives in; outside looks like their local mall",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"i can get to the mall, but it's also my local mall on the outside\""
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer was kidnapped and escaped, then ended up in an area they thought was Mansion Park.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer asked a guy where they were; he replied \"center city\".",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"a guy\" (provided location answer)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer tried to use the guy's phone to tell someone where they were; cell phones never work in their dreams and it was \"incredibly frustrating.\"",
+        "outcome": "failed",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "guy whose phone the dreamer tried to use",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "\"cell phones never work in my dreams\""
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Kidnapping location and exact route to the mall are not described; mall is mentioned as accessible and resembling the dreamer’s local mall from the outside, but no internal mall details are provided. Visit order for the mall is not stated."
+  },
+  "response_id": "resp_008cd0c9f24a013400696e17d549c081979ddf7db9eb12f94a",
+  "usage": {
+    "input_tokens": 10211,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1083,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11294
+  }
+}

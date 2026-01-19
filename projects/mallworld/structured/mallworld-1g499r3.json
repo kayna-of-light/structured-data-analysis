@@ -1,0 +1,187 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1g499r3.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1g499r3/airport_again_vivid/",
+  "title": "Airport again (VIVID)",
+  "date": null,
+  "content_checksum": "a6ce202f6b4368f5627d61fcfb47bd2bae986aed8bec1ef6258da242566f553d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:30:54.931688+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "thinking \"holy shit I'm here\" and needing to look and remember surroundings",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "airport",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“thrown into the airport”; “people walking past me”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "airport_security",
+        "location_name": "turnstiles",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the airport",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“turnstiles”; “They were all going to these turnstiles with red tickets”"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "interrupted",
+        "qualities": "moving through airport flow toward turnstiles; woke up “as I was going through”"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Noticed people walking past; noted specific individuals and that they had red tickets.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a man with overalls",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "brunette women",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "people walking past me",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "People with red tickets moved toward/through the turnstiles; dreamer was going through when they woke up.",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "They were all going to these turnstiles with red tickets",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Airport is described as a recurring setting (“Airport again”). Spatial detail is limited to the presence of turnstiles within the airport and movement toward/through them. Time is only indicated by sequence and waking during traversal."
+  },
+  "response_id": "resp_0fa677865038cf1f00696e15db25848190a2bf99d360493ba0",
+  "usage": {
+    "input_tokens": 10111,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1351,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11462
+  }
+}

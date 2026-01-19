@@ -1,0 +1,123 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\18xzf92.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/18xzf92/im_a_plumber_in_mall_world_and_i_dont_like_it/",
+  "title": "I’m a plumber in mall world and I don’t like it",
+  "date": null,
+  "content_checksum": "0b3cec8e9f6a304e903dd8ba180fb88e99880c72ec85b5334cd7ba4142b2a3bf",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:01:43.282631+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have jobs in Mall World (especially unpleasant ones) and whether they only dream of working",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "plumber (repairing leaks, turning water off, setting toilets, soldering piping, mounting urinals, installing pedestal sinks)",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Dreamer may be responsible for repairing damaging effects of other people’s dreams on the world.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_public",
+        "location_name": "a GIGANTIC bathroom",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "felt high / unknown how many floors up",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "destroyed",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "flood",
+          "raw_description": "A gigantic bathroom. Two rows of walls ran down through the central area, about twenty five feet across each, with a row of stalls on each side of both. The exterior wall was lined with urinals, a rectangle about 50x25 feet in total. There’s a wall of sinks visible from the doorway, and the actual bathroom can be entered through openings at each end of the walls. Normally looks like that. In this dream it was destroyed like a group came through with sledgehammers; not a single toilet was intact; no urinals on the walls; every single opening was spraying; janitors had yellow blockade things set up; flood overflowed like a waterfall into the central area."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "employee",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer repairs extensive bathroom damage and flooding: turns water off; loads shards of porcelain into a gondola; sets toilets; solders piping; mounts urinals; installs pedestal sinks; chases down leaks.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "janitors struggling to fight the flood; had yellow blockade things set up on either side",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer observes the bathroom in its normal layout versus its destroyed state (toilets broken, urinals missing, water spraying everywhere, flooding overflowing like a waterfall into the central area).",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Spatial layout extracted from the described bathroom geometry (rows of walls, stalls on both sides, exterior wall urinals, sink wall visible from doorway, openings at each end). Vertical position only described as 'felt high' with unknown floor count. 'Spent my entire night' treated as temporal information but no explicit time-flow distortion described."
+  },
+  "response_id": "resp_05bd2286e57da73900696e0f012888819499991bde9c7808cc",
+  "usage": {
+    "input_tokens": 10418,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1079,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11497
+  }
+}

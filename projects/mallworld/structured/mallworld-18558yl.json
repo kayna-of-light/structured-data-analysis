@@ -1,0 +1,203 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\18558yl.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/18558yl/what_is_happening_to_me_part_2/",
+  "title": "what is happening to me... (part 2)",
+  "date": null,
+  "content_checksum": "cd28677aeb2c78c45641fbba25b597180a216dd9d599c7ffeef08fac52b59cc0",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:57:35.942184+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "not_mentioned",
+      "final_emotion": "not_mentioned",
+      "author_theory": "These experiences happen during daytime naps; author suggests inability to relax completely / not wanting to sleep too long / not used to sleeping at that time may relate.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "my room",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "daytime",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Reality mixes with dreams: sees the room as it is; can talk to someone who comes in; simultaneously sees impossible things."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "a street in my city",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "False awakening: 'woke up' in the middle of a street in my city, with a shopping cart in my hand and very disconcerted."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "lost",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "a doorway",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": "on the street in my city",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "A lady helped me sit in a doorway; later I realized the doorway was wrong: it 'didn't belong to that street, but to another nearby.'"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 3
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer talks with 'my boy' about the game he was playing while simultaneously seeing dolls begin to come down from shelves.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "referred to as 'my boy'",
+            "name_or_relation": "my boy"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "search",
+        "description": "Dreamer becomes scared and searches for their cell phone.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "A lady asks if the dreamer is okay ('you have a bad face') and helps the dreamer sit in a doorway.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "helpful",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a lady",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer suspects it is a dream; looks around for something wrong; initially cannot find anything; later identifies the doorway as not belonging to that street but to another nearby.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes multiple nap-related episodes: (1) mixed reality/dream in the bedroom with dolls moving; (2) highly realistic false awakening on a city street with a shopping cart and a doorway that is spatially inconsistent (belongs to another nearby street). No explicit directions, lighting, or detailed layout connections given."
+  },
+  "response_id": "resp_07e5e9b2b165cd2c00696e0e0035dc8190a820cf01a1a5ac3b",
+  "usage": {
+    "input_tokens": 10473,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1593,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12066
+  }
+}

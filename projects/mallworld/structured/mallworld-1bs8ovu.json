@@ -1,0 +1,226 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1bs8ovu.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1bs8ovu/rocket_plane_travel_to_work/",
+  "title": "Rocket plane travel to work",
+  "date": null,
+  "content_checksum": "fd80d7885bf7882f3c6903c64906976c882477064f2c81060cfd11de58b0760e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:12:39.588252+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/33mus41isnrc1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_map_drawing",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": "Whether others have experienced rocket-plane travel / space-destination flights in the mallworld airport",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "compressed",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "work (job on another continent)",
+      "initial_emotion": "nervous and scared; urgency from being late",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "airport",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the same place as mallworld",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Airport in the same place as mallworld; had flight times for places like the moon/lunar airport, mars airport and other places."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "airplane",
+        "location_name": "plane like rocket",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "departing from the airport",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "During takeoff: face being pulled back a little; floating in seats; then being pushed back in seats. Landing was rough and crazy. Flight was like 5 mins altogether. After getting out, it was a plane like a rocket."
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "another continent (work destination)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "reached by flight from the airport",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Destination described as another continent for work; landing occurred there."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Dreamer was late but made it onto the plane."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "flying",
+        "direction": "unknown",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Takeoff sensations: face pulled back; floating in seats; then pushed back. Flight duration ~5 minutes. Landing was rough and crazy."
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "not_applicable",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "After landing, dreamer got out of the craft and saw it was a plane like a rocket."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer was late for a plane that would take them to another continent for work, but they made it.",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "During takeoff and flight, dreamer experienced being pulled back, then floating in seats, then being pushed back; landing was rough and crazy; flight lasted about 5 minutes and it was their first time.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Airport displayed flight times for destinations like the moon/lunar airport, mars airport, and other places.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "After exiting the craft, dreamer saw it was a 'plane like rocket.'",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "other",
+        "description": "Dreamer almost woke themselves up from nervousness/scaredness but 'couldn't' because they knew they needed to make it to the job or they wouldn't be allowed to come back.",
+        "outcome": "prevented",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Nearly waking up; felt unable to wake because they needed to make it to the job to be allowed to come back."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Map image is a simple drawing showing a rocket/plane traveling along a curved path from one landmass to another on a blue Earth-like sphere, with a yellow moon-like body in black space; no labeled terminals or interior airport layout shown."
+  },
+  "response_id": "resp_02ff66eadd2de40500696e114a75408190bdffb3d20c342d5e",
+  "usage": {
+    "input_tokens": 11949,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 1872,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13821
+  }
+}

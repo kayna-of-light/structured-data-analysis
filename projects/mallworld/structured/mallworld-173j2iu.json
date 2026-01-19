@@ -1,0 +1,113 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\173j2iu.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/173j2iu/i_often_dream_that_i_own_several_aquariums_with/",
+  "title": "I often dream that I own several aquariums with far too many animals.",
+  "date": null,
+  "content_checksum": "ebe47e326dddd5ba6a37e01d4321f8b32254c3625e987141dce25e31e6ee1adc",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:49:31.556028+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": "owns several aquariums",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "aquarium",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "flood",
+          "raw_description": "several aquariums with far too many animals; overpopulated species splashing water everywhere; animals jumping out onto the floor; tanks the size of their bodies; some fish far too big for captivity"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "owner",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer scrambling to separate many overpopulated species; water splashing everywhere; animals jumping out onto the floor.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "not_mentioned",
+            "role": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "fish; some far too big for captivity; held in tanks the size of their bodies",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Only one setting is described (aquariums/tanks). No explicit layout, transitions, or boundaries. Recurrence inferred from 'I often dream'. Temporal data marked true due to explicit within-dream sequencing ('In one dream... scrambling... splashing... jumping out')."
+  },
+  "response_id": "resp_0af07c5a0723dacc00696e0c236cb481958042054c5bb95793",
+  "usage": {
+    "input_tokens": 10086,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 778,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10864
+  }
+}

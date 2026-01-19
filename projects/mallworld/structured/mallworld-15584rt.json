@@ -1,0 +1,223 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\15584rt.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/15584rt/ever_had_shared_dreams_with_someone/",
+  "title": "Ever had shared dreams with someone?",
+  "date": null,
+  "content_checksum": "61bfe777190c4785a3fda964ef79b222107e59a28fc6d4198aef5bd9c0651f1a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:42:51.558988+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "multiple_dreams",
+        "mentions_other_dreamers",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking whether others have had shared dreams/coincidences with real people; invites stories.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "variation",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Author suggests they may have 'met' their mother in a shared dream; asks others to share similar coincidences.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "white fog",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "in a white fog"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "patient",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "restaurant",
+        "location_name": "fancy dinner",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "not entirely welcome at a fancy dinner"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "guest",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "unspecified",
+        "location_name": "xenophobic-themed nightmare setting",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "a nightmare with a xenophobic theme"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 3
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "A nurse tries to give the dreamer an injection in the foot.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a nurse",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "In a parallel/related dream the same night, the author's mother (a doctor) tries to inject the foot of a baby in white fog.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "my mother, a doctor",
+            "name_or_relation": "mother"
+          },
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a baby",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "The author and their mother both dream they are not entirely welcome at a fancy dinner.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "my mother",
+            "name_or_relation": "mother"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "other",
+        "description": "After Putin launched the attack on Ukraine, the author has a xenophobic-themed nightmare that wakes them up; immediately after waking, they receive a news notification about the attack.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post contains multiple brief dream vignettes with minimal environmental detail; 'white fog' treated as a location-like setting. No explicit Mall World locations (mall/hotel/school) described."
+  },
+  "response_id": "resp_0f6f90b5d1698de800696e0a8ddf848195b684ab108c45ac63",
+  "usage": {
+    "input_tokens": 10177,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1641,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11818
+  }
+}

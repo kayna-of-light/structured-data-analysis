@@ -1,0 +1,283 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1fr3bbx.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1fr3bbx/please_help_me_find_my_friends/",
+  "title": "Please help me find my friends",
+  "date": null,
+  "content_checksum": "3a9620101222424764a0bfbebddd6a3e7ae84f2e15936b7940fd79ec4c4da89d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:29:59.445399+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "shared_dream_claim",
+      "content_flags": [
+        "mentions_other_dreamers",
+        "multiple_dreams",
+        "childhood_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking to find/identify other people who experienced the same recurring non-dream 'travel' to a facility/program and later portal-based dimension trips",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "multiple",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "emotionally distressed (typing about events is 'emotionally draining'; 'traumatizing')",
+      "author_theory": "Not a dream; calls it 'Travel summoning or Ascension/Accession'; others think it may be astral projection",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hospital",
+        "location_name": "hospital or research facility (program facility)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "crowded",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"what looked like a hospital or research facility\"; \"been there so many times, I know it like the back of my hand\"; \"There was other kids too. A lot of kids.\"; staff \"super nice at first\"; workers were \"scientists and doctors\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "student",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "room with an object/portal device (inside facility)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the facility; brought into a room where there was an object",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "threatening",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"brought into a room where there was an object. They turned it on\"; \"they needed to go threw it... a portal\"; staff \"brought out weapons, giving us an ultimatum\""
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "prisoner",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "other dimension / new planet-like place",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "through the portal device",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "sparse",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"lost on what seemed like a new planet\"; \"We could breathe just fine, gravity was similar\"; \"stranded in this dimension for almost a year\"; \"We lost someone there. We were injured.\"; described as \"traumatizing\""
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "\"We were brought into a room\" (movement within facility)"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "portal",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "portal device/object was \"turned... on\"; group was \"forced into the portal\" after threats; one person pushed in first, another followed"
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "unknown",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "\"eventually we got back\" (return mechanism not described)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Repeated testing of children/participants: initially basic academic and morality/physical tests; later tests involving abilities (precognition/clairvoyance/telekinesis/other).",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "friendly",
+            "role": "staff",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "scientists/doctors/workers; used fake names; \"super nice at first\"; would say things were \"classified\" or to be learned later",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "student",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "\"other kids too. A lot of kids\"; some \"failed\" and \"didn't come back\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Classes/training to prepare for tests; classes on many abilities (repeated attempts to 'awaken'); also touched on mundane topics (history/math/science, mainly science).",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "neutral",
+            "role": "teacher",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "workers/scientists/doctors providing education and test preparation",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "student",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "group of kids/participants in program",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "Staff presented first 'assignment' to enter a portal and explore; participants refused (arguing/yelling/sobbing/crying). Staff pushed one person in; another followed; remaining were forced in after staff produced weapons and gave an ultimatum (later claimed it was a scare tactic).",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "threatening",
+            "role": "authority",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "facility staff/doctors/scientists; produced weapons; issued ultimatum; pushed a participant into portal",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "confusing",
+            "role": "companion",
+            "is_known": "not_mentioned",
+            "is_recurring": "implied",
+            "description": "other participants (now adults) in their 20s; one pushed in; another chased after; group forced through",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "escape",
+        "description": "Group stranded in the other dimension for almost a year; could breathe; gravity similar; injuries occurred; one person was lost; eventually they returned.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "companion",
+            "is_known": "not_mentioned",
+            "is_recurring": "implied",
+            "description": "group of participants traveling together; \"We were injured\"; \"We lost someone there\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes many recurring episodes over years; specific facility layout intentionally withheld. Portal room and other-dimension segment are described, but return mechanism and detailed spatial positions (floors/directions) are not provided. Time info includes 'almost a year' stranded and lifecycle progression (childhood to 20s)."
+  },
+  "response_id": "resp_09e1cf48725e574300696e157e64688190a73bf7bc8fa10d60",
+  "usage": {
+    "input_tokens": 11307,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1849,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13156
+  }
+}

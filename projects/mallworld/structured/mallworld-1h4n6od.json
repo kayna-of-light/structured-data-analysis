@@ -1,0 +1,132 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1h4n6od.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1h4n6od/disney_park/",
+  "title": "Disney Park",
+  "date": null,
+  "content_checksum": "55a0e37a064a68135e0286856ae69b1970922fb04fa859dadbade685ddca8015",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:38:31.354252+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "lucid_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others also dream of repeatedly returning to a Disney-like theme park",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "chills down my spine (on recalling/recognizing the dream setting)",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "amusement_park",
+        "location_name": "Disney-like theme park (initially seems like Disney)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "wrong",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "At the beginning I think I’m in Disney, and then I’m lucid because I soon realise I’m not and everything isn’t how it should be - it feels very dystopian and I’m always lost"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer initially believes they are in Disney, then realizes it is not actually Disney and becomes lucid; everything feels 'not how it should be.'",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer is 'always lost' in the park.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Dreamer is 'prevented by forces in the dream from doing anything I want.'",
+        "outcome": "prevented",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "hostile",
+            "role": "blocker",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Forces in the dream preventing actions",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Forces in the dream prevent the dreamer from doing what they want"
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only one setting is described (Disney-like theme park) with minimal spatial layout details; 'forces' are mentioned without specific characters."
+  },
+  "response_id": "resp_089b27284ecf988e00696e17a755c081958239fb4397acf664",
+  "usage": {
+    "input_tokens": 10116,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 951,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11067
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hn8wm3.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hn8wm3/anyone_in_mallworld_last_night_get_trapped_in_an/",
+  "title": "Anyone in mallworld last night get trapped in an school and have to escape??",
+  "date": null,
+  "content_checksum": "9c807492f895cd7ba0194970b4e795f1743029489ee89f179a6b41a33264ad81",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:42:55.455446+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "shared_dream_claim",
+      "content_flags": [
+        "mentions_other_dreamers",
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others were in Mall World last night and got trapped in a school and had to escape",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "school",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "\"get trapped in an school\"; \"escaping with with a huge group of people\"; \"The place felt familiar\""
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "not_mentioned",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "yes_explicit",
+        "crossing_outcome": "succeeded",
+        "description": "School described as a place where they were \"trapped\" and then escaped."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer and a huge group escaped the school; people were trying to find their families.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "threatening",
+            "role": "blocker",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"some old lady that bragged about having a gun\"; \"really cocky\"",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "confusing",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"a huge group of people\" escaping; \"all trying to find their family’s\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Dreamer shot an old lady who bragged about having a gun; then jumped on her back when she turned around.",
+        "outcome": "succeeded",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "threatening",
+            "role": "blocker",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Old lady, cocky, bragged about having a gun; described as the reason they were trapped.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Limited spatial detail beyond being trapped in a school and escaping. Vividness noted; no explicit time-of-day or layout described."
+  },
+  "response_id": "resp_0a9195ad6559387b00696e18af38a08195b5fa40b840a7d422",
+  "usage": {
+    "input_tokens": 10108,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 792,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10900
+  }
+}

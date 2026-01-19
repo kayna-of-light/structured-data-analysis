@@ -1,0 +1,180 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1i42fvm.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1i42fvm/road_through_ocean/",
+  "title": "Road through ocean",
+  "date": null,
+  "content_checksum": "9ad3f414f9ea1a9407284f3803048431a4c0bd0b276ed3c81a131a5024e45966",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:47:34.595429+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been on the same recurring flooded ocean road",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": 20,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "road through ocean (flooded road)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "surrounded by ocean in all directions except forward where the road continues",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "raw_description": "“a road that is now being flooded by the ocean”; “in every other direction is angry sea as far as can be seen”; “water is coming over the road”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "car (driving with children)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "on the flooded ocean road",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "flood",
+          "raw_description": "“driving with my children in the car trying to get away from some sort of disaster”; “water… leaking through the doors”; “we begin to just float away into the waves”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "vehicle",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "partial",
+        "qualities": "Driving forward on a road that is being flooded by ocean water; eventually the car floats away into waves."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "ocean_water",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_mentioned",
+        "description": "Road has ocean on all sides: “in every other direction is angry sea as far as can be seen,” while “I can see the road going forward.”"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Driving with children trying to get away from “some sort of disaster.”",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "the dreamer’s children (in the car)",
+            "name_or_relation": "my children"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Ends up on a road being flooded by the ocean; can see the road continuing forward; ocean in every other direction.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "other",
+        "description": "Ocean water comes over the road and leaks through the car doors; eventually floods enough that the car begins to float away into the waves.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "No mall/school/hotel elements described; primary setting is a flooded road surrounded by ocean. Time flow not described, but recurrence and sequence of events (driving → flooding → floating away) is described."
+  },
+  "response_id": "resp_071e10993c24561c00696e19a61ff4819388d6ca5c2813a6cf",
+  "usage": {
+    "input_tokens": 10141,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1427,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11568
+  }
+}

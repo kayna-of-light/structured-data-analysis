@@ -1,0 +1,105 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1blx0q1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1blx0q1/friends_in_mallworld/",
+  "title": "Friends in Mallworld",
+  "date": null,
+  "content_checksum": "213c016638a8da6c3ec6479e84b7130bbf6bd450cfb46b29484216d8831b9bdb",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:10:13.945116+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have recurring 'set of friends' in Mall World dreams and recurring events of running away and fighting people/creatures; mentions 'university' setting",
+      "should_skip_extraction": true,
+      "skip_reason": "No specific dream scene described (no concrete locations, sequence, or spatial layout); primarily a question about shared recurring elements."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unknown",
+        "interaction_type": "escape",
+        "description": "Dreamer reports recurring scenario of being with a consistent-feeling 'set of friends' and 'run away' from others.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "A set of friends whose faces are not remembered on waking, but the dreamer 'knows it's the same people every time'.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unknown",
+        "interaction_type": "conflict",
+        "description": "Dreamer reports recurring scenario of 'fight these people (creatures)'.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "People/creatures the dreamer fights; not recognized from waking life.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post contains recurring-elements description (friends, running away, fighting people/creatures) and frequency ('like every night') but no concrete, extractable locations or spatial relations beyond a general mention of 'the university'. Interactions are recorded with unknown location."
+  },
+  "response_id": "resp_0ea7114a8ea0d70100696e10f9e3f08194b88a5a86a043d9f7",
+  "usage": {
+    "input_tokens": 10097,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 747,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10844
+  }
+}

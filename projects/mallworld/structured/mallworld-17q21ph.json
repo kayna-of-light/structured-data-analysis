@@ -1,0 +1,186 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17q21ph.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17q21ph/weather_in_mallworld/",
+  "title": "Weather in MallWorld",
+  "date": null,
+  "content_checksum": "6b099e42af38028472796b219cafb41809e93885dc140150fd084a00bd95dd5b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:54:49.488338+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "mentions_other_dreamers",
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "What type of weather occurs in others' MallWorld dreams; author shares two example dream scenarios (rain/thunder at mall food court; snow outside college student center/cafeteria).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "multiple",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_food_court",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "moderate",
+          "cleanliness": "not_mentioned",
+          "water_presence": "rain",
+          "raw_description": "Mall food court \"not so brightly lit\"; \"semi-bright incandescent lights higher up\"; ceiling \"about three or four stories up\"; \"ceiling skylights\" overhead; sky visible through skylights is \"dark from being overcast but not night\"; \"murmur of conversation\"; \"occasionally hear thunder from the outside\"; \"steady rain hitting the skylights\"."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "school",
+        "location_name": "college campus",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "On a \"college campus\"; later described being with friends and looking out windows at winter weather."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "student",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "school_cafeteria",
+        "location_name": "student center or cafeteria",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "on a college campus",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "In a \"student center or cafeteria\"; \"snowing outside\"; dreamer \"walking around or looking out of the windows\"; with friends; \"marveling at the wintery weather\"."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "student",
+        "visit_order": 3
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Hears murmur of conversation; hears occasional thunder outside; hears steady rain hitting skylights; observes overcast dark sky through skylights.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Implied other people present via \"murmur of conversation\".",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "social",
+        "description": "Walking around or looking out windows with friends; marveling at snowy/wintery weather.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "friendly",
+            "role": "companion",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Friends present with the dreamer.",
+            "name_or_relation": "friends"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question, but includes two example dream scenarios. Spatial details are limited to interior features (skylights, high ceiling) and being on a college campus in/near a student center/cafeteria with windows."
+  },
+  "response_id": "resp_085afddde0645df900696e0d63a754819387cc03f4bee972ab",
+  "usage": {
+    "input_tokens": 10201,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1490,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11691
+  }
+}

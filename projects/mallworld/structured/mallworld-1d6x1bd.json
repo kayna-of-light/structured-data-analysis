@@ -1,0 +1,119 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1d6x1bd.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1d6x1bd/i_keep_going_to_an_enormous_elaborate_hotel_each/",
+  "title": "I keep going to an enormous elaborate hotel each night",
+  "date": null,
+  "content_checksum": "2b48cba8babe4837a943629671bb8f9d760343dbb9a442377365d6c0efb69ff2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:17:59.968891+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have similar recurring dreams of an enormous elaborate hotel",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“enormous elaborate hotel”… “must be 200 stories high”… “taller than anything”… exploring “weird stair wells and hidden spaces within the hotel”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel_room",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the hotel",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Room is “very elaborate with ornate detailing on the walls, staircases and big golden banisters, multiple bedrooms”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial info is descriptive (very tall hotel; stairwells/hidden spaces; room inside hotel) but lacks explicit routes between distinct named areas. Temporal info present only as recurrence (“most nights”), not in-dream time flow."
+  },
+  "response_id": "resp_0de9ad4da4f85e0300696e12d6df048196883ad4116d52547c",
+  "usage": {
+    "input_tokens": 10098,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 838,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10936
+  }
+}

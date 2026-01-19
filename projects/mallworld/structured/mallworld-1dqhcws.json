@@ -1,0 +1,132 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1dqhcws.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1dqhcws/mall_world_as_premonition/",
+  "title": "Mall World as premonition?",
+  "date": null,
+  "content_checksum": "61571e22a0db479b52f937dd3e867d59a13b3a4b46ef9f91f40f2701ecdac036",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:20:03.795972+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether Mall World dreams can be premonitions (based on dream preceding Parkland shooting)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "first_visit",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "very scared",
+      "final_emotion": null,
+      "author_theory": "Mall World dream as premonition (dream occurred the day before Parkland shooting)",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "The Mall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "Mall was seemingly empty but a part of me knew it wasn’t; hiding because there were open shots being fired; we heard shots getting closer"
+        },
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer is in the mall hiding while shots are being fired; runs to new hiding places as shots get closer; feels threatened.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "unknown shooter(s) firing open shots",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "other people present but not seen; 'we were all threatened and running to new hiding places'",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Despite the mall appearing empty, the dreamer reports knowing other people were there.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Only one location explicitly described (the mall). Spatial layout details (stores/levels/exits) not provided; movement described only as changing hiding places within the mall. Time sequence includes 'in 2018' and 'the next day' relative to waking event; dream time-flow not described."
+  },
+  "response_id": "resp_050a50b353d3b80800696e13522a40819391c21c30a5393867",
+  "usage": {
+    "input_tokens": 10125,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 954,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11079
+  }
+}

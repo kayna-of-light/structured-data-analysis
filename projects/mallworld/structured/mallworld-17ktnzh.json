@@ -1,0 +1,205 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17ktnzh.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17ktnzh/dream_from_last_night/",
+  "title": "Dream from last night",
+  "date": null,
+  "content_checksum": "242642cb3adf4a02a6069b9361225d0d94430e57f9e139a32484b7386b8bfb2f",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:54:20.949328+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "mentions_other_dreamers",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if anyone was in the same place; asking if others can relate; mentions possibly buying property in dream world",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "dorm",
+        "location_name": "college dorm world",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "mostly at my college dorm world last night, which is like a big college dorm or hotel with many rooms and hallways"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "fun house type thing (part of the college world)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "apparently part of the college world",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "trying to make it through like a fun house type thing that was apparently part of the college world; like an obstacle course I had to get through"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "house",
+        "location_name": "lake house",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "visited the lake house too, it was for sale"
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "unspecified",
+        "direction": "not_applicable",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "fun house/obstacle course described as part of the college world"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "unspecified",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "dreamer 'visited the lake house too'"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "Dreamer trying to make it through a fun house/obstacle course that was part of the college world; at the end there were AI performances that kept turning off (like animatronics shutting down).",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "2 friends I don’t really speak to anymore",
+            "name_or_relation": "friends"
+          },
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "AI performances that kept turning off; kind of like animatronics shutting down",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "transaction",
+        "description": "Lake house was for sale; dreamer thinks they might be buying a property in the dream world.",
+        "outcome": "ongoing",
+        "entities_involved": [],
+        "transaction_item": "property / lake house",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Spatial structure is described generally (many rooms/hallways; fun house is part of college world) but without specific directions/levels. Time is only specified as 'last night' and visit order is inferred from narrative sequence."
+  },
+  "response_id": "resp_0de01498295e91b200696e0d3fb0408197b2a81596fdd006e4",
+  "usage": {
+    "input_tokens": 10183,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 1600,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11783
+  }
+}

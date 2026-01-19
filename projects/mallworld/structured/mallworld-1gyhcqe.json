@@ -1,0 +1,104 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gyhcqe.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gyhcqe/endless_empty_dark_streets/",
+  "title": "Endless Empty Dark Streets",
+  "date": null,
+  "content_checksum": "bb681814a57913021129fa13286372a80e0c7c4dfa29ac59d9725227cd782b36",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:37:20.342063+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to similar recurring dream places (endless maze-like dark streets resembling São Paulo neighborhood).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "Endless empty dark streets (maze-like), like a random neighborhood in São Paulo",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "empty",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "long streets that look like mazes; endless empty dark streets; looks like the city of São Paulo in some random neighborhood"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer runs through long maze-like streets but 'never get there' (cannot reach destination).",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Two image URLs were provided but the images themselves were not available here for direct visual analysis; extraction relies on the text description of the street-maze setting. Recurrence described as 'almost every week' and 'always the same place'. No explicit boundary described; 'never get there' suggests an unreachable destination but destination is not specified."
+  },
+  "response_id": "resp_0f29b69f2fedbd4f00696e1763a4908190940ea33e1e98d3fe",
+  "usage": {
+    "input_tokens": 10187,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 731,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 10918
+  }
+}

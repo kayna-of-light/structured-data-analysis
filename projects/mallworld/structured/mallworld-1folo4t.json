@@ -1,0 +1,185 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1folo4t.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1folo4t/the_buses_in_the_school_world/",
+  "title": "The buses in the school world",
+  "date": null,
+  "content_checksum": "29c3e35deac20d00b4a187ac835ebeac9ed20fac08d343a2ae5ecbb46c7e03b6",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:29:18.237891+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others also experience needing to take buses home in school-world dreams and the stress of finding the right bus",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "stressful (trying to find which bus will take me to my house)",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "school",
+        "location_name": "school (school dreams)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "Usually in my school dreams I drive to school"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "student",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "bus",
+        "location_name": "bus home",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "used to go home from school",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "I have to take the bus home each time; stressful trying to find which bus will take me to my house; stuck riding with people that I don’t get along with"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "house",
+        "location_name": "my house (destination)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "destination of the bus ride",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "trying to find which bus will take me to my house"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "resident",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "vehicle",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "has to take the bus home each time; stressful trying to find which bus will take me to my house"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "search",
+        "description": "Trying to find which bus will take me to my house",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Usually stuck riding with people that I don’t get along with",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "people that I don’t get along with",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only high-level recurring pattern described (drive to school; must take bus home; destination is 'my house'). No detailed layout of school/bus stop/route or whether the correct bus is found."
+  },
+  "response_id": "resp_0eea17891ab7794d00696e1575d2d0819390977fc2e7d46ab1",
+  "usage": {
+    "input_tokens": 10073,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1385,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11458
+  }
+}

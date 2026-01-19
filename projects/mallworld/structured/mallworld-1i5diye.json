@@ -1,0 +1,204 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1i5diye.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1i5diye/recurring_dreams_of_forgetting_i_enrolled_in_a/",
+  "title": "Recurring Dreams of forgetting I enrolled in a class for a whole year until finals week.",
+  "date": null,
+  "content_checksum": "affb749f584e9862e0c644e2736f913eb4ef638b1bd8f2411ca036b441bcc16c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:47:36.902676+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "student",
+      "initial_emotion": null,
+      "final_emotion": "embarrassed",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "school",
+        "location_name": "old high school",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "dreams about my old high school even though I've graduated after many years"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "student",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "school_classroom",
+        "location_name": "English class classroom (room unknown)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the old high school; dreamer cannot find where the classroom is",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "enrolled in a class (specifically English)... don't go... because i don't know where the classroom is"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "no",
+        "dreamer_role": "student",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "online student portal / online class schedule (login required)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "can't look up my online class schedule... because i forgot the password to login to my student portal"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "no",
+        "dreamer_role": "student",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "Dreamer cannot locate the English classroom / room number, preventing attendance."
+      },
+      {
+        "location_id": "loc_3",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "Cannot access student portal / online schedule due to forgotten password."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dream theme: suddenly remembering near finals that the dreamer enrolled in English class almost a year ago.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "search",
+        "description": "Dreamer does not attend English class because they do not know where the classroom is / cannot find the room number.",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "task",
+        "description": "Dreamer attempts to look up online class schedule but cannot log in because they forgot the password to the student portal.",
+        "outcome": "failed",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "forgot password / cannot login"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Accumulated absences lead to feeling too embarrassed to show up even if the class is eventually found.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No physical layout details beyond inability to find the classroom; time is referenced via 'almost a year' and 'finals around the corner' but no explicit time-flow distortions described."
+  },
+  "response_id": "resp_0a711dd90345e6b200696e19be00a88196ba5c7914f37771ab",
+  "usage": {
+    "input_tokens": 10195,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1557,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11752
+  }
+}

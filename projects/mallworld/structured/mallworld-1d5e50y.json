@@ -1,0 +1,177 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1d5e50y.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1d5e50y/brick_buildings_part_of_school/",
+  "title": "Brick buildings part of school",
+  "date": null,
+  "content_checksum": "abdb83c0c14cf9c33b2819aba595bdf24c447574e527b1bd01aa9a480f9d6267",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:18:07.746998+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others explore a part of the school with brick buildings / a hippy shop within it",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "school",
+        "location_name": "part of the school with brick buildings",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“part of the school with brick buildings”; “giant school”; feels like being “on a field trip of some kind” and stepping away from the group"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "student",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "hippy shop",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in/at the brick-buildings part of the school",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "“hippy shop…with trinkets and paper supplies”; “yellow flyers or pamphlets…either in my hand or taped to the wall or being distributed”"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "A tall lady in long light blue garb with messy hair and long beads seems to answer the dreamer’s questions, but the dreamer never remembers what they ask.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "helpful",
+            "role": "other",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "Tall lady with long light blue garb, messy hair, long beads",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer feels they are on a field trip and has stepped away from their group to check out the shop.",
+        "outcome": "not_mentioned",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "a field trip group",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Often looking for pets, especially cats; trying to find them and hold them; concerned they’re lost in the giant school.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "my pets (my cats especially)",
+            "name_or_relation": "pets/cats"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No explicit movement paths described beyond being at the school area and stepping away to a shop. No explicit lighting/time-of-day/state details provided. Dreamer identity not explicitly stated; role inferred from “field trip” context."
+  },
+  "response_id": "resp_0f45638bf1a4e43a00696e12bf6fc481909611cea3625ecd19",
+  "usage": {
+    "input_tokens": 10161,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1348,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11509
+  }
+}

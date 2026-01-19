@@ -1,0 +1,107 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1c7lm9n.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1c7lm9n/popcorn_shag_acrylic_painting_by_me/",
+  "title": "“Popcorn &amp; Shag”, acrylic painting by me.",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T11:13:20.897598+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/s15rcqg1jcvc1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "“Popcorn & Shag” (acrylic painting) - interior room",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "normal",
+          "water_presence": "none",
+          "raw_description": "Empty interior room with wood-paneled wall (dark brown) on left/back, white wall on right, white ceiling; tan/brown floor; a white door set into the dark paneled wall; visible wall outlet on right wall; baseboard/trim line visible; no furniture or people."
+        },
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Single white door in the dark wood-paneled wall leading to an unseen adjacent space."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No text narrative provided; extraction based solely on a single attached image showing one interior room. Post appears to be artwork; treated as visualization rather than a narrated dream. Created an implied destination location (loc_2) for the door, but no details are visible."
+  },
+  "response_id": "resp_07d67608d870be7c00696e11b5e57881978af409938a8820f0",
+  "usage": {
+    "input_tokens": 11827,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 536,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12363
+  }
+}

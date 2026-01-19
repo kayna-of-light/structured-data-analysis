@@ -1,0 +1,149 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\184tulv.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/184tulv/centrifuge_metro/",
+  "title": "Centrifuge Metro",
+  "date": null,
+  "content_checksum": "e15c4c23fe282f984c1c3be2e95aa5a519582bbc7dcb08d1df270ce8391d21e1",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:57:23.603788+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have visited the same recurring dream city/metro system",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "terrified (first time there)",
+      "final_emotion": "stoked / happy (positive tone; 'Happy dreaming!')",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "densely populated dream city",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "packed",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "very densely populated city"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "subway",
+        "location_name": "metro system above the city",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "rose up above the city",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "metro system that rose up above it; only four short tracks made of cement spaced very far apart from each other in sort of a circle around the city; seemed to work like a centrifuge; train cars would fly from one track to another"
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "dangerous",
+        "outcome": "not_mentioned",
+        "qualities": "train cars would fly from one track to another; four short tracks of cement spaced far apart in a circle around the city; worked like a centrifuge"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Used/faced the metro system where train cars fly between four short cement tracks spaced far apart in a circle around the city.",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "In later visits, the city became familiar quickly; dreamer always knew how to get where they were going (unusual for them in dreams).",
+        "outcome": "succeeded",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "No specific buildings/stations named beyond 'city' and 'metro system'. Spatial layout is described conceptually: elevated metro with four short cement tracks far apart in a circle; cars fly between tracks. Time flow not described, but recurrence over 'a few years' and 'first time' vs later visits provides temporal sequencing."
+  },
+  "response_id": "resp_0f34711047539e6900696e0dfe458c81969d8a399165bbf0d5",
+  "usage": {
+    "input_tokens": 10179,
+    "input_tokens_details": {
+      "cached_tokens": 9728
+    },
+    "output_tokens": 1159,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 11338
+  }
+}

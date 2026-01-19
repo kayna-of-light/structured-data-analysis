@@ -1,0 +1,229 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\18ap53s.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/18ap53s/the_dorms/",
+  "title": "The dorms",
+  "date": null,
+  "content_checksum": "b3987f2b71e2eca4d38e6615a20ecacdddde2267e24fd140b9a7a3191cdb873e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:59:27.126604+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/wws997glbb4c1.jpg",
+    "https://i.redd.it/9o9s18glbb4c1.jpg",
+    "https://i.redd.it/uo09x6glbb4c1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have been to a 'dorms' area and similar places in Mall World",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "dorm",
+        "location_name": "“dorms” area (inside)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "not_mentioned",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Inside of a “dorms” area; there are a couple different dorms; some are more shabby; this (pics) is similar to the ones I’ve been to recently. Pic 1 is the most accurate."
+        },
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel",
+        "location_name": "hotel/apartment area (referenced)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "not_mentioned",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "raw_description": "previous AI art shared for the hotel/apartment area"
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "house",
+        "location_name": "houses (hallway similar)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "not_mentioned",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Pic 2 looks like the hallway in a lot of my houses."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "resident",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_4",
+        "location_type": "other",
+        "location_name": "apartment/outdoor shopping center (referenced)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "not_mentioned",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "crowding": "empty",
+          "cleanliness": "clean",
+          "water_presence": "none",
+          "raw_description": "Pic 3 looks more like the apartment/outdoor shopping center for me though."
+        },
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Long straight corridor with many doors on both sides (as depicted in pic 1)."
+      },
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_3",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Residential hallway with multiple white doors; one door open to a closet/storage space (as depicted in pic 2)."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "hallway",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Large multi-level interior corridor/atrium with balcony-like walkways on multiple floors along both sides (as depicted in pic 3)."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer and a friend from college have been staying in the dorms area.",
+        "outcome": "ongoing",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": null,
+            "name_or_relation": "friend from college"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily AI visualization with brief dream-context text. Spatial data is inferred from the images: dorm-like corridors with doors on both sides; a larger multi-level corridor/atrium. No explicit transitions between areas were described."
+  },
+  "response_id": "resp_01050b5857d13af600696e0e539e1481908a500f7df9577c34",
+  "usage": {
+    "input_tokens": 14613,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 1227,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15840
+  }
+}

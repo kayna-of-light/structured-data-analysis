@@ -1,0 +1,157 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\15r9jfw.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/15r9jfw/mall_travel_hubhotel/",
+  "title": "Mall travel hub/hotel?",
+  "date": null,
+  "content_checksum": "8b5b95902282463dcd0ea21cb3dc2fb08a96367e727530876a114f6a319d89b6",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T10:43:43.266265+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/lifcohyzk5ib1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "not_mentioned",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": "mall travel hub/hotel (unnamed)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "connected to/within the mall; escalators and stairs on one end of the building lead to places in the mall",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "crowding": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "water_presence": "none",
+          "raw_description": "\"velvet all over besides the gold accents\"; \"so many floors filled with hotel rooms and they never seem to end\"; \"lots of escalators and stairs\"; \"theres no signs you just know where it goes\"; \"on one end of the building\""
+        },
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_mentioned",
+        "outcome": "not_mentioned",
+        "qualities": "\"lots of escalators\" within the building; connect to many floors/places; located \"on one end of the building\""
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "\"lots of ... stairs (that lead to all sorts of places in the mall)\"; \"theres no signs you just know where it goes\"; stairs on one end of the building"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Implied internal access between many floors of hotel rooms that \"never seem to end\""
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer looks \"across the way\" and notices a lady watching them; then the dream ends (wakes up).",
+        "outcome": "interrupted",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "watching",
+            "role": "bystander",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"this lady watching me\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer navigates a multi-floor hotel/mall hub with many escalators and stairs; despite no signage, they \"just know where it goes.\"",
+        "outcome": "not_mentioned",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears to be an AI visualization (ornate red/gold multi-level interior) rather than a hand-drawn map; used only to supplement general visual qualities (bright artificial lighting, maintained ornate interior). Text provides the primary spatial detail (many floors; escalators/stairs on one end; connections to places in the mall; no signs but known destinations)."
+  },
+  "response_id": "resp_0101e4daa0b9f19c00696e0aac9f1481908f39f83ea927a514",
+  "usage": {
+    "input_tokens": 11347,
+    "input_tokens_details": {
+      "cached_tokens": 9856
+    },
+    "output_tokens": 926,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12273
+  }
+}
