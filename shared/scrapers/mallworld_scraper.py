@@ -44,8 +44,8 @@ SUBREDDIT = "TheMallWorld"
 REDDIT_JSON_BASE = f"https://www.reddit.com/r/{SUBREDDIT}"
 PULLPUSH_BASE = "https://api.pullpush.io/reddit/search/submission"
 REQUEST_DELAY = 2.0  # Reddit rate limits - be respectful
-MIN_CONTENT_LENGTH = 100  # Minimum characters for a useful dream report
-DEFAULT_MAX_POSTS = 1000
+MIN_CONTENT_LENGTH = 100  # Minimum characters for text-only posts (image posts bypass this)
+DEFAULT_MAX_POSTS = None  # No limit by default - capture everything
 SUBREDDIT_CREATED = 1632355200  # Sep 23, 2021 (from screenshot)
 
 
@@ -82,6 +82,69 @@ def fetch_reddit_json(endpoint: str, params: Optional[Dict[str, Any]] = None) ->
     return response.json()
 
 
+def extract_image_urls(data: Dict[str, Any]) -> List[str]:
+    """
+    Extract image URLs from a Reddit post.
+    
+    Reddit stores images in multiple places:
+    - `url` field for direct image links (i.redd.it)
+    - `preview.images[].source.url` for preview images
+    - `gallery_data` for multi-image posts
+    - `media_metadata` for gallery image details
+    
+    Args:
+        data: Reddit post data dict
+        
+    Returns:
+        List of image URLs (i.redd.it preferred, empty if no images)
+    """
+    images: List[str] = []
+    
+    # Check if this is a direct image post (url points to i.redd.it)
+    post_url = data.get("url", "")
+    if "i.redd.it" in post_url:
+        images.append(post_url)
+    
+    # Check for gallery posts (multiple images)
+    if data.get("is_gallery") and data.get("media_metadata"):
+        media_metadata = data.get("media_metadata", {})
+        gallery_data = data.get("gallery_data", {}).get("items", [])
+        
+        for item in gallery_data:
+            media_id = item.get("media_id")
+            if media_id and media_id in media_metadata:
+                media = media_metadata[media_id]
+                # Get the source (full resolution) image
+                if media.get("s", {}).get("u"):
+                    # URL is HTML-encoded, decode it
+                    img_url = media["s"]["u"].replace("&amp;", "&")
+                    # Convert preview URL to i.redd.it if possible
+                    if "preview.redd.it" in img_url:
+                        # Extract the image ID and construct i.redd.it URL
+                        # preview URLs look like: preview.redd.it/xxx.jpg?...
+                        import re
+                        match = re.search(r'preview\.redd\.it/([^?]+)', img_url)
+                        if match:
+                            img_url = f"https://i.redd.it/{match.group(1)}"
+                    images.append(img_url)
+    
+    # Check preview images as fallback (single image posts sometimes only have this)
+    if not images and data.get("preview", {}).get("images"):
+        for img in data["preview"]["images"]:
+            source = img.get("source", {})
+            if source.get("url"):
+                img_url = source["url"].replace("&amp;", "&")
+                # Try to convert preview URL to i.redd.it
+                if "preview.redd.it" in img_url:
+                    import re
+                    match = re.search(r'preview\.redd\.it/([^?]+)', img_url)
+                    if match:
+                        img_url = f"https://i.redd.it/{match.group(1)}"
+                images.append(img_url)
+    
+    return images
+
+
 def extract_post_data(post: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     """
     Extract relevant data from a Reddit post.
@@ -98,13 +161,19 @@ def extract_post_data(post: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     if data.get("removed_by_category") or data.get("selftext") in ["[removed]", "[deleted]"]:
         return None
     
-    # Skip posts that are just links or images
-    selftext = data.get("selftext", "").strip()
-    if not selftext or len(selftext) < MIN_CONTENT_LENGTH:
-        return None
-    
     # Skip mod posts, announcements, etc.
     if data.get("stickied") or data.get("distinguished"):
+        return None
+    
+    selftext = data.get("selftext", "").strip()
+    
+    # Extract image URLs
+    image_urls = extract_image_urls(data)
+    has_images = len(image_urls) > 0
+    
+    # For posts WITH images, allow shorter text (image is the content)
+    # For text-only posts, require minimum content length
+    if not has_images and len(selftext) < MIN_CONTENT_LENGTH:
         return None
     
     # Extract creation timestamp
@@ -124,6 +193,9 @@ def extract_post_data(post: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         "permalink": data.get("permalink", ""),
         "url": f"https://www.reddit.com{data.get('permalink', '')}",
         "link_flair_text": data.get("link_flair_text", ""),
+        "image_urls": image_urls,
+        "is_gallery": data.get("is_gallery", False),
+        "post_hint": data.get("post_hint", ""),
     }
 
 
@@ -223,7 +295,7 @@ class MallWorldScraper(BaseScraper):
             source_id=post["id"],
             url=post["url"],
             title=clean_text(post["title"]),
-            content=clean_text(post["selftext"]),
+            content=clean_text(post["selftext"]) if post["selftext"] else "",
             date_published=post["created_date"],
             metadata={
                 "author": post["author"],
@@ -231,36 +303,40 @@ class MallWorldScraper(BaseScraper):
                 "upvote_ratio": post["upvote_ratio"],
                 "num_comments": post["num_comments"],
                 "flair": post.get("link_flair_text", ""),
+                "image_urls": post.get("image_urls", []),
+                "is_gallery": post.get("is_gallery", False),
+                "post_hint": post.get("post_hint", ""),
             }
         )
     
     def scrape_all(
         self,
-        max_posts: int = DEFAULT_MAX_POSTS,
+        max_posts: Optional[int] = DEFAULT_MAX_POSTS,
         sort: str = "new"
     ) -> List[ScrapedCase]:
         """
         Scrape all available posts from the subreddit.
         
         Args:
-            max_posts: Maximum number of posts to scrape
+            max_posts: Maximum number of posts to scrape (None = no limit)
             sort: Sort method ("new", "hot", "top")
             
         Returns:
             List of scraped cases
         """
-        self.logger.info(f"Starting scrape of r/{SUBREDDIT} (max: {max_posts}, sort: {sort})")
+        limit_str = str(max_posts) if max_posts else "unlimited"
+        self.logger.info(f"Starting scrape of r/{SUBREDDIT} (max: {limit_str}, sort: {sort})")
         
         cases: List[ScrapedCase] = []
         after = None
         total_fetched = 0
         
-        while len(cases) < max_posts:
+        while max_posts is None or len(cases) < max_posts:
             posts, after = self.scrape_listing(sort=sort, after=after)
             total_fetched += len(posts) + (100 - len(posts))  # Approximate
             
             for post in posts:
-                if len(cases) >= max_posts:
+                if max_posts is not None and len(cases) >= max_posts:
                     break
                 
                 case = self.post_to_case(post)
@@ -369,11 +445,46 @@ class MallWorldScraper(BaseScraper):
             return []
     
     def extract_pullpush_post(self, post: Dict[str, Any]) -> Optional[Dict[str, Any]]:
-        """Extract post data from PullPush format."""
+        """Extract post data from PullPush format.
+        
+        Note: PullPush may not preserve all image metadata that Reddit's API has.
+        We extract what's available but image URLs may be incomplete for historical posts.
+        """
         selftext = post.get("selftext", "").strip()
         
-        # Skip removed/deleted/short posts
-        if selftext in ["[removed]", "[deleted]", ""] or len(selftext) < MIN_CONTENT_LENGTH:
+        # Skip removed/deleted
+        if selftext in ["[removed]", "[deleted]"]:
+            return None
+        
+        # Extract image URLs (PullPush format - may differ from Reddit API)
+        image_urls: List[str] = []
+        post_url = post.get("url", "")
+        if "i.redd.it" in post_url:
+            image_urls.append(post_url)
+        
+        # Check for gallery
+        is_gallery = post.get("is_gallery", False)
+        if is_gallery and post.get("media_metadata"):
+            media_metadata = post.get("media_metadata", {})
+            gallery_data = post.get("gallery_data", {}).get("items", [])
+            for item in gallery_data:
+                media_id = item.get("media_id")
+                if media_id and media_id in media_metadata:
+                    media = media_metadata[media_id]
+                    if media.get("s", {}).get("u"):
+                        import re
+                        img_url = media["s"]["u"].replace("&amp;", "&")
+                        if "preview.redd.it" in img_url:
+                            match = re.search(r'preview\.redd\.it/([^?]+)', img_url)
+                            if match:
+                                img_url = f"https://i.redd.it/{match.group(1)}"
+                        image_urls.append(img_url)
+        
+        has_images = len(image_urls) > 0
+        
+        # For posts WITH images, allow shorter text (image is the content)
+        # For text-only posts, require minimum content length
+        if not has_images and len(selftext) < MIN_CONTENT_LENGTH:
             return None
         
         created_utc = post.get("created_utc", 0)
@@ -392,6 +503,9 @@ class MallWorldScraper(BaseScraper):
             "permalink": post.get("permalink", ""),
             "url": f"https://www.reddit.com{post.get('permalink', '')}",
             "link_flair_text": post.get("link_flair_text", ""),
+            "image_urls": image_urls,
+            "is_gallery": is_gallery,
+            "post_hint": post.get("post_hint", ""),
         }
     
     def scrape_historical(self, chunk_days: int = 30) -> List[ScrapedCase]:
