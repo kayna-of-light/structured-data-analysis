@@ -1,0 +1,16 @@
+# Mall World Dataset Registry
+# References dream reports scraped from r/TheMallWorld subreddit
+
+name: mallworld_full
+description: Mall World dream reports from Reddit for phenomenological analysis
+version: "1.0.0"
+
+datasets:
+  mallworld:
+    description: r/TheMallWorld subreddit dream reports - full dataset
+    source_path: ../../../data/mallworld
+    files: "*"
+    exclude: []
+
+# Note: Data needs to be scraped from Reddit before extraction can run.
+# Consider creating a scraper in shared/scrapers/mallworld_scraper.py

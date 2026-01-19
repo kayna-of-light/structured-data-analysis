@@ -8,6 +8,7 @@ Available scrapers:
 - nderf: Near Death Experience Research Foundation (nderf.org)
 - iands: International Association for Near-Death Studies
 - pmc: PubMed Central (via OAI-PMH and E-utilities)
+- mallworld: r/TheMallWorld subreddit dream reports
 - radical_remission: Radical Remission Project database (future)
 - lourdes: Lourdes Medical Bureau documented cases (future)
 - ions: Institute of Noetic Sciences (future)
@@ -28,6 +29,7 @@ from .nderf_scraper import NDERFScraper
 from .iands_scraper import IANDSScraper
 from .pmc_scraper import PMCScraper
 from .radical_remission_scraper import RadicalRemissionScraper
+from .mallworld_scraper import MallWorldScraper
 
 __all__ = [
     # Base utilities
@@ -44,6 +46,7 @@ __all__ = [
     "IANDSScraper",
     "PMCScraper",
     "RadicalRemissionScraper",
+    "MallWorldScraper",
     # Logging
     "logger",
 ]
