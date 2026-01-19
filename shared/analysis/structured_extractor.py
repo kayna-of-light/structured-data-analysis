@@ -47,6 +47,7 @@ from typing import (
     TypeVar,
 )
 
+import httpx
 import requests
 from dotenv import dotenv_values
 from openai import APIStatusError, OpenAI, OpenAIError, RateLimitError
@@ -125,12 +126,12 @@ def _read_json(path: Path) -> Mapping[str, object]:
 # IMAGE HANDLING
 # =============================================================================
 
-def download_image(
+async def download_image(
     url: str,
     cache_dir: Optional[Path] = None,
     timeout: float = 30.0,
 ) -> Optional[Tuple[bytes, str]]:
-    """Download an image from a URL with content-based caching.
+    """Download an image from a URL with content-based caching (async version).
     
     Uses SHA256 hash of image content as filename to avoid downloading
     duplicates from different URLs. Extension preserves media type.
@@ -163,10 +164,11 @@ def download_image(
     archive_url = None
     if "i.redd.it" in url or "preview.redd.it" in url:
         try:
-            # Check Wayback Machine availability
+            # Check Wayback Machine availability (async)
             wayback_api = f"https://archive.org/wayback/available?url={url}"
-            wayback_response = requests.get(wayback_api, timeout=5)
-            wayback_data = wayback_response.json()
+            async with httpx.AsyncClient() as client:
+                wayback_response = await client.get(wayback_api, timeout=5)
+                wayback_data = wayback_response.json()
             
             closest = wayback_data.get("archived_snapshots", {}).get("closest")
             if closest and closest.get("available"):
@@ -178,66 +180,67 @@ def download_image(
     # Try archive first if available, then fallback to direct URL
     urls_to_try = [archive_url, url] if archive_url else [url]
     
-    for attempt_url in urls_to_try:
-        try:
-            headers = {
-                "User-Agent": "MallWorldResearch/1.0 (Academic research)",
-                "Accept": "image/*",
-            }
-            response = requests.get(attempt_url, headers=headers, timeout=timeout)
-            response.raise_for_status()
+    async with httpx.AsyncClient() as client:
+        for attempt_url in urls_to_try:
+            try:
+                headers = {
+                    "User-Agent": "MallWorldResearch/1.0 (Academic research)",
+                    "Accept": "image/*",
+                }
+                response = await client.get(attempt_url, headers=headers, timeout=timeout)
+                response.raise_for_status()
             
-            # Determine media type from content-type header or original URL
-            content_type = response.headers.get("content-type", "")
-            if "jpeg" in content_type or "jpg" in content_type:
-                media_type = "image/jpeg"
-                ext = ".jpg"
-            elif "png" in content_type:
-                media_type = "image/png"
-                ext = ".png"
-            elif "gif" in content_type:
-                media_type = "image/gif"
-                ext = ".gif"
-            elif "webp" in content_type:
-                media_type = "image/webp"
-                ext = ".webp"
-            else:
-                # Fallback to original URL extension (not archive URL)
-                ext = Path(url.split("?")[0]).suffix.lower() or ".jpg"
-                media_type = _get_media_type(ext)
-            
-            image_bytes = response.content
-            
-            # Cache if enabled - use content hash to avoid duplicates
-            if cache_dir:
-                content_hash = sha256(image_bytes).hexdigest()
-                cache_path = cache_dir / f"{content_hash}{ext}"
-                
-                # Check if this content already cached (content deduplication)
-                if cache_path.exists():
-                    logging.debug(f"Image content already cached: {cache_path.name}")
+                # Determine media type from content-type header or original URL
+                content_type = response.headers.get("content-type", "")
+                if "jpeg" in content_type or "jpg" in content_type:
+                    media_type = "image/jpeg"
+                    ext = ".jpg"
+                elif "png" in content_type:
+                    media_type = "image/png"
+                    ext = ".png"
+                elif "gif" in content_type:
+                    media_type = "image/gif"
+                    ext = ".gif"
+                elif "webp" in content_type:
+                    media_type = "image/webp"
+                    ext = ".webp"
                 else:
-                    # Save image to cache
-                    cache_path.parent.mkdir(parents=True, exist_ok=True)
-                    cache_path.write_bytes(image_bytes)
-                    source = "archive" if attempt_url == archive_url else "reddit"
-                    logging.debug(f"Cached new image from {source}: {cache_path.name}")
+                    # Fallback to original URL extension (not archive URL)
+                    ext = Path(url.split("?")[0]).suffix.lower() or ".jpg"
+                    media_type = _get_media_type(ext)
                 
-                # Create URL marker for fast lookup next time
-                url_hash = sha256(url.encode()).hexdigest()[:16]
-                url_marker = cache_dir / f".url_{url_hash}"
-                url_marker.write_text(content_hash)
-            
-            return image_bytes, media_type
-            
-        except Exception as exc:
-            # If archive failed, try direct URL; if direct failed, return None
-            if attempt_url == archive_url:
-                logging.debug(f"Archive download failed for {url.split('/')[-1]}, trying Reddit")
-                continue
-            else:
-                logging.debug("Failed to download image %s: %s", url, exc)
-                return None
+                image_bytes = response.content
+                
+                # Cache if enabled - use content hash to avoid duplicates
+                if cache_dir:
+                    content_hash = sha256(image_bytes).hexdigest()
+                    cache_path = cache_dir / f"{content_hash}{ext}"
+                    
+                    # Check if this content already cached (content deduplication)
+                    if cache_path.exists():
+                        logging.debug(f"Image content already cached: {cache_path.name}")
+                    else:
+                        # Save image to cache
+                        cache_path.parent.mkdir(parents=True, exist_ok=True)
+                        cache_path.write_bytes(image_bytes)
+                        source = "archive" if attempt_url == archive_url else "reddit"
+                        logging.debug(f"Cached new image from {source}: {cache_path.name}")
+                    
+                    # Create URL marker for fast lookup next time
+                    url_hash = sha256(url.encode()).hexdigest()[:16]
+                    url_marker = cache_dir / f".url_{url_hash}"
+                    url_marker.write_text(content_hash)
+                
+                return image_bytes, media_type
+                
+            except Exception as exc:
+                # If archive failed, try direct URL; if direct failed, return None
+                if attempt_url == archive_url:
+                    logging.debug(f"Archive download failed for {url.split('/')[-1]}, trying Reddit")
+                    continue
+                else:
+                    logging.debug("Failed to download image %s: %s", url, exc)
+                    return None
     
     # All attempts failed
     return None
@@ -284,13 +287,13 @@ def build_image_content(
     }
 
 
-def fetch_images_for_extraction(
+async def fetch_images_for_extraction(
     image_urls: List[str],
     max_images: int = 4,
     cache_dir: Optional[Path] = None,
     detail: str = "auto",
 ) -> List[Dict[str, Any]]:
-    """Download images and prepare them for OpenAI API.
+    """Download images and prepare them for OpenAI API (async version).
     
     Args:
         image_urls: List of image URLs to download
@@ -305,7 +308,7 @@ def fetch_images_for_extraction(
     failed_count = 0
     
     for url in image_urls[:max_images]:
-        result = download_image(url, cache_dir=cache_dir)
+        result = await download_image(url, cache_dir=cache_dir)
         if result:
             image_bytes, media_type = result
             content = build_image_content(image_bytes, media_type, detail)
@@ -711,7 +714,7 @@ class StructuredExtractor:
         images: Optional[List[Dict[str, Any]]] = None
         images_included: List[str] = []
         if self.config.enable_images and image_urls:
-            images = fetch_images_for_extraction(
+            images = await fetch_images_for_extraction(
                 image_urls=image_urls,
                 max_images=self.config.max_images,
                 cache_dir=self.config.image_cache_dir,
@@ -904,8 +907,12 @@ class StructuredExtractor:
 
         logging.basicConfig(
             level=getattr(logging, args.log_level),
-            format="[%(levelname)s] %(message)s",
+            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
         )
+        
+        # Suppress noisy third-party loggers
+        logging.getLogger("httpx").setLevel(logging.WARNING)
+        logging.getLogger("openai").setLevel(logging.WARNING)
 
         try:
             stats = asyncio.run(self.run_pipeline(args))
