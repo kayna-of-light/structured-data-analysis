@@ -4,6 +4,8 @@ This module provides a reusable pipeline for extracting structured data from
 text narratives using Azure OpenAI's structured output feature. Projects
 provide their own Pydantic response model and system prompt.
 
+Supports multi-modal extraction with images when available in source data.
+
 Usage:
     from shared.analysis.structured_extractor import StructuredExtractor, ExtractorConfig
     from models import MyResponseModel
@@ -12,6 +14,7 @@ Usage:
         response_model=MyResponseModel,
         system_prompt="You are an expert...",
         supported_datasets=("dataset1", "dataset2"),
+        enable_images=True,  # Enable image download and inclusion
     )
     extractor = StructuredExtractor(config)
     asyncio.run(extractor.run(args))
@@ -21,6 +24,7 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import base64
 import json
 import logging
 import os
@@ -43,6 +47,7 @@ from typing import (
     TypeVar,
 )
 
+import requests
 from dotenv import dotenv_values
 from openai import APIStatusError, OpenAI, OpenAIError, RateLimitError
 from pydantic import BaseModel, ValidationError
@@ -87,6 +92,19 @@ class ExtractorConfig:
     use_registries: bool = True
     """If True, load files from registries instead of direct directory access."""
 
+    # Image support configuration
+    enable_images: bool = False
+    """If True, download and include images in extraction requests."""
+    
+    max_images: int = 4
+    """Maximum number of images to include per request (to manage token costs)."""
+    
+    image_cache_dir: Optional[Path] = None
+    """Optional directory to cache downloaded images. If None, images are not cached."""
+    
+    image_detail: str = "auto"
+    """Image detail level for OpenAI vision: 'auto', 'low', or 'high'."""
+
 
 @dataclass(slots=True)
 class ExtractionJob:
@@ -102,6 +120,173 @@ def _read_json(path: Path) -> Mapping[str, object]:
     with path.open("r", encoding="utf-8") as handle:
         return json.load(handle)
 
+
+# =============================================================================
+# IMAGE HANDLING
+# =============================================================================
+
+def download_image(
+    url: str,
+    cache_dir: Optional[Path] = None,
+    timeout: float = 30.0,
+) -> Optional[Tuple[bytes, str]]:
+    """Download an image from a URL with content-based caching.
+    
+    Uses SHA256 hash of image content as filename to avoid downloading
+    duplicates from different URLs. Extension preserves media type.
+    
+    Args:
+        url: Image URL to download
+        cache_dir: Optional directory to cache images (defaults to repo_root/cache)
+        timeout: Request timeout in seconds
+        
+    Returns:
+        Tuple of (image bytes, media type) or None if download fails
+    """
+    # Check if URL already in cache (URL-based lookup for fast check)
+    if cache_dir:
+        url_hash = sha256(url.encode()).hexdigest()[:16]
+        url_marker = cache_dir / f".url_{url_hash}"
+        if url_marker.exists():
+            # Read the content hash from the marker file
+            content_hash = url_marker.read_text().strip()
+            # Find the actual cached file
+            cached_files = list(cache_dir.glob(f"{content_hash}.*"))
+            if cached_files:
+                cache_path = cached_files[0]
+                ext = cache_path.suffix
+                media_type = _get_media_type(ext)
+                logging.info(f"✓ Using cached image: {cache_path.name}")
+                return cache_path.read_bytes(), media_type
+    
+    try:
+        headers = {
+            "User-Agent": "MallWorldResearch/1.0 (Academic research)",
+            "Accept": "image/*",
+        }
+        response = requests.get(url, headers=headers, timeout=timeout)
+        response.raise_for_status()
+        
+        # Determine media type from content-type header or URL
+        content_type = response.headers.get("content-type", "")
+        if "jpeg" in content_type or "jpg" in content_type:
+            media_type = "image/jpeg"
+            ext = ".jpg"
+        elif "png" in content_type:
+            media_type = "image/png"
+            ext = ".png"
+        elif "gif" in content_type:
+            media_type = "image/gif"
+            ext = ".gif"
+        elif "webp" in content_type:
+            media_type = "image/webp"
+            ext = ".webp"
+        else:
+            # Fallback to URL extension
+            ext = Path(url.split("?")[0]).suffix.lower() or ".jpg"
+            media_type = _get_media_type(ext)
+        
+        image_bytes = response.content
+        
+        # Cache if enabled - use content hash to avoid duplicates
+        if cache_dir:
+            content_hash = sha256(image_bytes).hexdigest()
+            cache_path = cache_dir / f"{content_hash}{ext}"
+            
+            # Check if this content already cached (content deduplication)
+            if cache_path.exists():
+                logging.info(f"✓ Image content already cached: {cache_path.name}")
+            else:
+                # Save image to cache
+                cache_path.parent.mkdir(parents=True, exist_ok=True)
+                cache_path.write_bytes(image_bytes)
+                logging.info(f"✓ Cached new image: {cache_path.name}")
+            
+            # Create URL marker for fast lookup next time
+            url_hash = sha256(url.encode()).hexdigest()[:16]
+            url_marker = cache_dir / f".url_{url_hash}"
+            url_marker.write_text(content_hash)
+        
+        return image_bytes, media_type
+        
+    except Exception as exc:
+        logging.warning("Failed to download image %s: %s", url, exc)
+        return None
+
+
+def _get_media_type(ext: str) -> str:
+    """Get media type from file extension."""
+    ext = ext.lower().lstrip(".")
+    return {
+        "jpg": "image/jpeg",
+        "jpeg": "image/jpeg",
+        "png": "image/png",
+        "gif": "image/gif",
+        "webp": "image/webp",
+    }.get(ext, "image/jpeg")
+
+
+def encode_image_base64(image_bytes: bytes) -> str:
+    """Encode image bytes to base64 string."""
+    return base64.b64encode(image_bytes).decode("utf-8")
+
+
+def build_image_content(
+    image_bytes: bytes,
+    media_type: str,
+    detail: str = "auto",
+) -> Dict[str, Any]:
+    """Build OpenAI image content block.
+    
+    Args:
+        image_bytes: Raw image bytes
+        media_type: MIME type (e.g., 'image/jpeg')
+        detail: Detail level ('auto', 'low', 'high')
+        
+    Returns:
+        Dictionary formatted for Azure OpenAI Responses API
+    """
+    b64_data = encode_image_base64(image_bytes)
+    # Azure OpenAI Responses API uses 'input_image' type
+    return {
+        "type": "input_image",
+        "image_url": f"data:{media_type};base64,{b64_data}",
+        "detail": detail,
+    }
+
+
+def fetch_images_for_extraction(
+    image_urls: List[str],
+    max_images: int = 4,
+    cache_dir: Optional[Path] = None,
+    detail: str = "auto",
+) -> List[Dict[str, Any]]:
+    """Download images and prepare them for OpenAI API.
+    
+    Args:
+        image_urls: List of image URLs to download
+        max_images: Maximum number of images to include
+        cache_dir: Optional cache directory
+        detail: Image detail level
+        
+    Returns:
+        List of image content blocks for OpenAI API
+    """
+    image_contents: List[Dict[str, Any]] = []
+    
+    for url in image_urls[:max_images]:
+        result = download_image(url, cache_dir=cache_dir)
+        if result:
+            image_bytes, media_type = result
+            content = build_image_content(image_bytes, media_type, detail)
+            image_contents.append(content)
+    
+    return image_contents
+
+
+# =============================================================================
+# PROMPT BUILDING
+# =============================================================================
 
 def build_user_prompt(
     *,
@@ -331,6 +516,7 @@ class StructuredExtractor:
         system_prompt: str,
         temperature: float,
         max_output_tokens: int,
+        images: Optional[List[Dict[str, Any]]] = None,
         retries: int = 3,
     ) -> Tuple[BaseModel, Optional[Mapping[str, object]], Optional[str]]:
         """Call Azure OpenAI with structured output and return parsed response.
@@ -342,6 +528,7 @@ class StructuredExtractor:
             system_prompt: System prompt content
             temperature: Sampling temperature
             max_output_tokens: Maximum response tokens
+            images: Optional list of image content blocks for vision
             retries: Number of retry attempts
 
         Returns:
@@ -353,6 +540,15 @@ class StructuredExtractor:
         backoff = 2.0
         last_error: Optional[str] = None
 
+        # Build user content - text only or multimodal
+        if images:
+            # Multimodal: text + images (Azure Responses API uses 'input_text' type)
+            user_content: List[Dict[str, Any]] = [{"type": "input_text", "text": prompt}]
+            user_content.extend(images)
+        else:
+            # Text only
+            user_content = prompt  # type: ignore
+
         for attempt in range(1, retries + 1):
             try:
                 loop = asyncio.get_running_loop()
@@ -361,7 +557,7 @@ class StructuredExtractor:
                     model=model,
                     input=[
                         {"role": "system", "content": system_prompt},
-                        {"role": "user", "content": prompt},
+                        {"role": "user", "content": user_content},
                     ],
                     text_format=self.config.response_model,
                     temperature=temperature,
@@ -449,9 +645,17 @@ class StructuredExtractor:
             data.get("content") or data.get("narrative") or data.get("text") or ""
         ).strip()
         source_url = str(data.get("source_url") or data.get("url") or "").strip() or None
+        
+        # Extract image URLs from metadata if available
+        metadata = data.get("metadata", {})
+        if isinstance(metadata, dict):
+            image_urls: List[str] = metadata.get("image_urls", [])
+        else:
+            image_urls = []
 
-        if not content:
-            logging.warning("No content in %s; skipping", job.source_path)
+        # Allow posts with images even if no text content (for image-only posts)
+        if not content and not image_urls:
+            logging.warning("No content or images in %s; skipping", job.source_path)
             return "empty"
 
         prompt = build_user_prompt(
@@ -459,14 +663,29 @@ class StructuredExtractor:
             date=date,
             dataset=job.dataset,
             source_url=source_url,
-            content=content,
+            content=content if content else "(No text content - see attached images)",
             suffix=self.config.user_prompt_suffix,
         )
 
         checksum = sha256(content.encode("utf-8")).hexdigest()
 
+        # Fetch images if enabled and URLs available
+        images: Optional[List[Dict[str, Any]]] = None
+        images_included: List[str] = []
+        if self.config.enable_images and image_urls:
+            images = fetch_images_for_extraction(
+                image_urls=image_urls,
+                max_images=self.config.max_images,
+                cache_dir=self.config.image_cache_dir,
+                detail=self.config.image_detail,
+            )
+            if images:
+                images_included = image_urls[:len(images)]
+                logging.debug("Including %d images for %s", len(images), job.source_path.name)
+
         if dry_run:
-            logging.info("Dry-run: would extract %s", job.source_path)
+            img_msg = f" (with {len(images_included)} images)" if images_included else ""
+            logging.info("Dry-run: would extract %s%s", job.source_path, img_msg)
             return "dry_run"
 
         if client is None:
@@ -481,6 +700,7 @@ class StructuredExtractor:
                     system_prompt=self.config.system_prompt,
                     temperature=temperature,
                     max_output_tokens=max_output_tokens,
+                    images=images,
                 )
             except Exception as exc:
                 logging.error("Extraction failed for %s: %s", job.source_path, exc)
@@ -497,6 +717,7 @@ class StructuredExtractor:
             "extraction_model": model,
             "extraction_timestamp": datetime.now(timezone.utc).isoformat(),
             "schema": self.schema_name,
+            "images_included": images_included,
             "extraction": analysis.model_dump(mode="json"),
             "response_id": response_id,
             "usage": usage,

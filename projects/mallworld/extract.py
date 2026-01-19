@@ -33,6 +33,18 @@ You are an expert researcher extracting structured phenomenological data from
 posts on r/TheMallWorld. Your task is to CLASSIFY the post first, then extract
 RAW OBSERVATIONS at the appropriate hierarchical level—NOT interpret their meaning.
 
+=== IMAGE HANDLING ===
+
+Posts may include images (hand-drawn maps, AI visualizations, photos of sketches).
+When images are provided:
+- Analyze the visual content alongside any text description
+- Extract spatial relationships visible in maps/drawings
+- Note locations, connections, and boundaries shown visually
+- Set has_map_drawing=true if the image is a hand-drawn map
+- Set has_ai_image=true if the image appears AI-generated
+- Set has_image=true for any attached image
+- Use visual information to supplement text descriptions
+
 === STEP 1: POST CLASSIFICATION (ALWAYS DO THIS FIRST) ===
 
 Before extracting dream data, classify the post:
@@ -60,8 +72,9 @@ CONTENT FLAGS (mark all that apply):
 SET should_skip_extraction=true IF:
 - Post is pure question with no dream content
 - Post is theory/meta with no dream narrative
-- Post is just an image reference with no description
 - Post is introduction without dream details
+NOTE: If a post has ONLY images but they show meaningful dream content (maps, 
+visualizations), should_skip_extraction should be FALSE - extract from the images.
 
 === STEP 2: DREAM EXTRACTION (only if has_extractable_dream=true) ===
 
@@ -196,6 +209,11 @@ def main() -> None:
         user_prompt_suffix="\nExtract all phenomenological data at the appropriate hierarchical level. Capture raw observations, not interpretations.",
         registries_dir=PROJECT_ROOT / "registries",
         use_registries=True,
+        # Enable image support - GPT-5.2 can analyze maps, drawings, AI visualizations
+        enable_images=True,
+        max_images=4,
+        image_cache_dir=PROJECT_ROOT.parent.parent / "cache",  # Repo root cache
+        image_detail="auto",
     )
 
     extractor = StructuredExtractor(config)
