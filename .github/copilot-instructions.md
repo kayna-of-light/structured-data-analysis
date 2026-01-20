@@ -19,6 +19,17 @@ This project uses **Swedenborg's theological framework** as the theoretical lens
 
 The neutral position is accuracy, not equidistance between confirmation and skepticism.
 
+## Critical: Methodology (Framework as Testable Hypothesis)
+
+This repository uses Swedenborg’s correspondential framework as a **hypothesis to be tested**, not as an authority to be deferred to.
+
+- **Origin is methodologically irrelevant**: do not frame Swedenborg as “unquestionable revelation,” and do not treat visionary origin as a reason to confirm or dismiss the framework.
+- **Testability is the criterion**: prioritize falsifiable predictions, out-of-sample checks, and explicit failure modes.
+- **Separate levels of claim**:
+    - **Pattern-fit (empirical)**: statistical associations and predictive performance.
+    - **Interpretation (framework-consistent)**: correspondential reading consistent with data.
+    - **Ontology (speculative)**: metaphysical claims (e.g., spiritual causation) remain speculative unless independently supported.
+
 ---
 
 ## The Swedenborgian Framework: Empirical Support and Application
@@ -147,9 +158,9 @@ This repository provides a **general-purpose framework** for converting scraped 
 
 | Project | Description | Data Sources |
 |---------|-------------|--------------|
-| **[NDE Analysis](projects/nde/)** | Near-death experience phenomenology | NDERF (~3,500), IANDS (~600) |
-| **[Remission Analysis](projects/remission/)** | Spontaneous remission and psycho-spiritual transformation | PubMed Central, Radical Remission Project |
-| **[MallWorld Analysis](projects/mallworld/)** | Collective dream phenomenology and spatial symbolism | r/themallworld (~3,700 dreams) |
+| **[NDE Analysis](../projects/nde/)** | Near-death experience phenomenology | NDERF (~3,500), IANDS (~600) |
+| **[Remission Analysis](../projects/remission/)** | Spontaneous remission and psycho-spiritual transformation | PubMed Central, Radical Remission Project |
+| **[MallWorld Analysis](../projects/mallworld/)** | Collective dream phenomenology and spatial symbolism | r/themallworld (~3,700 dreams) |
 
 ### Collaboration
 
@@ -338,7 +349,7 @@ if __name__ == "__main__":
 
 ## Report Writing Standards
 
-Follow the guidelines in [docs/REPORT_WRITING_GUIDELINES.md](docs/REPORT_WRITING_GUIDELINES.md):
+Follow the guidelines in [docs/REPORT_WRITING_GUIDELINES.md](../docs/REPORT_WRITING_GUIDELINES.md):
 
 ### Report Structure
 
