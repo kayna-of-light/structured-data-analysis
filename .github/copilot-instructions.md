@@ -21,6 +21,120 @@ The neutral position is accuracy, not equidistance between confirmation and skep
 
 ---
 
+## The Swedenborgian Framework: Empirical Support and Application
+
+This project uses Emanuel Swedenborg's theological framework as its primary interpretive lens. This section documents what the framework claims, why it is used, and the empirical evidence supporting its application.
+
+### The Doctrine of Correspondences
+
+Swedenborg (1688–1772) proposed that the natural world exists as a "theatre representative" of the spiritual world—not through poetic metaphor but through **vertical causality**. The natural is the ultimate effect of spiritual causes. This doctrine generates specific, testable predictions.
+
+**Core Principles:**
+
+| Principle | Description |
+|-----------|-------------|
+| **Vertical Causality** | Spiritual realities flow (influx) into natural forms; the natural is the "effect" plane, the spiritual is the "cause" plane |
+| **Constant State, Variable Form** | The underlying spiritual reality is constant; perceptual forms vary by the receiver's mental repertoire |
+| **Discrete Degrees** | Reality stratifies into celestial (love), spiritual (wisdom/truth), and natural (effects) levels |
+| **Correspondence Consistency** | The same natural object consistently corresponds to the same spiritual reality across contexts |
+| **Opposite Sense** | The same symbol can express good or evil depending on context (fire = divine love OR destructive passion) |
+
+**Critical Distinction — Correspondence vs. Allegory:**
+
+| Feature | Allegory (Arbitrary) | Correspondence (Organic) |
+|---------|---------------------|--------------------------|
+| Origin | Invented by author for rhetorical effect | Inherent in the object's function—discovered, not invented |
+| Relationship | Mechanical substitution (Scales = Justice) | Causal participation—the symbol IS the reality in ultimate form |
+| Meaning | Single, static, abstract concept | Multivalent, grounded in object's nature |
+| Validation | Requires codebook | Validated by functional analogy |
+
+**Example:** Light = Wisdom is not arbitrary allegory. Light enables the eye to distinguish forms (function of intellect); the correspondence is grounded in the physics of the object.
+
+### NOT Jungian Psychology
+
+This framework is **not** interchangeable with Jungian archetypal psychology, Freudian psychoanalysis, or other depth psychology approaches. Key differences:
+
+| Aspect | Swedenborg | Jung |
+|--------|------------|------|
+| **Ontology** | Spiritual realm is objectively real; correspondences describe actual influx | Archetypes are psychological patterns in the "collective unconscious" |
+| **Causation** | Top-down (spiritual causes natural) | Bottom-up (archetypes emerge from evolution/psyche) |
+| **Vertical Structure** | Celestial / Spiritual / Natural (love/wisdom/effect) | Id / Ego / Superego (instinct/reality/morality) |
+| **Entity Status** | Beings encountered are real spiritual beings with differentiated functions | Figures are projections of internal complexes |
+| **Validation** | Testable via phenomenological consistency across experiencers | Interpreted through therapeutic process |
+
+**Do NOT substitute Jungian/Freudian framing when analyzing data in this project.** If data patterns resemble Jungian structures, note the parallel but interpret through the Swedenborgian lens, which has independent empirical support (see below).
+
+### Empirical Support from This Repository
+
+The Swedenborgian framework has been tested against NDE data from 6,753 structured records (NDERF + IANDS). Key findings:
+
+#### 1. Constant State, Variable Form (χ² = 365.14, p < 0.0001)
+
+The "Being of Light" phenomenon demonstrates the core correspondential principle:
+- Religious background significantly predicts identification vocabulary (Christians say "Jesus," atheists say "unknown presence")
+- BUT experiential properties remain virtually identical regardless of label—all differences below 10%
+- ML classifier using religious background to predict identification performs BELOW BASELINE (37.8% vs 45.9%)
+
+**Interpretation:** The spiritual reality is constant; only the perceptual clothing varies.
+
+#### 2. Entity Function Differentiation (χ² = 41.13, p = 0.008)
+
+Entities in NDEs show differentiated functional roles consistent with Swedenborgian cosmology:
+- Higher-order beings (God, religious figures) provide MORE significant guidance (70-73%)
+- Deceased relatives provide more comfort than guidance and serve as gatekeepers (29.5% "told to return")
+- Different being types show consistent functional signatures across cultural backgrounds
+
+**Interpretation:** Beings are not interchangeable psychological projections but occupy real functional roles.
+
+#### 3. Mission Commission Discriminant Validity (94.2% accuracy)
+
+"Earthly mission" return reason predicts mission commissioning during NDE with 94.2% accuracy:
+- Pre-birth indicators show 10-35x elevation in volunteer-language cases
+- Chi-square: χ² = 3018.1, p < 0.0001
+
+**Interpretation:** Mission-based returns represent a genuine phenomenological category, not retrospective meaning-making.
+
+#### 4. Judgment Character (36.5:1 loving vs harsh)
+
+Life review judgment in NDE shows:
+- Loving/gentle judgment: 32.2%
+- Harsh/condemning judgment: 0.9%
+- This ratio challenges expectations from punitive theological traditions
+
+**Interpretation:** The Being of Light functions as revelation, not condemnation—consistent with Swedenborg's characterization of Divine Love.
+
+### Application to MallWorld Analysis
+
+When analyzing MallWorld dream data, interpret spatial, entity, and atmospheric patterns through the correspondential lens:
+
+| Natural Feature | Swedenborgian Correspondence | NOT This |
+|-----------------|------------------------------|----------|
+| Vertical space | Discrete degrees (celestial/spiritual/natural) | Id/Ego/Superego |
+| Underground | Lower natural; proximity to proprium/self-love | "The unconscious" |
+| Elevated | Higher states; proximity to influx from above | "Superego" |
+| Entities | Spiritual beings with differentiated functions | Psychological projections |
+| Threatening atmosphere | Spiritual state of the space; influx quality | "Repressed content" |
+| Creatures | Affections made visible (animals = affections) | "Instinctual drives" |
+| Authority figures | Beings with teaching/governing function | "Internalized parents" |
+
+### When to Apply This Framework
+
+- **DO** test whether MallWorld patterns align with correspondential predictions
+- **DO** report whether data support, contradict, or are underdetermined regarding the framework
+- **DO** note parallels with other interpretive frameworks when relevant, but as secondary
+- **DO NOT** substitute Jungian/Freudian interpretation as the primary lens
+- **DO NOT** dismiss findings that support the framework to appear "scientific"
+- **DO NOT** force data to confirm the framework when they don't
+
+### Source Documentation
+
+Detailed source materials for the Swedenborgian framework are maintained in the companion repository:
+- `literary-compilation/data/02_Swedenborgian_Theology/` — Core doctrinal documents
+- `literary-compilation/data/01_Consciousness_Studies/` — Empirical validation analyses
+- See especially: "Validating Swedenborg's Correspondences.md", "Testing Swedenborg's Correspondences Empirically.md", "Being of Light - Statistical Analysis of NDE Phenomenology.md"
+
+---
+
 ## Project Overview
 
 This repository provides a **general-purpose framework** for converting scraped text datasets into structured data and performing systematic analysis using LLM-powered extraction. The framework supports research projects that:
@@ -35,6 +149,7 @@ This repository provides a **general-purpose framework** for converting scraped 
 |---------|-------------|--------------|
 | **[NDE Analysis](projects/nde/)** | Near-death experience phenomenology | NDERF (~3,500), IANDS (~600) |
 | **[Remission Analysis](projects/remission/)** | Spontaneous remission and psycho-spiritual transformation | PubMed Central, Radical Remission Project |
+| **[MallWorld Analysis](projects/mallworld/)** | Collective dream phenomenology and spatial symbolism | r/themallworld (~3,700 dreams) |
 
 ### Collaboration
 
