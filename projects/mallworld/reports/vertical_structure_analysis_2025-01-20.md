@@ -2,15 +2,15 @@
 
 ## Abstract
 
-**Background**: The MallWorld phenomenon represents a collective dream archetype where individuals report recurring dreams of navigating impossible shopping mall spaces. This analysis investigates whether vertical spatial structure in these dreams follows symbolically meaningful patterns consistent with traditional chthonic-celestial cosmologies.
+**Background**: The MallWorld phenomenon represents a collective dream experience where individuals report recurring dreams of navigating impossible shopping mall spaces. This analysis investigates whether vertical spatial structure in these dreams follows symbolically meaningful patterns consistent with traditional vertical cosmologies and Swedenborg's doctrine of discrete degrees.
 
 **Methods**: We analyzed 2,678 extracted MallWorld dream narratives containing 11,351 discrete locations, 5,499 connections, and 7,283 interactions. Vertical position was coded on a five-point scale from "lowest" (-2) to "uppermost" (+2), with "ground" (0) as reference. Chi-square tests, Spearman correlations, t-tests, and Fisher's exact tests examined relationships between vertical positioning and atmosphere, entity types, movement patterns, and interaction outcomes.
 
 **Results**: Ground level dominated (53.1% of positions), with a significant above-ground mean (+0.12, t = 8.33, p < 0.0001). Strong atmosphere-vertical correlation emerged (χ² = 143.1, p < 10⁻²¹): underground spaces averaged more threatening atmospheres (2.27 vs 2.73, t = -5.45, p < 0.0001). Creatures appeared twice as frequently underground (11.6% vs 5.4%), while authority figures concentrated at elevated levels (14.9% vs 9.5%). Movement showed perfect ascent-descent balance (22.2% vs 22.3%, p = 0.95). Ground-level interactions achieved highest success rates (68.3%).
 
-**Conclusions**: MallWorld dreams exhibit statistically robust vertical symbolism consistent with cross-cultural mythological structures. The threefold stratification (underground/ground/elevated) parallels underworld-world-heaven cosmologies and Freudian psychic topography. These findings suggest that dream-generated spaces encode archetypal spatial semantics independent of waking architectural experience.
+**Conclusions**: MallWorld dreams exhibit statistically robust vertical symbolism consistent with the doctrine of discrete degrees articulated in Swedenborgian theology. The threefold stratification (underground/ground/elevated) parallels the celestial-spiritual-natural hierarchy where higher states correspond to proximity to divine influx and lower states to the proprium (self-love). These findings suggest that dream-generated spaces express spiritual realities through natural forms—correspondence rather than arbitrary symbolism.
 
-**Keywords**: MallWorld, dream analysis, vertical symbolism, spatial cognition, archetypal psychology, collective dreams, chthonic symbolism
+**Keywords**: MallWorld, dream analysis, vertical symbolism, discrete degrees, correspondences, collective dreams, spiritual phenomenology
 
 ---
 
@@ -34,20 +34,20 @@
 
 ### 1.1 Background
 
-The MallWorld phenomenon has emerged as a distinctive category of shared dream experience, with thousands of individuals reporting remarkably consistent dreams of navigating labyrinthine shopping mall environments. Unlike conventional recurring dreams tied to individual biography, MallWorld dreams exhibit structural regularities that transcend personal experience—suggesting they tap into archetypal spatial schemas shared across the dreaming population.
+The MallWorld phenomenon has emerged as a distinctive category of shared dream experience, with thousands of individuals reporting remarkably consistent dreams of navigating labyrinthine shopping mall environments. Unlike conventional recurring dreams tied to individual biography, MallWorld dreams exhibit structural regularities that transcend personal experience—suggesting they access shared correspondential structures rather than merely individual memory.
 
 One of the most prominent architectural features of MallWorld narratives is their vertical complexity. Dreamers frequently describe multi-level mall spaces where different floors possess distinct characteristics—from threatening underground parking garages to vertiginous upper-level atriums. This vertical stratification raises the question of whether dream-generated spaces follow the symbolic logic of traditional cosmologies, which universally encode meaning through vertical positioning.
 
 ### 1.2 Theoretical Framework
 
-Vertical space carries profound symbolic weight across human cultures. The archetypal threefold division—underworld, world, and heaven—appears in mythological systems from ancient Mesopotamia to contemporary indigenous traditions. In psychological terms, Freud's topography of id, ego, and superego maps onto vertical metaphors: the "depths" of instinct versus the "heights" of idealization.
+Vertical space carries profound symbolic weight across human cultures. Swedenborg's doctrine of **discrete degrees** describes reality as stratified into celestial (love/will), spiritual (wisdom/truth), and natural (effect/action) planes—where higher corresponds to greater proximity to divine influx and lower to separation into the proprium (self-love). Unlike Jungian archetypes or Freudian topography, this is not psychological metaphor but ontological structure: the natural expresses the spiritual, not merely symbolizes it.
 
-If MallWorld dreams genuinely access collective archetypal structures, we would expect their vertical organization to exhibit:
+If MallWorld dreams genuinely express correspondential structure, we would expect their vertical organization to exhibit:
 
-1. **Atmosphere gradients**: Underground spaces should tend toward threatening or liminal atmospheres, elevated spaces toward welcoming or transcendent ones
-2. **Entity stratification**: Different classes of beings should preferentially occupy different vertical zones
-3. **Movement balance**: If vertical space serves exploratory rather than teleological purposes, ascent and descent should occur with equal frequency
-4. **Ground-level anchoring**: The "world" level should serve as the stable reference point with highest navigational success
+1. **Atmosphere gradients**: Underground spaces should manifest threatening or oppressive qualities (proximity to proprium/self-love), elevated spaces toward welcoming or transcendent qualities (proximity to influx)
+2. **Entity stratification**: Different classes of beings should occupy vertical zones corresponding to their spiritual function—creatures (affections made visible) below, authorities (teaching/governing function) above
+3. **Movement balance**: If vertical space serves exploration of states rather than teleological progress, ascent and descent should occur with equal frequency
+4. **Ground-level anchoring**: The natural plane (ground) should serve as the stable reference point where interaction succeeds best
 
 ### 1.3 Research Aims
 
@@ -273,31 +273,34 @@ This analysis provides robust statistical evidence for symbolically meaningful v
 
 ### 4.2 Theoretical Interpretation
 
-The findings align with multiple interpretive frameworks:
+The findings align with Swedenborg's doctrine of discrete degrees, where reality stratifies into levels that express—not merely symbolize—spiritual states.
 
-#### 4.2.1 Mythological Structure
+#### 4.2.1 Discrete Degrees and Vertical Correspondence
 
-The threefold vertical division (underground/ground/elevated) precisely mirrors the universal mythological cosmology of underworld-world-heaven. In this framework:
+The threefold vertical division (underground/ground/elevated) corresponds to Swedenborg's celestial-spiritual-natural hierarchy:
 
-- **Underground** = realm of the dead, primordial forces, and chthonic beings
-- **Ground** = human habitation, ordinary reality, navigable space
-- **Elevated** = realm of gods, authorities, and aspirational goals
+- **Underground** = Lower natural; proximity to the proprium (self-love), where affections manifest as creatures and atmosphere grows threatening
+- **Ground** = Natural plane proper; the realm of ordinary interaction and successful navigation
+- **Elevated** = Higher states; proximity to influx from above, where authority figures (beings with teaching/governing function) concentrate
 
-The statistical association of creatures with underground spaces and authorities with elevated spaces reproduces this archetypal distribution with remarkable fidelity.
+The statistical association of creatures with underground spaces (11.6% vs 5.4%) and authority figures with elevated spaces (14.9% vs 9.5%) reproduces this correspondential distribution with striking fidelity. In Swedenborgian terms, creatures ARE affections made visible—the dream does not symbolize states but expresses them in ultimates.
 
-#### 4.2.2 Psychoanalytic Topography
+#### 4.2.2 Influx Quality and Atmosphere
 
-Freud's structural model maps directly onto the vertical axis:
+The highly significant atmosphere gradient (χ² = 143.1, p < 10⁻²¹) reflects the quality of spiritual influx at different levels:
 
-- **Underground (Id)**: Threatening, creature-populated, instinctual
-- **Ground (Ego)**: Navigable, successful, reality-oriented
-- **Elevated (Superego)**: Authority-populated, potentially unfriendly (superego as critical agency)
+- Underground spaces average 2.27 on the 5-point atmosphere scale (more threatening)
+- Elevated spaces average 2.77 (more welcoming)
 
-The observation that elevated spaces contain more "unfriendly" entities (10.2% vs 3.8% underground) while underground spaces contain more "threatening" entities (11.5% vs 9.6% elevated) may reflect this distinction between superego criticism and id menace.
+This is not psychological projection but correspondential structure: lower spaces receive influx filtered through proprium (self-love makes all reception distorted and threatening), while elevated spaces receive influx more directly.
 
-#### 4.2.3 Architectural Semantics
+The observation that elevated spaces contain more "unfriendly" entities (10.2% vs 3.8% underground) while underground spaces contain more "threatening" entities (11.5% vs 9.6% elevated) reflects a distinction between opposition to truth (resistance to teaching at elevated levels) and opposition to good (threatening presence at lower levels).
 
-The perfect vertical segregation of certain location types (basement = 100% underground, attic = 100% elevated) indicates that waking architectural semantics transfer into dream space. However, the overall atmosphere gradient (underground = threatening) exceeds what can be explained by architectural convention alone. Parking garages are not inherently more threatening than rooftop restaurants in waking experience, yet the dream systematically codes them differently.
+#### 4.2.3 Architectural Semantics as Natural Correspondences
+
+The perfect vertical segregation of certain location types (basement = 100% underground, attic = 100% elevated) indicates that waking architectural semantics carry into dream space. However, the overall atmosphere gradient (underground = threatening) exceeds what can be explained by architectural convention alone. Parking garages are not inherently more threatening than rooftop restaurants in waking experience, yet the dream systematically codes them differently.
+
+This suggests the correspondences are organic rather than conventional—the dream space expresses spiritual reality through natural forms, revealing the inherent correspondence between verticality and spiritual state that exists independent of cultural learning.
 
 ### 4.3 Methodological Implications
 
@@ -314,7 +317,7 @@ Several limitations constrain these findings:
 1. **Missing vertical data**: Only 33.7% of locations had defined vertical positions, potentially biasing toward architecturally salient cases
 2. **Extraction uncertainty**: Vertical coding relies on LLM inference from narrative descriptions, which may misinterpret ambiguous language
 3. **Selection bias**: Reddit users represent a specific demographic, and self-reported dreams may emphasize memorable (vertically extreme) content
-4. **Causation**: The correlation between atmosphere and vertical position could reflect cultural expectations rather than intrinsic dream symbolism
+4. **Correspondence vs convention**: The correlation between atmosphere and vertical position could reflect cultural expectations rather than organic correspondence—though the consistent cross-cultural appearance of vertical symbolism suggests the latter
 
 ### 4.5 Future Directions
 
@@ -329,17 +332,19 @@ Promising avenues for further investigation include:
 
 ## 5. Conclusion
 
-MallWorld dreams exhibit statistically robust vertical symbolism consistent with cross-cultural mythological structures and psychoanalytic theory. Underground spaces are significantly more threatening and more heavily populated by creatures, while elevated spaces concentrate authority figures. Movement patterns show perfect ascent-descent balance, suggesting bidirectional vertical exploration rather than teleological progression. Ground level serves as the navigational anchor with highest interaction success rates.
+MallWorld dreams exhibit statistically robust vertical symbolism consistent with Swedenborg's doctrine of discrete degrees. Underground spaces are significantly more threatening and more heavily populated by creatures (affections made visible in lower form), while elevated spaces concentrate authority figures (beings with teaching/governing function). Movement patterns show perfect ascent-descent balance, suggesting bidirectional exploration of spiritual states rather than teleological progression. Ground level—the natural plane proper—serves as the navigational anchor with highest interaction success rates.
 
-These findings suggest that dream-generated spaces encode archetypal spatial semantics independent of—or perhaps underlying—waking architectural experience. The mall, as a contemporary commercial space, has been recruited as the architectural substrate for an ancient vertical cosmology. The dreaming mind does not merely replicate familiar environments; it transforms them according to symbolic principles that predate modernity by millennia.
+These findings suggest that dream-generated spaces express spiritual realities through natural forms according to the laws of correspondence. The mall, as a contemporary commercial space, has been recruited as the architectural substrate for a universal vertical cosmology. The dreaming mind does not merely replicate familiar environments; it transforms them according to correspondential principles where higher = proximity to influx and lower = proximity to proprium.
+
+The validation of all four hypotheses—atmosphere gradient, entity stratification, movement balance, and ground anchoring—supports the view that vertical structure in MallWorld dreams reflects constant spiritual states expressed through variable natural forms. This is correspondence, not allegory: the phenomena are not arbitrary symbols assigned by cultural convention but organic expressions of underlying spiritual reality.
 
 ---
 
 ## References
 
-1. Eliade, M. (1959). *The Sacred and the Profane: The Nature of Religion*. Harcourt.
-2. Freud, S. (1923). *The Ego and the Id*. Norton.
-3. Jung, C. G. (1959). *The Archetypes and the Collective Unconscious*. Princeton University Press.
+1. Swedenborg, E. (1758). *Heaven and Hell* (§§ 29-40: Discrete degrees). Swedenborg Foundation.
+2. Swedenborg, E. (1763). *Divine Love and Wisdom* (§§ 173-281: Degrees of the natural mind). Swedenborg Foundation.
+3. Eliade, M. (1959). *The Sacred and the Profane: The Nature of Religion*. Harcourt.
 4. Tuan, Y.-F. (1977). *Space and Place: The Perspective of Experience*. University of Minnesota Press.
 5. Lakoff, G., & Johnson, M. (1980). *Metaphors We Live By*. University of Chicago Press.
 

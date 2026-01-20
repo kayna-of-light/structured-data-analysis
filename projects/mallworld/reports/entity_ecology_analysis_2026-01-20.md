@@ -39,7 +39,7 @@
 
 ### 1.1 Background
 
-Dream entities—the characters, creatures, and presences that populate dream worlds—have long been subjects of psychological inquiry. From Jung's archetypal figures to modern cognitive approaches, understanding who appears in dreams and what they do provides insight into dream generation mechanisms and psychological processing.
+Dream entities—the characters, creatures, and presences that populate dream worlds—represent a central phenomenon in understanding dream phenomenology. Within the Swedenborgian framework, entities in dreams and visions are not psychological projections but real spiritual beings with differentiated functions. Understanding who appears in dreams and what they do reveals the nature of spiritual influx and the states being represented.
 
 The MallWorld phenomenon presents a unique opportunity for entity analysis. These dreams share common spatial characteristics (liminal retail environments) but vary in their inhabitants. This consistency allows isolation of entity-specific effects from environmental confounds.
 
@@ -55,7 +55,7 @@ This analysis addresses five primary questions:
 
 ### 1.3 Theoretical Framework
 
-We approach entity ecology from an emergent phenomenology perspective, treating entity-environment-behavior associations as empirical patterns to be discovered rather than theoretically predetermined. The analysis seeks to identify natural "niches" that different entity types occupy within the MallWorld dream ecosystem.
+We approach entity ecology from a correspondential perspective, treating entity-environment-behavior associations as expressions of underlying spiritual realities. In this framework, entities are not arbitrary dream characters but beings occupying functional roles—creatures express affections, authorities carry teaching/governing functions, deceased maintain real relational connections. The analysis seeks to identify natural "niches" that different entity types occupy within the MallWorld dream ecosystem, consistent with the doctrine that spiritual beings have differentiated functions.
 
 ---
 
@@ -497,7 +497,7 @@ MallWorld dreams exhibit coherent **entity ecology** where different entity type
 
 Five entity archetypes emerged: Danger Bringers (threats, creatures), Chaos Generators (crowds), Oppressive Presence (authority), Social Connectors (friends, known persons), and Peaceful Visitors (deceased). The deceased category uniquely breaks the pattern of negativity, showing welcoming atmospheres, zero conflict, and domestic settings—consistent with visitation dream phenomenology.
 
-These findings suggest that MallWorld dreams, despite their strange shared geography, follow comprehensible psychological grammar in their entity populations. The entities that appear, where they appear, and what happens when they appear show lawful patterns that may reflect broader principles of dream generation and emotional processing.
+These findings suggest that MallWorld dreams, despite their strange shared geography, follow comprehensible correspondential grammar in their entity populations. The entities that appear, where they appear, and what happens when they appear show lawful patterns consistent with the Swedenborgian doctrine that spiritual beings occupy differentiated functional roles—entities are not arbitrary dream furniture but expressions of underlying spiritual realities.
 
 ---
 
