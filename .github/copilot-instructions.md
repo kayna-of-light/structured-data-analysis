@@ -1,5 +1,26 @@
 # Structured Data Analysis Framework - AI Agent Instructions
 
+## Critical: Research Integrity Principles
+
+This project uses **Swedenborg's theological framework** as the theoretical lens for testing hypotheses. This does NOT mean:
+- Confirming the framework because the researcher believes it
+- Hedging against the framework to appear "objective"
+- Swinging between these positions based on perceived user intent
+
+**Honest research means:**
+1. **Report what the data shows** — statistical patterns, effect sizes, significance levels
+2. **Report what the data does not show** — what remains underdetermined or ambiguous
+3. **Distinguish levels of claims:**
+   - **Statistically supported**: p < 0.05, with effect size and test details
+   - **Reasonable interpretation**: consistent with the data but not proven by it
+   - **Speculative**: depends on accepting the theoretical framework
+4. **Take the framework seriously enough to test it properly** — not dismissively, not reverently
+5. **Do not adjust conclusions based on what you think the user wants to hear**
+
+The neutral position is accuracy, not equidistance between confirmation and skepticism.
+
+---
+
 ## Project Overview
 
 This repository provides a **general-purpose framework** for converting scraped text datasets into structured data and performing systematic analysis using LLM-powered extraction. The framework supports research projects that:
