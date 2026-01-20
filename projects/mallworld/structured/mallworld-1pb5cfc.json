@@ -1,0 +1,190 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pb5cfc.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pb5cfc/has_anyone_seen_this_place_i_describe/",
+  "title": "Has anyone seen this place I describe?",
+  "date": null,
+  "content_checksum": "e65f30aebf13537a2545d0ee3d10b2ac6865122df5873c7cd410ceb48283c9ef",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:06:02.127065+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have dreamed of the same eerie crater/chapel location with abandoned witch houses on a circular cliff",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Dream location seems like a real place (\"like mall world\")",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "church",
+        "location_name": "small chapel / ritual spot / tiny old town square",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the middle of a crater/crevass; surrounded by a circular cliff",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "eerie",
+          "reality_stability": "hyper_real",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“small chapel/ritual spot/tiny, old town square… in the middle… of… a crater or crevass”; “eerie and silent”; “only… wind blowing”; “so vivid… seems like a real place”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "neighborhood",
+        "location_name": "dilapidated and abandoned houses on the circular cliff edge",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "very high up on the edges of a circular/surrounding cliff above the crater/chapel area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "abandoned",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“surrounding… circular/surrounding cliff”; “very high up on the edges”; “dilapidated and abandoned houses”; “belonged to (i think) witches”; “some were hanged for witch craft?”; “eerie and silent”; “only… wind blowing”"
+        },
+        "affective_response": "curiosity",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "transit_mode": "directed_active",
+        "direction": "diagonal_up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Movement implied from crater center up to the surrounding cliff edge where the houses are"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "cliff",
+        "direction": "not_mentioned",
+        "beyond": "visible_location",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "succeeded",
+        "description": "Crater/crevass enclosed by a circular/surrounding cliff with high edges"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer toured the abandoned/dilapidated houses on the cliff edge",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "transaction",
+        "description": "Houses were “trying to rent them out” while the dreamer toured them",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": "rental of the houses",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Soundscape noted as eerie silence with only wind blowing",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is framed as a question but contains extractable recurring dream content. No explicit light/time-of-day, and the ‘witches’/‘hanged’ details are presented with uncertainty (‘i think’, ‘from what i remember’). ‘2 dreams there so far’ treated as recurring. Time flow not described; has_temporal_data set true due to explicit recurrence count."
+  },
+  "response_id": "resp_05f0a91a38f5aeef00696e646390448195b64b32154dd9686e",
+  "usage": {
+    "input_tokens": 12462,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1614,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14076
+  }
+}

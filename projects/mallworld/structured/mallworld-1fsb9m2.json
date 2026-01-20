@@ -1,0 +1,226 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1fsb9m2.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1fsb9m2/not_sure_if_anyone_has_been_here_used_ai_to/",
+  "title": "Not sure if anyone has been here, used AI to create my dream",
+  "date": null,
+  "content_checksum": "481ffca7af0b1652d7b8fb02c80c5e78de43fc79f4ef6cc3cf46f47a0e38bd4b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:46:48.069373+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/nkcqalwdlsrd1.jpg",
+    "https://i.redd.it/er7vglwdlsrd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if anyone has been to the same cabin location",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "cabin",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "cold_white",
+          "time_of_day": "daytime",
+          "state": "decaying",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Recurring cabin. AI images show a large wooden multi-story cabin/barn-like interior with snow on the floor, many windows, a large broken/open section in the roof letting in daylight; exterior shows a tall wooden cabin in a snowy forest clearing with balconies/porches and a damaged roof."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "forest",
+        "location_name": "snowy forest outside the cabin",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the cabin",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "cold_white",
+          "time_of_day": "daytime",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Outside in snow near evergreen trees; dreamer is outside scooping up cats while lions and bears hunt/try to break in."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "door",
+        "transit_mode": "fleeing",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Trying to bring cats inside while predators are hunting and trying to break in."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Outside scooping up cats and trying to bring them inside while lions and bears are hunting/attacking.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "authority_nature": "not_mentioned",
+            "is_known": "implied",
+            "is_recurring": "implied",
+            "description": "lions (used to be friendly with cats; later attacking)",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "creature",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "bears (trying to break in; hunting/attacking)",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "creature",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "my cats (being targeted; dreamer scoops them up)",
+            "name_or_relation": "my cats"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Lions and bears trying to break in to the cabin and eat the cats / attack everyone.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "authority_nature": "not_mentioned",
+            "is_known": "implied",
+            "is_recurring": "implied",
+            "description": "lions (now attacking)",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "creature",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "bears (trying to break in)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No explicit layout described in text beyond inside vs outside; AI images used for visual details (multi-story wooden cabin, snow, damaged/open roof, forest setting). No explicit outcome given for successfully getting cats inside."
+  },
+  "response_id": "resp_0205af9146b0622a00696e51ac9e408193887a8a48d5ffbfba",
+  "usage": {
+    "input_tokens": 15960,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1224,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17184
+  }
+}

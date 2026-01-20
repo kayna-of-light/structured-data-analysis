@@ -1,0 +1,163 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jljpdw.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jljpdw/welcome_to_alt_vegas/",
+  "title": "Welcome to Alt Vegas",
+  "date": null,
+  "content_checksum": "9e9df8d8018f97569797e781aa1069674a0f2577b052ed1f5feed38953eb07f9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:27:52.559175+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/hmniog9d3cre1.jpg",
+    "https://i.redd.it/17yqid9d3cre1.jpg",
+    "https://i.redd.it/z0owod9d3cre1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "Alt Vegas desert street",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"series of older atrium style buildings along a single desert street\"; \"constant sandstorms making it difficult to walk between buildings\"; \"Outside of the handful of casinos nobody appears to live here\""
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "casino",
+        "location_name": "Small atrium-style casino (generic)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "along the single desert street",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "mixed",
+          "light_temperature": "warm_golden",
+          "time_of_day": "timeless",
+          "state": "worn",
+          "atmosphere": "nostalgic",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"Every casino is an atrium style building, incredibly small by Vegas standards with a casino in the middle.\" \"Nothing in these casinos appears to have been touched since the 1970’s\"; \"even the slot machines haven’t been updated in 50 years.\" Image cues: multi-story atrium interior; rows of slot machines and gaming tables; warm interior lighting; skylight/bright ceiling grid; carpeted floor; balconies/tiers around the atrium."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Walking between buildings is difficult due to \"constant sandstorms\""
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Attempting to walk between the atrium-style buildings/casinos along the desert street during constant sandstorms.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Attached images appear AI-generated visualizations (not a hand-drawn map). Visuals used only to supplement described atrium/casino features; text does not specify crowd levels, time of day, or emotions."
+  },
+  "response_id": "resp_0219053a3176d2a500696e5b5ab4f88190ad6a7c897a5aa791",
+  "usage": {
+    "input_tokens": 16081,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 913,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16994
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\16fa9j8.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/16fa9j8/has_anyone_tried_astral_projectinglucid_dreaming/",
+  "title": "Has anyone tried astral projecting/lucid dreaming in the mall world?",
+  "date": null,
+  "content_checksum": "085b3135766630e45e76057ddf8b739dc98432a5e8424cfe58105d59a0ac229b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:03:54.986057+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "lucid_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others can lucidly explore Mall World via lucid dreaming/astral projection; author reports brief lucidity then forgetting or being scared awake by dream people.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "not_mentioned",
+      "author_theory": "Trying to practice lucid dreaming/astral projection to explore more; asks if others can lucidly explore Mall World or are always in the dream state.",
+      "is_asking_if_shared": true
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "observation",
+        "description": "Becomes lucid for a few minutes while in 'mall world'.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "other",
+        "description": "After becoming lucid, either forgets lucidity or is scared by 'dream people' and wakes up.",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "threatening",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "dream people (scare the dreamer)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question with minimal dream phenomenology. No concrete locations, layout, sensory qualities, or navigation described; only brief lucidity duration ('a few minutes') and waking due to forgetting or being scared by dream people."
+  },
+  "response_id": "resp_0440abc46230d8ea00696e47ce0b4c819383deb7b19dbe3885",
+  "usage": {
+    "input_tokens": 12385,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 506,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12891
+  }
+}

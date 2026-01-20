@@ -1,0 +1,143 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1beca54.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1beca54/who_stole_my_shampoo/",
+  "title": "Who stole my shampoo?",
+  "date": null,
+  "content_checksum": "fabb73d756c04016ce93c51ab8b9c2e66e12ed3120fbcf19dfd0540493482a9a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:26:30.884928+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "normal",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_locker_room",
+        "location_name": "dorms gym/shower/lobby area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "compromised",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "\"in the dorms gym/shower/lobby area\"; \"other 50+ showers\"; shower supplies missing when returning"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Halfway through a shower, had to leave for some reason; upon returning, shampoo/conditioner/soap/other shower supplies were gone.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Shower supplies missing when returning"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Checked the other 50+ showers to look for the missing shower supplies; each shower had different people's stuff in them.",
+        "outcome": "failed",
+        "failure_type": "no_effect",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "None of the other showers contained the dreamer's items"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Asked the girl at the front desk about the missing shower supplies; she said this happens a lot.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "staff",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "girl at the front desk",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Single described setting combines dorm/gym/shower/lobby with many showers; no explicit sensory details (lighting, cleanliness, crowding) beyond presence of many shower stalls and front desk."
+  },
+  "response_id": "resp_08894a51d1f892a800696e4d18729081948f8858f3e6368644",
+  "usage": {
+    "input_tokens": 12384,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 741,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13125
+  }
+}

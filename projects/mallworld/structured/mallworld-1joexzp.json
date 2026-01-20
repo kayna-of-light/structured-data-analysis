@@ -1,0 +1,137 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1joexzp.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1joexzp/anyone_recognize_this/",
+  "title": "Anyone recognize this?",
+  "date": null,
+  "content_checksum": "81a1ee6cece82c7dcb1cf8b7b68ca60ca041f43359531f20016bb00616937c61",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:28:35.028463+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others recognize/visited the same place (bridge/tunnel water ride) seen in a Mall World-like dream",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "first_visit",
+      "time_flow": "slow",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Thinks they had one of their first encounters with the Mall World phenomenon; image is an AI-generated recreation of what they saw.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "Pitch black tunnel under a bridge (water ride approach)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "under a bridge",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“slowly heading for a pitch black tunnel under a bridge like some kind of twisted amusement park ride”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "no",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "swimming",
+        "transit_mode": "passive",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "still_in_progress",
+        "qualities": "In a floatie; drifting/slowly heading into a tunnel under a bridge; unable to get out of the floatie."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "darkness",
+        "can_see_beyond": "no",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "still_in_progress",
+        "description": "Entrance to a “pitch black tunnel” under a bridge."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Tried to get out of the floatie but couldn’t.",
+        "outcome": "failed",
+        "failure_type": "physical_inability",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Could not get out of the floatie."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image is described as AI-generated recreation; extraction relies primarily on text. Visual scene likely includes water/bridge/tunnel, but no additional concrete spatial labels were provided in the narrative."
+  },
+  "response_id": "resp_001f908816461d3e00696e5b99b1208194a79535fe829d4207",
+  "usage": {
+    "input_tokens": 12451,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1009,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13460
+  }
+}

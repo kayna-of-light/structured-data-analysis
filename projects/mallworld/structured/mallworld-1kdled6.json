@@ -1,0 +1,126 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1kdled6.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1kdled6/does_anyone_here_work_at_the_planet_fitness_in/",
+  "title": "Does anyone here work at the Planet Fitness in Mall World?",
+  "date": null,
+  "content_checksum": "c8d0ab28c5e977eec243cee822eced8dd474a63f45dbaa36aba66dbc7a8a5d97",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:42:47.659077+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/1ruxbrbi4iye1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if anyone works at the Planet Fitness in Mall World; mentions it is double storied, wildly busy, bizarre, and schedule is unknown.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "Works shifts at the Planet Fitness in Mall World (employee).",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "Planet Fitness (in Mall World)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "warm_golden",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "reality_stability": "not_mentioned",
+          "crowding": "packed",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"double storied, wildly busy, and bizarre\"; image shows a multi-level interior with purple railings, multiple 'planet fitness' signs, a central escalator pair, and a gym/equipment area on the lower level."
+        },
+        "affective_response": "confusion",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "employee",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "transit_mode": "not_mentioned",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "Image depicts a central pair of escalators connecting the two stories within the Planet Fitness/mall interior."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Working shifts at the Planet Fitness; does not know schedule; expects to be late again (\"See you for our next shift, I will be late again.\").",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is framed as a question but contains extractable dream-role and location qualities. Image appears like a stylized/possibly AI visualization rather than a hand-drawn map; treated as an image reference for spatial features (two stories, central escalators, bright warm artificial lighting, purple/yellow Planet Fitness branding). Crowding ('wildly busy') is from text; specific crowd behavior not described."
+  },
+  "response_id": "resp_07bc55959a3b0c7400696e5eddd3448197adb09234e6ce2804",
+  "usage": {
+    "input_tokens": 14115,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 722,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14837
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1e1tfiz.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1e1tfiz/i_always_end_up_back_at_the_stilts_trailer_park/",
+  "title": "I always end up back at \" The Stilts\" trailer park",
+  "date": null,
+  "content_checksum": "b499c09110293748a867d199dee9f6a48568844e95b63b7ebf3c290ba825d5f5",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:39:34.348804+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/djmlcp3wq5cd1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "\"The Stilts\" trailer park / stilt houses",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "warm_golden",
+          "time_of_day": "daytime",
+          "state": "worn",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "water_clarity": "not_mentioned",
+          "raw_description": "\"windswept faded yellow stilt house\"; \"The Stilts\" trailer park; seems \"so empty\""
+        },
+        "affective_response": "confusion",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "unspecified",
+        "transit_mode": "passive",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "After every \"adventure\" or \"chore\" I end up back here (return/reset)."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "After every \"adventure\" or \"chore\" the dreamer ends up back at their stilt house in \"The Stilts\" trailer park.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer does not know anyone else who lives there and is unsure if they are able to talk to anyone else in their \"houses.\"",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Other residents implied (people in their \"houses\").",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Unclear/unspecified inability or uncertainty about being able to talk to others."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears AI-generated (stylized stilt-house cluster by beach/ocean). Text provides limited layout; recurrence is explicit. Return-to-home is modeled as a self-connection due to unspecified prior locations."
+  },
+  "response_id": "resp_040c6e0ac58931cf00696e5005e4248196bd42dbe8ee490eed",
+  "usage": {
+    "input_tokens": 14192,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 784,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14976
+  }
+}

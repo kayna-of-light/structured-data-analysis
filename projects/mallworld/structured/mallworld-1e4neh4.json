@@ -1,0 +1,232 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1e4neh4.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1e4neh4/astral_house_arrest/",
+  "title": "Astral House Arrest",
+  "date": null,
+  "content_checksum": "b93ba8ebe97ff9292017df52388bea084e98a42a6865b872f1c93689d67c2c97",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:39:25.590716+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream",
+        "lucid_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others experience 'astral house arrest' in Mall World, where increased lucidity triggers astral police capture and dream termination; includes description of torture/false awakenings/paralysis.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "looping",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "enjoy Mall World (positive) until becoming extremely lucid",
+      "final_emotion": "nightmarish / dream forced to end",
+      "author_theory": "For some reason I am not allowed to get too lucid.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "Mall World (general environment)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "frequently in Mall World; whenever I begin to become extremely lucid about my environment"
+        },
+        "affective_response": "delight",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "house",
+        "location_name": "astral house",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "still in Mall World",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Once I am in my astral house, I begin to experience weird nightmarish experiences. I am still in Mall World"
+        },
+        "affective_response": "horror",
+        "somatic_response": "paralysis",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "prisoner",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "transit_mode": "not_mentioned",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "astral police 'capture me' leading to being in 'my astral house'; capture also 'forces my dreams to end'"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Becoming extremely lucid about the environment draws attention of 'astral police'.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "threatening",
+            "role": "authority",
+            "authority_nature": "pursuing",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "some type of astral police",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Astral police capture the dreamer; capture forces the dream to end.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "hostile",
+            "role": "authority",
+            "authority_nature": "punitive",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "astral police that 'somehow capture me'",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "Dreamer is tortured with electric shocks.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Forced false awakening loops that never end.",
+        "outcome": "failed",
+        "failure_type": "external_intervention",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "forced false awakening loop"
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "Astral body paralysis; cannot move while seeing weird things.",
+        "outcome": "failed",
+        "failure_type": "physical_inability",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "astral body paralysis"
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "While paralyzed, sees 'weird things that looked like AI art'.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question but contains recurring phenomenology: lucidity triggers authority capture; transition to an 'astral house' within Mall World; torture via electric shocks; forced false-awakening loop; astral-body paralysis; visual phenomena described as 'looked like AI art'. No concrete architectural details, lighting, or specific routes beyond Mall World -> astral house."
+  },
+  "response_id": "resp_03282ae07259647400696e500cd0a881969e440bb3f4c94fca",
+  "usage": {
+    "input_tokens": 12454,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1864,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14318
+  }
+}

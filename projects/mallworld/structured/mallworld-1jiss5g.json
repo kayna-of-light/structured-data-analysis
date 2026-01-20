@@ -1,0 +1,127 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jiss5g.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jiss5g/has_anyone_been_here/",
+  "title": "Has anyone been here?",
+  "date": null,
+  "content_checksum": "736dfd5d512d1ec36918988f02800ad002d4bb5eb0c66d87a6846c966b744e7c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:26:19.114951+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/1tfvcg3qjnqe1.png",
+    "https://i.redd.it/pl3b7j3qjnqe1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to a Coney Island–like boardwalk/beach area with trapping game stalls under the boardwalk",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "beach",
+        "location_name": "Coney Island–like boardwalk beach (under-boardwalk booths)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "eerie",
+          "reality_stability": "not_mentioned",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Reminiscent of Coney Island; booths under the boardwalk in the sand that look like game stalls but trap the people who try to play. (Images show a gloomy beach beside a long pier/boardwalk with rows of carnival booths, ferris wheels/rollercoasters in the background, overcast sky.)"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "People try to play at the game-stall-like booths under the boardwalk; the booths trap the people who try to play.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "customer",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people who try to play at the stalls",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is framed as a question but contains a brief scene description. Images appear AI-generated and were used to supplement environmental qualities (overcast/dim, worn boardwalk/booths, beach/pier amusement backdrop). No explicit emotion, time-of-day, or outcome details given beyond 'trap'."
+  },
+  "response_id": "resp_0cf41d7e04d6a03000696e5b0aa154819080d4a36f3f08cea7",
+  "usage": {
+    "input_tokens": 14787,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 692,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15479
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ou0jcg.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ou0jcg/pink_town/",
+  "title": "Pink town",
+  "date": null,
+  "content_checksum": "cbefa9f905b59b169a6bb85fbccd6719a5e68b36598736f8b33aa3b079048e0e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:56:38.477878+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have the same recurring dream location ('pink town')",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "pleasant feeling",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "small town square / 'pink town'",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "light_temperature": "warm_golden",
+          "time_of_day": "evening",
+          "state": "maintained",
+          "atmosphere": "peaceful",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Small town square; evening time; sky is pink making the town look pink; red brick road in an elongated U shape; a few buildings around the outside of the road; in the middle of the U is a grass patch; nobody else is there."
+        },
+        "affective_response": "comfort",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Tries to enter the buildings around the town square but can't enter.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Buildings are not enterable (no further mechanism described)."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single recurring location described with clear layout (U-shaped brick road, buildings on outside, grass patch inside). No explicit mechanism given for why buildings cannot be entered."
+  },
+  "response_id": "resp_0a99e6e94057173d00696e623bc1e88196b29de7d675a3fd65",
+  "usage": {
+    "input_tokens": 12412,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 783,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13195
+  }
+}

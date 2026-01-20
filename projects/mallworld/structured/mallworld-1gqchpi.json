@@ -1,0 +1,156 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gqchpi.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gqchpi/working_in_mall_world_annoyed/",
+  "title": "Working in Mall World- annoyed",
+  "date": null,
+  "content_checksum": "2fe17c487837c3ae0621ffc4e98c5a7a810464132498576087cf43c944637e28",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:52:18.561422+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "lucid_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "cashier doing customer service at a grocery store",
+      "initial_emotion": "annoyed / bored with mundane dreams (context), then working",
+      "final_emotion": "really angry; woke up immediately after attempting to destroy the place",
+      "author_theory": "Mall World is described as a trap/distraction for lucid dreamers; suggests destroying it rather than meeting up.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "grocery store (described as in Mall World)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "shifting",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Working as a cashier doing customer service at a grocery store; holding an apple; when dropped it \"rotted immediately\"."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "employee",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "flying",
+        "transit_mode": "directed_active",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "interrupted",
+        "qualities": "After becoming lucid, dreamer \"changed into my spiritual form and flew up so high\" and transformed into \"a burning bright white light\"; woke up before acting further."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "A person told the dreamer: \"hey you don’t work here. Don’t bother\" which triggered the realization they were dreaming.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Someone who approached and said the dreamer doesn't work there",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer dropped an apple they were holding; when it hit the floor it \"rotted immediately.\"",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Upon becoming lucid, dreamer changed into a \"spiritual form,\" flew upward, transformed into a \"burning bright white light\" with intent to destroy the place; woke up before doing it.",
+        "outcome": "interrupted",
+        "failure_type": "external_intervention",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Woke up immediately before carrying out the destruction."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only one explicit dream location is described (a grocery store framed as 'Mall World'). Vertical movement is described via flying upward, but no destination/location beyond is specified. Light quality in the store is not described; the 'burning bright white light' is a transformation state rather than ambient lighting."
+  },
+  "response_id": "resp_0a0ec2bdfd6266b500696e531c10fc819397afb41135bb0f70",
+  "usage": {
+    "input_tokens": 12656,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1257,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13913
+  }
+}

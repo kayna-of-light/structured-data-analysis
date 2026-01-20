@@ -1,0 +1,129 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gvka1l.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gvka1l/some_ai_clips_of_the_grocery_store/",
+  "title": "Some AI clips of the grocery store",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:53:59.757703+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/hkduo1mjf02e1.jpg",
+    "https://i.redd.it/2wl7u1mjf02e1.jpg",
+    "https://i.redd.it/hzrtx2mjf02e1.jpg",
+    "https://i.redd.it/5n4io1mjf02e1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "grocery store aisles (AI clips)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "abandoned",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "dirty",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Long grocery aisles with tall shelving; fluorescent/LED ceiling lights; debris and scattered packaging on the floor; some shelves stocked (produce/cans) while other aisles are mostly empty; industrial ceiling grid in some views; tiled floor in some views; one view shows a can placed on the floor in the center of the aisle; one view shows a small distant figure near the far end of an aisle; strong central vanishing-point perspective"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Visual scenes depict multiple grocery-store aisles: (1) stocked produce/canned goods with debris-strewn tiled floor and a single can on the ground; (2) long aisle with mixed stocked shelves and scattered trash; (3) mostly empty shelves with a distant person-like figure at aisle end; (4) mostly empty shelves with a clear view to stocked shelves at the far end.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "single distant person-like figure at far end of one aisle",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text; extraction is based solely on AI-generated images depicting a grocery store interior. Location type set to mall_store to fit schema; visually it is a supermarket/grocery aisle environment."
+  },
+  "response_id": "resp_05e09f05bb3607a600696e537101748195b40662412ac6be6b",
+  "usage": {
+    "input_tokens": 13543,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 724,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14267
+  }
+}

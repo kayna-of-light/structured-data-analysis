@@ -1,0 +1,210 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1d3zl7c.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1d3zl7c/extra_strange_or_bad_dreams_in_mallword/",
+  "title": "Extra strange or bad dreams in Mallword",
+  "date": null,
+  "content_checksum": "09b6998aed5bc8f7852dcf0f0c12c4056fd43c9132149539cf60132bae10fbcf",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:34:35.806676+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have bad/negative dreams in Mall World; describes a recent nightmare-like Mall World segment involving infected people and dead/petrified adults",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "generally chill, but somehow unsettling in its vibe at times",
+      "final_emotion": "concern",
+      "author_theory": "asks if bad dream indicates a battle/section of mallworld or symbolism about greed",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "field of old wood cabins",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "moderate",
+          "crowd_behavior": "panic",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "running through a field of old wood cabins with other kids; screams heard in the distance; people over a certain age were being found dead, as if petrified/mummified mid stride or in place in their homes"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall",
+        "location_name": "lower level of Mallworld (familiar area)",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "upper levels (accessed by tall escalators) and below a tall glass atrium ceiling",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "reality_stability": "solid",
+          "crowding": "crowded",
+          "crowd_behavior": "panic",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "normal",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "cheap linoleum floors; a few tall escalators to upper levels; a tall glass atrium ceiling; generally looked normal, a familiar area; people shoving their way through the crowd who were 'infected'"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "transit_mode": "fleeing",
+        "direction": "down",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "ran through the site into a lower level of Mallworld"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Running with other kids through a field of old wood cabins while screams are heard in the distance; older people are found dead/petrified/mummified in place.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "other kids running",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "people over a certain age found dead, as if petrified/mummified mid-stride or in their homes",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Moving through a crowded lower-level mall area with people shoving through the crowd; presence of 'infected' people identifiable by masses of green mold on their faces and a greedy look in their eyes; the dreamer perceives that even a look from them risks infection.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "confusing",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "crowd with people shoving their way through",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"infected\" people with masses of green mold on their faces and a perverted look of greed in their eyes; \"like a look from them ran the risk of infection\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question but contains one recent bad dream sequence. Lighting temperature and exact time of day not specified; 'tall glass atrium ceiling' suggests mixed lighting but not explicit."
+  },
+  "response_id": "resp_0dc1cb473b42545100696e4ef490f081968fc3a1b72fd4a520",
+  "usage": {
+    "input_tokens": 12624,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1771,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14395
+  }
+}

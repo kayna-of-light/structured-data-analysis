@@ -1,0 +1,111 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1povdb2.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1povdb2/what_is_this_subreddit_for/",
+  "title": "What is this subreddit for?",
+  "date": null,
+  "content_checksum": "2e1062a8a38477960006778b7f19520b3fe0c96a6204da9126176c24bdf6dc10",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:10:47.670212+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "childhood_dream",
+        "recent_dream",
+        "recurring_dream",
+        "multiple_dreams"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "What counts as a 'Mall World' dream; does it have to be a mall; seeking similar subreddits",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "teen",
+        "age_explicit": 17,
+        "dreams_since_age": 5,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "It's driving me insane",
+      "author_theory": "Dreams occur more when not doing well in real life; feels 'taunted by a parallel universe of what could've been'",
+      "is_asking_if_shared": true
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unspecified_world",
+        "interaction_type": "observation",
+        "description": "Across many dreams, the dream always takes place in the same world/layout (ages 5–14; recurring again at age 17).",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified_world",
+        "interaction_type": "social",
+        "description": "There are recurring characters who remember the dreamer and events from previous dreams; later, the characters have 'grown up somehow'.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "Characters who remember me and events from my previous dreams; have grown up somehow",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified_world",
+        "interaction_type": "observation",
+        "description": "Dream frequency increases when the dreamer is 'not doing so great at life in the real world'.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question; contains phenomenological recurrence details (stable world/layout; recurring characters with memory) but no concrete location descriptions (light, cleanliness, specific place types) or explicit connections/boundaries. Created a placeholder location_id for the recurring 'world/layout' to anchor interactions."
+  },
+  "response_id": "resp_0b09303609c2794f00696e658c5d2c8193bc775460c993a8df",
+  "usage": {
+    "input_tokens": 12517,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 613,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13130
+  }
+}

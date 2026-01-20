@@ -1,0 +1,216 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ojshze.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ojshze/what_the_hell_is_this_place/",
+  "title": "What the hell is this place??",
+  "date": null,
+  "content_checksum": "71595b29eb08dad086b4c13fc4e3a4feae5582175d086bd7b02c84db4b1420c5",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:53:40.501820+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/6a3wj87727yf1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recent_dream",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have similar experiences of a frightening pool/contestant area in Mall World after a break",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "variation",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "good dream about old dog that passed away",
+      "final_emotion": "frightened; forced self to wake up to avoid drowning",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "door area (at one of the doors)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": "near/at a door leading into/within the pool area",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "leak",
+          "water_clarity": null,
+          "raw_description": "\"at one of the doors\"; \"water was running through the pipes\""
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "pool",
+        "location_name": "pool area (contestant/competition area)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "not_mentioned",
+          "crowding": "crowded",
+          "crowd_behavior": "coordinated",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "pool_clean",
+          "water_clarity": null,
+          "raw_description": "\"other 'contestants' of the pool area\"; \"It almost felt like a competition and a crowd was watching\"; \"intense feeling that the water would drown me\""
+        },
+        "affective_response": "horror",
+        "somatic_response": "ejection",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "transit_mode": "fleeing",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "door adjacent to/leading into pool/contestant area"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dropped phone and wallet and screamed for help while water was running through the pipes",
+        "outcome": "failed",
+        "failure_type": "no_effect",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "watching",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "crowd watching; only other contestants could hear",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Help did not arrive; only contestants could hear"
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Perceived the pool area as a competition with contestants and a watching crowd",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "other \"contestants\" in the pool area",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "watching",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a crowd was watching",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Forced self to wake up in real life due to intense feeling the water would drown them",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Attached image appears AI-generated visualization of a circular/atrium-like pool/fountain room with arches and water jets; the text describes a door area connected to a pool 'contestant' area with a watching crowd. Light qualities and exact geometry are not described in text, so not encoded beyond water features and crowd/competition framing."
+  },
+  "response_id": "resp_00e03ed117e4a71b00696e61654e988190808ebfa640b2fd70",
+  "usage": {
+    "input_tokens": 13807,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1215,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15022
+  }
+}

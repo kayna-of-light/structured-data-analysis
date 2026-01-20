@@ -1,0 +1,126 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1q8w6om.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1q8w6om/has_anyone_been_to_the_nightclub/",
+  "title": "Has anyone been to the nightclub?",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:20:29.320127+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/fscpsgw4ogcg1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking whether others have been to a 'nightclub' location in Mall World (shown via attached image).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "casino",
+        "location_name": "Nightclub (signage: \"NEON\", \"NEON DREAM\")",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "light_temperature": "neutral",
+          "time_of_day": "timeless",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "reality_stability": "hyper_real",
+          "crowding": "sparse",
+          "crowd_behavior": "wandering",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Large indoor nightclub-like space with many multicolored neon/laser lines across ceiling and floor; central geometric neon tunnel/arch feature; multiple railings and ramps/terraced walkways; foggy/hazy air; signage reads \"NEON\" and \"NEON DREAM\"."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Visual depicts several human silhouettes standing/walking on ramps and near railings within a neon-lit nightclub space.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Several silhouetted figures dispersed around the space (standing on ramps/walkways).",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text was provided; extraction is based solely on the attached image. Image appears AI-generated (highly stylized neon/laser scene). Location type set to 'casino' as closest available schema label for a nightclub; described explicitly as nightclub in location_name."
+  },
+  "response_id": "resp_06afe82944a08ba600696e67ba64908197a323ff4840dd289a",
+  "usage": {
+    "input_tokens": 13541,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 916,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14457
+  }
+}

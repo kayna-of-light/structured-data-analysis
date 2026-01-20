@@ -1,0 +1,147 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1qghrnx.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1qghrnx/dead_end_round_i_keep_hitting/",
+  "title": "dead end round I keep hitting",
+  "date": null,
+  "content_checksum": "127f17b7930170209779cd34d762fc7e5a4beb8cbb6f1e0e9d470905a0af6100",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:22:47.696292+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/7i27malzr5eg1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "dead-end round (circular mall rotunda)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "warm_golden",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"dead ends like this in the mall\"; \"very close recreation of what I see, the lighting and textures especially\". Image shows a circular/round rotunda with glossy reflective floor, warm amber lighting, a domed/oculus-style ceiling, multiple closed storefront shutters, and luxury-brand signage (e.g., Chanel/Prada/Hermes/Dior/Cartier/Fendi/Bvlgari)."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "end_of_road",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "Repeatedly \"getting stuck in dead ends like this\" within the mall; depicted as a round/circular area with storefronts but no visible exit paths in the recreation image."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer becomes stuck at recurring mall dead end/round rotunda.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "When people are encountered in this mall area, they are usually large, authoritarian men.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "threatening",
+            "role": "authority",
+            "authority_nature": "observing",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"large, authoritarian men\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears to be a recreated visualization (not a hand-drawn map). Spatial info is limited to a single recurring dead-end circular mall space; no explicit exits/connections described."
+  },
+  "response_id": "resp_02c083bf05b60a4800696e6848a2c08196ac8a73c775bc8a6e",
+  "usage": {
+    "input_tokens": 13035,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 796,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13831
+  }
+}

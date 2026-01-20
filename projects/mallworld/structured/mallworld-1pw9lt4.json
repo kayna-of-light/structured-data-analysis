@@ -1,0 +1,123 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pw9lt4.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pw9lt4/beige_hotel/",
+  "title": "Beige hotel",
+  "date": null,
+  "content_checksum": "4b344a8a868597715f750e7082631b11d4927a941eacf57cdc5cdd6f35900cbb",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:14:19.995889+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others recognize a 'normal/beige hotel' location with low privacy and wandering people",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": "beige hotel (normal hotel)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "not_mentioned",
+          "crowding": "moderate",
+          "crowd_behavior": "wandering",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "exposed",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Normal hotel with beige walls and carpets. Doors & windows either aren't a thing here or they just never close. People wandering in and out of rooms and everywhere. There is no semblance of privacy but it doesn't seem to be a big deal. People rested there when they needed to and then kept wandering."
+        },
+        "affective_response": "indifference",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observed people wandering in and out of rooms; doors/windows absent or never closing; resting briefly then continuing to wander; lack of privacy not treated as a problem.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "People wandering in and out of rooms and everywhere; resting when needed and then wandering again",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Lighting, time-of-day, and exact layout/vertical position not described. 'Does this hotel sound familiar' treated as explicit familiarity/recurrence of the location."
+  },
+  "response_id": "resp_0685e645bae5152600696e665c438881908a3037a3fcd48a02",
+  "usage": {
+    "input_tokens": 12377,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 899,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13276
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hs7g94.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hs7g94/blackouts_prepper_shopping/",
+  "title": "Blackouts? Prepper shopping?",
+  "date": null,
+  "content_checksum": "52cbebc30eda0897e5026d2b23c331ece0197d7c60dcfc95770f959c2849bc23",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:02:11.376731+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others were in the same dream location/event (blackout supermarket prepper shopping)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "female",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "local supermarket",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "reality_stability": "solid",
+          "crowding": "packed",
+          "crowd_behavior": "panic",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“lights were completely out. Nothing but the emergency lighting was on” and it was “swamped with customers grabbing all manner of ‘survival’ stuff, a la Quarantine shopping.”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observed store blackout conditions with only emergency lighting and heavy customer activity focused on “survival” goods.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Management allowed customers to leave with goods under a stated “two cart per family” rule (people “just walk out”).",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "neutral",
+            "role": "staff",
+            "authority_nature": "guiding",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Store management enforcing/announcing a “two cart per family” rule while letting people walk out.",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "confusing",
+            "role": "customer",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Swamped customers grabbing “survival” stuff; at least one shouting match occurred.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "“survival” stuff (unspecified goods)",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Saw at least one shouting match among customers; it was resolved quickly.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "hostile",
+            "role": "customer",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Customers involved in a shouting match; resolution was quick.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Single described location (supermarket). No explicit layout, directions, or connections mentioned; spatial data limited to being inside the store. Author self-description (“lady with a pixie cut…”) is noted as identity cue but not a separate entity."
+  },
+  "response_id": "resp_0ed41c2c5940fedf00696e5570d29c8197adf2348caf817e1b",
+  "usage": {
+    "input_tokens": 12403,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1235,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13638
+  }
+}

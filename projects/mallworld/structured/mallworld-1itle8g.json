@@ -1,0 +1,111 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1itle8g.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1itle8g/makeup_counter/",
+  "title": "Makeup Counter?",
+  "date": null,
+  "content_checksum": "e77b0556fb972062ada016c617b5cef689a2ec10878a57248e047e5fb3b24423",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:12:19.734846+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others visit a specific recurring mall store area: a glass store/section with 50% off luxury cosmetics, like a TJ MAXX makeup section, that must be walked through to reach the makeup area.",
+      "should_skip_extraction": true,
+      "skip_reason": "No first-person dream narrative/event sequence is described; the post is a prompt asking if others have a similar location."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "Glass cosmetics discount store / makeup counter area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the mall; must be walked through to get to the makeup",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“a store in the mall where there’s a big section of 50% off luxury cosmetics… like a TJ MAXX but just the makeup part… The store is all glass and you have to walk thru it to get to the makeup”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Must walk through the all-glass store to reach the makeup section."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "minimal",
+    "extraction_notes": "Extracted as a described/queried mall location rather than a narrated dream episode; spatial relation captured (must traverse glass store to reach makeup area)."
+  },
+  "response_id": "resp_0faa2b5b93e8164200696e57d6698881938abf6015aea7f000",
+  "usage": {
+    "input_tokens": 12345,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 858,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13203
+  }
+}

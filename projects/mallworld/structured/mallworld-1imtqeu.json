@@ -1,0 +1,126 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1imtqeu.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1imtqeu/does_this_look_familiar/",
+  "title": "Does this look familiar?",
+  "date": null,
+  "content_checksum": "892062599261d0a0a885346ad295c446513ca60c03f067071ddda8db24377659",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:09:58.085453+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/3xy4fg67wgie1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if an image of a real mall (Pioneer Place, Portland OR) looks familiar to others / resembles Mall World",
+      "should_skip_extraction": true,
+      "skip_reason": "No dream narrative provided; post is a recognition prompt using a real-world mall photo."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Claims the mall designer is 'one of us' (implies resemblance to Mall World).",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "Pioneer Place (real mall, Portland, Oregon)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "neutral",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "wandering",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Photo shows a multi-level mall atrium with a large geometric glass skylight/dome, multiple stacked balconies/levels, escalators crossing the open central void, glass/metal railings, vertical columns, and storefronts (e.g., 'ZARA'). Bright sunlight casts strong shadows/patterns on floors and walls."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "transit_mode": "not_mentioned",
+        "direction": "diagonal_up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "Multiple escalators visible traversing between levels across the central atrium (open void)."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "transit_mode": "not_mentioned",
+        "direction": "diagonal_down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "Escalators also visible descending between levels within the same atrium space."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post contains no dream events; extraction is limited to phenomenological features visible in the attached real-mall photo and the minimal text naming the location."
+  },
+  "response_id": "resp_02bf72ef7011405d00696e5733a66c81978f4dd6250b952dbf",
+  "usage": {
+    "input_tokens": 14069,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 707,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14776
+  }
+}

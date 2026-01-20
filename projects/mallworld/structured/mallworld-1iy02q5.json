@@ -1,0 +1,141 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1iy02q5.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1iy02q5/dreamallpolis/",
+  "title": "Dreamallpolis",
+  "date": null,
+  "content_checksum": "2c81feb0c555c6087472ec1ff9398417f5318c023de507608c50f5fd0916d882",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:14:06.678721+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/dw6ojbv8ible1.jpg",
+    "https://i.redd.it/rmidrcv8ible1.jpg",
+    "https://i.redd.it/vm0q4bv8ible1.jpg",
+    "https://i.redd.it/o2jfebv8ible1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "Dreamallpolis (Designer City build)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "daytime",
+          "state": "new",
+          "atmosphere": "neutral",
+          "reality_stability": "hyper_real",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "river",
+          "water_clarity": "blue/clear-looking (in-game water)",
+          "raw_description": "Isometric, high-density futuristic city with very tall skyscrapers; wide gray paved streets/blocks; large cable-stayed bridge structures with white cables; central circular dome/arena-like building; multiple circular plazas with bright vertical light beams; landscaped green areas and trees; waterways/canals along edges; various landmark-style buildings (stadium/arena, spherical building, castle-like complex, tower/needle)."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "bridge",
+        "transit_mode": "not_mentioned",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Large cable-stayed bridge-like structures spanning over blue water channels around central district (visible in images)."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "transit_mode": "not_mentioned",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Grid-like paved streets/blocks connecting towers, plazas, and landmark buildings (visible road network)."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "visible_location",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "City district edges bordered by blue water channels/riverways; beyond are additional city blocks and green undeveloped-looking grid areas (as shown in screenshots)."
+      }
+    ],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post text provides no dream narrative; images appear to be in-game screenshots (‘Designer City’). Extracted only visible environmental/spatial features. One attached image appears unrelated (close-up of a mushroom/hand) and is not used for Mall World spatial extraction."
+  },
+  "response_id": "resp_04324caa63b86b6c00696e582bba3c8193b9699fc34e8b8392",
+  "usage": {
+    "input_tokens": 19385,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 787,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 20172
+  }
+}

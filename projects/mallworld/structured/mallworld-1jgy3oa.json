@@ -1,0 +1,116 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jgy3oa.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jgy3oa/does_anyone_have_reoccurring_dream_bathrooms/",
+  "title": "does anyone have reoccurring dream bathrooms??",
+  "date": null,
+  "content_checksum": "5c135224d3177f69b065e11e7757be4a5f34b7a91b337b531fb695eb66559245",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:25:19.013758+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/3addb81gh5qe1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Recurring dream bathrooms (attached to gallery job; getting stuck showering too long)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": "gallery job",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "attached to my gallery job",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "hyper_real",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "pool_clean",
+          "water_clarity": "clear (implied by clean/sterile look in image)",
+          "raw_description": "Large, futuristic/organic bathroom with many circular basins/pools and shower fixtures; glowing strip/LED lighting; tiled surfaces; smooth rounded architecture; monochrome green tint."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "employee",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Taking a shower; sometimes gets stuck taking a shower in there too long.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question with a brief recurring-dream detail; image appears to be an AI visualization of a bathroom/shower space and is used to supplement environmental qualities. No explicit layout/paths described."
+  },
+  "response_id": "resp_0abbd5fbd09c41df00696e5ad5d6e48196a6c28ca99291e78e",
+  "usage": {
+    "input_tokens": 13800,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 571,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14371
+  }
+}

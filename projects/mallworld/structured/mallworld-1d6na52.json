@@ -1,0 +1,112 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1d6na52.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1d6na52/bathrooms_in_mallworld/",
+  "title": "Bathrooms in mallworld",
+  "date": null,
+  "content_checksum": "4b59def4ad9320d3f9b8b1a54dbfd81bbffd4b1189ea13fd535020f05a14baa7",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:35:03.976783+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others experience weird bathrooms/washrooms in Mall World (small space, doors won't close, sometimes dirty/gross).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_public",
+        "location_name": "washroom",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "dirty",
+          "privacy_status": "compromised",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“washroom is always weird”; “space is always so small”; “You can never close the doors”; “sometimes they're super dirty and gross.”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Attempting to close the washroom door(s); doors cannot be closed.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Doors cannot be closed."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a recurring Mall World bathroom/washroom with consistent constraints (very small space; doors won’t close; sometimes very dirty). No other locations, connections, lighting, crowding, or emotions described."
+  },
+  "response_id": "resp_032b6254f40812d700696e4f1a86948194a4e6e0afc1bcb5e3",
+  "usage": {
+    "input_tokens": 12355,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 784,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13139
+  }
+}

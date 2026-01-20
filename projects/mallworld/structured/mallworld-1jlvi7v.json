@@ -1,0 +1,253 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jlvi7v.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jlvi7v/the_last_floor/",
+  "title": "The last floor",
+  "date": null,
+  "content_checksum": "f9a1cf3053260fc39d572f3eff0979b25efcf1b1110457d162d98d63a3f01034",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:28:05.682927+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asks if others have a dream narrator / third-party guide",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Mentions having heard IRL that you're not supposed to look at people's eyes in dreams; notes dreams happen in a mall/campus maze and feels familiar while there.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "mall/campus maze with many staircases (going to the last floor)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "contains many staircases leading up to a 'last floor'",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "shifting",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“some sort of mall/campus that resemble a maze”… “going up to the last floor, there were many staircases (like in the squid game)”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "top of the stairs / approach to the last floor",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the top of the staircases",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "shifting",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "A girl “standing at the top of the stairs preventing me from continuing to go up”… “creepy smile”… after eye contact “her face went blurry and weird with glitches.”"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "no",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "transit_mode": "directed_active",
+        "direction": "up",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "partial",
+        "qualities": "“many staircases” leading “up to the last floor”"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "guarded",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "yes_explicit",
+        "crossing_outcome": "failed",
+        "description": "Girl blocks access upward: “preventing me from continuing to go up”… says “its the last floor… you need to go back.”"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer tries to continue upward to the “last floor”; blocked by a girl who tells them to go back because it is “the end of the day.”",
+        "outcome": "failed",
+        "failure_type": "external_intervention",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "blocker",
+            "authority_nature": "blocking",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Girl with a “creepy smile” standing at the top of the stairs preventing passage upward.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Blocked by the girl at the top of the stairs"
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer concentrates on the girl's eyes/face; her face becomes “blurry and weird with glitches.” A narrator voice says: “oops, you are not supposed to look at people's eyes in dreams..”",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "confusing",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Face becomes “blurry and weird with glitches” after eye contact.",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "other",
+            "demeanor": "neutral",
+            "role": "guide",
+            "authority_nature": "guiding",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Narrator/third-party voice that “describe your movements from time to time and also guide you.”",
+            "name_or_relation": "dream narrator"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "After the narrator warning, the girl gets a “psychotic look” and starts going down the stairs “as if she came to kill me”; dreamer panics.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "authority_nature": "pursuing",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Girl shifts from blocking to threatening; “psychotic look” and moves down the stairs toward dreamer.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "Dreamer becomes aware: “Wait a minute it's a dream I can easily defeat her”… tries to will “her head will catch on fire” but “it didn't exactly work, something else happened instead.” Threat is gone afterward.",
+        "outcome": "interrupted",
+        "failure_type": "no_effect",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "authority_nature": "pursuing",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Same girl; threat disappears after an attempted dream-control action that does not work as intended.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Location is described as a mall/campus maze with many staircases and a ‘last floor’; no concrete architectural details beyond vertical ascent and a guarded threshold. Time cue is verbal (“end of the day”) rather than environmental (no lighting/time-of-day described). Reality instability captured from explicit “glitches” in the girl’s face."
+  },
+  "response_id": "resp_060f0a58ddbc961600696e5b68ad5081979015a13af6d41d24",
+  "usage": {
+    "input_tokens": 12617,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 2207,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14824
+  }
+}

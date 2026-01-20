@@ -1,0 +1,145 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1e4tk6x.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1e4tk6x/prison/",
+  "title": "Prison",
+  "date": null,
+  "content_checksum": "d6ed113ebbc49d91b070a00fba8a3a6279025492b7a2f55af52fbd21fbe505e8",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:39:28.950087+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recent_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have a prison location in Mall World; recurring arrests/imprisonment for minor/misunderstood offenses; perceived punishment for becoming too lucid/active.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "It almost feels like I’m getting to lucid or crazy in my dream world and I being punished for it.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "prison",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in their 'mall world'",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“a prison in their mall world… pretty recent… spending a lot of time in and out of there recently”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "prisoner",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Getting arrested and thrown into a prison.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "security",
+            "authority_nature": "punitive",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "officer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Arrested for “silly things” such as “evading an officer” or “some misunderstanding.”",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "security",
+            "authority_nature": "punitive",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "officer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question with brief recurring-dream elements. Prison is mentioned but lacks sensory/spatial details (lighting, layout, boundaries, specific rooms). Time/sequence is implied via 'recent' and 'spending a lot of time in and out of there recently'."
+  },
+  "response_id": "resp_04cc7da87824774e00696e501a1ae0819497bc2c32c9b38b6c",
+  "usage": {
+    "input_tokens": 12379,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1067,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13446
+  }
+}

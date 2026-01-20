@@ -1,0 +1,154 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1glj5yv.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1glj5yv/this_is_kinda_what_the_parking_garage_looks_like/",
+  "title": "This is kinda what the parking garage looks like to me.",
+  "date": null,
+  "content_checksum": "cb6951c2d99ebe25154233457a59b1fc86a14fe769f5870d72a69d331bcece64",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:51:28.854309+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/17a7sfe1zezd1.jpg",
+    "https://i.redd.it/l0tloee1zezd1.jpg",
+    "https://i.redd.it/mt01p3f1zezd1.jpg",
+    "https://i.redd.it/sxsoyfe1zezd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "parking_structure",
+        "location_name": "parking garage",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“big rectangle parking garage”; “very dark inside”; “a ton of floors and is very tall” (text). Images show a multi-level, open-sided garage with cars parked on many levels, a large central atrium/void, and a roller-coaster track looping through the interior."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "amusement_park",
+        "location_name": "roller coaster inside the garage",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside/around the interior of the parking garage",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Roller coaster “wraps around the inside of the parking garage”; track color “usually red / yellow or like orange” (text). Images show red tracks looping and spiraling around the central void and across multiple levels."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "transit_mode": "not_mentioned",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_mentioned",
+        "outcome": "not_mentioned",
+        "qualities": "“escalators all around (very tall escalators)” (text). Images show at least one long escalator spanning multiple levels near the central atrium."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a recurring parking garage scene but provides no narrative actions, entities, or traversal outcomes. Images appear AI-generated and were used to supplement geometry (central void, multi-level structure, red track loops, visible escalator)."
+  },
+  "response_id": "resp_04c8747ac55e35c400696e52d864bc81958cf7fd5439d569e5",
+  "usage": {
+    "input_tokens": 13612,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 858,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14470
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ocfwa1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ocfwa1/i_met_someone_in_the_mall/",
+  "title": "I met someone in The Mall",
+  "date": null,
+  "content_checksum": "bea0dd703dbe21a52dbd5ef6fbe5403074e6fcd58dd8e3c97c6ba00265a6f494",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:50:28.323663+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/kmlckgq7ghwf1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "This is typical of my dreams here, just doing normal things but in a surreal sense.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "mall atrium",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "warm_golden",
+          "time_of_day": "daytime",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "reality_stability": "not_mentioned",
+          "crowding": "moderate",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Sitting in the mall atrium with other people; normal things but in a surreal sense."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "A woman sitting next to the dreamer reached into a bag, took out something like a protein bar, offered it; dreamer said thank you and asked if she was there to meet new people in Mall World too; she smiled.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Woman around 30 with dark skin and hair in a white summer dress; sitting next to dreamer; reaching into a bag; smiling.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "something like a protein bar",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Single explicit location (mall atrium). Image appears to be an illustrative/AI-style visualization of a woman offering a protein bar in a bright atrium with plants and glass ceiling; used only to supplement lighting/setting details. No explicit navigation, boundaries, or additional locations described."
+  },
+  "response_id": "resp_08529cc5b5b83b4400696e60ba3cf48195849c897222a5981b",
+  "usage": {
+    "input_tokens": 13472,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 671,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14143
+  }
+}

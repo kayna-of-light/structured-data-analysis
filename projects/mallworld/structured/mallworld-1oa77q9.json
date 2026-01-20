@@ -1,0 +1,217 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1oa77q9.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1oa77q9/the_underground_apartment_complex/",
+  "title": "The underground apartment complex",
+  "date": null,
+  "content_checksum": "c9f292024a4d2139e035d1ec11d4f1d22a4f439293035cd78ed7518346532ffa",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:49:12.475000+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/of7lpupdpxvf1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recent_dream",
+        "recurring_dream",
+        "lucid_dream",
+        "nightmare"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether anyone else has experienced this place",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "woke up in a jolt",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "underground apartment complex / underground town",
+        "position": {
+          "vertical": "lowest",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "far underground (via elevator)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "timeless",
+          "state": "maintained",
+          "atmosphere": "oppressive",
+          "reality_stability": "solid",
+          "crowding": "moderate",
+          "crowd_behavior": "coordinated",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"took an elevator far underground\" to \"this town\" with a \"liminal apartment-like layout\"; \"center of the town in the middle\"; \"all the houses lining the walls and stacked on top of each other like an apartment building\"; \"off-white color\"; \"park in the center with astroturf\" where \"everyone congregated\"; people \"seemed to be in some sort of cult\"; wore \"white garments like kimonos and linen clothing\"; they \"formed a circle around me and started singing in these off putting harmonies\""
+        },
+        "affective_response": "horror",
+        "somatic_response": "paralysis",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "central astroturf park / courtyard",
+        "position": {
+          "vertical": "lowest",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the center of the underground town; surrounded by stacked off-white housing lining the walls",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "timeless",
+          "state": "maintained",
+          "atmosphere": "oppressive",
+          "reality_stability": "solid",
+          "crowding": "crowded",
+          "crowd_behavior": "coordinated",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"park in the center with astroturf where everyone congregated\"; group later \"formed a circle around me\" and sang \"off putting harmonies\""
+        },
+        "affective_response": "horror",
+        "somatic_response": "paralysis",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "lost",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_3",
+        "to_location_id": "loc_1",
+        "connection_type": "elevator",
+        "transit_mode": "passive",
+        "direction": "down",
+        "difficulty": "normal",
+        "mechanism_function": "working_normal",
+        "outcome": "succeeded",
+        "qualities": "\"took an elevator far underground\""
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "People in the central astroturf park were gathered; initially they did not notice the dreamer.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "indifferent",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people wearing white garments like kimonos/linen; congregated in the center",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "After noticing the dreamer, the crowd formed a circle around them and sang in off-putting harmonies.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "threatening",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "formed a circle; singing in \"off putting harmonies\"; white garments",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "Dreamer became paralyzed, fell back, floated a few feet off the ground, and felt heavy vibrations; then woke up in a jolt.",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "threatening",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "surrounding circle present during paralysis/levitation event",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Image appears to be a photo of an enclosed courtyard/atrium with off-white walls and many windows, matching the described stacked apartment layout and central astroturf park; treated as reference image (has_image=true) rather than a hand-drawn map."
+  },
+  "response_id": "resp_03bf0addbbda7d8500696e604a23dc819786038a1edb74bffb",
+  "usage": {
+    "input_tokens": 12762,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1291,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14053
+  }
+}

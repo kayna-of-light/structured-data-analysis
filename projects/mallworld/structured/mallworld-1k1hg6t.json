@@ -1,0 +1,151 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k1hg6t.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k1hg6t/had_ai_create_an_ad_mock_up_for_the_resort_level/",
+  "title": "Had AI Create An Ad Mock Up For 'The Resort' Level Of MallWorld",
+  "date": null,
+  "content_checksum": "e73fe9966185c0babebd83780cf36350a9c3fd8f8ff73368f58f98e6434a20a1",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:36:32.743538+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/npmuskg2cfve1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have dreamed of the same 'Resort' level/location",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "waterpark",
+        "location_name": "The Resort",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "warm_golden",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "reality_stability": "not_mentioned",
+          "crowding": "moderate",
+          "crowd_behavior": "socializing",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "pool_clean",
+          "water_clarity": "clear",
+          "raw_description": "AI ad mock-up titled 'THE RESORT' showing a lakeside pool/water area with people swimming, a covered swim-up bar/pavilion, jet skis on the water, and a resort building with arches"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_arcade",
+        "location_name": "Multilevel arcade (within The Resort ad)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "advertised as part of 'The Resort' amenities",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "reality_stability": "not_mentioned",
+          "crowding": "sparse",
+          "crowd_behavior": "socializing",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Interior arcade scene with neon-patterned walls, multiple arcade cabinets, an 'ARCADE' sign, and what appears to be stairs/level change; ad text includes 'MULTILEVEL ARCADE'"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "transit_mode": "not_mentioned",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Ad implies a 'multilevel arcade' as part of the resort; image shows an interior arcade with a visible level change/steps"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post text provides minimal narrative; most phenomenological data comes from the AI-generated ad image. The image depicts resort/waterpark and arcade amenities but does not confirm exact dream sequence, access points, or emotions."
+  },
+  "response_id": "resp_00d974d202340d7400696e5d6ca91c81979b2ca262c0e793ac",
+  "usage": {
+    "input_tokens": 13402,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 840,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14242
+  }
+}

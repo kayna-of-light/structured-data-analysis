@@ -1,0 +1,124 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1phurp5.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1phurp5/the_school_hallway/",
+  "title": "The school hallway",
+  "date": null,
+  "content_checksum": "e0297d7c995de79375588c06990882b4b0a04d56b093d6f33d2e97823c4d2b69",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:08:13.114282+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/7agoj5m4136g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "not mentioned (but expressed worry/urgency about class/failing)",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "school",
+        "location_name": "The school hallway",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "warm_golden",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "moderate",
+          "crowd_behavior": "wandering",
+          "intellectual_focus": "testing",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "(image) long, narrow school hallway with lockers on both sides; black-and-white checkered floor; multiple upper levels/catwalk-like corridors/railings; bright ceiling lights; groups of people walking away down the corridor"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "student",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Looking for their class: \"Where is my class??\"",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Concern about academic performance: \"I’m pretty sure I’m failing cause I haven’t been going all semester!!\"",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Text is very brief; most environmental details extracted from the attached image. Image appears like a stylized/possibly AI-generated depiction, but this is not explicitly stated; flagged only as has_image."
+  },
+  "response_id": "resp_0caf05669e6158e900696e64dd3dc48194992b92b9e9dde70c",
+  "usage": {
+    "input_tokens": 14081,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 622,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14703
+  }
+}

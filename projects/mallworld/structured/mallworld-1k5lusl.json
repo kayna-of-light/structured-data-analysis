@@ -1,0 +1,136 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k5lusl.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k5lusl/sea_of_terror/",
+  "title": "Sea of terror?",
+  "date": null,
+  "content_checksum": "01d485ebfeebb951598a18cdb05a4e331ffed5f5129a229f1bc791f32ed4238a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:39:07.142995+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/i7o31fqs9hwe1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others experience a recurring-feeling scene: standing outside a condo by dark ominous water with wind and silence while people wait and look into darkness.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "outside of a condo overlooking the water",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "not_mentioned",
+          "crowding": "moderate",
+          "crowd_behavior": "waiting",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "water_clarity": null,
+          "raw_description": "standing outside of a condo overlooking the water; it's dark and it feels ominous and foreboding; the wind is blowing but you can't hear anything; everybody is just standing looking out over the water into the darkness waiting"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "darkness",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "looking out over the water into the darkness"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Standing with others outside the condo, looking out over the water into the darkness; waiting.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "everybody is just standing looking out over the water into the darkness waiting",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is phrased as a shared-experience question rather than a first-person dream report. Image appears to depict a dark waterfront scene with silhouettes and a tall building; used only to support the 'dark/ominous waterfront with people standing' setting. Water turbulence inferred from 'wind is blowing' rather than explicitly stated."
+  },
+  "response_id": "resp_0c70ce8b6494fa5800696e5dfc31fc81969492048d075210bd",
+  "usage": {
+    "input_tokens": 14186,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1006,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15192
+  }
+}

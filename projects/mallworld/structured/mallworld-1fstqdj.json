@@ -1,0 +1,196 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1fstqdj.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1fstqdj/trapped_in_the_department_store/",
+  "title": "trapped in the department store",
+  "date": null,
+  "content_checksum": "a02b6d96aa7f14db3096d3c8b264a0883be38b8f543ee3d27c80adbce0ee13ae",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:46:32.390955+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have experienced being trapped/lost in a bright clean department store area within Mall World",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "department store (similar to a Dillard's)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the mall; described as almost separate from the mall",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "wrong",
+          "reality_stability": "solid",
+          "crowding": "varies",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "sterile",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“very bright, with a lot of white display shelving, very very clean”… “almost separate from the mall”… “lost within all the individual departments and maze of shelves and racks”… “there is no escaping the department store”… “always spawn directly into it, never walking inside from the rest of the mall”"
+        },
+        "affective_response": "confusion",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "transit_mode": "fleeing",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "“scrambled out the front doors with a mass wave of confused and scared customers” (only time exit was found)"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "“there is no escaping the department store” (typically cannot find exit/leave)"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Gets lost in “all the individual departments and maze of shelves and racks.”",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Tries to find the exit/escape the department store but typically cannot.",
+        "outcome": "failed",
+        "failure_type": "unclear",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "During an “active shooter situation,” holds an unknown baby and escapes out the front doors with a mass wave of scared/confused customers.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "active shooter (not otherwise described)",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "child",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "baby held in the dreamer’s arms",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "confusing",
+            "role": "customer",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "“mass wave of confused and scared customers”",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "authority",
+            "demeanor": "indifferent",
+            "role": "staff",
+            "authority_nature": "observing",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "“ladies that work inside of it are silent, and never interact with customers”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Only one explicit location is described (department store). A second location (outside/front area) is implied solely by exiting through front doors during the shooter event; it is referenced as loc_2 in the connection but not otherwise described in the text."
+  },
+  "response_id": "resp_01fdb8fd395365c800696e51bf82ec81948763f9df13e3409e",
+  "usage": {
+    "input_tokens": 12476,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1539,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14015
+  }
+}

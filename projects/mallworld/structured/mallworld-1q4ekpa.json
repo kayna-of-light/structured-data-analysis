@@ -1,0 +1,189 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1q4ekpa.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1q4ekpa/theme_park_world_cant_buckle_in_my_seat_belt_on/",
+  "title": "Theme park world: can't buckle in my seat belt on roller coasters before they take off",
+  "date": null,
+  "content_checksum": "abe92783bb82172887ddec735c1967147ae7dc9374ac08f1101008358a3f3573",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:18:53.308339+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have experienced a recurring theme-park/roller-coaster dream where the seat belt won't buckle before takeoff",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "normal",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "panicking / scared as hell",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "amusement_park",
+        "location_name": "dystopian Six Flags (theme park world)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "ocean (rides sometimes touching the ocean)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "oppressive",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "water_clarity": null,
+          "raw_description": "“reoccurring dream… with family at a dystopian Six Flags… rides are futuristic looking with huge drops and long loops and touching the ocean sometimes”"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "amusement_park",
+        "location_name": "roller coaster ride (seat/launch area and ride in motion)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the dystopian Six Flags; sometimes near/over ocean",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "water_clarity": null,
+          "raw_description": "“futuristic looking with huge drops and long loops… touching the ocean sometimes… as soon as I sit down… roller coaster starts… holding on for dear life, screaming”"
+        },
+        "affective_response": "horror",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "vehicle",
+        "transit_mode": "passive",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "transition from being in the theme park with family to being seated on a roller coaster that takes off"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "Trying to get the seat belt to function and properly secure it in after sitting down on the roller coaster.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Seat belt “can’t… function” / cannot properly secure it"
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "Waving down a ride operator to let them know help is needed with the seat belt before the coaster starts.",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "staff",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "ride operator",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Panicking while the roller coaster starts and attempting to get the belt buckled during motion; holding on for dear life; screaming; does not fall out.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Light quality/temperature, crowding, and cleanliness not described. Ocean presence inferred from “touching the ocean sometimes” but water state (calm/turbulent) not specified; set to ocean_calm as a minimal placeholder and could be revised to not_mentioned if strict."
+  },
+  "response_id": "resp_0ecc41188cddea4b00696e676897f0819081d1d072ad551f09",
+  "usage": {
+    "input_tokens": 12459,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1555,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14014
+  }
+}

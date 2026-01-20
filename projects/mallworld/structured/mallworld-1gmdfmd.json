@@ -1,0 +1,117 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gmdfmd.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gmdfmd/help/",
+  "title": "Help.",
+  "date": null,
+  "content_checksum": "e03f05a926e28504f87c928cf969f3270d86b95e32f4223c5e25738fa183743a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:51:43.759670+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others experience frequent vivid emotionally impactful Mall World dreams with severe sleep disruption/night sweats and difficulty distinguishing dreams from reality",
+      "should_skip_extraction": true,
+      "skip_reason": "No specific dream scene(s) described; only general/long-term sleep and dream experience without extractable locations, connections, or events."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": 5
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "lost",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "not_applicable",
+        "interaction_type": "observation",
+        "description": "Dreams occur most nights; are \"very vivid and emotionally impactful\"; \"nonspecific and very night to night\"; sometimes \"even four different places ventured in a night\"; has \"visited much of mall world\" and describes it as a \"very real experience in an alternate reality.\"",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "not_applicable",
+        "interaction_type": "observation",
+        "description": "Sleep disruption: \"I haven’t had a consistent good night of sleep for five years\"; \"I wake up constantly\".",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "not_applicable",
+        "interaction_type": "observation",
+        "description": "Somatic/physiological markers on waking: \"night sweats\"; wakes \"freezing\"; \"waking up nightly, cold and soaking wet\".",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "not_applicable",
+        "interaction_type": "task",
+        "description": "Attempts to reduce/stop dreams via treatment: \"put on so many different SSRIs and PTSD medication, but none have calmed the dreams\".",
+        "outcome": "failed",
+        "failure_type": "no_effect",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Medications did not reduce dream frequency/intensity (\"none have calmed the dreams\")."
+      },
+      {
+        "location_id": "not_applicable",
+        "interaction_type": "task",
+        "description": "Medical evaluation/plan mentioned: being \"trying to put me on a sleep apnea machine\"; author reports they \"tested so low\" and does not believe it matches severity of symptoms.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Post contains long-term, generalized Mall World dreaming and strong waking somatic markers (night sweats/freezing) but no describable dream locations, layouts, light qualities, entities, or specific in-dream events to extract as locations/connections."
+  },
+  "response_id": "resp_06db10b4721ba32800696e52f85d18819591387f0a7c5688a6",
+  "usage": {
+    "input_tokens": 12482,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 966,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13448
+  }
+}

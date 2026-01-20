@@ -1,0 +1,118 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1qfrujs.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1qfrujs/has_anyone_been_to_the_1_movie_theater/",
+  "title": "Has anyone been to the $1 movie theater",
+  "date": null,
+  "content_checksum": "1e10f2fb0c19c4084256ec452032bdd0458bf6a00adc7ed876760d8f2f053bad",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:22:17.546138+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/q2ibebvgrzdg1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "multiple_dreams",
+        "childhood_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to a recurring $1 movie theater connected to Mall World dreams",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_theater",
+        "location_name": "$1 movie theater",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "connected to mall world",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "warm_golden",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "nostalgic",
+          "reality_stability": "not_mentioned",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "dirty",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "AI image depicts a small/old theater auditorium: red upholstered seats, worn/stained red carpet, large blank screen, beige/brown walls, side exit doors with illuminated exit signs, small wall lights along aisles; no people visible."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "audience",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer reports having visited a '$1 movie theater' in sleep multiple times and remembers going there as a kid; provides an AI visualization in lieu of an old drawing.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question with minimal narrative. Recurrence is explicit ('a bunch of times', 'always going there as a kid'). Visual content is AI-generated and used to infer theater qualities (lighting, wear, emptiness). No explicit layout/paths to other Mall World locations are described."
+  },
+  "response_id": "resp_0b7f9f8367aba31800696e682fe2e08195b3c3b4c913c2ce39",
+  "usage": {
+    "input_tokens": 14230,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 630,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14860
+  }
+}

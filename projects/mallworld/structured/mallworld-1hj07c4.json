@@ -1,0 +1,125 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hj07c4.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hj07c4/really_steep_drop_off_road_on_the_side_of_a_cliff/",
+  "title": "Really steep drop off road on the side of a cliff?",
+  "date": null,
+  "content_checksum": "cb6f10f6af0c9969c3b0518efd356f800ba5bb464f721142d12c95c877b6ab28",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:59:08.781652+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mountain",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "road on the side of a cliff / mountain",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“make a left turn and it’s the STEEPEST way down this road on the side of a mountain… road on the side of a cliff… changes from being a couple of small side by side lanes to being one lane”"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "vehicle",
+        "transit_mode": "directed_active",
+        "direction": "down",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Left turn leads into an extremely steep downhill cliffside/mountainside road; lanes narrow from two side-by-side lanes to one lane."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Driving after making a left turn onto an extremely steep downhill cliffside/mountainside road that narrows from two lanes to one; described as scary to drive on.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single described scene: a left turn onto a very steep downhill cliffside road that narrows from two lanes to one; recurrence is explicit (“been there before”). Temporal info is minimal but includes “tonight” and sequence (left turn → steep descent)."
+  },
+  "response_id": "resp_001ffbe7d419c32f00696e54c02cf481958a82404b7f8ca6c5",
+  "usage": {
+    "input_tokens": 12387,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 926,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13313
+  }
+}

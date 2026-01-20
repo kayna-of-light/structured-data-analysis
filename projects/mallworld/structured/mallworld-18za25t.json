@@ -1,0 +1,210 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\18za25t.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/18za25t/has_anyone_been_able_to_purchase_or_remove_any/",
+  "title": "Has anyone been able to purchase or remove any items from the bookstore?",
+  "date": null,
+  "content_checksum": "6e40dc877ab759faa4d1767c59467769d07922b85e137fab563fcc2aeedf8dbc",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:20:22.047228+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "fear/alarms; woke up when all the guns came out",
+      "author_theory": "Items in the bookstore/bookshop are 'anchored to that area and can’t leave' / 'you can’t take anything out of that store'.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "bookshop / bookstore",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the mall",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "archival",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "\"Bought a few books at the bookshop in the mall\"; \"it will have some of your favorite items\"; \"they’re all anchored to that area and can’t leave.\""
+        },
+        "affective_response": "confusion",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "street (end of dream); militia going down the street",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "reality_stability": "not_mentioned",
+          "crowding": "crowded",
+          "crowd_behavior": "panic",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "\"complete chaos\"; \"a militia was going down the street in repurposed military vehicles\"; \"guy was telling people to remain calm over megaphone while riding in a tank\"; \"People were not remaining calm\"; \"I woke up when all the guns came out.\""
+        },
+        "affective_response": "horror",
+        "somatic_response": "ejection",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "other",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "transit_mode": "wandering",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Shift from mall/bookshop dream to street chaos at end of dream (movement not explicitly described)."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Bought a few books at the bookshop in the mall.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": "books",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Spent the rest of the dream looking for the books after buying them.",
+        "outcome": "failed",
+        "failure_type": "unclear",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Books/items could not be taken out / were not found afterward (\"can’t take anything out of that store\")."
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Militia convoy in repurposed military vehicles; a 'gravy seal' looking guy used a megaphone while riding in a tank telling people to remain calm; people panicked; guns came out; dream ended with waking up.",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "unfriendly",
+            "role": "authority",
+            "authority_nature": "observing",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"gravy seal\" looking guy telling people to remain calm over megaphone while riding in a tank",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "confusing",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "People not remaining calm / panic",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "threatening",
+            "role": "authority",
+            "authority_nature": "pursuing",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Militia going down the street; guns came out",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Lighting, cleanliness, and detailed mall layout not described. The inability to keep items is reported as a perceived rule; mechanism of failure (lost vs. removed) is not specified, so failure_type set to unclear. Transition from mall to street is implied rather than explicitly traversed."
+  },
+  "response_id": "resp_014622dcb8a40dfa00696e4ba053188197b37c9628d16f2925",
+  "usage": {
+    "input_tokens": 12442,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1292,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13734
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ovcie1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ovcie1/bathroom/",
+  "title": "Bathroom",
+  "date": null,
+  "content_checksum": "eb924037adf3dafb8c41033d6065b75ee19ffd4525c81e42ae55ae105a29df2e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:58:51.825438+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/58cdrdyz8v0g1.jpg",
+    "https://i.redd.it/dl69nu509v0g1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have seen a huge bathroom like the one in their recurring dreams; notes dream bathrooms often lack a door.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_public",
+        "location_name": "Staples store bathroom (seen in real life; resembles recurring dream bathrooms)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside a Staples store",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "private",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Author: 'one of the many bathrooms that I constantly see in my dreams' seen in real life; 'picture does not give it justice on how huge it actually was'; dream versions 'usually don't have a door for some reason.' Image: very large open tiled restroom with multiple stall partitions, sinks along right wall, bright fluorescent ceiling lights, wide open floor area, yellow caution/wet-floor sign, gray/white tile walls with dark accent stripe; a stall door visible at back."
+        },
+        "affective_response": "horror",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Upon seeing the bathroom in real life (matching recurring dream bathrooms), the author experienced an intense fear response and nearly ran out.",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question triggered by a real-life bathroom photo; only limited dream-specific phenomenology is stated (recurring bathrooms; usually no door; perceived as huge). Image used to extract environmental qualities (lighting, cleanliness, layout)."
+  },
+  "response_id": "resp_0578dbd35b95045400696e62ad4cd08197bca7ad8b98760674",
+  "usage": {
+    "input_tokens": 15933,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 650,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16583
+  }
+}

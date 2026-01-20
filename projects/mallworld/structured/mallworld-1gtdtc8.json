@@ -1,0 +1,154 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gtdtc8.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gtdtc8/sleep_paralysis/",
+  "title": "Sleep paralysis",
+  "date": null,
+  "content_checksum": "ab5cd6bfea02927d2f496ceaf5b2e07d540f79d505b3f9603bcc52282002ad68",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:52:49.008982+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Sleep paralysis occurring before/with Mall World dreams; whether others experience this sequence",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "not mentioned (describes fear of unknown during paralysis)",
+      "final_emotion": null,
+      "author_theory": "Speculates figures are involved with Mall World/shared dream locations; explicitly says not sure/doesn't think they are demons.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "bedroom (in bed / floor beside bed)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "In bed during paralysis; felt 'being dragged from my bed'; later 'I was on the floor' in the exact spot where I saw them dragging me."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "paralysis",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "During sleep paralysis, dreamer felt dragged from bed by entities; attempted to scream 'help' but only a light raspy voice came out; fought paralysis for ~10 minutes; afterwards found self on the floor where dragging was seen.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "shadow",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "black translucent shadow figures with the outline of a tall alien",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Tried to scream for help ('help') but voice output was limited to a 'light raspy voice'.",
+        "outcome": "failed",
+        "failure_type": "physical_inability",
+        "entities_involved": [
+          {
+            "entity_type": "none",
+            "demeanor": "not_mentioned",
+            "role": "not_mentioned",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": null,
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Before paralysis starts, feels 'drugged': laying in bed then feeling 'so light and kinda dizzy', 'mini brain zaps', and a 'wave of tiredness' like given a sedative; paralysis starts soon after; paralysis episodes correlate with 'more intense dreams'.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily about recurring sleep paralysis and entities; Mall World dream locations are referenced but not described. Spatial info extracted is limited to bed-to-floor positioning within bedroom. Temporal info includes recurrence frequency (once a month or more), duration of a paralysis episode (~10 minutes), and onset sensations preceding paralysis."
+  },
+  "response_id": "resp_06b8e9ab443cf2ec00696e5339bc308190bb9fea93136757c4",
+  "usage": {
+    "input_tokens": 12604,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1242,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13846
+  }
+}

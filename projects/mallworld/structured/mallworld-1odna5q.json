@@ -1,0 +1,181 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1odna5q.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1odna5q/anyone_been_here_its_the_top_floor_of_the_casino/",
+  "title": "Anyone been here? It’s the top floor of the casino once you take the elevator all the way",
+  "date": null,
+  "content_checksum": "e08d9c7cab766b5ee0a0250626700acc311ef08794210b91ba13db2acab9af90",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:51:37.059986+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/f4bduy0kuqwf1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "casino",
+        "location_name": "casino building (implied)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“casino building” (top floor referenced)"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "top floor platform above the casino (round white platform with elevator doors)",
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "top of the casino building",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "timeless",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“Everything was white and the platform was round.” “When I turned round to see where I’d come from, there was nothing but white.” (Image shows a circular platform in a white sky/void with a single set of elevator doors near center; platform edge drops into clouds/white below.)"
+        },
+        "affective_response": "curiosity",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "elevator",
+        "transit_mode": "passive",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "working_normal",
+        "outcome": "succeeded",
+        "qualities": "“took the elevator all the way” to the top floor; exited and immediately faced another set of doors in front"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_2",
+        "boundary_type": "cliff",
+        "direction": "not_mentioned",
+        "beyond": "void_nothing",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "yes_explicit",
+        "crossing_outcome": "partial",
+        "description": "Platform edge with a drop; behind the elevator doors area “there was nothing but white.” Falling over the side was possible; dreamer caught the rim and pulled back up."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Exited elevator; doors (as pictured) were directly in front. Turned around to look back and saw “nothing but white.”",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "Felt a “call of the void” and tested the edge: did a big running slide and fell over the side, caught onto the rim, and pulled self back up.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Location type for the top-floor area is modeled as 'other' because schema lacks a specific 'casino_rooftop/platform' type. Image appears to be a stylized/CG/AI-like visualization rather than a hand-drawn map; treated as has_image only."
+  },
+  "response_id": "resp_035810c3062cc94c00696e60ee415c8190a8cde61d33ca9bb7",
+  "usage": {
+    "input_tokens": 14183,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1058,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15241
+  }
+}

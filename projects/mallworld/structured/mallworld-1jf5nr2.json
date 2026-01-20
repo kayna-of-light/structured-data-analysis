@@ -1,0 +1,218 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jf5nr2.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jf5nr2/the_forest/",
+  "title": "The Forest",
+  "date": null,
+  "content_checksum": "9ea0269be23c3e7a1d5de55c1d45ae9f5658cf2242aad92824eea0942fa1056e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:24:36.967191+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/t8pyi1dj8ppe1.jpg",
+    "https://i.redd.it/bytka2dj8ppe1.jpg",
+    "https://i.redd.it/k3tno2dj8ppe1.jpg",
+    "https://i.redd.it/7ya0u2dj8ppe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recent_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "deep relief once back on the stone walkway / able to disappear back into the darkness",
+      "author_theory": "Author links dream to survival/illness/medical dealings (interpretive; not extracted into phenomenology).",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "forest",
+        "location_name": "dark forest / stone footbridge through forest",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "river",
+          "water_clarity": null,
+          "raw_description": "\"dark forest\"; running \"very fast\"; \"slightly cold outside\"; \"elevated wide stone footbridge\"; trees with \"orange symbols\" on the right; \"beautiful stream\" on the left; feet \"slamming into the ground\"; breathing heavily; heart pounding"
+        },
+        "affective_response": "curiosity",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "market at the end of the forest",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the end of the forest",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "warm_golden",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "normal",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"market with stalls made of sand and stone and yellow awnings\"; dreamer goes \"in and out through the backs of the stalls\"; making \"deals with various merchants\"; does not want to be seen; some merchants take longer than expected"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "transit_mode": "fleeing",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Running along an elevated wide stone footbridge through the forest to reach the market at the end of the forest"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "transit_mode": "fleeing",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Runs back toward the forest; relief once safely back on the stone walkway"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Running very fast while holding a crossbow; on a hunt with urgency; notices orange symbols on trees; stream to the left.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "transaction",
+        "description": "Covertly goes in and out through the backs of stalls to make deals with various merchants; trying not to be seen or known to be there.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "various merchants",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "transaction",
+        "description": "Some merchants make the dealings take longer than expected, increasing agitation and perceived risk of being there.",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "some merchants (unspecified)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Delays by merchants / takes longer than expected"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Images appear AI-generated illustrative scenes (foggy stone path/bridge, forest with glowing orange symbols, cave stairs, sunlit market). The cave/stairs image is not described in the narrative, so it was not added as a visited location."
+  },
+  "response_id": "resp_082b4b440ea4073800696e5a858fac8197a7a47516b6a53af3",
+  "usage": {
+    "input_tokens": 17814,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1267,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 19081
+  }
+}
