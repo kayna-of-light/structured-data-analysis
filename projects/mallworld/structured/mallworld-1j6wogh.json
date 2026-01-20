@@ -1,0 +1,192 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j6wogh.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j6wogh/visiting_a_place_youve_dreamed_of_in_real_life/",
+  "title": "Visiting a place you’ve dreamed of in real life",
+  "date": null,
+  "content_checksum": "21bf4fd6d5d460d129a1560fdeb6ac522f84a8d850fa7298477127b3020cffc6",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:16:50.564272+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "childhood_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have dreamed of a location and later visited it in real life",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "young_adult",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "uncanny",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "fountain",
+          "water_clarity": null,
+          "raw_description": "a very unique looking shop that had a large round fountain in it"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "Sedona, Arizona (street with stores)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "walking down a street checking out some stores"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "mall_store",
+        "location_name": "Sedona shop (real-life match to dream)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "off the street in Sedona with stores",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "fountain",
+          "water_clarity": null,
+          "raw_description": "walked into a shop that looked EXACTLY like the place I had dreamed of"
+        },
+        "affective_response": "confusion",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "walked into a shop from the street"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "Recognized the shop as matching a prior dream location; described it as 'uncanny'.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Dream content is limited to a single interior shop with a large round fountain; most detail concerns later waking-life visit/recognition. Lighting, crowding, and other sensory qualities not described."
+  },
+  "response_id": "resp_0b8da2f2f66c0b8100696e58e17390819688cfa5e1e6c2aeb0",
+  "usage": {
+    "input_tokens": 12487,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1466,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13953
+  }
+}

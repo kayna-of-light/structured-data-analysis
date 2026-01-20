@@ -1,0 +1,115 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gtrrpk.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gtrrpk/airport/",
+  "title": "Airport?",
+  "date": null,
+  "content_checksum": "227d8c7181263c9ea2076393fa093e966c808c4bf2aa461afd2099a3ed3aa447",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:53:02.355914+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/nfq07falyj1e1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have recurring dreams set in the same airport; theirs looks similar to the attached image.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "airport_terminal",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "cold_white",
+          "time_of_day": "daytime",
+          "state": "new",
+          "atmosphere": "neutral",
+          "reality_stability": "solid",
+          "crowding": "crowded",
+          "crowd_behavior": "wandering",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Recurring dreams in the same airport; 'Mine looks similar to this' (attached image shows a large, modern, multi-level terminal with a glass/arched atrium roof, bright white interior, upper-level balconies, and a dense flow of travelers)."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer reports recurring dreams set in the same airport; indicates the dreamed airport resembles the attached image.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question with minimal narrative; phenomenological qualities for the airport are inferred from the referenced image (modern multi-level terminal, bright natural light through glass atrium, crowded with travelers). No explicit emotions, actions, routes, or boundaries described."
+  },
+  "response_id": "resp_0c21981be8aa411000696e534682a481908388f8cdd27d0b1c",
+  "usage": {
+    "input_tokens": 13697,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 582,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14279
+  }
+}

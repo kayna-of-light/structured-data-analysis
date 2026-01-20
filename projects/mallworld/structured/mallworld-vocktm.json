@@ -1,0 +1,133 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\vocktm.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/vocktm/the_food_court_ritual/",
+  "title": "The food court ritual",
+  "date": null,
+  "content_checksum": "41ac00ca916e020c5701c7bc206154ab2b57d2d427a8f31e723048e51d47a6af",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:27:09.398513+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "surprised",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_food_court",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "reality_stability": "not_mentioned",
+          "crowding": "crowded",
+          "crowd_behavior": "coordinated",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Circular area with an open center and restaurants along the edges. The lights went down and everyone gathered and held hands in a circle. There were drum beats."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "A bunch of others gathered for some kind of ritual; lights went down; everyone held hands in a circle; drum beats.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "A bunch of others gathered; everyone gathered and held hands in a circle.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Participants 'had to bring certain things' for the ritual.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": "certain things (unspecified)",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Single-location report. Light described only as 'lights went down' (coded as dim). Affective response to the ritual described as 'didn't feel evil' and 'very trippy' but no explicit emotion term mapped to the affective_response enum."
+  },
+  "response_id": "resp_094081090bd35f7900696e695e50dc819580737659448014ac",
+  "usage": {
+    "input_tokens": 12372,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 944,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13316
+  }
+}

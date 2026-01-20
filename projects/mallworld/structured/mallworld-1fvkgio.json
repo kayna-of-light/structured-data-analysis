@@ -1,0 +1,179 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1fvkgio.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1fvkgio/outdoor_art_gallery/",
+  "title": "Outdoor Art gallery",
+  "date": null,
+  "content_checksum": "f7357e50527ab8ea7cfca03c38b97577b5de3dd58894f85b7acd2a63b5896489",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:46:52.442168+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have seen an outdoor art gallery location in dreams (bottom of curvy sloping streets, among trees, blue lights).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "Outdoor Art Gallery",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "bottom of one of the curvy sloping streets",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“art gallery… at the bottom of one of the curvy sloping streets… it's outdoor amongst a lot of trees… everything in this area is covered in trees… sculptures… paintings… blue lights”"
+        },
+        "affective_response": "confusion",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "Curvy sloping street(s)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "leads down to the outdoor art gallery",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“one of the curvy sloping streets”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "forest",
+        "location_name": "Tree-covered area surrounding gallery",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "surrounding the outdoor art gallery / the whole area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“outdoor amongst a lot of trees… everything in this area is covered in trees”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "outside_path",
+        "transit_mode": "not_mentioned",
+        "direction": "diagonal_down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "curvy, sloping street leading down to the gallery"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is phrased as a question; extracted the described dream-location features (outdoor gallery, trees, blue lights, bottom of sloping street). No explicit actions, entities, or time-of-day described."
+  },
+  "response_id": "resp_0223213dc8a9921e00696e51d659e48194947c2246761777ad",
+  "usage": {
+    "input_tokens": 12360,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1438,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13798
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1iucw7g.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1iucw7g/coffee_shop_dreamin/",
+  "title": "Coffee Shop dreamin'",
+  "date": null,
+  "content_checksum": "18a07ec7e932b60c57a03e36c6f2061791b95d98fac9de6a71ecbaab5898d9bc",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:13:01.882513+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "normal",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "nice; hopeful to return",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant",
+        "location_name": "coffee shop",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "socializing",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Dreamer is familiar with the shop; ordered a usual matcha latte; sat down; casually chatting with the owner and a few customers; laughing together; invited to walk with customers afterward."
+        },
+        "affective_response": "comfort",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "tree-lined cobblestone streets / quaint shop fronts area",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the coffee shop (walked with customers)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "cold_white",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "peaceful",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "City was \"beautiful, quiet and calm\" with \"tree lined streets\" and \"cobblestone sidewalks\" and \"quaint little shop fronts.\" \"It was cold, but not unpleasant thanks to the clear sunlight\"; \"sky was so blue and intense.\" Dreamer has not been to that part of the city in other dreams they can recall."
+        },
+        "affective_response": "delight",
+        "somatic_response": "none",
+        "is_familiar": "no",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Invited to walk with a couple of customers after chatting in the coffee shop."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Ordered \"my usual matcha latte,\" sat down.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": "matcha latte",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Casually chatted with the owner and a few customers; shared and laughed about the owner's story of a customer tantrum and the bakery up the street; dreamer added that the bakery is owned by the owner's wife; \"We were in tears, laughing.\"",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "staff",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Owner: pretty blonde lady with a hot pink streak in her hair",
+            "name_or_relation": "coffee shop owner"
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "customer",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a few customers (including the couple later invited to walk with)",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "hostile",
+            "role": "customer",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "A guy with a \"laundry list\" drink order who threw a tantrum about it not being done immediately",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Customers asked dreamer how they knew the owner; dreamer explained wandering into the shop when it was a tiny one-woman operation, before she got married; talked about shop being \"itsy, bitsy\" small-batch and about the owner's wife learning to roast beans; \"Her wife is a plant whisperer\" (as described in conversation).",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "customer",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Couple of customers the dreamer had been chatting with",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Walked outside with the couple of customers through the quiet, calm city streets.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Light quality/temperature inside the coffee shop not described. City area described as cold but pleasant with clear sunlight; mapped as bright natural light with daytime. Post mentions a bakery up the street but it is referenced in conversation, not visited."
+  },
+  "response_id": "resp_030c73a3ed283d1500696e57f0b29c8193b03d8ae3d00ea922",
+  "usage": {
+    "input_tokens": 12729,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1930,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14659
+  }
+}

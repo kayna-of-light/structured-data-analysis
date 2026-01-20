@@ -1,0 +1,87 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17cp7kc.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17cp7kc/trouble_waking_up/",
+  "title": "Trouble waking up",
+  "date": null,
+  "content_checksum": "5276574b8401a8cecd4dcab63e906798f8ee250bb23f729ae562d590377fc336",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:10:55.780183+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": false,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Trouble waking up / inability to get out of bed until dream is 'over'",
+      "should_skip_extraction": true,
+      "skip_reason": "No describable dream scene/locations; post focuses on sleep/waking mechanics rather than narrative content."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unspecified_dream",
+        "interaction_type": "escape",
+        "description": "Wakes up in between and tries to get up, but cannot get out of bed; reports being able to move normally (not paralysis) yet 'my body physically can not get up out of bed' and 'I have to sleep more' because the dream is still continuing.",
+        "outcome": "failed",
+        "failure_type": "physical_inability",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified_dream",
+        "interaction_type": "observation",
+        "description": "Sleeps for extended duration ('16 hours') and reports waking 'very suddenly' once the dream is 'resolved'; has trouble remembering what the dream was.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Post references 'mall world' but provides no concrete locations, layouts, entities, or sensory qualities. Extracted only sleep-duration/time and thwarted waking/bed-exit attempt as phenomenological markers."
+  },
+  "response_id": "resp_0264930e1879acc600696e4972e16881908066d7e862b02d31",
+  "usage": {
+    "input_tokens": 12507,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 471,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12978
+  }
+}

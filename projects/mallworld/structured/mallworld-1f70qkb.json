@@ -1,0 +1,114 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1f70qkb.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1f70qkb/this_bathroom_tripped_me_out/",
+  "title": "This bathroom tripped me out…",
+  "date": null,
+  "content_checksum": "435f51c97dec069c3db2ba6ba7c645674a46d8930ed192f43e2d180963fd9dfd",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:43:08.653939+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/w5ibq04ikcmd1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "meta_discussion",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": true,
+      "skip_reason": "Waking-life bathroom photo and description; not a dream narrative."
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "not mentioned (waking context: startled/creeped out)",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_public",
+        "location_name": "bathroom at a local gym on a Texas military base",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside a local gym (Texas military base)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "compromised",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Photo shows a tiled shower/bathroom area with curved half-height tile partitions, ceiling-mounted fluorescent strip lights, exposed metal pipes/rails overhead, and white shower curtains; described as 'creepy' and 'tripped me out'."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Walked in to use the bathroom; 'almost jumped back' upon seeing the shower/bathroom layout; did not walk all the way in.",
+        "outcome": "abandoned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Post is waking-life (not a dream). Extracted only raw environmental qualities visible in the photo and described affect/behavior (startled, avoided entering). Privacy marked 'compromised' due to open shower-style partitions/curtains rather than fully enclosed stalls."
+  },
+  "response_id": "resp_0664ec3c8eff1a7b00696e50ebfc948190a6eaa697a4ebd085",
+  "usage": {
+    "input_tokens": 14141,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 613,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14754
+  }
+}

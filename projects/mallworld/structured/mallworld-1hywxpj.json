@@ -1,0 +1,217 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hywxpj.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hywxpj/my_husband_and_i_started_this_thing_this_week/",
+  "title": "My husband and I started this thing this week.",
+  "date": null,
+  "content_checksum": "c44ffa1e5010a40420508276721ed24091d46e66400171414e215a707711e3c2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:04:20.483339+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/gutjpv0ojdce1.jpg",
+    "https://i.redd.it/oh075q2ojdce1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_map_drawing",
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "draining (talking about it is definitely draining)",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "library",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "archival",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"old Victorian place with red walls and dark wood\"; described as \"not the library\" relative to husband’s drawing"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "house",
+        "location_name": "Monster House",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Referred to as \"Monster House\"; has a \"second floor\" with \"a whole bunch of doors\"; husband \"always sitting in a red chair waiting for a phone call\" on the second floor; dreamer says \"I literally clean one of those rooms\""
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "other",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "transit_mode": "not_mentioned",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Implied connection from within house to \"second floor\" (stairs not explicitly stated)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Husband is \"always sitting in a red chair waiting for a phone call\" on the second floor; there are \"a whole bunch of doors\" on the second floor.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "husband",
+            "name_or_relation": "husband"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "Husband \"told me to stay out of the doors\" on the second floor; dreamer reports \"I literally clean one of those rooms.\"",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "unfriendly",
+            "role": "blocker",
+            "authority_nature": "blocking",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "husband warning/blocking access to doors",
+            "name_or_relation": "husband"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Husband asks if dreamer has been to \"this library\"; dreamer immediately describes it as \"old Victorian place with red walls and dark wood\" and says his drawing is \"not the library.\"",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "husband initiating comparison of locations via drawings",
+            "name_or_relation": "husband"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Two hand-drawn images depict an interior layout but are unlabeled; text provides clearer anchors: a Victorian library (red walls/dark wood) and a 'Monster House' with a second floor, many doors, and a red chair near a phone/phone call. Map image details (rooms/hallways/door nodes) are noted qualitatively but cannot be reliably assigned to specific named rooms without labels."
+  },
+  "response_id": "resp_06ff051e94ca17a700696e55d001c08194a405db83a6b19615",
+  "usage": {
+    "input_tokens": 16114,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1264,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17378
+  }
+}

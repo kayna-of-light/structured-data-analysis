@@ -1,0 +1,123 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\174tk94.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/174tk94/is_anyone_else_stuck_on_a_cruise_ship/",
+  "title": "Is anyone else stuck on a cruise ship?",
+  "date": null,
+  "content_checksum": "ff4a439a18324f95b601d56746ed4a6c9b0a44a33e687a3adaa29b2af7639f2b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:08:30.136670+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others are repeatedly stuck on a cruise ship in Mall World and unable to get off",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Not sure if this is docked at the mall",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "cruise_ship",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "Possibly docked at the mall (uncertain)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“Not sure if this is docked at the mall but I can’t seem to get off.”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "Dreamer cannot get off the cruise ship / exit is effectively blocked."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer attempts to get off the cruise ship but cannot.",
+        "outcome": "failed",
+        "failure_type": "unclear",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Cannot seem to get off (no specific mechanism described)."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question with minimal narrative. Recurrence inferred from “keep going back multiple nights in a row.” Spatial link to mall is explicitly uncertain; no concrete connection described."
+  },
+  "response_id": "resp_08f299a0958b448f00696e48e08d7c81959de9222377c33b7d",
+  "usage": {
+    "input_tokens": 12333,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 633,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12966
+  }
+}

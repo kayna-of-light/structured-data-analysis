@@ -1,0 +1,135 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\186rkx1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/186rkx1/floating_cheeseburger/",
+  "title": "Floating cheeseburger",
+  "date": null,
+  "content_checksum": "87436c14a48ae34ac41907292e05eded3e2744f0c40a5a927806f0afc1ffe73d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:16:30.384079+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "childhood_dream",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "child_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "scary; night terror; calming down after 'waking up'",
+      "final_emotion": "terrifying",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "my room",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "shifting",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "private",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "would 'wake up' from a night terror... notice a floating perfect cheeseburger in the corner of my room... the whole room would expand to the size of a bunker"
+        },
+        "affective_response": "horror",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "After 'waking up' from a night terror and calming down, notices a 'floating perfect cheeseburger' in the corner; it floats and spins for about a minute; then the room expands to 'the size of a bunker' and the cheeseburger becomes very far away.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "not_mentioned",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "floating perfect cheeseburger (floats and spins)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Somatic reaction during the spatial expansion: 'my stomach would drop'.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single primary location (bedroom) with non-Euclidean/expanding geometry; duration noted ('a minute or so'). Light, time of day, and other sensory details not described."
+  },
+  "response_id": "resp_046f2b1bd53f37a600696e4ac00b088197b3fd1a317bf4b9b4",
+  "usage": {
+    "input_tokens": 12421,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 994,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13415
+  }
+}

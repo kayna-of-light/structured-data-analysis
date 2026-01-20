@@ -1,0 +1,248 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ploznp.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ploznp/skyscraper_balcony/",
+  "title": "Skyscraper balcony",
+  "date": null,
+  "content_checksum": "68531700d0554a702917bd2d35e2c9bc2d4c02f9eca306ec7b36b87b149eaf18",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:10:29.077711+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/28ov8y6vwz6g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "beach",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "by the ocean",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "moderate",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "water_clarity": null,
+          "raw_description": "stands on the sand facing the ocean like bleachers for a soccer game; when the waves would come the people on the bleachers would fall off or float back with the waves"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel",
+        "location_name": "hotel/skyscraper",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "above the ocean/beach; minimum 30 floors up",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "water_clarity": null,
+          "raw_description": "hotel/skyscraper is on stilts; waves were somehow washing in underneath the balcony and hotel"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "roof",
+        "location_name": "skyscraper balcony",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "balcony of the hotel/skyscraper; minimum 30 floors up",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "water_clarity": null,
+          "raw_description": "floor beneath me is glass; gate in the balcony's railing that you could literally open and walk off to nothing but falling 30 floors down"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 3
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "other",
+        "transit_mode": "not_mentioned",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "dreamer ends up stepping out onto balcony minimum 30 floors up (movement method not described)"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_3",
+        "connection_type": "door",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "stepped out onto the balcony"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_3",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "void_nothing",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "gate in the balcony's railing that you could open and walk off to nothing but falling 30 floors down"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observed stands/bleachers on sand facing ocean; waves cause people to fall off or float back with waves",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "people on the bleachers",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "Looked down through glass floor and realized hotel/skyscraper is on stilts with waves washing underneath",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "observation",
+        "description": "Noticed a gate in the balcony railing that could be opened to step off into open air and fall ~30 floors",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Image appears to be a reference photo (not a hand-drawn map). It shows a glass-railed balcony over ocean surf; narrative adds glass floor, stilts, bleachers on sand, and a railing gate leading to open air."
+  },
+  "response_id": "resp_012b8c4e05f8819200696e653f1f188196aaec2b861a08ada8",
+  "usage": {
+    "input_tokens": 13686,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 2009,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15695
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1h6f6h7.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1h6f6h7/anyone_hear_my_speech/",
+  "title": "Anyone hear my speech?",
+  "date": null,
+  "content_checksum": "6a00f96ea612044b09d191669dddb8107c8319d608a22315278005a0f3ce9037",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:55:43.330541+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "normal",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "nice and funny",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "raised area (speaker platform)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "reality_stability": "not_mentioned",
+          "crowding": "crowded",
+          "crowd_behavior": "coordinated",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“there was a crowd… randomly gathered to hear… I was alone on a raised area… Then turn, boom. A crowd cheering”"
+        },
+        "affective_response": "delight",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "performer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer gives the same political rant/speech they give in waking life; a crowd gathers and cheers.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "friendly",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Randomly gathered crowd cheering",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Setting is not specified (no clear mall/school/hotel markers). Only spatial cue is being on a raised area with a crowd present."
+  },
+  "response_id": "resp_0e3190a4b827132000696e53ea72f08190bd33c5f970a8282f",
+  "usage": {
+    "input_tokens": 12419,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 825,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13244
+  }
+}

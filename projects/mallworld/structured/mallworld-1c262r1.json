@@ -1,0 +1,212 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1c262r1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1c262r1/been_stuck_in_mall_world_for_a_week/",
+  "title": "Been stuck in Mall World for a week",
+  "date": null,
+  "content_checksum": "eb83b7a21250837417f24a411baa637ab0bdaee492caa8bbcc4d40867e752b52",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:30:22.660241+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "lucid_dream",
+        "nightmare",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "sick of it; upsetting; anxiety inducing",
+      "final_emotion": "increasing exhaustion; not restorative sleep",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "MallWorld",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "oppressive",
+          "reality_stability": "shifting",
+          "crowding": "varies",
+          "crowd_behavior": "mob",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“MallWorld dreams are never good… typically anxiety inducing”; malls “incredibly crowded”; fear of “mall collapsing while I'm in there”; “some fight starting and causing some mob trying to flee the fight”; “each visit… the mall is bigger”; “hallways will grow as I walk down them to keep me from escaping.”"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "sleepiness",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "Outside (after escaping the mall)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "exit",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "reality_stability": "not_mentioned",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“once we got outside, I woke up immediately.”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "ejection",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "interrupted",
+        "qualities": "Escape route exists at least once; dream ends immediately upon reaching outside."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer cannot escape MallWorld despite being “fully aware and somewhat able to control what I do.”",
+        "outcome": "failed",
+        "failure_type": "unclear",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Attempts to change dream content/avoid MallWorld by having “podcasts on” and “different genres of music,” but still ends up in MallWorld.",
+        "outcome": "failed",
+        "failure_type": "no_effect",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "No change in destination; still in MallWorld."
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "MallWorld increases in size each visit; sometimes established immediately; other times “hallways will grow as I walk down them.”",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Last night: finds “people also looking to escape the mall.” Usually dreamer is alone on “quick solo trips.”",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "People also looking to escape the mall",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Once outside the mall, dream ends immediately (“I woke up immediately”).",
+        "outcome": "interrupted",
+        "failure_type": "external_intervention",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Waking up upon reaching outside."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post summarizes a week of recurring MallWorld dreams plus one specific ‘last night’ variation. Many sensory attributes (lighting, cleanliness, exact layout) are not described; spatial info mainly concerns expansion/non-Euclidean hallway growth and an outside exit triggering immediate wake-up."
+  },
+  "response_id": "resp_00470199418c4db800696e4df672e88190b9260d7c4913ac66",
+  "usage": {
+    "input_tokens": 12586,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1707,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14293
+  }
+}

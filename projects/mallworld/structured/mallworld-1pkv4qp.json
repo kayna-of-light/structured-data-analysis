@@ -1,0 +1,175 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pkv4qp.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pkv4qp/last_night/",
+  "title": "Last night",
+  "date": null,
+  "content_checksum": "3993ee5ef000a7eff0976a658df6e97fc97b3d76ca757ea8cd28d1776cb5390f",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:09:05.889446+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "bizarre",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "not_mentioned",
+          "crowding": "moderate",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "filthy",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "\"in a house that was rotting with trash\"; \"people lived there\"; \"The floor was soft with garbage\"; worried there were rats"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Noticed people living in a rotting house full of trash; wondered why they were ok with it; worried there were rats.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people lived there",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "A good-looking man about mid-50s wearing a white dress shirt tried to hump the dreamer; husband was present and watching.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "hostile",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"guy about mid 50s\"; \"white dress shirt\"; \"good looking\"; \"trying to hump me\"",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "known_person",
+            "demeanor": "watching",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "husband present and watching",
+            "name_or_relation": "husband"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "After waking, dreamer asked husband if he had a similar dream; he didn't remember.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "neutral",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "husband said he didn't remember a dream like that",
+            "name_or_relation": "husband"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Single described setting (rotting trash-filled house). Lighting, layout, and transitions not described. Physical floor texture ('soft with garbage') captured as raw description; no explicit somatic symptom reported."
+  },
+  "response_id": "resp_0bb539853ead254100696e652349e08197a5e03ce2937d2349",
+  "usage": {
+    "input_tokens": 12408,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 917,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13325
+  }
+}

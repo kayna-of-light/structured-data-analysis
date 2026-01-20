@@ -1,0 +1,253 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jey7za.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jey7za/long_ago_experience/",
+  "title": "Long Ago Experience",
+  "date": null,
+  "content_checksum": "f62506a6b375fca0363f1e788db649b46f3984a256034db182eaa3ea0c03833c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:23:44.503109+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "childhood_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "teen",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "younger_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "friend’s living room (sleepover)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "moderate",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "At a sleepover playing games; standing against a wall breathing hard while best friend pushed on chest; everyone calling out my name; I was still against the wall when I came back."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "sleepiness",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "city_street",
+        "location_name": "busy street corner in an unfamiliar city",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "corner",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "not_mentioned",
+          "crowding": "packed",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Very busy street corner in a city I didn’t recognize; horns honking; people I couldn’t really see waving their hands angrily through car windows trying to shoo me off; buildings were huge; the hands looked small like children’s hands; the cars were little; one little car stopped."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "lost",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "transit_mode": "instant",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Transition occurred suddenly while standing against a wall after hyperventilating and having chest pressure applied."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "transit_mode": "instant",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Returned immediately after a small man said “time to go”."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Participated in a game: stood against a wall and breathed in and out very hard while best friend pushed on chest.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "neutral",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "best friend pushing on my chest",
+            "name_or_relation": "best friend"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Observed cars honking and occupants waving hands angrily through windows as if trying to shoo me off; buildings appeared huge; cars and hands appeared small.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "hostile",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people I couldn’t really see waving their hands angrily through the window",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Felt dread/unwelcomeness, started to panic, wanted to go home.",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "A little car stopped; a little man (about 2 feet tall) got out, walked over, and said in a tiny voice, “time to go”.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "little man, maybe 2 feet tall, tiny voice",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Others reported I zoned out for a few minutes with eyes wide open; they kept calling my name; I only answered “huh”.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "everyone at the sleepover calling out my name",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Experience is described as a brief ‘zoned out’ episode during a sleepover; extracted as a single vivid city-street scene plus the waking-room context. Light, time of day, and many environmental details are not specified."
+  },
+  "response_id": "resp_07693e6b4906451400696e5a6df6c48193a2027ccaef0e6e82",
+  "usage": {
+    "input_tokens": 12687,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 2059,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14746
+  }
+}

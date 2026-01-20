@@ -1,0 +1,157 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1csa761.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1csa761/question_do_people_have_positive_experiences_or/",
+  "title": "Question do people have positive experiences or negative experiences?",
+  "date": null,
+  "content_checksum": "c8fe60ceed30a7981b7da2a20bc7a1818a35d0ef610b07a41e69776c6ced1a0d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:33:12.226182+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking whether others' Mallworld experiences are positive or negative; contrasts with author's positive recurring dreams and a recurring 'temple beyond space' visit with a godlike being.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "They report others describe Mallworld as 'manipulative or evil by some being or something' but state their own 'Mallworld' dreams are 'extremely positive' and consider the godlike being 'just a figment of my dream.'",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "unspecified",
+        "location_name": "Mallworld (as the author calls their dreams)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“my ‘Mallworld’ dreams are extremely positive… very enlightening”"
+        },
+        "affective_response": "delight",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "Temple beyond space",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "described as 'beyond space'",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "peaceful",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“I visit with a godlike being regularly in a temple beyond space”"
+        },
+        "affective_response": "comfort",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "guest",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Regularly visiting with a “godlike being” in the temple.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "“a godlike being… she”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question; phenomenology is limited. Spatial info is minimal but includes a distinct location phrase “temple beyond space.” Temporal info is limited but includes recurrence (“regularly”). Affective state includes “intimidated” and “calm”; intimidation is captured in interaction description but affect categories available best match comfort/calm overall."
+  },
+  "response_id": "resp_065009fb7a3806a100696e4ea98cf08190b819e5dbdff898c1",
+  "usage": {
+    "input_tokens": 12449,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1243,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13692
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17o78wr.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17o78wr/a_wierdcore_edit_that_feels_familiar/",
+  "title": "A Wierdcore edit that feels familiar",
+  "date": null,
+  "content_checksum": "a2963a69597d9607eb401c99cbc9424186c2f9ac9ba1d75262bc9b6844d8e519",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:12:57.048061+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "media_reference",
+      "content_flags": [
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "inconsistent",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "reality_stability": "not_mentioned",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“hallway in a house with the same peach colored walls”; “spawned in” to someone’s house “late at night or early morning”; “There’s no one home or awake yet”; “feels like you accidentally stumbled into a strangers’ house.”"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "trespasser",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "peach-colored hallway",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in a house",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "inconsistent",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "reality_stability": "not_mentioned",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Hallway with “peach colored walls” that feels familiar; associated with “spawned in” sensation in a stranger’s house."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "lost",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer finds themselves having “spawned in” to someone else’s house at “late at night or early morning,” with “no one home or awake yet,” and the feeling of having “accidentally stumbled into a strangers’ house.”",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No actual image content was provided in the dataset entry, only a description referencing a ‘wierdcore edit.’ Light quality/temperature and specific geometry beyond ‘hallway’ and wall color were not described."
+  },
+  "response_id": "resp_0a94a8417dd3dc6400696e49e91d24819494620461fbdc3f6e",
+  "usage": {
+    "input_tokens": 12386,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1118,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13504
+  }
+}

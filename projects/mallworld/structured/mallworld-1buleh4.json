@@ -1,0 +1,112 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1buleh4.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1buleh4/lucid_dreams/",
+  "title": "Lucid dreams",
+  "date": null,
+  "content_checksum": "5ab9ccbd83c28dfca87e5376566368aba74af968ee38d92d83e34927877e49a6",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:29:12.428512+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "meta_discussion",
+      "content_flags": [
+        "lucid_dream"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": "Claims Mall World has its own physics/rules that constrain lucid control (e.g., cannot decide to fly), and that becoming lucid may cause being locked in/out.",
+      "question_topic": null,
+      "should_skip_extraction": true,
+      "skip_reason": "No concrete dream episode described; only generalized claims about lucid control and rules."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Not allowed to lucid dream in Mall World; you may know you're dreaming but cannot change physics (e.g., fly in the parking garage); becoming lucid may lock you into or out of Mall World.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "parking_structure",
+        "location_name": "parking garage",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“parking garage” referenced as a place within Mall World where dream control (e.g., flying) is not possible."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Attempting to use lucid control to “suddenly decide you can fly” while in the parking garage is described as not possible.",
+        "outcome": "failed",
+        "failure_type": "unclear",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Mall World “physics/rules” prevent the action."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is generalized/meta; only concrete place mentioned is a parking garage and a single example of thwarted lucid action (flying). No sensory qualities, navigation, or specific dream sequence provided."
+  },
+  "response_id": "resp_065cd93f7ffff1d600696e4dba676081939a99ab3a28782f8e",
+  "usage": {
+    "input_tokens": 12353,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 851,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13204
+  }
+}

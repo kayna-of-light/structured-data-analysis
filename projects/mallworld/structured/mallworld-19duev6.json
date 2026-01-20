@@ -1,0 +1,191 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\19duev6.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/19duev6/reoccurring_dream/",
+  "title": "Reoccurring Dream",
+  "date": null,
+  "content_checksum": "8b8fcf51a7faa285d1647e1d1a731223bff872a0d64ac55dd2491fef7461e3d3",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:22:23.268767+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "childhood_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have similar recurring/shared dreams with the same person.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Mentions reading about the possibility of shared dreams.",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "green and white barn",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "practical",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "takes place in a green and white barn"
+        },
+        "affective_response": "delight",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "stall filled with loose hay (inside the barn)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the barn",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "socializing",
+          "intellectual_focus": "practical",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "We always are hanging out in a stall filled with loose hay."
+        },
+        "affective_response": "delight",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "unspecified",
+        "transit_mode": "not_mentioned",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Stall is within the barn; movement not described."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Dreamer and an unknown blonde guy 'get really close' and 'fall in love' with 'the most intense love ever' and 'passion'.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "blonde guy; 'he's aged with me as i've aged'",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "The blonde guy teaches the dreamer how to play an instrument; instrument varies by dream (examples: guitar, keyboard, violin). Guitar is most common.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "helpful",
+            "role": "guide",
+            "authority_nature": "guiding",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "same blonde guy each time; teaches an instrument",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Light quality/temperature, time of day, and most physical condition details are not described. Recurrence is explicit (since childhood; nearly identical each time except instrument)."
+  },
+  "response_id": "resp_0cc7ec755f088d5d00696e4c1d1b908190b799ee351e4f007a",
+  "usage": {
+    "input_tokens": 12477,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1441,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13918
+  }
+}

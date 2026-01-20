@@ -1,0 +1,175 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1iyde4d.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1iyde4d/recently_been_dreaming_of_my_childhood_home/",
+  "title": "Recently been dreaming of my childhood home",
+  "date": null,
+  "content_checksum": "cd846001669d4afed8ab89ae92c4528621254e09824656c7d55fdfc9708dfadf",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:13:51.597435+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have consistent recurring dreams about returning to childhood home/family and standing up to them or running away",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "adult",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "multiple",
+      "occupation_in_dream": null,
+      "initial_emotion": "Not pleasant dreams; not nightmares either",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "childhood home",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Going back to my childhood home; not pleasant dreams, but not nightmares either."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Finally speaking my mind / standing up to my family.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "Family members at childhood home",
+            "name_or_relation": "family"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "With my husband, we tell them off as a unit.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "friendly",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "Husband present with dreamer",
+            "name_or_relation": "husband"
+          },
+          {
+            "entity_type": "family_member",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "implied",
+            "description": "Family being told off",
+            "name_or_relation": "family"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "When alone, dreamer is usually younger self; at least one dream of earning emancipation.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "In other dreams, dreamer straight up runs away.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post summarizes a set of recurring dreams rather than describing a single episode; minimal sensory/spatial detail (no layout, lighting, time of day, or movement paths). Dreamer identity varies between current self (with husband) and younger self (alone)."
+  },
+  "response_id": "resp_0c332f30654d375c00696e582b9a1081939188a5e25d16c957",
+  "usage": {
+    "input_tokens": 12441,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1275,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13716
+  }
+}

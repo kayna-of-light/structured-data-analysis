@@ -1,0 +1,170 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\ywxkfn.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/ywxkfn/something_about_the_theme_park_scares_and_i_never/",
+  "title": "Something about the theme park scares and I never go. I can always see the roller coaster when I come out of stores.",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:31:47.667991+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/v9h8bdtkod0a1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "amusement_park",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "visible when coming out of stores",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "neutral",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "moderate",
+          "crowd_behavior": "socializing",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Indoor theme park/amusement area with a prominent roller coaster; many colorful rides/structures; crowds of people walking/standing."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Stores exist; dreamer comes out of stores and can see the roller coaster."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "door",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Exiting stores reveals line-of-sight to the theme park/roller coaster."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer avoids going into the theme park because it scares them; they can see the roller coaster but never go.",
+        "outcome": "abandoned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Dreamer comes out of stores and sees the roller coaster/theme park area.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text beyond title; extraction relies on title plus single attached image that appears to be a bright indoor theme park scene (not a hand-drawn map). Location qualities (light/crowding/state) are inferred from visible image content; recurrence inferred from 'always' in title."
+  },
+  "response_id": "resp_03ed1d6774caffe400696e6a52ce5c81908880cce3a2e62a92",
+  "usage": {
+    "input_tokens": 12627,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1251,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13878
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pwimr5.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pwimr5/food_courts_in_mall_world/",
+  "title": "Food Courts in Mall World",
+  "date": null,
+  "content_checksum": "9a84d707629c1b69c30811c9e8d7bd5b99fdb1dc4a48a4e80d9a40a11e2a6b80",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:15:20.786828+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/ncpbne97xm9g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "How other peoples’ Mall World food courts manifest",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_food_court",
+        "location_name": "food courts in mall world",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "reality_stability": "solid",
+          "crowding": "crowded",
+          "crowd_behavior": "wandering",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "normal",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Always large and maze like with a low white ceiling; main focus on one restaurant I’m trying to order at; lots of people walking in the background."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "restaurant_fast_food",
+        "location_name": "one restaurant I'm trying to order at (central counter/restaurant)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "within the food court; main focus",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "reality_stability": "solid",
+          "crowding": "crowded",
+          "crowd_behavior": "waiting",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "normal",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Main focus is on one restaurant I’m trying to order at. (AI image shows a central counter with signage; people queued/standing facing it.)"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "transaction",
+        "description": "Trying to order at the main restaurant in the food court.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "customer",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Lots of people walking in the background; (AI image shows groups standing/queuing near the counter and people moving through the space).",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a recurring single location (food court) and includes an AI visualization. Spatial details are limited to 'large and maze like' and 'low white ceiling' plus visual cues of a central restaurant and surrounding walkways/levels; no explicit navigation paths or boundaries described."
+  },
+  "response_id": "resp_0ed91c96deb5874900696e666c1840819396c5b4f1d97c5683",
+  "usage": {
+    "input_tokens": 13664,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 1201,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14865
+  }
+}

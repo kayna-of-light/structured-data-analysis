@@ -1,0 +1,147 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jxwgmb.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jxwgmb/festival_world/",
+  "title": "Festival world?",
+  "date": null,
+  "content_checksum": "84b91dfa14bcfc702b7a06028506d3d74b06cfc40cc749d086838c448a0a685c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:34:34.888372+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/bo0zirc98iue1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have recurring festival/concert dream locations",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Dream once included seeing a deceased friend at the festival dancing/singing; author frames it as showing he was ok (interpretation not extracted).",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "carnival",
+        "location_name": "outdoor music festival",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"outdoor music festival\"; \"Camping is always involved\"; \"finding the perfect camping spot is important\"; \"I don’t always make it to the show\"; \"saw a friend who had passed at a festival dancing and singing\""
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Finding/choosing the perfect camping spot at the outdoor music festival; camping is always involved.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Attempting to make it to the show at the festival; author reports they do not always make it to the show.",
+        "outcome": "failed",
+        "failure_type": "unclear",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observed a deceased friend at the festival dancing and singing.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "deceased",
+            "demeanor": "not_mentioned",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "friend who had passed; seen at the festival dancing and singing",
+            "name_or_relation": "friend"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears to be a photo-like aerial view of a large outdoor festival with tents/camping and a main stage; treated as illustrative (has_image=true) but not a hand-drawn map (has_map_drawing=false) and not clearly AI-generated (has_ai_image not set). Text provides a recurring single-world setting; specific lighting/time/crowd details are not stated in text."
+  },
+  "response_id": "resp_055c78fb665a419f00696e5cf3e4fc81909d60b6c633ac7c34",
+  "usage": {
+    "input_tokens": 12680,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 827,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13507
+  }
+}

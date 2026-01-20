@@ -1,0 +1,139 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ka8v4q.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ka8v4q/i_often_return_to_this_nonsensical_mixture_of/",
+  "title": "I often return to this nonsensical mixture of Costco and Home Depot",
+  "date": null,
+  "content_checksum": "1e4cbabeea90ee6afd0ec23e406abed97717b43a789ef7954768d538a48da7e2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:41:09.524532+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/fc72gklfmnxe1.jpg",
+    "https://i.redd.it/u0cf9ytfmnxe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "Costco/Home Depot-like big-box store",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "mixed",
+          "atmosphere": "oppressive",
+          "reality_stability": "solid",
+          "crowding": "moderate",
+          "crowd_behavior": "wandering",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "dirty",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"nonsensical mixture of Costco and Home Depot\"; items \"massive and thrown all over the place\"; \"different departments like electronics with random computers and Playstations\"; \"a bathroom sink department\"; \"fruit stations and groceries\"; aisles \"all so high up to the ceiling\"; \"almost always an ominous feeling\"; \"I'm always by myself\""
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Shopping in the big-box store; encountering massive items thrown all over and multiple departments (electronics, bathroom sinks, fruit/groceries).",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Ex-boyfriend followed the dreamer inside with a knife and tried to kill them; dreamer hid until they woke up.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "hostile",
+            "role": "chaser",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "ex-boyfriend with a knife",
+            "name_or_relation": "exbf"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Two attached images appear AI-generated (warehouse grocery aisles with very tall shelving, scattered items, crowds, and cold overhead lighting). Text says dreamer is 'always by myself' but images show people; crowding set from images while solitude preserved in raw_description."
+  },
+  "response_id": "resp_0a16e072b75df1e800696e5e7d65f4819394ce15e98b15a6e1",
+  "usage": {
+    "input_tokens": 13850,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 743,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14593
+  }
+}

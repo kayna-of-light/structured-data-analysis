@@ -1,0 +1,148 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ikir2t.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ikir2t/mallworld_bookshopgift_shop/",
+  "title": "Mallworld bookshop/gift shop",
+  "date": null,
+  "content_checksum": "dece9684803200a5c33e7e8e3e645b6c2cc85723528dde5189ad38c611e96e60",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:09:33.664681+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/sj54z56plvhe1.jpg",
+    "https://i.redd.it/b7nxcxbplvhe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "recent_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have been to a recurring Mallworld bookshop/gift shop like the one shown; dreamer searches but never buys; sense of someone waiting",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "book shop / gift shop",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "neutral",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "solid",
+          "crowding": "moderate",
+          "crowd_behavior": "socializing",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Bookshop/gift shop resembling a real-life store; bright retail lighting; wooden floors; circular display tables stacked with books; tall shelving; category signage (e.g., 'Cookery', 'Diet & Health', 'Natural History', 'Art & Fashion', 'Film & Drama', 'Music'); open storefront with 'WHSmith' signage; displays labeled 'Just out'."
+        },
+        "affective_response": "comfort",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Dreamer is always looking for something in the shop.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Dreamer never purchases anything while in the shop.",
+        "outcome": "abandoned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer feels there is someone waiting for them to finish what they're doing; nothing sinister mentioned.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Someone waiting for the dreamer to finish.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is phrased as a question but includes recurring dream behavior in a specific shop. Visuals appear to be reference photos of a real bookstore/newsagent rather than a hand-drawn map; spatial extraction limited to visible interior layout elements (shelves, circular tables, open storefront, stairs/shelving wall)."
+  },
+  "response_id": "resp_0313f4e62d77a55600696e570e108881978cae2ae8e0cfdd66",
+  "usage": {
+    "input_tokens": 14466,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 798,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15264
+  }
+}

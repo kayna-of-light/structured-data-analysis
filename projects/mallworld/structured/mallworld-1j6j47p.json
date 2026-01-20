@@ -1,0 +1,161 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j6j47p.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j6j47p/last_night_the_mall_was_moving_to_an_underground/",
+  "title": "Last night the mall was moving to an underground complex. The mall was still there but dead, and all the stores were moving underground. It kind of looked like this pic but a lot more narrow and the walls were a blue brick.",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:16:52.995767+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/1g0sf5dqehne1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "abandoned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“The mall was still there but dead.”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "underground",
+        "location_name": "underground complex / underground shopping corridor",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "below the mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "timeless",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "solid",
+          "crowding": "moderate",
+          "crowd_behavior": "wandering",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "normal",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“All the stores were moving underground.” Looked like the attached image: a long, narrow underground mall corridor with storefronts on both sides; “a lot more narrow”; “walls were a blue brick.”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "unspecified",
+        "transit_mode": "not_mentioned",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Transition implied by: “all the stores were moving underground” / “moving to an underground complex.” (No explicit stairs/elevator described.)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observed the mall as still present but “dead,” while stores were in the process of moving underground.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post contains minimal narrative; main phenomenology is the stated shift of stores to an underground complex and an attached reference image depicting an underground shopping corridor. Blue brick walls and increased narrowness are from the author’s text; other corridor details (fluorescent lighting, moderate crowding, storefronts on both sides) are derived from the attached image used as a visual reference."
+  },
+  "response_id": "resp_016433153d3c415800696e58cc4060819499556539e1cea8ee",
+  "usage": {
+    "input_tokens": 13279,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1219,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14498
+  }
+}

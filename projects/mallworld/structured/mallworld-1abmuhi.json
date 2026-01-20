@@ -1,0 +1,116 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1abmuhi.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1abmuhi/the_lobby_of_my_haunted_mansion_sometimes_the/",
+  "title": "The lobby of my \"haunted mansion.\" Sometimes the hotel looks similar.",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:22:46.695411+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/7nbyd6jgdtec1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "map_only",
+      "content_flags": [
+        "has_image",
+        "has_map_drawing"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel_lobby",
+        "location_name": "lobby of my \"haunted mansion\" (sometimes the hotel looks similar)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Hand-drawn interior: symmetrical lobby with a large central arched window above a mezzanine/balcony railing; two staircases on left and right descending to a lower level; seating area with multiple chairs around a central low table; two large columns; double doors at lower level; wall sconces/lamps; framed portraits on left and right walls."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "transit_mode": "not_mentioned",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Two symmetrical staircases (left and right) connect an upper balcony/mezzanine level to a lower lobby level."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text; extraction based on a single hand-drawn image. Spatial elements inferred from perspective: upper balcony/railing and lower level with doors/columns/seating. Lighting, affect, and motion not depicted."
+  },
+  "response_id": "resp_046d73fdfad8622300696e4c29ad98819081c1a56be4e3e066",
+  "usage": {
+    "input_tokens": 13549,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 617,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14166
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pv5oob.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pv5oob/constant_bathroom_dreams/",
+  "title": "Constant bathroom dreams??",
+  "date": null,
+  "content_checksum": "748132feb882b205feb3654bec3c510d281b953c32178027c6a0970cfe5d6bef",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:13:35.038630+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Recurring bathroom dreams: exposed stalls, public humiliation, searching for a bathroom, inability to pee; asking if others experience this.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_public",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "reality_stability": "not_mentioned",
+          "crowding": "crowded",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "exposed",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“bathroom stalls are always open always in front of everyone”"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "other",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Constantly running to find a bathroom in the dream to go pee.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Attempts to pee but never ends up peeing; either wakes up or the dream shifts to something else.",
+        "outcome": "failed",
+        "failure_type": "unclear",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "People are present and “everyone is making fun of you”.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "hostile",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "“everyone” present in front of open stalls; making fun of the dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is framed as a question but contains recurring dream elements: public bathroom with exposed stalls, a hostile crowd, repeated searching/running for a bathroom, and inability to urinate before waking or scene change. No details given on lighting, cleanliness, or broader mallworld layout."
+  },
+  "response_id": "resp_0a8813deaceea53300696e66303d1c819681fcd058bf548d18",
+  "usage": {
+    "input_tokens": 12366,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1030,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13396
+  }
+}

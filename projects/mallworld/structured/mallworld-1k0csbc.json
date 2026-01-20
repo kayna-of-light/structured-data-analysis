@@ -1,0 +1,88 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k0csbc.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k0csbc/night_terrors/",
+  "title": "NIGHT TERRORS",
+  "date": null,
+  "content_checksum": "2ac0590ef4b130e191cdc2ce34c21fa8550bcb0d9dc74730e2baed0c65a97884",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:35:41.322420+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "nightmare",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have chronic night terrors involving specific/consistent dream places they can navigate (including places that feel dark/evil), despite never visiting them in waking life.",
+      "should_skip_extraction": true,
+      "skip_reason": "No specific dream scene(s) described—only general characteristics and questions."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": 2
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unspecified_recurring_place",
+        "interaction_type": "navigation",
+        "description": "Reports having night terrors about 'very specific places' that they can 'scout their way around like it’s nothing' (places they’ve never seen/been to before).",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified_dark_place",
+        "interaction_type": "observation",
+        "description": "Reports some places in these night terrors 'just feel entirely dark and evil.'",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "low",
+    "extraction_notes": "Post contains chronic/recurring dream metadata and general place-qualities (navigable, unfamiliar, dark/evil) but no concrete location descriptions (no explicit setting type, layout, lighting specifics, entities, or transitions). Created placeholder location_ids referenced only by interactions to preserve the reported phenomenology without inventing details."
+  },
+  "response_id": "resp_0d6d87de1f0bf6d000696e5d4e319c8190a3f1f5fe55a8c75c",
+  "usage": {
+    "input_tokens": 12437,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 480,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12917
+  }
+}

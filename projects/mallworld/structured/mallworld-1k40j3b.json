@@ -1,0 +1,164 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k40j3b.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k40j3b/the_airport_and_mall_within_my_mallworld/",
+  "title": "The airport and mall within my MallWorld.",
+  "date": null,
+  "content_checksum": "c4404f7495c91cb86531e5bf50aa48e31fde1ef5e9caeb1dc615e5904ed768c9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:38:00.999320+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/3v71bw4d03we1.png",
+    "https://i.redd.it/x5vfgg9d03we1.png",
+    "https://i.redd.it/1vtr1scd03we1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "airport",
+        "location_name": "American airport",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "\"The American airport is a lot more like a normal looking one but with a huge escalator.\""
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "airport",
+        "location_name": "Japanese airport",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "colored",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"Japanese airport which has a purple tint.\" Image shows purple-tinted terminal concourse with tiled walls/floors, overhead signage ('DEPARTURES', 'Exit', 'TERMINAL'), storefront-like glass fronts, rope barriers/railings, and a large escalator; dimmer corridor opening labeled 'TERMINAL'."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "flying",
+        "transit_mode": "passive",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "\"I typically fly between America and Japan\" (air travel between the two airports)."
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "escalator",
+        "transit_mode": "directed_active",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_mentioned",
+        "qualities": "Image shows a large escalator within the purple-tinted airport; also stairs/ramps connecting levels."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post text is brief; many qualities inferred only from the attached images (purple lighting, cleanliness, emptiness, presence of escalator/stairs and signage). The American airport is described but not pictured here; Japanese airport visuals appear AI-generated (smooth surfaces, stylized signage)."
+  },
+  "response_id": "resp_0e30c2993ec38eb200696e5dc273ac819799978a445db52f16",
+  "usage": {
+    "input_tokens": 17883,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 888,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 18771
+  }
+}

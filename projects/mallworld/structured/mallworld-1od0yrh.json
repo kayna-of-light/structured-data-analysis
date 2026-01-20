@@ -1,0 +1,194 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1od0yrh.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1od0yrh/bronze_mall/",
+  "title": "Bronze Mall",
+  "date": null,
+  "content_checksum": "0da489ce38978c1f4059d7909d4379f5b08d5447a86893ffdedc54bdf6dd7b88",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:51:15.963012+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/obbs18yvylwf1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have dreamt of a bronze, luxurious multi-level mall; dreamer stays in atrium/common area on lowest level and does not enter stores.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "Bronze Mall (atrium/common area)",
+        "position": {
+          "vertical": "lowest",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "atrium/common area with stores around and different levels above",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "warm_golden",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“bronze and very luxurious”; “stay in the atrium/common area”; “stores all around me and there are different levels”; “I’m on the lowest level”; “luxury stores and the elevators all in bronze.” Image shows bronze/gold-toned glossy floors, curved ceiling with warm lighting, glass-front luxury storefronts with mannequins/handbags, and an escalator rising toward an upper level opening."
+        },
+        "affective_response": "comfort",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "mall_store",
+        "location_name": "Luxury stores (seen but not entered)",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "surrounding the atrium/common area on multiple levels",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "warm_golden",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“I see the stores all around me… luxury stores”; dreamer does not go into any stores. Image depicts glass storefronts with displays (handbags) and mannequins."
+        },
+        "affective_response": "curiosity",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_attempted",
+        "qualities": "Storefront entrances/doors visible from the atrium/common area; dreamer remains in common area and does not enter."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "transit_mode": "passive",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "not_attempted",
+        "qualities": "Bronze-toned escalator visible leading upward to higher levels/opening above (from image); dream text mentions “different levels” and “elevators all in bronze.”"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "elevator",
+        "transit_mode": "passive",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_mentioned",
+        "outcome": "not_attempted",
+        "qualities": "“elevators all in bronze” (present/visible); no travel described."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer remains in the atrium/common area on the lowest level and observes luxury stores around them across multiple levels; elevators present/visible.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer wants to shop but does not go into any stores (stays in common area).",
+        "outcome": "abandoned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image is described by author as AI-generated (ChatGPT). Spatial info: dreamer located on lowest level in atrium/common area; stores surround on multiple levels; elevators (and escalator shown in image) present but not used. No explicit crowding/time-of-day/recurrence frequency beyond familiarity implied by ‘Has anyone dreamt of this mall?’ and comfort statement."
+  },
+  "response_id": "resp_0410c16f4ecb7e3300696e60c83050819784621a44b82971f8",
+  "usage": {
+    "input_tokens": 14245,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1657,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15902
+  }
+}

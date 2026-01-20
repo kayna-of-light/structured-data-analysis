@@ -1,0 +1,156 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ouspez.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ouspez/what_have_you_guys_seen_inside_the_airport/",
+  "title": "What have you guys seen inside the airport",
+  "date": null,
+  "content_checksum": "25538d1a3c4122afbb55d1b4d87c19e7b8ec86864d61f14e2cec2b6d945bb362",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:58:01.304754+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Cross-referencing others' experiences specifically inside the airport location (asking if others have seen the same/similar).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "first_visit",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "airport",
+        "location_name": null,
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "worn",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "dirty",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“an airport that barely looked like an airport… stripped of everything”; “walls that were all windows”; “that crappy carpet everywhere”; “gross airport chairs lined most of the walls”; “multiple levels… but… just had carpeted ramps”; “ramps just kept going up and it was taller than an airport should be”; dreamer was “rushing around”; “outside the windows” not remembered"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "ramp",
+        "transit_mode": "directed_active",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Instead of stairs/escalators/elevators, vertical movement is via “carpeted ramps” that “kept going up.”"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Airport perimeter described as “walls that were all windows”; dreamer did not attend to what was outside."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer is “rushing around” the empty multi-level airport with a group; moves upward via carpeted ramps.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer is “there with a group” and they were “the only people there.”",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "A “group” accompanying the dreamer; no other people present.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Single described location (airport) with clear architectural features (all-window walls, carpet, chairs) and a distinctive vertical circulation system (carpeted ramps replacing stairs/escalators/elevators). Outside view not described; lighting/time of day not mentioned."
+  },
+  "response_id": "resp_021e3380c5b54a0200696e6289e3c081958c6dd38889fb6cf3",
+  "usage": {
+    "input_tokens": 12517,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1228,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13745
+  }
+}

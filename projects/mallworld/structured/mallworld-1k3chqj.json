@@ -1,0 +1,185 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k3chqj.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k3chqj/recurring_dream_of_mine/",
+  "title": "Recurring dream of mine",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:37:54.547239+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/x32eq1iphwve1.jpg",
+    "https://i.redd.it/1f2lk1iphwve1.jpg",
+    "https://i.redd.it/mkhit1iphwve1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "elevated causeway/bridge-road over ocean (seen from inside a car)",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "over open ocean/water",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "neutral",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "reality_stability": "shifting",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "ocean_calm",
+          "water_clarity": "blue/clear-looking (no debris visible)",
+          "raw_description": "Multiple elevated roadways/bridges on pylons over open ocean; lanes rise into steep ramps and looping curves; horizon visible; no other vehicles visible."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "car interior (driver viewpoint)",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "on the elevated roadway above the ocean",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "cold_white",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "normal",
+          "privacy_status": "private",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Driver’s hands on steering wheel; dashboard/gauges visible; rearview mirror; windshield frames view of surreal looping roads over water."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "vehicle",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Driving on elevated roadway network; roads rise steeply and curve/loop in nonstandard geometry."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "ocean_water",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Road system surrounded by open ocean to the horizon; no land visible."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Traveling/driving along a network of elevated roads with steep ramps and looping curves above the ocean.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Vehicle appears airborne above the elevated road network (car lifted off roadway).",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text provided; extraction is based solely on attached images, which appear AI-generated. Spatial structure suggests a single recurring setting: elevated causeway/bridge network over ocean with nonstandard looping/steep geometry; one image shows the car airborne."
+  },
+  "response_id": "resp_046d0a89cf3da65b00696e5d9609a88190a423d825ec7b09e1",
+  "usage": {
+    "input_tokens": 17225,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1399,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 18624
+  }
+}

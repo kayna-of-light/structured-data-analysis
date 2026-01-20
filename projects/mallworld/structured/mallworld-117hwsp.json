@@ -1,0 +1,115 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\117hwsp.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/117hwsp/anyone_dream_about_riding_a_very_crowded/",
+  "title": "Anyone dream about riding a very crowded passenger ferry? I always seem to misplace something during the ride. My purse, my luggage, jewelry,etc",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T14:58:57.810823+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/89cvgpyh9eja1.jpg",
+    "https://i.redd.it/dj1rgqyh9eja1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Recurring dream of riding a very crowded passenger ferry and misplacing belongings during the ride",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "passenger ferry",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "neutral",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "solid",
+          "crowding": "packed",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "normal",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "\"riding a very crowded passenger ferry\"; image shows ferry interior with rows of seats/benches, windows with curtains, central aisle; exterior image shows multi-deck white ferry on water near city buildings"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "During the ferry ride, the dreamer misplaces something (examples given: purse, luggage, jewelry).",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is phrased as a question with minimal narrative; images appear to be illustrative photos of a ferry (not a hand-drawn map). Crowding is explicit in text; other environmental qualities are inferred only from the images."
+  },
+  "response_id": "resp_038e636d1c6f595400696e4690fa708194bd1223646fe380c4",
+  "usage": {
+    "input_tokens": 14490,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 564,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15054
+  }
+}

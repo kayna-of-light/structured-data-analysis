@@ -1,0 +1,122 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gfkinu.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gfkinu/i_went_to_the_hotel_i_work_at_and_finally_almost/",
+  "title": "I went to the hotel I work at, and finally almost got something!",
+  "date": null,
+  "content_checksum": "ca15ced46a7b965fc48075aa8986c07bf833d2e0348d1d816deb2c1f88f49f94",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:49:41.342624+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "housekeeping",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": null,
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "\"I go to this hotel a lot\"; \"do housekeeping\"; \"hotels... have shelves on every floor with a little pamphlet\""
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "employee",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Looked at a \"clock board\" that was \"all messed up\" and concluded \"yeah I know I'm dreaming.\"",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Attempted to identify what the place was called by reading hotel pamphlets on shelves; saw 2 pamphlets. Could not read the first; the second read something like \"F----- Dreamscape.\"",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Could not read the first pamphlet; second only partially legible (\"something like F----- Dreamscape\")."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only one main location (hotel). Spatial detail limited to shelves/pamphlets on every floor. Text suggests partial reading/legibility issues for signage; no explicit lighting, crowding, or movement connections described."
+  },
+  "response_id": "resp_006528a5b682ce6a00696e52868a508196b2c491d8e82c3b4c",
+  "usage": {
+    "input_tokens": 12422,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 654,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13076
+  }
+}

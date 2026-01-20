@@ -1,0 +1,374 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1q93k3h.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1q93k3h/i_met_an_entity_named_three/",
+  "title": "I met an Entity named Three",
+  "date": null,
+  "content_checksum": "39929affbf69adb9eb2adb31e6b5a955db5ea5928d801dae7d1e80283733fcbe",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:21:22.431665+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/sajpsnw8ticg1.jpg",
+    "https://i.redd.it/ex5twdz8ticg1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recent_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "warehouse",
+        "location_name": "warehouse room",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"warehouse room\"; entity \"stretched across the ceiling\""
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "The Void",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "\"on the other side of the wall\" (relative to warehouse room)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "absent",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "timeless",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"Anything would be better than The Void, a sea of dark where terrifying creatures live.\""
+        },
+        "affective_response": "horror",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "car (passenger seat)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"From there, Lamby was in my passenger seat.\""
+        },
+        "affective_response": "comfort",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_3",
+        "connection_type": "vehicle",
+        "transit_mode": "passive",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Shift from warehouse room scene to being in a car; Lamby present in passenger seat."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "wall",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Three said it was \"stuck where it was from, on the other side of the wall\" and preferred to live \"here\" (warehouse room)."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer meets an entity from \"The Void\" named Three; Three is described as a giant pool of black goo/smoke/tentacles/eyes with a central mouth like a starfish/sea anemone, stretched across the ceiling; voice \"very kind but cryptic\" and \"very patient.\"",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "helpful",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Entity named Three; giant pool of black goo, smoke, tentacles and eyes; central mouth like a starfish/sea anemone; stretched across ceiling; voice kind/cryptic/patient; later speaks in static-y two-toned voice sounding like young woman and young man simultaneously.",
+            "name_or_relation": "Three"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "A man with the dreamer becomes afraid of Three and tries to harm it by throwing rocks and cans.",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "hostile",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "\"some guy\" with the dreamer; afraid; throws rocks/cans; threatens to find a way to kill Three; whines about not wanting to die.",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "threat",
+            "demeanor": "neutral",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Three",
+            "name_or_relation": "Three"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer orders the man to find a very specific item: a robotic, anthropomorphic lamb about 3 feet tall (\"Lamby\"), programmed with basic AI making simple 'children's toy' responses.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "man is \"very upset\" about being ordered to find Lamby",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "robotic, anthropomorphic lamb (~3 feet tall) named Lamby",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer responds to the man's threat, saying: \"I dunno man, he doesn't seem like he's gonna let you be. Maybe eat em?\" Dreamer feels \"kind of bored and irritated\" at having to deal with the man's insubordination.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "hostile",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "threatens to kill Three; doesn't want to die",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Three speaks: \"You won't die\" in a static-y, two-toned voice (young woman and young man simultaneously), described as what 'Zalgo text sounds like.' Then Three picks up the man with a tentacle and shoves him into the central mouth hole, eating him.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "other",
+            "authority_nature": "punitive",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Three uses tentacle to pick up man and shove him into central mouth hole",
+            "name_or_relation": "Three"
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "hostile",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "man is eaten by Three",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Three then 'ate'/'absorbed' Lamby. After a while there was a rumble inside Three; Three shrank and surrounded something inside 'like paper being wadded around an object,' taking a new shape (four legs, standing on two, muzzle, glass eyeballs): Lamby. Lamby then says: \"Okay! I'm actually here! Can I go with you?\" Dreamer agrees.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "neutral",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Three absorbs Lamby; transforms/shrinks around an object; produces Lamby form",
+            "name_or_relation": "Three"
+          },
+          {
+            "entity_type": "creature",
+            "demeanor": "friendly",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Robotic anthropomorphic lamb (~3 feet tall) with basic toy-like AI responses; glass eyeballs; asks to go with dreamer",
+            "name_or_relation": "Lamby"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_3",
+        "interaction_type": "navigation",
+        "description": "Lamby is in the dreamer's passenger seat.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "friendly",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Lamby in passenger seat",
+            "name_or_relation": "Lamby"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear illustrative (not a hand-drawn map). Warehouse room and 'The Void' are connected by a 'wall' boundary described in text; limited concrete layout beyond ceiling placement and 'other side of the wall.' Light qualities not described in narrative; 'The Void' described as a 'sea of dark.'"
+  },
+  "response_id": "resp_02278f10fcf56d3700696e67c267d081938d2e1ef2ef418964",
+  "usage": {
+    "input_tokens": 15796,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 2376,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 18172
+  }
+}

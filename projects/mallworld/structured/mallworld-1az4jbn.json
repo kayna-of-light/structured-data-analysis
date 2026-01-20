@@ -1,0 +1,96 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1az4jbn.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1az4jbn/celebrities/",
+  "title": "Celebrities",
+  "date": null,
+  "content_checksum": "9f4b204203b3e18394bd218ee49d18ac234399bc0b3228254d9d20a78d6a3d29",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:25:09.807885+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking whether others have seen/met celebrities in Mall World; author reports having seen a YouTuber they know and the Pope.",
+      "should_skip_extraction": true,
+      "skip_reason": "Primarily a question; no dream scene/location description, spatial layout, or phenomenological environment details to extract."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "not_mentioned",
+        "interaction_type": "observation",
+        "description": "Author reports that in Mall World they have 'only seen a YouTuber I know' and 'the pope'.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "not_mentioned",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "A YouTuber the author knows (identity unspecified).",
+            "name_or_relation": "YouTuber I know"
+          },
+          {
+            "entity_type": "authority",
+            "demeanor": "not_mentioned",
+            "role": "authority",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "The Pope.",
+            "name_or_relation": "the pope"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "No described locations, lighting, atmosphere, spatial relations, or actions beyond reporting seeing entities; treated as a question post with minimal phenomenological content."
+  },
+  "response_id": "resp_0bba6096da93b45500696e4cc8eaf08190982e5ee0a15d349c",
+  "usage": {
+    "input_tokens": 12339,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 645,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12984
+  }
+}

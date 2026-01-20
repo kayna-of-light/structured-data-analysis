@@ -1,0 +1,124 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1q6upt9.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1q6upt9/found_myself_in_a_tunnel_between_roomsshops_in/",
+  "title": "Found Myself In a Tunnel Between Rooms/Shops In Mallworld The Other Night",
+  "date": null,
+  "content_checksum": "5c7ef574f4bb813d21c3307be8116283421506503fa39af121bb1301d81ba19c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:19:46.873291+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "theater",
+        "location_name": "tight dark tunnel between rooms/shops (crawlspace-like)",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "connecting different rooms in mallworld",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "dirty",
+          "privacy_status": "not_mentioned",
+          "water_presence": "leak",
+          "water_clarity": null,
+          "raw_description": "tight dark tunnel connecting different rooms; very tight to crawl through; metal gears, sprockets; lots of oil/grease dripping; seemed super dangerous; enough room to squeeze through; maybe ~200 feet long; similar to underground workings in Dark City / engine room in Snowpiercer"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_unk_from",
+        "to_location_id": "loc_unk_to",
+        "connection_type": "crawlspace",
+        "transit_mode": "struggle",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "tight/dark crawl-through tunnel (~200 feet) with exposed gears/sprockets and dripping oil/grease; feels dangerous but passable"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Found self in a tight dark tunnel connecting different rooms/shops; squeezing/crawling through despite danger (gears, dripping oil/grease).",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Source and destination rooms/shops are unspecified; tunnel length (~200 feet) and hazardous mechanical details are clear. Location_type set to a generic interior/other-like space; treated as a tunnel/crawlspace connection within mallworld."
+  },
+  "response_id": "resp_0bb2b34049fd456c00696e67a5b7708193b98b86b49bf3f67f",
+  "usage": {
+    "input_tokens": 12417,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 931,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13348
+  }
+}

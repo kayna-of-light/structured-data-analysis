@@ -1,0 +1,223 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hxkluf.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hxkluf/melee_at_the_food_court/",
+  "title": "Melee at the Food Court",
+  "date": null,
+  "content_checksum": "fc00260a571a6a9ff20e0c944f4bbe2ed43bfa962234d7e3b59ce6a9f1911c67",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:04:26.495272+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/lpwskbqgp0ce1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "normal",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "Dream recalled briefly after waking; scene remembered as confrontation/troublemaking.",
+      "final_emotion": "Calm/settled while watching sunset at an empty table.",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": "bakery (food court demonstration area)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "entrance",
+          "cardinal": "not_mentioned",
+          "relative_to": "entered through the door into the bakery area",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "reality_stability": "solid",
+          "crowding": "moderate",
+          "crowd_behavior": "waiting",
+          "intellectual_focus": "practical",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“guy holding a demonstration in the bakery… making small crème tarts for everyone”; “glass counter near the finished tarts”; “crowd of onlookers”; chef “vaulted from behind the counter” and attacked; “students backing him up”; “pummeled from all sides”."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "restaurant_buffet",
+        "location_name": "buffet lounge in the mall",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the mall, facing large windows",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "light_temperature": "warm_golden",
+          "time_of_day": "evening",
+          "state": "maintained",
+          "atmosphere": "peaceful",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“buffet lounge… facing the large windows”; “sun was going down”; “beautiful cinematic sunset of magenta, violet, and golden tones… streaks of clouds”; “empty table… watch the sky change colors”."
+        },
+        "affective_response": "comfort",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "teleport",
+        "transit_mode": "instant",
+        "direction": "not_applicable",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "“teleported from the middle of the group to a buffet lounge in the mall”."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Dreamer takes “a scoop of oatmeal or hummus with a wooden spoon,” tops it with whipped cream, and “smacked it down on the glass counter near the finished tarts,” saying: “Oh go on, I just wanted a little sample…”",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "hostile",
+            "role": "staff",
+            "authority_nature": "punitive",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "chef running a demonstration",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "crowd of onlookers moved back",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "sample/food (oatmeal or hummus + whipped cream; crème tarts present)",
+        "transaction_blocker": "chef anger and confrontation"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Chef “vaulted from behind the counter, attacking me.” Dreamer initially gets “the upper hand,” then chef’s “students backing him up” and dreamer is “getting pummeled from all sides.”",
+        "outcome": "abandoned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "hostile",
+            "role": "staff",
+            "authority_nature": "punitive",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "angered chef",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "hostile",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "chef’s students backing him up",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "task",
+        "description": "Dreamer “piled my plate with some food and a white cardboard bento box,” took tray to an “empty table” to watch the sunset through large windows.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": "buffet food; white cardboard bento box",
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Attached image appears to be a photo/illustration of crème tarts (not a map). Light/color details are explicit only in the buffet lounge scene (sunset)."
+  },
+  "response_id": "resp_0344cc9859d388e300696e55c189e48194a6a8c06957a0d975",
+  "usage": {
+    "input_tokens": 12624,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1845,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14469
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jjq7ve.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jjq7ve/has_anyone_else_been_to_this_restaurant/",
+  "title": "Has anyone else been to this restaurant?",
+  "date": null,
+  "content_checksum": "51466664d71ee1bc163d78bf8c45abbdc090ff918df0b1847e7044596a9aeb27",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:27:05.681698+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/2f7r81n0ovqe1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "seated at one end of the restaurant closest to the kitchen",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "warm_golden",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "shifting",
+          "crowding": "moderate",
+          "crowd_behavior": "socializing",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "curved restaurant interior; booths along both sides; the curve 'goes on forever'; seated at one end closest to the kitchen; restroom at the other end"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "bathroom_public",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "exit",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the other end of the restaurant",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "restroom indicated to be at the other end of the restaurant"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "hallway",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "partial",
+        "qualities": "very long curved path through the restaurant; 'perhaps a quarter mile' from friends; curve 'goes on forever'"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Meeting with a group of friends while seated near the kitchen end of the restaurant.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "neutral",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "group of friends seated with dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Needed to use the restroom; friends indicated the restroom was at the other end of the restaurant.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "neutral",
+            "role": "guide",
+            "authority_nature": "guiding",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "friends directing dreamer toward restroom location",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Walked along the curved restaurant toward the restroom; got very far (about a quarter mile) before realizing the distance/extent ('I was cooked').",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears AI-generated: long, curved diner with repeating booths and warm yellow lighting; used to infer light quality/temperature, cleanliness, and non-Euclidean/\"goes on forever\" geometry. Bathroom itself not shown; only indicated by text."
+  },
+  "response_id": "resp_0049ab672e25601100696e5b2c10a48190947c7656e1e40bef",
+  "usage": {
+    "input_tokens": 13609,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1093,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14702
+  }
+}

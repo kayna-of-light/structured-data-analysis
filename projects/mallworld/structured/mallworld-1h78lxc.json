@@ -1,0 +1,203 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1h78lxc.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1h78lxc/work_in_progress_in_my_mall_world/",
+  "title": "work in progress in my mall world",
+  "date": null,
+  "content_checksum": "7bacc35aa70c0b5fec8b85aeaeb981aac89047460b23da98185f6620934e815a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:56:03.767474+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have experienced the mall changing/adding a floor between dreams (construction/renovation continuity).",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "variation",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "my mall",
+        "position": {
+          "vertical": "varies",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "renovating",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“going down the escalators in my mall”… “they were adding a floor”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "a floor with no electricity (under construction)",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "one of the floors in the mall encountered while going down escalators",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "absent",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "under_construction",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“One of the floors had no electricity, and there were a few men working.”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "no",
+        "dreamer_role": "trespasser",
+        "visit_order": 2
+      },
+      {
+        "location_id": "loc_3",
+        "location_type": "other",
+        "location_name": "additional floor (appeared in later dream)",
+        "position": {
+          "vertical": "upper",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "part of the same mall; a new floor added since the prior dream",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "new",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“The next time I dreamed of my mall there was an actual additional floor.”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "escalator",
+        "transit_mode": "passive",
+        "direction": "down",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "working_normal",
+        "outcome": "succeeded",
+        "qualities": "“going down the escalators”"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "A few men working told the dreamer they couldn’t be there because they were adding a floor.",
+        "outcome": "failed",
+        "failure_type": "external_intervention",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "neutral",
+            "role": "blocker",
+            "authority_nature": "blocking",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "“a few men working”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Told they couldn’t be there due to construction/adding a floor."
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Two dream times are referenced (initial dream a few years ago; later dream with added floor). Exact layout beyond escalator-to-floor sequence not described. Light set to 'absent' for the no-electricity floor; other lighting qualities not stated."
+  },
+  "response_id": "resp_048477cd1cb96acb00696e53f803548195bcae397e52e39664",
+  "usage": {
+    "input_tokens": 12382,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1591,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13973
+  }
+}

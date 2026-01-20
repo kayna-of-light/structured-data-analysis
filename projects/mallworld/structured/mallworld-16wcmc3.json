@@ -1,0 +1,167 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\16wcmc3.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/16wcmc3/the_void_bedroom/",
+  "title": "The void bedroom",
+  "date": null,
+  "content_checksum": "c3fd8f2a9989b4ffedd5a421a4975cc524303cae4b44a77ffe4e5b8378ed8c02",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:06:16.898907+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "childhood_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "middle_aged",
+        "age_explicit": 41,
+        "dreams_since_age": 7,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "multiple",
+      "occupation_in_dream": null,
+      "initial_emotion": "not_mentioned",
+      "final_emotion": "choking and screaming",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel_room",
+        "location_name": "void bedroom",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "reality_stability": "shifting",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "private",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "A room that looks almost like it’s a good but it isn’t fully. There is a hint of walls and confined space. Four post, dark wood bed with red silky looking linens; bed is in the center."
+        },
+        "affective_response": "horror",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "other",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Hint of walls and confined space; room not fully formed (void-like)."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dream starts with the dreamer asleep in the center of a four-post dark wood bed with red silky linens; dreamer is also an observer floating above watching themself sleep.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "neutral",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "implied",
+            "is_recurring": "yes_explicit",
+            "description": "Observer-self floating above, watching sleeping-self.",
+            "name_or_relation": "self (observer)"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "The dreamer sees themself crawl out from under the bed and slit their own throat; the dream ends as the neck starts to bleed.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "hostile",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "implied",
+            "is_recurring": "yes_explicit",
+            "description": "Self emerging from under the bed and slitting sleeping-self's throat.",
+            "name_or_relation": "self (actor)"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Wakes up 'choking and screaming' right as the neck starts to bleed.",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single primary location described. Some descriptors are ambiguous (e.g., 'looks almost like it’s a good but it isn’t fully'); treated as partially formed/shifting room with hinted walls. Somatic response recorded at dream end as waking choking/screaming; not assigned to a specific in-dream location beyond loc_1."
+  },
+  "response_id": "resp_030589e4ad7249c400696e48567f4c8197ba0bfddcef3f3a24",
+  "usage": {
+    "input_tokens": 12562,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1275,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13837
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jjlha0.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jjlha0/docks_in_the_middle_of_the_water_old_man/",
+  "title": "Docks in the middle of the water . / old man / fisherman with boat .",
+  "date": null,
+  "content_checksum": "6c8d1f296629c28ea1fd54354238ef564baac73e448d004823e80fd08f3036e2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:27:01.609515+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/7renjyibpuqe1.jpg",
+    "https://i.redd.it/tgewjbibpuqe1.jpg",
+    "https://i.redd.it/4z4udbibpuqe1.jpg",
+    "https://i.redd.it/8cvb5bibpuqe1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "floating dock/platform in open water",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the middle of the water (no land in sight)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "neutral",
+          "time_of_day": "evening",
+          "state": "maintained",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "water_clarity": "foggy/misty; water surface not clearly visible due to fog",
+          "raw_description": "\"docks in the middle of the water\"; \"square small wood platform\" + \"a long dock\"; \"no land in site\"; \"usually foggy\"; \"air was foggy and misty\"; \"waves were starting to get harsh\"; \"basically floating on the water\"; \"moving up and down with the waves and body weight\"; \"blue hour\" sky; \"kept getting darker\""
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "fisherman's boat (near end of dock)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "at the end of the dock / adjacent to dock platform",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "neutral",
+          "time_of_day": "evening",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "ocean_turbulent",
+          "water_clarity": "not_mentioned",
+          "raw_description": "Older fisherman at the end of the dock telling people to get off the platform/dock and go on his boat"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "bridge",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "difficult",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Walking along a long wooden dock toward the end; dock/platform moving up and down with waves and body weight; scary to walk on"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "ocean",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "no",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "No land in sight; dock/platform surrounded by open water and fog"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer observes a square wooden platform connected to a long dock stretching into open water with no land visible; fog/mist present; lighting like blue hour and getting darker; waves becoming harsh; dock/platform floating and moving with waves and body weight.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Walking on the floating dock/platform feels scary because it moves up and down with waves and body weight.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "An older fisherman at the end of the dock tells people to get off the platform and dock and to go on his boat.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "guide",
+            "authority_nature": "guiding",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "older fisherman",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Images appear AI-generated illustrative visuals (foggy dock/boat) rather than a hand-drawn map; used to corroborate described geometry (long narrow dock to small platform; open water/fog)."
+  },
+  "response_id": "resp_0e3b2e27180ed3f300696e5b20e6b88194927200cb87c673fe",
+  "usage": {
+    "input_tokens": 14675,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1223,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15898
+  }
+}

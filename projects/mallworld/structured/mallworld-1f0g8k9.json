@@ -1,0 +1,112 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1f0g8k9.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1f0g8k9/never_buying_anything/",
+  "title": "Never buying anything",
+  "date": null,
+  "content_checksum": "b5a0e6b723c3ec655226c50aaa718ab4200aeffa947f5ccf558b8fd0d0dd8220",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:42:28.925400+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "cool shops with everything i’m interested in like video games or anime figures"
+        },
+        "affective_response": "delight",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Every time the dreamer tries to buy items (e.g., video games/anime figures), it either doesn't let them, something intervenes, or they wake up.",
+        "outcome": "failed",
+        "failure_type": "unclear",
+        "entities_involved": [],
+        "transaction_item": "stuff (e.g., video games, anime figures)",
+        "transaction_blocker": "It either doesn't let me / something intervenes / wake up"
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only a recurring mall-shop context is described; no layout, lighting, crowding, or specific blockers/entities are given. Transaction failure mechanism is ambiguous (system/environment vs external intervention vs dream termination)."
+  },
+  "response_id": "resp_030a7cab6dded75500696e50cdc8c481969d0876080caee689",
+  "usage": {
+    "input_tokens": 12351,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 772,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13123
+  }
+}

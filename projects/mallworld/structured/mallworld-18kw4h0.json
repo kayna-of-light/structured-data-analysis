@@ -1,0 +1,134 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\18kw4h0.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/18kw4h0/sleep_paralysis_sortaafter_every_lucid_dream/",
+  "title": "Sleep paralysis (sorta)after every lucid dream?",
+  "date": null,
+  "content_checksum": "8d5b7906fbee3d7e68334f97cd16f23113b56c3d1438e9a9ce87534e59ad9988",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:18:59.850674+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "lucid_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Sleep paralysis-like 'in-between' state after becoming lucid: black tunnel/void, freezing/suspension, pulsating body sensations, difficulty fully waking; asking if others experience this.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "inconsistent",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "cool but also spooky; feels like must focus hard to get unstuck",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "black tunnel/void (in-between state after being kicked out of lucid dream)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "transition space between dream and waking; return of consciousness back into body",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "absent",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "timeless",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“return of my consciousness back into my body through a black tunnel”; “sometimes I get suspended in the tunnel and stay frozen there”; “no longer in a dream/ just blackness is present”; “pulsating sensations massaging my body in this tunnel/void”; “in the in between”; must “focus really hard to get ‘Unstuck’”"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "paralysis",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "other",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "tunnel",
+        "transit_mode": "drifting",
+        "direction": "unknown",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "partial",
+        "qualities": "Transition described as moving through a “black tunnel” back into the body; sometimes becomes “suspended” and “frozen” in the tunnel/void."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Attempting to fully wake up / get “unstuck” from the suspended, frozen in-between black tunnel state.",
+        "outcome": "failed",
+        "failure_type": "physical_inability",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Experiences pulsating sensations described as “massaging my body” while in the tunnel/void.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post describes a recurring post-lucid transition state rather than a Mall World location; extracted as a single transitional ‘black tunnel/void’ location with paralysis/suspension and a failed attempt to fully wake (physical inability). No explicit details about the preceding dream environment were provided."
+  },
+  "response_id": "resp_0f8ac1032456398400696e4b4ec190819080d85be0d753e0fa",
+  "usage": {
+    "input_tokens": 12478,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1089,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13567
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1irejo6.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1irejo6/been_here_only_one_time_anyone_else_people_lived/",
+  "title": "Been here only one time. Anyone else? People lived normal(ish) lives here",
+  "date": null,
+  "content_checksum": "d998eb2d9be3c3e5e63a0f8f52eee111d63b0a3457281107e16b2655d969830e",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:11:56.307883+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/5xvl0l3sknje1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_ai_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "first_visit",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "downtown",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "warm_golden",
+          "time_of_day": "not_mentioned",
+          "state": "under_construction",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "exposed",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Blocks of buildings; longer, more rectangular; almost all the same height; less floors than shown in image; no walls and you can see everything your neighbors are doing. (Image shows dense city grid with glowing orange-red channels between blocks and some skybridges.)"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "no",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "bridge",
+        "transit_mode": "not_mentioned",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "(Image) Elevated skybridges connecting some building blocks across the glowing channels/voids between blocks."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post provides minimal narrative; most spatial detail comes from the attached image. Image appears AI-generated (not a hand-drawn map). Privacy/exposure inferred from explicit text: 'No walls and you can see everything your neighbors are doing.' Dream includes 'people lived normal(ish) lives here' but no specific entities or events described."
+  },
+  "response_id": "resp_03e7d4d32ea1097600696e57b06ee88190b7905b213fd9853b",
+  "usage": {
+    "input_tokens": 13607,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 610,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14217
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1oh7n3m.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1oh7n3m/a_dream_where_i_acted_so_like_my_real_self/",
+  "title": "A dream where I acted so like my real self",
+  "date": null,
+  "content_checksum": "a0239c940c838675c563b25af6b7e20451b68b09b4930a5d264ae312375c4a16",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:52:17.727405+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "normal",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "ran out",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the mall (inside a large store)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "reality_stability": "solid",
+          "crowding": "moderate",
+          "crowd_behavior": "waiting",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "large store in the mall; waiting in the checkout line; cashier on the mic directing someone towards me for a \"code 12\"; still people in the checkout queue"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Dreamer waits in checkout line with a few items; cashier and staff partner say: \"you'll have to put those back we're about to close\" and give \"guff\" about imminent strike action.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "unfriendly",
+            "role": "cashier",
+            "authority_nature": "blocking",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "cashier",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "authority",
+            "demeanor": "unfriendly",
+            "role": "staff",
+            "authority_nature": "blocking",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "staff member partner",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "a few items",
+        "transaction_blocker": "told they were about to close / imminent strike action"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer says they should be able to \"just take the items and walk out\" and starts to walk out; hears cashier on the mic directing someone towards them for a \"code 12\"; decides not to leave so they can't be accused of shoplifting and to claim they are putting items back.",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "unfriendly",
+            "role": "cashier",
+            "authority_nature": "observing",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "cashier on the mic calling a \"code 12\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer tells a teenager in the queue: \"don't bother they aren't going to serve you.\" Teenager replies they are already serving him; dreamer notices they are serving him and that he \"wasn't in front of me in the queue.\"",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "customer",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "teenager in the checkout queue",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Dreamer storms back to cashier demanding: \"ring my items through\" and asks why they claimed strike when they weren't. Cashier says they \"had to pretend to be going on strike to trick someone else who was behaving in a threatening manner.\" Dreamer realizes they are also behaving threateningly, puts items down, mumbles an apology, and runs out.",
+        "outcome": "abandoned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "confusing",
+            "role": "cashier",
+            "authority_nature": "blocking",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "cashier",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": "a few items",
+        "transaction_blocker": "cashier claimed closing/strike (later framed as a trick)"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single primary location (mall store checkout). Spatial info limited to being in a checkout line/queue and moving toward exit then back to cashier; no lighting/state details provided."
+  },
+  "response_id": "resp_0cc5409af598792200696e612c973c8195ad76a48850427d84",
+  "usage": {
+    "input_tokens": 12589,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1579,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14168
+  }
+}

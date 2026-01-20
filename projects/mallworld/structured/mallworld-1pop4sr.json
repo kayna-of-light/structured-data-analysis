@@ -1,0 +1,159 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pop4sr.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pop4sr/the_place_overall_has_a_gothic_terrarium_vibe/",
+  "title": "The place overall has a \"gothic terrarium\" vibe. Lots of greenery offset by the shadows &amp; high ceilings. (Then there's the man ALWAYS standing on the bridge off in the distance. I know I need to figure out what he has to tell me, but I never end up making it there.) Anyway, have you been here too?",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:11:16.292871+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/gnjhbk9tfp7g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to the same 'gothic terrarium' place with a distant bridge and a man standing on it",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "gothic terrarium (greenery + shadows + high ceilings)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "mixed",
+          "light_temperature": "neutral",
+          "time_of_day": "timeless",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "river",
+          "water_clarity": "clear/reflective (mirror-like surface in image)",
+          "raw_description": "Overall 'gothic terrarium' vibe; lots of greenery offset by shadows & high ceilings. Indoor canal/waterway with reflective still water; dense plants/trees and mossy growth along dark architectural walls; shafts of light from above."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "bridge over the waterway",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "center",
+          "cardinal": "not_mentioned",
+          "relative_to": "spans the canal/waterway in the terrarium-like corridor",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "mixed",
+          "light_temperature": "neutral",
+          "time_of_day": "timeless",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "river",
+          "water_clarity": "clear/reflective",
+          "raw_description": "A bridge off in the distance; a man ALWAYS standing on the bridge."
+        },
+        "affective_response": "curiosity",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer notices a bridge in the distance with a man standing on it and feels they need to get there, but never ends up making it to the bridge.",
+        "outcome": "failed",
+        "failure_type": "unclear",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "watching",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "yes_explicit",
+            "description": "man ALWAYS standing on the bridge off in the distance",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post contains minimal narrative; primary data comes from title text plus a single attached image depicting an indoor, high-ceilinged, plant-filled corridor with a canal and a bridge. Image appears AI-generated rather than a hand-drawn map."
+  },
+  "response_id": "resp_0e26c7cb76ec6a5900696e6588a5b881949a424b2c38a8954f",
+  "usage": {
+    "input_tokens": 13608,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1214,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14822
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17e703u.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17e703u/anyone_else_have_trouble_walking/",
+  "title": "Anyone else have trouble walking?",
+  "date": null,
+  "content_checksum": "c261904bee0ca1d5f7a5875ca214c3702bb131e3fea9f58ddff82febc56b99b2",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:11:10.009103+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Difficulty walking in dreams (heavy legs / uneven leg length), awareness of dreaming but believing it is real",
+      "should_skip_extraction": true,
+      "skip_reason": "No specific dream scene/location described; only generalized recurring somatic/agency issue."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "frustrating",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "navigation",
+        "description": "Attempting to walk; legs feel very heavy and are dragged, or one leg becomes longer than the other causing limping.",
+        "outcome": "failed",
+        "failure_type": "physical_inability",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "observation",
+        "description": "Usually recognizes they are dreaming when the walking problem happens, but becomes convinced it is happening in real life.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Post contains generalized recurring somatic/agency impairment (heavy legs, limping due to uneven leg length) without any described Mall World location or spatial layout; modeled as interactions at an unspecified location."
+  },
+  "response_id": "resp_0dfe1eb17957b1a000696e49826a34819092a8d09ce08c3b33",
+  "usage": {
+    "input_tokens": 12365,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 570,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 12935
+  }
+}

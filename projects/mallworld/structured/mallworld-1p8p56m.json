@@ -1,0 +1,205 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1p8p56m.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1p8p56m/underground_tunnels_with_giant_frozen_wave/",
+  "title": "Underground Tunnels with Giant Frozen Wave",
+  "date": null,
+  "content_checksum": "2c5773cdb0ba3470d517cfa487b58bc4ff43def3e365b34c4f5bceb1a44ce176",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:05:21.235128+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/emyctnbody3g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "multiple_dreams",
+        "childhood_dream",
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "child_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "theater",
+        "location_name": null,
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "cold_white",
+          "time_of_day": "timeless",
+          "state": "worn",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "moderate",
+          "crowd_behavior": "coordinated",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "submerged",
+          "water_clarity": "frozen/ice-like",
+          "raw_description": "underground tunnels; a giant wave rushing towards me in a tunnel but it would freeze suddenly; street gang looking people would climb onto it and look at me menacingly; path to my right blocked by a large grate; stairs to go out the top were behind the wave and thugs"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "transit_mode": "directed_active",
+        "direction": "up",
+        "difficulty": "blocked",
+        "mechanism_function": "not_applicable",
+        "outcome": "failed",
+        "qualities": "stairs to go out the top were behind the frozen wave and thugs"
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "tunnel",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "blocked",
+        "mechanism_function": "not_applicable",
+        "outcome": "failed",
+        "qualities": "path to my right was blocked by a large grate"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "guarded",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "exit stairs blocked by frozen wave and thugs"
+      },
+      {
+        "location_id": "loc_1",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "path to the right blocked by a large grate"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "A giant wave rushes toward the dreamer in the tunnel but freezes suddenly, becoming an obstacle.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "street gang looking people / thugs climbing onto the frozen wave and looking menacingly",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Attempted route to the right is blocked by a large grate.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "large grate"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Attempted to use stairs to go out the top, but the stairs are behind the frozen wave and thugs.",
+        "outcome": "failed",
+        "failure_type": "external_intervention",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "blocker",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "thugs behind/near the stairs, associated with blocking the exit",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "frozen wave + thugs"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears to be an AI visualization of the described scene (tunnel/underpass with a frozen curling wave and men around it). Text provides limited sensory details beyond the wave freezing and blocked routes. Location type set to 'theater' only as closest available enum for an underground tunnel/underpass; semantically it is an underground tunnel/underpass."
+  },
+  "response_id": "resp_095f23bb14a7154900696e642918e88190943a07d4e7f58143",
+  "usage": {
+    "input_tokens": 13421,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1127,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14548
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1fyxj9o.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1fyxj9o/someone_took_me_here_last_night_what_a_wild/",
+  "title": "Someone took me here last night, what a wild experience",
+  "date": null,
+  "content_checksum": "c73b655ac6fe393ee89abe225991e7cc7a3207d3726d7b4a85f07d838737654d",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:47:38.974204+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/wnug4g58qitd1.jpg",
+    "https://i.redd.it/joitm398qitd1.jpg",
+    "https://i.redd.it/m79q2ic8qitd1.jpg",
+    "https://i.redd.it/7ppwuxe8qitd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "lucid_dream",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "first_visit",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "wow, I will cherish this dream forever",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "ruins",
+        "location_name": "outdoor ruin (graffiti-covered stone rooms)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "daytime",
+          "state": "abandoned",
+          "atmosphere": "welcoming",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"rooms of this outdoor ruin, covered in graffiti\"; \"absolutely breathtaking towering walls made of stone\""
+        },
+        "affective_response": "delight",
+        "somatic_response": "none",
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "hallway",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "led \"by the hand\" through multiple rooms within the outdoor ruin"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer is fully lucid, looking around freely while being led by the hand through rooms of an outdoor ruin.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "guide",
+            "demeanor": "friendly",
+            "role": "guide",
+            "authority_nature": "guiding",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Unspecified person holding the dreamer’s hand; dreamer sees their hands holding \"but like....infrared?\"",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Guide says: \"I really wanted to show you this place, and I wanted to see if I could take you here\".",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "guide",
+            "demeanor": "friendly",
+            "role": "guide",
+            "authority_nature": "guiding",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Same guide accompanying the dreamer",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post includes attached images depicting an overgrown, graffiti-covered stone ruin with arches/columns and open sky; treated as illustrative of the described location (not a hand-drawn map, not clearly AI). Spatial details extracted mainly from text (multiple rooms; being led through them)."
+  },
+  "response_id": "resp_04980e01f4cfd81300696e51e957f88193964e94b171e333d9",
+  "usage": {
+    "input_tokens": 19651,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 825,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 20476
+  }
+}

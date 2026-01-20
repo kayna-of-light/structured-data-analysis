@@ -1,0 +1,148 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1o709lh.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1o709lh/hotel_in_the_distance/",
+  "title": "Hotel in the distance.",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:45:47.813113+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/r3z4ynxs17vf1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "map_only",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": "Hotel in the distance",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "on a grassy rise/landform against a dark background",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "light_temperature": "warm_golden",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "A large multi-story hotel/building with many warm-lit windows; red roof; small cupola/turret on top; arched, illuminated lower level/colonnade; set on green grass with surrounding darkness."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "house",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "edge",
+          "cardinal": "not_mentioned",
+          "relative_to": "small building to the right of the hotel",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "warm_golden",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Small separate building/house-like structure beside the hotel with a few warm-lit windows."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": null,
+        "boundary_type": "darkness",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "no",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Surrounding environment is predominantly black/dark, with the hotel/grounds isolated within it."
+      }
+    ],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text; extraction based solely on a single attached image depicting a hotel scene at night. Image appears like a painting/illustration rather than a hand-drawn map; no explicit paths/doors/entry shown."
+  },
+  "response_id": "resp_010edc0e2c93e1a700696e5f9c42f081968b057e5ae6718c5d",
+  "usage": {
+    "input_tokens": 14057,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 770,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14827
+  }
+}

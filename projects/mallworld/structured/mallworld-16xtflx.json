@@ -1,0 +1,165 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\16xtflx.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/16xtflx/i_found_a_cave/",
+  "title": "I found a cave",
+  "date": null,
+  "content_checksum": "3859c16aed5fd8956316cb9ee27b7a14301c5aec779c5313bf431b9d71f6cd67",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:06:58.337332+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "not_mentioned",
+      "time_flow": "compressed",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "emotion was soo heavy; dream ended abruptly; woke up remembering it vividly",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "cave",
+        "location_name": "the cave",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "oppressive",
+          "reality_stability": "not_mentioned",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "taken to the cave; set up as a sort of memorial, for mothers who'd lost children before or during childbirth, or couldn't have them all together; emotion was soo heavy"
+        },
+        "affective_response": "horror",
+        "somatic_response": "none",
+        "is_familiar": "no",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "transit_mode": "passive",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "the two women took the dreamer to the cave (means of travel not described)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Met two women recognized as 'the women who run the cave'; someone introduced them as if important; they took the dreamer to the cave.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "guide",
+            "authority_nature": "guiding",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Two women in their 30s or 40s; very in love; no kids; one dark skinned, one light skinned; big and tall; felt very familiar",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "guide",
+            "authority_nature": "guiding",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Introducer (unspecified person) who introduced the women as if they were important",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observed the cave arranged as a memorial for mothers who lost children before/during childbirth or could not have them.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "other",
+        "description": "Dream ended abruptly when the emotion became very heavy; woke up remembering it vividly.",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Only one explicit location (cave). Travel method not described; light, cleanliness, and detailed cave geometry not mentioned. Affective response marked as horror due to 'emotion was soo heavy' and abrupt ending; could also be anxiety/sadness, but sadness is not an available label."
+  },
+  "response_id": "resp_0e3680fd06cd3e1800696e4876e60c8190ac8ffb57a82890e3",
+  "usage": {
+    "input_tokens": 12505,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1272,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13777
+  }
+}

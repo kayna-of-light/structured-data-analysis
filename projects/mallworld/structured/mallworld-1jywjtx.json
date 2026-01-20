@@ -1,0 +1,115 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jywjtx.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jywjtx/has_anyone_else_dreamt_of_a_room_similar_to_this/",
+  "title": "Has anyone else dreamt of a room similar to this?",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:34:51.376436+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/2kwauai3dsue1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have dreamt of a similar room (shown in image)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "arched alcove bunk-bed room (image reference)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "warm_golden",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "reality_stability": "not_mentioned",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "private",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Cozy built-in sleeping nook framed by a large arched opening; two stacked beds (upper and lower) with floral bedding; left-side staircase leading up; pink curtains around a central window with greenery visible outside; warm wall sconces; built-in drawers/cabinetry under both beds; soft pastel/cream interior."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "transit_mode": "not_mentioned",
+        "direction": "up",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Short staircase on the left side leading from lower level to upper bed platform within the same arched alcove."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No narrative text provided; extraction is based solely on the attached image. Image appears like an interior design photo/render rather than a hand-drawn map; treated as a single depicted room/alcove with an internal staircase connecting lower and upper sleeping platforms."
+  },
+  "response_id": "resp_01b052cf4bb7edbc00696e5d0f2cc081938133088a3ce76194",
+  "usage": {
+    "input_tokens": 14126,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 612,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14738
+  }
+}

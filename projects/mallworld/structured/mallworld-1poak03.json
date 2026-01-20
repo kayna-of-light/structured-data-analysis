@@ -1,0 +1,133 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1poak03.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1poak03/mall_world_toilets/",
+  "title": "Mall World Toilets",
+  "date": null,
+  "content_checksum": "e3bd059c099d3f4e9bb4d46137adb8c8d4411b2f8b5944e5f7ec0ba515d21fea",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:10:30.145720+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_public",
+        "location_name": "bathrooms in mall world",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "compromised",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "bathroom stalls were connected to other bathroom stalls. You could close the door, but it doesn’t give you any privacy. This toilet in particular was clean"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "With a close friend, looking to use a bathroom; upon finding the toilet area, called out to friend to keep watch so nobody walks in while peeing.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "helpful",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "close friend keeping watch",
+            "name_or_relation": "close friend"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer believed they were in waking life while in the bathroom area, then realized it was a dream.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single primary location (public bathroom). Spatial detail present via stall layout (connected stalls, door closes but no privacy). Recurrence inferred from explicit comparison: 'just like the bathrooms in mall world'. Temporal data limited to 'Last night' and sequence of events."
+  },
+  "response_id": "resp_0e4031ae2d029e0e00696e657993cc81948803d09305017c0e",
+  "usage": {
+    "input_tokens": 12405,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 951,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13356
+  }
+}

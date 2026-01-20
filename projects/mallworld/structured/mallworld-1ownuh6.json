@@ -1,0 +1,161 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1ownuh6.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1ownuh6/this_is_exactly_what_the_buildings_in_my/",
+  "title": "This is exactly what the buildings in my reoccurring dreams look like",
+  "date": null,
+  "content_checksum": "7ef107dd790c4cac86401d36b257a4c051fb049358e4b07d925a4ae59b20fde9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:59:47.992945+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/6nmuiby8p51g1.jpg",
+    "https://i.redd.it/2wtmufy8p51g1.jpg",
+    "https://i.redd.it/yze7ba09p51g1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "shanty/poorer part of mall world (city)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "high speed rollercoaster train visible in the distance",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "neutral",
+          "time_of_day": "not_mentioned",
+          "state": "decaying",
+          "atmosphere": "chaotic",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "dirty",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"city made of 'shanty' like buildings\"; \"poorer part of mall world\"; \"always overcast\"; \"tons of parties, addicts, trash\"; \"borderline post apocalyptic aesthetic\"; \"run down\""
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "train",
+        "location_name": "high speed rollercoaster train (in the distance)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "seen while walking around the shanty city area",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"high speed rollercoaster train\"; \"in the distance\""
+        },
+        "affective_response": "curiosity",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Walking around in a city made of shanty-like buildings while looking at a high speed rollercoaster train in the distance.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observes that the weather in this area is always overcast; observes parties/addicts/trash and a run-down, borderline post-apocalyptic aesthetic.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images are reference photos (not a dream map). Visuals used to support building aesthetics: tall, irregular, multi-level wooden structure with exposed framing/scaffolding; overcast/gray sky in at least one image; contributes to 'run down'/'shanty' description. No explicit movement/route beyond walking and seeing train in distance; no specific entities individually described beyond 'addicts' and 'parties' (not itemized as entities due to lack of discrete descriptions)."
+  },
+  "response_id": "resp_035ea6fe32d4d1e200696e62dc2c608195bcdd369d0f6290fb",
+  "usage": {
+    "input_tokens": 17906,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 946,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 18852
+  }
+}

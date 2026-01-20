@@ -1,0 +1,188 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1p02rj8.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1p02rj8/did_anyone_else_ever_have_a_dream_so_strong_that/",
+  "title": "Did anyone else ever have a dream so strong that it affects you in the real world",
+  "date": null,
+  "content_checksum": "cf235118e53de1a89ed7adb9edc704d5cbf3301c89b2210eef5ef20704b7ebf8",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:01:49.189258+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/vibag4dm2y1g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have dreams so strong they affect the real world (e.g., waking with scars)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "my bedroom (in front of a mirror)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "flickering",
+          "light_temperature": "warm_golden",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "shifting",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "private",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "standing in front of a mirror while holding a candle; the light outside flickered like something was trying to cover the sun; when it went dark the mirror opened"
+        },
+        "affective_response": "horror",
+        "somatic_response": "paralysis",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Light outside flickered like something was trying to cover the sun; then it went dark.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dream reflection started to smile wider and wider.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "threatening",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "my reflection in the mirror smiling wider and wider",
+            "name_or_relation": "my reflection"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Mirror opened and the reflection stabbed the dreamer with glass shards; dreamer could only watch.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "reflection attacking with glass shards",
+            "name_or_relation": "my reflection"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer could only watch (could not intervene/stop the attack).",
+        "outcome": "failed",
+        "failure_type": "physical_inability",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "reflection attacking with glass shards",
+            "name_or_relation": "my reflection"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Upon waking, the dreamer had scars they did not have before.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears unrelated to the described bedroom/mirror scene (shows a framed mirror/portal view into a fluorescent hallway); no explicit spatial layout beyond single room. Somatic response inferred from phrase 'could only watch' as physical inability to act."
+  },
+  "response_id": "resp_02d1fc4bf513261000696e6358f8d881959c2c3e44a95067c4",
+  "usage": {
+    "input_tokens": 12641,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 977,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13618
+  }
+}

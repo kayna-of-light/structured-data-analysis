@@ -1,0 +1,115 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k5q7ic.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k5q7ic/does_this_look_familiar/",
+  "title": "Does this look familiar",
+  "date": null,
+  "content_checksum": "b78952d7933943dbecd4aa5b30776732120b2f0bf0e7793dfbfbe1da2778ac35",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:38:53.684674+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/wtryh7zaeiwe1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether a recurring dream location (back alleys with similar-looking buildings) looks familiar to others",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "city_street",
+        "location_name": "back alleys",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "neutral",
+          "time_of_day": "daytime",
+          "state": "worn",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "varies",
+          "crowd_behavior": "wandering",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "dirty",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "\"back alleys\"; \"all the buildings look just like this\"; \"Sometimes there are background people but usually I am alone wandering around.\" Image shows a narrow alley/shoreline edge with closely packed wooden buildings on stilts, utility poles and overhead wires, laundry hanging, and snow/ice on the ground."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Wandering around the back alleys; sometimes with background people present, usually alone.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is framed as a familiarity question with a brief recurring-location description; image appears to be a reference photo (not a hand-drawn map). Crowd presence is described as variable; specific emotions and explicit transitions to/from this area are not provided."
+  },
+  "response_id": "resp_07339665f724d64a00696e5e00e1b481948e84b36f999e129b",
+  "usage": {
+    "input_tokens": 14117,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 596,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14713
+  }
+}

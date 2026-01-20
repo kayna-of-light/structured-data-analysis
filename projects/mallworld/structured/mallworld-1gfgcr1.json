@@ -1,0 +1,197 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gfgcr1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gfgcr1/has_anyone_seen_a_underground_spa_pool_room_in/",
+  "title": "Has anyone seen a underground spa/ pool room in the mall world?",
+  "date": null,
+  "content_checksum": "75616b16d9bce62b8f52cf0599d81a63167e35faf8b9a2fe61cad2a171d69419",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:50:26.712318+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/0yi19glz9uxd1.jpg",
+    "https://i.redd.it/95b37glz9uxd1.jpg",
+    "https://i.redd.it/9owb5glz9uxd1.jpg",
+    "https://i.redd.it/5pn0bglz9uxd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "high",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "calm walking into the room",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": "mall (above the underground pool room)",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "pool room is under the mall",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“the under pool room is under the mall for me”"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "pool",
+        "location_name": "underground spa / pool room under the mall",
+        "position": {
+          "vertical": "lower",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "under the mall",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "not_mentioned",
+          "crowding": "moderate",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "pool_clean",
+          "water_clarity": null,
+          "raw_description": "Room under the mall; accessed by “a winding stair case.” “many little pools to the sides of the room.” Geometry: “circular room initially but then square out as the room go deeper.” Main pool “almost looks like one of those beach pools.” Walls “either pink or white.” Lighting: “a ton of infrared lights as well as regular white bright lights on the ceilings and walls (almost like the whole room has made fake sunlight with the lights).” “smaller stairs as you go deeper into the room leading down to the main pool.” Furnishings: “futuristic lawn chairs/ lounge chairs… almost metal but soft… silver and metallic… they also had red on them.” Other people present; usually a lady on a lounge chair."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "transit_mode": "directed_active",
+        "direction": "down",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "“down a winding stair case” to reach the under pool room"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_2",
+        "connection_type": "stairs",
+        "transit_mode": "directed_active",
+        "direction": "down",
+        "difficulty": "normal",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "“smaller stairs as you go deeper into the room leading down to the main pool”"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "A lady on a lounge chair tries to start a conversation; dreamer feels uneasy talking to her.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "confusing",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "“a lady on one of the lounge chairs… in a black bathing suite, dark glasses, a drink in hand and dark hair with bangs”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Dreamer is “never in here that long.”",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Images appear AI-generated and are treated as illustrative; spatial/lighting details primarily extracted from text. Visuals reinforce pink/white spa aesthetic, multiple pools, columns, and bright/colored lighting but do not add explicit navigational links beyond what text states."
+  },
+  "response_id": "resp_001205d2f336b03000696e528601948193a2a2f3cb80b92644",
+  "usage": {
+    "input_tokens": 13796,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1184,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14980
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1i53pxr.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1i53pxr/everyone_is_gone/",
+  "title": "Everyone is gone",
+  "date": null,
+  "content_checksum": "1d03657f8d2784bc6db24e1bc2d12ac4b6162baaa07584ca3b242f318e4f76c1",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:05:51.275071+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/3xe6vezljzde1.jpg",
+    "https://i.redd.it/bu60hezljzde1.jpg",
+    "https://i.redd.it/joqyrezljzde1.jpg",
+    "https://i.redd.it/aq4ordzljzde1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "neutral",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Empty indoor mall corridors/atrium; tiled floors; skylight/clerestory windows; storefronts closed with metal grates; vending machines labeled \"COLD DRINKS\"; arcade/claw machines; small children's ride-on machines (including a rocket labeled \"NASA\"); some areas lit by bright ceiling panels, one corridor dimmer with warm wall sconces and red patterned carpet; direction sign listing \"SUN MART\", \"KOHL'S\", \"ROSS\"; glass storefront with interior railing/walkway visible; steps with handrail."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "implied",
+        "dreamer_role": "lost",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer is lost; everyone disappeared / location is empty.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "not_mentioned",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Everyone (previously present) disappeared; no people visible.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Text narrative is extremely brief; attached images appear to depict empty mall/theater-like corridors and were used to extract environmental qualities. No explicit movement paths, ordering between pictured areas, or boundaries described."
+  },
+  "response_id": "resp_0836f28d7dffcd2500696e563adc38819487b7d3e17fc4b792",
+  "usage": {
+    "input_tokens": 17283,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 662,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17945
+  }
+}

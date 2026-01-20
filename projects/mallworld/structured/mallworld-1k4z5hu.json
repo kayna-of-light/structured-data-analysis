@@ -1,0 +1,136 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k4z5hu.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k4z5hu/lucid_dreams_victims/",
+  "title": "Lucid Dreams - Victims",
+  "date": null,
+  "content_checksum": "4a769a85ea85cefb0e6f75614501badb3f936c41b4f17f39115d88954e1e68a6",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:38:06.608306+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream",
+        "lucid_dream",
+        "nightmare"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have experienced very lucid dreams of being murdered as different victims and feeling compelled to remember details/solve cases",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "variation",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "female",
+        "age_range": "adult",
+        "age_explicit": 38,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "multiple",
+      "occupation_in_dream": "dream detective (compelled to remember details / solve cases)",
+      "initial_emotion": "uncomfortable",
+      "final_emotion": null,
+      "author_theory": "Felt as if these were unsolved cases; felt compelled to solve/remember details",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "other",
+        "location_name": "building (from the 'prostitute' dream)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“I remember what the building looked like in just one dream (prostitute) - but not the others.”"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Dreamer (as a victim) is being murdered/attacked; attacks “felt so real.”",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "hostile",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "attacker/murderer (not otherwise described)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "After the dreams, dreamer tries to research vague visual clues from each dream to identify/solve the cases.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "low",
+    "extraction_notes": "Post describes multiple lucid murder-victim dreams with minimal environmental detail; only a single 'building' is mentioned without specific features (lighting, layout, or connections). Dreamer identity varies (38F in waking life; young boy in one dream; young prostitute in another)."
+  },
+  "response_id": "resp_0bc1bde0da99fb4900696e5ddcc91481938a18c4aabde3575c",
+  "usage": {
+    "input_tokens": 12497,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1016,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13513
+  }
+}

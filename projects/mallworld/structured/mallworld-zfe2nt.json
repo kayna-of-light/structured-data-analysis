@@ -1,0 +1,143 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\zfe2nt.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/zfe2nt/lucid_moment_followed_by_an_angry_mob/",
+  "title": "Lucid moment followed by an \"angry mob\"",
+  "date": null,
+  "content_checksum": "97eb64a875d2cae26a46c3e6f7fa4ab71011407175126e35639d2e635c224081",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:32:11.866770+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "lucid_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Lucid moment followed by hostile crowd/“mob” reaction; asking what it was",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "kindof excited",
+      "final_emotion": null,
+      "author_theory": "Asks whether it was subconscious being defensive vs intruding on someone else’s dreamscape vs parasitic entities (posed as questions).",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "unspecified",
+        "location_name": "dream scene (unspecified)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "chaotic",
+          "reality_stability": "not_mentioned",
+          "crowding": "packed",
+          "crowd_behavior": "mob",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "After sustaining lucidity and floating faster, “random dream people popped up out of nowhere… tried to like straight up moshpit me out of the dream… ‘your not supposed to be here’ / ‘hey you can’t do that here’ type of looks… became so much more chaotic.”"
+        },
+        "affective_response": "curiosity",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Sustained lucidity longer than usual; maintained focus and floated forward faster for a longer time.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "A crowd of “random dream people” appeared and attempted to push/‘moshpit’ the dreamer out; gave looks implying “you’re not supposed to be here / you can’t do that here.”",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "hostile",
+            "role": "blocker",
+            "authority_nature": "blocking",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "“bunch of random dream people… popped up out of nowhere… suddenly eyeing me… tried to… moshpit me out of the dream”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Briefly retained lucidity but had no control over the dream location as it became more chaotic.",
+        "outcome": "failed",
+        "failure_type": "no_effect",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "No control over dream location despite lucidity; environment became chaotic."
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No concrete place-types (mall/school/hotel) or layout details provided; location treated as a single unspecified dream scene. ‘No control over location’ captured as a failed navigation attempt with no-effect (lucidity did not change environment)."
+  },
+  "response_id": "resp_05df237b7a31505900696e6a8a94a88197b908ec3ac462feb4",
+  "usage": {
+    "input_tokens": 12508,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 862,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13370
+  }
+}

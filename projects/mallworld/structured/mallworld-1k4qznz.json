@@ -1,0 +1,114 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k4qznz.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k4qznz/have_you_seen_me/",
+  "title": "Have you seen me?",
+  "date": null,
+  "content_checksum": "afc8ddb5a1841facb5fa1a5fbca8360e833e73854409b505897d904f4821eff9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:38:07.889330+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/t1s01m0ao9we1.jpg",
+    "https://i.redd.it/wkgx803ao9we1.jpg",
+    "https://i.redd.it/svov5x4ao9we1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "shared_dream_claim",
+      "content_flags": [
+        "has_image",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "minimal",
+      "has_extractable_dream": false,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have seen/met the author in Mall World; mentions friendships and sexual flings there",
+      "should_skip_extraction": true,
+      "skip_reason": "No specific dream scene(s) described: no locations, sequences, sensory qualities, or spatial relations—only a general claim of social/sexual encounters and a request for contact/recognition."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "social",
+        "description": "Author reports having \"made a few friendships\" in Mall World and having had \"a few sexual flings\" there.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "People in Mall World involved in friendships/sexual flings (not otherwise described).",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_unspecified",
+        "interaction_type": "search",
+        "description": "Author asks: \"I'd love to know if you have seen or come in contact with me.\"",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "other",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "Other dreamers/readers being asked if they have encountered the author in Mall World.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Attached images appear to be real-life photos of the author (self-identification request) rather than dream maps/visualizations; no dream-environment phenomenology is provided."
+  },
+  "response_id": "resp_0cc3788fa70008d600696e5dd34eb8819089b0c997be8b8a46",
+  "usage": {
+    "input_tokens": 15728,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 577,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16305
+  }
+}

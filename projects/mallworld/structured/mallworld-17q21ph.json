@@ -1,0 +1,168 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\17q21ph.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/17q21ph/weather_in_mallworld/",
+  "title": "Weather in MallWorld",
+  "date": null,
+  "content_checksum": "6b099e42af38028472796b219cafb41809e93885dc140150fd084a00bd95dd5b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:13:20.482667+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "What weather occurs in others' MallWorld dreams? Examples given: rainy overcast thunder heard through skylights; snowy campus seen through windows.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "multiple",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_food_court",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "warm_golden",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "nostalgic",
+          "reality_stability": "solid",
+          "crowding": "moderate",
+          "crowd_behavior": "socializing",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "rain",
+          "water_clarity": null,
+          "raw_description": "\"mall food court that is not so brightly lit\"; \"semi-bright incandescent lights higher up\"; \"ceiling is about three or four stories up\"; \"ceiling skylights\"; \"sky is dark from being overcast but not night\"; \"murmur of conversation\"; \"occasionally hear thunder\"; \"steady rain hitting the skylights\""
+        },
+        "affective_response": "comfort",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "school_cafeteria",
+        "location_name": "student center or cafeteria",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "college campus",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "welcoming",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "\"on a college campus\"; \"in a student center or cafeteria\"; \"it is snowing outside\"; \"walking around or looking out of the windows\"; \"marveling at the wintery weather\""
+        },
+        "affective_response": "delight",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "student",
+        "visit_order": 2
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Hears thunder from outside and hears steady rain hitting the skylights while in the mall food court; sees dark overcast sky through skylights.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "social",
+        "description": "Walking around/looking out windows with friends on a college campus while it is snowing outside; marveling at the wintery weather.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "friend",
+            "demeanor": "friendly",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": null,
+            "name_or_relation": "friends"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is framed as a question but includes two distinct example dream scenes (food court with skylights during overcast rain/thunder; college student center/cafeteria with snow outside). No explicit transitions between scenes were described."
+  },
+  "response_id": "resp_0d8c509e13397d1a00696e49ff9d1081979f4ac39be4656b77",
+  "usage": {
+    "input_tokens": 12490,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 984,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13474
+  }
+}

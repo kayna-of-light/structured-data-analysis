@@ -1,0 +1,162 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1owbx3q.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1owbx3q/anyone_been_here/",
+  "title": "Anyone been here?",
+  "date": null,
+  "content_checksum": "33e7cd728c50b586003dfab029beee0c9b944dea38312d765353e4d46323e8b8",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:59:35.562514+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/1clpfcft231g1.png",
+    "https://i.redd.it/2azen29t231g1.png",
+    "https://i.redd.it/n5cj0ebt231g1.png",
+    "https://i.redd.it/m1fhb26t231g1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "has_map_drawing"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": false,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": "Asking if others recognize/been to a specific café-like location with distinctive decor and a spaceship carousel",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant",
+        "location_name": "café",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Café with blue walls with clouds inside; vinyl tile floors with a colorful pattern; white tables; chairs different colors; looked like a liminal space."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "amusement_park",
+        "location_name": "carousel with spaceships",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "remembered in/associated with the café",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Carousel with spaceship seats/vehicles; colors uncertain: possibly pink and orange or blue, perhaps both."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Observed/remembered café decor: blue walls with cloud motif, colorful patterned vinyl tiles, white tables, multicolored chairs.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Remembered a spaceship-themed carousel; uncertain whether ships were pink/orange or blue (possibly both).",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is a 'has anyone been here' recognition question with a single described setting and attached drawings (cloud-wall motif, checker-pattern tile, and spaceship carousel). No explicit dream framing, movement, time flow, or interactions beyond observation/recall."
+  },
+  "response_id": "resp_0e364e08b5e3450000696e62cefdf08195a429d1a23593dd0f",
+  "usage": {
+    "input_tokens": 19693,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 876,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 20569
+  }
+}

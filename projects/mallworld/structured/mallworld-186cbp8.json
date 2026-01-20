@@ -1,0 +1,221 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\186cbp8.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/186cbp8/malfunctions_at_the_movies/",
+  "title": "Malfunctions at the movies",
+  "date": null,
+  "content_checksum": "97953d110f57df6368637ff4c4ad67ae8a0f753801579dc17bfa1c405bf3227b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:16:35.271052+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "alarm/fear; woke self up by yelling STOP (in real life)",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_theater",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "very back of a steep theater-style auditorium; standing behind the seats",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "shifting",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "movie theater, way less crowded than usual; steep theater style; in the very back standing behind the seats; movie starts to malfunction; projection window is instead a big glass recording studio window with people inside"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "audience",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "glass recording studio window / control room (visible behind projection area)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "behind where a small open projection window would normally be",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "neutral",
+          "reality_stability": "not_mentioned",
+          "crowding": "sparse",
+          "crowd_behavior": "coordinated",
+          "intellectual_focus": "practical",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "big glass recording studio window with people right inside; clearly in charge of the movie with headsets on and soundboard-looking gizmos; seem distracted"
+        },
+        "affective_response": "curiosity",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "no",
+        "dreamer_role": "audience",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "turns around and sees behind the projection area; glass window separates spaces"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "wall",
+        "direction": "not_mentioned",
+        "beyond": "visible_location",
+        "can_see_beyond": "yes_explicit",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "glass recording studio window acting as a barrier; dreamer can see people inside but is separated by glass"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Movie starts to malfunction; dreamer turns around and sees a big glass recording studio window instead of a small open projection window, with people inside apparently controlling the movie.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "A dream person urges the dreamer to knock on the glass to get the control-room people's attention to fix the movie; dreamer is hesitant.",
+        "outcome": "abandoned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "guide",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "dream person urging me to knock on the glass",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "crowd",
+            "demeanor": "indifferent",
+            "role": "staff",
+            "authority_nature": "observing",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "people inside with headsets on and soundboard looking gizmos; seem distracted",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Mom comes up from behind me menacingly and is about to sharply pinch my shoulders; I yell STOP in real life, waking myself up.",
+        "outcome": "interrupted",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "family_member",
+            "demeanor": "threatening",
+            "role": "other",
+            "authority_nature": "punitive",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": "my mom, menacing, about to sharply pinch my shoulders",
+            "name_or_relation": "mom"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single main setting (theater) with a revealed adjacent/behind-glass control-room space; sparse crowding noted; reality shift described via projection window replaced by studio window. Temporal sequence present but no explicit time-of-day/time-flow descriptors."
+  },
+  "response_id": "resp_0af0b16e6129fb9f00696e4ab618108197a2215bea6ac41007",
+  "usage": {
+    "input_tokens": 12435,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1800,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14235
+  }
+}

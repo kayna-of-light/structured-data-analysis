@@ -1,0 +1,127 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1o8s3tg.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1o8s3tg/every_time_i_dream_of_this_giant_mall_this_is_the/",
+  "title": "Every time I dream of this giant mall, this is the store I always visit first (described through meta Ai)",
+  "date": null,
+  "content_checksum": "89a4fb9ea03d141ba831121e4b70cb9486da55cedddadc771db4f71bd5fe3f08",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:47:07.321397+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/bwlopjtsplvf1.jpg",
+    "https://i.redd.it/6wucf4xsplvf1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "first store visited in the giant mall",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "warm_golden",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "solid",
+          "crowding": "moderate",
+          "crowd_behavior": "wandering",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Beige tiles for wall. It consist of vinyl records and action figures. Stay until lights shuts off. There are people inside yet nobody is talking to each other, we are all just looking at the same thing."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer stays in the store until the lights shut off.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer grabbed an action figure and stashed it in the back so someone could grab it.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear AI-generated and depict a small tiled shop interior with record/comic-style displays, glass display tables, and bright warm-toned overhead lighting; narrative does not provide explicit layout beyond this single store. Crowd described in text but not quantified; affect not explicitly stated."
+  },
+  "response_id": "resp_0c17c5cdc36b2d3e00696e5ff15dd081968f1a2dc8713bdc2d",
+  "usage": {
+    "input_tokens": 15052,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 627,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15679
+  }
+}

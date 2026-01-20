@@ -1,0 +1,155 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\191r6hm.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/191r6hm/water_rooms/",
+  "title": "Water Rooms",
+  "date": null,
+  "content_checksum": "126741c42be8b3ca63ef3c46e37b2c77b6403010304abd4f7aa62bf841bfd08c",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:20:26.339448+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others experience being stuck in recurring 'water rooms' (giant pool rooms) with deep water, shark, ledges, and doorways leading to more water rooms.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "pool",
+        "location_name": "water rooms",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "pool_clean",
+          "water_clarity": "VERY deep; sometimes dark; sometimes super clear",
+          "raw_description": "Whole room is a giant pool with nowhere to get out of the water; ceilings are high; water VERY deep; sometimes dark but also sometimes super clear; hot and humid; only places to get out are little ledges that hang or random pool ledges/stairs in the middle of the room; doorways on the walls lead to other rooms (another water/pool room)."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "door",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Doorways on the walls allow travel to other rooms, but destination is just another water/pool room."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer is 'stuck' in a giant pool room with 'nowhere to get out of the water' except small hanging ledges or random pool ledges/stairs in the middle of the room.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Travel to other rooms via doorways on the walls; each doorway leads to another water/pool room.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "A big shark stalks the dreamer in the water but 'he never gets you.'",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "creature",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "Big shark that stalks you; never gets you.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single archetypal location described ('water rooms') with internal features (high ceilings; deep water; ledges/stairs in middle; doorways on walls) and a recurring stalking shark. No explicit lighting color/temperature beyond humidity/heat; no explicit emotional state stated."
+  },
+  "response_id": "resp_0e4651b89b4b607500696e4ba9c95c8196a10563d29d50e877",
+  "usage": {
+    "input_tokens": 12416,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1254,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13670
+  }
+}

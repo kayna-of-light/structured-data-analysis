@@ -1,0 +1,128 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1kcxjk4.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1kcxjk4/ominous_church_in_the_clouds_up_in_the_sky/",
+  "title": "Ominous church in the clouds up in the sky",
+  "date": null,
+  "content_checksum": "fdc5e3414884f4636b24a3b54e69ec55d3b22001ded14a3708efbf45fa7225d0",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:42:13.301035+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/itwtoq8yhcye1.jpg",
+    "https://i.redd.it/3s3twlayhcye1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "childhood_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": 7,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "child_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "church",
+        "location_name": null,
+        "position": {
+          "vertical": "uppermost",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "in the clouds / up in the sky",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "light_temperature": "cold_white",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "\"ominous church in the clouds up in the sky\"; night sky with moon; church with steeple/cross; warm light visible through windows; stairs leading up through clouds (from images)"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "not_mentioned",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "stairs",
+        "transit_mode": "not_mentioned",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "stairway/steps leading up through clouds to the church entrance (from images)"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Heard bell ringing and faint mass singing coming from inside the church.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images show a moonlit church above clouds with stairs; text only mentions sound (bells and faint mass singing) and that the dream occurred at ~age 7. No explicit entry into the church described."
+  },
+  "response_id": "resp_04a3a812307161d800696e5ec68a688197bfd13c756c293d8c",
+  "usage": {
+    "input_tokens": 13303,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 630,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13933
+  }
+}

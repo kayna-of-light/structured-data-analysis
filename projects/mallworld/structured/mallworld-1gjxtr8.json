@@ -1,0 +1,160 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1gjxtr8.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1gjxtr8/i_ended_up_in_the_wrong_auditorium_and_someone/",
+  "title": "I ended up in the wrong Auditorium and someone was very rude lol",
+  "date": null,
+  "content_checksum": "d73bc5ff7272348052d076bf3190593e2d900c749902e4abe65224919ebad3dd",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:51:19.468434+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/zg6ahyvm80zd1.jpg",
+    "https://i.redd.it/dz64t0zm80zd1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "recent_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "all happy to join a little gathering",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "school_gym",
+        "location_name": "(mistaken for) the Auditorium meeting place",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "neutral",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "waiting",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Dreamer thought they were going to an Auditorium; ended up somewhere that 'looked like' a school gym instead. Images show a high-ceiling gym-like hall with large windows, polished wooden floor with court lines, bleachers, and a basketball hoop; one image includes tall stained-glass windows and balcony walkways."
+        },
+        "affective_response": "confusion",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "flying",
+        "transit_mode": "directed_active",
+        "direction": "not_applicable",
+        "difficulty": "easy",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Dreamer 'flew in' to join a planned meetup in the Auditorium."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Dreamer arrives expecting an 'Auditorium meeting' and asks the group: 'Hey guys is this the Auditorium meeting?'",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "a little gathering of people who looked like 'light angels' or 'body less people'",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "One male-presenting person turns, sneers, and replies: 'does this look like an auditorium to you, idiot' implying the location is not the auditorium (dreamer realizes it seems like a school gym).",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "unfriendly",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "one guy who 'sneered' and was 'very rude'",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Text describes a single destination (mistaken auditorium vs school gym) and flying arrival. Two attached images appear illustrative of a gym-like hall; treated as visual supplementation (not a hand-drawn map). Crowd size, lighting temperature, and spatial specifics beyond 'gym vs auditorium' are not stated in text; some environment details come from images."
+  },
+  "response_id": "resp_01b1e33a632bfc8c00696e52c851c48193bcbf080c2623e422",
+  "usage": {
+    "input_tokens": 16060,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 902,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16962
+  }
+}

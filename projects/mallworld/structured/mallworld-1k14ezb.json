@@ -1,0 +1,144 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k14ezb.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k14ezb/have_you_seen_a_reception_hallballroomdining_ball/",
+  "title": "Have you seen a reception hall/ballroom/dining ball?",
+  "date": null,
+  "content_checksum": "bafd4a7ac79ca78c53845c14017b893e08051e661753db105350fa0d92391a18",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:35:52.408222+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have seen a sealed dark reception hall/ballroom-like space with tables and people talking",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel_ballroom",
+        "location_name": "reception hall / ballroom / dining hall (unnamed)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dark",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "timeless",
+          "state": "worn",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "socializing",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "dirty",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“low drop ceiling, long room with a bunch of round tables and metal chairs”… “almost no lights… always dark and sort of dingy”… “everyone is sitting and just talking”… “There are no doors or openings… sealed into this dark long meeting hall.”"
+        },
+        "affective_response": "boredom",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "no",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "No doors or openings; room feels sealed in."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Hops around tables and speaks to multiple different groups; groups are not interesting; keeps looking for a table full of friends.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "People sitting at round tables, talking with each other.",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Searching for “my table full of friends” while moving between groups/tables.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "high",
+    "extraction_notes": "Only one location described. Boundary recorded as ‘locked’ to represent ‘no doors/openings’ (sealed room), though no explicit door/lock is mentioned. ‘recurring_dream’ flag inferred from title phrasing (‘Have you seen…’) is uncertain; recurrence not explicitly stated in narrative."
+  },
+  "response_id": "resp_055c59192e47d02c00696e5d57ef088190a43e438afabc7b6e",
+  "usage": {
+    "input_tokens": 12437,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1090,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13527
+  }
+}

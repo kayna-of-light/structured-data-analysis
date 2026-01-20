@@ -1,0 +1,203 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1o7vmiy.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1o7vmiy/the_room_and_the_man/",
+  "title": "The room and the man",
+  "date": null,
+  "content_checksum": "9489ba3c838804968bb40eea5dfde8120ea1ca7a7b8b771d01eb7933076deb35",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:47:13.756708+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/m9qgkm8s6evf1.jpg",
+    "https://i.redd.it/z4yt1vas6evf1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream",
+        "mentions_other_dreamers"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others have encountered a recurring man named Ryan and/or his room in Mallworld",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel_room",
+        "location_name": "Ryan's room (recurring room)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "A room the dreamer ends up in when landing in Mallworld (hotel/school/mansion/mall contexts)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "warm_golden",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "welcoming",
+          "reality_stability": "hyper_real",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "private",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“always always always end up in this room”; “always the same”; “always smells of some fragrant spice I can't identify”; “Sometimes I'm in this room alone and wind up going to sleep there.” Author: “The room is perfect.” Image shows: iron bedframe with white bedding; warm peach/orange walls with wainscoting; large windows with bright daylight; arched alcove with built-in cushioned bench/window seat; spiral staircase with ornate iron railing."
+        },
+        "affective_response": "comfort",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "guest",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_0",
+        "to_location_id": "loc_1",
+        "connection_type": "unspecified",
+        "transit_mode": "instant",
+        "direction": "unknown",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Dreamer reports that whenever they “land in Mallworld” (hotel, school, mansion, or mall), they end up in the same room; no specific path described."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer is alone in the recurring room and goes to sleep there.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "The man who lives in the room is sometimes present; he communicates that his age is meaningless and that he has “been dying since the beginning of time,” and states his name is Ryan.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "A man described as “very young, except when he's very old”; “beautiful and kind, and extremely wise.”",
+            "name_or_relation": "Ryan"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Dreamer observes a “metal thing bolted into his skull” that Ryan says is connected to telemetry; dreamer notes it “always strikes me as very important.”",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "friendly",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "Has a metal device bolted into his skull; says it is connected to telemetry.",
+            "name_or_relation": "Ryan"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Other dream people react to Ryan as scary and warn it is unwise to make him angry.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "unfriendly",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Other people in the dream who say Ryan is scary and warn against making him angry.",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "stranger",
+            "demeanor": "confusing",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "implied",
+            "description": "Ryan; perceived by others as scary; warned not to make him angry.",
+            "name_or_relation": "Ryan"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear to be AI-generated renderings (room) and an AI/illustration-style portrait with the face obscured; no hand-drawn map. Spatial layout extracted from the room image (bed, windows, arched alcove/window seat, spiral staircase). Source locations (hotel/school/mansion/mall) are mentioned as contexts but not described enough to instantiate as separate visited locations beyond an unspecified origin (loc_0)."
+  },
+  "response_id": "resp_00d5c96c9be2c13300696e5fca61ac8196ae63c75201634f3f",
+  "usage": {
+    "input_tokens": 15170,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1703,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 16873
+  }
+}

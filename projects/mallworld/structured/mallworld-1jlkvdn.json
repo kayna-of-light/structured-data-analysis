@@ -1,0 +1,200 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jlkvdn.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jlkvdn/do_you_have_childhood_memories_of_your_current/",
+  "title": "Do you have childhood memories of your current dream-world?",
+  "date": null,
+  "content_checksum": "9cfce3219f27ef7d4b13f0c08e39f2c31157b0745bc282931d611e1bccc5a5e0",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:27:53.317086+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "childhood_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking whether others have childhood memories connected to their current recurring dream-world locations (esp. carnival/festival) and whether those memories involved mysterious circumstances",
+      "should_skip_extraction": true,
+      "skip_reason": "No actual Mall World dream narrative is described; the post is primarily a question plus a waking childhood memory used for comparison."
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Mentions possibility that as children they were 'adventuring in our minds' / 'astral projecting' (speculative; not a described dream event).",
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "neighborhood",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "on a military base; generally enclosed",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“We lived on a military base so everything was generally enclosed.”"
+        },
+        "affective_response": "curiosity",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "carnival",
+        "location_name": "festival/carnival",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "reached by walking in directions on the base they “hadn’t been before”",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "“somehow coming across a festival/carnival which was fenced in… we didn’t go all the way in but creeped around the premises and eyeballed as much as we could.” Also noted as closest match to their “now dream-state carnival” visually and in “the FEELING.”"
+        },
+        "affective_response": "curiosity",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "outside_path",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "“walking in directions I hadn’t been before”"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "fence",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "not_mentioned",
+        "crossing_outcome": "not_attempted",
+        "description": "Military base described as “generally enclosed.”"
+      },
+      {
+        "location_id": "loc_2",
+        "boundary_type": "fence",
+        "direction": "not_mentioned",
+        "beyond": "visible_location",
+        "can_see_beyond": "implied",
+        "crossing_attempted": "no",
+        "crossing_outcome": "not_attempted",
+        "description": "Festival/carnival “was fenced in” and they “didn’t go all the way in” (stayed around the premises)."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "As a child with a neighborhood girl, briefly “running away”/going adventuring; walked into unfamiliar directions on the base.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "neutral",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "implied",
+            "is_recurring": "not_mentioned",
+            "description": "“a girl in my neighborhood”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "Did not enter; “creeped around the premises and eyeballed as much as we could.”",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "This is primarily a question post; extracted only concrete phenomenological details from the waking childhood memory used as a comparator to a current ‘dream-state carnival’ (no direct dream scene described). Age at the time is explicit: 5/6."
+  },
+  "response_id": "resp_085f3a1a08b8e29000696e5b61cc988197a9de7d0eee9aea01",
+  "usage": {
+    "input_tokens": 12572,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1685,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14257
+  }
+}

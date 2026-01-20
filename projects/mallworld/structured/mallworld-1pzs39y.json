@@ -1,0 +1,170 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pzs39y.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pzs39y/strange_restaurant_drivethru_location_that_i/",
+  "title": "Strange restaurant drive-thru location that I sometimes order food from at night",
+  "date": null,
+  "content_checksum": "f975116ddf1c7a202982ba85fc7221e3560d173b9decd73f3f1f1649c1fb7ebd",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:17:46.591516+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/2n8hlnw4deag1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": false,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have been to a specific recurring Mallworld-like drive-thru/restaurant location; mentions sometimes ordering food there at night; asking if others have seen a restaurant/convenience store/food stand nearby.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant",
+        "location_name": "Strange restaurant drive-thru location (resembles restaurant/convenience store/food stand)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "drive-thru setting; possibly adjacent to a nearby restaurant/convenience store/food stand (mentioned as nearby in dreams)",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Nighttime exterior drive-thru-like frontage; low building with flat canopy/overhang supported by posts; dark windows/open bays; greenish light illuminating an entry/glass door area; adjacent large white garage/service doors; empty asphalt lot."
+        },
+        "affective_response": "curiosity",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": null
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "parking_lot",
+        "location_name": "Empty lot in front of the drive-thru building",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "front",
+          "cardinal": "not_mentioned",
+          "relative_to": "in front of loc_1",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "night",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Wide, empty asphalt area; curb/island visible at the bottom edge of the image; no people or cars visible."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "vehicle",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Implied drive-thru approach/ordering from a car at night."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "transaction",
+        "description": "Sometimes orders food from this drive-thru location at night (dream context implied by title and question).",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": "food",
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Asks if anyone has been to this place in Mallworld or seen a restaurant/convenience store/food stand nearby.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question with an attached reference image; minimal direct dream narrative. Spatial/phenomenological qualities are largely inferred from the image (nighttime, empty lot, greenish exterior light) and the title's mention of ordering food at night."
+  },
+  "response_id": "resp_068a03d8c80f632500696e670055e8819482c43f590a61b1c3",
+  "usage": {
+    "input_tokens": 14224,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1361,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15585
+  }
+}

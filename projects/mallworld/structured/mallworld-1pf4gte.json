@@ -1,0 +1,112 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pf4gte.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pf4gte/car_stolen_repeatedly_from_the_mall_parking_lot/",
+  "title": "Car stolen (repeatedly) from the mall parking lot",
+  "date": null,
+  "content_checksum": "d15d03a0c5c0514677c39686c6403c7907b5d560d5620ba68a83497e547309f8",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:07:02.267158+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others experience recurring dream of car stolen/missing from back side of mall parking lot at night",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "tired",
+      "final_emotion": "sinking feeling, sadness, frustration overwhelming",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "parking_lot",
+        "location_name": "back side of the mall parking lot",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "back",
+          "cardinal": "not_mentioned",
+          "relative_to": "back side of the mall",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "flickering",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "night",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "at night; parking lot is almost empty; overhead lights are barely working"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Returns to where the car should be in the mall parking lot and finds it is gone ('my car is just….gone')",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Car missing/unavailable"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Post is phrased as a question but contains a consistent recurring dream scenario centered on a single location (back side of mall parking lot at night) with a repeated missing-car event."
+  },
+  "response_id": "resp_0ddde57677dfaf3700696e64a90fa48190871d8718ea08d394",
+  "usage": {
+    "input_tokens": 12372,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 775,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13147
+  }
+}

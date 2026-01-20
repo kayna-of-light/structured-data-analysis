@@ -1,0 +1,144 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\18f6u84.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/18f6u84/was_anyone_on_an_airplane_in_their_dreams_just/",
+  "title": "Was anyone on an airplane in their dreams just before they woke up?",
+  "date": null,
+  "content_checksum": "6fd6ddfcbce93d7dad02b8732e82e1b41ab7774fde76f80bd8d39be98967765b",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:18:17.773958+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "lucid_dream",
+        "recent_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others were on an airplane in dreams just before waking",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "stress (woke me up)",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "airplane",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside an airplane window; on the horizontal stabilizer",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "lucid dream where I climbed out of an airplane window (not an emergency exit) and was chilling on the horizontal stabilizer; trying to talk to people through the window; wrote on the window in reverse; while we land"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "ejection",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Climbed out of an airplane window (not an emergency exit) and sat on the horizontal stabilizer.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "Tried to talk to people through the airplane window, but they couldn't hear me.",
+        "outcome": "failed",
+        "failure_type": "no_effect",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "neutral",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "people inside the airplane",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "couldn't hear me through the window"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Used a pencil to write on the window in reverse: \"is it okay if I sit here while we land\".",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Single main setting (airplane exterior). Stress causes waking; no light/time-of-day details provided."
+  },
+  "response_id": "resp_0179e641f6fbd9b700696e4b2a234c8197869bb7b3b84b4122",
+  "usage": {
+    "input_tokens": 12397,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1054,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13451
+  }
+}

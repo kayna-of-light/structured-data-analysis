@@ -1,0 +1,231 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1hd1fdp.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1hd1fdp/laboratory_medical_center_dream/",
+  "title": "Laboratory / medical center dream",
+  "date": null,
+  "content_checksum": "1b3cfd497eb17cade7004c1bfaaafda6f9efd91205e98421cd6548fde48ddfe6",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T15:57:16.308886+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": false,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "looping",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": 30
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": "very intense",
+      "final_emotion": "nearly crying and extremely shaken up",
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hospital",
+        "location_name": "laboratory / medical center (room where they were holding me)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "panic",
+          "intellectual_focus": "testing",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“people in lab coats” putting me to sleep; “trying to stop me from being able to wake up”; “holding me down with something”; everyone “started going crazy” when I said a man’s name"
+        },
+        "affective_response": "horror",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "prisoner",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "my bed / bedroom (waking state within the dream loop)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "oppressive",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "private",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“I’d wake up in my bed unable to move then fall back to sleep even though I tried to stay awake”; “able to see, not able to move, heart racing, being forced to fall back asleep”"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "paralysis",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "transit_mode": "passive",
+        "direction": "unknown",
+        "difficulty": "impossible",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Involuntary return: “fall back to sleep… I’d be back in the lab after i involuntarily fell back asleep”; repeated ~5–6 times"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Lab-coat people put the dreamer to sleep and restrain them; attempt to prevent waking/escape.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "authority",
+            "demeanor": "hostile",
+            "role": "staff",
+            "authority_nature": "punitive",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "“people in lab coats”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Tried to stay awake / wake up but repeatedly could not; woke in bed unable to move and was forced back to sleep (~5–6 cycles).",
+        "outcome": "failed",
+        "failure_type": "physical_inability",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "social",
+        "description": "A man entered; dreamer said his name; staff reacted intensely (“everyone started going crazy” as if they couldn’t understand how the dreamer remembered).",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "man who came into the room; dreamer knew/said his name",
+            "name_or_relation": "name not provided"
+          },
+          {
+            "entity_type": "authority",
+            "demeanor": "confusing",
+            "role": "staff",
+            "authority_nature": "punitive",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "group reaction: “everyone started going crazy”",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "conflict",
+        "description": "Dreamer grabbed the man by the head and smashed it into the floor, then woke up.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "man who entered the room",
+            "name_or_relation": "name not provided"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": false,
+    "has_temporal_data": true,
+    "extraction_confidence": "high",
+    "extraction_notes": "Lighting, architectural layout, and specific medical equipment/restraint details not described. Dream includes repeated loop between bed (paralysis) and lab (restraint)."
+  },
+  "response_id": "resp_0ecbd39ab53befcd00696e5441d6388194968d08b809c8c7ed",
+  "usage": {
+    "input_tokens": 12582,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1857,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14439
+  }
+}

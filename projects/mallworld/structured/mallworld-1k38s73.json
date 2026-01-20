@@ -1,0 +1,217 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k38s73.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k38s73/haunted_hotel/",
+  "title": "Haunted hotel?",
+  "date": null,
+  "content_checksum": "269a8cb1d15114c988f9a4ebc3198c3202b2f7db0843c9dab63e90c42f539cf4",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:37:33.485053+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/9dquopurhvve1.jpg",
+    "https://i.redd.it/tii9drurhvve1.jpg",
+    "https://i.redd.it/hd64ururhvve1.jpg",
+    "https://i.redd.it/etquqpurhvve1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "recent_dream",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel_room",
+        "location_name": "haunted hotel room",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "connected to a hallway outside the room",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "threatening",
+          "reality_stability": "shifting",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "private",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Dreamer in a 'haunted hotel' room; hears noises; looks through the peephole; tries to close the blinds but they 'crumble in my hands'. When someone comes into the room it 'turns into a normal hotel room'."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "hotel",
+        "location_name": "hotel hallway",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "outside the hotel room door",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "mixed",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "not_mentioned",
+          "atmosphere": "eerie",
+          "reality_stability": "shifting",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Hallway seen via peephole; contains 'different creatures and characters like the twins from the shining, shadow figures, etc.' Hallway becomes 'normal' when someone comes into the room."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "guest",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "door",
+        "transit_mode": "not_mentioned",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Hotel room door with peephole used to view the hallway."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "After hearing noises, dreamer looks through the peephole to see figures/creatures in the hallway (e.g., 'the twins from the shining', 'shadow figures').",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "creatures/characters like 'the twins from the shining'",
+            "name_or_relation": null
+          },
+          {
+            "entity_type": "shadow",
+            "demeanor": "watching",
+            "role": "bystander",
+            "authority_nature": "not_mentioned",
+            "is_known": "no",
+            "is_recurring": "not_mentioned",
+            "description": "shadow figures",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer tries to close the blinds on the window; the blinds 'crumble in my hands'.",
+        "outcome": "failed",
+        "failure_type": "no_effect",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Blinds crumble when handled."
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Whenever someone comes into the room, the room becomes a normal hotel room and the hallway also becomes normal.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "stranger",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "someone who comes into the room (unspecified)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear to be illustrative photos (hotel hallway/peephole view/rooms) rather than a hand-drawn map; used only for general environmental cues (dim corridors, overhead lights, peephole framing). No explicit light temperature stated in text."
+  },
+  "response_id": "resp_0daf514f8e7bf8e600696e5d8f65d881978f1b547bb4a443fd",
+  "usage": {
+    "input_tokens": 16201,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1214,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 17415
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1i446bz.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1i446bz/finally_one_of_the_mall_shops_i_always_come_here/",
+  "title": "Finally, one of the mall shops. I always come here in a hurry and the mall is always about to close for the day. Do you recognize it too?",
+  "date": null,
+  "content_checksum": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:05:31.520735+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/sktxc5as3qde1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "ai_visualization",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others recognize a recurring mall shop/mall closing-time scenario",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall_store",
+        "location_name": null,
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside a two-level mall shop; view from ground floor facing escalator and upper balcony",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "warm_golden",
+          "time_of_day": "evening",
+          "state": "worn",
+          "atmosphere": "nostalgic",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "normal",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Clothing store interior with many garment racks and mannequins; central round display table with drawers; escalator leading up to an upper-level balcony/mezzanine with railing; large cylindrical columns; drop-ceiling with many stained/missing/dark tiles; patterned carpet/floor; wall bays with lit display niches; store section sign '22' on right wall; warm-toned lighting overall"
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "implied",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "escalator",
+        "transit_mode": "not_mentioned",
+        "direction": "up",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_mentioned",
+        "outcome": "not_mentioned",
+        "qualities": "Escalator in center-rear leading from ground floor sales area up to upper-level balcony/mezzanine; landing visible at top"
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Dreamer reports they 'always come here in a hurry' and the mall is 'always about to close for the day' (closing-time urgency associated with visiting this shop).",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post contains no narrative beyond title; extraction relies on the attached AI-like image. Time-of-day inferred from 'about to close for the day' plus warm interior lighting; no people visible in image."
+  },
+  "response_id": "resp_0ede47ab4ee8dab200696e56259c5c8194a81bd4b418eb2527",
+  "usage": {
+    "input_tokens": 14116,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 717,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14833
+  }
+}

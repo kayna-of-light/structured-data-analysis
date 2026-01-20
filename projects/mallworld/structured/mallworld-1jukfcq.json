@@ -1,0 +1,206 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1jukfcq.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1jukfcq/weird_hotel_ive_been_to_frequently_lately/",
+  "title": "Weird hotel I’ve been to frequently lately",
+  "date": null,
+  "content_checksum": "fda1f66335da9117936233f4e7889daccf5b030eb1fa6924179e0f1eb8737442",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:33:09.536398+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/yu2o9wkvjnte1.jpg",
+    "https://i.redd.it/ajzu40lvjnte1.jpg",
+    "https://i.redd.it/s8qjapkvjnte1.jpg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream",
+        "lucid_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": "some kind of detective / on some type of mission",
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "hotel",
+        "location_name": "weird hotel",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "surrounded by the parking garage",
+          "relative_to_id": "loc_2"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "chaotic",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"It looks really nice but it feels super stressful\"; dreamer can fly but \"get sucked back into the building\""
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "other",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "parking_structure",
+        "location_name": "giant parking garage",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "surrounding the whole building (hotel)",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "threatening",
+          "reality_stability": "not_mentioned",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "\"The giant parking garage is surrounding the whole building\"; \"it’s hard to hide because it’s empty\""
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "movement between hotel and surrounding parking garage implied; garage surrounds building"
+      },
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "other",
+        "transit_mode": "passive",
+        "direction": "horizontal",
+        "difficulty": "impossible",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "attempt to leave via flying is overridden: dreamer \"get[s] sucked back into the building\""
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Dreamer tries to fly away (lucid enough to fly) but is pulled back into the hotel building.",
+        "outcome": "failed",
+        "failure_type": "external_intervention",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "being \"sucked back into the building\""
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "escape",
+        "description": "Hiding/avoiding detection in an empty parking garage; dreamer crawls around a lot because it is hard to hide.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "conflict",
+        "description": "Dreamer throws bombs while crawling around in the parking garage; described as \"Very chaotic\".",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Dreamer is on a mission/detective task in the hotel; details are not remembered upon waking.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Images appear AI-generated (\"Meta AI\" watermark) and were used as visual supplements: futuristic hotel atrium with glass pods and a large multi-level parking structure/ramp that is empty. Text does not specify lighting temperature/time of day; crowding only specified for the parking garage (empty). No explicit entities/authority figures are described; implied pursuit/need to hide is captured as atmosphere/escape behavior."
+  },
+  "response_id": "resp_014270f97f1d045b00696e5c884b488193bae44bdabd5072b1",
+  "usage": {
+    "input_tokens": 17880,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1178,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 19058
+  }
+}

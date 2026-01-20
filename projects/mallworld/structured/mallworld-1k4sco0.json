@@ -1,0 +1,183 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1k4sco0.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1k4sco0/sinister_lazy_river_dreamscape/",
+  "title": "Sinister Lazy River Dreamscape",
+  "date": null,
+  "content_checksum": "dd55df8b1cba9087b8d962039265737485370e82a647b14ce0fce0034d125315",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:38:41.461746+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/y6kw0hrdz9we1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report_with_map",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": true,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": "Mentions being sure they can astral project; notes deconstructing from the church and feeling weirded out.",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "mall",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "timeless",
+          "state": "mixed",
+          "atmosphere": "eerie",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "river",
+          "water_clarity": "clear (described as 'VERY CLEAR' in narrative; image shows clear/teal water)",
+          "raw_description": "Starts as a mall; then a river takes over. Image shows an indoor mall-like atrium with ceiling panels, railings/upper level, plants, a neon sign reading 'EATS', and water running through."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "traveler",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "waterpark",
+        "location_name": "lazy river world",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "takes over the mall interior",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "mixed",
+          "light_temperature": "cold_white",
+          "time_of_day": "timeless",
+          "state": "maintained",
+          "atmosphere": "threatening",
+          "reality_stability": "solid",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "river",
+          "water_clarity": "clear",
+          "raw_description": "A river runs through/over the mall; raft-based travel implied. River speed varies from 'lazy' to 'white rapid'. Image shows a winding indoor canal, an inner-tube/raft, and a large orange enclosed slide/tube emptying into the water; dense plants along the edges."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Transition described as the river 'takes over' the mall (mall environment becomes/contains lazy river)."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Traveling on a raft in the lazy river; rule/constraint that no human on the raft is to fall into the water.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "crowd",
+            "demeanor": "not_mentioned",
+            "role": "other",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Humans on the raft (plural implied).",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "observation",
+        "description": "River current/speed varies between slow 'lazy' flow and fast 'white rapid' flow.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears AI-generated (stylized lighting/colors). Narrative gives limited sequencing beyond 'starts as a mall then the river takes over'. No explicit mention of falling in, entities enforcing the rule, or specific emotions beyond being 'weirded out' (mapped to anxiety)."
+  },
+  "response_id": "resp_0ac00f4dd5d9e26300696e5dd68048819397b554a55bf1ee83",
+  "usage": {
+    "input_tokens": 13624,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1063,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14687
+  }
+}

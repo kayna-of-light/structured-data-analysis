@@ -1,0 +1,160 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j8v2vi.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j8v2vi/the_daycare/",
+  "title": "The daycare",
+  "date": null,
+  "content_checksum": "10781bd76b93a19b6e3043b7513d4329eea71522d8f947058ba2d690ebed5138",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:18:49.200802+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/44u2g85893oe1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "has_ai_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Whether others dream of a maze-like daycare where they can't find the exit and are chased",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "partially_coherent",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "school_classroom",
+        "location_name": "daycare",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Daycare interior with long corridor; multiple classroom doors; fluorescent ceiling lights; child-sized tables/chairs; cubbies/shelves; posters/learning charts; TV on cabinet; alphabet rug; hazy/foggy air; exit/door visible at far end"
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "escapee",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_1",
+        "connection_type": "hallway",
+        "transit_mode": "fleeing",
+        "direction": "horizontal",
+        "difficulty": "varies",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_mentioned",
+        "qualities": "Running from classroom to classroom; maze-like layout; cannot find exit"
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "locked",
+        "direction": "not_mentioned",
+        "beyond": "not_mentioned",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "implied",
+        "crossing_outcome": "failed",
+        "description": "Exit cannot be found (maze-like daycare; never find the exit)"
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Running through the daycare, chased, moving from classroom to classroom while trying to find the exit.",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [
+          {
+            "entity_type": "threat",
+            "demeanor": "threatening",
+            "role": "chaser",
+            "authority_nature": "not_mentioned",
+            "is_known": "not_mentioned",
+            "is_recurring": "not_mentioned",
+            "description": "Unspecified chaser(s)",
+            "name_or_relation": null
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Searching for an exit in a maze-like daycare.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Cannot find the exit"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Text provides limited sensory detail; image supplies daycare corridor/classroom features and lighting. Image appears AI-generated (stylized haze, uniform lighting and textures). Chaser not visually present; only mentioned in text."
+  },
+  "response_id": "resp_0a34ada166d4c90d00696e594591148197939361161fbf9b08",
+  "usage": {
+    "input_tokens": 13559,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 831,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14390
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1pvmrct.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1pvmrct/i_saw_the_bathrooms/",
+  "title": "i saw the bathrooms",
+  "date": null,
+  "content_checksum": "9d562f628fff387822c96a2cb110651898a2e68a2d98aee1e6904ed73d941ba9",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:14:03.546034+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/grdgm7vnze9g1.jpeg"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "has_image",
+        "recurring_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have similar Mall World dream bathrooms; searching for a usable bathroom but unable to find one.",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": "exhausted and out of it from a long travel day (waking context)",
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "bathroom_public",
+        "location_name": "airport bathroom (resembles dream bathroom area)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_artificial",
+          "light_temperature": "cold_white",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "neutral",
+          "reality_stability": "solid",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "clean",
+          "privacy_status": "private",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Long corridor of bathroom stalls in an airport; bright overhead fluorescent/LED panels; looked EXACTLY like my dream bathroom area, just less dirty and crowded."
+        },
+        "affective_response": "confusion",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "customer",
+        "visit_order": 1
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "In dreams: feels like looking around for a bathroom to use and can never find it.",
+        "outcome": "failed",
+        "failure_type": "unclear",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Using the bathroom (waking event) and the resemblance to the dream bathroom area stopped me in my tracks.",
+        "outcome": "succeeded",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is primarily a question with a waking-life photo; dream content is limited but includes recurring 'bathroom area' and a repeated failed search for a usable bathroom. Image used to capture environmental qualities (lighting, layout, crowding/cleanliness) as the referenced match."
+  },
+  "response_id": "resp_03d600d4dc5b2ebf00696e664126c481938fc6e419b0bba114",
+  "usage": {
+    "input_tokens": 14117,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 650,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 14767
+  }
+}

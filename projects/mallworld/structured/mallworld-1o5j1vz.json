@@ -1,0 +1,161 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1o5j1vz.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1o5j1vz/the_mcdonalds_field/",
+  "title": "The McDonald's Field",
+  "date": null,
+  "content_checksum": "f67e47d5b0945a1da5718188aaf93b8d9a4b161668a0b571c5a2bdb949be7b85",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:43:59.195683+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [
+    "https://i.redd.it/kcixet6dnvuf1.png"
+  ],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "has_image",
+        "childhood_dream"
+      ],
+      "detail_level": "low",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Asking if others have dreamed something similar (McDonald's playground field view)",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "single_location",
+      "recurrence": "not_mentioned",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "child_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "goosebumps (upon recalling/comparing)",
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "restaurant_fast_food",
+        "location_name": "local McDonald's playground (tunnel/bubble)",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "neutral",
+          "time_of_day": "daytime",
+          "state": "not_mentioned",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "not_mentioned",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "Kid dream at local McDonald's playground; inside the tunnel thing; looked outside through the bubble window. Playground had a rug that resembles grass."
+        },
+        "affective_response": "anxiety",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "guest",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "other",
+        "location_name": "open grass-like field outside the bubble window",
+        "position": {
+          "vertical": "ground",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "visible outside the playground bubble/tunnel window",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "bright_natural",
+          "light_temperature": "neutral",
+          "time_of_day": "daytime",
+          "state": "maintained",
+          "atmosphere": "eerie",
+          "reality_stability": "hyper_real",
+          "crowding": "sparse",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "A huge flat green field under a blue sky with scattered clouds; a small McDonald's building in the distance; viewpoint framed by a circular bubble window."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "not_mentioned",
+        "is_accessible": "not_mentioned",
+        "dreamer_role": "explorer",
+        "visit_order": null
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "other",
+        "transit_mode": "not_mentioned",
+        "direction": "not_applicable",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "not_attempted",
+        "qualities": "Visual connection only: looking out from inside tunnel/bubble window to the outside field."
+      }
+    ],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "observation",
+        "description": "Inside the playground tunnel, the dreamer looks outside through the bubble window and sees an expansive grass-like field scene.",
+        "outcome": "not_mentioned",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": false,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Image appears to be a photo/illustration referenced as 'closest thing' to the dream: circular yellow/red playground window framing a wide green field and distant McDonald's building under a bright blue sky. Emotional reaction ('goosebumps') is reported about recalling/comparing rather than explicitly during the dream; affect at loc_1 set to anxiety due to goosebumps/unease, but could be 'not_mentioned' if strictly dream-time only."
+  },
+  "response_id": "resp_03f5413fa5b4db9700696e5f27a4dc8197b5dde904adb37919",
+  "usage": {
+    "input_tokens": 14227,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 930,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 15157
+  }
+}

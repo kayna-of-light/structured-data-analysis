@@ -1,0 +1,201 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1phghh1.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1phghh1/sandbox_dreams/",
+  "title": "Sandbox dreams",
+  "date": null,
+  "content_checksum": "4084d0c6e3da0d475951c49f686244fbfd2415194efc660f550aaaf7fcea8b87",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T17:07:56.529516+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "dream_report",
+      "content_flags": [
+        "recurring_dream",
+        "nightmare"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": null,
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "mostly_coherent",
+      "recurrence": "long_term_recurring",
+      "time_flow": "looping",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "current_self",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": "annoying",
+      "author_theory": "Mentions discovering the “secret identity of the entity” causing nightmare scenarios; after that dreams reduced and became a repetitive home “sandbox” with no interacting “AI characters.”",
+      "is_asking_if_shared": false
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "house",
+        "location_name": "sandbox version of my real life home",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": null,
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "dim",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "plastic",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "not_mentioned",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“sandbox version of my real life home”… “basically bedrooms with nonfunctioning lights with the same furniture as in real life”"
+        },
+        "affective_response": "boredom",
+        "somatic_response": "none",
+        "is_familiar": "yes_explicit",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 1
+      },
+      {
+        "location_id": "loc_2",
+        "location_type": "house",
+        "location_name": "bedroom(s) in the sandbox home",
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "inside the home",
+          "relative_to_id": "loc_1"
+        },
+        "qualities": {
+          "light": "absent",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "maintained",
+          "atmosphere": "uncomfortable",
+          "reality_stability": "plastic",
+          "crowding": "empty",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "not_mentioned",
+          "privacy_status": "private",
+          "water_presence": "none",
+          "water_clarity": null,
+          "raw_description": "“bedrooms with nonfunctioning lights”"
+        },
+        "affective_response": "boredom",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "yes_explicit",
+        "dreamer_role": "resident",
+        "visit_order": 2
+      }
+    ],
+    "connections": [
+      {
+        "from_location_id": "loc_2",
+        "to_location_id": "loc_1",
+        "connection_type": "door",
+        "transit_mode": "directed_active",
+        "direction": "horizontal",
+        "difficulty": "not_mentioned",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "Movement within the home implied (bedroom to being ‘inside’ the home)."
+      },
+      {
+        "from_location_id": "loc_1",
+        "to_location_id": "loc_2",
+        "connection_type": "teleport",
+        "transit_mode": "instant",
+        "direction": "unknown",
+        "difficulty": "impossible",
+        "mechanism_function": "not_applicable",
+        "outcome": "succeeded",
+        "qualities": "When attempting to leave the home, dreamer is “sent back immediately to my bed” (forced return to bedroom/bed)."
+      }
+    ],
+    "boundaries": [
+      {
+        "location_id": "loc_1",
+        "boundary_type": "invisible",
+        "direction": "not_mentioned",
+        "beyond": "unknown",
+        "can_see_beyond": "not_mentioned",
+        "crossing_attempted": "yes_explicit",
+        "crossing_outcome": "failed",
+        "description": "Attempting to go out of the home results in immediate reset/return to bed; leaving is effectively blocked."
+      }
+    ],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Dreamer notes absence of other characters/entities: “there are no AI characters that interact with me anymore.”",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "escape",
+        "description": "Attempts to go out of the home in the dream.",
+        "outcome": "failed",
+        "failure_type": "external_intervention",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "“sent back immediately to my bed”"
+      },
+      {
+        "location_id": "loc_2",
+        "interaction_type": "navigation",
+        "description": "Reset/loop: returned to bed, wake up, and “repeat the same process.”",
+        "outcome": "ongoing",
+        "failure_type": "not_applicable",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": null
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "No explicit mall/school/hotel scenes described post-November; earlier ‘loads of Mall World dreams’ mentioned without details. Light quality inferred as dim/absent from ‘nonfunctioning lights.’ Forced return mechanism treated as teleport/external intervention boundary."
+  },
+  "response_id": "resp_0256e482a2cc0bd300696e64da69bc8194a4605df135537391",
+  "usage": {
+    "input_tokens": 12456,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1138,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13594
+  }
+}

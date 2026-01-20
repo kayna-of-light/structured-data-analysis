@@ -1,0 +1,194 @@
+{
+  "dataset": "mallworld",
+  "source_file": "C:\\Users\\mlf\\source\\github\\structured-data-analysis\\projects\\mallworld\\registries\\..\\..\\..\\data\\mallworld\\1j3welg.json",
+  "source_url": "https://www.reddit.com/r/TheMallWorld/comments/1j3welg/i_never_get_to_swim/",
+  "title": "I never get to swim",
+  "date": null,
+  "content_checksum": "eb7a7456ee2ec59377b018f54e3c1e728dbd3f705fcff6163aadbfdfcd1b243a",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-19T16:14:45.571508+00:00",
+  "schema": "MallworldResponse",
+  "images_included": [],
+  "extraction": {
+    "classification": {
+      "post_type": "question",
+      "content_flags": [
+        "multiple_dreams",
+        "recurring_dream"
+      ],
+      "detail_level": "moderate",
+      "has_extractable_dream": true,
+      "has_spatial_information": true,
+      "has_map_image": false,
+      "theory_summary": null,
+      "question_topic": "Repeated dream pattern of being unable to swim/go to the pool; asking if others experience being 'not allowed' to get to the pool",
+      "should_skip_extraction": false,
+      "skip_reason": null
+    },
+    "meta": {
+      "map_coherence": "not_enough_info",
+      "recurrence": "long_term_recurring",
+      "time_flow": "not_mentioned",
+      "author": {
+        "gender": "not_mentioned",
+        "age_range": "not_mentioned",
+        "age_explicit": null,
+        "dreams_since_age": null,
+        "dreams_duration_years": null
+      },
+      "dreamer_identity": "not_mentioned",
+      "occupation_in_dream": null,
+      "initial_emotion": null,
+      "final_emotion": null,
+      "author_theory": null,
+      "is_asking_if_shared": true
+    },
+    "locations": [
+      {
+        "location_id": "loc_1",
+        "location_type": "pool",
+        "location_name": null,
+        "position": {
+          "vertical": "not_mentioned",
+          "horizontal": "not_mentioned",
+          "cardinal": "not_mentioned",
+          "relative_to": "Area being visited; sometimes reached only when 'literally leaving the area'",
+          "relative_to_id": null
+        },
+        "qualities": {
+          "light": "not_mentioned",
+          "light_temperature": "not_mentioned",
+          "time_of_day": "not_mentioned",
+          "state": "mixed",
+          "atmosphere": "not_mentioned",
+          "reality_stability": "not_mentioned",
+          "crowding": "varies",
+          "crowd_behavior": "not_mentioned",
+          "intellectual_focus": "not_mentioned",
+          "cleanliness": "dirty",
+          "privacy_status": "not_mentioned",
+          "water_presence": "not_mentioned",
+          "water_clarity": null,
+          "raw_description": "Dreams involve swimming/pool but there is always a reason I can’t: pool closed for the day/season/cleaning; too cold; too dirty; too full for the size; entirely rebuilt; no swimsuit; can’t find husband who promised to come; never have time until we’re literally leaving the area."
+        },
+        "affective_response": "not_mentioned",
+        "somatic_response": "none",
+        "is_familiar": "implied",
+        "is_accessible": "implied",
+        "dreamer_role": "traveler",
+        "visit_order": null
+      }
+    ],
+    "connections": [],
+    "boundaries": [],
+    "interactions": [
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Attempt/intent to swim, but pool is suddenly closed for the day/season/cleaning.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Pool closed"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Attempt/intent to swim, but the water/conditions are 'too cold'.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Too cold"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Attempt/intent to swim, but the pool is 'too dirty'.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Too dirty"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Attempt/intent to swim, but the pool is 'too full for the size'.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Overcrowded pool"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Attempt/intent to swim, but the pool is 'being entirely rebuilt'.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "Pool rebuilt/under construction"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "task",
+        "description": "Attempt/intent to swim, but dreamer 'did not bring a swim suit'.",
+        "outcome": "failed",
+        "failure_type": "environmental_block",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "No swimsuit"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "search",
+        "description": "Dreamer can't find husband who promised to come with them to the pool.",
+        "outcome": "failed",
+        "failure_type": "unclear",
+        "entities_involved": [
+          {
+            "entity_type": "known_person",
+            "demeanor": "not_mentioned",
+            "role": "companion",
+            "authority_nature": "not_mentioned",
+            "is_known": "yes_explicit",
+            "is_recurring": "not_mentioned",
+            "description": null,
+            "name_or_relation": "husband"
+          }
+        ],
+        "transaction_item": null,
+        "transaction_blocker": "Husband not found"
+      },
+      {
+        "location_id": "loc_1",
+        "interaction_type": "navigation",
+        "description": "Never have time to go to the pool until they are 'literally leaving the area'.",
+        "outcome": "failed",
+        "failure_type": "unclear",
+        "entities_involved": [],
+        "transaction_item": null,
+        "transaction_blocker": "No time / leaving the area"
+      }
+    ],
+    "has_spatial_data": true,
+    "has_temporal_data": true,
+    "extraction_confidence": "medium",
+    "extraction_notes": "Post is a generalized recurring pattern across many dreams rather than a single episode; extracted a single pooled location ('pool') with multiple repeated failed-intent interactions. Temporal element is minimal but includes 'summer' (waking-life context) and 'until we’re literally leaving the area' (dream timing constraint)."
+  },
+  "response_id": "resp_06bc7c60594afbdd00696e58653f8c81909776044f03f10323",
+  "usage": {
+    "input_tokens": 12414,
+    "input_tokens_details": {
+      "cached_tokens": 12032
+    },
+    "output_tokens": 1120,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 13534
+  }
+}
