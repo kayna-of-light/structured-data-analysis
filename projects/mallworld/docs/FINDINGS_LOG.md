@@ -32,6 +32,7 @@
 | **[R4: Ruling Love Model](#critical-finding-r4)** | Phase 6 | ✅ SUPPORTED | **ρ=0.007 (null)** |
 | **[D2: Dreamer vs Sphere](#phase-7-dreamer-vs-sphere---whose-atmosphere)** | Phase 7 | ✅ SUPPORTED | **56.4% vs 7.1%** |
 | **[T1: Temporal Stability](#phase-8-collective-representational-framework)** | Phase 8 | ✅ SUPPORTED | Stable 2024-2026 |
+| **[X1: Cross-Domain Atmosphere](#phase-9-cross-domain-comparison-mallworld--nde)** | Phase 9 | ✅ SUPPORTED | **Same realm, diff. uses** |
 
 ---
 
@@ -62,6 +63,20 @@ Entities maintain **consistent behavioral profiles regardless of location**:
 - χ² = 48.90, **p < 0.0001**
 
 This validates that entities with helpful intentionality actually HELP. The dual-level structure is not just descriptive but **functionally operative**.
+
+### Level 4: Ruling Love as Primary Organizer (Phases 6-7)
+- Dreamer explains **56.4%** of atmosphere variance vs location type's 7.1%
+- Affect has **ZERO** predictive power after controlling for atmosphere (ρ=0.007, p=0.71)
+- Atmosphere is primarily YOUR ruling love, not the sphere's intrinsic quality
+
+### Level 5: Cross-Domain Validation (Phase 9)
+**MallWorld and NDE represent the SAME realm (World of Spirits) with different USES:**
+- MallWorld: Digestion/vastation — 64% negative atmosphere (confrontation IS processing)
+- NDE: Reception/return — 48% positive atmosphere (soul receives what's needed to return)
+- χ² = 4739.51, Cramér's V = 0.645 (very large effect)
+- Life review only 17.5% — NDE is tailored to each soul's need, not a standard sequence
+
+Both domains show structural correspondences; the USE determines what is experienced.
 
 ---
 
@@ -748,6 +763,110 @@ The FORM evolves with culture; the STRUCTURE persists because it reflects consta
 
 ---
 
+## Phase 9: Cross-Domain Comparison (MallWorld × NDE)
+
+### The Question
+
+Do MallWorld collective dreams and Near-Death Experiences sample the **same underlying cosmological structure**?
+
+### REVISED Hypothesis (after analysis)
+
+~~Initial hypothesis was "different altitudes" — MallWorld lower, NDE higher.~~
+
+**Corrected interpretation**: Both represent the **World of Spirits**, but serve different **uses/purposes**:
+
+| Dataset | Use/Purpose | What's Happening |
+|---------|-------------|------------------|
+| **NDE** | Reception/Return | Soul receives exactly what's needed to return — love, mission, boundary, reassurance |
+| **MallWorld** | Digestion/Vastation | Correspondential processing — spiritual states being worked through, confronted, sorted |
+
+### Dataset Comparison
+
+| Metric | MallWorld | NDE |
+|--------|-----------|-----|
+| Sample size | 2,678 dreams | 6,753 NDEs |
+| Locations | 11,351 | N/A |
+| Entities | 4,235 | Various |
+| Sources | r/themallworld | NDERF, IANDS |
+
+### X1: Atmosphere Distribution Comparison
+
+| Valence | MallWorld | NDE |
+|---------|-----------|-----|
+| Negative | **63.6%** | 3.7% |
+| Neutral | 19.7% | 48.4% (inc. mixed) |
+| Positive | 16.6% | **47.9%** |
+
+| Metric | MallWorld | NDE |
+|--------|-----------|-----|
+| Positive:Negative ratio | 0.26:1 | **13.1:1** |
+| χ² | 4739.51 | |
+| df | 2 | |
+| p | < 0.0001 | |
+| **Cramér's V** | **0.645** | (very large effect) |
+
+### X2: NDE Content Variability (Evidence for "Use" Hypothesis)
+
+**Not everyone receives the same elements:**
+
+| Element | % Who Receive It |
+|---------|------------------|
+| Light/Being encounter | 56.9% |
+| Guidance | 51.4% |
+| Life review | **17.5%** |
+| Deceased relatives | 17.9% |
+
+**Critical Finding**: The NDE is **tailored to use**. Each soul receives what THEY need for return, not a standard sequence. This is "constant state, variable form" at the functional level.
+
+### X3: Atmosphere Difference Explained by USE
+
+| Process | Atmosphere | Why |
+|---------|------------|-----|
+| **NDE Return** | Predominantly positive | Purpose is to send soul BACK with love, courage, mission — negativity would be counterproductive |
+| **MallWorld Digestion** | Predominantly negative | Purpose is CONFRONTATION with one's states — the discomfort IS the processing |
+
+### MallWorld as "Digestive System"
+
+| MallWorld Feature | Correspondential Function |
+|-------------------|---------------------------|
+| Wandering through spaces | Moving through states of mind |
+| Being lost | Disorientation during vastation |
+| Threatening atmospheres | Confronting what's actually in oneself |
+| Entity encounters | Meeting contents of spiritual interior |
+| Pursuit/chase | Unable to escape one's own states |
+
+The Mall doesn't punish — it **processes**. The discomfort is functional, not punitive.
+
+### Verdict: ✅ SAME REALM, DIFFERENT USES
+
+**Revised interpretation**: Both MallWorld and NDE take place in the **World of Spirits**. The dramatic atmosphere difference reflects different **purposes**, not different locations:
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                    WORLD OF SPIRITS                          │
+├──────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌─────────────────┐         ┌─────────────────┐           │
+│  │  NDE RECEPTION  │         │  MALLWORLD      │           │
+│  │  (brief visit)  │         │  DIGESTION      │           │
+│  ├─────────────────┤         ├─────────────────┤           │
+│  │ PURPOSE: Return │         │ PURPOSE: Vastate│           │
+│  │ ATMOSPHERE: 48% │         │ ATMOSPHERE: 64% │           │
+│  │ positive        │         │ negative        │           │
+│  │                 │         │                 │           │
+│  │ Receive love,   │         │ Wander, confront│           │
+│  │ mission, limit  │         │ process, digest │           │
+│  └─────────────────┘         └─────────────────┘           │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+```
+
+Both show structural correspondences; the USE determines what is experienced.
+
+**Notebook**: `notebooks/10_nde_crossdomain_exploration.ipynb`
+
+---
+
 ## Changelog
 
 ### 2026-01-20
@@ -777,3 +896,14 @@ The FORM evolves with culture; the STRUCTURE persists because it reflects consta
 - Atmosphere shows early volatility (2021-2023) then STABILIZES (2024-2026: p=0.0934)
 - Location types show slight variation but correspondential STRUCTURE is constant
 - Supports hypothesis: representational CLOTHING evolves, correspondential STRUCTURE persists
+- **Phase 9: Cross-Domain Comparison (MallWorld × NDE)**
+- Created new notebook: `10_nde_crossdomain_exploration.ipynb`
+- Compared 2,678 MallWorld dreams with 6,753 NDEs
+- **MAJOR FINDING**: Atmosphere distributions massively different (χ² = 4739.51, Cramér's V = 0.645)
+- MallWorld: 64% negative, 17% positive (ratio 0.26:1)
+- NDE: 4% negative, 48% positive (ratio 13.1:1)
+- **REVISED INTERPRETATION**: Both are World of Spirits, different USES (not altitudes)
+- NDE = Reception/return (soul receives what's needed: love, mission, boundary)
+- MallWorld = Digestion/vastation (soul undergoes processing: confrontation, wandering)
+- Life review only 17.5% — NDE is tailored to USE, not a standard sequence
+- Atmosphere difference reflects PURPOSE: NDE encourages return, MallWorld processes states
