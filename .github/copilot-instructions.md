@@ -128,6 +128,11 @@ When analyzing MallWorld dream data, interpret spatial, entity, and atmospheric 
 | Creatures | Affections made visible (animals = affections) | "Instinctual drives" |
 | Authority figures | Beings with teaching/governing function | "Internalized parents" |
 
+Directional framing used in MallWorld synthesis:
+- East = ruling love (quality source); West = natural/sensory expression that can be positive when East is good (not inherently negative).
+- Proprium refers to the self; self-love appears when the ruling love is self-oriented—do not equate West with proprium by default.
+- Let quality propagate outward from East into adjacent quadrants; infer anchors relative to East when explicit cardinal labels are absent.
+
 ### When to Apply This Framework
 
 - **DO** test whether MallWorld patterns align with correspondential predictions
