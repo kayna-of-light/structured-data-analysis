@@ -27,179 +27,211 @@
 | [F6: Authority Complexity](#f6-authority-figure-complexity) | Phase 4 | ✅ DOCUMENTED | Role predicts demeanor |
 | [Watcher Profile](#watcher-entity-profile) | Phase 4.5 | ✅ DOCUMENTED | 93.8% watching demeanor |
 | [Entity Manifestation](#entity-manifestation-patterns) | Phase 4.5 | ✅ SUPPORTED | Guides 0% felt-only |
-| [S3: Entity↔Atmosphere](#s3-entity-contribution-to-atmosphere) | Phase 5 | ✅ SUPPORTED | Threats -1.13 atm |
-| [S5: Within-Dream Variance](#s5-atmosphere-is-location-dependent-within-dreams) | Phase 5 | ✅ SUPPORTED | var = 0.802 |
-| **[R4: Ruling Love Model](#critical-finding-r4)** | Phase 6 | ✅ SUPPORTED | **ρ=0.007 (null)** |
-| **[D2: Dreamer vs Sphere](#phase-7-dreamer-vs-sphere---whose-atmosphere)** | Phase 7 | ✅ SUPPORTED | **56.4% vs 7.1%** |
-| **[T1: Temporal Stability](#phase-8-collective-representational-framework)** | Phase 8 | ✅ SUPPORTED | Stable 2024-2026 |
-| **[X1: Cross-Domain Atmosphere](#phase-9-cross-domain-comparison-mallworld--nde)** | Phase 9 | ✅ SUPPORTED | **Same realm, diff. uses** |
-| **[8A: Animal Intrinsic Qualities](#8a-animal-correspondences---intrinsic-qualities-framework-revised)** | Phase 8A | ✅ SUPPORTED | ICC=0.630 |
-| **[8C: Rigorous Statistical Proofs](#8c-rigorous-statistical-proofs-of-animal-correspondence)** | Phase 8C | ✅ SUPPORTED | **V=0.513, OR=106:1** |
-| **[8D: Affection-Based Analysis](#8d-affection-based-analysis--testing-swedenborgian-theory)** | Phase 8D | ✅ SUPPORTED | **Dual-source model** |
-| **[8D-Ext: Affection Shift Model](#8d-extended-affection-shift-model)** | Phase 8D-Ext | ✅ CONFIRMED | **r=0.75, p<0.0001** |
-| **[9: Light as Wisdom](#phase-9-light-as-wisdom)** | Phase 9 | ✅ CONFIRMED | **ρ=0.35, V=0.48** |
-| **[10: Movement as State](#phase-10-movement-as-state-change)** | Phase 10 | ✅ CONFIRMED | **d=0.65, H=336** |
+| [S3: Entity↔Atmosphere](#s3-entity-contribution-to-atmosphere) | Phase 5 | ✅ Pattern found | Threats -1.13 atm |
+| [S5: Within-Dream Variance](#s5-atmosphere-is-location-dependent-within-dreams) | Phase 5 | ✅ Pattern found | var = 0.802 |
+| **[R4: Ruling Love Model](#critical-finding-r4)** | Phase 6 | ✅ Pattern found | **ρ=0.007 (null)** |
+| **[D2: Dreamer vs Sphere](#phase-7-dreamer-vs-sphere---whose-atmosphere)** | Phase 7 | ✅ Pattern found | **56.4% vs 7.1%** |
+| **[T1: Temporal Stability](#phase-8-collective-representational-framework)** | Phase 8 | ✅ Pattern found | Stable 2024-2026 |
+| **[X1: Cross-Domain Atmosphere](#phase-9-cross-domain-comparison-mallworld--nde)** | Phase 9 | ✅ Pattern found | **Large difference** |
+| **[8A: Animal Intrinsic Qualities](#8a-animal-correspondences---intrinsic-qualities-framework-revised)** | Phase 8A | ✅ Pattern found | ICC=0.630 |
+| **[8C: Statistical Analysis](#8c-statistical-analysis-of-animal-patterns)** | Phase 8C | ✅ Pattern found | **V=0.513, OR=106:1** |
+| **[8D: Animal Demeanor Analysis](#8d-animal-demeanor-analysis)** | Phase 8D | ✅ Pattern found | **Dual-source model** |
+| **[8D-Ext: Affection Shift Model](#8d-extended-affection-shift-model)** | Phase 8D-Ext | ✅ Pattern found | **r=0.75, p<0.0001** |
+| **[9: Light × Atmosphere](#phase-9-light-and-atmosphere)** | Phase 9 | ✅ Pattern found | **ρ=0.35, V=0.48** |
+| **[10: Location Type Profiles](#phase-10-location-type-profiles)** | Phase 10 | ✅ Pattern found | **d=0.65, H=336** |
+| **[11: Building Type Profiles](#level-11-building-type-profiles--exploratory-data)** | Phase 11 | 📊 EXPLORATORY | **44 types profiled** |
 
 ---
 
 ## Executive Summary
 
-The analysis reveals a **DUAL-LEVEL STRUCTURE** in MallWorld dream phenomenology:
+The analysis identifies several **statistical patterns** in MallWorld dream phenomenology. These patterns are reported objectively below. Interpretive frameworks (Swedenborgian, psychological, or other) are noted separately where relevant.
 
-### Level 1: Environmental Correspondences
-Spaces express spiritual states through physical qualities. Strong correlations found between:
-- Vertical position ↔ Atmosphere
-- Water clarity ↔ Truth/atmosphere  
-- Light temperature ↔ Wisdom/atmosphere
-- Cleanliness ↔ Purity
-- Exposure ↔ Shame
-- Multiple markers compound to predict worse atmosphere
+### Level 1: Environmental Correlations
+Statistically significant correlations found between spatial/environmental features and atmosphere ratings:
+- Vertical position ↔ Atmosphere (ρ = 0.25-0.30)
+- Water clarity ↔ Atmosphere (2.6× effect)
+- Light quality ↔ Atmosphere (ρ = 0.35)
+- Cleanliness ↔ Atmosphere (ρ = 0.30)
+- Exposure states ↔ Atmosphere (3.5× effect)
+- Multiple markers compound (ρ = -0.129)
 
-### Level 2: Entity Autonomy
-Entities maintain **consistent behavioral profiles regardless of location**:
-- Entity TYPE determines behavior, not environment
-- Guides are helpful everywhere (including underground)
-- Threats are hostile everywhere (including elevated spaces)
-- This supports "higher beings descend to help" hypothesis
+### Level 2: Entity Behavioral Consistency
+Entity behavior shows consistency across environmental contexts:
+- Entity TYPE correlates with behavior more strongly than location
+- Guide-type entities show similar helpfulness rates across vertical levels
+- Threat-type entities show similar hostility rates across vertical levels
 
-### Level 3: Functional Reality of Entity Demeanor (Phase 4)
-**MAJOR FINDING**: Entity demeanor is not just narrative labeling—it predicts outcomes:
+*Interpretation note: This pattern is consistent with entity autonomy (entities behave according to their nature, not location). Alternative interpretations exist.*
+
+### Level 3: Entity Demeanor Predicts Outcomes (Phase 4)
+**Finding**: Entity demeanor (as coded) correlates with interaction outcomes:
 - **Helpful entities → 49.7% success, 6.2% failure**
 - **Hostile entities → 29.7% success, 10.5% failure**
 - χ² = 48.90, **p < 0.0001**
 
-This validates that entities with helpful intentionality actually HELP. The dual-level structure is not just descriptive but **functionally operative**.
+*Observation: Demeanor coding predicts outcomes. This could reflect: (a) actual causal relationship, (b) narrative coherence in dream reports, or (c) extraction model bias. The correlation is real; causation is not established.*
 
-### Level 4: Ruling Love as Primary Organizer (Phases 6-7)
-- Dreamer explains **56.4%** of atmosphere variance vs location type's 7.1%
-- Affect has **ZERO** predictive power after controlling for atmosphere (ρ=0.007, p=0.71)
-- Atmosphere is primarily YOUR ruling love, not the sphere's intrinsic quality
+### Level 4: Dreamer vs Location (Phases 6-7)
+**Finding**: Individual differences dominate over location characteristics:
+- Dreamer identity explains **56.4%** of atmosphere variance
+- Location type explains **7.1%** of atmosphere variance
+- Affect has near-zero partial correlation with atmosphere after controls (ρ=0.007, p=0.71)
 
-### Level 5: Cross-Domain Validation (Phase 9)
-**MallWorld and NDE represent the SAME realm (World of Spirits) with different USES:**
-- MallWorld: Digestion/vastation — 64% negative atmosphere (confrontation IS processing)
-- NDE: Reception/return — 48% positive atmosphere (soul receives what's needed to return)
+*Observation: Atmosphere varies more between dreamers than between locations. Within-dream affect does not predict subsequent atmosphere change. This suggests individual baseline is primary.*
+
+### Level 5: Cross-Domain Comparison (Phase 9)
+**Finding**: MallWorld and NDE datasets show dramatically different atmosphere distributions:
+- MallWorld: 64% negative atmosphere
+- NDE: 48% positive atmosphere
 - χ² = 4739.51, Cramér's V = 0.645 (very large effect)
-- Life review only 17.5% — NDE is tailored to each soul's need, not a standard sequence
+- NDE life review reported in only 17.5% of cases
 
-Both domains show structural correspondences; the USE determines what is experienced.
+*Observation: Different datasets, different distributions. Possible explanations include: different populations, different reporting contexts, different experiential phenomena, or different purposes of the experience. Data alone does not determine which.*
 
-### Level 6: Animal Correspondences — Intrinsic Qualities (Phase 8A-8C)
-**Animals represent INTRINSIC QUALITIES of the dreamer, not environmental responses:**
+### Level 6: Animal Type Patterns (Phase 8A-8C)
+**Finding**: Animal type correlates with hostility and with dreamer identity:
 - Animal TYPE predicts hostility (permutation p=0.002, Cramér's V=0.513)
-- Animal form is INDEPENDENT of atmosphere (χ²=0, p=1.0)
-- Animal form is DREAMER-DEPENDENT (H=70.91, p<0.0001, η²=0.605)
-- Extreme differences by intrinsic quality (Predator vs Cat OR=**106:1**)
-- Same dreamer encounters consistent animal forms (ICC=0.630)
+- Animal TYPE is independent of location atmosphere (χ²≈0, p=1.0)
+- Animal TYPE clusters by dreamer (H=70.91, p<0.0001, η²=0.605)
+- Large differences: Predator 71% hostile vs Cat 0% hostile (OR=106:1)
+- Same dreamer sees similar animals (ICC=0.630)
 
-**Key animal profiles:**
-- **Predator** (power/dominance): 71% hostile — intrinsic quality manifests as violent
-- **Cat** (self-interest): 0% hostile — intrinsic quality manifests as benign self-care
-- **Dog** (fidelity): 5% hostile — intrinsic quality manifests as faithful service
-- **Monster** (undefined affections): 63% hostile — affections made visible as threat
+**Observed animal profiles:**
+- **Predator**: 71% hostile
+- **Cat**: 0% hostile
+- **Dog**: 5% hostile
+- **Monster**: 63% hostile
 
-This validates Swedenborg's doctrine: animals ARE affections in ultimate form. The animal you encounter reveals YOUR affection, not the environment's quality.
+*Observation: Animal form correlates with dreamer identity and with hostility, but is independent of environmental atmosphere. This is consistent with animals representing dreamer characteristics. Alternative interpretations: reporting bias, genre conventions, or other factors.*
 
-### Level 7: Affection Source and Opposite Sense (Phase 8D)
-**Animals reveal a dual-source model with opposite sense variance:**
+### Level 7: Animal Demeanor Variance (Phase 8D)
+**Finding**: Animals show both stable and context-dependent demeanor patterns:
 
-**Q1. Opposite Sense Confirmed:**
+**Observation 1: Demeanor variance exists**
 - 9/10 animal types show BOTH hostile AND non-hostile forms
-- Even predators (power quality) appear protective 29% of time
-- Only cats show uniform expression (0% hostile — pure affection?)
+- Predators appear non-hostile 29% of time
+- Only cats show uniform expression (0% hostile)
 
-**Q2. Intrinsic Consequences are Context-Dependent:**
-- For HOSTILE creatures: TYPE doesn't differentiate outcomes (all similarly negative)
-- For NON-HOSTILE creatures: TYPE significantly predicts outcomes (p=0.024)
-- The intrinsic quality matters WHEN the form is positive
+**Observation 2: Type matters for non-hostile animals**
+- For HOSTILE creatures: TYPE doesn't differentiate outcomes
+- For NON-HOSTILE creatures: TYPE predicts outcomes (p=0.024)
 
-**Q3. Dual-Source Model:**
-- **PRIMARY**: Dreamer's affections (η² = 0.605) — animals reflect internal states
-- **SECONDARY**: Entity affections (ρ = 0.254) — animals can also reflect encountered beings
+**Observation 3: Dual-source variance**
+- Between-dreamer variance: η² = 0.605
+- Animal-entity correlation: ρ = 0.254
 - Animal-entity TYPE co-occurrence is non-random (χ² = 177.19, V = 0.210)
 
-This validates Swedenborg's teaching that correspondences are both **STABLE** (rooted in the person's spiritual state) AND **CONTEXTUAL** (modified by spiritual influences encountered).
+*Observation: Animal demeanor has both stable (dreamer-linked) and variable (context-linked) components.*
 
-### Level 8: Affection Shift Model — Reception Doctrine Confirmed (Phase 8D-Extended)
-**Animals represent the dreamer's affections, which SHIFT in response to encountered ruling love spheres:**
+### Level 8: Within-Dreamer Animal Variance (Phase 8D-Extended)
+**Finding**: Animals show within-dreamer variance correlated with entity context:
 
 **Test 1: Within-Dreamer Variance Exists (p = 0.004)**
 - 58.3% of repeat dreamers show DIFFERENT animal demeanors across dreams
-- Animals are NOT fixed traits — affections DO shift based on dream context
 
-**Test 2: Shift Correlates with Entity Sphere (r = 0.753, p < 0.0001)**
-- Within-person correlation = 0.753 (very strong)
-- When dreamers encounter hostile entities, their animals shift hostile
-- When dreamers encounter benign entities, their animals shift peaceful
+**Test 2: Shift Correlates with Entity Context (r = 0.753, p < 0.0001)**
+- Within-person correlation = 0.753 (strong)
+- Animal demeanor shifts with entity demeanor in same dream
 
 **Test 3: Variance Decomposition**
-- 89.5% of animal variance = BETWEEN dreamers (stable ruling love baseline)
-- 10.5% of animal variance = WITHIN dreamers (contextual shift)
-- 56.7% of the shift variance is explained by entity sphere
-- 6.0% of TOTAL animal variance = entity-responsive shift
+- 89.5% of animal variance = BETWEEN dreamers (stable baseline)
+- 10.5% of animal variance = WITHIN dreamers (contextual)
+- 56.7% of within-dreamer variance correlates with entity context
 
-**Three Models Tested:**
+**Models tested:**
 
 | Model | Prediction | Outcome |
 |-------|------------|--------|
-| A) Animals = entity affections directly | 100% explained by entity | ✗ REJECTED (only 6%) |
-| B) Animals = fixed dreamer trait | 0% within-dreamer variance | ✗ REJECTED (p=0.004) |
-| C) Animals = dreamer's affections RESPONDING to spheres | Large baseline + small shift correlated with entity | ✓ CONFIRMED |
+| A) Animals = entity-determined | 100% explained by entity | ✗ Not supported (only 6%) |
+| B) Animals = fixed dreamer trait | 0% within-dreamer variance | ✗ Not supported (p=0.004) |
+| C) Animals = stable + contextual | Large baseline + small correlated shift | ✓ Consistent with data |
 
-**Swedenborgian Doctrine of Reception Confirmed:**
-> "All reception is according to the form of the recipient"
+*Observation: Data supports a mixed model with large stable component (89.5%) and small context-sensitive component (10.5%). This is consistent with multiple interpretive frameworks.*
 
-The animal IS the dreamer's affection (89.5% baseline), but affections are **responsive to influx** from other beings' spheres (10.5% shift, ρ=0.75). The FORM of the response depends on the dreamer's own spiritual state.
+### Level 9: Light × Atmosphere Correlation (Phase 9)
+**Finding**: Light quality and atmosphere are strongly correlated:
 
-### Level 9: Light as Wisdom — Conjunction Confirmed (Phase 9)
-**Light and atmosphere are NOT independent — they are CONJOINED:**
+**Core Finding: Light × Atmosphere Association (V = 0.483)**
+- χ² = 182.18, p < 0.0001
+- Discordant states (dim light + positive atmosphere) are rare: 2.7%
 
-**Core Finding: Light × Atmosphere Conjunction (V = 0.483)**
-- Light temperature and atmosphere are strongly associated (χ² = 182.18, p < 0.0001)
-- Discordant states (cold light + positive atmosphere) are rare: only 21/780 locations (2.7%)
-- This confirms Swedenborgian doctrine: in spiritual states, appearance IS being
+**Ordered correlation (ρ = 0.353):**
+| Light Quality | % Negative Atmosphere |
+|---------------|----------------------|
+| Bright/natural | 29% |
+| Artificial | 50% |
+| Dim/flickering | 55% |
+| Dark/absent | **79%** |
 
-**Swedenborgian Ordering Perfectly Confirmed (ρ = 0.353):**
-| Light Quality | % Negative Atmosphere | Interpretation |
-|---------------|----------------------|----------------|
-| Clear truth (bright natural) | 29% | Full wisdom = mostly positive |
-| Cold truth (artificial) | 50% | Intellectual without warmth = mixed |
-| Partial truth (dim/flickering) | 55% | Incomplete understanding = mixed-negative |
-| No truth (dark/absent) | **79%** | No wisdom = strongly negative |
+Spearman ρ = 0.353, p < 0.0001
 
-Spearman ρ = 0.353, p < 0.0001 — the predicted order matches the actual order exactly.
+*Observation: Light quality and atmosphere correlate strongly. Brighter light associates with more positive atmosphere. The ordering is monotonic. This correlation could reflect: (a) correspondential relationship, (b) common narrative convention, or (c) mood-lighting association in dream phenomenology.*
 
-**Theological Interpretation:**
-Light doesn't predict outcomes "independent" of atmosphere because they are the SAME spiritual reality expressed in different perceptual registers. A cold, threatening space IS a space without divine wisdom — the coldness and the threat are not separate attributes but one spiritual state perceived through multiple correspondences.
-
-### Level 10: Movement as State Change — Spatial Correspondence Confirmed (Phase 10)
-**Movement and state change are SIMULTANEOUS, not sequential:**
+### Level 10: Movement and Location Analysis (Phase 10)
+**Finding**: Movement direction has weak predictive power; location type has stronger correlation with atmosphere.
 
 **Test 10.1: Direction × Atmosphere Change**
 - Direction does NOT predict atmosphere *change* (ρ = -0.029, p = 0.49)
-- BUT ascending *destinations* ARE better (ρ = 0.10, p = 0.016)
-- Movement IS state change, not a cause of it
+- Ascending *destinations* show weak positive correlation (ρ = 0.10, p = 0.016)
 
-**Test 10.2: Building Correspondences**
-| Category | Mean Atm | Correspondence |
-|----------|----------|----------------|
-| LOWER_NATURAL (basement) | 2.02 | Lowest levels of mind |
-| PURIFICATION (bathroom) | 2.14 | Vastation states |
-| TRANSITION (airport) | 2.37 | Liminal states |
-| INSTRUCTION (school) | 2.50 | Truth/doctrine |
-| SOCIAL (home) | 2.67 | Love/relationship |
-| COMMERCE (mall) | 2.73 | Natural goods (not evil!) |
-| NATURAL_BEAUTY (beach) | 2.73 | Celestial imagery |
+**Test 10.2: Location Type × Atmosphere**
+| Category | Mean Atm |
+|----------|----------|
+| LOWER_NATURAL (basement) | 2.02 |
+| PURIFICATION (bathroom) | 2.14 |
+| TRANSITION (airport) | 2.37 |
+| INSTRUCTION (school) | 2.50 |
+| SOCIAL (home) | 2.67 |
+| COMMERCE (mall) | 2.73 |
+| NATURAL_BEAUTY (beach) | 2.73 |
 
 - Location type → atmosphere: H = 335.73, p < 10^−46
 - Cohen's d = 0.65 (between lowest and highest)
 
 **Test 10.3: Dream Sequences**
-- Atmosphere DECLINES over dream course (ρ = -0.055, p = 0.005)
+- Atmosphere shows slight decline over dream course (ρ = -0.055, p = 0.005)
 - 34.8% declining, 39.8% stable, 25.4% improving
-- Confirms MallWorld = VASTATION (confrontation, not resolution)
 
-**Key Insight:** Buildings carry intrinsic correspondential signatures, just as animals do. The ordering is NOT "scary = bad" but reflects Swedenborgian mind-level logic.
+*Observation: Location type correlates with atmosphere. Functional/purpose categories explain more variance than physical characteristics. The direction of effect (lower = more negative) could reflect: correspondential meaning, dream narrative conventions, or psychological associations with underground spaces.*
+
+### Level 11: Building Type Profiles — Exploratory Data
+**44 building types profiled for architectural features and metals:**
+
+**Status**: 📊 EXPLORATORY (not confirmatory)
+
+**Methodology:**
+1. For EACH building type, filter structured data
+2. Use source_file property to load raw dream text
+3. Search 41 features (architectural + 9 metals)
+4. Build feature profile per building type
+
+**Sample Sizes:**
+- 44 building types with n ≥ 30 dreams
+- Largest: other (1,392), mall (972), mall_store (465)
+- Features include: glass, window, escalator, elevator, stairs, pool, gold, silver, iron, etc.
+
+**Key Observations (descriptive, not confirmatory):**
+- Building types DO show different feature profiles
+- Pool/waterpark: highest in 'pool' feature (80%/22%)
+- Hotel: highest in 'elevator' (26%)
+- Basement: high in 'stairs' (20%), 'concrete' (6.8%)
+- Hospital: high in 'elevator' (25%), 'hallway' (15.5%)
+
+**Metal Mentions (generally low across all types):**
+- Generic 'metal' most common (2-8%)
+- Gold/silver rare (< 2% in most contexts)
+- Hospital shows elevated gold (4.2%) — requires interpretation
+
+**What This Does NOT Show:**
+- Whether profiles CORRESPOND to Swedenborgian meanings
+- Whether differences are statistically significant vs. chance
+- Pre-registered predictions are needed for confirmation
+
+**Next Steps:**
+1. Pre-register correspondential predictions
+2. Test predictions against observed profiles
+3. Use holdout data for validation
 
 ---
 
@@ -207,9 +239,9 @@ Light doesn't predict outcomes "independent" of atmosphere because they are the 
 
 ### H1: Vertical ↔ Atmosphere
 
-**Status**: ✅ ROBUSTLY SUPPORTED
+**Status**: ✅ Strong correlation found
 
-**Finding**: Strong positive correlation between vertical position and atmosphere quality.
+**Finding**: Positive correlation between vertical position and atmosphere quality.
 
 | Metric | Value |
 |--------|-------|
@@ -217,7 +249,9 @@ Light doesn't predict outcomes "independent" of atmosphere because they are the 
 | p-value | < 0.0001 |
 | Train/Val/Test | Consistent |
 
-**Interpretation**: Lower spaces have more threatening atmospheres; elevated spaces have more welcoming atmospheres. This is the foundational correspondential prediction.
+**Observation**: Lower spaces have more threatening atmospheres; elevated spaces have more welcoming atmospheres.
+
+*Note: This correlation could reflect: correspondential meaning, narrative conventions ("underground = scary"), or psychological associations.*
 
 **Notebook Location**: Cells 6-8 (Phase 1: H1 test)
 
@@ -245,7 +279,7 @@ Light doesn't predict outcomes "independent" of atmosphere because they are the 
 
 ### P2: Water Clarity ↔ Atmosphere
 
-**Status**: ✅ STRONGLY SUPPORTED
+**Status**: ✅ Strong correlation found
 
 **Finding**: Clean/clear water associates with better atmosphere; dirty/murky water associates with threatening atmosphere.
 
@@ -255,7 +289,9 @@ Light doesn't predict outcomes "independent" of atmosphere because they are the 
 | Dirty water | ~17% |
 | **Effect** | **2.6× difference** |
 
-**Interpretation**: Corresponds to Swedenborgian "water = truth" - clean water = clear truth.
+**Observation**: Water clarity correlates with atmospheric quality.
+
+*Note: This is consistent with correspondential theory (water = truth). Also consistent with: aesthetic/hygiene associations, or narrative conventions.*
 
 **Notebook Location**: Cell ~17 (Phase 2 exploratory)
 
@@ -263,7 +299,7 @@ Light doesn't predict outcomes "independent" of atmosphere because they are the 
 
 ### P4: Somatic Response
 
-**Status**: ✅ SUPPORTED
+**Status**: ✅ Correlation found
 
 **Finding**: Negative somatic responses (nausea, paralysis, etc.) strongly associate with lower vertical positions.
 
@@ -272,7 +308,7 @@ Light doesn't predict outcomes "independent" of atmosphere because they are the 
 | Effect | 2.3× more common underground |
 | p-value | 0.002 |
 
-**Interpretation**: Physical discomfort signals sphere incompatibility.
+**Observation**: Somatic distress clusters in underground/lower locations.
 
 **Notebook Location**: Cell ~19 (Phase 2 exploratory)
 
@@ -280,7 +316,7 @@ Light doesn't predict outcomes "independent" of atmosphere because they are the 
 
 ### P5: Privacy/Exposure
 
-**Status**: ✅ STRONGLY SUPPORTED
+**Status**: ✅ Strong correlation found
 
 **Finding**: Exposed locations (no privacy) have much worse atmospheres than private locations.
 
@@ -289,7 +325,9 @@ Light doesn't predict outcomes "independent" of atmosphere because they are the 
 | Effect | 3.5× more threatening when exposed |
 | p-value | 0.002 |
 
-**Interpretation**: Exposure corresponds to shame/vulnerability.
+**Observation**: Exposure correlates with negative atmosphere.
+
+*Note: Consistent with correspondential theory (exposure = shame). Also consistent with common psychological associations.*
 
 **Notebook Location**: Cell ~20 (Phase 2 exploratory)
 
@@ -297,7 +335,7 @@ Light doesn't predict outcomes "independent" of atmosphere because they are the 
 
 ### P7: Light Temperature
 
-**Status**: ✅ SUPPORTED
+**Status**: ✅ Correlation found
 
 **Finding**: Warm/golden light associates with better atmosphere; cold/white light with worse.
 
@@ -305,7 +343,7 @@ Light doesn't predict outcomes "independent" of atmosphere because they are the 
 |--------|-------|
 | Effect | ~1.5× difference |
 
-**Interpretation**: Warm light = truth + goodness; cold light = truth without goodness.
+**Observation**: Light quality correlates with atmosphere.
 
 **Notebook Location**: Cell ~22 (Phase 2 exploratory)
 
@@ -341,7 +379,7 @@ Light doesn't predict outcomes "independent" of atmosphere because they are the 
 | 1+ | 1.86 |
 | **Correlation** | **ρ = -0.129, p < 0.0001** |
 
-**Interpretation**: Validates internal coherence - correspondences work together as a system.
+**Interpretation**: Multiple negative features combine additively. This shows internal consistency of the coding scheme.
 
 **Notebook Location**: Cell ~28 (Phase 2 deeper exploration)
 
@@ -429,22 +467,24 @@ Entity behavior is **INVARIANT across environmental conditions**. This was initi
 
 ## Framework Implications
 
-### Swedenborgian Predictions Tested
+### Pattern Summary
 
-| Prediction | Status | Evidence |
+| Pattern | Status | Evidence |
 |------------|--------|----------|
-| "Higher beings descend to help" | ✅ SUPPORTED | Guides equally distributed across verticals |
-| "Spirits have freedom across states" | ✅ SUPPORTED | Entity profiles invariant |
-| "Environments express state" | ✅ SUPPORTED | 10+ environmental correspondences |
-| "Animals = affections" | ✅ SUPPORTED | Creatures show internal profiles |
-| "Deceased retain character" | ✅ SUPPORTED | Benevolent profile everywhere |
+| Guides equally distributed across verticals | ✅ Pattern found | Distribution analysis |
+| Entity profiles consistent across conditions | ✅ Pattern found | Variance analysis |
+| Environmental features correlate with atmosphere | ✅ Pattern found | 10+ correlations |
+| Animal form clusters by dreamer | ✅ Pattern found | ICC = 0.630 |
+| Deceased show benevolent profile | ✅ Pattern found | Profile analysis |
 
-### Two-Level Structure
+*Note: These patterns are consistent with correspondential theory. They are also potentially consistent with other frameworks (narrative conventions, psychological projections, cultural associations). The data show correlations but do not establish causal mechanisms.*
 
-1. **Environmental Level**: Spaces express states through physical qualities
-2. **Entity Level**: Beings maintain autonomous intentionality that transcends location
+### Observed Structure
 
-This dual structure is precisely what Swedenborgian cosmology would predict.
+1. **Environmental correlations**: Spaces show consistent correlations between physical qualities and atmospheric ratings
+2. **Entity consistency**: Beings maintain consistent behavioral profiles across different environmental conditions
+
+*Observation: This two-level structure (environment-linked vs entity-linked patterns) is consistent with correspondential cosmology. Alternative explanations include narrative structure conventions and psychological projection patterns.*
 
 ---
 
@@ -467,14 +507,16 @@ This dual structure is precisely what Swedenborgian cosmology would predict.
 
 | Category | Count |
 |----------|-------|
-| Total tests | 32 |
-| ✅ SUPPORTED | 22 |
+| Total tests | 30 |
+| ✅ Pattern found | 20 |
 | ⚠️ WEAK/NEUTRAL | 4 |
 | ❌ WRONG DIRECTION | 1 |
 | 📝 EXPLAINED (entity invariance) | 1 |
 | 🔸 NO DATA/INCONCLUSIVE | 4 |
 
-**Overall Framework Status**: ROBUSTLY SUPPORTED
+**Summary**: 20/30 tests showed patterns in directions consistent with predictions. 4 were weak/neutral, 1 was in wrong direction, 4 lacked data.
+
+*Note: "Pattern found" means statistically significant correlation in predicted direction. It does not mean the correspondential theory is proven correct. Correlations are consistent with the framework but do not exclude alternative explanations.*
 
 ---
 
@@ -587,17 +629,17 @@ Created `check_visibility()` function to classify entity descriptions:
 
 ## Phase 5: Building Correspondence Model
 
-### Theoretical Framework (Corrected)
+### Theoretical Framework (Note)
 
-Initial tests framed vertical movement as "entering different spheres." This is incorrect.
+Initial tests framed vertical movement as "entering different spheres." The data suggest a different pattern:
 
-**Swedenborgian doctrine of buildings**: A building represents **the mind** - specifically the structure of doctrine/understanding. Different floors are **discrete degrees within the same structure**, not different spirits' domains:
+**Observation**: Building structure may represent mental organization, with different floors representing different degrees within one structure:
 
-- **Upper floors** = more interior/celestial aspects (love, will)
-- **Ground level** = natural/external understanding
-- **Basement/underground** = natural-sensual, memory, corporeal
+- **Upper floors** = typically more positive atmosphere
+- **Ground level** = intermediate
+- **Basement/underground** = typically more negative atmosphere
 
-The Mall as a whole is ONE spiritual structure. Descending means moving toward more external/corporeal aspects of that structure, not entering another entity's sphere.
+The pattern suggests floors are aspects of one structure, not separate domains.
 
 ### S1: Personal vs Communal Variance
 
@@ -659,9 +701,7 @@ Vertical change ↔ atmosphere change: ρ = -0.034, p = 0.25
 
 **Status**: ✗ NOT SIGNIFICANT
 
-**Corrected Interpretation**: The aggregate vertical-atmosphere correlation (ρ ≈ 0.14) exists because certain sphere-types (natural-sensual) exist at lower levels - but moving there doesn't CAUSE atmospheric change. The atmosphere is **intrinsic to the location**, not created by the transition.
-
-This is consistent with Swedenborgian doctrine: spirits are drawn to spheres matching their ruling love; the sphere doesn't form around you; you find yourself in spheres corresponding to your state.
+**Observation**: The aggregate vertical-atmosphere correlation (ρ ≈ 0.14) exists because certain location types exist at lower levels - but moving there doesn’t CAUSE atmospheric change. The atmosphere appears intrinsic to the location, not created by the transition.
 
 ### Phase 5 Summary
 
@@ -679,19 +719,19 @@ This is consistent with Swedenborgian doctrine: spirits are drawn to spheres mat
 
 ---
 
-## Phase 6: Ruling Love vs Reactive Thought Model
+## Phase 6: Stable State vs Reactive Model
 
 ### The Competing Models
 
-**Folk Model** ("Thoughts Create Reality"):
+**Reactive Model** ("Thoughts Create Reality"):
 - Common in astral projection/lucid dream communities
 - Claim: Momentary thoughts and emotions shape the dream environment
 - Prediction: Negative affect → worse atmosphere
 
-**Swedenborgian Model** (Ruling Love):
-- Atmosphere corresponds to STABLE ruling love, not fluctuating thoughts
+**Stable State Model**:
+- Atmosphere corresponds to stable individual characteristics, not fluctuating thoughts
 - Affect is a RESPONSE to atmosphere, not a cause
-- Ruling love doesn't change because you get scared or think positive thoughts
+- Baseline doesn't change because of momentary emotional states
 
 ### Test Results
 
@@ -724,19 +764,20 @@ The apparent correlation (R1) was entirely spurious:
 
 Dreams show coherent atmospheric tendency — atmosphere varies by location but clusters around dreamer's baseline.
 
-### Verdict: ✅ STRONGLY SUPPORTS RULING LOVE MODEL
+### Summary: Affect Does Not Predict Atmosphere Change
 
-**Emotional reactions in dreams do NOT reshape the environment.** Affect is purely response to atmosphere, not cause. This contradicts the folk-wisdom of lucid dreaming/astral projection communities.
+**Finding**: Once you control for current atmosphere, affect has ZERO predictive power for future atmosphere (partial ρ = 0.007, p = 0.71).
 
-What DOES predict atmosphere:
+What DOES correlate with atmosphere:
 - Location characteristics ✓
 - Entity presence ✓
-- Dreamer's ruling love (implied by within-dream clustering) ✓
+- Dreamer identity (within-dream clustering) ✓
 
-What does NOT predict atmosphere:
-- Momentary thoughts ✗
-- Expressed fear ✗  
-- Emotional valence ✗
+What does NOT predict atmosphere change:
+- Momentary emotional response ✗
+- Expressed fear ✗
+
+*Observation: Data are inconsistent with the "thoughts create reality" model common in lucid dreaming communities. Affect appears to be response to atmosphere, not cause. This is consistent with a "stable state" model but does not prove any particular cosmology.*
 
 **Notebook Location**: Cells #VSC-6d8ccd61 through #VSC-6bc77aa9 (Phase 6)
 
@@ -770,15 +811,13 @@ Is atmosphere:
 
 4. **55% of dreamers are "threatening-dominant"**, 40% are "welcoming-dominant" — consistent baselines
 
-### Verdict: ✅ RULING LOVE DOMINATES
+### Summary: Dreamer Identity Dominates
 
-**The atmosphere is primarily YOUR ruling love, not the sphere's intrinsic quality.**
+**Finding**: Dreamer identity explains far more atmosphere variance than location type.
 
-The vertical-atmosphere correlation in aggregate exists because certain types of dreamers gravitate to certain locations, NOT because going underground makes things worse for a given dreamer.
+**Implication**: The aggregate vertical-atmosphere correlation exists primarily because certain dreamers gravitate to certain locations, not because location changes atmosphere for a given dreamer.
 
-### Swedenborgian Interpretation
-
-Spirits are **drawn to spheres matching their ruling love**. You don't enter a sphere and then experience its quality - you ARE in spheres corresponding to your state. The Mall is a **theatre representative** - it represents what already exists in the spiritual state of each dreamer. Different dreamers see different Malls.
+*Observation: This is consistent with a "ruling love" model where atmosphere reflects stable dreamer characteristics. Alternative interpretation: reporting style differences between dreamers.*
 
 **Notebook Location**: Cells #VSC-81e002b4 through #VSC-b5153317 (Phase 7)
 
@@ -867,20 +906,11 @@ Swedenborg's descriptions (~1750s) featured gardens, palaces, and carriages as t
 
 4. **Demographics unavailable** - only 1.3% mention age, precluding generational analysis
 
-### Verdict: ✅ STRUCTURAL CONSTANCY SUPPORTED
+### Summary: Temporal Stability
 
-**The correspondential STRUCTURE is stable; representational CLOTHING shows minor variation.**
+**Finding**: Structure of correlations remains stable over time; atmosphere distribution stabilized after 2024.
 
-The MallWorld has **converged** toward a stable representational framework since 2024. The early period (2021-2023) showed volatility as the community formed, but the collective dream-space has now stabilized.
-
-### Swedenborgian Interpretation
-
-The MallWorld is a **"theatre representative"** - a collective space that:
-1. Uses contemporary representational clothing (malls instead of palaces)
-2. Maintains constant correspondential structure (vertical↔atmosphere, entity↔outcome)
-3. Receives individual ruling love while maintaining collective form
-
-The FORM evolves with culture; the STRUCTURE persists because it reflects constant spiritual realities.
+*Observation: The pattern structure (which features correlate with which outcomes) shows consistency across the dataset's timeframe. This is consistent with stable underlying structure. Could also reflect: stable community norms, consistent data collection, or demographic stability.*
 
 **Notebook Location**: Cells #VSC-428b125b through #VSC-6a0fb8b8 (Phase 8)
 
@@ -890,18 +920,18 @@ The FORM evolves with culture; the STRUCTURE persists because it reflects consta
 
 ### The Question
 
-Do MallWorld collective dreams and Near-Death Experiences sample the **same underlying cosmological structure**?
+Do MallWorld collective dreams and Near-Death Experiences show similar or different patterns?
 
-### REVISED Hypothesis (after analysis)
+### Comparison
 
-~~Initial hypothesis was "different altitudes" — MallWorld lower, NDE higher.~~
+The two datasets show dramatically different atmosphere distributions:
 
-**Corrected interpretation**: Both represent the **World of Spirits**, but serve different **uses/purposes**:
+| Dataset | Proposed Interpretation | What's Happening |
+|---------|------------------------|------------------|
+| **NDE** | Return-focused | Experiencer receives what enables return — comfort, purpose, boundary |
+| **MallWorld** | Processing-focused | Psychological confrontation — states being worked through |
 
-| Dataset | Use/Purpose | What's Happening |
-|---------|-------------|------------------|
-| **NDE** | Reception/Return | Soul receives exactly what's needed to return — love, mission, boundary, reassurance |
-| **MallWorld** | Digestion/Vastation | Correspondential processing — spiritual states being worked through, confronted, sorted |
+*Note: These interpretations are framework-dependent. Alternative explanations exist.*
 
 ### Dataset Comparison
 
@@ -939,62 +969,42 @@ Do MallWorld collective dreams and Near-Death Experiences sample the **same unde
 | Life review | **17.5%** |
 | Deceased relatives | 17.9% |
 
-**Critical Finding**: The NDE is **tailored to use**. Each soul receives what THEY need for return, not a standard sequence. This is "constant state, variable form" at the functional level.
+**Observation**: NDE content varies by individual. Each person receives different elements, suggesting tailored rather than uniform experiences.
 
 ### X3: Atmosphere Difference Explained by USE
 
-| Process | Atmosphere | Why |
-|---------|------------|-----|
-| **NDE Return** | Predominantly positive | Purpose is to send soul BACK with love, courage, mission — negativity would be counterproductive |
-| **MallWorld Digestion** | Predominantly negative | Purpose is CONFRONTATION with one's states — the discomfort IS the processing |
+| Process | Atmosphere | Possible Interpretation |
+|---------|------------|------------------------|
+| **NDE Return** | Predominantly positive | Return-enabling content (love, purpose, mission) |
+| **MallWorld Processing** | Predominantly negative | Confrontational processing of psychological states |
 
-### MallWorld as "Digestive System"
+### MallWorld Feature Interpretation (Speculative)
 
-| MallWorld Feature | Correspondential Function |
-|-------------------|---------------------------|
-| Wandering through spaces | Moving through states of mind |
-| Being lost | Disorientation during vastation |
-| Threatening atmospheres | Confronting what's actually in oneself |
-| Entity encounters | Meeting contents of spiritual interior |
-| Pursuit/chase | Unable to escape one's own states |
+| MallWorld Feature | Possible Function |
+|-------------------|-------------------|
+| Wandering through spaces | Moving through mental states |
+| Being lost | Disorientation, confusion |
+| Threatening atmospheres | Confronting uncomfortable content |
+| Entity encounters | Meeting projected inner content |
+| Pursuit/chase | Anxiety, unable to escape states |
 
-The Mall doesn't punish — it **processes**. The discomfort is functional, not punitive.
+*Note: These interpretations are speculative. The data show patterns; the meanings are not proven.*
 
-### Verdict: ✅ SAME REALM, DIFFERENT USES
+### Summary: Different Distributions
 
-**Revised interpretation**: Both MallWorld and NDE take place in the **World of Spirits**. The dramatic atmosphere difference reflects different **purposes**, not different locations:
+**Finding**: MallWorld and NDE show dramatically different atmosphere distributions (Cramér's V = 0.645).
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                    WORLD OF SPIRITS                          │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│  ┌─────────────────┐         ┌─────────────────┐           │
-│  │  NDE RECEPTION  │         │  MALLWORLD      │           │
-│  │  (brief visit)  │         │  DIGESTION      │           │
-│  ├─────────────────┤         ├─────────────────┤           │
-│  │ PURPOSE: Return │         │ PURPOSE: Vastate│           │
-│  │ ATMOSPHERE: 48% │         │ ATMOSPHERE: 64% │           │
-│  │ positive        │         │ negative        │           │
-│  │                 │         │                 │           │
-│  │ Receive love,   │         │ Wander, confront│           │
-│  │ mission, limit  │         │ process, digest │           │
-│  └─────────────────┘         └─────────────────┘           │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
-
-Both show structural correspondences; the USE determines what is experienced.
+*Observation: The datasets differ substantially. Possible explanations include: different experiential phenomena, different populations, different reporting contexts, or different purposes of the experiences. The data alone do not determine which interpretation is correct.*
 
 **Notebook**: `notebooks/10_nde_crossdomain_exploration.ipynb`
 
 ---
 
-## Phase 8 (Extended): Deep Swedenborgian Correspondence Tests
+## Phase 8 (Extended): Animal Correspondence Tests
 
-### 8A: Animal Correspondences - Intrinsic Qualities Framework (REVISED)
+### 8A: Animal Type Analysis (REVISED)
 
-**Methodological Correction**: The original analysis incorrectly categorized animals as representing "good" or "evil" categories. Swedenborg's framework states that animals represent **intrinsic qualities** that can manifest in either good or evil forms.
+**Methodological Note**: Initial analysis framed animals as "good" or "evil." Revised to analyze animal types and their demeanor distributions.
 
 | Animal | Intrinsic Quality | Good Form | Evil Form |
 |--------|-------------------|-----------|-----------|
@@ -1176,9 +1186,9 @@ Swedenborg states that ruling love determines how one EXPERIENCES spiritual real
 
 ---
 
-### 8C: Rigorous Statistical Proofs of Animal Correspondence
+### 8C: Statistical Analysis of Animal Patterns
 
-Following the methodological correction (animals = intrinsic qualities, not good/evil categories), we applied rigorous statistical proofs to validate the Swedenborgian animal correspondence framework.
+Following the methodological correction (animals = intrinsic qualities, not good/evil categories), we applied rigorous statistical tests to examine animal patterns in the dream data.
 
 #### Test P1: Permutation Test for Animal Type → Hostility
 
@@ -1249,27 +1259,27 @@ Following the methodological correction (animals = intrinsic qualities, not good
 | P5 | OR up to 106:1 between animal types | ✅ EXTREME DIFFERENCES |
 | P6 | Cramér's V = 0.513 (type) vs 0.000 (atm) | ✅ COMPLETE DOMINANCE |
 
-**Critical Insight**: The Swedenborgian animal correspondence framework is validated by **multiple independent statistical tests**:
+**Summary of Findings**: Multiple independent statistical tests show consistent patterns:
 
 1. Animal TYPE determines form distribution (not random)
 2. Animal form is INDEPENDENT of atmosphere (no environmental adaptation)
-3. Animal form is DREAMER-DEPENDENT (reflects affections)
+3. Animal form is DREAMER-DEPENDENT (reflects individual differences)
 4. Specific comparisons show extreme differences (OR up to 106:1)
 5. Effect size is LARGE for type, ZERO for atmosphere
 
-**Animals represent INTRINSIC QUALITIES of the DREAMER**, not environmental responses. Each animal carries its characteristic form distribution, and the same dreamer encounters consistent animal forms across dreams.
+*Observation: These patterns are consistent with animals representing intrinsic qualities rather than environmental responses. Whether this supports a Swedenborgian "affection" interpretation or a psychological interpretation remains underdetermined by the data.*
 
 **Notebook Location**: Cells #VSC-479b65fb through #VSC-69ce0c73 (Phase 8B-Rigorous / 8C)
 
 ---
 
-### 8D: Affection-Based Analysis — Testing Swedenborgian Theory
+### 8D: Animal Demeanor Analysis
 
-Following the rigorous statistical validation of animal correspondence, we tested three deeper theoretical questions about the nature of animal symbolism as affections.
+This section tests questions about animal demeanor patterns.
 
-#### Q1: Opposite Sense — Can the Same Animal Express Good OR Evil?
+#### Q1: Do Animals Show Demeanor Variance?
 
-Swedenborg's "opposite sense" doctrine states that the same correspondence can manifest as either good or evil depending on context. If animals represent intrinsic qualities, each type should show VARIANCE in demeanor, not uniform hostility.
+If animals represent intrinsic qualities, each type might show VARIANCE in demeanor, not uniform hostility.
 
 | Animal Type | Hostile % | Non-Hostile % | Has Variance |
 |-------------|-----------|---------------|--------------|
@@ -1282,15 +1292,13 @@ Swedenborg's "opposite sense" doctrine states that the same correspondence can m
 | Aquatic | 5.9% | 94.1% | ✅ Yes |
 | Domestic | 11.1% | 88.9% | ✅ Yes |
 | Other | 46.3% | 53.7% | ✅ Yes |
-| Cat | 0.0% | 100.0% | ❌ No (pure affection?) |
+| Cat | 0.0% | 100.0% | ❌ No |
 
-**Status**: ✅ **9/10 types show BOTH hostile AND non-hostile forms** — Opposite sense confirmed
+**Status**: ✅ **9/10 types show BOTH hostile AND non-hostile forms**
 
-**Critical insight**: Even predators (power/dominance quality) appear non-hostile 29% of time — power used for protection in the opposite sense.
+*Observation: Most animal types show demeanor variance. Predators appear non-hostile 29% of time.*
 
-#### Q2: Intrinsic Consequences — Do Outcomes Flow from Animal TYPE?
-
-If animals represent affections with intrinsic drives, outcomes should depend on animal TYPE, not just behavioral demeanor.
+#### Q2: Does Animal TYPE Predict Outcome?
 
 | Test | Result | p-value | Status |
 |------|--------|---------|--------|
@@ -1300,16 +1308,16 @@ If animals represent affections with intrinsic drives, outcomes should depend on
 | Type → Outcome (HOSTILE only) | χ² = 0.25 | 0.969 | ⚠️ NO differentiation |
 
 **Within NON-HOSTILE creatures, negative outcome rates by type:**
-- Bird: 66.7% negative (power without control?)
-- Cat: 31.8% negative (affection can overwhelm?)
-- Aquatic: 0.0% negative (spiritual knowledge protects?)
-- Domestic: 0.0% negative (controlled affection = safe?)
+- Bird: 66.7% negative
+- Cat: 31.8% negative
+- Aquatic: 0.0% negative
+- Domestic: 0.0% negative
 
-**Status**: 🔶 **NUANCED** — For hostile creatures, TYPE doesn't differentiate (all hostile = similar). For NON-HOSTILE creatures, TYPE significantly predicts outcome — intrinsic quality matters WHEN the form is positive.
+**Status**: 🔶 **NUANCED** — For hostile creatures, TYPE doesn't differentiate. For NON-HOSTILE creatures, TYPE significantly predicts outcome (p=0.024).
 
-#### Q3: Whose Affections? — Dreamer vs Entity
+#### Q3: Correlation Sources — Dreamer vs Entity
 
-Do animals represent the dreamer's internal states or the affections of encountered entities?
+Do animals correlate more with dreamer identity or with encountered entities?
 
 | Test | Statistic | p-value | Interpretation |
 |------|-----------|---------|----------------|
@@ -1333,35 +1341,32 @@ Do animals represent the dreamer's internal states or the affections of encounte
 
 #### Phase 8D Summary
 
-| Question | Finding | Theological Implication |
-|----------|---------|------------------------|
-| Q1: Opposite Sense | 9/10 types show variance | Same quality CAN manifest as good OR evil |
-| Q2: Intrinsic Consequences | Significant for non-hostile only | Intrinsic nature matters WHEN form is positive |
-| Q3: Whose Affections? | 60% dreamer + 25% entity | Animals are primarily dreamer-intrinsic, secondarily entity-reflective |
+| Question | Finding |
+|----------|---------|n| Q1: Demeanor variance | 9/10 types show BOTH hostile AND non-hostile forms |
+| Q2: Type × Outcome | Significant for non-hostile only (p=0.024) |
+| Q3: Correlation sources | 60% dreamer variance + 25% entity correlation |
 
-**Critical Theoretical Synthesis:**
+**Observations:**
 
-The data support a sophisticated reading of Swedenborgian correspondence:
+1. **Animals cluster by dreamer identity**: η²=0.605 of demeanor variance is between-dreamers
 
-1. **ANIMALS ARE PRIMARILY DREAMER-INTRINSIC**: The dreamer's ruling love determines the PALETTE of animals (η²=0.605)
+2. **Animals correlate with entity demeanor**: ρ=0.254 after controlling for atmosphere
 
-2. **ANIMALS SECONDARILY REFLECT ENCOUNTERED STATES**: In context, animal form/demeanor may shift to reflect the affections of encountered entities (ρ=0.254 after controlling for atmosphere)
+3. **Most animal types show demeanor variance**: 9/10 types appear as both hostile and non-hostile
 
-3. **THE SAME QUALITY CAN EXPRESS GOOD OR EVIL**: 9/10 animal types show demeanor variance, confirming opposite sense doctrine
+4. **Type predicts outcome only for non-hostile animals**: When friendly, animal TYPE correlates with outcome (p=0.024)
 
-4. **INTRINSIC NATURE MATTERS FOR POSITIVE FORMS**: When an animal appears friendly, its TYPE predicts outcome — the intrinsic quality of the affection shapes consequences
-
-This aligns with Swedenborg's teaching that correspondences are both **STABLE** (rooted in the person's spiritual state) AND **CONTEXTUAL** (modified by spiritual influences encountered).
+*Note: This pattern is consistent with correspondential theory (animals = affections with dual expression). Also consistent with: psychological projection, narrative tropes, or dreamer reporting style.*
 
 **Notebook Location**: Cells #VSC-07c7256b through #VSC-47cc3d71 (Phase 8D)
 
 ---
 
-### 8D-Extended: Affection Shift Model
+### 8D-Extended: Within-Dreamer Animal Variance Model
 
-**Status**: ✅ **CONFIRMED** — Animals represent dreamer's affections that SHIFT in response to encountered ruling love spheres
+**Status**: ✅ Pattern found — Animals show within-dreamer variance correlated with entity context
 
-**Theoretical Question**: Do animals correspond to the dreamer's affections, which correctly shift as one would expect based on the sphere of ruling love they encounter or which affects them?
+**Question**: Do animal demeanors shift within the same dreamer across different dreams?
 
 #### Test 1: Within-Dreamer Variance
 
@@ -1406,32 +1411,31 @@ This aligns with Swedenborg's teaching that correspondences are both **STABLE** 
 
 | Model | Prediction | Outcome |
 |-------|------------|--------|
-| A) Animals = entity affections directly | 100% explained by entity sphere | ✗ REJECTED (only 6%) |
-| B) Animals = fixed dreamer trait | 0% within-dreamer variance | ✗ REJECTED (p=0.004) |
-| C) Animals = dreamer's affections RESPONDING to spheres | Large baseline + small correlated shift | ✓ **CONFIRMED** |
+| A) Animals = entity-determined | 100% explained by entity | ✗ Not supported (only 6%) |
+| B) Animals = fixed dreamer trait | 0% within-dreamer variance | ✗ Not supported (p=0.004) |
+| C) Animals = stable + contextual | Large baseline + small correlated shift | ✓ Consistent with data |
 
-#### Theoretical Synthesis: Doctrine of Reception
+#### Observations
 
-The data confirm the Swedenborgian **doctrine of reception**: "All reception is according to the form of the recipient."
+1. **89.5% of animal variance is between-dreamers** — stable baseline by dreamer
+2. **10.5% is within-dreamer shift** — correlates strongly with entity context (r=0.75)
+3. **The mechanism appears to be response, not direct representation** — Animals don't directly copy entities; they shift with context
 
-1. **Animals ARE the dreamer's affections** — 89.5% between-person variance reflects stable ruling love
-2. **Affections RESPOND to encountered spheres** — 10.5% within-person shift correlates strongly with entity sphere
-3. **The mechanism is RECEPTION, not direct representation** — Animals don't directly represent entity affections; they represent how the DREAMER'S affections respond to influx
-4. **The FORM of response depends on spiritual state** — Same entity sphere produces different animal responses based on dreamer's baseline
+*Note: Data are consistent with a "reception" model (stable baseline + contextual shift). Alternative interpretations include: narrative consistency effects, mood contagion in dream content, or reporting style variations.*
 
 **Notebook Location**: Cells #VSC-ec5dc8b0 through #VSC-0fc89c49 (Phase 8D-Extended)
 
 ---
 
-### Phase 9: Light as Wisdom
+### Phase 9: Light × Atmosphere Analysis
 
-**Status**: ✅ **CONFIRMED** — Light and atmosphere are CONJOINED, confirming that in spiritual states appearance IS being
+**Status**: ✅ Strong correlation found — Light and atmosphere are strongly associated
 
-**Theoretical Question**: Does light quality function as a distinct correspondential element (representing wisdom/truth) with independent predictive power?
+**Question**: Does light quality correlate with atmosphere?
 
-#### Key Discovery: Conjunction, Not Independence
+#### Key Discovery: Strong Coupling
 
-Unlike folk models where "light = good" would predict outcomes independently, the Swedenborgian model predicts that light and atmosphere should be **intrinsically coupled** because they represent the same spiritual reality through different perceptual registers.
+Light quality and atmosphere show strong association (V = 0.483), with "cold light + welcoming atmosphere" being rare (2.7%).
 
 #### Test 9.2: Light × Atmosphere Concordance
 
@@ -1476,26 +1480,21 @@ Unlike folk models where "light = good" would predict outcomes independently, th
 - Actual order: **29% < 50% < 55% < 79%**
 - **PERFECT MATCH**
 
-#### Theoretical Synthesis
+#### Observations
 
-The data reveal something profound about the nature of correspondential reality:
+1. **Light and atmosphere are strongly coupled** (V = 0.483)
+2. **The ordering is monotonic** — Brighter light correlates with more positive atmosphere
+3. **Discordant states are rare** — Only 2.7% show cold light with positive atmosphere
 
-1. **Light and atmosphere are not separate attributes** — They are the same spiritual state perceived through different registers
-2. **The ordering confirms Swedenborg's wisdom-truth teaching** — More light = more truth = better atmosphere
-3. **Discordance is rare because deception is impossible** — A space cannot appear full of light while being spiritually dark
-4. **The "false front" hypothesis is empirically rejected** — Only 2.7% of locations show cold light with positive atmosphere
-
-This validates the Swedenborgian principle that in the spiritual world (and its representations), **appearance IS being**. Unlike the natural world where things can appear other than they are, spiritual states manifest fully in their form.
+*Note: This pattern is consistent with correspondential theory (light = wisdom). Also consistent with: aesthetic associations, narrative conventions, or mood-lighting psychological effects.*
 
 **Notebook Location**: Cells #VSC-4e3d3b1e through #VSC-2ae2b14a (Phase 9)
 
 ---
 
-### Phase 10: Movement as State Change
+### Phase 10: Movement and Location Analysis
 
-**Central Question**: Is spiritual movement through space a CAUSE of state change, or are movement and state change the same event perceived differently?
-
-Your experiential report—"I walked INTO the room where light shined in... The light did not came in after I was already in the specific room"—aligns perfectly with the Swedenborgian principle that in spiritual reality, **location IS state**. If this is true, we should find that movement direction does NOT predict atmosphere change (because they're the same thing), while building types carry intrinsic atmosphere signatures (because they represent different regions of mind).
+**Question**: Does movement direction predict atmosphere change?
 
 #### Test 10.1: Direction × Atmosphere Change
 
@@ -1503,7 +1502,6 @@ Your experiential report—"I walked INTO the room where light shined in... The 
 
 **Finding**: Movement direction does NOT predict atmosphere change
 - Spearman ρ = -0.029, p = 0.49 (null result)
-- This is NOT a failure—it confirms the conjunction hypothesis
 
 **However**: Ascending destinations ARE better atmospheres
 - Direction × Destination atmosphere: ρ = 0.10, p = 0.016
@@ -1511,12 +1509,7 @@ Your experiential report—"I walked INTO the room where light shined in... The 
 - Descending destinations (down/drop): mean atm 2.41
 - Mann-Whitney U = 30,015, p = 0.048
 
-**Key Insight**: The reason direction doesn't predict CHANGE is because:
-1. Movement and state change are the SAME EVENT (direction = state = destination)
-2. The dreamer is already moving TOWARD a state, not causing a state by moving
-3. Up doesn't MAKE things better—going up IS going to better states
-
-This validates Swedenborg's principle: "Spaces in the spiritual world are appearances according to states."
+*Observation: Direction doesn’t predict CHANGE but does correlate with destination atmosphere. This is consistent with atmosphere being location-inherent rather than movement-caused.*
 
 #### Test 10.2: Building Correspondences
 
@@ -1543,14 +1536,7 @@ This validates Swedenborg's principle: "Spaces in the spiritual world are appear
 - Low vs High categories: Cohen's d = 0.65 (medium-large effect)
 - Mean difference: 0.66 atmosphere points
 
-**Critical Insight**: The ordering follows Swedenborgian correspondence logic, NOT simple "scary = bad":
-- Basements (lowest degree of natural mind) are worst
-- Transition spaces (liminal states) are intermediate
-- Schools (instruction) better than pure transition
-- Social spaces (human connection) better still
-- Commerce (worldly goods) and natural beauty at top
-
-The mall being POSITIVE challenges the "capitalism = bad" framing—commerce represents engagement with worldly goods, which is neutral-to-positive in Swedenborgian terms. The dream is about RELATIONSHIP to commerce, not commerce itself.
+*Observation: Location types show distinct atmosphere profiles. Lower/underground locations have more negative atmospheres; commerce and nature locations are more positive. The ordering by category shows a monotonic pattern from lower_natural to natural_beauty.*
 
 #### Test 10.3: Dream Sequences
 
@@ -1561,19 +1547,12 @@ The mall being POSITIVE challenges the "capitalism = bad" framing—commerce rep
 - Trajectory analysis: mean slope = -0.056, t = -2.408, p = 0.017
 - Distribution: 34.8% declining, 39.8% stable, 25.4% improving
 
-**Interpretation**: This confirms the VASTATION model
-- MallWorld dreams are about confrontation, not resolution
-- Dreamers descend into vastation (spiritual testing)
-- The dream ends in the process, not after resolution
-- This is consistent with Swedenborg's description of regeneration stages
+*Observation: Dreams show a weak declining atmosphere trajectory on average. Most dreams (39.8%) are stable; declining (34.8%) slightly outnumbers improving (25.4%).*
 
-**Synthesis**: Movement, location, and state are not separate phenomena but **aspects of one spiritual reality**:
-1. Moving up IS encountering better states (not causing them)
-2. Building types carry intrinsic correspondences (like animal types)
-3. The dream trajectory is vastation (descent into confrontation)
-4. Direction doesn't cause change because direction IS state
-
-This validates the Swedenborgian principle that spiritual space is not geometric but topological—it is organized by affinity, not distance.
+**Synthesis:**
+1. Movement direction does not predict atmosphere change
+2. Building types show distinct atmosphere profiles (η² = 0.059)
+3. Dream sequences show slight decline on average (ρ = -0.055)
 
 **Notebook Location**: Cells #VSC-f0fa4876 through #VSC-9c64a29f (Phase 10)
 
@@ -1582,86 +1561,113 @@ This validates the Swedenborgian principle that spiritual space is not geometric
 ## Changelog
 
 ### 2026-01-21
-- **Phase 10: Movement as State Change**
-- **MAJOR FINDING**: Movement direction does NOT predict atmosphere change (ρ = -0.029)
-- BUT ascending destinations ARE better (ρ = 0.10, p = 0.016)
-- Building types carry intrinsic atmosphere signatures (H = 335.73, p < 10^−46)
-- Swedenborgian building category ordering confirmed (Cohen's d = 0.65)
-- Dream sequences show slight decline (ρ = -0.055) confirming vastation model
-- Confirms that movement and state are CONJOINED, not sequential
+- **Phase 10: Movement and Location Analysis**
+- Movement direction does NOT predict atmosphere change (ρ = -0.029)
+- Ascending destinations correlate with better atmosphere (ρ = 0.10, p = 0.016)
+- Building types show distinct atmosphere signatures (H = 335.73, p < 10^−46)
+- Dream sequences show slight decline (ρ = -0.055)
 - Added Level 10 to Executive Summary
 
-- **Phase 9: Light as Wisdom**
-- **MAJOR FINDING**: Light and atmosphere are CONJOINED, not independent (V = 0.483)
-- Discordant states (cold light + positive atmosphere) are extremely rare (2.7%)
-- Swedenborgian ordering of light quality → atmosphere perfectly confirmed (ρ = 0.353)
-- Clear truth (bright natural): 29% negative
-- Cold truth (artificial): 50% negative
-- Partial truth (dim): 55% negative
-- No truth (dark): 79% negative
-- Confirms doctrine: appearance IS being in spiritual states
+- **Phase 9: Light × Atmosphere Analysis**
+- Light and atmosphere strongly associated (V = 0.483)
+- Discordant states (cold light + positive atmosphere) rare (2.7%)
+- Monotonic ordering by light quality (ρ = 0.353)
 - Added Level 9 to Executive Summary
 
-- **Phase 8D-Extended: Affection Shift Model**
-- **CRITICAL FINDING**: Animals represent dreamer's affections that SHIFT in response to entity spheres
-- Within-dreamer variance confirmed (p=0.004): 58.3% of dreamers show different animal demeanors
-- Shift correlates with entity sphere: r=0.753, p<0.0001 (very strong)
-- Variance decomposition: 89.5% baseline + 10.5% shift (56.7% of shift explained by entity)
-- Confirms Swedenborgian doctrine of reception: "All reception is according to the form of the recipient"
-- Rejects both "animals = entity affections" (only 6%) and "animals = fixed trait" (p=0.004)
+- **Phase 8D-Extended: Within-Dreamer Animal Variance**
+- Within-dreamer variance exists (p=0.004): 58.3% of dreamers show different animal demeanors
+- Shift correlates with entity context: r=0.753, p<0.0001
+- Variance decomposition: 89.5% baseline + 10.5% shift
 - Added Level 8 to Executive Summary
 
 ### 2026-01-20
 - Initial document created
 - Phase 1 (H1-H3) findings documented
 - Phase 2 (P1-P19) findings documented  
-- Phase 3 (E1-E10) entity autonomy findings documented
-- Final tally: 32 tests, 22 supported
+- Phase 3 (E1-E10) entity patterns documented
+- Final tally: 32 tests, 22 showing predicted patterns
 - **Phase 4 (F1-F7) entity dynamics deep dive added**
-- Key finding: Entity demeanor predicts interaction success (χ² = 48.90, p < 0.0001)
+- Entity demeanor predicts interaction success (χ² = 48.90, p < 0.0001)
 - **Phase 4.5: Watcher exploration and entity manifestation patterns**
-- Key finding: Watchers 31.2% felt-only vs Guides 0% felt-only
-- **Phase 5: Building Correspondence Model (corrected from "Sphere" model)**
-- Key finding: Atmosphere is location-intrinsic, not transition-reactive
-- Corrected interpretation: Building = mind structure, not separate spheres
-- **Phase 6: Ruling Love vs Reactive Thought Model**
-- **MAJOR FINDING**: Affect has ZERO independent predictive power for atmosphere (ρ=0.007, p=0.71)
-- Strongly supports Swedenborgian ruling love model over folk "thoughts create reality" model
-- Affect is purely RESPONSE to atmosphere, not cause
-- **Phase 7: Dreamer vs Sphere - Whose Atmosphere?**
-- **MAJOR FINDING**: Dreamer explains 56.4% of variance vs location type's 7.1%
+- Watchers 31.2% felt-only vs Guides 0% felt-only
+- **Phase 5: Building Analysis (corrected from "Sphere" model)**
+- Atmosphere is location-intrinsic, not transition-reactive
+- **Phase 6: Stable State vs Reactive Model**
+- Affect has ZERO independent predictive power for atmosphere (ρ=0.007, p=0.71)
+- Data inconsistent with "thoughts create reality" model
+- **Phase 7: Dreamer vs Location Analysis**
+- Dreamer explains 56.4% of variance vs location type's 7.1%
 - Vertical position adds ZERO unique explanatory power after controlling for dreamer
-- Atmosphere is primarily YOUR ruling love, not the sphere's intrinsic quality
-- **Phase 8: Collective Representational Framework**
+- **Phase 8: Temporal Stability Analysis**
 - Temporal range: 2021-09-23 to 2026-01-19 (~4.5 years, 2,678 dreams)
 - Demographics too sparse (1.3%) for generational analysis
-- Atmosphere shows early volatility (2021-2023) then STABILIZES (2024-2026: p=0.0934)
-- Location types show slight variation but correspondential STRUCTURE is constant
-- Supports hypothesis: representational CLOTHING evolves, correspondential STRUCTURE persists
+- Atmosphere shows early volatility (2021-2023) then stabilizes (2024-2026: p=0.0934)
 - **Phase 9: Cross-Domain Comparison (MallWorld × NDE)**
-- Created new notebook: `10_nde_crossdomain_exploration.ipynb`
+- Created notebook: `10_nde_crossdomain_exploration.ipynb`
 - Compared 2,678 MallWorld dreams with 6,753 NDEs
-- **MAJOR FINDING**: Atmosphere distributions massively different (χ² = 4739.51, Cramér's V = 0.645)
-- MallWorld: 64% negative, 17% positive (ratio 0.26:1)
-- NDE: 4% negative, 48% positive (ratio 13.1:1)
-- **REVISED INTERPRETATION**: Both are World of Spirits, different USES (not altitudes)
-- NDE = Reception/return (soul receives what's needed: love, mission, boundary)
-- MallWorld = Digestion/vastation (soul undergoes processing: confrontation, wandering)
-- Life review only 17.5% — NDE is tailored to USE, not a standard sequence
-- Atmosphere difference reflects PURPOSE: NDE encourages return, MallWorld processes states- **Phase 8 Extended: Deep Swedenborgian Correspondence Tests**
-- **Phase 8A: Animal Correspondences**
-- 228 creatures categorized into 9 Swedenborgian categories
-- **MAJOR FINDING**: Animal demeanor matches Swedenborgian predictions (χ² = 34.31, p < 0.000001)
-- Evil affections (monster, predator, serpent): 32.9% hostile
-- Non-evil affections: 11.7% hostile
-- Gentle affections (cat, dog, domestic): 0.0% hostile
-- 7/9 categories match Swedenborgian predictions
-- Animals do NOT appear selectively by atmosphere (p = 0.0562) — they CARRY correspondence intrinsically
-- **Phase 8B: Ruling Love Markers**
-- 1,662 unique authors, 185 with 3+ dreams for trajectory analysis
+- Atmosphere distributions dramatically different (χ² = 4739.51, Cramér's V = 0.645)
+- MallWorld: 64% negative, 17% positive
+- NDE: 4% negative, 48% positive
+- **Phase 8 Extended: Animal Analysis**
+- **Phase 8A**: 228 creatures categorized
+- Animal demeanor correlates with animal type (χ² = 34.31, p < 0.000001)
+- **Phase 8B**: Dreamer consistency analysis
 - 65.2% of dreams show congruent affect-atmosphere responses
-- 70.5% of repeat dreamers show high congruence (≥75%), 4.5% show low congruence (<50%)
 - ICC = 0.327 (fair within-dreamer consistency)
-- **CRITICAL FINDING**: Early markers do NOT predict trajectories (ρ = 0.044, p = 0.85)
-- Trajectories range from -0.88 to +1.50 — FREE WILL PRESERVED (both directions)
-- Ruling love markers EXIST but are not DETERMINISTIC
+- Early markers do NOT predict trajectories (ρ = 0.044, p = 0.85)
+
+### 2026-01-21 (Continued)
+- **Phase 11b: Cardinal Direction Analysis** — WEAK EFFECT
+- η² (cardinal) = 0.017 (only 1.7% variance explained)
+- Effect deprioritized in favor of functional categories
+
+- **Phase 12: Functional Category Analysis**
+- Functional categories explain 5.2x more variance than cardinal directions
+- Functional η² = 0.089 (8.9% variance) vs. Cardinal η² = 0.017 (1.7%)
+- Categories show monotonic ordering from lower_natural (2.02) to celestial (4.50)
+  
+- **Light × Atmosphere Correlation**: ρ = 0.286, p < 0.0001
+  - Bright/natural light → better atmosphere
+  - Dark/absent light → worse atmosphere
+  - Light quality is CONJOINED with atmosphere (not independent predictor)
+  
+- **Digestive Flow Pattern**: 19.8x forward bias observed
+  - Transition mall→restaurant: 59 cases
+  - Transition restaurant→mall: 3 cases
+  - *Observation: Consistent with directional flow hypothesis*
+  
+- **Underground Exit Pattern**: +0.44 atmosphere change when leaving basement
+  - *Observation: Underground areas show more negative atmosphere, leaving them improves atmosphere*
+  
+- **Theoretical Note**: The digestive flow hypothesis suggests:
+  - Reception spaces (mall) receive/display goods
+  - Appropriation spaces (home, restaurant) involve personal consumption
+  - Lower levels (basement) = storage/utility areas
+  - *These interpretations are framework-dependent and not proven by the data*
+  
+- Added Level 11-12 synthesis to Executive Summary
+
+- **Phase 13: Building Type Profiles — Exploratory Analysis**
+- **Notebook**: `10_architectural_correspondence_tests.ipynb`
+- **Methodology**: For EACH building type, filter structured data → use source_file to load raw text → search 41 features
+- **Sample**: 44 building types with n ≥ 30 dreams each
+
+- **DATA COLLECTED (exploratory, not confirmatory):**
+  - Full feature profiles for 44 building types
+  - 41 features including: architectural (glass, window, escalator, etc.) + metals (gold, silver, iron, etc.)
+  - Profiles exported to `output/building_type_profiles.csv`
+
+- **KEY OBSERVATIONS (descriptive only):**
+  - Building types DO show different feature profiles
+  - Pool/waterpark: highest in 'pool' (80%/22%)
+  - Hotel: highest in 'elevator' (26%)
+  - Basement: high in 'stairs' (20%), 'concrete' (6.8%)
+  - Hospital: high in 'elevator' (25%), 'hallway' (15.5%)
+  - Metal mentions generally LOW (< 5% for specific metals)
+
+- **WHAT THIS DOES NOT SHOW:**
+  - Whether profiles CORRESPOND to Swedenborgian meanings
+  - Whether differences are statistically significant vs. chance
+  - Confirmation requires pre-registered predictions
+
+- **CORRECTED from previous version:** Mall vs non-mall comparison alone does not confirm correspondence theory; need profiles across ALL building types to test whether correspondences are systematic
