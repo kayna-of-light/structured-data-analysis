@@ -248,6 +248,82 @@ The framework has now been tested across multiple independent domains:
 
 This is not a framework that explains one domain well. It is a framework that explains **multiple independent domains** better than alternatives—like a physics that organizes disparate phenomena under unified principles.
 
+### The Cumulative Weight Argument
+
+When a single prediction confirms, it could be coincidence. When two confirm, it might be cherry-picking. But when **95 out of 100 questions produce significant patterns** across independent domains—NDE phenomenology, past-life memory, myth formation, historical transmission, cognitive archaeology—the cumulative weight becomes the evidence.
+
+This is how physics works. Einstein's general relativity wasn't accepted because one observation matched. It was accepted because:
+- Mercury's perihelion precession matched
+- Light bending around the sun matched
+- Gravitational time dilation matched
+- Gravitational waves (decades later) matched
+
+Each individual finding could have alternative explanations. Together, they constitute proof that the theory captures something real about the structure of reality.
+
+**The Swedenborgian framework is at this stage.** The question is no longer "Does it work?" The question is "Why does it work?"—and that question leads into ontology that remains speculative but increasingly difficult to dismiss.
+
+### Framework Refinement: Where Swedenborg Was Wrong
+
+**This project does NOT treat Swedenborg as infallible.** Where the data or deeper analysis contradict his claims, we correct the framework. Several significant corrections have been identified:
+
+#### The Limbus as Cartesian Artifact — **CORRECTION**
+
+**Swedenborg's claim:** After death, the spirit retains a "limbus"—a fringe of purest natural substances—to provide containment and prevent dissipation.
+
+**The problem:** This concept arose from Swedenborg's 18th-century scientific training in Cartesian mechanics. The "interaction problem" (how can unextended spirit interact with extended matter?) led him to posit a "nexus" substance bridging the gap. The limbus is a theoretical epicycle—a construct to save the phenomena while maintaining a flawed premise (dualism).
+
+**The correction:** The physical world and the spiritual-natural world are NOT separate ontological floors. They are the same continuum viewed through different filters. The "physical" is the "fixed edge" of the spiritual-natural—maximum resistance and inertia maintained for the developmental purposes of the proprium (selfhood formation).
+
+**Evidence supporting the correction:**
+- NDE experiencers don't notice the "transition"—they have to be TOLD they are dead. If physical and spiritual were ontologically distinct, the difference would be immediately obvious.
+- "When what is spiritual touches what is spiritual, it is just the same to sense as when what is natural touches what is natural" (Swedenborg's own observation contradicts his theory)
+- The "Mall World" phenomenon: thousands report accessing a consistent, hyper-real topography during sleep—the same "spiritual-natural" reality, just with the biological filter bypassed
+
+**What this means:** The true "container" of identity is not a material skin—it is the **biography**. The history of states, choices, and loves accumulated in time forms the irrevocable vessel. We are not ghosts needing a bucket; we are the "concrete spirit" in seed-state formation.
+
+#### Biological Determinism about Jesus — **CORRECTION**
+
+**Swedenborg's claim:** Jesus had a "soul from the Father" (Divine) and a "body from the mother" (Human), based on the biological theory of his time that the sire provides the soul and the dam provides the body.
+
+**The problem:** This dehumanizes Jesus into a "God-Man hybrid" rather than a true human person. It implies his struggles and faith were divine pantomime, not genuine human experience.
+
+**The correction:** Jesus was a **complete human soul** who achieved perfect alignment with the Divine through the **removal of obstruction** (the proprium). He was not the Lord *disguised* as a human; he was a human *filled* with the Lord. The mechanism was not biological origin but spiritual transparency.
+
+**Evidence supporting the correction:**
+- Jesus's own recorded statements: "I can do nothing by myself" (John 5:19)—impossible if he possessed inherent omnipotence
+- "Why do you call me good? No one is good except God alone" (Mark 10:18)—refusing to appropriate divine attributes to his human vessel
+- The vulnerability of Gethsemane: genuine struggle, not theatrical performance
+
+**What this means:** The "Divine Human" is not exclusive to Jesus—it is the Lord's capacity to be personal with every human, appearing in forms the soul can receive. The "Being of Light" in NDEs is the Lord appearing to Christians as Jesus, to Buddhists as Amida, to secularists as Light—constant reality, variable form.
+
+#### Somatic Influx: Extending the Framework — **EXTENSION**
+
+Beyond corrections, the framework has been **extended** where empirical data support new applications:
+
+**The phenomenon:** Radical remission—spontaneous regression of advanced cancer in the absence of adequate treatment—occurs with statistical regularity (not placebo, which achieves <1% complete response in solid tumors).
+
+**Framework extension:** "Somatic influx" proposes that the body functions as the "soul in ultimates"—faithfully printing the state of the spirit. When spiritual transformation (release of suppressed emotions, shift from fear to love, alignment of will with life) occurs, the physical correspondence (disease) loses its sustaining energy.
+
+**Evidence:**
+- Kelly Turner's research: 7 of 9 factors in radical remission are psycho-spiritual, not physical
+- The timeline is often compressed: spiritual shift → physical reorganization within days
+- DOPS birthmark data: spiritual trauma can "print" onto physical form; therefore, spiritual resolution can "erase" physical manifestation
+
+**What this means:** The body is not a machine that occasionally malfunctions; it is a printer that faithfully outputs the spiritual template. Change the template, change the output.
+
+### The Methodology Summarized
+
+This project follows the data wherever it leads:
+
+1. **Where Swedenborg predicts and data confirm** → Report as HIT
+2. **Where Swedenborg predicts and data contradict** → Report as MISS and investigate
+3. **Where Swedenborg's framework reflects 18th-century limitations** → Correct the artifact while retaining the valid principle
+4. **Where data suggest extensions** → Extend the framework and test the extension
+
+We are not defending Swedenborg. We are not attacking Swedenborg. We are using his framework as a **hypothesis generator** and letting the data arbitrate. When 95/100 questions produce significant patterns, the hypothesis has earned serious consideration—not as revelation to be accepted on faith, but as theory that organizes observations better than alternatives.
+
+The goal is not to prove Swedenborg right. The goal is to understand why the patterns emerge when his framework is applied.
+
 ### Application to MallWorld Analysis
 
 When analyzing MallWorld dream data, interpret spatial, entity, and atmospheric patterns through the correspondential lens:
