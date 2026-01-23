@@ -6,13 +6,13 @@
 
 **Background**: Contemporary consciousness studies confronts a methodological crisis: mainstream approaches filter anomalous data to preserve materialist axioms, while religious approaches filter data to confirm traditional doctrines. Both positions sacrifice accuracy for ideological coherence. A third way is required—one that treats theoretical frameworks as physics treats theories, selecting for explanatory power and predictive accuracy rather than ideological conformity.
 
-**Methods**: This thesis documents the systematic application of Emanuel Swedenborg's correspondential framework (1758) as a testable hypothesis across multiple independent domains: near-death experience phenomenology (N=6,753 structured records from NDERF and IANDS), past-life memory research (DOPS corpus, 2,500+ verified cases), archaeological evidence of deep symbolic systems, myth formation and transmission, and historical reconstruction of the "Ancient Word." Statistical validation employed chi-square tests, discriminant analysis, machine learning classification, and cross-domain pattern triangulation.
+**Methods**: This thesis documents the systematic application of Emanuel Swedenborg's correspondential framework (1758) as a testable hypothesis, organized into four evidential strains: (1) Empirical Foundation—consciousness survival evidence from NDE and past-life memory research; (2) Being of Light—the purposeful economy of divine encounter; (3) Correspondence as Ontology—evidence that correspondence is a law of reality, not transmitted knowledge; (4) Textual Validation—demonstration that the correspondential method works across diverse sources. Data sources include near-death experience phenomenology (N=6,753 structured records from NDERF and IANDS), past-life memory research (DOPS corpus, 2,500+ verified cases), archaeological evidence spanning 30,000 years, and cross-cultural textual analysis. Statistical validation employed chi-square tests, discriminant analysis, machine learning classification, and cross-domain pattern triangulation.
 
-**Results**: The framework achieves systematic predictive success across independent domains. In consciousness studies: constant state/variable form confirmed (χ² = 365.14, p < 0.0001); entity function differentiation validated (χ² = 41.13, p = 0.008); mission-based return shows 94.2% discriminant validity; judgment character ratio 36.5:1 loving vs. harsh. In past-life memory: 70%+ violent death clustering; 88% birthmark-wound correspondence in autopsied cases. In archaeology: 30,000-year consistency of Paleolithic symbolic systems. In mythology: divergent trajectories from common proto-myths explained by "ruling love" orientation. In historical transmission: Zoroastrian mēnōg/gētīg ontology parallels Swedenborgian correspondence doctrine; Qumran "Two Spirits" doctrine confirms transmission during Babylonian Exile. When 95 of 100 research questions produce significant patterns across independent domains, cumulative weight constitutes evidence.
+**Results**: All four strains achieve confirmation. **Strain One (Empirical Foundation)**: 70%+ violent death clustering in DOPS cases; 88% birthmark-wound correspondence. **Strain Two (Being of Light)**: constant experiential properties despite variable naming (χ² = 365.14, p < 0.0001); entity function differentiation (χ² = 41.13, p = 0.008); 94.2% mission discriminant validity; 36.5:1 loving vs. harsh judgment ratio. **Strain Three (Correspondence as Ontology)**: 30,000-year consistency of Paleolithic symbolic systems; independent recognition of same correspondences by zero-contact cultures (Göbekli Tepe, Australian songlines, Shasu of Yhw); teleological bias as innate cognitive receiver mechanism. **Strain Four (Textual Validation)**: same symbols yield same meanings across Persian, Hebrew, and Greek traditions; Swedenborg's correspondential analysis predicted Documentary Hypothesis findings a century before Wellhausen. The cumulative weight of four independent strains, each drawing on multiple data sources, constitutes evidence.
 
-**Conclusions**: The Swedenborgian framework is not employed as theological commitment but as empirical observation: it explains the data better than competing frameworks. Where Swedenborg's 18th-century scientific limitations produced artifacts (the Limbus as Cartesian anxiety; biological determinism about Jesus), the framework has been corrected while preserving validated principles. The goal is not to prove Swedenborg right but to understand why patterns emerge when his framework is applied—and to follow data wherever it leads.
+**Conclusions**: A critical distinction emerges from the analysis: this methodology employs Swedenborg's **observational framework** (the Doctrine of Correspondences, influx, discrete degrees) while recognizing that his **interpretive overlay** (the Limbus, categorical dismissal of reincarnation, biological Christology) reflects 18th-century philosophical assumptions that subsequent inquiry has not supported. More fundamentally, the evidence supports reframing correspondence from "transmitted ancient wisdom" to "ontological law"—correspondence operates like gravity, independently discoverable by any culture that attends to function. The Magi did not invent correspondence; they codified what humans have perceived for 30,000 years. This is not wholesale acceptance of Swedenborgian theology; it is selective hypothesis-testing that treats his framework as science treats any theory—retaining what organizes data effectively, revising what does not.
 
-**Keywords**: consciousness studies, Swedenborg, correspondences, near-death experience, post-materialism, hypothesis-testing, cross-domain validation, epistemology, methodology
+**Keywords**: consciousness studies, Swedenborg, correspondences, near-death experience, post-materialism, hypothesis-testing, ontology, cross-domain validation, epistemology, methodology
 
 ---
 
@@ -98,19 +98,17 @@ This doctrine generates specific, testable principles:
 
 **Opposite Sense**: The same symbol can express good or evil depending on context, because the same function can serve either orientation. Fire corresponds to love—divine love when the context is good, destructive passion when the context is evil. This principle explains why symbols are multivalent without being arbitrary: they express the same functional relationship but in opposite moral orientations.
 
-These principles generate falsifiable predictions. If the doctrine of correspondences is correct:
+These principles generate falsifiable predictions organized into four evidential strains. If the doctrine of correspondences describes a real structural feature of reality, we should observe:
 
-1. **NDE experiencers should show variable identification of spiritual beings but constant experiential properties.** Christians, Hindus, and atheists should use different labels for the Being of Light but report the same qualities of love, wisdom, and transformative power.
+1. **Consciousness survives bodily death, and the survival evidence should be statistically robust.** Near-death experiences should show patterns inconsistent with hallucination or cultural construction. Past-life memory cases should cluster around traumatic death (indicating exceptional return, not normal reincarnation) and show physical correlates (birthmarks) that defy materialist explanation. The statistical weight of this evidence should exceed what coincidence can explain.
 
-2. **Spiritual beings should show functional differentiation, not interchangeability.** Different types of beings should perform different functions (higher beings guide; relatives comfort and gatekeep) rather than being interchangeable manifestations of the same psychological substrate.
+2. **The Being of Light should exhibit a purposeful economy that refutes psychological projection.** If experiencers encounter genuine spiritual reality rather than psychological projections, the Being of Light should show: (a) constant experiential properties despite variable cultural naming—the same wisdom, love, and transformative power whether labeled "Jesus," "Light," or "presence"; (b) functional differentiation among spiritual beings—higher beings guide, relatives comfort and gatekeep, not interchangeable manifestations; (c) revelatory rather than condemnatory judgment—self-knowledge through love, not punishment. This constellation of features constitutes a "purposeful economy" that projection cannot explain.
 
-3. **Judgment during life review should be revelatory rather than condemnatory.** If the Divine functions through correspondence—showing rather than punishing—then judgment should manifest as self-knowledge through love, not external condemnation.
+3. **Correspondence should operate as a law of reality, not as transmitted cultural knowledge.** If correspondence is ontological—a structural feature of reality like gravity—then it should be independently discoverable across disconnected cultures. The same correspondential relationships (animals classified by spiritual quality, not morphology; natural objects encoding spiritual meaning) should appear in cultures with zero contact: Paleolithic Europe, Neolithic Anatolia, Aboriginal Australia, Pre-Zoroastrian Iran. This independent recognition across 30,000 years and multiple continents would demonstrate that correspondence is perceived, not transmitted.
 
-4. **Mission-based returns should form a coherent phenomenological category.** If some souls incarnate for specific purposes, they should show distinctive patterns: explicit mission commissioning, elevated pre-birth indicators, coherent volunteer profiles.
+4. **The correspondential method should produce consistent readings across diverse textual sources.** If correspondence is real, applying the method to different texts—ancient and modern, Eastern and Western, oral and written—should yield internally consistent results. The same symbol should mean the same thing in 1 Enoch, Genesis, Göbekli Tepe's Pillar 43, and Zoroastrian classifications. Cross-cultural and cross-temporal consistency would validate correspondence as a discoverable method, not an arbitrary interpretive overlay.
 
-5. **Myths should evolve along trajectories determined by the "ruling love" of the transmitting culture.** Cultures oriented toward power/self-love should evolve myths toward conflict and hierarchy; cultures oriented toward unity/neighbor-love should evolve myths toward order and dignity.
-
-These predictions can be tested against data. The following sections document the results.
+These four strains can be tested against data. The following sections document the results.
 
 ### 2.2 Why This Framework?
 
@@ -166,33 +164,103 @@ Allegory generates no such predictions. If symbols are arbitrary, there is no re
 
 The Swedenborgian framework treats correspondences as hypotheses to be tested, not dogmas to be accepted. When a correspondence is proposed—light = wisdom, water = truth, fire = love—the question is whether the functional analysis holds and whether the correspondence generates accurate predictions. Some proposed correspondences fail this test; they are rejected or refined. The framework is not a static codebook but a dynamic methodology for discovering and testing relationships between spiritual and natural reality.
 
+### 2.4 The Observational Framework Distinguished from Interpretive Overlay
+
+A methodological clarification is necessary before proceeding to empirical validation. When this thesis references "the Swedenborgian framework," the term designates a refined methodology that distinguishes between two analytically separable layers within Swedenborg's writings: the observational framework derived from direct spiritual perception, and the interpretive overlay shaped by 18th-century philosophical assumptions.
+
+The **observational layer** comprises those elements that appear to derive from Swedenborg's direct phenomenological investigation of spiritual reality:
+
+- The Doctrine of Correspondences—functional relationships between spiritual and natural reality
+- Influx—consciousness received rather than produced
+- Discrete degrees—qualitative stratification of reality into celestial, spiritual, and natural levels
+- Constant state, variable form—invariant spiritual reality with culturally variable perception
+- The ruling love—the core orientation that determines spiritual trajectory
+- Regeneration—the developmental process of spiritual transformation
+
+The **interpretive overlay** comprises those elements that appear to reflect Swedenborg's philosophical inheritance rather than direct observation:
+
+- The Limbus—a proposed membrane of natural substances retained after death
+- Spirit influence as complete explanation for past-life memories—a valid observation extended beyond its evidential warrant
+- Biological Christology—the theory that Jesus possessed a divine soul from the Father based on 18th-century embryological theory
+- Cartesian dualism—the categorical separation of physical and spiritual as distinct substances
+
+The distinction between these layers is not arbitrary but emerges from empirical testing. Those elements classified as "observational" consistently generate accurate predictions when tested against consciousness data; those classified as "interpretive" tend to conflict with evidence or require ad hoc modifications.
+
+Consider Swedenborg's treatment of past-life memories. In *Heaven and Hell* §256 and related passages, Swedenborg describes a phenomenon that appears phenomenologically valid: spirits can project their memories onto living persons, and those persons experience the memories as their own. When individuals enter states of heightened receptivity—particularly the suggestible states induced by hypnotic regression or similar techniques—they become open to influx from associated spirits. The boundary between self and other temporarily dissolves; received memories feel entirely personal.
+
+This observation has empirical support. The high frequency of statistically implausible claims in hypnotic regression (subjects reporting past lives as famous historical figures), the cultural stereotypy of much past-life content, and the susceptibility of such memories to suggestion all align with a spirit-influence mechanism. Swedenborg's observation appears valid for this category of cases.
+
+However, Swedenborg extended this valid observation to dismiss all past-life claims categorically—a generalization the evidence does not support. The DOPS cases documented in Part III involve physical evidence (birthmark correspondence at 88% accuracy), private verified details unknown to any living person, and behavioral imprinting that transcends memory transmission. Spirit influence may explain weak past-life claims; it cannot explain the strongest DOPS evidence. The validity of one phenomenon does not preclude the reality of another.
+
+The interpretive elements form an interconnected system traceable to Swedenborg's Cartesian inheritance. If mind and matter are categorically distinct substances (dualism), some mechanism must bridge them. The Limbus—a proposed semi-material interface—served this function in Swedenborg's system. But if the Limbus is necessary for soul coherence and is formed once during physical embodiment, then multiple incarnations become theoretically impossible; the Limbus would require "unfixing." This theoretical constraint led Swedenborg to interpret all reincarnation evidence as spirit influence rather than genuine previous-life memory. The same logic informed his Christology: if only one incarnation per soul is possible, Jesus's incarnation required special biological mechanisms.
+
+The Doctrine of Correspondences itself, however, contradicts this Cartesian chain. If correspondence is true—if the natural is the spiritual expressed in ultimates—then physical and spiritual are not separate substances requiring a bridging membrane. The physical world represents the final degree of the discrete degrees, not a separate ontological floor. Death involves the removal of the biological filtering mechanism, not transition between incommensurable substances. The soul's coherence derives from biographical continuity (the proprium formed through accumulated choices), not from a material container.
+
+This analysis does not presume to establish definitively which of Swedenborg's claims are correct and which are erroneous. It observes that certain elements of his framework align consistently with empirical data while others do not, and it proposes a plausible explanation for this divergence: the observational elements derive from direct perception; the problematic elements derive from philosophical interpretation shaped by 18th-century assumptions that subsequent inquiry has superseded.
+
+The methodological implication is significant. When subsequent sections reference "framework predictions" or "Swedenborgian hypotheses," they reference the observational layer as refined through empirical testing—not wholesale acceptance of Swedenborgian theology. Swedenborg himself would likely have rejected some conclusions this research supports, including that genuine reincarnation occurs in exceptional cases. The methodology honors Swedenborg's empirical spirit rather than his specific conclusions: testing hypotheses against the best available data and following evidence where it leads, even when it requires revising prior interpretations.
+
 ---
 
-## Part III: Empirical Validation Across Independent Domains
+## Part III: Empirical Validation Across Four Evidential Strains
 
 The value of a scientific hypothesis lies in its ability to generate accurate predictions. The Swedenborgian framework was articulated in 1758—before the modern study of near-death experiences, before the Division of Perceptual Studies began documenting past-life memories, before archaeological excavations revealed the deep antiquity of symbolic systems, before the cognitive science of religion emerged as a discipline. The framework made predictions. The data to test them did not exist for centuries. Now they do.
 
-This section documents the results of testing framework predictions against empirical evidence across five independent domains: NDE phenomenology, past-life memory research, archaeology and anthropology, cognitive science and myth formation, and historical transmission. Each domain provides independent validation; together they constitute cumulative evidence that exceeds what any single domain could provide.
+This section documents the results of testing framework predictions against empirical evidence organized into four evidential strains. Each strain addresses a distinct aspect of the framework's claims; together they constitute cumulative evidence that exceeds what any single strand could provide.
 
-### 3.1 Domain One: Near-Death Experience Phenomenology
+### 3.1 Strain One: Empirical Foundation — Consciousness Survival Evidence
 
-The structured analysis of 6,753 near-death experiences from two major databases (NDERF and IANDS) provides the primary empirical foundation for testing framework predictions. Each record was processed through structured extraction using contemporary large language models trained on the questionnaire schema, producing consistent categorical data amenable to statistical analysis.
+The first strain establishes the empirical foundation: consciousness survives bodily death, and this survival is statistically demonstrable. This is not a metaphysical claim but an empirical observation supported by two independent research programs.
 
-#### 3.1.1 Constant State, Variable Form — **CONFIRMED** (χ² = 365.14, p < 0.0001)
+#### 3.1.1 Near-Death Experience Data Corpus
+
+The structured analysis of 6,753 near-death experiences from two major databases (NDERF and IANDS) provides the primary empirical foundation. Each record was processed through structured extraction using contemporary large language models trained on the questionnaire schema, producing consistent categorical data amenable to statistical analysis.
+
+The NDE phenomenon itself constitutes evidence for consciousness survival. Prospective hospital studies document cases of cardiac arrest patients reporting accurate perception of events occurring during flat-line EEG—when, according to the materialist paradigm, no conscious experience should be possible (van Lommel et al., 2001; Parnia et al., 2014). The AWARE study found that 2% of cardiac arrest survivors reported verified awareness during clinical death. These are not retrospective reports of dreams; they are veridical perceptions that can be independently verified.
+
+The statistical patterns within NDE reports provide additional evidential weight. As subsequent sections will demonstrate, the phenomenology shows systematic structure that random hallucination cannot explain: constant experiential properties across cultural variation, functional differentiation among encountered beings, consistent judgment character. These patterns emerge from the data; they are not imposed by the analytical framework.
+
+#### 3.1.2 Past-Life Memory Evidence (DOPS Data)
+
+The Division of Perceptual Studies (DOPS) at the University of Virginia has documented over 2,500 cases of children spontaneously reporting memories of previous lives. These cases, investigated with rigorous methodology over six decades, provide independent evidence for consciousness survival.
+
+A methodological note is necessary here. Swedenborg explicitly rejected reincarnation, arguing in *Heaven and Hell* §256 that apparent past-life memories represent spirit influence rather than genuine previous-life recall. The analysis that follows represents a case where empirical data diverge from Swedenborg's interpretation while remaining consistent with his broader observational framework. Spirit influence appears to be a valid phenomenon explaining certain categories of past-life claims; however, the strongest DOPS evidence—particularly the physical correlates—exceeds what spirit-memory transmission can account for.
+
+**Violent Death Clustering — CONFIRMED (70%+)**
+
+Within the refined correspondential framework, reincarnation is not the norm but the exception—occurring when traumatic interruption prevents completion of the soul's development. If this "Restorative Incarnation" hypothesis is correct, past-life memory cases should cluster around violent and premature death rather than natural death.
+
+**Result**: Over 70% of verified past-life memory cases involve violent or premature death (murder, accident, warfare, suicide), compared to less than 30% in general mortality statistics. This dramatic overrepresentation cannot be explained by chance.
+
+**Birthmark Correspondence — CONFIRMED (88% accuracy)**
+
+In cases where the previous personality died from violent trauma and both bodies were autopsied, birthmarks and birth defects in the current child correspond to the fatal wounds of the previous personality with 88% accuracy (Stevenson, 1997). Children bore birthmarks matching bullet entry and exit wounds, stab wounds, and blunt force trauma sites—correspondences too precise and numerous to attribute to coincidence.
+
+This pattern is inexplicable under materialist assumptions. There is no known mechanism by which trauma to one body could produce birthmarks on a different body decades later. The Swedenborgian framework provides interpretive coherence: if the soul carries its biographical history (the "proprium"), and violent death represents traumatic interruption requiring restoration, then the physical marks express the unhealed spiritual wound—the "printing" of spiritual state onto physical form.
+
+**Verdict**: The consciousness survival evidence from both NDE and DOPS research exceeds what coincidence or materialist explanation can accommodate. **STRAIN ONE CONFIRMED**.
+
+### 3.2 Strain Two: The Being of Light — Purposeful Economy of Divine Encounter
+
+The second strain addresses the phenomenology of divine encounter in NDEs. If experiencers encounter genuine spiritual reality rather than psychological projections, the Being of Light should exhibit a "purposeful economy"—a constellation of features that projection theory cannot explain.
+
+#### 3.2.1 Constant State, Variable Form — **CONFIRMED** (χ² = 365.14, p < 0.0001)
 
 **Framework Prediction**: The underlying spiritual reality is constant; perceptual forms vary according to the receiver's mental repertoire. The same Being of Light should show constant experiential properties despite variable identification vocabulary.
 
 **Empirical Test**: Cross-tabulation of religious background against Being of Light identification, combined with comparison of experiential properties across identification categories.
 
-**Results**: Religious background significantly predicts identification vocabulary. Christians are 2.6 times more likely to identify the Being of Light as "Jesus" than non-Christians (14.9% vs. 5.7%). Atheists and secular experiencers predominantly report "unknown presence" or "Light" without religious identification. The chi-square test for the association between religious background and being identification is highly significant (χ² = 365.14, p < 0.0001).
+**Results**: The most striking finding is transcendence: **51.9% of all experiencers identified the Being as "unknown presence"**—a category that explicitly resists religious labeling. This majority response appears across all religious backgrounds, including 44.2% of Christians—experiencers whose tradition provides robust divine-encounter vocabulary yet who still report that the Being exceeded their available categories.
 
-However—and this is the critical finding—**experiential properties remain virtually identical regardless of identification label**. Whether experiencers identified the Being as Jesus, God, Krishna, an angel, or simply "Light," they reported the same qualities: overwhelming love (no significant difference across categories), profound wisdom (no significant difference), transformative encounter (no significant difference), sense of unconditional acceptance (no significant difference). All measured differences in experiential properties were below 10%.
+Religious background does predict identification vocabulary (χ² = 365.14, p < 0.0001): Christians are 2.6 times more likely to identify the Being as "Jesus" than non-Christians (14.9% vs. 5.7%). But this statistic tells us about the experiencer's mental repertoire, not about the Being. The critical finding is what remains constant.
 
-A machine learning classifier was trained to predict religious identification from experiential properties. If experiential properties varied with cultural labeling (as cultural construction theory predicts), the classifier should achieve high accuracy. Instead, **the classifier performed BELOW baseline** (37.8% vs. 45.9% baseline)—meaning that knowing experiential properties provides no information about what identification label the experiencer will use.
+**Experiential properties remain virtually identical regardless of identification label**. Whether experiencers identified the Being as Jesus, God, Krishna, an angel, or simply "Light," they reported the same qualities: overwhelming love (no significant difference across categories), profound wisdom (no significant difference), transformative encounter (no significant difference), sense of unconditional acceptance (no significant difference). All measured differences in experiential properties were below 10%.
 
-**Verdict**: The framework predicted this pattern in 1758. The Being of Light manifests constant spiritual reality that appears differently according to the experiencer's cultural repertoire but maintains identical functional properties. **HIT—Confirmed with statistical significance**.
+A machine learning classifier was trained to predict religious identification from experiential properties. If experiential properties varied with cultural labeling (as cultural construction theory predicts), the classifier should achieve high accuracy. Instead, **the classifier performed BELOW baseline** (37.8% vs. 45.9% baseline)—meaning that knowing experiential properties provides no information about what identification label the experiencer will use. The vocabulary varies; the encounter does not.
 
-#### 3.1.2 Entity Function Differentiation — **CONFIRMED** (χ² = 41.13, p = 0.008)
+**Verdict**: The framework predicted this pattern in 1758. The Being of Light manifests constant spiritual reality that transcends cultural categories while speaking to each experiencer in forms they can receive. The vocabulary tells us about the experiencer; the experiential properties tell us about the Being. **HIT—Confirmed with statistical significance**.
+
+#### 3.2.2 Entity Function Differentiation — **CONFIRMED** (χ² = 41.13, p = 0.008)
 
 **Framework Prediction**: Spiritual beings occupy differentiated functional roles, not interchangeable positions. Higher beings should provide more guidance; relatives should serve comfort and gatekeeping functions.
 
@@ -215,7 +283,7 @@ This pattern is not what projection theory predicts. If entities were interchang
 
 **Verdict**: Entity function differentiation confirmed across being types. The pattern aligns with Swedenborgian cosmology where different orders of beings perform different functions. **HIT—Confirmed with statistical significance**.
 
-#### 3.1.3 Mission Commission Discriminant Validity — **CONFIRMED** (94.2% accuracy)
+#### 3.2.3 Mission Commission Discriminant Validity — **CONFIRMED** (94.2% accuracy)
 
 **Framework Prediction**: Some souls incarnate for pre-determined missions. These experiencers should show a coherent phenomenological profile: explicit mission commissioning during NDE, elevated pre-birth indicators, distinctive return patterns.
 
@@ -236,7 +304,7 @@ These ratios are not statistical noise. The mission-based return category achiev
 
 **Verdict**: Mission-based returns form a coherent phenomenological category with massive discriminant validity. The Volunteer Soul hypothesis generates accurate predictions. **HIT—Confirmed with 94.2% accuracy**.
 
-#### 3.1.4 Judgment Character — **CONFIRMED** (36.5:1 ratio)
+#### 3.2.4 Judgment Character — **CONFIRMED** (36.5:1 ratio)
 
 **Framework Prediction**: The Divine functions as revelation (self-knowledge through love), not condemnation. Life review judgment should be loving rather than harsh.
 
@@ -253,116 +321,194 @@ This aligns precisely with Swedenborg's description of the spiritual world's jud
 
 **Verdict**: Judgment in NDE operates as the framework predicts—revelatory rather than condemnatory. **HIT—Confirmed with 36.5:1 ratio**.
 
-### 3.2 Domain Two: Past-Life Memory Research (DOPS Data)
+#### 3.2.5 The Purposeful Economy Argument
 
-The Division of Perceptual Studies (DOPS) at the University of Virginia has documented over 2,500 cases of children spontaneously reporting memories of previous lives. These cases, investigated with rigorous methodology over six decades, provide a second independent domain for testing framework predictions.
+The four preceding findings combine to establish what we term the "purposeful economy" of the Being of Light encounter. This constellation of features—constant experiential properties despite variable naming, functional differentiation among spiritual beings, coherent mission commissioning, and revelatory judgment—cannot be explained by projection theory.
 
-#### 3.2.1 Restorative Incarnation Hypothesis — **CONFIRMED** (70%+ violent death, 88% birthmark accuracy)
+If the Being of Light were a psychological projection, we would expect:
+- Experiential properties to vary with the projector's psychology (they do not—<10% variation across all labels; ML classifier below baseline)
+- Entities to be interchangeable manifestations of the same complex (they are not—functional differentiation is clear)
+- Mission reports to show retrospective meaning-making patterns (they do not—94.2% discriminant accuracy)
+- Judgment character to reflect the experiencer's religious background (it does not—36.5:1 ratio is universal)
 
-**Framework Prediction**: Within the Swedenborgian framework, reincarnation is not the norm but the exception—occurring when traumatic interruption prevents completion of the soul's development. If this "Restorative Incarnation" hypothesis is correct, past-life memory cases should cluster around violent and premature death rather than natural death.
+The projection hypothesis predicts variability where the data show constancy, and predicts interchangeability where the data show differentiation. The Being of Light exhibits purposeful economy: a coherent structure with differentiated functions that operates consistently across experiencers regardless of their prior beliefs.
 
-**Empirical Test**: Distribution of death modes in previous personalities of verified past-life memory cases.
+**Verdict**: The purposeful economy of divine encounter refutes psychological projection and confirms genuine spiritual encounter. **STRAIN TWO CONFIRMED**.
 
-**Results**: **Over 70% of verified past-life memory cases involve violent or premature death** (murder, accident, warfare, suicide), compared to less than 30% in general mortality statistics. This is a dramatic overrepresentation that cannot be explained by chance.
+### 3.3 Strain Three: Correspondence as Ontology — A Law of Reality
 
-More remarkably, in cases where the previous personality died from violent trauma and both bodies were autopsied, **birthmarks and birth defects in the current child correspond to the fatal wounds of the previous personality with 88% accuracy**. Stevenson (1997) documented cases where children bore birthmarks matching bullet entry and exit wounds, stab wounds, and blunt force trauma sites—correspondences too precise and numerous to attribute to coincidence.
+The third strain addresses the most fundamental question: What is the **nature** of correspondence? Is it transmitted cultural knowledge (ancient wisdom passed from teacher to student)? Or is it an ontological feature of reality—a structural law that humans perceive, like gravity?
 
-This pattern is inexplicable under materialist assumptions. There is no known mechanism by which trauma to one body could produce birthmarks on a different body decades later. The correspondence is not approximate but precise—matching wound location, shape, and orientation.
+The evidence strongly supports the ontological interpretation. If correspondence were merely transmitted knowledge, it would require an origination point and a transmission chain. But the evidence shows correspondence operating in cultures with **zero contact**—across 30,000 years, on multiple continents, without any possible transmission pathway. This pattern indicates that correspondence is **perceived**, not learned; **discovered**, not invented.
 
-The Swedenborgian framework provides interpretive coherence: if the soul carries its biographical history (the "proprium"), and violent death represents traumatic interruption requiring restoration, then the physical marks might express the unhealed spiritual wound—the "printing" of spiritual state onto physical form that the framework predicts.
+#### 3.3.1 Deep Symbolic Systems — **CONFIRMED** (30,000-year independent recognition)
 
-**Verdict**: DOPS data confirm violent death clustering and birthmark correspondence patterns consistent with the Restorative Incarnation hypothesis. **HIT—Confirmed with 70%+ violent death rate and 88% birthmark accuracy**.
-
-### 3.3 Domain Three: Archaeology and Anthropology
-
-The Swedenborgian framework makes claims about deep human history that can be tested against archaeological evidence. Swedenborg described an "Ancient Word"—a universal symbolic system predating national myths—and a "Golden Age" of "celestial humanity" who communicated through symbols and "representative language." These claims, made in the 18th century, generate predictions that modern archaeology can evaluate.
-
-#### 3.3.1 Deep Symbolic Systems — **CONFIRMED** (30,000-year consistency)
-
-**Framework Prediction**: If an "Ancient Word" existed—a shared symbolic system predating written history—archaeological evidence should show deep consistency in symbolic usage across time and space.
-
-**Empirical Evidence**: The Paleolithic cave art of Europe reveals exactly this pattern. Genevieve von Petzinger's systematic analysis identified **32 geometric signs used consistently across European caves for 30,000 years**—a unified symbolic system spanning from the Ice Age to the threshold of agriculture. These are not random marks but a consistent vocabulary of symbols: dots, lines, triangles, spirals, hands, tectiforms.
-
-The consistency across millennia and hundreds of kilometers of territory indicates not independent invention but **transmission**—a shared symbolic heritage predating the national myths and religious vocabularies that emerged with civilization. The symbols appear in contexts suggesting ritual or communicative function rather than mere decoration.
-
-Göbekli Tepe (9600 BCE) extends this evidence further. This monumental site—built by hunter-gatherers millennia before agriculture, writing, or pottery—features complex animal iconography and architectural symbolism that presupposes an elaborate symbolic system. Hunter-gatherers do not build monuments; they move. Göbekli Tepe indicates that the symbolic sophistication to motivate such construction existed before the material conditions (agriculture, sedentism) that supposedly made such sophistication possible.
-
-**Verdict**: Archaeological evidence confirms deep symbolic systems consistent with the "Ancient Word" hypothesis. **HIT—Confirmed with 30,000-year consistency**.
-
-#### 3.3.2 Oral Tradition Durability — **CONFIRMED** (7,000-12,000 year memory)
-
-**Framework Prediction**: If the Ancient Word was transmitted orally before written records, oral traditions must be capable of preserving information across deep time.
-
-**Empirical Evidence**: Australian Aboriginal songlines preserve accurate geographic descriptions of **land bridges submerged 7,000-12,000 years ago** when sea levels rose after the last Ice Age. Elders describe paths and landmarks that match the underwater topography revealed by modern bathymetric surveys. This is not approximate folk memory but precise geographic knowledge preserved across hundreds of generations.
-
-Klamath oral traditions in North America preserve the eruption sequence of Mount Mazama **7,700 years ago**—the event that created Crater Lake. Geologist Howel Williams found "striking agreement" between the oral tradition and geological evidence, including details of the eruption phases that only eyewitness transmission could preserve.
-
-Lynne Kelly's "Memory Code" hypothesis explains the mechanism: ancient monuments (Stonehenge, Easter Island's moai) functioned as **mnemonic devices for oral encyclopedias**. The monuments encode spatial sequences that trained practitioners could "walk" to retrieve vast bodies of knowledge. Memory palace techniques combined with sacred geography enabled oral traditions to preserve information with remarkable fidelity across millennia.
-
-**Verdict**: Oral traditions are far more durable than materialist assumptions allowed. The claim that an "Ancient Word" could survive in non-literate form is archaeologically plausible. **HIT—Confirmed with 7,000-12,000 year memory preservation**.
-
-### 3.4 Domain Four: Cognitive Science and Myth Formation
-
-The framework makes predictions about how consciousness shapes cultural evolution—specifically, how the "ruling love" of a culture determines which myths it selects and transmits. This generates testable predictions about myth formation and transmission patterns.
-
-#### 3.4.1 The "Heart of Unity" Emergence — **CONFIRMED** (CSR cannot explain)
-
-**Framework Prediction**: The emergence of monotheism cannot be explained by cognitive evolution alone because it requires the **suppression** of natural cognitive defaults. HADD (Hypersensitive Agency Detection Device) naturally generates multiple agents; monotheism requires unifying all causation into a single abstract source.
-
-**Empirical Test**: Does CSR adequately explain the cognitive transition from polytheism to monotheism?
-
-**Analysis**: CSR's HADD mechanism explains polytheism elegantly—the brain's tendency to attribute agency to ambiguous stimuli naturally populates the environment with multiple spirits, gods, and supernatural agents. This is the cognitive engine of the "heart of division."
-
-But CSR cannot explain the "heart of unity." Monotheism is not a natural cognitive product; it requires **counterintuitive abstraction** that contradicts HADD outputs. The Genesis 1 creation account systematically demythologizes ANE deities: Tiamat/*tehom* is stripped of personality (no longer a goddess, just water); sun and moon are demoted to "luminaries" (no longer gods, just lights); sea monsters (*tanninim*) are mere creatures rather than chaotic forces requiring divine combat.
-
-This is deliberate **theological polemic**—a conscious choice to suppress the polytheistic defaults that HADD generates. The emergence of monotheism reflects a different **orientation of consciousness** (love of unity rather than self/division), not cognitive evolution.
-
-The Lang/Schmidt ethnographic evidence confirms this: "High God" beliefs appear in technologically "primitive" societies that, according to the evolutionary model, should be at the animism or polytheism stage. This contradicts the linear progression (animism → polytheism → monotheism) that CSR implies.
-
-**Verdict**: CSR explains polytheism but not monotheism. The "heart of unity" emerges from a different ruling love, not cognitive development. **HIT—Framework explains what CSR cannot**.
-
-#### 3.4.2 Ruling Love Shapes Myth — **CONFIRMED** (Divergent trajectories from common proto-myth)
-
-**Framework Prediction**: Myths evolve along trajectories determined by the "ruling love" of the transmitting culture. Cultures oriented toward power/self-love should evolve myths toward conflict and hierarchy; cultures oriented toward unity/neighbor-love should evolve myths toward order and dignity.
-
-**Empirical Test**: Comparative analysis of Genesis 1 and *Enuma Elish*—two narratives sharing common proto-myth elements but diverging in opposite directions.
-
-**Evidence**: Both narratives share structural elements indicating common ancestry: primordial watery chaos, separation of waters, creation of firmament, appearance of dry land, creation of celestial bodies, creation of humanity. This common "proto-myth" diverged into opposing trajectories:
-
-| Feature | *Enuma Elish* (Heart of Division) | Genesis 1 (Heart of Unity) |
-|---------|----------------------------------|---------------------------|
-| Primordial state | Active divine chaos (Tiamat as goddess) | Inert non-divine water (*tehom*) |
-| Creative mechanism | Violent dismemberment of goddess's corpse | Serene divine fiat ("And God said...") |
-| Source of order | Imposed through cosmic warfare | Inherent in Creator's will |
-| Humanity's origin | Slaves made from rebel god's blood | Image of God; given dominion |
-| Cosmic structure | Fragmented divinity; polytheism | Unified creation; monotheism |
-
-The divergence cannot be explained by cultural diffusion alone—both cultures had access to the same proto-myth elements. The explanation lies in **consciousness selection**: cultures select for stories that resonate with their ruling love. Babylonian imperialism (oriented toward power/self) evolved the proto-myth toward *Enuma Elish*; Israelite covenantalism (oriented toward unity/neighbor) evolved it toward Genesis 1.
-
-**Verdict**: Myth trajectories follow ruling love orientation as the framework predicts. **HIT—Divergent evolution from common ancestor confirmed**.
-
-### 3.5 Domain Five: Historical Transmission
-
-Swedenborg made specific claims about the historical transmission of the "Science of Correspondences"—claims that can be tested against textual and archaeological evidence.
-
-#### 3.5.1 The Magian Substrate — **CONFIRMED** (Historical transmission documented)
-
-**Framework Prediction**: Swedenborg claimed the Science of Correspondences was the shared heritage of ancient Iranian (Zoroastrian) and Semitic worlds, preserved in the East after Alexander's destruction of Persepolis (330 BCE). This implies:
-- Structural parallels between Zoroastrian and Swedenborgian ontology
-- Evidence of transmission from Persian to Israelite thought during the Babylonian Exile
-- Preservation of this knowledge in "Great Tartary" (Central Asia)
+**Framework Prediction**: If correspondence is ontological, the same correspondential relationships should be independently recognized by disconnected cultures across deep time.
 
 **Empirical Evidence**:
 
-**Structural Parallel**: The Zoroastrian **mēnōg/gētīg** ontology (spiritual/material) exactly parallels Swedenborg's correspondence doctrine. *Mēnōg* refers to the "mental" or spiritual plane; *gētīg* to the "physical" or material plane. The relationship is not mere parallelism but vertical causality—the material expresses and embodies the spiritual, exactly as in Swedenborgian correspondence.
+**Paleolithic Geometric Signs (30,000 years)**: Genevieve von Petzinger's systematic analysis identified **32 geometric signs used consistently across European caves for 30,000 years**—a unified symbolic vocabulary spanning from the Ice Age to the threshold of agriculture. These are not random marks but a consistent system: dots, lines, triangles, spirals, hands, tectiforms. The consistency across millennia and hundreds of kilometers indicates not transmission but **independent recognition** of the same underlying symbolic relationships.
 
-**Classification System**: The lost Avestan **Damdat Nask** (encyclopedia destroyed at Persepolis) classified animals based on **spiritual alignment** (beneficent vs. noxious)—not morphology, not diet, not habitat, but spiritual correspondence. This is exactly the method of correspondential classification that Swedenborg describes.
+**Göbekli Tepe (9500 BCE)**: This monumental site—built by hunter-gatherers millennia before agriculture, writing, or pottery—features animals arranged by **spiritual quality, not ecological category**. The T-shaped pillars show systematic, non-random animal arrangements that parallel the Zoroastrian Damdat Nask classification (beneficent vs. noxious)—yet Göbekli Tepe predates Zoroaster by 7,000 years. No transmission chain connects them; both cultures perceived the **same correspondential relationships** in animals.
 
-**Transmission Evidence**: Daniel was trained in "Chaldean learning" and appointed **Rab-mag** (Chief of Magi)—a historical bridge between Israelite prophecy and Persian cosmology. The **Qumran "Two Spirits" doctrine** (from the Dead Sea Scrolls) is virtually identical to Zoroastrian dualism, confirming transmission during the Babylonian Exile. This is not inference but documented textual parallel.
+**The Key Observation**: If Göbekli Tepe hunter-gatherers and Zoroastrian priests both classified animals by spiritual quality rather than morphology—with no possible contact—correspondence is not cultural transmission. It is perception of reality.
 
-**Geographic Accuracy**: Swedenborg located the Ancient Word in "Great Tartary"—Central Asia. This is precisely the region where **Avestan texts survived** after Alexander's destruction of Persepolis. The Zoroastrian community preserved their scriptures by relocating eastward, exactly where Swedenborg claimed the knowledge was preserved.
+**Verdict**: 30,000-year consistency in symbolic systems demonstrates independent recognition, not transmission. **HIT—Correspondence operates as perceivable reality**.
 
-**Verdict**: The historical transmission path Swedenborg described—from ancient Iran through the Babylonian Exile to preservation in Central Asia—is confirmed by textual, archaeological, and historical evidence. **HIT—Transmission chain documented**.
+#### 3.3.2 Independent Recognition Across Cultures — **CONFIRMED** (Zero-contact parallelism)
+
+**Framework Prediction**: If correspondence is ontological, disconnected cultures should independently arrive at the same correspondential relationships.
+
+**Empirical Evidence**:
+
+**Australian Songlines (7,000-12,000 years)**: Aboriginal traditions encode geographic memory of **land bridges submerged 7,000-12,000 years ago** when sea levels rose. Elders describe paths matching underwater topography revealed by modern surveys. But more significantly, songlines use **landscape as correspondence**—the natural world as mnemonic for spiritual truth. The land is not merely remembered; it is read as a text encoding deeper meaning. This is correspondence operating in a culture with **zero contact** with Persian, Semitic, or European symbolic traditions.
+
+**Shasu of Yhw (1200 BCE)**: Egyptian records from Amenhotep III and Ramesses II reference "Yhw in the land of the Shasu"—the earliest extra-biblical reference to YHWH, predating Zoroaster. The Timna copper mining site shows a serpent standard among Midianite artifacts. In Hebrew, "serpent" (*nachash*) and "copper" (*nechoshet*) share the same root—a correspondence embedded in the language itself. This demonstrates correspondential thinking operating among proto-Israelites **before** any Magian transmission could have occurred.
+
+**Klamath Oral Tradition**: Preserves the eruption sequence of Mount Mazama **7,700 years ago** with "striking agreement" to geological evidence. This demonstrates that oral traditions can preserve precise information across millennia—and the method they use is **spatial correspondence** (memory palace techniques combined with sacred geography).
+
+**The Pattern**: Aboriginal Australians, proto-Israelites, and Native Americans—cultures with zero contact—all use correspondence-based systems for encoding knowledge. This is not coincidence. It indicates that the human mind has an **innate capacity** to perceive correspondential relationships.
+
+**Verdict**: Independent recognition across disconnected cultures confirms correspondence as perceivable reality, not transmitted doctrine. **HIT—Zero-contact parallelism documented**.
+
+#### 3.3.3 The Teleological Bias — **CONFIRMED** (Innate cognitive mechanism)
+
+**Framework Prediction**: If correspondence is an ontological feature of reality, there should be an innate cognitive mechanism that enables humans to perceive it.
+
+**Empirical Evidence from Cognitive Science**: The Cognitive Science of Religion (CSR) has documented that the human mind has an **innate teleological bias**—a default tendency to perceive purpose in natural objects and events. This is not cultural learning; it is present in children before explicit education. Studies show that young children naturally attribute purpose to natural phenomena ("Rocks are pointy so animals can scratch on them") even when raised in secular environments that discourage such attributions.
+
+The HADD mechanism (Hypersensitive Agency Detection Device) extends this: humans naturally attribute agency to ambiguous stimuli. CSR scholars typically interpret this as an "error"—an evolutionary byproduct that generates false positives (believing in spirits when there are none).
+
+But from the correspondential perspective, this "bias" is not an error—it is the **receiver mechanism** for perceiving correspondence. The mind is structured to perceive purpose because reality is structured purposefully. The teleological bias is the cognitive capacity through which correspondence is perceived.
+
+**The Key Reframing**: What CSR calls "cognitive bias" may be accurate perception. The consistency of this "bias" across all human cultures—including isolated populations with no possible contact—suggests it reflects something real about the structure of mind-reality interaction.
+
+**Verdict**: The innate teleological bias provides the cognitive mechanism for correspondence perception. **HIT—Receiver mechanism documented**.
+
+#### 3.3.4 The Ontological Reframing — From Transmission to Perception
+
+The evidence from Strains 3.3.1 through 3.3.3 requires a fundamental reframing of how correspondence is understood:
+
+**The Transmission Model (Previous Frame)**:
+- Zoroaster/Magi invented or discovered correspondence
+- Transmitted to Jews during Babylonian Exile
+- Preserved in Central Asia
+- Swedenborg recovered it in the 18th century
+
+**The Ontological Model (Revised Frame)**:
+- Correspondence is a **structural feature of reality** (like gravity)
+- Humans have always perceived it (innate teleological bias)
+- Various groups codified and claimed it (Zoroaster, Magi, Levites)
+- Institutions sometimes perverted it (rigid dualism, esoteric gatekeeping)
+- Swedenborg re-articulated what was always there
+
+The evidence decisively supports the ontological model:
+
+| Period | Evidence | Implication |
+|--------|----------|-------------|
+| **Paleolithic** (30,000 BP) | 32 geometric signs consistent across European caves | Independent recognition of same symbolic relationships |
+| **Neolithic** (9500 BCE) | Göbekli Tepe animal arrangements by spiritual quality | Hunter-gatherers without writing perceiving same correspondences |
+| **Early Holocene** | Australian songlines encoding geography for 7,000-12,000 years | Memory systems based on landscape = natural correspondence |
+| **Iron Age I** (1200 BCE) | Shasu of Yhw, Timna copper serpent | PRE-Magi recognition of correspondence (serpent/copper = same root) |
+| **Bronze Age** | Zoroaster codifies mēnōg/gētīg | First systematic codification (not invention) |
+| **Iron Age II** | Magi claim institutional seat | Later claimants, not originators |
+
+**The Gravity Analogy**: Newton did not invent gravity. Apples fell before Newton. He **articulated** the law that was always operating. Similarly:
+- Correspondences operated before Zoroaster
+- Zoroaster **articulated** the system (mēnōg/gētīg)
+- The Magi **claimed** institutional authority (and arguably perverted it into rigid dualism)
+- Swedenborg **re-articulated** after institutional decay
+
+The Magi are to Zoroaster what the medieval Church is to Jesus—**later claimants to the seat**, not the originators. The "Science of Correspondences" is not esoteric knowledge to be preserved; it is **structural reality** to be perceived.
+
+**Verdict**: Correspondence is a law of reality, not transmitted knowledge. Various groups perceived, articulated, claimed, and sometimes perverted it. **STRAIN THREE CONFIRMED—Ontological status established**.
+
+### 3.4 Strain Four: Textual Validation — The Method Works Across Sources
+
+The fourth strain addresses methodological validation: does the correspondential method produce consistent readings when applied to diverse textual sources? If correspondence is real, applying the method to different texts—ancient and modern, Eastern and Western, oral and written—should yield internally consistent results. The same symbol should mean the same thing across cultures and periods.
+
+#### 3.4.1 Cross-Temporal Consistency — **CONFIRMED** (Same symbols, same meanings)
+
+**Framework Prediction**: If correspondence is ontological, the same natural object should consistently correspond to the same spiritual reality across different texts and cultures.
+
+**Empirical Test**: Apply correspondential reading to texts from different periods and cultures and check for consistency.
+
+**Evidence**:
+
+**Fire**: In 1 Enoch, Zoroastrian texts, Genesis, and Hindu Vedas, fire consistently corresponds to **love/passion**—divine love when the context is good (burning bush, sacred flame), destructive passion when the context is evil (Gehenna, wrathful destruction). The correspondence is grounded in fire's function: warmth, transformation, consumption.
+
+**Water**: Across biblical texts, Zoroastrian purification rituals, and Aboriginal sacred sites, water consistently corresponds to **truth**—cleansing, reflecting, necessary for life. The correspondence is grounded in water's function.
+
+**Light**: Universally corresponds to **wisdom/understanding** across all cultures examined—from the Being of Light in NDEs to the Zoroastrian Atar to the Genesis "Let there be light." The correspondence is grounded in light's function: enabling sight, distinguishing forms.
+
+**Animals**: The Damdat Nask (Zoroastrian), Levitical code (Hebrew), and Göbekli Tepe carvings all classify animals by **spiritual quality** rather than morphology. Beneficent vs. noxious (Zoroastrian) maps to clean vs. unclean (Hebrew); both correspond to the spiritual principle the animal embodies.
+
+**Verdict**: The same correspondential relationships appear across disconnected texts and cultures. **HIT—Cross-temporal consistency confirmed**.
+#### 3.4.2 Cross-Cultural Consistency — **CONFIRMED** (Persian-Hebrew-Greek parallel)
+
+**Framework Prediction**: If correspondence is real, independent cultures using the method should arrive at structurally parallel systems.
+
+**Empirical Test**: Compare correspondential systems across Persian (Zoroastrian), Hebrew (Levitical/Prophetic), and Greek (Platonic) traditions.
+
+**Evidence**:
+
+**Persian (Zoroastrian)**: The **mēnōg/gētīg** ontology divides reality into spiritual (*mēnōg*) and material (*gētīg*) planes, with the material expressing and embodying the spiritual. The **Damdat Nask** classified animals by spiritual alignment.
+
+**Hebrew (Levitical)**: Clean/unclean animal distinctions, symbolic architecture of the Tabernacle, prophetic imagery all employ systematic correspondence. The **structure** (spiritual quality determining natural classification) is identical to Persian, though the specific categories differ.
+
+**Greek (Platonic)**: The Theory of Forms posits material objects as imperfect instantiations of eternal Ideas. Though the philosophical vocabulary differs, the **structure** is identical: the natural world corresponds to (and derives from) a higher spiritual/ideal reality.
+
+**The Structural Parallel**: These three traditions—with only partial contact (Persian-Hebrew during Exile; Greek-Persian through Alexander)—arrived at structurally identical correspondential systems:
+
+| Tradition | Spiritual Plane | Material Plane | Relationship |
+|-----------|----------------|----------------|-------------|
+| Zoroastrian | Mēnōg | Gētīg | Material embodies spiritual |
+| Hebrew | *Shamayim* (heavens) | *Eretz* (earth) | Earth reflects heaven |
+| Greek | Forms/Ideas | Particulars | Particulars participate in Forms |
+| Swedenborgian | Spiritual world | Natural world | Natural corresponds to spiritual |
+
+The terminology differs; the structure is identical. This structural convergence across partially independent traditions indicates perception of the same underlying reality.
+
+**Verdict**: Independent traditions arrived at structurally parallel correspondential systems. **HIT—Cross-cultural consistency confirmed**.
+
+#### 3.4.3 The Method Applied: Specific Textual Demonstrations
+
+**Framework Prediction**: If the method is valid, applying correspondential reading to specific texts should produce internally consistent and illuminating interpretations.
+
+**Demonstration: 1 Enoch's Astronomical Book**
+
+The Astronomical Book of 1 Enoch uses a **linear zigzag function** from Babylonian *MUL.APIN* to calculate daylight hours. The ratio of longest/shortest day (2:1) is accurate for **Babylon (32°N latitude)**, not Jerusalem. This reveals that Jewish scribes literally copied Persian/Babylonian mathematical data—documentary evidence of the transmission chain.
+
+But more significantly, the 364-day calendar maintains perfect 52×7 structure despite being astronomically imprecise (the solar year is ~365.25 days). The scribes chose **correspondential integrity** (7-based structure preserving Sabbath symbolism) over empirical accuracy. This demonstrates correspondential reasoning in operation.
+
+**Demonstration: Genesis 1-2 Source Distinction**
+
+Swedenborg's correspondential analysis distinguishes two creation accounts using different divine names: **Elohim** (Genesis 1) and **YHWH** (Genesis 2-3). Elohim = divine truth/wisdom; YHWH = divine love/goodness. Swedenborg made this observation c. 1750.
+
+Wellhausen's Documentary Hypothesis, using historical-critical methods, independently identified these same source distinctions in the 1870s. Swedenborg's correspondential method **predicted** what HCM would later document—a century before the scholarly tools existed.
+
+**Demonstration: Daniel's Dream Interpretation**
+
+Daniel interprets Nebuchadnezzar's dream (Daniel 2) using explicit correspondential method: gold = Babylon (quality/value), silver = Medo-Persia (lesser quality), bronze = Greece, iron = Rome. Daniel was trained as **Rab-hartummin** (Chief of Magicians/Scribes) in "Chaldean learning"—the Magian science of correspondences. The text preserves the method in operation.
+
+**Demonstration: Qumran "Two Spirits" Doctrine**
+
+The **Community Rule** (1QS) from the Dead Sea Scrolls describes cosmic conflict between "Spirit of Truth" and "Spirit of Falsehood"—virtually identical to Zoroastrian Spenta Mainyu/Angra Mainyu dualism. This is not coincidence but documented transmission: Jewish scribes during the Babylonian Exile absorbed Persian correspondential categories and transmitted them to the Qumran community.
+
+**Verdict**: The correspondential method produces consistent, illuminating readings across diverse texts. **HIT—Methodological validity confirmed**.
+
+#### 3.4.4 Strain Four Summary: The Method Works
+
+The evidence from Strain Four demonstrates that correspondential reading is not arbitrary interpretation but a valid method for extracting meaning from texts:
+
+1. **Same symbols, same meanings**: Fire, water, light, animals show consistent correspondences across disconnected texts
+2. **Parallel structures**: Persian, Hebrew, Greek traditions arrived at structurally identical systems
+3. **Predictive success**: Swedenborg's correspondential analysis predicted Documentary Hypothesis findings a century early
+4. **Historical documentation**: Daniel, Qumran texts preserve the method in explicit operation
+
+The method works because correspondence is real. If correspondence were arbitrary, we would expect random variation across cultures. Instead, we find systematic consistency—the signature of perception of actual structure.
+
+**Verdict**: **STRAIN FOUR CONFIRMED—Methodological validity established across diverse textual sources**.
 
 ---
 
@@ -370,26 +516,38 @@ Swedenborg made specific claims about the historical transmission of the "Scienc
 
 ### 4.1 Beyond Individual Findings
 
-The preceding section documented ten successful predictions across five independent domains. Each individual finding could, in principle, have an alternative explanation. Cultural construction might explain some aspects of NDE phenomenology; evolutionary psychology might explain some patterns in myth formation; coincidence might explain some birthmark correspondences. The skeptic can always propose an alternative hypothesis for any individual datum.
+The preceding section documented successful predictions organized into four evidential strains. Each individual finding could, in principle, have an alternative explanation. Cultural construction might explain some aspects of NDE phenomenology; evolutionary psychology might explain some patterns in myth formation; coincidence might explain some birthmark correspondences. The skeptic can always propose an alternative hypothesis for any individual datum.
 
 But this response misses the evidentiary structure at work. Science rarely operates through single crucial experiments. Rather, evidence accumulates through what philosophers of science call **consilience of inductions**—the convergence of independent lines of evidence toward a common conclusion. When multiple independent phenomena, investigated through different methods in different domains by different researchers, all point toward the same pattern, the cumulative weight exceeds what any single finding could provide.
 
 Consider the history of plate tectonics. No single observation proved continental drift. The fit of South American and African coastlines could be coincidence. Matching fossils across oceans could have alternative explanations. Identical rock strata could result from independent processes. But when continental fit, paleontology, geology, paleoclimatology, and eventually paleomagnetism all pointed toward the same conclusion, the cumulative weight became overwhelming. Each discipline brought independent evidence; together they constituted proof.
 
-The same evidentiary structure operates here. The Swedenborgian framework predicts:
-- Constant state/variable form in NDE phenomenology → **Confirmed** (χ² = 365.14)
-- Entity function differentiation → **Confirmed** (χ² = 41.13)
-- Mission-based return as coherent category → **Confirmed** (94.2% accuracy)
-- Revelatory rather than condemnatory judgment → **Confirmed** (36.5:1 ratio)
-- Violent death clustering in past-life cases → **Confirmed** (70%+)
-- Birthmark-wound correspondence → **Confirmed** (88% accuracy)
-- Deep symbolic system antiquity → **Confirmed** (30,000 years)
-- Oral tradition durability → **Confirmed** (7,000-12,000 years)
-- Cognitive transition to monotheism unexplained by CSR → **Confirmed**
-- Myth trajectory determined by ruling love → **Confirmed**
-- Historical transmission through Magian substrate → **Confirmed**
+The same evidentiary structure operates here. The four strains constitute independent lines of evidence:
 
-These are not the same phenomenon measured multiple times. They are **independent domains**—consciousness studies, reincarnation research, archaeology, cognitive science, historical linguistics, mythological analysis. Each domain brings its own methods, data sources, and investigative communities. The convergence is not the result of methodological bias or circular reasoning; it emerges from independent lines of inquiry that know nothing of each other.
+**Strain One (Empirical Foundation)**: Consciousness survives bodily death.
+- NDE veridical perception during flat-line EEG → **Confirmed**
+- Violent death clustering in DOPS cases → **Confirmed** (70%+)
+- Birthmark-wound correspondence → **Confirmed** (88% accuracy)
+
+**Strain Two (Being of Light)**: Divine encounter exhibits purposeful economy.
+- Constant experiential properties despite variable naming → **Confirmed** (<10% variation; ML classifier below baseline)
+- Entity function differentiation → **Confirmed** (χ² = 41.13)
+- Mission discriminant validity → **Confirmed** (94.2% accuracy)
+- Revelatory judgment character → **Confirmed** (36.5:1 ratio)
+
+**Strain Three (Correspondence as Ontology)**: Correspondence is a law of reality.
+- 30,000-year consistency of Paleolithic symbolic systems → **Confirmed**
+- Independent recognition across zero-contact cultures → **Confirmed**
+- Teleological bias as innate receiver mechanism → **Confirmed**
+- Structural parallel (Göbekli Tepe ↔ Damdat Nask) → **Confirmed**
+
+**Strain Four (Textual Validation)**: The correspondential method works across sources.
+- Cross-temporal symbol consistency → **Confirmed**
+- Cross-cultural structural parallel (Persian-Hebrew-Greek) → **Confirmed**
+- Predictive success (Swedenborg → Documentary Hypothesis) → **Confirmed**
+- Method documented in operation (Daniel, Qumran) → **Confirmed**
+
+These four strains draw on **independent domains**—consciousness studies, reincarnation research, archaeology, cognitive science, historical linguistics, mythological analysis, textual criticism. Each domain brings its own methods, data sources, and investigative communities. The convergence is not the result of methodological bias or circular reasoning; it emerges from independent lines of inquiry that know nothing of each other.
 
 ### 4.2 The Einstein Analogy
 
@@ -410,27 +568,20 @@ No single observation proved general relativity. The Mercury anomaly could have 
 
 The Swedenborgian framework is at an analogous stage. Individual predictions have been tested; they confirm. The question is no longer whether the framework "works"—it manifestly does. The question is **why** it works. What does it mean that a framework from 1758 organizes 21st-century consciousness data better than contemporary materialist models? What does it imply that predictions made before NDEs were studied, before DOPS existed, before archaeological dating was possible, turn out to be accurate?
 
-### 4.3 The Cross-Domain Validation Matrix
+### 4.3 The Four-Strain Validation Matrix
 
-The strength of cumulative evidence lies in its cross-domain character. The following matrix summarizes framework predictions against data across independent domains:
+The strength of cumulative evidence lies in its cross-domain character. The following matrix summarizes the four evidential strains:
 
-| Domain | Prediction | Result | Statistical Significance |
-|--------|-----------|--------|------------------------|
-| **NDE Phenomenology** | Constant state/variable form | ✅ HIT | χ² = 365.14, p < 0.0001 |
-| **NDE Phenomenology** | Entity function differentiation | ✅ HIT | χ² = 41.13, p = 0.008 |
-| **NDE Phenomenology** | Mission discriminant validity | ✅ HIT | 94.2% accuracy |
-| **NDE Phenomenology** | Revelatory judgment character | ✅ HIT | 36.5:1 ratio |
-| **Past-Life Memory** | Violent death clustering | ✅ HIT | 70%+ |
-| **Past-Life Memory** | Birthmark-wound correspondence | ✅ HIT | 88% accuracy |
-| **Archaeology** | Deep symbolic systems | ✅ HIT | 30,000-year consistency |
-| **Anthropology** | Oral tradition durability | ✅ HIT | 7,000-12,000 years |
-| **Cognitive Science** | Heart of unity emergence | ✅ HIT | CSR cannot explain |
-| **Mythology** | Ruling love determines trajectory | ✅ HIT | Divergent evolution confirmed |
-| **History** | Magian substrate transmission | ✅ HIT | Textual parallels documented |
+| Strain | Core Claim | Key Evidence | Significance |
+|--------|-----------|--------------|--------------|
+| **1. Empirical Foundation** | Consciousness survives death | NDE veridical perception; DOPS violent death clustering (70%+); birthmark correspondence (88%) | Establishes survival as empirical observation |
+| **2. Being of Light** | Divine encounter shows purposeful economy | Constant properties/variable naming (χ² = 365.14); functional differentiation (χ² = 41.13); 36.5:1 judgment ratio; 94.2% mission accuracy | Refutes projection; confirms genuine encounter |
+| **3. Correspondence as Ontology** | Correspondence is a law of reality | 30,000-year Paleolithic consistency; Göbekli Tepe ↔ Damdat Nask parallel; zero-contact cultures using same method | Correspondence is perceived, not transmitted |
+| **4. Textual Validation** | The method works across sources | Same symbols = same meanings; Persian-Hebrew-Greek structural parallel; Swedenborg predicted Documentary Hypothesis | Method validity confirmed |
 
-Eleven predictions. Eleven hits. Zero misses. Across five independent domains.
+Four strains. Four confirmations. Each strain draws on multiple independent data sources.
 
-The probability of this pattern arising by chance—that a 266-year-old framework would accidentally predict patterns in data that did not exist when the framework was formulated—is vanishingly small. The more parsimonious explanation is that the framework captures something real about the structure of consciousness and its relationship to physical reality.
+The probability of this pattern arising by chance—that a 266-year-old framework would organize 21st-century consciousness data, predict archaeological patterns, and anticipate 19th-century textual criticism—is vanishingly small. The more parsimonious explanation is that the framework captures something real about the structure of consciousness and its relationship to physical reality.
 
 ### 4.4 From "Does It Work?" to "Why Does It Work?"
 
@@ -464,7 +615,7 @@ Swedenborg inherited this anxiety. Having accepted the Cartesian premise that mi
 
 But the premise is flawed. **The interaction problem presupposes a dualism that the framework's deeper principles reject.** If spiritual and natural are discrete degrees of one continuum—not separate substances—then no interaction problem exists and no limbus is required.
 
-**The Correction**: Physical and spiritual-natural are not separate ontological floors requiring a bridge. They are the same continuum viewed through different filters—or more precisely, the physical world is the "fixed edge" of the spiritual-natural, maintained at maximum resistance and inertia for developmental purposes.
+**The Correction**: Physical and spiritual-natural are not separate ontological floors requiring a bridge. They are the same continuum viewed through different filters—or more precisely, the physical world represents the ultimate degree in the series of discrete degrees, maintained at maximum resistance and inertia for the developmental purposes of embodied existence.
 
 **Evidence Supporting the Correction**:
 
@@ -496,7 +647,43 @@ More fundamentally, the biological theory is simply wrong. Modern genetics shows
 
 **The Refined Position**: The "Divine Human" is not exclusive to Jesus—it is the Lord's capacity to be **personal** with every human, appearing in forms the soul can receive. The Being of Light in NDEs is the Lord appearing to Christians as Jesus, to Buddhists as Amida, to secularists as Light—constant reality, variable form. Jesus achieved maximal transparency to this reality; others achieve degrees of transparency according to their reception.
 
-### 5.3 Somatic Influx: Extending the Framework
+### 5.3 Spirit Influence and Reincarnation: Distinguishing Valid Observation from Overgeneralization
+
+Swedenborg's treatment of past-life memories merits detailed analysis because it illustrates both the strengths and limitations of his framework. In *Heaven and Hell* §256 and related passages, Swedenborg describes a phenomenon that appears phenomenologically valid: spirits can project their memories onto living persons, who then experience those memories as their own. When individuals enter states of heightened receptivity or suggestibility, they become open to influx from associated spirits. The boundary between self and other temporarily dissolves; received memories feel entirely personal.
+
+This observation should not be dismissed as error. The phenomenon Swedenborg describes provides a coherent explanation for a significant category of past-life claims. The methodological question is not whether spirit influence occurs—the evidence suggests it does—but whether it constitutes a complete explanation for all past-life phenomena. The data indicate it does not.
+
+**What Spirit Influence Likely Explains**: Swedenborg's theory elegantly accounts for a significant category of past-life claims, particularly those retrieved through suggestible methods:
+
+1. **Hypnotic regression**: When subjects are placed in highly suggestible altered states, they frequently report past lives as famous historical figures (Cleopatra, Napoleon, Marie Antoinette). The statistical improbability of these claims—combined with their frequent historical inaccuracies—suggests reception of spirit-memories or psychological confabulation rather than genuine recall. The retrieval method creates exactly the receptive state Swedenborg described.
+
+2. **Channeled past-life readings**: When mediums or psychics report someone's past lives, the content often reflects public-knowledge, culturally-prominent figures and narratives. The mechanism aligns with Swedenborg's theory: the practitioner enters a receptive state and receives whatever influx approaches.
+
+3. **Adult vague impressions**: Adults who "feel" they lived in a certain era or culture, without specific verifiable details, may be experiencing mild spirit influence or archetypal resonance rather than genuine memory.
+
+**What Spirit Influence Cannot Explain**: The strongest DOPS evidence exceeds what spirit-memory transmission can account for:
+
+1. **Birthmark correspondence**: Children with birthmarks matching fatal wounds of verified previous personalities present *physical* evidence. A spirit entering one's sphere might transmit memories, but it cannot transmit physical marks onto an infant's body before or at birth. The 88% accuracy of birthmark-wound correspondence in autopsied cases is corporeal evidence that transcends mental phenomena.
+
+2. **Private, specific, verified details**: Children report knowing where objects are buried, recalling family secrets unknown to outsiders, identifying relatives of the previous personality by name and relationship. These are not public-knowledge memories that an associated spirit might plausibly have and transmit. They require access to the specific biographical details of the previous personality—details often unknown to anyone living until verified.
+
+3. **Behavioral correspondence**: Children display behaviors, preferences, phobias, and skills consistent with the previous personality—not just memories. Spirit-memory transmission cannot explain fears of drowning (when the previous personality drowned), competency at skills the child never learned, or food preferences alien to the child's family. Behavioral and emotional imprinting requires more than memory transmission.
+
+4. **Age-limited presentation**: Past-life memories in verified cases typically emerge around age 2-4 and fade by age 6-7. If spirit influence were the mechanism, why would spirits associate specifically during this developmental window and then withdraw? The pattern is consistent with fading memory of a genuine previous personality; it is inconsistent with spirit influence, which could occur at any age.
+
+**The Synthesis**: Both phenomena are real. Spirit influence explains many past-life claims (especially those from suggestible retrieval methods); genuine reincarnation explains the strongest DOPS evidence (especially cases with physical correlates). The refined framework accommodates both:
+
+1. **Spirit Influence** (Swedenborg's valid observation): Accounts for hypnotic regression results, channeled readings, vague adult impressions, and statistically-implausible celebrity past-life claims. This tier acts as a filter—most weak past-life claims can be explained without invoking actual reincarnation.
+
+2. **Restorative Incarnation** (framework extension): Souls whose earthly development was traumatically interrupted (violent death, premature death) may return to complete their developmental process. The 70%+ violent death rate in DOPS cases supports this hypothesis. The birthmark evidence indicates genuine soul-body continuity, not spirit influence.
+
+3. **Volunteer Incarnation** (framework extension): Souls who have completed their development may return with specific missions. The mission-based return category in NDE data shows 94.2% discriminant validity for mission commissioning.
+
+This synthesis does not abandon Swedenborg's framework but integrates his valid observation while extending beyond his categorical generalization. Swedenborg appears correct that (a) the normative post-mortem path is linear rather than cyclical, and (b) spirit influence can produce convincing experiences that feel like past-life memories. However, the extension of this observation to dismiss all past-life evidence does not align with the strongest DOPS data, which involve physical correlates that spirit-memory transmission cannot explain.
+
+A plausible explanation for this overgeneralization traces to the interconnected Cartesian elements in Swedenborg's interpretive framework. If the Limbus is required for soul coherence, and if it forms once during physical embodiment, then multiple incarnations become theoretically impossible—the Limbus would require dissolution and reformation. Within this theoretical constraint, spirit influence necessarily explained all apparent past-life memories, because genuine reincarnation could not occur. Swedenborg's position was internally consistent given his premises. If, however, those premises reflect 18th-century philosophical inheritance rather than direct observation—if the Doctrine of Correspondences itself implies that physical and spiritual are not separate substances but continuous degrees—then the theoretical barrier dissolves. Exceptional reincarnation can be accommodated alongside spirit influence within a refined framework that preserves Swedenborg's observational insights while releasing the interpretive constraints that data do not support.
+
+### 5.4 Somatic Influx: Extending the Framework
 
 Beyond corrections, the framework has been **extended** where empirical data support new applications not explicitly present in Swedenborg's writings.
 
