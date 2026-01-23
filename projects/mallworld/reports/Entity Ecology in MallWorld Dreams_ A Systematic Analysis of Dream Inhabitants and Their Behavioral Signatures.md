@@ -1,37 +1,28 @@
 # Entity Ecology in MallWorld Dreams: A Systematic Analysis of Dream Inhabitants and Their Behavioral Signatures
 
-**Analysis Date**: January 20, 2026  
-**Dataset**: MallWorld Reddit Dream Reports (r/TheMallWorld)  
-**Analysis Type**: Entity-Centered Dream Phenomenology
-
----
-
 ## Abstract
 
-**Background**: Dreams contain various entities—people, creatures, and presences—that interact with dreamers and shape dream experiences. The MallWorld phenomenon, characterized by recurring liminal retail spaces, provides a unique corpus for studying dream entity ecology.
+Dreams are populated by entities—people, creatures, and presences—whose characteristics and behaviors shape the dreamer's experience. The MallWorld phenomenon, in which thousands of individuals report recurring dreams of labyrinthine commercial spaces, provides an unusually consistent corpus for investigating how different entity types relate to environmental conditions, atmospheric qualities, and behavioral outcomes.
 
-**Methods**: We analyzed 3,704 entity encounters across 1,926 dream reports using chi-square tests, standardized residuals, lift analysis, and t-tests to examine entity-location associations, entity-atmosphere correlations, behavioral profiles, co-occurrence patterns, and impact on dream characteristics.
+This study analyzed 3,704 entity encounters across 1,926 dream reports from the r/TheMallWorld subreddit. Entity-atmosphere associations proved extraordinarily strong (χ² = 792, df = 99, p < 10⁻¹⁰⁸), with threat entities showing massive correlation with threatening atmospheres (z = +14.86). Entity-location associations were also highly significant (χ² = 330, df = 121, p < 10⁻²¹), revealing that different entity types occupy distinct spatial niches within the dream geography. Five entity archetypes emerged from the data: danger bringers (threats and creatures) who drive escape behaviors at nearly triple baseline rates; chaos generators (crowds) who disrupt public spaces; oppressive presences (authority figures) who create institutional pressure; social connectors (friends and known persons) who facilitate interpersonal engagement; and peaceful visitors (deceased) who uniquely generate welcoming atmospheres with zero conflict.
 
-**Results**: Entity-atmosphere associations were highly significant (χ² = 792, df = 99, p < 10⁻¹⁰⁸), with threat entities showing massive correlation with threatening atmospheres (z = +14.86). Entity-location associations were also significant (χ² = 330, df = 121, p < 10⁻²¹). Distinct entity archetypes emerged: threats as danger-bringers driving escape behaviors (+19.4 percentage points above baseline), crowds as chaos generators, authority as oppressive presence, and deceased as uniquely positive visitors (welcoming atmospheres, 0% conflict). Threat presence increased dream complexity by 55% (t = 9.49, p < 0.001).
+The deceased entity type stands out as phenomenologically distinct. While all other categories trend toward negative or neutral atmospheres, deceased entities appear predominantly in intimate domestic settings (z = +7.21 for houses), generate welcoming or peaceful atmospheres (37% combined versus 8% baseline), and show no recorded conflict interactions. This pattern aligns with visitation dream phenomenology in the broader literature and suggests that encounters with the deceased serve qualitatively different functions than typical dream content. These findings demonstrate that MallWorld dreams, despite their strange shared geography, follow comprehensible patterns in their entity populations—patterns consistent with correspondential frameworks in which spiritual beings occupy differentiated functional roles.
 
-**Conclusions**: MallWorld dreams exhibit coherent entity ecology where different entity types occupy distinct environmental niches, generate characteristic atmospheres, and drive specific behavioral responses. The deceased entity type uniquely breaks the pattern of negativity, suggesting qualitatively different phenomenological significance.
-
-**Keywords**: dream entities, MallWorld, dream phenomenology, entity-atmosphere correlation, dream ecology
+**Keywords**: dream entities, MallWorld, dream phenomenology, entity-atmosphere correlation, dream ecology, correspondential structure
 
 ---
 
 ## Data Provenance
 
-| Attribute | Value |
-|-----------|-------|
-| **Source** | r/TheMallWorld subreddit |
-| **Collection Period** | Through January 2026 |
-| **Total Dreams** | 1,926 |
-| **Total Entity Encounters** | 3,704 |
-| **Dreams with Entities** | 1,278 (66.4%) |
-| **Entity Types** | 18 distinct categories |
-| **Extraction Model** | GPT-5.2 via Azure OpenAI |
-| **Analysis Tools** | Python (pandas, scipy, numpy) |
+| Item | Value |
+|------|-------|
+| Source | r/TheMallWorld subreddit |
+| Collection period | Through January 2026 |
+| Total dreams | 1,926 |
+| Total entity encounters | 3,704 |
+| Dreams with entities | 1,278 (66.4%) |
+| Entity types | 18 distinct categories |
+| Extraction model | GPT-5.2 via Azure OpenAI |
 
 ---
 
@@ -39,23 +30,21 @@
 
 ### 1.1 Background
 
-Dream entities—the characters, creatures, and presences that populate dream worlds—represent a central phenomenon in understanding dream phenomenology. Within the Swedenborgian framework, entities in dreams and visions are not psychological projections but real spiritual beings with differentiated functions. Understanding who appears in dreams and what they do reveals the nature of spiritual influx and the states being represented.
+The entities that populate dreams—strangers encountered in corridors, threatening figures who pursue, deceased relatives who visit—represent one of the most phenomenologically salient aspects of dream experience. Who appears in a dream often determines what happens in it. Yet systematic analysis of dream entity ecology remains relatively rare, in part because most dream corpora lack the consistency needed to isolate entity-specific effects from environmental variation.
 
-The MallWorld phenomenon presents a unique opportunity for entity analysis. These dreams share common spatial characteristics (liminal retail environments) but vary in their inhabitants. This consistency allows isolation of entity-specific effects from environmental confounds.
+The MallWorld phenomenon offers an unusual opportunity to address this limitation. These dreams share common spatial characteristics—liminal retail environments with distinctive architectural features—while varying substantially in their inhabitants. This consistency allows investigation of how different entity types relate to atmospheric conditions, behavioral patterns, and dream outcomes without the confounding influence of radically different dream settings. If entities in MallWorld dreams show systematic associations with particular environments, atmospheres, and behaviors, this would suggest that dream phenomenology follows regular patterns rather than emerging from purely idiosyncratic psychological processes.
+
+Within correspondential frameworks, entities encountered in dreams and visions are understood not as arbitrary psychological projections but as beings with differentiated functions. Creatures express affections in visible form; authority figures carry teaching or governing functions; the deceased maintain real relational connections that transcend physical death. From this perspective, analyzing which entities appear where, what atmospheres accompany them, and what behaviors they elicit is not merely cataloguing dream furniture but mapping the functional ecology of spiritual experience.
 
 ### 1.2 Research Questions
 
-This analysis addresses five primary questions:
-
-1. **Spatial Distribution**: Where do different entities appear within MallWorld geography?
-2. **Atmospheric Correlation**: What emotional atmospheres accompany different entity types?
-3. **Behavioral Profiles**: What interactions characterize different entity encounters?
-4. **Co-occurrence Patterns**: Which entities appear together, and which avoid each other?
-5. **Dream Impact**: How does entity presence affect overall dream characteristics?
+This analysis addresses five primary questions. First, where do different entities appear within MallWorld geography? Second, what emotional atmospheres accompany different entity types? Third, what behavioral patterns characterize encounters with different entities? Fourth, which entities appear together, and which avoid each other? Fifth, how does the presence of particular entities affect overall dream characteristics such as complexity and threat level?
 
 ### 1.3 Theoretical Framework
 
-We approach entity ecology from a correspondential perspective, treating entity-environment-behavior associations as expressions of underlying spiritual realities. In this framework, entities are not arbitrary dream characters but beings occupying functional roles—creatures express affections, authorities carry teaching/governing functions, deceased maintain real relational connections. The analysis seeks to identify natural "niches" that different entity types occupy within the MallWorld dream ecosystem, consistent with the doctrine that spiritual beings have differentiated functions.
+We approach entity ecology from a correspondential perspective, treating entity-environment-behavior associations as expressions of underlying qualitative states rather than as arbitrary conjunctions. In this framework, the statistical regularities we observe—if they exist—are not mere correlations but reflections of organic relationships. A threat entity does not happen to appear in threatening atmospheres; it expresses the threatening quality that the atmosphere also expresses. A guide does not coincidentally help with tasks; its functional nature is to guide.
+
+This perspective generates specific predictions. Entity types should show non-random spatial distributions, clustering in locations whose characteristics correspond to their natures. Entity-atmosphere associations should be strong and consistent, since both entity and atmosphere express the same underlying state. Behavioral profiles should differ systematically by entity type, with each category driving characteristic interaction patterns. And the deceased, if they represent genuine continued bonds rather than mere memory traces, should show qualitatively different phenomenological signatures than other entity types.
 
 ---
 
@@ -63,33 +52,15 @@ We approach entity ecology from a correspondential perspective, treating entity-
 
 ### 2.1 Data Sources
 
-Dream reports were collected from r/TheMallWorld subreddit and processed through structured extraction using GPT-5.2. Each dream was decomposed into:
-- **Locations** (n = 8,707): Places visited with atmospheric and physical attributes
-- **Entities** (n = 3,704): Characters encountered with type, demeanor, and role
-- **Interactions** (n = 6,075): Actions taken with type and outcome
-- **Connections** (n = 4,600): Transitions between locations
+Dream reports were collected from the r/TheMallWorld subreddit and processed through structured extraction using Azure OpenAI's GPT-5.2 model with a detailed questionnaire schema. Each dream was decomposed into discrete components: 8,707 locations visited with atmospheric and physical attributes; 3,704 entities encountered with type, demeanor, and role; 6,075 interactions performed with type and outcome; and 4,600 connections between locations recording spatial transitions.
 
 ### 2.2 Entity Classification
 
-Entities were classified into 18 types:
-- **Social**: stranger, crowd, friend, family_member, known_person, coworker
-- **Authority**: authority figures (security, teachers, managers)
-- **Threat**: hostile or dangerous entities
-- **Supernatural**: deceased, guide, shadow, watcher, faceless
-- **Non-human**: creature, mannequin
-- **Other**: child, other, none
+Entities were classified into eighteen types organized by category. Social entities included strangers, crowds, friends, family members, known persons, and coworkers. Authority figures comprised security personnel, teachers, managers, and similar institutional representatives. Threat entities were those described as hostile or dangerous. Supernatural entities included the deceased, guides, shadows, watchers, and faceless presences. Non-human entities encompassed creatures and mannequins. A residual category captured children, unclassifiable others, and explicit absences.
 
-### 2.3 Statistical Analyses
+### 2.3 Statistical Analysis
 
-| Analysis | Method | Purpose |
-|----------|--------|---------|
-| Entity × Location | Chi-square, standardized residuals | Spatial distribution patterns |
-| Entity × Atmosphere | Chi-square, standardized residuals | Emotional environment associations |
-| Entity × Interaction | Cross-tabulation, percentages | Behavioral profile construction |
-| Entity Co-occurrence | Lift analysis | Pair-wise association patterns |
-| Entity Impact | Independent t-tests | Dream characteristic comparison |
-
-Significance threshold: α = 0.05. Standardized residuals > |2.0| indicate significant associations. Lift > 1.5 or < 0.7 indicates meaningful co-occurrence deviation.
+Association between categorical variables was assessed using chi-square tests of independence. Effect sizes for specific cell associations were quantified using standardized residuals, with values exceeding ±2.0 indicating significant over- or under-representation. Co-occurrence patterns were analyzed using lift—the ratio of observed co-occurrence to that expected by chance—with values above 1.5 or below 0.7 indicating meaningful deviation from independence. The impact of entity presence on continuous dream characteristics was assessed using independent-samples t-tests. All tests were two-tailed with α = 0.05.
 
 ---
 
@@ -97,328 +68,85 @@ Significance threshold: α = 0.05. Standardized residuals > |2.0| indicate signi
 
 ### 3.1 Entity Census
 
-| Entity Type | Count | Percentage | Dreams Present |
-|-------------|-------|------------|----------------|
-| stranger | 912 | 24.6% | 529 |
-| crowd | 808 | 21.8% | 566 |
-| authority | 469 | 12.7% | 280 |
-| threat | 309 | 8.3% | 190 |
-| known_person | 245 | 6.6% | 151 |
-| other | 236 | 6.4% | 167 |
-| family_member | 224 | 6.0% | 138 |
-| creature | 194 | 5.2% | 130 |
-| friend | 98 | 2.6% | 72 |
-| child | 73 | 2.0% | 52 |
-| deceased | 56 | 1.5% | 33 |
-| guide | 32 | 0.9% | 17 |
-| watcher | 14 | 0.4% | — |
-| shadow | 12 | 0.3% | — |
-| coworker | 11 | 0.3% | — |
-| mannequin | 5 | 0.1% | — |
-| faceless | 3 | 0.1% | — |
+Two-thirds of MallWorld dreams (66.4%, n = 1,278) contained at least one entity encounter. The average dream with entities contained 2.9 distinct entity types (median = 2, maximum = 19), indicating that populated dreams typically feature multiple categories of inhabitants.
 
-**Critical Finding**: Two-thirds of MallWorld dreams (66.4%) contain entity encounters, with **strangers and crowds dominating** (46.4% combined). The average dream with entities contains **2.9 entity types** (median = 2, max = 19).
+The entity population was dominated by strangers and crowds, which together accounted for 46.4% of all encounters. Strangers appeared 912 times across 529 dreams (24.6% of encounters), while crowds appeared 808 times across 566 dreams (21.8%). Authority figures were the third most common category, appearing 469 times in 280 dreams (12.7%). Threat entities, despite their phenomenological salience, accounted for only 8.3% of encounters (n = 309 across 190 dreams).
 
----
+At the other end of the frequency distribution, several entity types appeared rarely but showed distinctive patterns warranting analysis. The deceased appeared only 56 times across 33 dreams (1.5% of encounters), guides appeared 32 times across 17 dreams (0.9%), and supernatural categories such as watchers, shadows, and faceless entities appeared fewer than 15 times each. These low-frequency categories proved particularly interesting precisely because their rarity made their distinctive signatures more striking.
 
 ### 3.2 Entity-Location Associations
 
-Chi-square test for entity type × location type association:
+A chi-square test revealed highly significant association between entity type and location type (χ² = 330.26, df = 121, p = 2.55 × 10⁻²¹). Entity spatial distribution is emphatically non-random; different entities occupy distinct environmental niches within the MallWorld geography.
 
-| Statistic | Value |
-|-----------|-------|
-| χ² | 330.26 |
-| df | 121 |
-| p-value | 2.55 × 10⁻²¹ |
+The strongest location specificity belonged to deceased entities, who showed massive over-representation in houses (z = +7.21). Of 56 deceased encounters, 16 occurred in domestic settings—intimate, personal spaces rather than the liminal commercial environments that define typical MallWorld geography. This pattern suggests that encounters with the deceased follow different spatial logic than encounters with other entity types, gravitating toward domestic intimacy rather than public liminality.
 
-**Finding**: Entity spatial distribution is highly non-random.
+Other significant positive associations included creatures in "other" locations (z = +4.51), suggesting non-human entities occupy peripheral or unusual spaces; strangers in mall stores (z = +3.78) and restaurants (z = +3.26), indicating concentration in commercial and service environments; crowds in city streets (z = +3.02) and mall theaters (z = +2.68), reflecting public gathering spaces; and authority figures in schools (z = +2.61), indicating institutional settings.
 
-#### 3.2.1 Positive Associations (Entity Concentrates in Location)
-
-| Entity | Location | z-score | Count |
-|--------|----------|---------|-------|
-| deceased | house | **+7.21** | 16 |
-| creature | other | +4.51 | 83 |
-| stranger | mall_store | +3.78 | 92 |
-| stranger | restaurant | +3.26 | 40 |
-| crowd | city_street | +3.02 | 43 |
-| crowd | mall_theater | +2.68 | 22 |
-| authority | school | +2.61 | 20 |
-| known_person | house | +2.23 | 22 |
-| friend | mall | +2.19 | 18 |
-| threat | house | +2.14 | 28 |
-
-**Critical Finding**: **Deceased entities show the strongest location specificity** (z = +7.21), appearing predominantly in houses—domestic, intimate spaces rather than the liminal commercial environments typical of MallWorld.
-
-#### 3.2.2 Negative Associations (Entity Avoids Location)
-
-| Entity | Location | z-score | Count |
-|--------|----------|---------|-------|
-| crowd | mall_store | -2.63 | 34 |
-| creature | mall | -2.45 | 11 |
-| crowd | house | -2.25 | 30 |
-| stranger | city_street | -2.10 | 20 |
-
-**Finding**: Creatures avoid malls (z = -2.45), suggesting non-human entities occupy peripheral or liminal-liminal spaces rather than central commercial areas.
-
----
+Significant negative associations revealed spaces that certain entities avoid. Crowds were under-represented in mall stores (z = -2.63) and houses (z = -2.25), preferring open public spaces over enclosed commercial or domestic ones. Creatures were under-represented in malls proper (z = -2.45), suggesting that non-human entities occupy the margins of MallWorld geography rather than its commercial core. Strangers were under-represented in city streets (z = -2.10), concentrating instead in interior commercial spaces.
 
 ### 3.3 Entity-Atmosphere Associations
 
-Chi-square test for entity type × atmosphere association:
+The relationship between entity type and atmospheric quality proved to be the strongest statistical association in the entire analysis. A chi-square test revealed extraordinarily high significance (χ² = 792.02, df = 99, p = 1.33 × 10⁻¹⁰⁸). Entity type is a powerful predictor of the emotional environment in which encounters occur—or, equivalently, entities and atmospheres express the same underlying qualitative states.
 
-| Statistic | Value |
-|-----------|-------|
-| χ² | **792.02** |
-| df | 99 |
-| p-value | 1.33 × 10⁻¹⁰⁸ |
+Threat entities showed the most extreme atmospheric concentration. Over 71% of threat encounters occurred in threatening atmospheres, compared to approximately 19% baseline for the corpus as a whole. The standardized residual for the threat-threatening cell (z = +14.86) was the single strongest association identified in any analysis—a magnitude that indicates not mere correlation but near-definitional relationship. Threat entities do not merely appear in threatening atmospheres more often than expected; they essentially define the threatening category.
 
-**Critical Finding**: Entity-atmosphere association is **the strongest statistical relationship** identified in this analysis, indicating that entity type is a powerful predictor of emotional environment.
+Other entity types showed characteristic atmospheric signatures. Crowds strongly associated with chaotic atmospheres (z = +7.05, 26.9% chaotic versus 15% baseline). Authority figures associated with oppressive atmospheres (z = +4.86, 17.8% oppressive). Creatures associated with threatening (z = +4.37) and eerie (z = +2.28) atmospheres. Strangers associated with uncomfortable (z = +4.16, 20.0%) and neutral (z = +3.96, 18.9%) atmospheres—the ambient inhabitants of liminal space, neither welcoming nor threatening.
 
-#### 3.3.1 Atmosphere Distribution by Entity Type (Percentages)
+Positive entities showed the opposite pattern. Friends strongly associated with welcoming atmospheres (z = +3.39, 20.0% welcoming versus 6.2% baseline). Guides associated with welcoming atmospheres (z = +2.96, 26.1% welcoming). Family members associated with welcoming atmospheres (z = +2.48, 14.9% welcoming). Known persons associated with nostalgic atmospheres (z = +2.92).
 
-| Entity | Threatening | Chaotic | Uncomfortable | Neutral | Welcoming | Peaceful |
-|--------|-------------|---------|---------------|---------|-----------|----------|
-| threat | **71.6%** | 6.6% | 6.3% | 1.5% | 1.8% | 0.4% |
-| creature | 45.9% | 9.8% | 9.8% | 5.7% | 4.1% | 5.7% |
-| guide | 39.1% | 0.0% | 0.0% | 4.3% | **26.1%** | 13.0% |
-| other | 33.5% | 10.1% | 7.6% | 8.2% | 4.4% | 3.2% |
-| authority | 30.6% | 10.3% | 17.8% | 11.7% | 4.7% | 2.5% |
-| friend | 25.7% | 15.7% | 5.7% | 14.3% | **20.0%** | 1.4% |
-| child | 22.4% | 8.6% | 12.1% | 15.5% | 5.2% | 1.7% |
-| family_member | 19.5% | 7.8% | 16.2% | 13.0% | 14.9% | 2.6% |
-| crowd | 17.2% | **26.9%** | 10.9% | 15.6% | 9.6% | 1.8% |
-| stranger | 13.8% | 15.8% | **20.0%** | 18.9% | 11.5% | 2.9% |
-| known_person | 12.8% | 22.3% | 18.9% | 16.2% | 6.8% | 1.4% |
-| **deceased** | **7.4%** | 3.7% | 7.4% | 11.1% | **22.2%** | **14.8%** |
+The deceased entity type showed the most distinctive atmospheric profile in the corpus. Only 7.4% of deceased encounters occurred in threatening atmospheres—the lowest rate of any entity type. Conversely, 22.2% occurred in welcoming atmospheres and 14.8% in peaceful atmospheres, yielding a combined positive atmosphere rate of 37%—more than four times the baseline rate of approximately 8%. The deceased uniquely break the pattern of negativity that characterizes most entity types, generating instead the most benevolent atmospheric signature in the data.
 
-**Critical Finding**: **Deceased entities uniquely break the negative pattern**. They have the lowest threatening atmosphere rate (7.4%) and the highest welcoming (22.2%) and peaceful (14.8%) rates of any entity type.
-
-#### 3.3.2 Strongest Entity-Atmosphere Associations
-
-**Positive Associations** (z > 2.0):
-
-| Entity | Atmosphere | z-score | Count |
-|--------|------------|---------|-------|
-| threat | threatening | **+14.86** | 194 |
-| crowd | chaotic | +7.05 | 162 |
-| other | eerie | +5.39 | 39 |
-| authority | oppressive | +4.86 | 50 |
-| creature | threatening | +4.37 | 56 |
-| stranger | uncomfortable | +4.16 | 129 |
-| stranger | neutral | +3.96 | 122 |
-| friend | welcoming | +3.39 | 14 |
-| child | eerie | +3.06 | 14 |
-| guide | welcoming | +2.96 | 6 |
-| known_person | nostalgic | +2.92 | 8 |
-| family_member | welcoming | +2.48 | 23 |
-| deceased | welcoming | +2.41 | 6 |
-| creature | peaceful | +2.28 | 7 |
-| creature | eerie | +2.28 | 21 |
-
-**Negative Associations** (z < -2.0):
-
-| Entity | Atmosphere | z-score | Count |
-|--------|------------|---------|-------|
-| stranger | threatening | **-6.25** | 89 |
-| crowd | threatening | -4.41 | 104 |
-| threat | welcoming | -3.73 | 5 |
-| threat | chaotic | -3.59 | 18 |
-| known_person | threatening | -3.39 | 19 |
-| threat | uncomfortable | -3.25 | 17 |
-
-**Critical Finding**: The threat-threatening correlation (z = +14.86) is **the single strongest association in the entire dataset**, suggesting that threat entities don't just appear in threatening environments—they likely generate or define them.
-
----
+Negative associations reinforced these patterns. Strangers showed strong under-representation in threatening atmospheres (z = -6.25), consistent with their role as neutral ambient presences. Crowds were under-represented in threatening atmospheres (z = -4.41). Threat entities were under-represented in welcoming (z = -3.73), chaotic (z = -3.59), and uncomfortable (z = -3.25) atmospheres—they concentrate specifically in the threatening category rather than spreading across negative valences.
 
 ### 3.4 Entity Behavioral Profiles
 
-#### 3.4.1 Interaction Type Distribution by Entity Presence (Percentages)
+Different entity types elicit markedly different behavioral responses. Threat entities massively shifted interaction profiles toward escape behavior: 28.9% of interactions in threat-present dreams involved escape, compared to approximately 9.6% baseline—a threefold increase. Conflict interactions also elevated (10.6% versus 4.7% baseline), while normal activities decreased proportionally: navigation dropped from 21% to 15%, observation from 22.5% to 16.8%, social interaction from 13.8% to 9.0%, and task completion from 14.1% to 9.5%. The presence of threat entities fundamentally reorganizes dream behavior around flight and confrontation.
 
-| Entity | Observation | Navigation | Task | Social | Escape | Search | Conflict | Transaction |
-|--------|-------------|------------|------|--------|--------|--------|----------|-------------|
-| threat | 16.8% | 15.0% | 9.5% | 9.0% | **28.9%** | 5.5% | 10.6% | 2.3% |
-| other | 23.9% | 13.7% | 12.7% | 14.2% | 15.2% | 7.7% | 8.0% | 2.2% |
-| creature | 23.4% | 15.8% | 15.3% | 13.0% | 12.3% | 7.1% | 7.9% | 3.0% |
-| child | 22.2% | 11.9% | 17.2% | 17.5% | 12.8% | 8.1% | 7.2% | 2.8% |
-| deceased | 22.3% | 17.2% | 12.1% | **24.2%** | 9.6% | 10.2% | **0.0%** | 3.2% |
-| guide | 21.7% | 13.0% | **18.5%** | 21.7% | 13.0% | 3.3% | 5.4% | 1.1% |
-| crowd | 21.7% | 17.3% | 13.4% | 15.3% | 13.4% | 7.0% | 7.1% | 2.6% |
-| stranger | 19.2% | 15.0% | 13.5% | 19.9% | 11.2% | 7.5% | 7.0% | 4.3% |
-| known_person | 19.4% | 13.2% | 12.8% | **22.4%** | 10.0% | 9.2% | 6.0% | 4.4% |
-| family_member | 18.2% | 16.8% | 13.0% | 17.7% | 11.1% | 9.6% | 6.9% | 3.4% |
-| authority | 18.1% | 15.4% | 14.2% | 13.3% | 15.4% | 6.9% | **10.3%** | 4.2% |
-| friend | 16.3% | 13.9% | 13.0% | **21.8%** | 12.4% | 9.1% | 7.3% | 5.1% |
+Deceased entities showed the opposite pattern. Social interaction was their dominant behavioral mode (24.2% versus 13.8% baseline), and they showed the most striking negative finding in the behavioral analysis: zero conflict interactions across 56 encounters. This is not merely low conflict—it is complete absence. Whatever deceased entities are doing in MallWorld dreams, it does not involve opposition or struggle with the dreamer.
 
-**Critical Finding**: **Threat entities massively shift behavioral profiles toward escape** (28.9% vs ~10% baseline). Deceased entities show the highest social interaction rate (24.2%) with **zero conflict**—a unique behavioral signature.
+Guides showed elevated task interaction rates (18.5%, the highest of any entity type), consistent with a functional helper role. Friends and known persons showed elevated social interaction (21.8% and 22.4% respectively). Authority figures showed elevated conflict (10.3%), consistent with their role as institutional representatives whose interests may oppose those of the dreamer.
 
-#### 3.4.2 Interaction Success Rates by Entity Presence
-
-| Entity | Success Rate | Sample Size |
-|--------|--------------|-------------|
-| friend | **87.4%** | 143 |
-| guide | 83.3% | 48 |
-| creature | 82.4% | 272 |
-| child | 79.5% | 151 |
-| deceased | 78.6% | 70 |
-| stranger | 78.1% | 1,121 |
-| crowd | 77.9% | 1,050 |
-| other | 76.9% | 338 |
-| known_person | 75.3% | 295 |
-| threat | 74.3% | 405 |
-| authority | 74.1% | 672 |
-| family_member | **70.3%** | 283 |
-
-**Finding**: **Friends predict highest success rates** (87.4%), while **family members predict lowest** (70.3%)—a potentially meaningful inversion of expected support relationships.
-
----
+Interaction success rates also varied by entity presence. Friends predicted the highest success rates (87.4% of interactions succeeded), followed by guides (83.3%) and creatures (82.4%). At the other end, family members predicted the lowest success rates (70.3%)—a counterintuitive finding suggesting that family presence introduces complexity or stakes that reduce straightforward success. Authority figures (74.1%) and threat entities (74.3%) showed similarly reduced success rates.
 
 ### 3.5 Entity Co-occurrence Patterns
 
-Using lift analysis (observed co-occurrence / expected by random chance):
+Lift analysis revealed which entity types appear together more or less often than chance would predict. Family-related entities showed strong positive co-occurrence: family members and friends appeared together at 2.32 times the expected rate; children and family members at 1.78 times expected; children and authority figures at 1.58 times expected. When dreams invoke family themes, they tend to include multiple related entity types.
 
-#### 3.5.1 Positive Co-occurrence (Lift > 1.5)
+More striking were the negative co-occurrences. Creatures and threats avoided each other (lift = 0.67), appearing together only two-thirds as often as independence would predict. This suggests that these two entity types represent different threat paradigms—creatures as ambient environmental danger, threats as intentional pursuing danger—that rarely co-occur in the same dream scenario.
 
-| Entity Pair | Lift | Co-occurrences | Base Rates |
-|-------------|------|----------------|------------|
-| family_member + friend | **2.32x** | 18 | 10.8%, 5.6% |
-| child + other | 1.91x | 13 | 4.1%, 13.1% |
-| child + family_member | 1.78x | 10 | 4.1%, 10.8% |
-| authority + child | 1.58x | 18 | 21.9%, 4.1% |
-
-**Finding**: Family contexts cluster together—family members, friends, and children co-occur more than expected, suggesting dream scenarios that invoke family-related themes tend to include multiple related entities.
-
-#### 3.5.2 Negative Co-occurrence (Lift < 0.7)
-
-| Entity Pair | Lift | Co-occurrences | Base Rates |
-|-------------|------|----------------|------------|
-| creature + threat | **0.67x** | 13 | 10.2%, 14.9% |
-| crowd + deceased | 0.68x | 10 | 44.3%, 2.6% |
-
-**Critical Finding**: **Creatures and threats avoid each other** (lift = 0.67). These may represent different threat paradigms—creatures as environmental/ambient danger vs. threats as intentional, pursuing danger. **Deceased avoid crowds** (lift = 0.68), appearing in intimate rather than public contexts.
-
----
+Deceased entities avoided crowds (lift = 0.68), appearing together only two-thirds as often as expected. This reinforces the spatial finding that deceased entities appear in intimate rather than public contexts. When the deceased visit, they do so privately, not in the midst of crowds.
 
 ### 3.6 Entity Impact on Dream Characteristics
 
-Comparing dreams with vs. without each entity type:
+The presence of particular entity types significantly altered overall dream characteristics. Dreams containing threat entities were substantially more complex and more dangerous than dreams without them. Dreams with threats averaged 5.35 locations versus 4.43 without (t = 3.00, p = 0.003), 3.13 connections versus 2.31 without (t = 4.14, p < 0.001), and 4.66 interactions versus 2.99 without (t = 9.49, p < 0.001). Most dramatically, threatening atmospheres appeared in 35.3% of locations in threat-present dreams versus only 6.7% in threat-absent dreams (t = 18.27, p < 0.001)—a 5.3-fold increase.
 
-#### 3.6.1 Threat Entity Impact
+Authority figures predicted the most complex dreams overall: 5.95 average locations, 3.42 connections, and 5.02 interactions. These dreams were moderately more threatening (13.0% versus 8.9%, t = 2.84, p = 0.005) but showed institutional complexity rather than raw danger.
 
-| Metric | With Threat (n=190) | Without (n=1,736) | t-statistic | p-value |
-|--------|---------------------|-------------------|-------------|---------|
-| Locations | 5.35 | 4.43 | 3.00 | 0.003 |
-| Connections | 3.13 | 2.31 | 4.14 | < 0.001 |
-| Interactions | **4.66** | **2.99** | **9.49** | **< 0.001** |
-| % Threatening | **35.3%** | **6.7%** | **18.27** | **< 0.001** |
+Family member presence showed a paradoxical pattern. While one might expect family to provide safety, family-present dreams were significantly more threatening (15.3% threatening atmospheres versus 9.1%, t = 3.21, p = 0.001) and showed the lowest interaction success rates (70.3%). Dreams involving family carry elevated stakes that translate into greater threat and reduced success.
 
-**Critical Finding**: Threat presence increases threatening atmosphere **5.3-fold** (35.3% vs 6.7%) and interaction count by **55%** (4.66 vs 2.99). Dreams with threats are significantly more complex and more dangerous.
+### 3.7 The Threat Entity Deep Analysis
 
-#### 3.6.2 Authority Entity Impact
+Given the centrality of threat entities to dream dynamics, detailed analysis revealed their operational profile. Threats appeared across diverse locations but showed significant concentration in houses (z = +2.14)—domestic intrusion represents a significant threat modality, with 9.3% of threat encounters occurring in home settings. Other common threat locations included malls (16.9%), warehouses (4.3%), and parking lots (2.6%).
 
-| Metric | With Authority (n=280) | Without (n=1,646) | t-statistic | p-value |
-|--------|------------------------|-------------------|-------------|---------|
-| Locations | 5.95 | 4.28 | 6.47 | < 0.001 |
-| Connections | 3.42 | 2.21 | 7.26 | < 0.001 |
-| Interactions | 5.02 | 2.84 | 15.16 | < 0.001 |
-| % Threatening | 13.0% | 8.9% | 2.84 | 0.005 |
+The atmospheric shift when threats appear is dramatic. Threatening atmospheres increased from 19.3% baseline to 62.8% when threats were present—a 43.5 percentage point elevation. Neutral atmospheres dropped from 9.5% to 1.3%, welcoming from 6.2% to 1.6%, peaceful from 1.8% to 0.3%. Threat presence essentially purges positive and neutral atmospheres from the dream environment.
 
-**Finding**: Authority figures predict the **most complex dreams** (5.95 locations, 5.02 interactions on average).
+Behaviorally, escape behavior nearly tripled when threats appeared (28.9% versus 9.6%), while conflict more than doubled (10.6% versus 4.7%). Normal activities—navigation, observation, social interaction, task completion—all decreased by 4-6 percentage points each. The presence of threat entities fundamentally reorganizes dream phenomenology around danger and response to danger.
 
-#### 3.6.3 Family Member Impact
+### 3.8 The Deceased Entity Analysis
 
-| Metric | With Family (n=138) | Without (n=1,788) | t-statistic | p-value |
-|--------|---------------------|-------------------|-------------|---------|
-| Locations | 5.16 | 4.47 | 1.93 | 0.053 |
-| Connections | 2.88 | 2.35 | 2.28 | 0.023 |
-| Interactions | 4.70 | 3.04 | 8.12 | < 0.001 |
-| % Threatening | **15.3%** | **9.1%** | **3.21** | **0.001** |
+The deceased entity type warranted special attention because it showed qualitatively different patterns than all other categories. While other entities trend toward negative or neutral atmospheres, deceased entities showed the lowest threatening atmosphere rate (7.4% versus 19.3% baseline), the highest welcoming rate (22.2% versus 6.2% baseline), and the highest peaceful rate (14.8% versus 1.8% baseline).
 
-**Critical Finding**: **Family member presence elevates threat levels** (15.3% vs 9.1%, p = 0.001)—the opposite of expected protective effects.
+The behavioral signature was equally distinctive. Social interaction was the primary mode (24.2%), but the most striking finding was the complete absence of conflict—0.0% across all deceased encounters, compared to 4.7% baseline. This is not statistical noise; it is systematic absence. Deceased entities engage socially without opposition.
 
----
+Spatially, deceased entities concentrated in houses (z = +7.21)—domestic settings rather than the commercial liminal spaces typical of MallWorld. They avoided crowds (lift = 0.68), appearing in intimate rather than public contexts. Their interaction success rate was solid (78.6%), above the corpus average.
 
-### 3.7 Threat Entity Deep Analysis
+This constellation of features—domestic settings, positive atmospheres, social engagement without conflict, avoidance of crowds—is consistent with visitation dream phenomenology in the broader literature. Dreams of the deceased appear to serve different functions than typical dreams, potentially involving continued bonds, resolution, or communication that transcends ordinary dream content.
 
-Given the centrality of threat entities to dream dynamics, detailed analysis:
+### 3.9 The Guide Entity Analysis
 
-#### 3.7.1 Threat Location Distribution
+Despite low frequency (n = 32), guides showed a distinctive and paradoxical pattern. Their atmospheric profile combined threatening (39%) and welcoming (26%) atmospheres—seemingly contradictory but functionally coherent. Guides appear when help is needed, which often means when circumstances are threatening; yet their presence brings welcome assistance, generating the welcoming quality.
 
-| Location | Count | Percentage |
-|----------|-------|------------|
-| other | 84 | 27.8% |
-| mall | 51 | 16.9% |
-| house | 28 | 9.3% |
-| mall_store | 13 | 4.3% |
-| warehouse | 13 | 4.3% |
-| city_street | 11 | 3.6% |
-| parking_lot | 8 | 2.6% |
-| restaurant | 8 | 2.6% |
-| school | 7 | 2.3% |
-| forest | 6 | 2.0% |
-
-**Finding**: Threats appear across diverse locations but show elevated rates in **houses** (z = +2.14)—domestic intrusion is a significant threat modality.
-
-#### 3.7.2 Threat Atmosphere Profile
-
-| Atmosphere | With Threat | Baseline | Difference |
-|------------|-------------|----------|------------|
-| threatening | 62.8% | 19.3% | **+43.5%** |
-| neutral | 1.3% | 9.5% | -8.2% |
-| welcoming | 1.6% | 6.2% | -4.6% |
-| peaceful | 0.3% | 1.8% | -1.5% |
-
-**Critical Finding**: Threat presence elevates threatening atmosphere by **43.5 percentage points** above baseline.
-
-#### 3.7.3 Behavioral Shift in Threat Dreams
-
-| Interaction Type | With Threat | Without | Difference |
-|------------------|-------------|---------|------------|
-| escape | 28.9% | 9.6% | **+19.4%** |
-| conflict | 10.6% | 4.7% | +5.9% |
-| navigation | 15.0% | 21.0% | -6.0% |
-| observation | 16.8% | 22.5% | -5.6% |
-| social | 9.0% | 13.8% | -4.7% |
-| task | 9.5% | 14.1% | -4.6% |
-
-**Critical Finding**: Escape behavior nearly **triples** in threat dreams (28.9% vs 9.6%), while normal activities (navigation, observation, social, task) decrease proportionally.
-
----
-
-### 3.8 Deceased Entity Analysis
-
-The deceased entity type showed unique characteristics warranting special attention:
-
-| Characteristic | Deceased | All Entities |
-|----------------|----------|--------------|
-| % Threatening atmosphere | 7.4% | 19.3% |
-| % Welcoming atmosphere | 22.2% | 6.2% |
-| % Peaceful atmosphere | 14.8% | 1.8% |
-| Conflict rate | **0.0%** | 4.7% |
-| Social interaction rate | 24.2% | 13.8% |
-| Primary location | House (z=+7.21) | Mall |
-| Success rate | 78.6% | 76.5% |
-
-**Critical Finding**: Deceased entities represent a **qualitatively different phenomenological category**—appearing in domestic settings, generating positive atmospheres, engaging socially without conflict. This pattern is consistent with visitation dream phenomenology in the broader dream literature.
-
----
-
-### 3.9 Guide Entity Analysis
-
-Despite low frequency (n=32), guides show distinctive patterns:
-
-| Characteristic | Value |
-|----------------|-------|
-| Encounters | 32 |
-| Dreams | 17 |
-| Top atmosphere | Threatening (39%) |
-| Second atmosphere | Welcoming (26%) |
-| Top interaction | Observation (21.7%) |
-| Second interaction | Social (21.7%) |
-| Task interaction | **18.5%** (highest of any entity) |
-| Success rate | 83.3% |
-
-**Critical Finding**: Guides show a **paradoxical atmospheric profile**—both threatening (39%) and welcoming (26%). This suggests guides appear when help is needed (threatening contexts) but their presence brings welcome assistance. Their elevated task interaction rate (18.5%, highest of any entity) supports functional helper role.
+Behaviorally, guides showed the highest task interaction rate of any entity type (18.5%), supporting their functional identification as helpers. Their interaction success rate (83.3%) was second only to friends (87.4%). When guides appear, tasks get accomplished.
 
 ---
 
@@ -426,148 +154,69 @@ Despite low frequency (n=32), guides show distinctive patterns:
 
 ### 4.1 Summary of Findings
 
-Entity ecology in MallWorld dreams reveals a highly structured system where:
-
-1. **Entity types occupy distinct environmental niches** (χ² = 330, p < 10⁻²¹)
-2. **Entity-atmosphere associations are extremely strong** (χ² = 792, p < 10⁻¹⁰⁸)
-3. **Behavioral profiles differ systematically by entity type**
-4. **Co-occurrence patterns show meaningful clustering and avoidance**
-5. **Entity presence significantly alters dream characteristics**
+The entity ecology of MallWorld dreams reveals a highly structured system in which different entity types occupy distinct environmental niches, generate characteristic atmospheres, and drive specific behavioral responses. Entity-location association was highly significant (χ² = 330, p < 10⁻²¹), entity-atmosphere association was extraordinarily strong (χ² = 792, p < 10⁻¹⁰⁸), behavioral profiles differed systematically by entity type, co-occurrence patterns showed meaningful clustering and avoidance, and entity presence significantly altered dream characteristics including complexity, threat level, and interaction success.
 
 ### 4.2 Entity Archetypes
 
-Five distinct entity archetypes emerge from the data:
-
-| Archetype | Entity Types | Primary Atmosphere | Primary Behavior | Signature |
-|-----------|--------------|-------------------|------------------|-----------|
-| **Danger Bringers** | threat, creature | Threatening | Escape | Drive flight response |
-| **Chaos Generators** | crowd | Chaotic | Observation | Public space disruption |
-| **Oppressive Presence** | authority | Oppressive | Conflict | Institutional pressure |
-| **Social Connectors** | friend, known_person | Uncomfortable/Neutral | Social | Interpersonal engagement |
-| **Peaceful Visitors** | deceased | Welcoming | Social | Positive visitation |
+Five distinct entity archetypes emerged from the analysis. Danger bringers—threat entities and creatures—generate threatening atmospheres and drive escape behaviors, with threats showing the strongest atmosphere association in the entire dataset (z = +14.86). Chaos generators—primarily crowds—create chaotic atmospheres in public spaces. Oppressive presences—authority figures—create institutional pressure and elevate conflict rates. Social connectors—friends and known persons—facilitate interpersonal engagement in uncomfortable or neutral atmospheres. And peaceful visitors—the deceased—uniquely generate welcoming atmospheres with zero conflict, appearing in intimate domestic settings rather than public commercial spaces.
 
 ### 4.3 The Deceased Exception
 
-The most striking finding is the **unique positivity of deceased entities**. While all other entity types trend toward negative or neutral atmospheres, deceased entities:
-- Generate welcoming/peaceful atmospheres (37% combined vs ~8% baseline)
-- Show zero conflict interactions
-- Appear in intimate domestic settings
-- Maintain high success rates
+The most striking finding is the unique positivity of deceased entities. While every other entity category trends toward negative or neutral atmospheres, the deceased generate welcoming and peaceful atmospheres at more than four times the baseline rate, show complete absence of conflict, appear in intimate domestic settings, and avoid public crowds. This pattern is consistent with visitation dream phenomenology, which suggests that dreams of the deceased serve qualitatively different functions than ordinary dreams—potentially involving continued relational bonds, resolution of unfinished business, or communication that transcends the usual phenomenology of dream content.
 
-This pattern aligns with visitation dream literature suggesting that dreams of the deceased serve different psychological functions than typical dreams—potentially involving continued bonds, resolution, or meaning-making processes.
+From a correspondential perspective, this finding aligns with the understanding that the deceased maintain real existence and genuine capacity for relationship. If encounters with the deceased were merely memory traces or psychological projections, we would expect them to show the same atmospheric variation as other entity types, reflecting the dreamer's mood rather than the entity's nature. Instead, deceased entities show systematic positivity—they appear in welcoming contexts because their presence is genuinely welcome, not because the dreamer happens to feel positive when remembering them.
 
-### 4.4 Family Paradox
+### 4.4 The Family Paradox
 
-Counterintuitively, **family member presence predicts elevated threat levels** (15.3% vs 9.1%, p = 0.001) and **lowest success rates** (70.3%). This may reflect:
-- Family-related anxiety or unresolved conflicts
-- Higher stakes when family is present
-- Dreams processing family-related stressors
+Counterintuitively, family member presence predicted elevated threat levels (15.3% versus 9.1%) and the lowest interaction success rates (70.3%). This inverts the expected protective function of family. Several interpretations are possible: family-related anxiety or unresolved conflicts may manifest in dreams; stakes may be higher when family is present, elevating both threat and difficulty; dreams may process family-related stressors that don't arise in non-family contexts.
+
+Whatever the mechanism, the finding is robust: family presence does not make MallWorld dreams safer or more successful. It makes them more threatening and more difficult.
 
 ### 4.5 Threat Ecology
 
-Threat entities function as **dream system disruptors**:
-- Massively elevate threatening atmosphere (+43.5 percentage points)
-- Triple escape behavior rates
-- Increase dream complexity (more locations, interactions)
-- Show domestic intrusion pattern (elevated house association)
+Threat entities function as dream system disruptors. They massively elevate threatening atmospheres (+43.5 percentage points), triple escape behavior rates, increase dream complexity (more locations, more connections, more interactions), and show domestic intrusion patterns (elevated house association). The complete reorganization of dream phenomenology around danger and response to danger when threats appear suggests that these entities are not mere background characters but active shapers of dream experience.
 
-The avoidance between threats and creatures (lift = 0.67) suggests these represent different threat paradigms—intentional pursuit vs. environmental danger.
+The avoidance between threats and creatures (lift = 0.67) suggests these represent different threat paradigms. Creatures may represent ambient or environmental danger—things that are dangerous by nature rather than intention. Threats represent intentional, pursuing danger—entities that actively menace the dreamer. These two modalities rarely co-occur, as if dreams deploy one threat type or the other but not both simultaneously.
 
 ### 4.6 Limitations
 
-1. **Entity extraction depends on report detail**: Entities may be under-reported in brief accounts
-2. **Entity type categories** are predetermined and may not capture all phenomenological distinctions
-3. **Causal direction unclear**: Do entities create atmospheres, or do atmospheres attract entities?
-4. **Sample bias**: Reddit users may not represent general population dreamers
-5. **Co-occurrence analysis limited** by sample sizes for rare entity types
+Several limitations constrain interpretation of these findings. Entity extraction depends on report detail, and entities may be under-reported in brief accounts. The eighteen entity type categories are predetermined by the extraction schema and may not capture all phenomenologically relevant distinctions. Causal direction remains unclear—whether entities create atmospheres, atmospheres attract entities, or both reflect underlying states cannot be determined from correlational data. Reddit users represent a specific demographic, and self-reported dreams may emphasize memorable content. Co-occurrence analysis is limited by sample sizes for rare entity types, particularly supernatural categories.
 
 ### 4.7 Future Directions
 
-1. **Temporal analysis**: Do entity encounters early vs. late in dreams differ?
-2. **Entity sequences**: What entity encounter patterns precede/follow specific outcomes?
-3. **Entity-interaction specificity**: Which entities drive which specific interaction types?
-4. **Longitudinal patterns**: Do individual dreamers show consistent entity ecologies?
-5. **Cross-validation**: Compare MallWorld entity patterns to other dream corpora
+Several extensions suggest themselves. Temporal analysis could assess whether entity encounters early versus late in dreams show different patterns. Sequence analysis could examine what entity encounter patterns precede or follow specific outcomes. Entity-interaction specificity analysis could determine which entities drive which specific interaction types beyond the broad categories examined here. Longitudinal tracking could assess whether individual dreamers show consistent entity ecologies across multiple MallWorld dreams. Cross-corpus comparison could test whether MallWorld entity patterns generalize to other dream corpora or reflect something specific to this phenomenon.
 
 ---
 
 ## 5. Conclusion
 
-MallWorld dreams exhibit coherent **entity ecology** where different entity types occupy distinct environmental niches, generate characteristic atmospheres, and drive specific behavioral responses. The entity-atmosphere association (χ² = 792, p < 10⁻¹⁰⁸) represents the strongest statistical relationship in this dataset, with threat entities showing massive correlation with threatening atmospheres (z = +14.86).
+MallWorld dreams exhibit coherent entity ecology. Different entity types occupy distinct environmental niches, generate characteristic atmospheres, and drive specific behavioral responses. The entity-atmosphere association (χ² = 792, p < 10⁻¹⁰⁸) represents the strongest statistical relationship identified in this dataset, with threat entities showing massive correlation with threatening atmospheres (z = +14.86) and the deceased showing unique association with welcoming atmospheres (z = +2.41) combined with complete absence of conflict.
 
-Five entity archetypes emerged: Danger Bringers (threats, creatures), Chaos Generators (crowds), Oppressive Presence (authority), Social Connectors (friends, known persons), and Peaceful Visitors (deceased). The deceased category uniquely breaks the pattern of negativity, showing welcoming atmospheres, zero conflict, and domestic settings—consistent with visitation dream phenomenology.
+Five entity archetypes emerged: danger bringers who drive escape, chaos generators who disrupt public spaces, oppressive presences who create institutional pressure, social connectors who facilitate engagement, and peaceful visitors who bring welcome without opposition. The deceased category stands out as phenomenologically distinct—appearing in domestic intimacy rather than commercial liminality, generating positive atmospheres rather than neutral or negative ones, engaging socially rather than conflictually. This pattern is consistent with visitation dream phenomenology and with correspondential frameworks in which the deceased maintain genuine relational capacity.
 
-These findings suggest that MallWorld dreams, despite their strange shared geography, follow comprehensible correspondential grammar in their entity populations. The entities that appear, where they appear, and what happens when they appear show lawful patterns consistent with the Swedenborgian doctrine that spiritual beings occupy differentiated functional roles—entities are not arbitrary dream furniture but expressions of underlying spiritual realities.
-
----
-
-## References
-
-1. MallWorld Subreddit: r/TheMallWorld (Reddit community)
-2. Previous MallWorld Analysis: `exploratory_pattern_analysis_2026-01-20.md`
-3. Research Advisory Plan: `exploration_advisory_plan_20260120.md`
+These findings suggest that MallWorld dreams, despite their strange shared geography, follow comprehensible patterns in their entity populations. The entities that appear, where they appear, what atmospheres accompany them, and what behaviors they elicit show lawful regularities rather than random conjunction. From a correspondential perspective, this is what we would expect: entities are not arbitrary dream furniture but expressions of qualitative states, and their systematic associations with environments, atmospheres, and behaviors reflect the organic relationships that constitute spiritual reality.
 
 ---
 
-## Appendices
+## Appendix A: Statistical Summary
 
-### Appendix A: Complete Entity Type Distribution
+| Test | Variables | Statistic | df | p-value |
+|------|-----------|-----------|---:|---------|
+| χ² (independence) | Entity × Atmosphere | 792.02 | 99 | < 10⁻¹⁰⁸ |
+| χ² (independence) | Entity × Location | 330.26 | 121 | < 10⁻²¹ |
+| t-test (independent) | Threat → Interactions | 9.49 | — | < 0.001 |
+| t-test (independent) | Threat → % Threatening | 18.27 | — | < 0.001 |
+| t-test (independent) | Family → % Threatening | 3.21 | — | 0.001 |
+| t-test (independent) | Authority → Locations | 6.47 | — | < 0.001 |
 
-| Entity Type | Count | % of Total | Dreams Present | % of Dreams |
-|-------------|-------|------------|----------------|-------------|
-| stranger | 912 | 24.6% | 529 | 27.5% |
-| crowd | 808 | 21.8% | 566 | 29.4% |
-| authority | 469 | 12.7% | 280 | 14.5% |
-| threat | 309 | 8.3% | 190 | 9.9% |
-| known_person | 245 | 6.6% | 151 | 7.8% |
-| other | 236 | 6.4% | 167 | 8.7% |
-| family_member | 224 | 6.0% | 138 | 7.2% |
-| creature | 194 | 5.2% | 130 | 6.7% |
-| friend | 98 | 2.6% | 72 | 3.7% |
-| child | 73 | 2.0% | 52 | 2.7% |
-| deceased | 56 | 1.5% | 33 | 1.7% |
-| guide | 32 | 0.9% | 17 | 0.9% |
-| watcher | 14 | 0.4% | — | — |
-| shadow | 12 | 0.3% | — | — |
-| coworker | 11 | 0.3% | — | — |
-| mannequin | 5 | 0.1% | — | — |
-| faceless | 3 | 0.1% | — | — |
-| none | 3 | 0.1% | — | — |
+## Appendix B: Key Distributions
 
-### Appendix B: Statistical Test Summary
+**Entity type frequency** (n = 3,704): Strangers 24.6%, Crowds 21.8%, Authority 12.7%, Threat 8.3%, Known persons 6.6%, Other 6.4%, Family 6.0%, Creatures 5.2%, Friends 2.6%, Children 2.0%, Deceased 1.5%, Guides 0.9%
 
-| Test | Variables | Statistic | df | p-value | Interpretation |
-|------|-----------|-----------|----|---------|----|
-| Chi-square | Entity × Atmosphere | 792.02 | 99 | < 10⁻¹⁰⁸ | Highly significant |
-| Chi-square | Entity × Location | 330.26 | 121 | < 10⁻²¹ | Highly significant |
-| t-test | Threat → Interactions | 9.49 | — | < 0.001 | Significant |
-| t-test | Threat → % Threatening | 18.27 | — | < 0.001 | Significant |
-| t-test | Family → % Threatening | 3.21 | — | 0.001 | Significant |
-| z-score | Threat ↔ Threatening | +14.86 | — | — | Extreme association |
-| z-score | Deceased ↔ House | +7.21 | — | — | Strong association |
-| z-score | Crowd ↔ Chaotic | +7.05 | — | — | Strong association |
-| Lift | Family + Friend | 2.32 | — | — | Strong co-occurrence |
-| Lift | Creature + Threat | 0.67 | — | — | Avoidance pattern |
+**Strongest positive location associations**: Deceased-house (z = +7.21), Creature-other (z = +4.51), Stranger-mall_store (z = +3.78), Crowd-city_street (z = +3.02), Authority-school (z = +2.61)
 
-### Appendix C: Entity Atmosphere Signatures
+**Strongest atmosphere associations**: Threat-threatening (z = +14.86), Crowd-chaotic (z = +7.05), Other-eerie (z = +5.39), Authority-oppressive (z = +4.86), Creature-threatening (z = +4.37)
 
-Characteristic atmosphere for each entity (highest percentage):
+**Threat entity impact**: Threatening atmosphere 35.3% vs 6.7% (5.3× increase); Escape behavior 28.9% vs 9.6% (3× increase); Interactions 4.66 vs 2.99 (+55%)
 
-| Entity | Primary Atmosphere | Rate |
-|--------|-------------------|------|
-| threat | Threatening | 71.6% |
-| creature | Threatening | 45.9% |
-| guide | Threatening | 39.1% |
-| other | Threatening | 33.5% |
-| authority | Threatening | 30.6% |
-| friend | Threatening | 25.7% |
-| child | Eerie | 24.1% |
-| crowd | Chaotic | 26.9% |
-| stranger | Uncomfortable | 20.0% |
-| known_person | Chaotic | 22.3% |
-| family_member | Threatening | 19.5% |
-| **deceased** | **Welcoming** | **22.2%** |
-
----
-
-*Report generated from analysis notebook: `05_entity_ecology.ipynb`*
+**Deceased entity signature**: Threatening 7.4%, Welcoming 22.2%, Peaceful 14.8%; Conflict 0.0%; House concentration z = +7.21
