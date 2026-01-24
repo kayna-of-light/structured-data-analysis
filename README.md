@@ -208,7 +208,14 @@ Add Jupyter notebooks to `projects/my_project/notebooks/` for statistical analys
 Scrapers are located in `shared/scrapers/`. Run source-specific scrapers to collect data:
 
 ```bash
-python shared/scrapers/my_source_scraper.py
+python -m shared.scrapers.my_source_scraper
+```
+
+For Reddit subreddits, use the generic Reddit scraper and specify both the subreddit
+and the output dataset directory name:
+
+```bash
+python -m shared.scrapers.reddit_scraper --subreddit TheMallWorld --dataset mallworld
 ```
 
 Data is saved to `data/[source]/` directory.

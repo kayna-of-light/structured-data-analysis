@@ -73,6 +73,20 @@ The questionnaire extracts structured data including:
 
 ## Usage
 
+### Scraping Reddit Data
+
+Scrape r/TheMallWorld into the expected dataset folder (`data/mallworld/`):
+
+```bash
+python -m shared.scrapers.reddit_scraper --subreddit TheMallWorld --dataset mallworld
+```
+
+If you want full historical coverage (Reddit API + PullPush archive):
+
+```bash
+python -m shared.scrapers.reddit_scraper --subreddit TheMallWorld --dataset mallworld --historical --chunk-days 30
+```
+
 ### Running Extraction
 
 From the project directory, run the extraction script:

@@ -13,4 +13,7 @@ datasets:
     exclude: []
 
 # Note: Data needs to be scraped from Reddit before extraction can run.
-# Consider creating a scraper in shared/scrapers/mallworld_scraper.py
+# Use the generic Reddit scraper:
+#   python -m shared.scrapers.reddit_scraper --subreddit TheMallWorld --dataset mallworld
+#
+# (Backwards compatible wrapper still exists at shared/scrapers/mallworld_scraper.py)

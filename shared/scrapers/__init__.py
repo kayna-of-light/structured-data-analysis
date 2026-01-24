@@ -29,7 +29,23 @@ from .nderf_scraper import NDERFScraper
 from .iands_scraper import IANDSScraper
 from .pmc_scraper import PMCScraper
 from .radical_remission_scraper import RadicalRemissionScraper
-from .mallworld_scraper import MallWorldScraper
+
+
+def __getattr__(name: str):
+    # Lazy imports to avoid `python -m shared.scrapers.reddit_scraper` warnings.
+    if name == "RedditScraper":
+        from .reddit_scraper import RedditScraper
+
+        return RedditScraper
+    if name == "MallWorldScraper":
+        from .mallworld_scraper import MallWorldScraper
+
+        return MallWorldScraper
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+
+
+def __dir__() -> list[str]:
+    return sorted(__all__)
 
 __all__ = [
     # Base utilities
@@ -46,6 +62,7 @@ __all__ = [
     "IANDSScraper",
     "PMCScraper",
     "RadicalRemissionScraper",
+    "RedditScraper",
     "MallWorldScraper",
     # Logging
     "logger",
