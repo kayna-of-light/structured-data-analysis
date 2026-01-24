@@ -4,7 +4,7 @@
 
 **Background**: The MallWorld phenomenon—thousands of individuals reporting recurring dreams of labyrinthine commercial spaces with consistent architectural and affective features—presents an opportunity to test whether collective dream phenomenology exhibits systematic structure consistent with correspondential frameworks. Such frameworks propose that natural features express spiritual or psychological realities through organic functional relationships rather than arbitrary symbolism. This study applies hypothesis-testing methodology to determine whether MallWorld dream narratives encode predictable patterns in the relationships between spatial features, atmospheric qualities, entity behaviors, and individual characteristics.
 
-**Methods**: We analyzed 2,678 dream narratives from the r/themallworld community, extracting 11,351 discrete locations and 4,235 entity encounters through structured processing using Azure OpenAI GPT-4o. Statistical validation employed chi-square tests for categorical associations, Spearman correlations for ordinal relationships, intraclass correlation coefficients for within-person consistency, variance decomposition for source attribution, and permutation tests for robustness verification. The analysis proceeded through eleven phases examining environmental correspondences, entity behavioral patterns, animal symbolism, atmosphere source attribution, and cross-domain comparisons.
+**Methods**: We analyzed 2,678 dream narratives from the r/themallworld community, extracting 11,351 discrete locations and 4,235 entity encounters through structured processing using Azure OpenAI GPT-5.2. Statistical validation employed chi-square tests for categorical associations, Spearman correlations for ordinal relationships, intraclass correlation coefficients for within-person consistency, variance decomposition for source attribution, and permutation tests for robustness verification. The analysis proceeded through eleven phases examining environmental correspondences, entity behavioral patterns, animal symbolism, atmosphere source attribution, and cross-domain comparisons.
 
 **Results**: Twenty of thirty pre-registered tests showed patterns consistent with correspondential predictions. Environmental features exhibited robust correlations with atmosphere: vertical position (ρ = 0.25–0.30, p < 0.0001), water clarity (2.6× effect), light quality (V = 0.483), and cleanliness (ρ = 0.302). Entity types showed functional differentiation with behavioral invariance across environmental conditions—guides maintained 0% hostility at all vertical levels, threats maintained 92–94% hostility regardless of atmosphere. Animal type predicted demeanor with large effect size (V = 0.513, OR = 106:1 for predator vs. cat) while showing complete independence from environmental atmosphere (χ² ≈ 0, p = 1.0). Critically, dreamer identity explained 56.4% of atmosphere variance compared to 7.1% for location type, and within-dream affect showed near-zero predictive power for subsequent atmosphere after controlling for current state (partial ρ = 0.007, p = 0.71). Cross-domain comparison with 6,753 near-death experiences revealed dramatically different atmosphere distributions (Cramér's V = 0.645), with MallWorld showing 64% negative atmospheres versus NDE showing 48% positive.
 
@@ -24,7 +24,7 @@
 | Locations extracted | 11,351 | Structured JSON |
 | Entities extracted | 4,235 | Structured JSON |
 | Connections (transitions) | 5,499 | Structured JSON |
-| Extraction model | Azure OpenAI GPT-4o | Azure OpenAI Service |
+| Extraction model | Azure OpenAI GPT-5.2 | Azure OpenAI Service |
 | Analysis notebooks | `09_prereg_falsification_tests.ipynb`, `10_*.ipynb` | Project repository |
 | Structured data | `projects/mallworld/structured/*.json` | Project repository |
 | NDE comparison data (N = 6,753) | NDERF, IANDS databases | Structured extraction |
@@ -99,7 +99,7 @@ For cross-domain comparison, we utilized structured extractions from 6,753 near-
 
 ### 2.2 Extraction Pipeline
 
-Each narrative was processed through a structured extraction pipeline using Azure OpenAI's GPT-4o model with a detailed questionnaire schema. The schema captures:
+Each narrative was processed through a structured extraction pipeline using Azure OpenAI's GPT-5.2 model with a detailed questionnaire schema. The schema captures:
 
 - **Location features**: Vertical position (5-level ordinal), building type (70 categories), atmosphere (5-point valence scale), light quality, water presence and clarity, cleanliness, accessibility, and architectural elements
 - **Entity features**: Entity type (guide, threat, authority, deceased, stranger, creature, watcher, crowd), demeanor (hostile, threatening, neutral, friendly, helpful, watching), role (chaser, guide, blocker, companion, bystander), and interaction outcomes
@@ -1271,7 +1271,7 @@ All correlations p < 0.0001 except Vertical-Entity (p < 0.001).
 
 | Parameter | Value |
 |-----------|-------|
-| Model | Azure OpenAI GPT-4o |
+| Model | Azure OpenAI GPT-5.2 |
 | Temperature | 0.0 (deterministic) |
 | Structured output | JSON schema constrained |
 | Retry policy | 3 attempts with exponential backoff |

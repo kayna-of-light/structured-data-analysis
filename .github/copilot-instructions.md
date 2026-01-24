@@ -776,7 +776,7 @@ Extraction output mirrors the Pydantic schema with additional metadata:
     "schema_name": "NDEAnalysisResponse",
     "schema_hash": "abc123...",
     "extracted_at": "2025-01-15T10:30:00Z",
-    "model": "gpt-4o"
+    "model": "gpt-5.2"
   },
   "field1": "value1",
   "field2": "value2"
