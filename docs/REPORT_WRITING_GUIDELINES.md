@@ -93,7 +93,7 @@ TITLE
 
 ### Rules
 1. **Background** — State what is known and what question remains
-2. **Methods** — Include N, source names, coding method (e.g., "GPT-5.1 structured extraction"), analysis types
+2. **Methods** — Include N, source names, coding method (e.g., "GPT-5.2 structured extraction"), analysis types
 3. **Results** — Lead with the primary finding; include 2-4 key statistics with exact values
 4. **Conclusions** — State what the data support; avoid hedging
 5. **Keywords** — 5-8 terms; include methodology terms and theoretical framework terms

@@ -75,7 +75,7 @@ The commitment to unsupervised methods ensures that any patterns discovered refl
 
 ### 2.1 Data Sources
 
-The dataset comprises dream narratives collected from the Reddit /r/MallWorld community, a self-organized group of individuals who report recurring dreams featuring elaborate architectural environments. Reports were processed through a structured extraction pipeline using GPT-4o with constrained output schemas, yielding the following data tables:
+The dataset comprises dream narratives collected from the Reddit /r/MallWorld community, a self-organized group of individuals who report recurring dreams featuring elaborate architectural environments. Reports were processed through a structured extraction pipeline using GPT-5.2 with constrained output schemas, yielding the following data tables:
 
 | Table | Records | Description |
 |-------|---------|-------------|

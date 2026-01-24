@@ -74,7 +74,7 @@ Cases were collected from four sources representing different evidence types:
 
 ### 2.2 Coding Scheme
 
-Each case was coded by AI analysis (GPT-5.1 via Azure OpenAI) using a structured Pydantic schema (`models/questionnaire.py`). The schema includes:
+Each case was coded by AI analysis (GPT-5.2 via Azure OpenAI) using a structured Pydantic schema (`models/questionnaire.py`). The schema includes:
 
 - **Demographics**: Age, sex, religious background
 - **Diagnosis**: Disease category, cancer type (if applicable), organ system, terminal status

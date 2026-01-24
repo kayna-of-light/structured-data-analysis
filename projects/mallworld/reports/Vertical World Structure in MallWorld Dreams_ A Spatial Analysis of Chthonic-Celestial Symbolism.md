@@ -22,7 +22,7 @@ These findings demonstrate that MallWorld dreams encode symbolically meaningful 
 | Locations with vertical data | 3,822 (33.7%) |
 | Total connections | 5,499 |
 | Total interactions | 7,283 |
-| Extraction model | Azure OpenAI GPT-4o |
+| Extraction model | Azure OpenAI GPT-5.2 |
 
 ---
 
@@ -59,7 +59,7 @@ This analysis tests four specific hypotheses:
 
 ### 2.1 Data Sources
 
-Dream narratives were collected from the r/themallworld subreddit, a community where individuals share accounts of the MallWorld phenomenon. Each narrative was processed through a structured extraction pipeline using Azure OpenAI's GPT-4o model with a detailed questionnaire schema designed to capture spatial, atmospheric, entity-related, and interaction-related features.
+Dream narratives were collected from the r/themallworld subreddit, a community where individuals share accounts of the MallWorld phenomenon. Each narrative was processed through a structured extraction pipeline using Azure OpenAI's GPT-5.2 model with a detailed questionnaire schema designed to capture spatial, atmospheric, entity-related, and interaction-related features.
 
 ### 2.2 Coding Scheme
 
