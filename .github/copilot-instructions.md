@@ -212,7 +212,7 @@ Both narratives share a common "proto-myth" (watery chaos, separation, dry land,
 **Historical evidence:**
 - The Zoroastrian **mēnōg/gētīg** ontology (spiritual/material) exactly parallels Swedenborg's correspondence doctrine
 - The **Damdat Nask** (lost Avestan encyclopedia) classified animals based on spiritual alignment (beneficent vs. noxious)—not morphology
-- Daniel trained in "Chaldean learning" and appointed **Rab-mag** (Chief of Magi)—the historical bridge between Israelite prophecy and Persian cosmology
+- Daniel trained in "Chaldean learning" and appointed **Rab-hartummin** (Chief of the Magician-Scribes, Dan 4:9) and **Rab-signīn** (Chief Prefect, Dan 2:48)—the literary bridge between Israelite prophecy and Persian cosmology
 - The **Qumran "Two Spirits" doctrine** is virtually identical to Zoroastrian dualism, confirming transmission during the Babylonian Exile
 - Swedenborg located the Ancient Word in "Great Tartary" (Central Asia)—precisely the region where Avestan texts survived after Alexander's destruction
 
