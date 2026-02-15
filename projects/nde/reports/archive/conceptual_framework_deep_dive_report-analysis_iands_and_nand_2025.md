@@ -744,7 +744,7 @@ The model correctly identifies pattern where:
 **Predictions if true:**
 - Universal core experience → **CONFIRMED** (Light Being: singular, loving, conscious across cultures)
 - **Transcends categories** → **CONFIRMED** (61.8% "unknown presence" - strongest evidence)
-- Different cultural names → **CONFIRMED** (Christians say God/Jesus, Muslims Allah, Atheists Unknown)
+- Different cultural names → **CONFIRMED** (61.8% of Christians say "unknown presence," only 11.2% say "Jesus" — the Being exceeds available categories for everyone)
 - Belief correction → **CONFIRMED** (62% lose fear across religions)
 - Moderate cultural prediction → **CONFIRMED** (68% ML accuracy - not too high, not too low)
 - Unique position → **CONFIRMED** (59.6% vs 49.3% guidance - distinct from other beings)

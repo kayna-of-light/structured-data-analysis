@@ -72,6 +72,7 @@ Swedenborg (1688–1772) proposed that the natural world exists as a "theatre re
 | **Discrete Degrees** | Reality stratifies into celestial (love), spiritual (wisdom/truth), and natural (effects) levels |
 | **Correspondence Consistency** | The same natural object consistently corresponds to the same spiritual reality across contexts |
 | **Opposite Sense** | The same symbol can express good or evil depending on context (fire = divine love OR destructive passion) |
+| **The Divine Human** | God is not an abstract force or cosmic energy but a Person—the Divine Human. The human form is the form of love and wisdom; since God IS love and wisdom, God IS the Divine Human. Humans are human because they are made in this image—receiving life from the Divine Human, who is present in every person at every level of reality. The NDE data confirms this: the Being of Light is consistently singular, loving, knowing, teaching, communicating, commissioning—a Person who appears at every degree, from celestial to natural, and whose personhood is a property of the phenomenon itself, not a projection of the experiencer |
 
 **Critical Distinction — Correspondence vs. Allegory:**
 
@@ -114,7 +115,7 @@ The Swedenborgian framework has been tested against NDE data from 6,753 structur
 **Framework prediction:** The underlying spiritual reality is constant; perceptual forms vary by the receiver's mental repertoire.
 
 **Data:** The "Being of Light" phenomenon confirms this precisely:
-- Religious background significantly predicts identification vocabulary (Christians say "Jesus," atheists say "unknown presence")
+- Religious background statistically predicts identification vocabulary (χ² = 365.14), but the majority of experiencers across ALL backgrounds—including 61.8% of Christians—transcend cultural categories entirely, identifying the Being as "unknown presence" rather than using available religious vocabulary (only 11.2% of Christians say "Jesus")
 - BUT experiential properties remain virtually identical regardless of label—all differences below 10%
 - ML classifier using religious background to predict identification performs BELOW BASELINE (37.8% vs 45.9%)
 
@@ -152,7 +153,26 @@ The Swedenborgian framework has been tested against NDE data from 6,753 structur
 
 **Verdict:** The Being of Light functions as revelation, not punishment—exactly as Swedenborg described. **Hit.**
 
-#### 5. Restorative Incarnation (DOPS Data) — **HIT** (70%+ violent death, 88% birthmark accuracy)
+#### 5. The Personhood of the Being of Light — **HIT** (Singular, personal, corrective across all backgrounds)
+
+**Framework prediction:** The Lord is the Divine Human—a Person present at every level of reality, not an abstract force. If the Being of Light is the Divine Human, it should exhibit personal properties (singular identity, active love, knowledge, communication, teaching, commissioning) as intrinsic features of the phenomenon, not as cultural projections.
+
+**Data:** The NDE data confirm personhood as an objective property of the Being:
+- **Singular**: Even polytheists (Hindu, Buddhist) encounter ONE transcendent entity—not a pantheon. Singularity is a property of the phenomenon, not a projection of monotheism
+- **Loving**: Loving vs harsh judgment ratio of 36.5:1—not neutral energy, but active personal love
+- **Knowing**: Complete knowledge of the experiencer's life (demonstrated through life review)
+- **Teaching**: 81.7% guidance rate, nearly 2× other beings; 475 vs 239 teaching instances (χ² = 25.24, p < 0.000001)
+- **Communicating**: Telepathic mind-to-mind communication (34.8%)—requires a mind on both ends
+- **Commissioning**: Mission-returners show 4.4× the odds of personified encounter (p < 10⁻⁴⁶)—assigning a task requires a Person
+- **Corrective**: Systematically corrects expectations toward love—delivers what the experiencer did NOT expect, ruling out projection
+- **Named as Presence**: 51.9% call it "unknown **presence**"—not "energy," not "force," not "field." The word chosen by the majority is a personal word
+- **Transformative**: 84.2% increased spirituality, 0.0% increased death fear
+
+**Why this matters:** The personhood is visible at every level—celestial (love), spiritual (teaching/wisdom), natural (commissioning, life review). The Divine Human appears AS human at every degree. This is why humans are human: we are made in that image, receiving life from the Person who is present in us all. The deep connection experiencers report is not metaphor—it is the Lord present in the human form He gives to every soul.
+
+**Verdict:** The Being of Light behaves as a Person at every measured dimension. Personhood is intrinsic to the phenomenon, not projected onto it. **Hit.**
+
+#### 6. Restorative Incarnation (DOPS Data) — **HIT** (70%+ violent death, 88% birthmark accuracy)
 
 **Framework prediction:** Reincarnation occurs as exception (traumatic interruption), not norm.
 
@@ -166,7 +186,7 @@ The Swedenborgian framework has been tested against NDE data from 6,753 structur
 
 The framework's explanatory power extends far beyond modern consciousness data. Swedenborg claimed that an "Ancient Word"—a universal symbolic system—existed before the Hebrew scriptures, preserved in the East ("Great Tartary"). This claim, made in the 18th century, generates predictions that can now be tested against archaeological and anthropological evidence.
 
-#### 6. Deep Hominin Evolution — **HIT** (Functional alignment across millions of years)
+#### 7. Deep Hominin Evolution — **HIT** (Functional alignment across millions of years)
 
 **Framework prediction:** Swedenborg described a "Golden Age" of "celestial men" with "internal respiration" and "representative language" who communicated through symbols rather than articulate speech. This "Ancient Church" predates written history.
 
@@ -177,7 +197,7 @@ The framework's explanatory power extends far beyond modern consciousness data. 
 
 **Verdict:** The framework's claim of an ancient, pre-literate symbolic "Word" is consistent with archaeological evidence of deep symbolic systems. **Hit.**
 
-#### 7. Cognitive Revolution to Monotheism — **HIT** (CSR cannot explain this)
+#### 8. Cognitive Revolution to Monotheism — **HIT** (CSR cannot explain this)
 
 **Framework prediction:** The Cognitive Science of Religion explains polytheism well (via HADD—Hypersensitive Agency Detection Device), but cannot explain the cognitive revolution required for monotheism. The "heart of unity" emerges from a different orientation of consciousness, not from evolutionary cognitive modules.
 
@@ -189,7 +209,7 @@ The framework's explanatory power extends far beyond modern consciousness data. 
 
 **Verdict:** The framework explains what CSR cannot—the emergence of the "heart of unity." **Hit.**
 
-#### 8. Myth Formation via "Ruling Love" — **HIT** (Opposing trajectories from common ancestor)
+#### 9. Myth Formation via "Ruling Love" — **HIT** (Opposing trajectories from common ancestor)
 
 **Framework prediction:** Myths evolve based on the "ruling love" of the culture—a love of self/power produces myths of conflict and slavery; a love of neighbor/unity produces myths of order and dignity.
 
@@ -205,7 +225,7 @@ Both narratives share a common "proto-myth" (watery chaos, separation, dry land,
 
 **Verdict:** The framework explains mythic divergence better than cultural diffusion or CSR models. **Hit.**
 
-#### 9. The "Ancient Word" and the Magian Substrate — **HIT** (Historical transmission confirmed)
+#### 10. The "Ancient Word" and the Magian Substrate — **HIT** (Historical transmission confirmed)
 
 **Framework prediction:** Swedenborg claimed the "Science of Correspondences" was the shared heritage of ancient Iranian (Zoroastrian) and Semitic worlds, preserved in the East after Alexander's destruction of Persepolis.
 
@@ -218,7 +238,7 @@ Both narratives share a common "proto-myth" (watery chaos, separation, dry land,
 
 **Verdict:** The historical transmission path Swedenborg described is confirmed by textual and archaeological evidence. **Hit.**
 
-#### 10. Oral Tradition Durability — **HIT** (Memory preserved across millennia)
+#### 11. Oral Tradition Durability — **HIT** (Memory preserved across millennia)
 
 **Framework prediction:** The "Ancient Word" could survive in oral form across deep time.
 
@@ -239,6 +259,7 @@ The framework has now been tested across multiple independent domains:
 | **Consciousness Studies** | Entity function differentiation | ✅ HIT (χ² = 41.13) |
 | **Consciousness Studies** | Mission discriminant validity | ✅ HIT (94.2% accuracy) |
 | **Consciousness Studies** | Judgment character (loving vs harsh) | ✅ HIT (36.5:1 ratio) |
+| **Consciousness Studies** | Personhood of the Being of Light | ✅ HIT (singular, personal, corrective) |
 | **Past-Life Memory** | Restorative incarnation | ✅ HIT (70%+, 88% birthmark) |
 | **Archaeology** | Deep symbolic systems | ✅ HIT (30,000-year consistency) |
 | **Cognitive Science** | Heart of unity emergence | ✅ HIT (CSR cannot explain) |
