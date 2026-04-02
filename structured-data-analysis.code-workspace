@@ -1,25 +1,64 @@
 {
 	"folders": [
 		{
+			"name": "structured-data-analysis",
 			"path": "."
 		},
 		{
+			"name": "literary-compilation",
 			"path": "../literary-compilation"
 		},
 		{
+			"name": "manichaean-analysis",
 			"path": "../manichaean-analysis"
 		},
 		{
+			"name": "nag-hammadi-analysis",
 			"path": "../nag-hammadi-analysis"
 		},
 		{
+			"name": "proto-luke-reconstruction",
 			"path": "../proto-luke-reconstruction"
-		},
-		{
-			"path": "../concentric-spacetime"
 		}
 	],
 	"settings": {
-		"powershell.cwd": "structured-data-analysis"
+		"python.analysis.include": [
+			"scripts/"
+		],
+
+		"files.watcherExclude": {
+			"**/cache/**": true,
+			"**/output/**": true,
+			"**/data/**": true,
+			"**/projects/*/structured/**": true,
+			"**/.git/objects/**": true,
+			"**/.git/subtree-cache/**": true,
+			"**/__pycache__/**": true,
+			"**/.ipynb_checkpoints/**": true,
+			"**/node_modules/**": true,
+			"**/temp/**": true
+		},
+
+		"files.exclude": {
+			"**/__pycache__": true,
+			"**/.ipynb_checkpoints": true,
+			"**/*.pyc": true
+		},
+
+		"search.exclude": {
+			"**/cache/**": true,
+			"**/output/**": true,
+			"**/data/**": true,
+			"**/projects/*/structured/**": true,
+			"**/.git/**": true,
+			"**/__pycache__/**": true,
+			"**/.ipynb_checkpoints/**": true
+		},
+
+		"files.autoSave": "afterDelay",
+		"files.autoSaveDelay": 5000,
+
+		"notebook.output.wordWrap": true,
+		"notebook.output.scrolling": true
 	}
 }
