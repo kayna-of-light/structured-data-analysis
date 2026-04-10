@@ -18,8 +18,8 @@ Four markers support the Normative Path Hypothesis: experiencer reluctance to le
 |------|--------|--------|
 | NDERF Records (n=5,664) | Near-Death Experience Research Foundation | [nderf.org](https://nderf.org) |
 | IANDS Records (n=1,089) | International Association for Near-Death Studies | [iands.org](https://iands.org) |
-| Analysis Code | `02_normative_path_validation.ipynb` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/02_normative_path_validation.ipynb) |
-| Structured Data | `analysis/*.json` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/analysis/) (6,753 files) |
+| Analysis Code | `02_normative_path_validation.ipynb` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/02_normative_path_validation.ipynb) |
+| Structured Data | `analysis/*.json` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/analysis/) (6,753 files) |
 | Extraction Model | GPT-5.2 via Azure OpenAI | Azure OpenAI Service |
 
 ---
@@ -230,6 +230,6 @@ Swedenborg, E. (1758). *Heaven and Hell* (G. F. Dole, Trans.). Swedenborg Founda
 ## Appendix C: Data Access
 
 All analysis code and raw data are available at:
-- **Repository**: [https://github.com/marconian/structured-data-analysis](https://github.com/marconian/structured-data-analysis)
-- **NDE Project**: [/tree/main/projects/nde/](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/)
-- **Analysis Notebook**: [02_normative_path_validation.ipynb](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/02_normative_path_validation.ipynb)
+- **Repository**: [https://github.com/kayna-of-light/structured-data-analysis](https://github.com/kayna-of-light/structured-data-analysis)
+- **NDE Project**: [/tree/main/projects/nde/](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/)
+- **Analysis Notebook**: [02_normative_path_validation.ipynb](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/02_normative_path_validation.ipynb)

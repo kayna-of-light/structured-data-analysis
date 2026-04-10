@@ -73,7 +73,7 @@ structured-data-analysis/              # Framework root
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/marconian/structured-data-analysis.git
+git clone https://github.com/kayna-of-light/structured-data-analysis.git
 cd structured-data-analysis
 ```
 
@@ -281,7 +281,7 @@ All extraction scripts follow the same pattern:
 
 ## Collaboration
 
-This repository works in close collaboration with the [literary-compilation](https://github.com/marconian/literary-compilation) project for theoretical frameworks and interpretive lenses.
+This repository works in close collaboration with the [literary-compilation](https://github.com/kayna-of-light/literary-compilation) project for theoretical frameworks and interpretive lenses.
 
 ## License
 

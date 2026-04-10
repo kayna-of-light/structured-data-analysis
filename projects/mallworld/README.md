@@ -124,5 +124,5 @@ jupyter notebook
 - [Framework Documentation](../../README.md) - How to set up new projects
 - [Shared Core Library](../../shared/) - Common scrapers and analysis utilities
 - [Data Repository](../../data/) - Unified data storage
-- [Literary Compilation](https://github.com/marconian/literary-compilation) - Theoretical framework (Swedenborgian knowledge graph)
+- [Literary Compilation](https://github.com/kayna-of-light/literary-compilation) - Theoretical framework (Swedenborgian knowledge graph)
 - [Theoretical Analysis](../../docs/external/The%20Spiritual%20Topography%20of%20the%20Late%20Modern%20Soul.md) - Full correspondential analysis document

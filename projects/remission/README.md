@@ -135,4 +135,4 @@ files = registry.resolve_paths(Path("../../data"))
 - [Shared Core Library](../../shared/) - Common scrapers and analysis utilities
 - [NDE Project](../nde/) - Near-death experience analysis
 - [Data Repository](../../data/) - Unified data storage
-- [Literary Compilation](https://github.com/marconian/literary-compilation) - Theoretical framework collaboration
+- [Literary Compilation](https://github.com/kayna-of-light/literary-compilation) - Theoretical framework collaboration

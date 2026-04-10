@@ -20,8 +20,8 @@
 |------|--------|--------|
 | NDERF Records (n=5,660) | Near-Death Experience Research Foundation | [nderf.org](https://nderf.org) |
 | IANDS Records (n=1,093) | International Association for Near-Death Studies | [iands.org](https://iands.org) |
-| Analysis Notebook | `05_cultural_paradigm_challenge.ipynb` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/05_cultural_paradigm_challenge.ipynb) |
-| Structured Data | `structured/*.json` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/structured/) (6,753 files) |
+| Analysis Notebook | `05_cultural_paradigm_challenge.ipynb` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/05_cultural_paradigm_challenge.ipynb) |
+| Structured Data | `structured/*.json` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/structured/) (6,753 files) |
 | Extraction Model | GPT-5.2 via Azure OpenAI | Azure OpenAI Service |
 
 ---
@@ -370,7 +370,7 @@ van Lommel, P. (2010). *Consciousness Beyond Life: The Science of the Near-Death
 ## Appendix D: Data Access
 
 All analysis code and raw data are available at:
-- **Repository**: [https://github.com/marconian/structured-data-analysis](https://github.com/marconian/structured-data-analysis)
-- **NDE Project**: [/tree/main/projects/nde/](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/)
-- **Analysis Notebook**: [05_cultural_paradigm_challenge.ipynb](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/05_cultural_paradigm_challenge.ipynb)
-- **Structured Data**: [/structured/](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/structured/) (6,753 JSON files)
+- **Repository**: [https://github.com/kayna-of-light/structured-data-analysis](https://github.com/kayna-of-light/structured-data-analysis)
+- **NDE Project**: [/tree/main/projects/nde/](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/)
+- **Analysis Notebook**: [05_cultural_paradigm_challenge.ipynb](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/05_cultural_paradigm_challenge.ipynb)
+- **Structured Data**: [/structured/](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/structured/) (6,753 JSON files)

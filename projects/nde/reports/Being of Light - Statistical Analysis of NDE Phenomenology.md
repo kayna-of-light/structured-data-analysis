@@ -18,9 +18,9 @@ The data support a two-tier model: a consistent underlying phenomenon (constant 
 |------|--------|--------|
 | NDERF Records (n=5,660) | Near-Death Experience Research Foundation | [nderf.org](https://nderf.org) |
 | IANDS Records (n=1,093) | International Association for Near-Death Studies | [iands.org](https://iands.org) |
-| Being of Light Analysis | `01_being_of_light_analysis.ipynb` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/01_being_of_light_analysis.ipynb) |
-| Conceptual Framework Analysis | `04_conceptual_framework_theory.ipynb` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/04_conceptual_framework_theory.ipynb) |
-| Structured Data | `analysis/*.json` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/analysis/) (6,753 files) |
+| Being of Light Analysis | `01_being_of_light_analysis.ipynb` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/01_being_of_light_analysis.ipynb) |
+| Conceptual Framework Analysis | `04_conceptual_framework_theory.ipynb` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/04_conceptual_framework_theory.ipynb) |
+| Structured Data | `analysis/*.json` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/analysis/) (6,753 files) |
 | Extraction Model | GPT-5.2 via Azure OpenAI | Azure OpenAI Service |
 
 ---
@@ -235,8 +235,8 @@ van Lommel, P. (2010). *Consciousness Beyond Life: The Science of the Near-Death
 ## Appendix C: Data Access
 
 All analysis code and raw data are available at:
-- **Repository**: [https://github.com/marconian/structured-data-analysis](https://github.com/marconian/structured-data-analysis)
-- **NDE Project**: [/tree/main/projects/nde/](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/)
+- **Repository**: [https://github.com/kayna-of-light/structured-data-analysis](https://github.com/kayna-of-light/structured-data-analysis)
+- **NDE Project**: [/tree/main/projects/nde/](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/)
 - **Analysis Notebooks**: 
-  - [01_being_of_light_analysis.ipynb](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/01_being_of_light_analysis.ipynb)
-  - [04_conceptual_framework_theory.ipynb](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/04_conceptual_framework_theory.ipynb)
+  - [01_being_of_light_analysis.ipynb](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/01_being_of_light_analysis.ipynb)
+  - [04_conceptual_framework_theory.ipynb](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/04_conceptual_framework_theory.ipynb)

@@ -18,8 +18,8 @@ Mission-based returns represent a statistically distinct phenomenological catego
 |------|--------|--------|
 | NDERF Records (n=5,664) | Near-Death Experience Research Foundation | [nderf.org](https://nderf.org) |
 | IANDS Records (n=1,089) | International Association for Near-Death Studies | [iands.org](https://iands.org) |
-| Analysis Code | `03_volunteer_soul_profile.ipynb` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/03_volunteer_soul_profile.ipynb) |
-| Structured Data | `structured/*.json` | [Repository](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/structured/) |
+| Analysis Code | `03_volunteer_soul_profile.ipynb` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/03_volunteer_soul_profile.ipynb) |
+| Structured Data | `structured/*.json` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/structured/) |
 | Extraction Model | GPT-5.2 via Azure OpenAI | Azure OpenAI Service |
 
 ---
@@ -264,6 +264,6 @@ Volunteer Detection measures the presence of mission language in NDE accounts, e
 ## Appendix D: Data Access
 
 All analysis code and raw data are available at:
-- **Repository**: [https://github.com/marconian/structured-data-analysis](https://github.com/marconian/structured-data-analysis)
-- **NDE Project**: [/tree/main/projects/nde/](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/)
-- **Analysis Notebook**: [03_volunteer_soul_profile.ipynb](https://github.com/marconian/structured-data-analysis/tree/main/projects/nde/notebooks/03_volunteer_soul_profile.ipynb)
+- **Repository**: [https://github.com/kayna-of-light/structured-data-analysis](https://github.com/kayna-of-light/structured-data-analysis)
+- **NDE Project**: [/tree/main/projects/nde/](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/)
+- **Analysis Notebook**: [03_volunteer_soul_profile.ipynb](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/03_volunteer_soul_profile.ipynb)

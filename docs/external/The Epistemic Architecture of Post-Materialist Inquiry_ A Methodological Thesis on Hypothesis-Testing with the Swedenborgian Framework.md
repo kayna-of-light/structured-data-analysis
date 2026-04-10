@@ -988,7 +988,7 @@ von Petzinger, G. (2016). *The First Signs: Unlocking the Mysteries of the World
 | DOPS | Division of Perceptual Studies, University of Virginia | 2,500+ | med.virginia.edu/perceptual-studies |
 | Radical Remission | Radical Remission Project | 1,500+ | radicalremission.com |
 
-Analysis repository: https://github.com/marconian/structured-data-analysis
+Analysis repository: https://github.com/kayna-of-light/structured-data-analysis
 
 ### Appendix C: Framework Predictions and Results Summary
 
