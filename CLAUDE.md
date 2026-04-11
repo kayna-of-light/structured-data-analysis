@@ -404,7 +404,7 @@ This repository provides a **general-purpose framework** for converting scraped 
 
 ### Collaboration
 
-This repository works in close collaboration with [literary-compilation](https://github.com/kayna-of-light/literary-compilation) for theoretical frameworks and interpretive lenses. Statistical findings from this project provide empirical evidence for concepts in the knowledge graph.
+This repository works in close collaboration with [literary-compilation](https://github.com/kayna-of-light/literary-compilation) for theoretical frameworks and interpretive lenses. Statistical findings from this project provide empirical evidence for concepts in the framework.
 
 ---
 
