@@ -1,14 +1,16 @@
 # The East-West NDE Dichotomy: Challenging Cultural Paradigms Through Empirical Analysis
 
+> **Correction notice (2026-10-05).** This report was revised after a statistical audit (`docs/STATISTICAL_AUDIT_2026-10.md`). Changes: (1) **the statement that inter-rater reliability was assessed (κ = 0.84 on 200 records) has been removed** — no such validation exists in the repository, and the companion perception report lists human validation as future work; (2) "deceased relatives (17.9%) nearly twice religious figures (9.9%)" omitted God and Jesus from the religious-figure count — corrected counts are 13.8–19.9% depending on definition, and the "inversion" does not hold under the report's own category label; (3) "brilliant light" was relabelled "impersonal light", but more than half of those accounts identify beings and report communication; (4) the nature-vs-urban test used an invalid goodness-of-fit χ² on overlapping counts (now McNemar); (5) several appendix χ² values did not match their p-values; (6) associations are now adjusted for narrative length; (7) the boundary-type × agency association is partly built into the category definitions; (8) the sample was described as "Western NDEs" although country is unknown for 88% and 27% of known countries are outside the West; (9) N = 6,751 after removing two duplicate narratives. The LaTeX and PDF versions were regenerated from this corrected text.
+
 ## Abstract
 
-**Background**: For four decades, scholarly literature has posited a fundamental dichotomy between Western and Japanese near-death experiences. Western NDEs are characterized as featuring a personified "Being of Light" (70–80%), elaborate "Cities of Light," and frequent life reviews (25–30%), while Japanese NDEs allegedly involve impersonal light, flower gardens, and absent life reviews. This paradigm has profoundly shaped cross-cultural NDE research—yet both profiles may represent scholarly constructions shaped by selection bias, small samples, and paradigmatic assumptions rather than phenomenological reality.
+**Background**: Cross-cultural NDE literature has contrasted a "Western" profile — personified Being of Light (claimed 70–80%), Cities of Light, frequent life reviews (25–30%), tunnel (34–50%) — with a "Japanese" profile of impersonal light, flower gardens, ancestors and absent life reviews. Both profiles rest on small or selected samples.
 
-**Methods**: We analyzed 6,753 structured NDE records from two major databases (NDERF: n=5,660; IANDS: n=1,093), coded using GPT-5.2 structured extraction for light encounter type, being identification, environment features, life review occurrence, boundary encounters, and return reasons. Chi-square tests examined associations between phenomenological features, Fisher's exact test assessed purpose-interaction correlations, and Mann-Whitney U tests compared experiential depth across boundary categories.
+**Methods**: We analysed 6,751 structured NDE records from two predominantly Western, English-language archives (NDERF n=5,659; IANDS n=1,092), coded with GPT-5.2 structured extraction. We compared observed prevalences with the claimed Western rates (exact binomial tests), compared paired features with McNemar tests, and estimated associations with odds ratios adjusted for narrative length.
 
-**Results**: The data fundamentally contradict the claimed Western profile. Being of Light encounters occurred in only 11.8% of Western NDEs—not 70–80%. Brilliant light without personification (40.9%) dominated, yielding a ratio of 3.8:1 impersonal to personified. Nature settings (17.0%) exceeded urban settings (11.4%). Deceased relatives (17.9%) were encountered more frequently than religious figures (9.9%)—the opposite of the claimed Western pattern. These findings suggest a universal baseline that neither scholarly tradition accurately captured. The key variable predicting personal interaction proved to be not culture but purpose: those returning with earthly missions showed 4.4× the odds of encountering the Being of Light (p < 10⁻⁴⁶). Analysis of boundary phenomena further supports a correspondential model: boundary type systematically maps to return agency (χ² = 3,724.7, p < 10⁻⁷⁸⁰), with physical barriers corresponding to external decisions and thresholds to self-choice. Boundary experiencers have richer, not shallower, experiences—demonstrating that the "point of no return" represents the correspondence of the return decision rather than a fixed structural limit.
+**Results**: The light was coded as a *being* of light in 11.8% of all accounts (20.7% of accounts reporting any light or presence), far below the claimed 70–80%. Brilliant light without a being *of* light (40.9%) was more common, but this is not "impersonal": 57.0% of brilliant-light accounts identified beings and 56.9% reported communication. Landscape features exceeded buildings (17.0% vs 11.4%; McNemar p < 10⁻²⁴). Life reviews (17.5%) and tunnels (23.7%) were less frequent than claimed. Deceased relatives (17.9%) exceeded named religious figures (13.8%) but not religious figures including angels (17.1–19.9%), so the "ancestor inversion" is definition-dependent. Being-of-Light encounters co-occurred with earthly-mission returns (OR 4.38; 3.26 after length adjustment) and life reviews (OR 2.55; 1.89 adjusted). Boundary reporters described more of nearly every other element, robust to length adjustment; boundary type was associated with return agency (Cramér's V = 0.35), partly by category definition.
 
-**Conclusions**: The East-West NDE dichotomy reflects scholarly projection rather than phenomenological reality. Both the claimed "Western" profile (with its inflated Being of Light rates) and the claimed "Japanese" profile (constructed from small, curated samples) appear to be divergent distortions of a universal baseline. This supports a correspondential model of constant underlying reality with variable cultural expression, mediated by purposive economy rather than cultural determination. The dichotomy was never between East and West—it was between scholarly constructions and empirical truth.
+**Conclusions**: The claimed Western prevalence figures do not describe these archives. Whether the Japanese profile is equally distorted cannot be tested without Japanese data. Personal interaction with the Light is associated with purposive elements of the narrative; reading this as "purposive economy" is a framework interpretation.
 
 **Keywords**: near-death experience, cross-cultural, Being of Light, life review, cultural paradigm, purposive economy, Japanese NDE, correspondences, boundary
 
@@ -18,10 +20,11 @@
 
 | Item | Source | Access |
 |------|--------|--------|
-| NDERF Records (n=5,660) | Near-Death Experience Research Foundation | [nderf.org](https://nderf.org) |
-| IANDS Records (n=1,093) | International Association for Near-Death Studies | [iands.org](https://iands.org) |
+| NDERF Records (n=5,659) | Near-Death Experience Research Foundation | [nderf.org](https://nderf.org) |
+| IANDS Records (n=1,092) | International Association for Near-Death Studies | [iands.org](https://iands.org) |
 | Analysis Notebook | `05_cultural_paradigm_challenge.ipynb` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/05_cultural_paradigm_challenge.ipynb) |
-| Structured Data | `structured/*.json` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/structured/) (6,753 files) |
+| Data loader | `scripts/nde_dataset.py` | Repository |
+| Structured Data | `structured/*.json` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/structured/) (6,753 files; 6,751 unique narratives) |
 | Extraction Model | GPT-5.2 via Azure OpenAI | Azure OpenAI Service |
 
 ---
@@ -30,36 +33,22 @@
 
 ### 1.1 The Paradigm and Its Origins
 
-Since the late 1980s, a paradigm has crystallized in near-death experience research that divides the phenomenon along cultural lines. Following Raymond Moody's seminal *Life After Life* (1975), which established the modern NDE typology from American cases, researchers began examining whether the pattern held across cultures. What emerged was a dichotomy: Western NDEs, characterized by encounters with a personified "Being of Light," elaborate urban heavenly realms, and morally evaluative life reviews; and Eastern (particularly Japanese) NDEs, featuring impersonal ambient light, natural settings such as flower gardens and rivers, ancestral guides rather than divine figures, and notably absent life reviews.
-
-This dichotomy carries profound theoretical implications. If near-death experiences vary systematically by culture—if Americans meet Jesus while Japanese meet ancestors, if Westerners traverse cities while Easterners wander gardens—this suggests that the dying brain constructs experiences from available cultural templates. The NDE, on this view, would be a culturally conditioned hallucination rather than a glimpse of objective spiritual reality. The stakes for NDE interpretation could not be higher.
-
-Yet the empirical foundation of this paradigm deserves scrutiny on *both* sides. The claimed Western profile—70–80% Being of Light encounters, Cities of Light, frequent life reviews—derives largely from early studies using selected samples, retrospective compilation of "classic" cases, and small datasets. The Japanese profile similarly rests on limited samples, some comprising fewer than twenty cases, and may reflect its own selection biases—researchers seeking experiences that fit Japanese aesthetic or theological frameworks (natural settings, ancestral encounters, secular phenomenology). When claims of fundamental East-West difference rest on comparing thirty American hospital cases with seventeen Japanese accounts, both shaped by their respective scholarly assumptions, the potential for dual sampling artifacts is substantial. Neither profile may accurately represent the universal baseline of the phenomenon.
+Following Moody (1975), researchers asked whether NDE features hold across cultures. A dichotomy emerged: Western NDEs with a personified Being of Light, urban heavenly realms and morally evaluative life reviews; Japanese NDEs with ambient light, natural settings such as flower gardens and rivers, ancestral guides and absent life reviews. If NDEs vary this way by culture, the dying brain might construct experiences from cultural templates. Both profiles, however, rest on small or curated samples (e.g. Ohkado & Greyson, 2014, with 22 interviews), and neither may represent the phenomenon's baseline.
 
 ### 1.2 The Problem of Prevalence Claims
 
-Consider the central claim: that 70–80% of Western NDEs feature a personified Being of Light. This figure appears repeatedly in the literature, yet its provenance is unclear. Moody's original typology described the Being of Light as a common element without quantifying prevalence. Kenneth Ring's subsequent research reported somewhat lower figures. The 70–80% estimate appears to derive from selective samples—cases chosen precisely because they exhibited classic features, or samples from contexts (such as support groups) where experiencers with dramatic encounters self-select.
-
-The Japanese contrast similarly requires examination—and similar skepticism. Ornstein's "Japanese NDEs and the Being of Light" and subsequent work by Becker, Kellehear, and Ohkado established that Japanese NDEs feature "impersonal" light and lack the Being of Light encounter. But this profile was constructed from small, curated samples (Ohkado and Greyson's influential comparative analysis relied on just 22 interviews). Japanese researchers may have selected cases that fit cultural expectations—natural imagery congruent with Shinto aesthetics, ancestral encounters consistent with Japanese family religion, secular phenomenology that avoided Western theological categories. The "Japanese profile" may be as much a scholarly projection as the "Western profile."
-
-Moreover, if Japanese samples happened to contain fewer experiencers who returned with specific missions—fewer who needed commissioning, teaching, or guidance requiring personal dialogue—they would naturally show fewer personified encounters by statistical necessity. The cultural explanation would be an artifact of purpose-distribution, not a window into different spiritual realities. Both East and West may have been measuring their own scholarly assumptions rather than the phenomenon itself.
+The 70–80% Being-of-Light figure appears repeatedly but its provenance and denominator are unclear; it may describe selected "classic" cases or core NDEs rather than all accounts. The same scrutiny applies to the Japanese profile. The figures quoted as "claimed" in this report are taken from the source document in `docs/`; because their denominators are not documented, comparisons with them are indicative.
 
 ### 1.3 Theoretical Framework: Correspondences and Purposive Economy
 
-The present analysis applies a theoretical framework derived from Swedenborgian correspondential philosophy to evaluate the East-West paradigm. This framework proposes that spiritual realities are ontologically constant but perceptually variable: the same underlying phenomenon may appear differently to different observers based on their mental repertoire, cultural vocabulary, and—critically—the purpose the encounter serves.
-
-The key concept is **purposive economy**: the principle that every element in an NDE serves the transformative goal. If the Light operates with perfect efficiency, it would engage personally when personal engagement is required (commissioning a mission, conducting a life review, teaching through dialogue) and remain as ambient presence when presence alone suffices. Cultural differences in NDE phenomenology would then reflect differences in sample composition—what purposes were represented—rather than differences in the nature of the Light itself.
-
-This framework generates testable predictions. First, the underlying light phenomenon should be universal; whether experiencers perceive it as "personified" versus "impersonal" should correlate with functional variables (purpose) rather than cultural variables (nationality). Second, natural versus urban imagery should not systematically differ by culture if both are valid correspondential expressions of the same underlying realms. Third, boundary phenomena (the "point of no return") should function not as fixed structural features of spiritual geography but as correspondences of the return decision—expressed differently depending on how the return occurred.
+The Swedenborgian framework proposes that spiritual realities are constant while their perceived forms vary with the observer's repertoire. **Purposive economy** extends this: the Light engages personally when the encounter's purpose requires it (commissioning, review, teaching) and remains as presence otherwise. Predictions: personal interaction should correlate with purpose; nature and urban imagery should not be culture-specific; boundaries should function as expressions of the return decision rather than fixed locations.
 
 ### 1.4 Aims
 
-This study tests the East-West paradigm against the largest systematically-coded Western NDE dataset analyzed to date. Our aims are:
-
-1. To test the claimed prevalence rates for key "Western" NDE features against empirical data
-2. To examine whether personal interaction with the Light correlates with culture or with purpose
-3. To evaluate whether boundary phenomena represent fixed structural features or correspondences of return decisions
-4. To determine whether the East-West dichotomy reflects phenomenological reality or scholarly projection
+1. Test the claimed prevalences of "Western" features against these archives
+2. Examine whether personal interaction with the Light correlates with purposive elements
+3. Examine what boundary reports correlate with
+4. State what can and cannot be concluded about the East-West dichotomy from Western-archive data
 
 ---
 
@@ -67,27 +56,17 @@ This study tests the East-West paradigm against the largest systematically-coded
 
 ### 2.1 Data Sources
 
-We compiled records from the two largest English-language NDE archives. The Near-Death Experience Research Foundation (NDERF) contributed 5,660 questionnaire responses spanning 1998 to 2024, collected through a standardized online instrument. The International Association for Near-Death Studies (IANDS) contributed 1,093 narrative accounts with biographical context. The combined corpus of 6,753 records constitutes the largest systematically structured NDE dataset analyzed to date.
-
-Both archives collect accounts from self-selected respondents who sought out the respective organizations, introducing potential selection bias toward more profound or memorable experiences. However, this bias operates equally across all analyses, and the sample size provides statistical power unavailable in prior cross-cultural studies.
+NDERF (5,659 accounts; online questionnaire) and IANDS (1,092 narrative accounts); two duplicate narratives counted once (N = 6,751). Both archives consist of self-selected submissions. Country is stated in 829 accounts (12.3%); of these, 72.7% are from North America, Western Europe or Australasia and 27.3% from elsewhere (e.g. India, Mexico, Brazil, Iran). "Western NDEs" in this report means *accounts in two predominantly Western, English-language archives*.
 
 ### 2.2 Structured Extraction
 
-Each record was processed using GPT-5.2 (Azure OpenAI) for structured extraction into a validated Pydantic schema with 52 extracted features. The model extracted categorical classifications rather than generating novel text, reducing hallucination risk. Key fields for this analysis include:
+Each record was processed with GPT-5.2 (Azure OpenAI) into the Pydantic schema in `models/questionnaire.py`. Key fields: `light_encounter` (brilliant_light, being_of_light, presence_without_visual, no, not_mentioned); `being_identifications` (multi-select); `environment_features` (light, landscape, buildings, sky, colors, water, other); life review occurrence; `boundary_encounter` (none, physical_barrier, verbal_limit, threshold, not_mentioned); return reasons; return agency (self, external_being, involuntary, mutual, not_mentioned).
 
-- **Light encounter type**: Categorical classification (brilliant_light, being_of_light, presence_without_visual, no, not_mentioned)
-- **Being identifications**: Multiple-select from standardized categories (god, jesus, deceased_relative_guide, unknown_presence, angels, religious_figure_specified, buddha, other)
-- **Environment features**: Multiple-select (light, landscape, buildings, sky, colors, water, other)
-- **Life review**: Occurrence and extent (no, brief, extensive, not_mentioned)
-- **Boundary type**: Categorical (none, physical_barrier, verbal_limit, threshold, not_mentioned)
-- **Return reasons**: Multiple-select (earthly_mission, family_responsibility, not_your_time, unfinished_business, other)
-- **Return agency**: Who initiated the return (self_choice, external_being, unknown, other)
-
-Inter-rater reliability was assessed on a 200-record subset, with human coders achieving κ = 0.84 agreement with GPT-5.2 classifications.
+**No human validation of the extraction has been performed.** (An earlier version of this report stated that human coders achieved κ = 0.84 on 200 records; no record of such a study exists, and the statement has been removed.)
 
 ### 2.3 Statistical Analysis
 
-Analyses employed chi-square tests for independence between categorical variables, Fisher's exact test for 2×2 tables with small expected cell counts, Mann-Whitney U tests for ordinal comparisons, and odds ratio calculations for association strength. All tests used α = 0.05, with Bonferroni correction applied for multiple comparisons where indicated.
+Wilson 95% CIs; exact binomial tests against claimed rates; McNemar tests for paired features within the same accounts; χ² with Yates correction for 2×2 tables and Cramér's V; Fisher exact tests; logistic regression odds ratios adjusted for log narrative word count (accounts with more elements are longer, so crude co-occurrence overstates association).
 
 ---
 
@@ -95,212 +74,148 @@ Analyses employed chi-square tests for independence between categorical variable
 
 ### 3.1 The Being of Light: Testing the Central Claim
 
-The East-West paradigm rests fundamentally on the claim that Western NDEs feature a personified Being of Light in 70–80% of cases. This figure has been repeated across decades of cross-cultural NDE literature as the signature Western feature—the divine personal presence that supposedly distinguishes Western from Eastern experiences. Testing this claim against our dataset of 6,753 Western NDEs yields a striking result.
-
-| Light Encounter Type | N | % |
+| Light Encounter Type | N | % of all |
 |---------------------|---|---|
-| Brilliant light (impersonal) | 2,761 | 40.9% |
+| Brilliant light (no being *of* light) | 2,759 | 40.9% |
 | No light | 1,636 | 24.2% |
 | Not mentioned | 1,274 | 18.9% |
-| Being of Light (personified) | 797 | **11.8%** |
+| Being of light | 797 | **11.8%** |
 | Presence without visual | 285 | 4.2% |
 
-The Being of Light—a personified presence with which the experiencer engages in dialogue or communion—appears in only 11.8% of Western NDEs. This is not a modest deviation from the claimed 70–80%; it is a six-fold discrepancy. The claimed Western signature feature is, in fact, a minority phenomenon.
+The light itself was coded as a being in 11.8% of all accounts (95% CI 11.1–12.6), 14.6% of accounts addressing light, and 20.7% of accounts reporting any light or presence. All are far below 70–80% (binomial p ≈ 0).
 
-What Western experiencers encounter far more commonly is brilliant light without explicit personification: 40.9% describe light that illuminates, surrounds, or pervades without taking personal form or engaging in dialogue. Including the category of "presence without visual form" (sensed but not seen) with impersonal light yields 45.1% impersonal versus 11.8% personified—a ratio of 3.8 to 1.
+**What "brilliant light" contains.** The category means "light without an identified being *of* light", not "no personal interaction". Of 2,759 brilliant-light accounts, 57.0% identified beings, 56.9% reported communication with beings and 25.6% telepathic communication; 7.3% identified God or Jesus. Being-of-light accounts identified God or Jesus in 46.4% and reported communication in 88.8%.
 
-This finding inverts the paradigm. Western NDEs do not characteristically feature personified divine encounter; they characteristically feature impersonal luminosity. The "Japanese" profile of impersonal light is, in fact, the *Western* profile. The Being of Light, when it appears, is the exception rather than the rule.
+**Finding.** The *form* of the light is far more often a brilliant light than a luminous being — this is robust. The earlier "impersonal : personified = 3.8 : 1" equated the form of the light with the presence of personal interaction, which these data contradict; it has been withdrawn.
 
-### 3.2 Settings and Beings: Further Inversions
+### 3.2 Beings and Settings
 
-The paradigm extends beyond light encounters to settings and beings. Western NDEs supposedly feature "Cities of Light"—elaborate urban heavenly realms with architecture and structure—while Japanese NDEs feature natural settings like flower gardens, rivers, and mountains. Western experiencers supposedly encounter divine figures (God, Jesus, angels) while Japanese experiencers meet ancestors. These claims, too, require empirical testing.
+**Beings.**
 
-Examining environmental features, we find that nature dominates over urban imagery in Western NDEs:
+| Category | % of NDEs | McNemar vs deceased relatives |
+|---|---|---|
+| Deceased relatives encountered | 17.9% | — |
+| Named religious figure (God/Jesus/Buddha/specified) | 13.8% | χ² = 43.8, p < 10⁻¹⁰ |
+| Named religious figure or angels | 17.1% | χ² = 1.2, p = 0.26 |
+| … or spiritual-being codes (religious figures, guides/angels) | 19.9% | χ² = 9.7, p = 0.002 |
+
+The earlier count of 9.9% for "religious figures (God/Jesus/angels/specified)" omitted God and Jesus because of a field error.
+
+**Finding.** Deceased relatives are more common than *named* religious figures (ratio 1.3, not 1.8), but under the report's own category — God, Jesus, angels and specified figures — religious figures are as common as deceased relatives. The claim that Western NDEs follow the "ancestor model" is **not supported**; both kinds of being are common.
+
+**Settings.**
 
 | Environment Feature | N | % of all NDEs |
 |--------------------|---|---------------|
-| Light | 3,395 | 50.3% |
-| Landscape/nature | 1,151 | **17.0%** |
-| Buildings/urban | 772 | **11.4%** |
+| Light | 3,394 | 50.3% |
+| Colors | 1,906 | 28.2% |
+| Landscape | 1,151 | **17.0%** |
+| Sky | 871 | 12.9% |
+| Buildings | 772 | **11.4%** |
 | Water | 414 | 6.1% |
 
-The "Cities of Light" stereotype is contradicted by the data. Nature settings (17.0%) significantly exceed urban settings (11.4%) in Western accounts (χ² = 74.7, p < 0.0001). Western experiencers describe meadows, gardens, forests, and landscapes more often than buildings, cities, or architectural structures. Once again, Western NDEs align with the supposedly "Japanese" pattern.
+Landscape exceeded buildings (296 accounts had both; McNemar χ² = 107.4, p < 10⁻²⁴); among accounts describing any environment, 23.0% vs 15.4%. The schema has no "garden" or "city" category, so these are approximations. (The previous χ² = 74.7 compared overlapping counts with a goodness-of-fit test, which is invalid.)
 
-The pattern continues with beings encountered. The paradigm holds that Westerners meet divine figures while Japanese meet ancestors. Our data show the reverse:
+**Finding (statistically supported):** natural features are more common than built ones in these archives.
 
-| Being Category | N | % of all NDEs |
-|----------------|---|---------------|
-| Deceased relatives | 1,206 | **17.9%** |
-| Religious figures (God/Jesus/angels/specified) | 670 | **9.9%** |
+### 3.3 Life Review and Tunnel
 
-Deceased relatives (17.9%) are encountered nearly twice as often as religious figures (9.9%) in Western NDEs. The "ancestor" pattern supposedly distinctive to Japan is, in fact, the dominant Western pattern. Western experiencers are more likely to meet grandmother than God, more likely to encounter a deceased spouse than Jesus.
+| Feature | Claimed Western rate | Observed | 95% CI | Binomial p (vs lower bound) |
+|---|---|---|---|---|
+| Being of light (all accounts) | 70–80% | 11.8% | 11.1–12.6 | ≈ 0 |
+| Being of light (accounts with any light) | 70–80% | 20.7% | 19.5–22.1 | ≈ 0 |
+| Life review | 25–30% | 17.5% | 16.6–18.4 | < 10⁻⁴⁸ |
+| Tunnel | 34–50% | 23.7% | 22.7–24.8 | < 10⁻⁷⁴ |
 
-### 3.3 Life Reviews: Between the Extremes
+Life reviews with a judgment element (any evaluator, including self) occur in 6.4% of all NDEs; with an external evaluator in 5.0%.
 
-The life review has been characterized as a signature Western feature (claimed 25–30%) essentially absent from Japanese NDEs (claimed ~0%). Our data show an intermediate rate:
+**Finding:** the claimed Western rates do not describe these archives. Because the claims' denominators are undocumented and the archives are self-selected, this shows the claims are not representative of these data; it does not by itself explain how the claims arose.
 
-| Life Review Occurrence | N | % |
-|-----------------------|---|---|
-| No | 5,245 | 77.7% |
-| Brief | 718 | 10.6% |
-| Extensive | 465 | 6.9% |
-| Not mentioned | 325 | 4.8% |
+### 3.4 Personal Interaction and Purpose
 
-Life reviews occur in 17.5% of Western NDEs—below the claimed 25–30% Western rate but substantially above zero. The dichotomy overstates the difference. More importantly, as we shall see, life review occurrence correlates not with culture but with purpose: when teaching is required, the life review occurs; when presence alone suffices, it does not.
+| Element | BoL rate with / without | Co-occur / expected | χ² (Yates) | OR | Length-adjusted OR (95% CI) |
+|---|---|---|---|---|---|
+| Earthly mission (reason) | 32.1% / 9.7% | 200 / 73.5 | 269.4 | 4.38 | 3.26 (2.68–3.97) |
+| Mission commissioned | 25.3% / 8.0% | 375 / 175 | 332 | 3.90 | 2.88 (2.45–3.39) |
+| Life review | 21.6% / 9.7% | 255 / 140 | 129.8 | 2.55 | 1.89 (1.59–2.25) |
+| Not your time (reason) | 20.4% / 9.4% | 297 / 172 | 129.7 | 2.45 | 2.30 (1.96–2.70) |
+| Family responsibility (reason) | 17.4% / 10.6% | 203 / 137 | 42.2 | 1.78 | 1.50 (1.25–1.79) |
 
-### 3.4 The Purposive Economy Hypothesis
+Fisher exact test, earthly mission × Being of Light: OR 4.38, p ≈ 10⁻⁴⁶. Among the three light types, life-review rates were 32.0% (being of light), 19.1% (brilliant light) and 17.5% (presence without visual); χ² = 64.0, df = 2, p < 10⁻¹³.
 
-Having demonstrated that Western NDEs are far closer to the "Japanese" profile than the literature claims, we turn to a more fundamental question: if culture does not determine whether the Light appears as personified, what does?
+**Finding (statistically supported):** Being-of-Light encounters co-occur with life reviews, mission returns and other return reasons more than chance predicts, and these associations survive adjustment for narrative length (attenuated by about a quarter).
 
-The correspondential framework predicts that personal interaction serves function. The Light would engage personally—in dialogue, in life review, in commissioning—when the transformative purpose requires personal engagement. When presence alone accomplishes the goal, the Light would remain as ambient luminosity. This is **purposive economy**: intervention calibrated to need.
+**Interpretation.** Purposive economy reads this as the Light becoming personal when purpose requires it. Two alternative readings fit the same association: a single narrative passage in which a luminous being gives instructions will be coded both as `being_of_light` and as a mission; and experiencers who meet a personified being may be more likely to frame their return as purposeful. The association is real in the data; its direction is interpretation. The hypothesis that Japanese samples show fewer personified encounters *because* they contain fewer mission returns is not tested here (no Japanese data).
 
-To test this hypothesis, we examined correlations between purposive elements (return reasons indicating specific missions or tasks) and personal interaction elements (Being of Light encounters, life reviews):
+### 3.5 Boundaries
 
-| Purposive Element | Personal Element | Co-occurrence | Expected by Chance | Ratio | p-value |
-|-------------------|------------------|---------------|-------------------|-------|---------|
-| Earthly Mission | Being of Light | 200 | 73.5 | **2.72×** | < 10⁻⁶⁰ |
-| Life Review | Being of Light | 255 | 139.6 | **1.83×** | < 10⁻³⁰ |
-| Not Your Time | Being of Light | 297 | 172.2 | **1.72×** | < 10⁻³⁰ |
-| Family Responsibility | Being of Light | 203 | 137.4 | **1.48×** | < 10⁻¹¹ |
+Any boundary was reported in 41.9% of accounts (verbal limit 18.3%, physical barrier 12.9%, threshold 10.8%).
 
-Every purposive element correlates significantly with personal interaction. The pattern is unmistakable: the Light engages personally when purpose requires it.
+**Tunnel and boundary are associated:** boundary in 58.6% of tunnel accounts vs 36.8% of others (χ² = 236.9, OR 2.43, φ = 0.19; length-adjusted OR 2.24, 95% CI 1.99–2.51). Most tunnel accounts are nevertheless not boundary accounts; they are distinct but correlated elements.
 
-The most powerful test involves the earthly mission return reason. Experiencers who return with a specific mission—a task to accomplish, a message to deliver, a purpose to fulfill—require commissioning. You cannot assign a task impersonally; commissioning requires personal communication. If purposive economy operates, mission-returners should show dramatically elevated Being of Light rates.
+**Content with and without a boundary:**
 
-| Condition | Being of Light Rate | Odds Ratio |
-|-----------|---------------------|------------|
-| With earthly mission (n=623) | **32.1%** | — |
-| Without earthly mission (n=6,130) | 9.7% | — |
-| **Comparison** | **3.3× higher** | **4.38** (p < 10⁻⁴⁶) |
+| Content | With boundary | Without | Crude OR | Length-adjusted OR (95% CI) |
+|---|---|---|---|---|
+| Heavenly realm | 43.5% | 18.7% | 3.35 | 2.92 (2.61–3.28) |
+| Deceased relatives | 27.9% | 10.6% | 3.27 | 3.07 (2.69–3.51) |
+| Being of light | 18.8% | 6.7% | 3.21 | 2.73 (2.33–3.21) |
+| Named religious figure | 19.4% | 9.7% | 2.24 | 1.97 (1.71–2.28) |
+| Buildings | 16.0% | 8.1% | 2.16 | 1.90 (1.63–2.22) |
+| Life review | 21.3% | 14.8% | 1.55 | 1.28 (1.13–1.46) |
 
-Those returning with an earthly mission have 4.4 times the odds of encountering the Being of Light. This is not chance association—it represents a functional relationship. The Light becomes personal when personal communication is required for the transformative purpose.
+Of 772 accounts with buildings, 55.3% report no physical or verbal boundary; of 1,962 with heavenly realms, 53.3%. A depth score (0–8) is higher with a boundary (3.95 vs 2.58; +1.12 after length adjustment).
 
-This finding reframes the entire East-West discussion. If Japanese NDE samples happened to contain fewer mission-returners—whether due to sampling methods, survival rates, cultural differences in how return reasons are articulated, or random variation—they would show fewer Being of Light encounters by statistical necessity. The cultural explanation would be an artifact of purpose-distribution, not evidence of different spiritual realities.
+**Finding (statistically supported):** boundary reporters describe *more* of the other elements, so boundaries do not mark a point before which experiences stop.
 
-The Light, on this model, operates with perfect efficiency: personal mode when personal mode is required, presence without dialogue when presence alone serves the purpose. A skilled teacher does not lecture every student on every topic. Some students need only a nod of encouragement; some need detailed instruction; some need mentorship with explicit commissioning. The teacher's restraint with some students does not make the teacher "impersonal"—the intervention is calibrated to the need. The wisdom is in the restraint.
+**Boundary type and return agency** (boundary reported and agency stated, n = 2,733): external being decided in 70.5% of verbal limits and 58.4% of physical barriers; self in 48.8% of thresholds (χ² = 683.8, df = 6, Cramér's V = 0.35; the earlier χ² = 3,724.7 with df = 16 — 3,728.7 on the deduplicated data — included the "none" and "not mentioned" categories).
 
-### 3.5 The Boundary as Correspondence
+**Finding with caveat.** The association is partly built into the categories: a verbal limit is by definition a being telling the experiencer to go back, and a threshold is typically the experiencer's own sense of a limit. It is therefore expected from the coding and cannot by itself show that the boundary *is* the return decision. That reading is a framework interpretation. Physical barriers co-occur with water in 11.3% of cases.
 
-The East-West paradigm frequently invokes the "point of no return" as a structural feature distinguishing NDE types. The Japanese river, the Western barrier—these are described as cultural variations of a fixed location in spiritual geography, beyond which physical return becomes impossible. This conceptualization requires examination.
+Two earlier arguments were removed as invalid: that unequal frequencies of boundary types show they are "not consistent representations of the same phenomenon" (frequency says nothing about consistency), and that 58% returning without a boundary shows boundaries are not points of no return (everyone in the dataset returned; the earlier version itself noted this is untestable).
 
-If the boundary represents a fixed structural limit, we would expect experiencers who encounter it to have shallower experiences than those who do not—they would have been stopped before reaching deeper content. The data show the opposite:
+### 3.6 Summary
 
-| Content Element | With Boundary (n=2,833) | Without Boundary (n=3,920) | Ratio |
-|-----------------|-------------------------|----------------------------|-------|
-| Cities/urban | 16.0% | 8.1% | **2.0×** |
-| Heavenly realms | 43.5% | 18.6% | **2.3×** |
-| Life review | 21.2% | 14.8% | **1.4×** |
-| Being of Light | 66.5% | 42.7% | **1.6×** |
-| Deceased relatives | 25.7% | 9.3% | **2.8×** |
-
-Boundary experiencers have *more* deep content, not less. They are 2.0–2.8 times more likely to report the richest experiential elements. The boundary does not prevent depth—it marks where depth culminates.
-
-Moreover, experiencers who describe the deepest content—cities, heavenly realms—frequently report no hard boundary at all:
-
-| Deep Content | N | No Hard Boundary | With Hard Boundary |
-|--------------|---|------------------|--------------------|
-| Saw cities | 772 | **55.3%** | 44.7% |
-| Heavenly realms | 1,963 | **53.2%** | 46.8% |
-
-Over half of those who entered the deepest realms report no physical barrier or verbal limit. The "point of no return" is not required to reach or return from deep experience.
-
-The most significant finding concerns what the boundary represents. If the boundary is a fixed structural feature, its type should be independent of how the return decision was made. The data show precise correspondence:
-
-| Boundary Type | External Being Decided | Self Choice | Dominant Pattern |
-|---------------|------------------------|-------------|------------------|
-| Physical barrier | **55.5%** | 10.6% | External decision |
-| Verbal limit | **69.6%** | 16.5% | External decision |
-| Threshold | 23.9% | **46.1%** | Self decision |
-| None | 10.0% | 10.2% | No distinctive marker |
-
-Chi-square: χ² = 3,724.7, df = 16, p < 10⁻⁷⁸⁰
-
-Boundary type systematically maps to return mechanism. When an external being makes the return decision, experiencers perceive physical barriers (rivers, walls, fences) or verbal limits ("not your time," "go back"). When the experiencer makes the decision, they perceive a threshold—a felt sense, an internal knowing. The form varies; the function is constant.
-
-The boundary is not a location—it is the **correspondence** of the return decision. It does not exist independently of the decision; it *is* the decision, perceived through available mental forms. The Japanese river and the Western barrier are not cultural variations of a cosmic limit—they are different expressions of the same functional reality: the moment when return occurs.
-
-This resolves a persistent confusion in cross-cultural NDE research. The question "Is the Japanese river the same as the Western tunnel?" is malformed because it conflates two distinct functional categories. The tunnel is a passage experience—how one travels. The river is typically a boundary experience—the decision point. These are different phenomena serving different functions in the experiential architecture.
-
-### 3.6 Summary: Two Distorted Profiles, One Universal Baseline
-
-The evidence permits a comprehensive reassessment of the East-West paradigm:
-
-| Feature | Claimed Western | Observed Western | Claimed Japanese | Interpretation |
-|---------|-----------------|------------------|------------------|----------------|
-| Being of Light | 70–80% | **11.8%** | Rare | Western claim grossly inflated |
-| Impersonal light | Rare | **40.9%** | Common | Japanese claim may be accurate for baseline |
-| Life review | 25–30% | **17.5%** | ~0% | Both claims are off: moderate rate is baseline |
-| Nature > Urban | No | **1.5×** | Yes | Western claim wrong; Japanese may be baseline |
-| Deceased > Religious | No | **1.8×** | Yes | Western claim wrong; ancestral is baseline |
-| Boundary = fixed location | Yes | **No** | Yes | Both claims wrong: boundary = correspondence |
-
-The picture that emerges is not that the Japanese profile was "right" while the Western profile was "wrong." Rather, both scholarly profiles represent distortions of a universal baseline—the Western version inflated by selecting dramatic cases, the Japanese version potentially shaped by its own selection biases (favoring secular, nature-focused, ancestral encounters over theologically charged material). Our large-scale data reveals what may be closer to the actual universal distribution: impersonal light dominates, nature settings are common, deceased relatives are the primary beings encountered, and life reviews occur at moderate rates. The dichotomy was never real—it was a comparison between two scholarly constructions, neither of which accurately captured the phenomenon.
+| Feature | Claimed Western | Observed in these archives | Assessment |
+|---------|-----------------|------------------|----------------|
+| Being of light | 70–80% | 11.8% (20.7% of light accounts) | Claim not observed |
+| Brilliant light = impersonal | — | 57% identify beings, 57% communicate | Relabelling withdrawn |
+| Life review | 25–30% | 17.5% | Lower than claimed |
+| Tunnel | 34–50% | 23.7% | Lower than claimed |
+| Nature > urban | No | Landscape 17.0% vs buildings 11.4% | Western claim not observed |
+| Deceased > religious figures | No | 17.9% vs 13.8–19.9% | Definition-dependent |
+| Purpose ↔ personal interaction | — | Mission OR 3.3 (adjusted) | Association supported; causation interpretive |
+| Boundary as hard limit | — | Boundary reporters report more | Not supported |
 
 ---
 
 ## 4. Discussion
 
-### 4.1 The Dichotomy as Dual Scholarly Construction
+### 4.1 What the Data Show About the Western Profile
 
-The findings presented here suggest that the East-West NDE dichotomy reflects scholarly projection rather than phenomenological reality—on *both* sides. The claimed Western profile—personified Being of Light in 70–80% of cases, Cities of Light, frequent life reviews—does not match what Western experiencers actually report. Western NDEs feature impersonal light (40.9%) more than personified (11.8%), nature settings (17.0%) more than urban (11.4%), and deceased relatives (17.9%) more than religious figures (9.9%).
+In two large Western archives, the light is usually experienced as brilliant light rather than a luminous being, life reviews and tunnels are less frequent than often claimed, and natural features are more common than buildings. The claimed Western figures do not describe these archives. Plausible contributors include selection of dramatic cases in early research, differences in denominators (all accounts vs core NDEs), and the self-selection of these archives; the data do not identify which.
 
-But we must be equally critical of the Japanese profile. Though our data cannot directly test Japanese claims, the methodological concerns are symmetric: small samples (sometimes fewer than 25 cases), potential selection biases (favoring secular experiences congruent with Japanese academic and cultural expectations), and the same vocabulary conflation that affected Western research. The Japanese "impersonal light, nature settings, ancestral encounters, no life review" profile may be as much a scholarly construction as the Western "Being of Light, Cities of Light, frequent life reviews" profile—simply distorted in a different direction.
+### 4.2 What the Data Cannot Show About the Japanese Profile
 
-How did both paradigms arise? Several factors likely contributed:
+No Japanese accounts are analysed. Whether the Japanese profile is also a distortion, and whether purpose-distribution explains East-West differences, remain hypotheses. The earlier conclusion that "the dichotomy was never real" went beyond what Western data can show.
 
-**Selection bias in both traditions**: Western researchers, following Moody, selected for dramatic encounters with personal divine figures. Japanese researchers, perhaps influenced by secular academic norms and Shinto/Buddhist aesthetics, may have selected for nature-based, non-theological experiences. Both presented their selections as representative.
+### 4.3 The Correspondential Model
 
-**Confirmation through contrast**: Each side defined itself against the other. Western researchers emphasized what distinguished their cases from "Eastern" patterns; Japanese researchers emphasized difference from "Western" expectations. The dichotomy became mutually reinforcing.
+The data fit a model in which the Light appears in variable forms — usually brilliant, sometimes a personal figure — and in which the personal form co-occurs with purposive narrative elements. They also fit a model in which richer, more purposeful narratives produce more codes of every kind; length adjustment reduces but does not remove this concern. The correspondential reading of boundaries as expressions of the return decision is coherent but rests on an association partly built into the coding.
 
-**Vocabulary conflation**: "Being of Light" implies personification; "brilliant light" does not. The same phenomenon might be coded differently depending on the categories researchers brought to the data. Cultural vocabulary shaped categorization, creating apparent differences where phenomenological similarity existed.
+### 4.4 Implications for Cross-Cultural Research
 
-**Publication bias on both sides**: Cases confirming each paradigm were more publishable than cases contradicting it. The "typical Western NDE" and "typical Japanese NDE" became self-fulfilling categorizations.
+Cross-cultural comparisons need common, documented denominators; large, systematically coded samples from each culture; paired tests for features reported in the same accounts; control for narrative length; and validated coding. Applying this extraction to Japanese and other non-Western archives is the necessary next step.
 
-### 4.2 The Correspondential Model
+### 4.5 Limitations
 
-Our findings support a correspondential model of NDE phenomenology. The underlying spiritual reality appears constant—a light that pervades, beings that guide, realms that welcome, boundaries that mark return. The surface expression varies: whether the light is named "Being" or perceived as "brilliant," whether settings are described as gardens or cities, whether beings are identified as Jesus or ancestors, whether boundaries appear as rivers or walls.
-
-This model explains why purpose predicts personal interaction. The Light operates with purposive economy: engaging personally when the transformative goal requires personal engagement (commissioning, teaching, guidance), remaining as ambient presence when presence alone accomplishes the goal. What researchers interpreted as cultural variation in the *nature* of the Light was actually functional variation in the *mode* of the Light—calibrated to individual need rather than determined by cultural background.
-
-The boundary analysis extends this model. The "point of no return" is not a fixed location in spiritual geography but the correspondence of the return decision. When an external being decides the return, experiencers perceive barriers or verbal commands. When the experiencer decides, they perceive thresholds or felt knowing. The form expresses the function; the boundary *is* the decision, not a separate feature the experiencer happens to encounter.
-
-### 4.3 Implications for Cross-Cultural Research
-
-These findings have significant implications for cross-cultural NDE research methodology:
-
-**Sample size matters**: Claims about cultural differences require large, systematically coded samples. The 70–80% Being of Light figure cannot be replicated in large Western datasets; claims about Japanese NDEs based on small samples deserve similar skepticism.
-
-**Purpose must be controlled**: Any comparison of personified versus impersonal light encounters must control for purpose-distribution. If samples differ in the proportion of mission-returners, they will differ in Being of Light rates by statistical necessity—regardless of culture.
-
-**Vocabulary must be distinguished from phenomenology**: Experiencers from different cultures may use different words for the same phenomenon. "Being of Light" and "brilliant radiance" may describe the same encounter through different cultural lenses.
-
-**Functional categories must not be conflated**: The tunnel (passage) and the river (boundary) serve different functions. Comparing them as cultural variants of "the same thing" is a category error.
-
-Future cross-cultural studies should apply identical structured extraction to Japanese, Indian, and other non-Western NDE archives, control for purpose-category distributions, and test the purposive economy hypothesis directly.
-
-### 4.4 Limitations
-
-Several limitations warrant acknowledgment. This analysis tests only Western claims against Western data; it cannot directly assess whether Japanese NDEs actually match the claimed Japanese profile. The sample, while large, derives from self-selected respondents who sought out NDE archives. AI-based coding may introduce systematic biases, though inter-rater reliability was acceptable (κ = 0.84). Return reasons are experiencer-reported rather than independently verified. The dataset spans decades during which cultural context changed.
-
-Most fundamentally, the claim "no boundary necessary for return" is inherently untestable—every member of the dataset returned. We can only assess what boundary presence correlates with, not whether boundary absence permits return.
+Self-selected archives; no human validation of LLM extraction; "not mentioned" treated as absence for prevalence figures; country unknown for 88%; no non-Western comparison sample; claimed rates of uncertain provenance.
 
 ---
 
 ## 5. Conclusion
 
-Analysis of 6,753 Western near-death experiences reveals that the East-West NDE dichotomy is largely a **dual** scholarly construction—both profiles appear to be distortions of a universal baseline that neither tradition accurately captured. The claimed Western profile—70–80% personified Being of Light, Cities of Light, frequent life reviews—does not match the observed data. Western NDEs feature impersonal light (40.9%) more than personified (11.8%), nature settings (17.0%) more than urban (11.4%), and deceased relatives (17.9%) more than religious figures (9.9%).
-
-But the solution is not simply to declare the Japanese profile "correct." That profile—constructed from small, curated samples (some fewer than 25 cases)—likely reflects its own selection biases: Japanese researchers favoring secular, nature-based, ancestral encounters that fit cultural and academic expectations, while filtering out theologically charged material. The Japanese claim of ~0% life reviews is as suspect as the Western claim of 70–80% Being of Light encounters. Neither represents unfiltered phenomenological reality.
-
-What our large-scale data reveals is something closer to the **universal baseline**: impersonal light dominates (~41%), personified light is a minority (~12%), nature settings exceed urban settings, deceased relatives are the primary beings encountered, and life reviews occur at moderate rates (~17.5%). Both scholarly traditions distorted this baseline—the Western version inflated toward the dramatic and theological, the Japanese version deflated toward the secular and naturalistic.
-
-The key variable determining personal interaction is not culture but **purpose**. Those returning with earthly missions show 4.4× the odds of encountering the Being of Light. Life reviews correlate with Being of Light encounters at 1.83×. The Light engages personally when the transformative purpose requires personal engagement—commissioning, teaching, guiding. When presence alone suffices, the Light remains as ambient brilliance. What researchers attributed to cultural difference was functional variation: the Light's mode calibrated to individual need, not national origin.
-
-The boundary or "point of no return" similarly reflects not fixed spiritual geography but the correspondence of the return decision. Boundary type maps systematically to return agency: physical barriers express external decisions; thresholds express self-decisions. Boundary experiencers have richer, not shallower, experiences. The boundary marks the choice, not a cosmic limit—and both the Western "barrier" and Japanese "river" may be cultural vocabularies for the same functional reality.
-
-These findings support a correspondential model of **constant underlying reality** with **variable cultural expression**, mediated by **purposive economy** rather than cultural determination. The Light is one; the forms are many; the mode of interaction serves the goal. Neither East nor West experiences something fundamentally different—and neither the Western scholarly profile nor the Japanese scholarly profile accurately captured what both populations actually experience. The dichotomy was never between East and West. It was between **scholarly constructions** and **empirical truth**.
-
-The Being of Light, whether named or unnamed, personified or brilliant, appears to be what experiencers consistently report across cultures when unfiltered by academic agendas: a presence of love and wisdom that engages with perfect economy—speaking when speaking serves, and present without words when presence alone transforms.
+In 6,751 NDE accounts from two predominantly Western archives, the light was a luminous *being* in about one account in eight (one in five among those reporting light), far below the 70–80% often attributed to Western NDEs; life reviews and tunnels were also less frequent than claimed, and natural features exceeded built ones. These findings challenge the Western half of the East-West dichotomy as a description of these archives. They do not test the Japanese half. Corrected counts do not support the claim that deceased relatives dominate over religious figures, and "brilliant light" is not impersonal. Personal encounters with the Light co-occur with purposive narrative elements even after length adjustment — consistent with the purposive-economy interpretation, which remains an interpretation rather than a demonstrated mechanism.
 
 ---
 
@@ -327,50 +242,39 @@ van Lommel, P. (2010). *Consciousness Beyond Life: The Science of the Near-Death
 ## Appendix A: Statistical Summary
 
 | Test | Variable | Statistic | df | p-value |
-|------|----------|-----------|----|---------| 
-| Chi-square | Nature vs. Urban settings | χ² = 74.7 | 1 | < 0.0001 |
-| Chi-square | Light type × Life review | χ² = 183.20 | 4 | < 0.0001 |
-| Fisher's exact | Mission × Being of Light | OR = 4.38 | — | 1.25 × 10⁻⁴⁶ |
-| Chi-square | Life Review × Being of Light | χ² = 53.2 | 1 | < 10⁻³⁰ |
-| Chi-square | Earthly Mission × Being of Light | χ² = 258.7 | 1 | < 10⁻⁶⁰ |
-| Chi-square | Boundary × Deep content | χ² = 100.9 | 1 | < 10⁻²³ |
-| Chi-square | Boundary type × Return agency | χ² = 3,724.7 | 16 | < 10⁻⁷⁸⁰ |
-| Mann-Whitney | Experience depth by boundary | U = 7.31 × 10⁶ | — | < 10⁻¹²³ |
+|------|----------|-----------|----|---------|
+| McNemar | Landscape vs buildings | χ² = 107.4 | 1 | < 10⁻²⁴ |
+| McNemar | Deceased vs named religious figures | χ² = 43.8 | 1 | < 10⁻¹⁰ |
+| McNemar | Deceased vs religious figures incl. angels | χ² = 1.2 | 1 | 0.26 |
+| Binomial | Being of light vs 70% | 11.8% observed | — | ≈ 0 |
+| Binomial | Life review vs 25% | 17.5% observed | — | < 10⁻⁴⁸ |
+| Binomial | Tunnel vs 34% | 23.7% observed | — | < 10⁻⁷⁴ |
+| χ² | Light type (3 types) × life review | χ² = 64.0 | 2 | < 10⁻¹³ |
+| χ² (Yates) | Life review × Being of light | χ² = 129.8 | 1 | < 10⁻²⁹ |
+| χ² (Yates) | Earthly mission × Being of light | χ² = 269.4 | 1 | < 10⁻⁵⁹ |
+| Fisher | Earthly mission × Being of light | OR = 4.38 (adjusted 3.26) | — | ≈ 10⁻⁴⁶ |
+| χ² | Tunnel × boundary | χ² = 236.9, OR 2.43 | 1 | < 10⁻⁵² |
+| χ² | Boundary type × return agency (both stated) | χ² = 683.8, V = 0.35 | 6 | < 10⁻¹⁴³ |
+| Mann-Whitney | Depth score by boundary | 3.95 vs 2.58 | — | < 10⁻²³⁸ |
 
 ## Appendix B: Key Statistics
 
 | Metric | Value |
 |--------|-------|
-| Total NDEs analyzed | 6,753 |
-| NDERF records | 5,660 |
-| IANDS records | 1,093 |
-| Being of Light encounters | 797 (11.8%) |
-| Brilliant light encounters | 2,761 (40.9%) |
-| Impersonal:Personified ratio | 3.8:1 |
-| Nature settings | 1,151 (17.0%) |
-| Urban settings | 772 (11.4%) |
-| Deceased relative encounters | 1,206 (17.9%) |
-| Religious figure encounters | 670 (9.9%) |
-| Life reviews | 1,183 (17.5%) |
-| Boundary encounters | 2,833 (42.0%) |
-| Mission → Being of Light odds ratio | 4.38 |
-| Boundary experiencers: mean depth | 2.90 |
-| Non-boundary experiencers: mean depth | 2.06 |
+| Total NDEs analyzed | 6,751 |
+| Being of light | 797 (11.8%) |
+| Brilliant light | 2,759 (40.9%) |
+| … of which identify beings / report communication | 57.0% / 56.9% |
+| Landscape / buildings | 17.0% / 11.4% |
+| Deceased relatives | 17.9% |
+| Named religious figures / incl. angels | 13.8% / 17.1% |
+| Life reviews | 17.5% |
+| Tunnel | 23.7% |
+| Any boundary | 41.9% |
+| Earthly mission → Being of light, OR (adjusted) | 4.38 (3.26) |
 
-## Appendix C: Claimed Versus Observed Rates
+## Appendix C: Data Access
 
-| Feature | Claimed Western | Observed | Deviation |
-|---------|-----------------|----------|-----------|
-| Being of Light | 70–80% | 11.8% | −58 to −68 pp |
-| Life review | 25–30% | 17.5% | −7 to −12 pp |
-| Tunnel | 34–50% | 23.7% | −10 to −26 pp |
-| Nature > Urban | No | Yes (1.5:1) | Reversed |
-| Deceased > Religious | No | Yes (1.8:1) | Reversed |
-
-## Appendix D: Data Access
-
-All analysis code and raw data are available at:
 - **Repository**: [https://github.com/kayna-of-light/structured-data-analysis](https://github.com/kayna-of-light/structured-data-analysis)
-- **NDE Project**: [/tree/main/projects/nde/](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/)
 - **Analysis Notebook**: [05_cultural_paradigm_challenge.ipynb](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/05_cultural_paradigm_challenge.ipynb)
-- **Structured Data**: [/structured/](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/structured/) (6,753 JSON files)
+- **Audit**: `projects/nde/docs/STATISTICAL_AUDIT_2026-10.md`
