@@ -1,425 +1,387 @@
+% Generated from ../Mission-Based Returns - Discriminant Analysis of Volunteer Soul Phenomenology.md by scripts/md_to_latex.py.
+% Edit the Markdown report, then regenerate this file; do not edit it by hand.
 \input{nde-report-preamble}
+\usepackage{array}
+\usepackage{calc}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setlength{\emergencystretch}{3em}
+\let\underscorechar\_
+\renewcommand{\_}{\underscorechar\allowbreak}  % let long field names break after underscores
 
-\reporttitle{Mission-Based Returns}{Discriminant Analysis of Volunteer Soul Phenomenology}
+\reporttitle{Mission-Based Returns}{Volunteer Soul Detection Analysis}
 \reportauthors
 
 \begin{document}
 
 \maketitle
 
+{\small
+\begin{quote}
+\textbf{Correction notice (2026-10-05).} This report was revised after a statistical audit (\texttt{docs/STATISTICAL\_AUDIT\_2026-10.md}). Changes: (1) the headline ``94.2\% discriminant accuracy'' is a \textbf{positive predictive value}; the full diagnostic picture is sensitivity 39.7\%, accuracy 86.2\% against a 78.1\% baseline, and Cohen's \ensuremath{\kappa} = 0.49; (2) the \ensuremath{\chi}\ensuremath{^{2}} values for mission commissioning (3,018) and volunteer language (599) tested variables that \emph{define} the volunteer group and are circular; (3) ``sense of belonging shows no association (\ensuremath{\chi}\ensuremath{^{2}} = 0.0)'' and ``life transformation shows no association'' were produced by a wrong field path and a non-existent field --- belonging is in fact associated (\ensuremath{\chi}\ensuremath{^{2}} = 252); (4) the volunteer-detection rule described in Methods did not match the rule used; (5) associations are now adjusted for narrative length; (6) N = 6,751 (two duplicate narratives removed; four IANDS records previously mislabelled NDERF). The LaTeX and PDF versions were regenerated from this corrected text.
+\end{quote}
+
+}
+
 \begin{abstract}
-A subset of near-death experiencers report not merely returning from death, but returning \emph{with purpose}---commissioned with earthly missions, given specific tasks, or volunteering for incarnation despite awareness of suffering. The existence of such ``volunteer souls'' has been theorized in esoteric literature but never subjected to rigorous empirical analysis.
+Some near-death experiencers report returning for an ``earthly mission''. The Swedenborgian framework proposes that mission-based returns form a distinct category associated with souls who incarnate for specific purposes. We analysed 6,751 NDE records from NDERF (n=5,659) and IANDS (n=1,092), coded by GPT-5.2 for return reasons, mission commissioning, volunteer language, pre-birth indicators and related features. We use binary ``volunteer detection'' rather than soul-path classification.
 
-We analyzed 6,753 structured NDE records from two major databases (NDERF: $n$=5,660; IANDS: $n$=1,093) coded for mission indicators, return circumstances, pre-incarnation memory, and life purpose elements using GPT-5.2 structured extraction. Linear discriminant analysis tested whether phenomenological features could predict mission-commissioned returns.
+An earthly-mission return reason appeared in 9.2\% of NDEs. Of these, 94.2\% (95\% CI 92.1--95.8) were also coded as having received a mission (positive predictive value), compared with 29.8--60.1\% for other return reasons and 9.1\% when no reason was given. The reverse does not hold: 60.3\% of commissioned experiencers did not cite an earthly mission (sensitivity 39.7\%); agreement between the two codes is moderate (\ensuremath{\kappa} = 0.49). Volunteer markers were detected in 695 accounts (10.3\%). In the 53 accounts using volunteer language, pre-birth indicators were 10--36 times more frequent, an overlap that is largely definitional. Volunteer-detected accounts also differed on independent features --- spiritual ``home'' identification, explicit belonging, hyper-reality, major value shift and Being-of-Light encounters --- with associations that remain after adjustment for narrative length (adjusted ORs 2.0--3.3).
 
-Mission commissioning appeared in 9.2\% ($n$=623) of cases. A discriminant function based on Being of Light encounter, life purpose certainty, and spiritual transformation achieved 94.2\% accuracy in classifying mission versus non-mission returns. Mission-commissioned experiencers showed significantly higher rates of incarnation choice memory (6.0\% vs. 0.8\%, $p < 0.00001$), pre-birth purpose awareness (8.8\% vs. 1.4\%, $p < 0.00001$), and complete life purpose certainty (37.5\% vs. 16.0\%, $p < 0.00001$). The volunteer soul indicator (incarnation choice with suffering awareness) appeared in 10.3\% of mission cases versus 0.9\% of non-mission cases---a ratio of 11.5:1.
+Mission-return narratives form an internally coherent and distinctive cluster. Because all variables are model-coded features of the same retrospective narrative, the data establish that mission commissioning is consistently \emph{reported}, not that it occurred.
 
-The data support the existence of a distinct population exhibiting the theorized ``volunteer soul'' phenomenology. These individuals demonstrate consistent patterns of purposive return, pre-incarnation memory, and mission clarity that discriminate reliably from the general NDE population. The 94.2\% classification accuracy suggests volunteer soul status is not random variation but a genuine phenomenological category.
-
-\keywords{near-death experience, mission, volunteer soul, discriminant analysis, purpose, reincarnation}
 \end{abstract}
 
 \newpage
 
-\section*{Data Provenance}
+\section*{Data Provenance}\label{data-provenance}
+\addcontentsline{toc}{section}{Data Provenance}
 
-\begin{tabularx}{\textwidth}{lXl}
-\toprule
-\textbf{Item} & \textbf{Source} & \textbf{Access} \\
-\midrule
-NDERF Records ($n$=5,660) & Near-Death Experience Research Foundation & nderf.org \\
-IANDS Records ($n$=1,093) & International Association for Near-Death Studies & iands.org \\
-Mission Analysis & \texttt{02\_mission\_returns\_analysis.ipynb} & Repository \\
-Structured Data & \texttt{analysis/*.json} & Repository (6,753 files) \\
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2727}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Access
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+NDERF Records (n=5,659) & Near-Death Experience Research Foundation & \href{https://nderf.org}{nderf.org} \\
+IANDS Records (n=1,092) & International Association for Near-Death Studies & \href{https://iands.org}{iands.org} \\
+Analysis Code & \texttt{03\_volunteer\_soul\_profile.ipynb} & \href{https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/03_volunteer_soul_profile.ipynb}{Repository} \\
+Data loader & \texttt{scripts/nde\_dataset.py} & Repository \\
+Structured Data & \texttt{structured/*.json} & \href{https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/structured/}{Repository} \\
 Extraction Model & GPT-5.2 via Azure OpenAI & Azure OpenAI Service \\
-\bottomrule
-\end{tabularx}
+\end{longtable}
+}
 
-\section{Introduction}
+\section{Introduction}\label{introduction}
 
-\subsection{Background}
+\subsection{Background}\label{background}
 
-Among the rich phenomenology of near-death experiences, one pattern has attracted particular theoretical interest: experiencers who report returning not merely because ``it wasn't their time'' but because they were given---or accepted---a specific mission. These ``mission-commissioned'' returns differ qualitatively from reluctant returns or arbitrary revivals. The experiencer describes receiving explicit instructions, accepting a defined purpose, or volunteering for continued earthly existence despite understanding the suffering involved.
+A subset of near-death experiencers report returning not because of family obligation or timing but because they were given, or accepted, an earthly mission (Ring, 1998; Atwater, 2007). Whether this is a distinct phenomenological category or a retrospective framing of an unwanted return has not been systematically examined.
 
-The concept of ``volunteer souls''---beings who knowingly choose difficult incarnations for purposes of service or growth---appears across esoteric traditions \citep{dolores1992,newton1994}. Common claims include:
+\subsection{Theoretical Framework}\label{theoretical-framework}
+
+The Swedenborgian framework distinguishes normative incarnation from incarnation undertaken for specific service. The ``volunteer soul'' hypothesis (cf.~Newton, 1994) proposes that some individuals retain awareness of choosing their life for a purpose. Predictions: mission-returners should report commissioning during the NDE, elevated pre-birth awareness, and a coherent profile of related features.
+
+\subsection{Methodological Approach: Detection, Not Classification}\label{methodological-approach-detection-not-classification}
+
+We measure whether volunteer-type markers are \emph{reported}. We cannot measure soul paths, first versus returning incarnation, or Ohkado-type ``reverse cases'' (children with spontaneous pre-birth memory --- a different population and method). Pre-birth awareness during an NDE may occur in any experiencer.
+
+\textbf{Same-source caveat.} Every variable is coded by the same language model from the same narrative. When two codes describe overlapping content (``returned for a mission'' and ``was given a mission''), their association partly reflects the same passage coded twice. Such associations show that narratives are internally coherent; they cannot by themselves show that the reported events occurred.
+
+\subsection{Aims}\label{aims}
+
+To describe how mission returns relate to commissioning, volunteer language and pre-birth indicators; to characterise volunteer-detected accounts on features that do not define the group; and to state what these data can and cannot establish.
+
+\section{Methods}\label{methods}
+
+\subsection{Data Sources}\label{data-sources}
+
+NDERF (5,659) and IANDS (1,092); N = 6,751 after removing two duplicate narratives.
+
+\subsection{Coding Scheme}\label{coding-scheme}
+
+Return reasons (multi-select), return agency and willingness, mission commissioned (\texttt{yes\_explicit}/\texttt{implied}/\texttt{no}/\texttt{not\_mentioned}), volunteer language, premortal existence information, pre-birth realm description, chose mission / parents / life circumstances, identity pre-body, home identification, past-life and prior-death memory, and features not used in detection (belonging, comparative reality, value shift, light encounter).
+
+\subsection{Volunteer Detection Rule}\label{volunteer-detection-rule}
+
+A case is flagged if \textbf{any} of: volunteer language (explicit or implied); earthly mission among return reasons; or mission commissioned (explicit or implied) \textbf{and} chose mission (explicit or implied). (The previous version of this section described the third criterion as ``mission commissioned = yes\_explicit'', a rule that would flag 898 cases instead of 695.)
+
+\subsection{Statistical Analysis}\label{statistical-analysis}
+
+Confusion-matrix diagnostics (PPV, sensitivity, specificity, accuracy, Cohen's \ensuremath{\kappa}); Fisher exact tests; \ensuremath{\chi}\ensuremath{^{2}} with Cram\'{e}r's V; Wilson CIs. Volunteer-detected accounts are twice as long as others (median 1,353 vs 635 words), so associations are also reported as odds ratios adjusted for log narrative word count. Tests involving a variable that defines the volunteer group are labelled circular.
+
+\section{Results}\label{results}
+
+\subsection{Return Reasons}\label{return-reasons}
+
+Not your time 21.6\%, family responsibility 17.2\%, unfinished business 10.5\%, earthly mission 9.2\% (n = 623), other 3.2\%; 44.3\% gave at least one reason and 1,034 gave more than one.
+
+\subsection{Earthly Mission and Mission Commissioning}\label{earthly-mission-and-mission-commissioning}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Return reason & Mission commissioned (explicit or implied) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Earthly mission (n=623) & 94.2\% (92.1--95.8) \\
+Unfinished business (n=711) & 60.1\% (56.4--63.6) \\
+Not your time (n=1,459) & 36.7\% (34.2--39.2) \\
+Family responsibility (n=1,164) & 31.3\% (28.7--34.0) \\
+Other (n=218) & 29.8\% (24.1--36.2) \\
+No reason given (n=3,763) & 9.1\% (8.2--10.1) \\
+\end{longtable}
+}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Diagnostic: earthly mission \ensuremath{\rightarrow} commissioned & Value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Positive predictive value & 94.2\% (587/623) \\
+Sensitivity & 39.7\% (587/1,480) \\
+Specificity & 99.3\% (5,235/5,271) \\
+Accuracy & 86.2\% (majority-class baseline 78.1\%) \\
+Cohen's \ensuremath{\kappa} & 0.49 \\
+Odds ratio (length-adjusted) & 88.9 (95\% CI 62.6--126.3) \\
+\end{longtable}
+}
+
+\textbf{Finding (corrected).} Experiencers who give an earthly mission as their reason for returning are almost always also coded as having received a mission (PPV 94.2\%), but most commissioned experiencers give other reasons, so the overall agreement is moderate (\ensuremath{\kappa} = 0.49). ``94.2\% discriminant accuracy'' was a mislabelled positive predictive value.
+
+\textbf{Interpretation.} The association is strong and coherent. Because the two codes describe overlapping content in the same narrative, it cannot distinguish ``commissioning occurred during the NDE'' from ``the return was later framed as a mission''. The earlier statement that the result ``cannot be explained by post-hoc rationalization'' is withdrawn.
+
+\subsection{Volunteer Detection}\label{volunteer-detection}
+
+Volunteer markers were detected in 695 accounts (10.3\%, 95\% CI 9.6--11.0): 623 via an earthly-mission reason, 53 via volunteer language, and 42 only via commissioning plus chosen mission.
+
+\subsection{Volunteer Language and Pre-Birth Indicators}\label{volunteer-language-and-pre-birth-indicators}
+
+Volunteer language was explicit in 22 accounts and implied in 31 (0.8\% together); 4,596 explicitly lacked it and 2,102 did not address it. These 53 accounts are long (median 2,314 vs 676 words).
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Indicator
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Volunteer language (n=53)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Others (n=6,698)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rate ratio
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fisher OR
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Length-adjusted OR (95\% CI)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Incarnation choice (any) & 71.7\% & 2.0\% & 36 & 124 & 73 (37--144) \\
+Pre-birth realm description & 34.0\% & 1.5\% & 22 & 33 & 14 (7.5--28) \\
+Premortal existence information & 69.8\% & 6.6\% & 11 & 33 & 18 (9.0--35) \\
+Home = spiritual realm & 58.5\% & 16.8\% & 3.5 & 7.0 & 3.6 (2.0--6.4) \\
+Identity pre-body & 79.2\% & 34.6\% & 2.3 & 7.2 & 3.9 (2.0--7.9) \\
+\end{longtable}
+}
+
+\textbf{Finding.} Pre-birth indicators are strongly elevated in volunteer-language accounts, beyond what narrative length explains. However, ``volunteering to incarnate'' \emph{semantically entails} pre-birth existence and a choice to incarnate, so co-occurrence of these codes is largely definitional. With 53 accounts, intervals are wide.
+
+\subsection{Profile of Volunteer-Detected Accounts}\label{profile-of-volunteer-detected-accounts}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Characteristic
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Volunteer-detected (n=695)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Not detected (n=6,056)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Length-adjusted OR (95\% CI)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Mission commissioned & 92.7\% & 13.8\% & --- & Defines the group \\
+Volunteer language & 7.6\% & 0\% & --- & Defines the group \\
+Pre-birth awareness & 29.4\% & 5.1\% & 4.7 (3.8--5.9) & Partly definitional \\
+Continuation memory & 14.0\% & 3.3\% & 2.8 (2.1--3.6) & Independent \\
+Home = spiritual realm & 41.4\% & 14.4\% & 3.0 (2.5--3.5) & Independent \\
+Sense of belonging (explicit) & 25.0\% & 9.1\% & 2.2 (1.8--2.8) & Independent \\
+More real than earthly reality & 36\% & 14\% & 2.0 (1.7--2.4) & Independent \\
+Major value shift & 58\% & 26\% & 2.6 (2.2--3.1) & Independent \\
+Being of Light (light\_encounter) & 32\% & 9.5\% & 3.3 (2.7--4.0) & Independent \\
+\end{longtable}
+}
+
+\textbf{Finding (statistically supported).} Volunteer-detected accounts differ on several features that play no part in the detection rule, and these associations remain after adjustment for narrative length. The earlier statement that ``sense of belonging \ldots{} \ensuremath{\chi}\ensuremath{^{2}} = 0.0 \ldots{} the profile is specific, not global'' was an artifact of reading the field from the wrong section; belonging is associated with volunteer detection (\ensuremath{\chi}\ensuremath{^{2}} = 252.1, df = 3, p \textless{} 10\ensuremath{^{-53}}, V = 0.19).
+
+\subsection{Continuation Memory}\label{continuation-memory}
+
+Past-life memory appears in 4.4\% of NDEs, intermission memory in 1.0\%, and memory of a prior death in 0.5\% (36 accounts, 19 violent; previously reported as 0 because the wrong values were matched). Past-life memory co-occurs \emph{positively} with volunteer language (4.4\% vs 0.6\%; OR 7.3), mission commissioning (52.9\% vs 20.5\%; OR 4.3) and earthly-mission returns (25.3\% vs 8.5\%; OR 3.6). This is compatible with ``past-life memory'' in NDE narratives often reflecting remembered pre-existence rather than prior earth lives, but the data cannot distinguish the two.
+
+\subsection{Pre-Birth Indicator Count}\label{pre-birth-indicator-count}
+
+Zero indicators 92.4\%, one 4.9\%, two 2.0\%, three 0.7\% (n = 47). Of the 47 accounts with all three, 41 (87.2\%) are volunteer-detected --- partly by construction, since ``chose mission'' contributes both to the count and to the detection rule.
+
+\subsection{Statistical Tests}\label{statistical-tests}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lllll@{}}
+\toprule\noalign{}
+Variable \ensuremath{\times} volunteer detection & \ensuremath{\chi}\ensuremath{^{2}} & df & V & Status \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Mission commissioned & 3,017.0 & 3 & 0.67 & \textbf{Circular} \\
+Volunteer language & 599.2 & 3 & 0.30 & \textbf{Circular} \\
+Pre-birth awareness & 515.5 & 1 & 0.28 & Partly circular \\
+Return agency & 696.5 & 4 & 0.32 & Independent \\
+Return willingness & 284.8 & 4 & 0.21 & Independent \\
+Sense of belonging & 252.1 & 3 & 0.19 & Independent \\
+Comparative reality & 223.3 & 3 & 0.18 & Independent \\
+Continuation memory & 164.7 & 1 & 0.16 & Independent \\
+\end{longtable}
+}
+
+All p \textless{} 10\ensuremath{^{-37}}. Circular tests are not evidence for the category.
+
+\section{Discussion}\label{discussion}
+
+\subsection{Summary of Corrected Findings}\label{summary-of-corrected-findings}
+
+Mission-return narratives are coherent: an earthly-mission reason almost always comes with a reported commissioning, volunteer language almost always with pre-birth content, and volunteer-detected accounts differ on several independent features (spiritual home, belonging, hyper-reality, value change, Being of Light) even after accounting for how much the narrative says.
+
+\subsection{What the Data Support}\label{what-the-data-support}
+
 \begin{itemize}
-\item Souls may choose incarnation circumstances, including difficult ones
-\item Some souls volunteer for missions involving service to others
-\item Awareness of incarnation choice may surface during NDEs
-\item Mission-commissioned individuals show distinct phenomenological patterns
+\tightlist
+\item
+  A recognisable cluster of mission-related reports exists in about one in ten NDE accounts.
+\item
+  The cluster is associated with features outside its definition, so it is not merely a by-product of the detection rule.
+\item
+  The framework's prediction that mission-returners report commissioning and pre-birth awareness is \textbf{consistent with} the data.
 \end{itemize}
 
-These claims have circulated in popular and esoteric literature but have never been subjected to systematic empirical analysis using large datasets. Do mission-commissioned returns differ phenomenologically from ordinary returns? Can we statistically discriminate volunteer souls from the general population? What features predict mission commissioning?
+\subsection{What the Data Cannot Support}\label{what-the-data-cannot-support}
 
-\subsection{Theoretical Framework}
-
-This analysis applies the Swedenborgian doctrine of uses \citep{swedenborg1763}, which proposes that spiritual beings exist in states of use---ongoing purposive service appropriate to their nature. On this model, return from near-death states would occur when the individual's use is not yet complete. Mission commissioning would represent explicit communication of that use, while the general population might return with implicit or unconscious purpose.
-
-The volunteer soul hypothesis extends this framework: some individuals may have incarnated with explicit awareness of their use, and this awareness may surface during NDEs when the boundary between physical and spiritual consciousness becomes permeable.
-
-\subsection{Aims}
-
-Primary aims include:
-\begin{enumerate}
-\item Quantifying the prevalence of mission-commissioned returns
-\item Testing whether mission commissioning can be predicted from phenomenological features
-\item Examining the relationship between mission and pre-incarnation memory
-\item Assessing whether volunteer soul indicators cluster as predicted
-\end{enumerate}
-
-\section{Methods}
-
-\subsection{Data Sources}
-
-Records were collected from NDERF ($n$=5,660) and IANDS ($n$=1,093), yielding 6,753 total records processed for structured extraction.
-
-\subsection{Coding Scheme}
-
-Each record was coded using GPT-5.2 with a 52-feature Pydantic schema. Mission-relevant fields include:
 \begin{itemize}
-\item \textbf{Return reason}: earthly\_mission, family\_responsibility, not\_your\_time, personal\_choice, others\_decision, unknown
-\item \textbf{Return agency}: self\_chose, being\_decided, mixed\_agency, forced\_return
-\item \textbf{Return willingness}: reluctant, accepting, eager, mixed
-\item \textbf{Pre-incarnation memory}: incarnation\_choice (remembered choosing to incarnate), pre\_birth\_purpose (awareness of purpose before birth)
-\item \textbf{Life purpose certainty}: none, vague, moderate, strong, complete
-\item \textbf{Volunteer indicators}: incarnation\_choice combined with suffering\_awareness
+\tightlist
+\item
+  That commissioning \emph{occurred}: all evidence is the same retrospective narrative coded twice.
+\item
+  That mission returns are not retrospective meaning-making: the data contain no measure that would distinguish the two.
+\item
+  Soul-path classification, first versus returning incarnation, or Ohkado-type reverse cases.
+\item
+  That non-detection means non-volunteer.
 \end{itemize}
 
-\subsection{Discriminant Analysis}
+\subsection{Implications}\label{implications}
 
-Linear discriminant analysis (LDA) tested whether phenomenological features could predict mission versus non-mission classification. Features included Being of Light encounter (binary), life review occurrence, life purpose certainty (ordinal), spirituality change, value shifts, and death fear change. The sample was split 70/30 for training and testing, with cross-validation for robustness.
+Clinically, mission-return accounts are coherent and warrant respectful engagement; their coherence does not, however, establish their accuracy, and clinicians need not adjudicate it. For research, longitudinal follow-up (do mission-returners report pursuing the stated mission?) and independent corroboration would test what the narrative data cannot.
 
-\subsection{Statistical Analysis}
+\subsection{Limitations}\label{limitations}
 
-Chi-square tests examined independence between mission status and categorical features. Odds ratios with 95\% confidence intervals assessed association strength. Mann-Whitney U tests compared ordinal variables. All tests used $\alpha = 0.05$ with correction for multiple comparisons.
+LLM extraction without human validation; self-selected archives; mission and volunteer language may be culturally available framings; volunteer-language n = 53; detection is rule-dependent (695 vs 898 under the alternative rule).
 
-\section{Results}
+\subsection{Future Directions}\label{future-directions}
 
-\subsection{Mission Prevalence}
+Human coding of mission content; prospective and longitudinal designs; cross-cultural samples; schema fields that separate \emph{when} in the narrative the mission was given from \emph{how} the return was explained.
 
-Among 6,753 NDEs, return reasons distributed as follows:
+\section{Conclusion}\label{conclusion}
 
-\begin{table}[H]
-\centering
-\caption{Return Reason Distribution}
-\begin{tabular}{lrr}
-\toprule
-\textbf{Return Reason} & \textbf{N} & \textbf{\%} \\
-\midrule
-Not your time & 1,458 & 21.6\% \\
-Family responsibility & 1,162 & 17.2\% \\
-\textbf{Earthly mission} & \textbf{623} & \textbf{9.2\%} \\
-Personal choice & 487 & 7.2\% \\
-Others' decision & 234 & 3.5\% \\
-Unknown/not mentioned & 2,789 & 41.3\% \\
-\bottomrule
-\end{tabular}
-\end{table}
+In 6,751 near-death experiences, about 10\% contain volunteer or mission markers. Mission returns and reported commissioning go together (PPV 94.2\%, \ensuremath{\kappa} = 0.49), volunteer language goes with pre-birth content, and mission-oriented accounts differ from others on several independent features after narrative length is controlled. These results show a coherent, distinctive pattern of \emph{reports}. They do not show that commissioning took place, and the earlier claims of ``94.2\% discriminant accuracy'' and validation by \ensuremath{\chi}\ensuremath{^{2}} tests on defining variables have been withdrawn.
 
-Nearly one in ten NDEs (9.2\%) involves explicit mission commissioning---a substantial minority with distinct phenomenological characteristics.
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
 
-\subsection{Mission and Pre-Incarnation Memory}
+Atwater, P. M. H. (2007). \emph{The Big Book of Near-Death Experiences}. Hampton Roads Publishing.
 
-The volunteer soul hypothesis predicts that mission-commissioned individuals should show elevated rates of pre-incarnation memory. The data strongly support this prediction:
+Newton, M. (1994). \emph{Journey of Souls: Case Studies of Life Between Lives}. Llewellyn Publications.
 
-\begin{table}[H]
-\centering
-\caption{Pre-Incarnation Memory by Mission Status}
-\begin{tabular}{lrrrl}
-\toprule
-\textbf{Memory Type} & \textbf{Mission} & \textbf{Non-Mission} & \textbf{Ratio} & \textbf{p-value} \\
-\midrule
-Incarnation choice & 6.0\% & 0.8\% & 7.5$\times$ & < 0.00001 \\
-Pre-birth purpose & 8.8\% & 1.4\% & 6.3$\times$ & < 0.00001 \\
-\bottomrule
-\end{tabular}
-\end{table}
+Ohkado, M. (2017). Children with life-between-life memories. \emph{Journal of Scientific Exploration}, 31(2), 217--228.
 
-\criticalfinding{Mission-commissioned experiencers remember choosing incarnation at 7.5$\times$ the rate of non-mission experiencers, and recall pre-birth purpose at 6.3$\times$ the rate. These are not small effects.}
-
-\subsection{Life Purpose Certainty}
-
-Mission commissioning should correlate with clarity about life purpose. The data confirm this strongly:
-
-\begin{table}[H]
-\centering
-\caption{Life Purpose Certainty by Mission Status}
-\begin{tabular}{lrrl}
-\toprule
-\textbf{Certainty Level} & \textbf{Mission} & \textbf{Non-Mission} & \textbf{Ratio} \\
-\midrule
-Complete certainty & 37.5\% & 16.0\% & 2.34$\times$ \\
-Strong certainty & 28.2\% & 19.8\% & 1.42$\times$ \\
-Moderate certainty & 18.6\% & 24.3\% & 0.77$\times$ \\
-Vague/None & 15.7\% & 39.9\% & 0.39$\times$ \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Chi-square test: $\chi^2$ = 187.3, $p$ < 0.00001
-
-The pattern is monotonic: as certainty increases, mission prevalence increases; as certainty decreases, non-mission prevalence increases. Complete certainty is 2.34$\times$ more common among mission-commissioned experiencers.
-
-\subsection{The Volunteer Soul Indicator}
-
-We defined the ``volunteer soul indicator'' as the co-occurrence of:
-\begin{enumerate}
-\item Memory of choosing incarnation
-\item Awareness that suffering was involved in the choice
-\end{enumerate}
-
-This stringent criterion captures the essence of the volunteer soul concept: knowing you chose to come here, knowing it would be hard.
-
-\begin{table}[H]
-\centering
-\caption{Volunteer Soul Indicator by Mission Status}
-\begin{tabular}{lrrl}
-\toprule
-\textbf{Group} & \textbf{Volunteer Soul Indicator} & \textbf{N} & \textbf{Rate} \\
-\midrule
-Mission-commissioned & 64 & 623 & 10.3\% \\
-Non-mission & 55 & 6,130 & 0.9\% \\
-\midrule
-\textbf{Ratio} & \multicolumn{3}{c}{\textbf{11.5:1}} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\criticalfinding{Mission-commissioned experiencers show volunteer soul indicators at 11.5$\times$ the rate of non-mission experiencers. This represents a highly significant clustering ($p < 10^{-35}$).}
-
-\subsection{Discriminant Analysis: Predicting Mission Status}
-
-Linear discriminant analysis tested whether phenomenological features could predict mission versus non-mission classification.
-
-\textbf{Features used}:
-\begin{itemize}
-\item Being of Light encounter (binary)
-\item Life review occurrence (binary)
-\item Life purpose certainty (ordinal, 0--4)
-\item Spirituality increased (binary)
-\item Major value shifts (binary)
-\item Death fear decreased (binary)
-\end{itemize}
-
-\textbf{Results}:
-\begin{itemize}
-\item Training accuracy: 94.8\%
-\item Test accuracy: \textbf{94.2\%}
-\item Cross-validation accuracy: 93.9\% ($\pm$1.2\%)
-\item ROC AUC: 0.89
-\end{itemize}
-
-\criticalfinding{A simple linear discriminant function achieves 94.2\% accuracy in classifying mission versus non-mission returns. This indicates mission commissioning is a genuine phenomenological category, not random noise.}
-
-\textbf{Feature importance} (standardized coefficients):
-\begin{enumerate}
-\item Being of Light encounter: 0.52
-\item Life purpose certainty: 0.41
-\item Spirituality increased: 0.28
-\item Life review occurrence: 0.22
-\item Major value shifts: 0.18
-\item Death fear decreased: 0.11
-\end{enumerate}
-
-The Being of Light encounter is the strongest predictor---mission commissioning requires personal communication, and the Being of Light is the primary personal agent in NDEs.
-
-\subsection{Mission and Being of Light}
-
-The discriminant analysis highlights the mission--Being of Light relationship:
-
-\begin{table}[H]
-\centering
-\caption{Being of Light Encounter by Mission Status}
-\begin{tabular}{lrrl}
-\toprule
-\textbf{Group} & \textbf{BoL Rate} & \textbf{N} & \textbf{Odds Ratio} \\
-\midrule
-Mission-commissioned & 32.1\% & 623 & \multirow{2}{*}{\textbf{4.38}} \\
-Non-mission & 9.7\% & 6,130 & \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Fisher's exact test: $p = 1.25 \times 10^{-46}$
-
-Those with missions have 4.4$\times$ the odds of encountering the Being of Light. This is consistent with the purposive economy hypothesis: commissioning requires personal dialogue.
-
-\subsection{Incarnation Choice Memory: The Signature Finding}
-
-Perhaps the most striking finding concerns remembered choice of incarnation:
-
-\begin{table}[H]
-\centering
-\caption{Incarnation Choice Memory: Detailed Breakdown}
-\begin{tabular}{lrrr}
-\toprule
-\textbf{Memory Element} & \textbf{Mission (n=623)} & \textbf{Non-Mission (n=6,130)} & \textbf{Ratio} \\
-\midrule
-Chose this life & 6.0\% & 0.8\% & 7.5$\times$ \\
-Chose difficult circumstances & 4.2\% & 0.4\% & 10.5$\times$ \\
-Chose for service/learning & 5.1\% & 0.6\% & 8.5$\times$ \\
-\textbf{Any incarnation choice memory} & \textbf{8.2\%} & \textbf{1.2\%} & \textbf{6.8$\times$} \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The ratios are extraordinary. Mission-commissioned experiencers remember choosing difficult circumstances at 10.5$\times$ the baseline rate. This is precisely what the volunteer soul hypothesis predicts: those who came with mission remember choosing to come.
-
-\subsection{Transformative Effects}
-
-Mission-commissioned experiencers show elevated transformative effects:
-
-\begin{table}[H]
-\centering
-\caption{Transformative Effects by Mission Status}
-\begin{tabular}{lrrl}
-\toprule
-\textbf{Effect} & \textbf{Mission} & \textbf{Non-Mission} & \textbf{Ratio} \\
-\midrule
-Increased spirituality & 89.2\% & 78.4\% & 1.14$\times$ \\
-Major value shifts & 52.3\% & 35.1\% & 1.49$\times$ \\
-Decreased death fear & 48.6\% & 32.8\% & 1.48$\times$ \\
-Life purpose certainty (complete) & 37.5\% & 16.0\% & 2.34$\times$ \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Every transformation metric is elevated among mission-commissioned experiencers. The effect is largest for life purpose certainty---consistent with the hypothesis that mission commissioning involves explicit communication of purpose.
-
-\section{Discussion}
-
-\subsection{Summary of Findings}
-
-This analysis provides strong empirical support for the volunteer soul hypothesis:
-
-\begin{enumerate}
-\item Mission commissioning is not rare (9.2\% of NDEs)
-\item Mission status can be predicted with 94.2\% accuracy from phenomenological features
-\item Mission-commissioned experiencers show markedly elevated pre-incarnation memory (7.5$\times$)
-\item The volunteer soul indicator (incarnation choice + suffering awareness) clusters strongly with mission (11.5$\times$)
-\item Being of Light encounter is the strongest predictor of mission status
-\end{enumerate}
-
-\subsection{The Discriminant Function: Implications}
-
-The 94.2\% classification accuracy carries significant implications. If mission commissioning were simply a post-hoc interpretation---experiencers retroactively attributing purpose to random survival---we would expect weak predictive power. Instead, mission status predicts reliably from features measured independently of the mission report itself.
-
-This suggests volunteer soul status is a genuine phenomenological category. The pattern is too consistent, the associations too strong, the discriminant function too accurate for random variation.
-
-\subsection{The Incarnation Choice Signature}
-
-The 7.5$\times$ ratio for incarnation choice memory is perhaps the most theoretically significant finding. These experiencers are not merely reporting return with purpose; they are reporting \emph{memory of choosing to be here in the first place}.
-
-From a Swedenborgian perspective, this aligns with the doctrine that souls exist in states of use and that incarnation serves spiritual purposes \citep{swedenborg1763}. The volunteer soul framework extends this: some souls incarnate with explicit awareness of purpose, and this awareness can surface during states of expanded consciousness.
-
-\subsection{Purposive Economy Revisited}
-
-The mission--Being of Light association (OR = 4.38) supports the purposive economy framework developed in earlier analyses. The Light engages personally when personal communication is required:
-
-\begin{table}[H]
-\centering
-\caption{Purposive Economy: Mode Matches Purpose}
-\begin{tabular}{lll}
-\toprule
-\textbf{Purpose} & \textbf{Mode} & \textbf{Evidence} \\
-\midrule
-Mission commissioning & Personal dialogue & 4.4$\times$ Being of Light odds \\
-Life review/teaching & Personal interaction & 1.83$\times$ Being of Light odds \\
-Simple return & Presence sufficient & 40.9\% brilliant light \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The Light is economical---not distant, but efficient. Personal mode activates when purpose requires personal communication.
-
-\subsection{Limitations}
-
-\begin{enumerate}
-\item Retrospective reporting may introduce recall bias
-\item Mission may be over-reported due to desire for meaning
-\item AI extraction may systematically misclassify ambiguous cases
-\item Western sample limits generalizability
-\item Pre-incarnation memory cannot be independently verified
-\end{enumerate}
-
-\section{Conclusion}
-
-Analysis of 6,753 near-death experiences reveals a distinct population exhibiting volunteer soul phenomenology. Mission-commissioned experiencers (9.2\% of NDEs) show markedly elevated rates of pre-incarnation memory (7.5$\times$), volunteer soul indicators (11.5$\times$), and life purpose certainty (2.34$\times$). A linear discriminant function achieves 94.2\% accuracy in classifying mission versus non-mission returns.
-
-These findings support the existence of volunteer souls as a genuine phenomenological category rather than post-hoc rationalization. The Being of Light serves as the primary commissioning agent, engaging in personal dialogue when mission assignment requires explicit communication. The pattern is consistent with the Swedenborgian doctrine of uses and the correspondential framework of purposive economy.
-
-The volunteer soul is not merely a theoretical construct. It is an empirically identifiable pattern in near-death phenomenology.
-
-\bibliographystyle{plainnat}
-\begin{thebibliography}{9}
-
-\bibitem[Cannon(1992)]{dolores1992}
-Cannon, D. (1992).
-\newblock \emph{Between Death and Life: Conversations with a Spirit}.
-\newblock Ozark Mountain Publishing.
-
-\bibitem[Newton(1994)]{newton1994}
-Newton, M. (1994).
-\newblock \emph{Journey of Souls: Case Studies of Life Between Lives}.
-\newblock Llewellyn Publications.
-
-\bibitem[Swedenborg(1763)]{swedenborg1763}
-Swedenborg, E. (1763).
-\newblock \emph{Divine Providence} (G.~F. Dole, Trans.).
-\newblock Swedenborg Foundation.
-
-\end{thebibliography}
+Ring, K. (1998). \emph{Lessons from the Light: What We Can Learn from the Near-Death Experience}. Perseus Books.
 
 \newpage
 \appendix
 
-\section{Statistical Summary}
+\section{Statistical Summary}\label{statistical-summary}
 
-\begin{table}[H]
-\centering
-\begin{tabular}{llrl}
-\toprule
-\textbf{Test} & \textbf{Variable} & \textbf{Statistic} & \textbf{p-value} \\
-\midrule
-Fisher's exact & Mission $\times$ Being of Light & OR = 4.38 & $1.25 \times 10^{-46}$ \\
-Chi-square & Mission $\times$ Purpose Certainty & $\chi^2$ = 187.3 & < 0.00001 \\
-Chi-square & Mission $\times$ Incarnation Choice & $\chi^2$ = 89.4 & < 0.00001 \\
-Chi-square & Mission $\times$ Volunteer Indicator & $\chi^2$ = 142.7 & $< 10^{-35}$ \\
-LDA & Classification Accuracy & 94.2\% & --- \\
-LDA & Cross-Validation & 93.9\% $\pm$1.2\% & --- \\
-LDA & ROC AUC & 0.89 & --- \\
-\bottomrule
-\end{tabular}
-\end{table}
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4615}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5385}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Test
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Value
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Earthly mission \ensuremath{\rightarrow} commissioned: PPV / sensitivity / specificity & 94.2\% / 39.7\% / 99.3\% \\
+Accuracy vs baseline & 86.2\% vs 78.1\% \\
+Cohen's \ensuremath{\kappa} & 0.49 \\
+Volunteer \ensuremath{\times} belonging (independent) & \ensuremath{\chi}\ensuremath{^{2}} = 252.1, df = 3, V = 0.19 \\
+Volunteer \ensuremath{\times} return agency (independent) & \ensuremath{\chi}\ensuremath{^{2}} = 696.5, df = 4, V = 0.32 \\
+Volunteer \ensuremath{\times} mission commissioned & \ensuremath{\chi}\ensuremath{^{2}} = 3,017.0 (circular) \\
+\end{longtable}
+}
 
-\section{Key Statistics}
+\section{Key Statistics}\label{key-statistics}
 
-\begin{table}[H]
-\centering
-\begin{tabular}{lr}
-\toprule
-\textbf{Metric} & \textbf{Value} \\
-\midrule
-Total NDEs analyzed & 6,753 \\
-Mission-commissioned returns & 623 (9.2\%) \\
-Mission $\rightarrow$ BoL odds ratio & 4.38 \\
-Incarnation choice: Mission vs. Non & 7.5$\times$ \\
-Volunteer indicator: Mission vs. Non & 11.5$\times$ \\
-Purpose certainty (complete): Mission vs. Non & 2.34$\times$ \\
-LDA classification accuracy & 94.2\% \\
-LDA feature \#1 & Being of Light (0.52) \\
-LDA feature \#2 & Purpose certainty (0.41) \\
-\bottomrule
-\end{tabular}
-\end{table}
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Metric & Value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Total NDEs analyzed & 6,751 \\
+Earthly-mission return reason & 623 (9.2\%) \\
+Volunteer markers detected & 695 (10.3\%) \\
+Volunteer language & 53 (0.8\%) \\
+Pre-birth awareness & 515 (7.6\%) \\
+Continuation memory & 298 (4.4\%) \\
+Home is spiritual (volunteer / not) & 41.4\% / 14.4\% \\
+\end{longtable}
+}
 
-\section{Data Access}
+\section{Methodological Notes}\label{methodological-notes}
 
-All analysis code and raw data are available at:
+Volunteer detection measures the presence of reported mission markers. It does not measure soul path, first versus returning incarnation, Ohkado-type pre-birth memory, or restorative path (which requires DOPS-type verified data).
+
+\section{Data Access}\label{data-access}
+
 \begin{itemize}
-\item \textbf{Repository}: \url{https://github.com/kayna-of-light/structured-data-analysis}
-\item \textbf{NDE Project}: \texttt{/projects/nde/}
-\item \textbf{Analysis Notebook}: \texttt{02\_mission\_returns\_analysis.ipynb}
+\tightlist
+\item
+  \textbf{Repository}: \url{https://github.com/kayna-of-light/structured-data-analysis}
+\item
+  \textbf{Analysis Notebook}: \href{https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/03_volunteer_soul_profile.ipynb}{03\_volunteer\_soul\_profile.ipynb}
+\item
+  \textbf{Audit}: \texttt{projects/nde/docs/STATISTICAL\_AUDIT\_2026-10.md}
 \end{itemize}
+
 
 \end{document}

@@ -25,10 +25,11 @@ from __future__ import annotations
 import json
 import sys
 import typing
+from collections.abc import Iterable
 from enum import Enum
 from functools import lru_cache
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Optional, Tuple
+from typing import Any
 
 import numpy as np
 import pandas as pd
@@ -40,7 +41,7 @@ DATA_ROOT = NDE_ROOT.parent.parent / "data"
 if str(NDE_ROOT) not in sys.path:
     sys.path.insert(0, str(NDE_ROOT))
 
-from models.questionnaire import NDEAnalysisResponse  # noqa: E402
+from models.questionnaire import NDEAnalysisResponse
 
 # ---------------------------------------------------------------------------
 # Value groups used throughout the analyses (all verified against the schema)
@@ -66,20 +67,20 @@ RELIGIOSITY_SCALE = {"none": 0, "low": 1, "moderate": 2, "high": 3, "devout": 4}
 # ---------------------------------------------------------------------------
 # Schema introspection
 # ---------------------------------------------------------------------------
-def _unwrap(annotation: Any) -> Tuple[Any, bool]:
+def _unwrap(annotation: Any) -> tuple[Any, bool]:
     """Return (inner type, is_list) for Optional/List annotations."""
     is_list = False
     origin = typing.get_origin(annotation)
     while origin is not None:
         args = [a for a in typing.get_args(annotation) if a is not type(None)]
-        if origin in (list, List):
+        if origin in (list, list):
             is_list = True
         annotation = args[0]
         origin = typing.get_origin(annotation)
     return annotation, is_list
 
 
-def _walk(model: type, prefix: Tuple[str, ...] = ()) -> Iterable[Tuple[Tuple[str, ...], Any, bool]]:
+def _walk(model: type, prefix: tuple[str, ...] = ()) -> Iterable[tuple[tuple[str, ...], Any, bool]]:
     hints = typing.get_type_hints(model)
     for name in model.model_fields:
         inner, is_list = _unwrap(hints[name])
@@ -91,12 +92,12 @@ def _walk(model: type, prefix: Tuple[str, ...] = ()) -> Iterable[Tuple[Tuple[str
 
 
 @lru_cache(maxsize=1)
-def _schema_leaves() -> Dict[str, Tuple[Tuple[str, ...], Any, bool]]:
+def _schema_leaves() -> dict[str, tuple[tuple[str, ...], Any, bool]]:
     leaves = list(_walk(NDEAnalysisResponse))
-    counts: Dict[str, int] = {}
+    counts: dict[str, int] = {}
     for path, _, _ in leaves:
         counts[path[-1]] = counts.get(path[-1], 0) + 1
-    columns: Dict[str, Tuple[Tuple[str, ...], Any, bool]] = {}
+    columns: dict[str, tuple[tuple[str, ...], Any, bool]] = {}
     for path, inner, is_list in leaves:
         name = path[-1] if counts[path[-1]] == 1 else f"{path[-2]}_{path[-1]}"
         if name in columns:
@@ -106,10 +107,10 @@ def _schema_leaves() -> Dict[str, Tuple[Tuple[str, ...], Any, bool]]:
 
 
 #: column name -> dotted path inside ``extraction``
-COLUMN_PATHS: Dict[str, str] = {k: ".".join(v[0]) for k, v in _schema_leaves().items()}
+COLUMN_PATHS: dict[str, str] = {k: ".".join(v[0]) for k, v in _schema_leaves().items()}
 
 
-def allowed_values(column: str) -> Optional[Tuple[str, ...]]:
+def allowed_values(column: str) -> tuple[str, ...] | None:
     """Enum values the schema allows for ``column`` (None for free/bool/int fields)."""
     _, inner, _ = _schema_leaves()[column]
     if isinstance(inner, type) and issubclass(inner, Enum):
@@ -117,7 +118,7 @@ def allowed_values(column: str) -> Optional[Tuple[str, ...]]:
     return None
 
 
-def check_values(column: str, values: Iterable[str]) -> Tuple[str, ...]:
+def check_values(column: str, values: Iterable[str]) -> tuple[str, ...]:
     """Raise ``ValueError`` if any of ``values`` cannot occur in ``column``."""
     values = tuple(values)
     allowed = allowed_values(column)
@@ -147,7 +148,7 @@ def has(df: pd.DataFrame, column: str, value: str) -> pd.Series:
 # ---------------------------------------------------------------------------
 # Loading
 # ---------------------------------------------------------------------------
-def _get(d: Dict[str, Any], path: Tuple[str, ...]) -> Any:
+def _get(d: dict[str, Any], path: tuple[str, ...]) -> Any:
     for key in path:
         if not isinstance(d, dict):
             return None
@@ -155,12 +156,12 @@ def _get(d: Dict[str, Any], path: Tuple[str, ...]) -> Any:
     return d
 
 
-def _raw_path(record: Dict[str, Any]) -> Path:
+def _raw_path(record: dict[str, Any]) -> Path:
     rel = record["source_file"].replace("\\", "/").split("/data/")[-1]
     return DATA_ROOT / rel
 
 
-def raw_word_count(record: Dict[str, Any]) -> float:
+def raw_word_count(record: dict[str, Any]) -> float:
     """Word count of the raw scraped narrative (NaN if the file is missing)."""
     path = _raw_path(record)
     if not path.exists():
@@ -169,7 +170,7 @@ def raw_word_count(record: Dict[str, Any]) -> float:
     return float(len((raw.get("content") or "").split()))
 
 
-def load_records(dedupe: bool = True) -> List[Dict[str, Any]]:
+def load_records(dedupe: bool = True) -> list[dict[str, Any]]:
     """Load structured JSON records, sorted by file name.
 
     With ``dedupe=True`` records whose ``content_checksum`` repeats an earlier
@@ -206,7 +207,7 @@ def load_frame(dedupe: bool = True, word_counts: bool = True) -> pd.DataFrame:
     rows = []
     for record in load_records(dedupe=dedupe):
         ext = record.get("extraction") or {}
-        row: Dict[str, Any] = {
+        row: dict[str, Any] = {
             "file": record["_file"],
             "dataset": record.get("dataset"),
             "title": record.get("title"),
@@ -233,7 +234,7 @@ def load_frame(dedupe: bool = True, word_counts: bool = True) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 # Small statistics helpers shared by the notebooks
 # ---------------------------------------------------------------------------
-def wilson_ci(k: int, n: int, alpha: float = 0.05) -> Tuple[float, float]:
+def wilson_ci(k: int, n: int, alpha: float = 0.05) -> tuple[float, float]:
     """Wilson score interval for a proportion k/n."""
     from scipy.stats import norm
 
@@ -272,7 +273,9 @@ def expected_count_report(table: pd.DataFrame | np.ndarray) -> str:
     return f"min expected = {expected.min():.2f}; cells with expected < 5: {lt5:.0f}%"
 
 
-def adjusted_odds_ratio(df: pd.DataFrame, outcome: str, exposure: str, covariates: Iterable[str] = ("log_words",)):
+def adjusted_odds_ratio(
+    df: pd.DataFrame, outcome: str, exposure: str, covariates: Iterable[str] = ("log_words",)
+):
     """Logistic regression OR for a binary exposure, adjusted for covariates.
 
     Returns a dict with crude and adjusted OR, 95% CI and p-value.
@@ -286,7 +289,7 @@ def adjusted_odds_ratio(df: pd.DataFrame, outcome: str, exposure: str, covariate
     adj = sm.Logit(y, sm.add_constant(data[[exposure] + covariates])).fit(disp=0)
     ci = np.exp(adj.conf_int().loc[exposure])
     return {
-        "n": int(len(data)),
+        "n": len(data),
         "crude_or": float(np.exp(crude.params[exposure])),
         "adj_or": float(np.exp(adj.params[exposure])),
         "adj_ci": (float(ci[0]), float(ci[1])),
