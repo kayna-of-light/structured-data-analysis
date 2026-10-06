@@ -1,6 +1,6 @@
-# State Dynamics in MallWorld: Design and Draft Pre-registration (October 2026)
+# State Dynamics in MallWorld: Design and Pre-registration (October 2026)
 
-**Status: DRAFT for review by the repository owner. This is not yet a registration.** It becomes the registration when it is committed with its status changed to "Registered", before `notebooks/10_state_dynamics_tests.ipynb` is written. No test in §5 has been computed. Measurement work is in `notebooks/09_state_measurement.ipynb`.
+**Status: Registered 2026-10-06** after review by the repository owner (owner's decisions in §6). This document was committed before `notebooks/10_state_dynamics_tests.ipynb` was written. No test in §5 had been computed. Measurement work is in `notebooks/09_state_measurement.ipynb`. The analysis specifics in §7 are part of the registration.
 
 **Data:** the primary population of `scripts/mallworld_dataset.py` (1,918 dream reports, 8,685 locations, 1,303 authors). The existing GPT-5.2 extraction is used as it is; no re-extraction.
 
@@ -69,7 +69,7 @@ Atmosphere is the coder's reading of how a place feels; it mixes Q and E and is 
 | **Nesting** | Locations and transitions are nested in dreams, and dreams in authors | Standard errors clustered by dream; bootstrap by dream or author |
 | **Growing volume** | 27 dreams in 2021, 894 in 2025 | Era as a covariate in sensitivity analyses |
 
-## 5. Questions and draft predictions
+## 5. Questions and predictions
 
 **Common rules.**
 - **Model and data.** Linear models on the state measures (scale −1 to +1), with log word count as a covariate. Standard errors are clustered by dream unless stated. The unit is the explicit transition, joined on the full key.
@@ -147,6 +147,71 @@ The asymmetry of ascent and descent (*HH* §§35, 543) needs to know what a bein
 - **Settled (2026-10-06).**
   - **Relative good.** "It depends on what the experiencer sees as light or good." Acts are therefore not classed as turning toward or away by their type. H2 and H4 read what a person treats as good from what he or she approaches, and the old asymmetry test is withdrawn.
   - **Measurement.** Compute state from several properties together; do not infer the ruling love; observe choices and how state changes with them; do not measure degrees.
-- **Default unless the owner objects.**
+- **Defaults accepted with the owner's go-ahead ("Yes", 2026-10-06).**
   - **Recurrence.** A person returning to his or her own layout is read as an expression of a persistent state (H5 descriptive).
   - **The model in §2** is taken as confirmed.
+
+## 7. Analysis specifics (fixed at registration)
+
+**Variables** (all from notebook 09, unchanged):
+- **Q:** the scene state without atmosphere.
+- **E:** the experiencer state.
+- **Perceived benign:** any entity at the location with demeanor helpful or friendly.
+- **Perceived hostile:** hostile, threatening or unfriendly.
+- **Transitions:** explicit connections with both ends joined on `(post_id, location_id)`.
+- **Clustering:** standard errors are clustered by dream. Bootstraps resample dreams, or authors for H4 and H5, 2,000 times, with seed 0.
+
+**Primary tests (Holm family, one-sided α = 0.05):**
+- **H1.**
+  - **Sample:** transitions with Q and E at both ends.
+  - **Standardisation:** Q and E are standardised by the mean and SD of all their values in the sample (origins and destinations pooled).
+  - **Models:** (A) Q(t+1) ~ Q(t) + E(t) + log_words; (B) E(t+1) ~ E(t) + Q(t) + log_words.
+  - **Statistic:** D = coef(E(t) in A) − coef(Q(t) in B). The one-sided p is the share of bootstrap D ≤ 0, as (k + 1) / (B + 1).
+- **H2.**
+  - **Orientation:** for each purposeful (`directed_active`) transition with Q at both ends, the mean of E·Q over the dream's other locations with both measures (its origin and destination excluded). At least 2 such locations are required.
+  - **Model:** Q(to) ~ Q(from) + orientation + log_words, with Q(to) standardised.
+  - **Statistic:** the coefficient of orientation, with a one-sided p from the clustered z.
+- **H3.**
+  - **Sample:** locations with E in dreams that have at least one location with and one without a perceived-benign being, both with E.
+  - **Model:** E ~ benign + hostile + dream fixed effects (within transformation).
+  - **Statistic:** the coefficient of benign, with a one-sided p from the clustered z.
+- **H4.**
+  - **Residual:** for each purposeful transition with Q at both ends, the residual of Q(to) on Q(from) and log_words (OLS over all such transitions), averaged per dream.
+  - **Sample:** authors with such dreams in at least two dreams.
+  - **Statistic:** one-way ICC1 of the dream means by author. The one-sided p comes from 5,000 permutations of author labels across these dreams. The 90% CI for equivalence comes from the author bootstrap.
+
+**Equivalence (miss) uses the 90% CI against the stated margins.**
+- H1, H4 and H5: bootstrap CI.
+- H2 and H3: clustered normal CI.
+
+**Secondary, not in the family:**
+- **H5.** ICC1 (as in H4) of the dream mean Q, the dream mean E, and the dream-level presence of each of:
+  - the ten most common location types other than the residual "other" (mall, mall_store, city_street, house, school, hotel, restaurant, beach, parking_lot, neighborhood);
+  - escalator, elevator and stairs connections.
+
+  The sample is authors with at least two primary dreams.
+- **H6.**
+  - **Sample:** transitions with direction up, diagonal_up, down or diagonal_down, and E at both ends and Q at the origin.
+  - **Model:** E(t+1) ~ E(t) × up + Q(t) + log_words.
+  - **Statistic:** the coefficient of E(t):up.
+- **Descriptive.** The shares of locations with a perceived-benign or perceived-hostile being, by the sign of Q.
+
+**Bias check B1.**
+- **Motifs:** dream-level presence of the 13 structural motifs listed under H5.
+- **Groups:**
+  - onset mention vs none (notebook 09 pattern);
+  - an author's first primary report vs later ones;
+  - 2021–2023 vs 2024–2026.
+- **Statistic:** the length-adjusted difference for each motif, as the average marginal effect from a logistic model (motif ~ group + log_words), with a 90% dream-bootstrap CI (1,000 resamples). A motif counts as equivalent when the CI lies within ±10 percentage points.
+
+**Sensitivity analyses** (reported for H1–H4; they do not change the verdicts):
+- list-order pairs in place of explicit transitions (H1, H2, H4);
+- dream fixed effects (H1, H2);
+- Q with atmosphere added (the full scene state);
+- Q without light temperature;
+- estimates within strata of onset mention and community vocabulary.
+
+**Already seen before registration.** These were seen before registration; none is a test in §5:
+- notebook 04 R4 (affect → next atmosphere);
+- notebook 02 C1 and C10 (height and direction, marginal);
+- the E × Q cross-tabulation at the same location (notebook 09 M6), which bears on how many dreams have a negative orientation, not on H2's relation.
