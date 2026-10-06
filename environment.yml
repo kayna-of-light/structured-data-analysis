@@ -18,7 +18,7 @@ dependencies:
   
   # Statistics
   - statsmodels>=0.14
-  - scikit-learn>=1.3
+  - scikit-learn>=1.3,<1.8  # factor_analyzer uses an argument removed in 1.8
   
   # Jupyter
   - jupyter>=1.0
@@ -52,3 +52,5 @@ dependencies:
   - pip:
     # Azure OpenAI
     - openai>=1.30.0
+    # Factor analysis (NDE notebook 06)
+    - factor_analyzer>=0.5.1
