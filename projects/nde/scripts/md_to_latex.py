@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""Regenerate the LaTeX versions of the NDE reports from their Markdown sources.
+"""Regenerate the LaTeX versions of a project's reports from their Markdown sources.
 
-The Markdown reports in ``projects/nde/reports/`` are the source of truth. This script converts
-each one with pandoc and wraps it in the shared ``nde-report-preamble`` layout (title page,
-abstract with keywords, unnumbered provenance/reference sections, lettered appendices).
+The Markdown reports in ``projects/<project>/reports/`` are the source of truth. This script
+converts each one with pandoc and wraps it in the project's ``<project>-report-preamble`` layout
+(title page, abstract with keywords, unnumbered provenance/reference sections, lettered
+appendices). The project defaults to ``nde``.
 
 Usage:
-    python scripts/md_to_latex.py                     # all reports that have a .tex version
+    python scripts/md_to_latex.py                     # all NDE reports that have a .tex version
     python scripts/md_to_latex.py "Being of Light - Statistical Analysis of NDE Phenomenology"
+    python scripts/md_to_latex.py --project mallworld # all MallWorld reports that have a .tex version
 
 Requires pandoc (``pip install pypandoc_binary`` provides one). Compile the output with any
 LaTeX engine from ``reports/latex/``, e.g. ``tectonic "<name>.tex"`` or ``pdflatex "<name>.tex"``.
@@ -20,8 +22,19 @@ import subprocess
 import sys
 from pathlib import Path
 
-REPORTS_DIR = Path(__file__).resolve().parent.parent / "reports"
+PROJECTS_DIR = Path(__file__).resolve().parent.parent.parent
+PROJECT = "nde"
+REPORTS_DIR = PROJECTS_DIR / PROJECT / "reports"
 LATEX_DIR = REPORTS_DIR / "latex"
+
+
+def set_project(project: str) -> None:
+    """Point the converter at ``projects/<project>/reports``."""
+    global PROJECT, REPORTS_DIR, LATEX_DIR
+    PROJECT = project
+    REPORTS_DIR = PROJECTS_DIR / project / "reports"
+    LATEX_DIR = REPORTS_DIR / "latex"
+
 
 PANDOC_FORMAT = "markdown+lists_without_preceding_blankline-subscript-superscript-implicit_figures"
 UNNUMBERED = {"Data Provenance", "References"}
@@ -33,8 +46,11 @@ SYMBOLS = {
     "κ": r"\ensuremath{\kappa}",
     "ρ": r"\ensuremath{\rho}",
     "η": r"\ensuremath{\eta}",
+    "Δ": r"\ensuremath{\Delta}",
+    "α": r"\ensuremath{\alpha}",
     "φ": r"\ensuremath{\phi}",
     "×": r"\ensuremath{\times}",
+    "·": r"\ensuremath{\cdot}",
     "−": r"\ensuremath{-}",
     "≈": r"\ensuremath{\approx}",
     "≠": r"\ensuremath{\neq}",
@@ -130,7 +146,7 @@ def convert(md_path: Path) -> str:
     parts = [
         f"% Generated from ../{md_path.name} by scripts/md_to_latex.py.",
         "% Edit the Markdown report, then regenerate this file; do not edit it by hand.",
-        r"\input{nde-report-preamble}",
+        rf"\input{{{PROJECT}-report-preamble}}",
         r"\usepackage{array}",
         r"\usepackage{calc}",
         r"\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}",
@@ -163,7 +179,11 @@ def convert(md_path: Path) -> str:
 
 def main(names: list[str]) -> None:
     if not names:
-        names = [p.stem for p in sorted(LATEX_DIR.glob("*.tex")) if p.stem != "nde-report-preamble"]
+        names = [
+            p.stem
+            for p in sorted(LATEX_DIR.glob("*.tex"))
+            if not p.stem.endswith("-report-preamble")
+        ]
     for name in names:
         md_path = REPORTS_DIR / f"{name}.md"
         out = LATEX_DIR / f"{name}.tex"
@@ -172,4 +192,9 @@ def main(names: list[str]) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    args = sys.argv[1:]
+    if "--project" in args:
+        i = args.index("--project")
+        set_project(args[i + 1])
+        args = args[:i] + args[i + 2 :]
+    main(args)

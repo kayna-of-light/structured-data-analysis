@@ -1,3 +1,5 @@
+> **SUPERSEDED, 2026-10-06.** This document predates the October 2026 audit (`STATISTICAL_AUDIT_2026-10.md`). Its figures were computed on a contaminated population, with a join that matched entities to other dreams, or not at all, and none may be cited. Notebook numbers refer to `../notebooks/archive/`.
+
 Based on the `MallworldResponse` schema and the Swedenborgian corpus provided, here are five testable hypotheses.
 
 These hypotheses are structured to validate two distinct levels of the phenomenon:

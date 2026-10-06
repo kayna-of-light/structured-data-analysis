@@ -1,3 +1,16 @@
+> **WITHDRAWN, 2026-10-06.** Do not cite figures from this report. It was written before the October 2026 audit. The audit found:
+>
+> - **Nested and sparse.** The χ² tests (792, 330) are sparse and treat nested involvements as independent.
+> - **Definitional.** Threat–threatening associations are built into the labels.
+> - **Length.** The "family paradox" is an effect of narrative length.
+> - **Not reproducible.** The success-rate ranking does not reproduce.
+> - **Weak.** "Zero conflict" with the deceased is weak evidence (p = 0.050 against the base rate).
+>
+> Every withdrawn figure and its correction is listed in `docs/STATISTICAL_AUDIT_2026-10.md`. Corrected analyses:
+>
+> - [Entities, Animals and Narrative Dynamics in MallWorld Dreams - A Corrected Re-analysis](../Entities,%20Animals%20and%20Narrative%20Dynamics%20in%20MallWorld%20Dreams%20-%20A%20Corrected%20Re-analysis.md)
+> - [Pre-registered Correspondential Tests in MallWorld Dreams - Animals, the Deceased and Ruling Love](../Pre-registered%20Correspondential%20Tests%20in%20MallWorld%20Dreams%20-%20Animals,%20the%20Deceased%20and%20Ruling%20Love.md)
+
 # Entity Ecology in MallWorld Dreams: A Systematic Analysis of Dream Inhabitants and Their Behavioral Signatures
 
 ## Abstract
