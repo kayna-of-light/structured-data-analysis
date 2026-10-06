@@ -52,14 +52,20 @@ The October 2026 audit (`docs/STATISTICAL_AUDIT_2026-10.md`) found that the main
 
 ### 1.2 Theoretical Framework
 
-In *Heaven and Hell* (Swedenborg, 1758), the things that appear around angels and spirits correspond to their interiors (§§173–176). Light in heaven corresponds to wisdom, and heat to love (§§126–140). The project framework (CLAUDE.md §9) reads vertical space as discrete degrees: higher states above, lower states and proximity to self-love below. Water is a standard correspondence for truth in Swedenborg's exegesis: clear when the truth is genuine, turbid when it is falsified. Read as hypotheses about dream environments, these give testable predictions:
+In *Heaven and Hell* (Swedenborg, 1758), the things that appear around angels and spirits correspond to their interiors (§§173–176). Each prediction below is located in the text, as `CLAUDE.md` §3 requires ("Find the prediction in the text"):
+- **Height.** "Interior things correspond to higher things, and exterior things to lower things" (§188). The celestial kingdom dwells on the heights and the lowest heaven on "ledges of stone" (§188). The hells are beneath, and those who acted interiorly from evil are in the deeper ones (§§584–586). In successive order the highest degree is above and the lowest below, and the three heavens are arranged so; in simultaneous order the highest is innermost (*Divine Love and Wisdom* §205). No dream level is assigned to a degree here. Height is read through the general correspondence of higher with interior (§188).
+- **Light and heat.** Light in heaven corresponds to wisdom, and heat to love (§§126–140). The light of the celestial kingdom appears flaming (§128). Truths without good "shine coldly, like something snowy, without heat" (§132), and those in the hells are in thick darkness as to truth (§584).
+- **Water.** "Waters" signify the intellectual things of faith, and in the opposite sense falsities (*Arcana Coelestia* §739). To "trouble the waters" signifies wanting to enter the mysteries of faith by memory-knowledge, and so from oneself (§42).
+- **Exposure.** Nakedness corresponds to innocence (§§179, 280). Shame at nakedness marks the loss of innocence (§341). The text therefore ties the negative sense to shame, not to exposure as such.
+
+Read as hypotheses about dream environments, these give testable predictions:
 
 | Correspondence | Prediction | What would count as a miss |
 |---|---|---|
-| Height ↔ state | Lower locations more negative, higher locations less negative than ground | No difference, or elevated no better than ground |
-| Water ↔ truth | Turbid water more negative than clear water | No difference |
-| Light ↔ wisdom; heat ↔ love | Dark and cold light more negative; warm light more common above | No difference; warm light not more common above |
-| Exposure ↔ shame | Exposed locations more negative | No difference |
+| Height ↔ interior (§§188, 584–586) | Lower locations more negative, higher locations less negative than ground | No difference, or elevated no better than ground |
+| Water ↔ truth (*Arcana Coelestia* §§42, 739) | Turbid water more negative than clear water | No difference |
+| Light ↔ wisdom; heat ↔ love (§§128, 132, 188) | Dark and cold light more negative; warm light more common above | No difference; warm light not more common above |
+| Exposure ↔ shame (§341) | Exposed locations more negative | No difference |
 | Cleanliness ↔ purity, by height | Dirt more common below | No height difference after location type |
 
 The archived analyses did not state these predictions before testing them. This report therefore treats them as **confirmatory in direction but not pre-registered**. The pre-registered tests are reported separately.
@@ -187,7 +193,7 @@ Among locations with a coded privacy status:
 - **Atmosphere:** exposed locations are negative in 87.1% of cases and private ones in 53.5% (OR 6.35). Among bathrooms alone the figures are 92.3% vs 50.0% (n=62).
 - **"3.5× threatening" was a different quantity.** The thesis's figure was exposure by vertical level: 35.0% underground (n=20, 95% CI 12–58%) against 15.3–18.8% elsewhere, with overlapping intervals.
 
-**Finding (statistically supported):** Exposure goes with negative atmosphere. **Verdict: hit (pattern fit),** weakened by priming. The prompt called exposure "shameful" and peaceful seclusion "innocent". The claim that exposure concentrates below ground is **underdetermined** (n=20).
+**Finding (statistically supported):** Exposure goes with negative atmosphere. **Verdict: hit (pattern fit),** weak. The prompt called exposure "shameful" and peaceful seclusion "innocent", so the code carries the shame that the text makes decisive (§341). Unashamed nakedness has the opposite sense in the text (innocence, §§179, 280), and the schema cannot separate the two. The claim that exposure concentrates below ground is **underdetermined** (n=20).
 
 ### 3.5 Cleanliness, Somatic Distress, Decay and Compounding
 
@@ -261,9 +267,9 @@ So location type carries information beyond each dream's tone. "Within-author" s
 
 ### 4.2 Interpretation
 
-The archived reports presented an elevation gradient as the backbone of the evidence ("ρ = 0.25–0.30, replicated"). That gradient does not exist in these data. What exists is a penalty for going below ground and no reward for going above it. In correspondential terms, this is half the vertical prediction. The lower, natural or infernal, direction is marked; the higher one is not.
+The archived reports presented an elevation gradient as the backbone of the evidence ("ρ = 0.25–0.30, replicated"). That gradient does not exist in these data. What exists is a penalty for going below ground and no reward for going above it. In correspondential terms, this is half the vertical prediction. The lower, natural or infernal, direction is marked; the higher one is not. The failing half is the framework's own prediction ("interior things correspond to higher things", §188), not a claim added by later summaries. Since the NDE revisions of October 2026 left no misses among the framework's own predictions in that domain (`CLAUDE.md` §6.1), height in MallWorld is where the framework's own predictions fail most clearly in this repository.
 
-One framework-consistent reading follows from where the corpus starts. MallWorld dreams begin in malls (25.6% of first locations), at ground level. If the environment reflects the dreamer's state, a dreamer whose state is "natural" would find ground the most fitting level. Height would then not be experienced as ascent into heaven. This reading is **interpretation**. It was formed after seeing the data and is not a test.
+One framework-consistent reading follows from where the corpus starts. MallWorld dreams begin in malls (25.6% of first locations), at ground level. If the environment reflects the dreamer's state, a dreamer whose state is "natural" would find ground the most fitting level. Height would then not be experienced as ascent into heaven. A second reading comes from the text itself. The world of spirits "appears like a valley between mountains and rocks", with the ways to the hells opening downward to anyone about to enter, while the gates of heaven are visible only to those prepared for it (§429). A dream set in such a place would mark descent but not ascent. Both readings are **interpretation**. They were formed after seeing the data, and two different readings that accommodate the same asymmetry show why accommodation is not a test.
 
 The qualitative correspondences behave as predicted: turbid water, darkness, cold light and exposure. They are also what an ordinary reading of these words predicts. Several were primed by the extraction prompt, and the coder usually read them from the same sentence as the atmosphere. Their status is pattern fit, not discrimination between explanations.
 
@@ -316,6 +322,12 @@ Cohen, J. (1960). A coefficient of agreement for nominal scales. *Educational an
 Liang, K.-Y., & Zeger, S. L. (1986). Longitudinal data analysis using generalized linear models. *Biometrika*, 73(1), 13–22.
 
 Swedenborg, E. (2000). *Heaven and Hell* (G. F. Dole, Trans.). Swedenborg Foundation. (Original work published 1758)
+
+Swedenborg, E. (1941). *Arcana Coelestia*, Vol. 1 (J. F. Potts, Rev. and Ed.). Swedenborg Foundation. (Original work published 1749)
+
+Swedenborg, E. (2005). *Angelic Wisdom Concerning the Divine Love and the Divine Wisdom* (J. C. Ager, Trans.). Project Gutenberg, eBook #16627. (Original work published 1763)
+
+Swedenborg, E. (2005). *Heaven and its Wonders and Hell* (J. C. Ager, Trans.). Project Gutenberg, eBook #17368. (Original work published 1758). Quotations in this report follow this translation.
 
 ---
 
