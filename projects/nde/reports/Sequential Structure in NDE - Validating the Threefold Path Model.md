@@ -1,5 +1,7 @@
 # Sequential Structure in Near-Death Experience: Evaluating the Normative Path Model
 
+> **Correction notice (2026-10-06).** The canonical stage order tested in §3.8 (OBE, tunnel, light, encounters, review, boundary, return) is the extraction schema's, taken from the NDE literature. It is not Swedenborg's sequence, which is three *states* in the world of spirits — outward, inward, preparation — that "some people … do not go through" at all (*Heaven and Hell* §491). The result (strict order 0.05%) stands as data, but it is no longer scored as a miss of the framework; it is not a test of it.
+
 > **Correction notice (2026-10-05).** This report was revised after a statistical audit (`docs/STATISTICAL_AUDIT_2026-10.md`). Changes: (1) the sequence data the title refers to had never been analysed; they are now reported, and a fixed canonical order is essentially absent; (2) the life-review "15.9:1 loving:harsh" mixed life reviews with judgments recorded outside life reviews and used all 6,753 records as denominator — within life reviews the ratio is 36.2:1 but loving:critical is 1.7:1; (3) several percentages were computed on the wrong denominator (e.g. judgment sources as % of all NDEs); (4) the "four markers support" conclusion relied on criteria that could not fail; markers are now classified by what they can and cannot test; (5) agency × willingness χ² was inflated by co-missing data (4,824.8 → 1,389.0 without "not mentioned"); (6) N is 6,751 after removing two duplicate narratives, and four IANDS records previously mislabelled as NDERF are corrected. The LaTeX and PDF versions were regenerated from this corrected text.
 
 > **Reliability addendum (2026-10-06).** Coding reliability was measured with a blind second coder; see *Reliability of Near-Death Experience Narrative Coding* (`08_extraction_reliability.ipynb`). The presence of tunnel, light, life review and boundary, the elements this report sequences, agrees at Cohen's κ = 0.77–0.97. The life-review loving:harsh ratio is coder-dependent: 36.2:1 under GPT-5.2, 6.4:1 (95% CI 3.1–43.9) under the second coder. Loving:critical (1.72 vs 1.77) is stable.
@@ -10,7 +12,7 @@ Near-death experiences are often described as following a characteristic sequenc
 
 Among accounts stating who decided the return, 70.1% did not return by their own choice (95% CI 68.8–71.4); among those stating their attitude, 49.4% were reluctant. Deceased relatives appeared in 17.9% of NDEs; identity was described as clear in 97.0% of accounts addressing it. Reincarnation content was rare: past-life memory 4.4%, intermission memory 1.0%, pre-incarnation covenant 1.3%. Life reviews occurred in 17.5%; within them, harsh evaluation was rare (1.4% of rated reviews) but uncomfortable evaluation common (28.0%). Strict adherence to the canonical stage order occurred in 3 of 6,249 assessable accounts (0.05%); 37.7% followed it mostly and 54.3% partially.
 
-The data are consistent with several descriptive expectations of a continuation model — a valued state, encounters with the dead, preserved identity, rare reincarnation content, non-condemning review — but most of these markers do not discriminate between continuation and competing accounts. The one structural prediction that could fail, a characteristic sequence, is only weakly present.
+The data are consistent with several descriptive expectations of a continuation model — a valued state, encounters with the dead, preserved identity, rare reincarnation content, non-condemning review — but most of these markers do not discriminate between continuation and competing accounts. A characteristic sequence of episode elements is only weakly present; that sequence comes from the NDE literature, not from Swedenborg, whose sequence is of three states in the world of spirits that some people skip (*Heaven and Hell* §491).
 
 ---
 
@@ -37,7 +39,9 @@ Near-death experiences feature recognizable elements: out-of-body experiences, t
 
 Swedenborg (1758) described a post-mortem journey through a "World of Spirits" in stages — an external stage, an internal stage of self-revelation, and instruction — culminating in a community matching the person's ruling love. Continuation is normative; reincarnation, where it occurs, is an exception (restorative healing after traumatic death, or a volunteered mission). NDE return to one's current body is distinct from reincarnation.
 
-Predictions examined: experiencers who glimpse the spiritual state should value it (reluctance to return); deceased relatives should be encountered; reincarnation content should be uncommon; identity should persist; the life review should reveal rather than condemn; and the experience should show a characteristic sequence.
+Predictions examined: experiencers who glimpse the spiritual state should value it (reluctance to return); deceased relatives should be encountered; reincarnation content should be uncommon; identity should persist; the life review should reveal rather than condemn; and — a prediction from the NDE literature rather than from the framework — the experience should show a characteristic sequence.
+
+Swedenborg's sequence is of states, not of episode elements: "there are three states that we pass through after death before we arrive in either heaven or hell … Some people, however, do not go through these states" (*Heaven and Hell* §491; tr. Dole). An NDE, which ends in return, reaches at most the threshold of the first. The canonical order coded in this dataset is the schema's, derived from the NDE literature. §3.8 therefore tests a property of NDE narratives, not a prediction of the framework.
 
 ### 1.3 Aims and What Can Be Tested
 
@@ -139,7 +143,7 @@ Where both levels are stated: death fear fell in 84.7% and rose in 4.0% (n = 327
 
 Stages were repeated in 23.1% and simultaneous in 43.8% of accounts addressing these questions. Stage elements present: return decision 83.5%, OBE 65.6%, environment 56.8%, light 55.8%, communication 54.9%, boundary 40.6%, tunnel 32.9%, loved ones 21.4%, life review 15.2%.
 
-**Finding:** NDE elements recur as a recognisable *set*, but not in a fixed *sequence*. A strict temporal ordering is **not supported**. Whether this counts against the 4-stage model depends on whether the stages are read as a strict temporal order (miss) or as functional phases that may overlap (underdetermined).
+**Finding:** NDE elements recur as a recognisable *set*, but not in a fixed *sequence*. A strict temporal ordering is **not observed**. This does not count against Swedenborg's account, whose sequence is of states in the world of spirits rather than of episode elements (§1.2). It counts against the common description of the NDE as a fixed passage through stages.
 
 ---
 
@@ -155,7 +159,7 @@ Stages were repeated in 23.1% and simultaneous in 43.8% of accounts addressing t
 | Identity preserved | 97.0% of stated | Predicted by most models | Consistent |
 | Reincarnation content rare | 1–4% | Absence of report ≠ absence of prior life | Consistent, not a test |
 | Life review non-condemning | Harsh 1.4%, uncomfortable 28.0% | Framework predicts revelation over condemnation | **Supported** (harsh rare); "loving" overstated |
-| Canonical sequence | Strict 0.05%, mostly 37.7% | Could have failed | **Not supported** as a strict order |
+| Canonical sequence | Strict 0.05%, mostly 37.7% | Tests the literature's episode order, not the framework's sequence of states | **Not observed** as a strict order; not a framework prediction |
 
 ### 4.2 The Threefold Path Framework
 
@@ -163,7 +167,7 @@ The data are compatible with a normative path of continuation with rare exceptio
 
 ### 4.3 The World of Spirits as Transition Zone
 
-NDE phenomenology shares several features with Swedenborg's account of the World of Spirits: encounters with the dead, preserved identity, a self-revealing review that is rarely condemning, and instruction or guidance. These parallels are real in the data. Two cautions: the parallels are mostly with features that many afterlife models share, and the canonical ordering that would mark a structured passage through stages is weak.
+NDE phenomenology shares several features with Swedenborg's account of the World of Spirits: encounters with the dead, preserved identity, a self-revealing review that is rarely condemning, and instruction or guidance. These parallels are real in the data. Two cautions: the parallels are mostly with features that many afterlife models share, and the weak canonical ordering of episode elements does not bear on Swedenborg's sequence of states, which an NDE reaches only at its threshold.
 
 ### 4.4 Clinical Implications
 
@@ -181,7 +185,7 @@ Pre-registered, discriminating predictions (e.g. what a reincarnation-normative 
 
 ## 5. Conclusion
 
-Across 6,751 near-death experiences, return is usually not self-chosen and often reluctant, deceased relatives appear in about one in six accounts, identity is preserved, reincarnation content is rare, and the life review is predominantly non-condemning though often uncomfortable. These findings are consistent with a continuation model of the post-mortem path, but most do not discriminate it from alternatives. The characteristic sequence implied by a staged journey is weak: strict canonical order is essentially absent. The earlier conclusion of "convergent support" from "four markers" overstated what these data can show.
+Across 6,751 near-death experiences, return is usually not self-chosen and often reluctant, deceased relatives appear in about one in six accounts, identity is preserved, reincarnation content is rare, and the life review is predominantly non-condemning though often uncomfortable. These findings are consistent with a continuation model of the post-mortem path, but most do not discriminate it from alternatives. The characteristic episode order described in the NDE literature is weak: strict canonical order is essentially absent. That order is not Swedenborg's sequence, which concerns states in the world of spirits (*Heaven and Hell* §491). The earlier conclusion of "convergent support" from "four markers" overstated what these data can show.
 
 ---
 
