@@ -47,9 +47,11 @@ The neutral position is **accuracy**, not equidistance between confirmation and 
 
 ## 4. Analysis Integrity Rules (mandatory)
 
-These rules come from the October 2026 audit (`projects/nde/docs/STATISTICAL_AUDIT_2026-10.md`). Every rule corresponds to an error that produced a published figure later withdrawn.
+These rules come from the October 2026 audits (`projects/nde/docs/STATISTICAL_AUDIT_2026-10.md`, `projects/mallworld/docs/STATISTICAL_AUDIT_2026-10.md`). Every rule corresponds to an error that produced a published figure later withdrawn.
 
-1. **Load NDE data only through the verified loader** `projects/nde/scripts/nde_dataset.py` (`nd.load_frame()`). It flattens the schema, removes exact duplicates and attaches narrative length.
+1. **Load data only through the verified loaders.**
+   - **NDE:** `projects/nde/scripts/nde_dataset.py` (`nd.load_frame()`). It flattens the schema, removes exact duplicates and attaches narrative length.
+   - **MallWorld:** `projects/mallworld/scripts/mallworld_dataset.py` (`mw.load_posts()`, `mw.load_locations()`, `mw.load_entities()`, …). It defines the analysis populations and keys every table by dream. Its schema checks are `mw.isin`, `mw.has` and `mw.check_values`.
 2. **Use schema-checked comparisons**: `nd.isin(df, column, values)` and `nd.has(...)`. Never compare against a literal the schema cannot produce. `'yes'` instead of `'yes_explicit'`, upper-case enums and legacy v1 field names silently returned 0% and produced claims such as "0.0% increased death fear".
 3. **State the denominator for every percentage**: all records, accounts where the feature is mentioned, or accounts where it is stated. `not_mentioned` is not `no`.
 4. **Control for narrative length.** Longer accounts mention more of everything. Length explains 41% of the perception score. Adjust co-occurrence comparisons for log word count with `nd.adjusted_odds_ratio(df, outcome, exposure)` and report crude and adjusted estimates.
@@ -61,10 +63,16 @@ These rules come from the October 2026 audit (`projects/nde/docs/STATISTICAL_AUD
 10. **Estimate, do not impose, factor structure.** Use parallel analysis or Kaiser criteria, not a fixed `n_factors`.
 11. **Absence of significance is not equivalence.** Claims of invariance need an equivalence test (TOST) with a stated margin.
 12. **Treat ratios built on few events as fragile.** Give CIs and a coder-sensitivity check. The loving:harsh ratio rests on 6 harsh cases; it is 36.2:1 under the extraction and 6.4:1 under a second coder.
-13. **Cite measurement reliability.** For each field a finding rests on, cite its inter-coder κ from `08_extraction_reliability.ipynb` (§6.2). Treat convention-dependent fields as such. After any schema change, re-run the second-coding procedure in `projects/nde/validation/` on a fresh random sample.
+13. **Cite measurement reliability.** For each field a finding rests on, cite its inter-coder κ from the project's `08_extraction_reliability.ipynb` (§6.2 for NDE, §6.5 for MallWorld). Treat convention-dependent fields as such. After any schema change, re-run the second-coding procedure in the project's `validation/` folder on a fresh random sample.
 14. **Check near-duplicates for small-count results.** About 1.8% of NDE records are redundant copies: cross-archive submissions, and NDERF accounts stored under two file names. They do not change headline rates, but check them when a result depends on a handful of cases.
 15. **No hard-coded results.** Summary cells must compute what they print. Reports quote only numbers printed by executed notebooks.
-16. **Generate report LaTeX from Markdown** with `projects/nde/scripts/md_to_latex.py`, then compile. Never edit `.tex` by hand; the old `.tex` files had drifted and contained claims found nowhere else.
+16. **Generate report LaTeX from Markdown** with `projects/nde/scripts/md_to_latex.py` (add `--project mallworld` for MallWorld), then compile. Never edit `.tex` by hand; the old `.tex` files had drifted and contained claims found nowhere else.
+17. **Join on the full key, and cluster on the dream.**
+    - MallWorld `location_id` values (`loc_1`, …) repeat across dreams. Joining entities or interactions to locations on `location_id` alone turned 4,235 involvements into 7,158,025 rows. That join produced "entity autonomy" and "social interactions in malls, z = +22.8". Always join on `(post_id, location_id)`.
+    - Locations, entities and transitions are nested in dreams (atmosphere ICC 0.31). Use `mw.clustered_logit` or dream-level bootstraps, never location-level χ².
+18. **Define the population and say which one you use.** The MallWorld thesis ran on 2,678 posts that included 750 non-dream posts (questions, AI images, maps), while other reports used 1,926 dreams. Use the loader's `primary` population (1,918 dreams) unless a question requires another.
+19. **Pre-register by commit.** A plan written after the results is not a pre-registration; the archived MallWorld "pre-registered" plan was dated after the reports it claimed to predict. Commit the predictions and the criteria for a miss before writing the analysis (as in `projects/mallworld/docs/PREREGISTRATION_2026-10.md`).
+20. **Separate dream from dreamer.** Most MallWorld authors (78.7%) post once. A variance component "by dreamer" computed on locations is mostly a within-dream effect. Estimate author effects on dream-level scores of authors with at least two dreams, against a permutation null.
 
 ---
 
@@ -179,7 +187,7 @@ GPT-5.2 test–retest on duplicate submissions has a median κ of 0.88. It is le
 | ML classifier "below baseline" (37.8% vs 45.9%) | Overfitting on 37 test cases | Cross-validated AUC 0.53 |
 | "61.8% of Christians … unknown presence; 11.2% Jesus" | Old-schema shares of all encounters | Christian background: unknown 44.2%, Jesus 25.1% (first-listed); unknown-only 42.6% |
 | "51.9% call it presence, a personal word" | `unknown_presence` is the coder's label, not the experiencer's word | 50.6% unknown-only, as a label (κ 0.44) |
-| Entity function χ² = 41.13; 70–73% guidance; 29.5% "told to return" | Legacy script on a superseded schema; no source for the χ² | Rows 2–2d |
+| Entity function χ² = 41.13; 70–73% guidance; 29.5% "told to return" | Percentages from a legacy script on a superseded schema. The χ² is not an NDE statistic: it is the MallWorld entity × vertical-level test, on nested data | Rows 2–2d |
 | "94.2% discriminant accuracy"; χ² = 3,018 | PPV mislabelled; circular test | PPV 94.2%, sensitivity 39.7%, κ 0.49 |
 | Loving 32.2% / harsh 0.9%; "36.5:1" as a fixed property | Wrong denominator; coder-dependent | Row 3 |
 | "81.7% guidance, nearly 2× other beings"; "475 vs 239 teaching (χ² = 25.24)" | Guidance is 1.09×; χ² = 25.24 is the guidance test | Teaching 25.3% vs 12.6% (χ² = 98.0) |
@@ -187,8 +195,17 @@ GPT-5.2 test–retest on duplicate submissions has a median κ of 0.88. It is le
 | 84.2% increased spirituality; 0.0% increased death fear | Broken scale | 89.2%; 0.9% |
 | "Singular Being even for polytheists" | Not measurable | Underdetermined |
 | κ = 0.84 inter-rater reliability on 200 records | No such study existed | §6.2 |
-| "95 out of 100 questions produce significant patterns" | No source in the repository; at N in the thousands nearly every association is significant, so the count is not evidence | §6.6 |
+| "95 out of 100 questions produce significant patterns" | No source in the repository; at N in the thousands nearly every association is significant, so the count is not evidence | §6.7 |
 | NDE N = 6,753 | Includes 2 exact duplicates | 6,751 |
+| MallWorld vertical ρ = 0.25–0.30 "replicated across splits" | Typed banner; not significant in either holdout split; contaminated population | ρ = +0.064; worse below ground, not better above (§6.5, M1–M2) |
+| MallWorld "entity autonomy"; social interactions in malls z = +22.8 | Join on `location_id` alone, matching entities to other dreams | Rule 17; §6.5 |
+| MallWorld animals "completely independent of atmosphere (χ² ≈ 0, p = 1.0)"; animal ICC 0.630 | Binning error left one category; the "ICC" was not an intraclass correlation | Hostile creatures 59.0% vs 15.8% by atmosphere, OR 7.69; P1 (§6.5, M7) |
+| MallWorld "dreamer identity explains 56.4% of atmosphere variance" | η² by dream, not dreamer, inflated by small groups | Within dream ICC 0.31; same author across dreams 0.09 (P4) |
+| MallWorld thesis §6 "ruling love" figures (F = 47.82, partial r = 0.751, R² 0.398) | In no notebook output | — |
+| MallWorld "twenty of thirty pre-registered tests" | Plan written after the reports | `projects/mallworld/docs/PREREGISTRATION_2026-10.md` |
+| MallWorld vs NDE atmosphere V = 0.645 as evidence of "altitude" | Locations vs accounts; non-discriminating (selection, different schemas) | Descriptive only |
+
+The MallWorld audit lists every withdrawn figure: `projects/mallworld/docs/STATISTICAL_AUDIT_2026-10.md`.
 
 ### 6.4 Not Tested in This Repository (Literature-Based)
 
@@ -203,15 +220,56 @@ These claims rest on published literature or interpretive argument, not on analy
 | **Ancient Word and the Magian substrate** | Parallels are real topics of scholarship: mēnōg/gētīg; Daniel as *rab-ḥarṭummin* (Dan 4:9) and *rab-signin* (Dan 2:48); the Qumran "Two Spirits". The direction and extent of Persian influence are debated. The specific claim that "Great Tartary" is where Avestan texts survived is **not supported**: surviving Avestan manuscripts come from Zoroastrian communities in Iran and India | Textual-transmission evidence tied to Central Asia |
 | **Oral-tradition durability** | Well supported as plausibility: Australian Aboriginal memories of coastlines drowned more than 7,000 years ago (Nunn & Reid, 2016); Klamath traditions of the Mount Mazama eruption c. 7,700 years ago | Supports plausibility only; it does not test the content of an "Ancient Word" |
 
-### 6.5 Other Projects: Not Yet Audited
+### 6.5 Tested in This Repository: MallWorld (N = 1,918 Dream Reports)
 
-The **MallWorld** (`projects/mallworld`, 3,732 extracted dream reports) and **Remission** (`projects/remission`, 569 extracted cases: 350 PubMed Central, 149 Radical Remission, plus 70 healing-related NDE accounts) analyses have not been through the audit procedure applied to the NDE project. Before citing a number from them:
+**Data.** Dream reports from r/TheMallWorld with at least one coded location, excluding exact duplicates: 8,685 locations, 1,303 authors. Coded by GPT-5.2. Every result is a dream-clustered estimate adjusted for narrative length.
+
+**Sources.**
+- Reports: `projects/mallworld/reports/`.
+- Audit: `projects/mallworld/docs/STATISTICAL_AUDIT_2026-10.md`.
+- Pre-registration: `docs/PREREGISTRATION_2026-10.md`, committed before notebook 07 was written.
+
+| # | Prediction | Corrected evidence | Verdict | Notebook |
+|---|------------|--------------------|---------|----------|
+| M1 | **Below ground is worse** (lower degree) | Negative atmosphere 76.0% underground vs 58.3% at ground; OR 1.69–2.29, robust to location type and to excluding basements, caves and subways | **Partial hit** (with M2) | 02 |
+| M2 | **Above ground is better** | 65.2% negative above ground (OR 1.29–1.35 vs ground); within-dream OR 0.88 per level (0.72–1.07); overall ρ = 0.064 | **Miss**: ground, not the top, is least negative | 02 |
+| M3 | **Turbid water ↔ negative** (water = truth) | Dirty vs clean 84.4% vs 43.0% negative (OR 7.19); clear vs murky 20.6% vs 73.1% | **Hit** (pattern fit) | 02 |
+| M4 | **Darkness and cold light ↔ negative** (light = wisdom, heat = love) | ρ = −0.49 with darkness; cold vs warm 70.8% vs 33.1% negative (OR 4.88). Light temperature was primed by the prompt | **Hit** (pattern fit) | 02 |
+| M5 | **Warm light above** | Warm 41.7% below / 67.6% ground / 55.6% above | **Miss** | 02 |
+| M6 | **Exposure ↔ negative** (shame) | 87.1% vs 53.5% negative (OR 6.35); primed by the prompt | **Hit** (pattern fit) | 02 |
+| M7 | **Noxious animals in negative scenes** (P1, pre-registered) | 84.8% vs 58.3% negative (OR 4.08, 1.20–13.90; Holm p = 0.036). With a second coder's animal detection: OR 3.35, p = 0.11 | **Hit**; precision coder-sensitive | 07, 08 |
+| M8 | **Noxious animals below ground** (P2, pre-registered) | 25.0% vs 23.6% (OR 1.04) | **Miss** | 07 |
+| M9 | **The deceased in less negative scenes** (P3, pre-registered) | 45.5% vs 68.8% negative with living known persons (OR 0.36, 0.15–0.87; Holm p = 0.036); second coder OR 0.35 | **Hit**; coder-robust | 07, 08 |
+| M10 | **Ruling love persists: same person, similar atmospheres** (P4, pre-registered) | ICC1 = 0.094 across an author's dreams (Holm p = 0.036; 181 authors) | **Hit**; modest | 07 |
+| M11 | **Beings and animals co-vary with the state of the scene** | Threats 95.4%, creatures 84.0%, friends 58.0% negative; hostile creatures 59.0% vs 15.8% by atmosphere (OR 7.69) | Consistent; not discriminating | 03 |
+| M12 | **Authority guides above and punishes below** | Guiding or observing 55.0% below vs 35.7% above (OR 0.46, p = 0.24) | **Miss** in direction | 03 |
+| M13 | **Characteristic narrative arc** | Arc shapes as under random order; only continuous descent exceeds chance | **Miss** | 04 |
+| M14 | **East–West quality propagation** (§9) | Cardinal directions coded in 33 dreams | **Not testable** | 01 |
+
+**Summary of the MallWorld domain.**
+- **Hits:** M3, M4, M6, M7, M9 and M10, plus the partial hit M1. The framework's predictions about the **character** of what appears in a scene hold: water, light, exposure, animals, the deceased, and a person's persistent atmosphere.
+- **Misses:** M2, M5, M8, M12 and M13. Its **structural** predictions fail: an elevation gradient, warm light above, animals below, authority function by height, and a characteristic arc. This repeats the NDE pattern (§6.1).
+- **Caveat:** every hit is also predicted by ordinary association, and M1–M6 were not registered in advance.
+
+**Reliability** (`projects/mallworld/notebooks/08_extraction_reliability.ipynb`; blind second coder, 119 dreams).
+- **Where both coders rated a feature, values agree:**
+  - light κ 0.90;
+  - vertical level κ 0.84;
+  - atmosphere valence κ 0.75 (negative vs not, κ 0.74–0.89);
+  - affect κ 0.67.
+- **Detection:** deceased person κ 0.79; animal class κ 0.70.
+- **Convention-dependent:** GPT-5.2 rates atmosphere, level and affect about twice as often, by inference. Overall κ including "not mentioned" is 0.35–0.51, so prevalence figures such as "64% of locations are negative" describe GPT-5.2's inferences.
+- **Threat type:** the `threat` entity type covers only part of hostile encounters (κ 0.50).
+
+### 6.6 Other Projects: Not Yet Audited
+
+The **Remission** project (`projects/remission`, 569 extracted cases: 350 PubMed Central, 149 Radical Remission, plus 70 healing-related NDE accounts) has not been through the audit procedure applied to the NDE and MallWorld projects. Before citing a number from it:
 - confirm that their notebooks execute;
 - check enum comparisons against their schemas;
 - state denominators;
 - control for narrative length.
 
-### 6.6 Weighing the Evidence
+### 6.7 Weighing the Evidence
 
 The physics analogy sets the standard. General relativity was accepted because quantitative predictions specified in advance came true, including Mercury's perihelion and the deflection of light. The analogy applies here only to predictions of that kind.
 
@@ -219,6 +277,7 @@ The physics analogy sets the standard. General relativity was accepted because q
 - **What counts:** pre-specified predictions that could fail; effect sizes; robustness to narrative length and to the coder; replication in data not used to form the prediction.
 - **Current standing.**
   - NDE domain: hits on function, character and cultural variation; misses on sequence and on discrete-degree structure (§6.1).
+  - MallWorld domain: hits on the character of scenes (water, light, exposure, animals, the deceased, persistent atmosphere), three of them pre-registered; misses on vertical and sequential structure (§6.5).
   - Other domains: consistent with the framework but untested here (§6.4).
   - The cumulative case is real for the first group and should not be stretched to the second.
 - **What would raise the weight:**
@@ -274,7 +333,7 @@ This project does **not** treat Swedenborg as infallible. Where the data or deep
 - Turner (2014) identified nine factors in interviews with remission survivors, seven of them non-physical. These are qualitative, retrospective, self-selected data.
 - Reported timelines of rapid change after spiritual shifts are anecdotal.
 - The analogy with DOPS birthmarks is an inference, not evidence.
-- The Remission project in this repository is the place to test the hypothesis. Its results are not yet audited (§6.5).
+- The Remission project in this repository is the place to test the hypothesis. Its results are not yet audited (§6.6).
 
 ---
 
@@ -308,6 +367,14 @@ Directional framing used in the MallWorld synthesis:
 - **Proprium** refers to the self. Self-love appears when the ruling love is self-oriented. Do not equate West with proprium by default.
 - Let quality propagate outward from East into adjacent quadrants. Infer anchors relative to East when explicit cardinal labels are absent.
 
+**What the MallWorld data say about this table (§6.5).** The table is a set of hypotheses, not findings.
+- **Vertical space.** Only the lower half holds. Underground locations are worse than ground, but elevated ones are not better, and within a dream going up does not improve the atmosphere.
+- **Creatures.** They co-vary with the scene, as "animals = affections" predicts (P1, pre-registered). Noxious animals are not more common below ground (P2).
+- **Authority figures.** They do not guide more above and punish more below.
+- **East–West framing.** It cannot be tested: cardinal directions are coded in 33 of 1,918 dreams.
+
+Use the table to state predictions before analysis (§3). Do not read it into results.
+
 ## 10. When to Apply the Framework
 
 - **DO** test whether patterns align with correspondential predictions specified in advance.
@@ -339,7 +406,7 @@ The repository is a **general-purpose framework** for research projects that:
 |---------|-------------|--------------------------|
 | [NDE Analysis](projects/nde/) | Near-death experience phenomenology | NDERF 5,666 raw / 5,659 extracted unique; IANDS 1,102 raw / 1,092 extracted unique |
 | [Remission Analysis](projects/remission/) | Spontaneous remission and psycho-spiritual transformation | PubMed Central 350; Radical Remission 149; 70 healing-related NDE accounts (NDERF 50, IANDS 20) |
-| [MallWorld Analysis](projects/mallworld/) | Collective dream phenomenology and spatial symbolism | r/themallworld 3,743 |
+| [MallWorld Analysis](projects/mallworld/) | Collective dream phenomenology and spatial symbolism | r/themallworld 3,743 raw / 3,732 extracted; 1,918 primary dream reports (loader `primary` population) |
 | `projects/extraction-test/` | Small extraction experiments | — |
 
 The repository works with [literary-compilation](https://github.com/kayna-of-light/literary-compilation), which supplies theoretical frameworks. Statistical findings from this project feed its knowledge graph, so only audited figures (§6) should flow there.
@@ -370,8 +437,10 @@ structured-data-analysis/
 │       ├── tests/                  # Project tests
 │       └── docs/                   # Project documentation
 ├── projects/nde/scripts/nde_dataset.py   # Verified NDE loader (use it; §4)
-├── projects/nde/scripts/md_to_latex.py   # Report Markdown → LaTeX
+├── projects/nde/scripts/md_to_latex.py   # Report Markdown → LaTeX (--project mallworld for MallWorld)
 ├── projects/nde/validation/              # Second-coder reliability codes + conventions
+├── projects/mallworld/scripts/mallworld_dataset.py  # Verified MallWorld loader (use it; §4)
+├── projects/mallworld/validation/        # MallWorld second-coder codes + conventions
 ├── docs/REPORT_WRITING_GUIDELINES.md     # Report structure
 ├── secrets/azure_openai.env              # Credentials (gitignored)
 └── output/, projects/*/output/           # Generated figures (gitignored; regenerate by running notebooks)
@@ -570,6 +639,20 @@ print(nd.fmt_pct(int(lr.sum()), len(df))) # 'k/n = p% [95% CI lo–hi]'
 res = nd.adjusted_odds_ratio(df.assign(lr=lr.astype(int), bol=df.bol_encounter.astype(int)), "lr", "bol")
 ```
 
+MallWorld notebooks load data like this:
+
+```python
+MW_ROOT = Path.cwd().parent
+sys.path.insert(0, str(MW_ROOT / "scripts"))
+import mallworld_dataset as mw
+
+posts = mw.load_posts()                   # one row per post; posts["primary"] marks the analysis population
+L = mw.load_locations()                   # primary locations, with vertical_level, valence, log_words
+E = mw.load_entities()                    # entity involvements keyed by (post_id, location_id)
+res = mw.clustered_logit(L.assign(neg=(L.valence == -1).astype(float)).dropna(subset=["valence"]),
+                         "neg ~ C(location_type) + log_words")   # SEs clustered by dream
+```
+
 For other projects, read the extraction from the `extraction` key of each structured file (§19.2) and check every enum value against the schema.
 
 ---
@@ -636,11 +719,12 @@ Raw NDE files carry fields such as `id`, `nde_code`, `title`, `date`, `content` 
 ```bash
 python -m pytest projects/nde/tests          # run each project separately
 python -m pytest projects/remission/tests
+python -m pytest projects/mallworld/tests
 python -m pytest projects/nde/tests/test_nde_dataset.py -v   # verified-loader checks
 ```
 
 - `pyproject.toml` sets `testpaths = ["tests"]`, which does not exist, so pass test paths explicitly.
-- Run each project in its own invocation. Both import a top-level `models` package, so a combined run fails at collection.
+- Run each project in its own invocation. Each imports a top-level `models` package, so a combined run fails at collection. For the same reason, a notebook that loads both the NDE and MallWorld loaders must swap `models` out of `sys.modules` between imports (see MallWorld notebook 05).
 - **Known failures**, with fixtures that predate the current schemas:
   - `projects/nde/tests/test_questionnaire_models.py::test_model_instantiation_succeeds`
   - `projects/remission/tests/test_questionnaire_models.py`: `test_minimal_payload_parses`, `test_valid_payload_parses`
@@ -720,6 +804,10 @@ cd projects/nde/notebooks && jupyter nbconvert --to notebook --execute --inplace
 
 # Regenerate report LaTeX and PDF
 cd projects/nde && python scripts/md_to_latex.py && cd reports/latex && tectonic "<report>.tex"
+
+# MallWorld: re-execute notebooks; regenerate report LaTeX
+cd projects/mallworld/notebooks && jupyter nbconvert --to notebook --execute --inplace 0*.ipynb
+cd projects/nde && python scripts/md_to_latex.py --project mallworld
 ```
 
 ```python

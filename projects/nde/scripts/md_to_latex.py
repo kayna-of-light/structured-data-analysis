@@ -35,6 +35,7 @@ def set_project(project: str) -> None:
     REPORTS_DIR = PROJECTS_DIR / project / "reports"
     LATEX_DIR = REPORTS_DIR / "latex"
 
+
 PANDOC_FORMAT = "markdown+lists_without_preceding_blankline-subscript-superscript-implicit_figures"
 UNNUMBERED = {"Data Provenance", "References"}
 
@@ -177,7 +178,11 @@ def convert(md_path: Path) -> str:
 
 def main(names: list[str]) -> None:
     if not names:
-        names = [p.stem for p in sorted(LATEX_DIR.glob("*.tex")) if not p.stem.endswith("-report-preamble")]
+        names = [
+            p.stem
+            for p in sorted(LATEX_DIR.glob("*.tex"))
+            if not p.stem.endswith("-report-preamble")
+        ]
     for name in names:
         md_path = REPORTS_DIR / f"{name}.md"
         out = LATEX_DIR / f"{name}.tex"
