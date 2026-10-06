@@ -1,6 +1,6 @@
 # Statistical Audit of the NDE Notebooks and Reports (October 2026)
 
-**Date:** 2026-10-05 (follow-up analyses added 2026-10-06, §9)
+**Date:** 2026-10-05 (follow-up analyses added 2026-10-06, §9; three verdicts revised 2026-10-06, §10)
 **Scope:** `projects/nde/notebooks/01–06*.ipynb` (and the follow-up notebooks 07–08, §9); the five reports in `projects/nde/reports/` (Markdown), their LaTeX sources in `reports/latex/`, and the PDFs.
 **Supersedes:** `NOTEBOOK_AUDIT_REPORT.md` (January 2026). That audit was run on the extraction schema before the 2026-01-06 schema change, and its figures do not reproduce on the current data. For example, "84.8% no external condemnation" corresponds to nothing in the current schema. On current data, 36.6% of classifiable life reviews have an external evaluator, and harsh evaluation occurs in 1.4% of rated reviews.
 
@@ -66,7 +66,7 @@ Each notebook has an "Audit corrections (2026-10-05)" cell with the full list. T
 | Mission commissioned 0%; covenant 0.7%; empathetic review 0% | The comparison used `'yes'`, which is not a schema value. Correct figures: 21.9%, 1.3%, and perspective of others 18.0% of life reviews | Corrected |
 | "Death fear decreases significantly" (hard-coded) | Computed: 84.7% decreased, 4.0% increased (n = 327) | Now computed |
 | "5/5 markers support" | The support thresholds could not fail (e.g. past-life memory < 10% ⇒ ✓) | Replaced by an explicit statement of what each marker can test |
-| "Sequential ordering generally maintained" | Never analysed. Canonical order: strict 3/6,249 (0.05%), mostly 37.7%, partial 54.3%, radical 7.9% | **Miss** for a fixed sequence |
+| "Sequential ordering generally maintained" | Never analysed. Canonical order: strict 3/6,249 (0.05%), mostly 37.7%, partial 54.3%, radical 7.9% | Not observed; not a framework prediction (revised, §10) |
 | — | Not self-chosen return 70.1% of stated; reluctant 49.4%; deceased relatives 17.9%; identity clear 97.0%; past-life memory 4.4%; intermission 1.0%; hellish realm 2.8% | Descriptive |
 
 ### 03 — Volunteer Soul
@@ -110,9 +110,9 @@ All were replaced with computed analyses:
 
 | Previous claim | Corrected | Verdict |
 |---|---|---|
-| Two factors = "internal differentiation" | The solution was imposed. On raw data, Kaiser, parallel analysis and tetrachoric eigenvalues (4.11, 0.89) all give 1 factor. After length control there is weak sub-structure (eigenvalues 1.07 and 1.04 vs thresholds 1.06 and 1.02), and it is not aligned with the degrees | **Miss** (H3) |
+| Two factors = "internal differentiation" | The solution was imposed. On raw data, Kaiser, parallel analysis and tetrachoric eigenvalues (4.11, 0.89) all give 1 factor. After length control there is weak sub-structure (eigenvalues 1.07 and 1.04 vs thresholds 1.06 and 1.02), and it is not aligned with the degrees | Not observed; tests a one-degree-per-marker assignment, not the doctrine (revised, §10) |
 | Right skew "exactly what the theory predicts" | Independent markers would also be right-skewed (skew 0.33 vs 0.82 observed). The excess of zeros (27.4% vs 8.2%) is the signature of a common factor | Not diagnostic |
-| Prevalence hierarchy (implicit) | ρ = −0.47, p = 0.28. The most and least prevalent markers are both "spiritual" | **Miss** (H1) |
+| Prevalence hierarchy (implicit) | ρ = −0.47, p = 0.28. The most and least prevalent markers are both "spiritual" | Not observed; tests the same assignment (revised, §10) |
 | Construct validity KMO 0.817 | Holds raw (KR-20 0.738). Controlling for length, mean r falls from 0.29 to 0.15. Six markers still cohere (15/15 significant); telepathy does not | Supported for six markers |
 | BoL d = 0.589, "all seven markers elevated" | Adjusted for length: +0.39 markers (95% CI 0.28–0.49). Only comparative reality (OR 1.87) and telepathy (OR 3.90) remain elevated. Memory (0.74) and thought speed (0.78) reverse | Partial |
 | Cultural invariance from ANOVA p = 0.92 | TOST: Christian − atheist/agnostic = −0.005 (95% CI −0.38 to +0.37), equivalent within ±0.5 markers (p = 0.005); length-adjusted +0.02 | **Hit** (Christian vs non-religious) |
@@ -152,16 +152,16 @@ Labels follow `CLAUDE.md`. **Statistically supported** means the pattern is in t
 |---|---|---|
 | Constant state, variable form (Being of Light) | The name varies weakly with background (V = 0.11–0.24), and most encounters stay unnamed (50.6% unknown-only). Functional properties do not differ by name. The perception profile is equivalent for Christian and non-religious experiencers (TOST p = 0.005) | **Hit** (statistically supported). The statistics previously cited for it (χ² = 365.14, "< 10%", "below-baseline ML") are withdrawn |
 | Functional differentiation of beings | Light-Being encounters: teaching 2.0× (adjusted OR 1.96), telepathy adjusted OR 1.53, guidance 1.09× (adjusted OR 1.34). Exclusive being types (notebook 07): 10/11 functions differ; divine vs relatives teaching OR 6.27; guidance overall OR 0.81 | **Hit** for differentiation and teaching (statistically supported). "More guidance overall" is a miss |
-| Relatives as gatekeepers | Sent back in 54.6% of relatives-only vs 51.7% of divine-only accounts (adjusted OR 1.11, p = 0.42); 47–55% in every group | **Miss**: sending back is shared by all being types |
+| Relatives as gatekeepers | Sent back in 54.6% of relatives-only vs 51.7% of divine-only accounts (adjusted OR 1.11, p = 0.42); 47–55% in every group | Not observed: sending back is shared by all being types; not a framework prediction (revised, §10) |
 | Non-condemning review | Harsh 1.7% of rated Light-Being reviews and 1.4% of all rated reviews (loving:harsh about 36:1). A blind second coder gives 8.7% harsh (CI 1.3–16.8), loving:harsh 6.4:1. Uncomfortable evaluation 21–28%; loving:critical 1.7–2.7:1, stable across coders | **Hit** for "rarely condemning, predominantly loving". The 36:1 magnitude is coder-dependent. Not supported as "uniformly loving" |
 | Mission returns as a category | PPV 94.2%, κ = 0.49. Independent features associate with adjusted ORs of 2.0–3.3. Mission → BoL adjusted OR 3.26. Commissioning prevalence calibrated to the second coder is 14.8% (vs 21.9%); the return-reason link holds under both coders | **Supported** as a coherent reported category. "94.2% accuracy" withdrawn |
 | Personhood of the Being | Teaching, telepathy and commissioning associations hold. "Presence" is the majority label. Singularity is not measurable. "Corrective" is not specific to the Being | Associations supported; personhood itself is **interpretation** |
 | Transformation | Spirituality ↑ 89.2% (larger than after other beings); death fear ↑ 0.9%. Religiosity shows no net change | **Supported** (descriptive) |
-| Normative path: characteristic sequence | Strict canonical order in 0.05% of accounts | **Miss** |
+| Normative path: characteristic sequence | Strict canonical order in 0.05% of accounts | Not observed; the episode order is the NDE literature's, not the framework's (revised, §10) |
 | Normative path: continuation markers | Rare reincarnation content; preserved identity; encounters with the dead | Consistent, but mostly non-discriminating |
 | East-West: Western profile is a scholarly construction | Claimed rates not observed in these archives | **Supported** for these archives. The Japanese side is untested |
 | Purposive economy | Personal Light co-occurs with mission and life review (adjusted ORs 3.26, 1.89) | Association supported; direction is **interpretation** |
-| Discrete degrees in perception | One dominant factor; no prevalence hierarchy | **Miss** (H1, H3) |
+| Discrete degrees in perception | One dominant factor; no prevalence hierarchy. Registered continuum test (notebook 09): length-stratified Mokken H = 0.245 | H1/H3 not tests of the doctrine; registered test **underdetermined** (revised, §10) |
 | Being of Light → "celestial" perception | Only the two celestial markers survive length adjustment | **Partial hit** |
 
 ---
@@ -243,3 +243,18 @@ A blind second coder (Claude) recoded 100 random accounts on 15 fields and 44 li
 - **GPT-5.2 test–retest** on duplicate pairs: median κ 0.88 on near-identical text and 0.75 on all pairs. It is least stable on "more real" and judgment intensity.
 
 The first-pass limitation "no human validation" is therefore replaced by measured reliability in every report. Report: `reports/Extraction Reliability - Independent Second Coding of NDE Narratives.md`.
+
+---
+
+## 10. Revised Verdicts (2026-10-06)
+
+The first pass scored three results as framework misses. On review against Swedenborg's texts, none of the three tested a prediction the framework makes. The data are unchanged; the verdicts are not.
+
+| Result | Why it is not a test of the framework | Revised verdict |
+|---|---|---|
+| No prevalence hierarchy, one factor (notebook 06, H1/H3) | Each marker was assigned to one degree. The doctrine puts every degree in every thought: "every least bit of thought, even every least bit of a mental image, is made up of levels of both kinds" (*Divine Love and Wisdom* §§222–229, tr. Dole). The earthly mind, which narrates the experience, "is a continuum", enlightened "gradually", not "by distinct levels" (§256) | Not a test. A test of the doctrine as written (one cumulative continuum) was registered before analysis and run in `09_perception_continuum_test.ipynb`: length-stratified Mokken H = 0.245 (0.231–0.259); one five-item monotone scale; archives agree. Registered verdict **underdetermined** |
+| Strict canonical order 0.05% (notebook 02) | The order tested (OBE, tunnel, light, encounters, review, boundary, return) is the extraction schema's, from the NDE literature. Swedenborg's sequence is three *states* in the world of spirits, which "some people … do not go through" (*Heaven and Hell* §491); an NDE reaches at most the threshold of the first | Not observed; not a framework prediction |
+| Sending back shared by all being types (notebook 07) | Gatekeeping entered with the legacy `CLAUDE.md` entry. In Swedenborg, friends and relatives receive and accompany the newly arrived (*Heaven and Hell* §494). The same applies to "more guidance overall" from divine figures: his account has angels instructing, which the data confirm (teaching OR 6.27) | Not observed; not framework predictions |
+
+**The standard this applies.** Before a result is scored against the framework, the prediction has to be found in the text. A result that contradicts a prediction the framework does not make is reported as *not observed*, not as a miss. The converse holds too: the one-dimensional structure is not upgraded to a confirmation, because the reading that fits it was stated after the result. Only the registered test in notebook 09 counts, and it is underdetermined.
+
