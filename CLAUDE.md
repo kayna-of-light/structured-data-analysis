@@ -36,6 +36,7 @@ The neutral position is **accuracy**, not equidistance between confirmation and 
 - **Origin is methodologically irrelevant.** Do not present Swedenborg as unquestionable revelation, and do not dismiss the framework because of its visionary origin.
 - **Testability is the criterion.** Prefer falsifiable predictions, out-of-sample checks and explicit failure modes.
 - **Pre-specify.** Before running a test, write the prediction and what would count as a miss in the notebook's first markdown cell. A criterion that cannot fail is not a test. (The old "5/5 markers support" check in notebook 02 used thresholds such as "past-life memory < 10% ⇒ ✓", which pass whatever the data say.)
+- **Find the prediction in the text.** Before a result is scored against the framework, locate the prediction in Swedenborg's writings, with a section reference. A result that contradicts a claim the framework does not make is reported as **not observed**, never as a miss. Three earlier "misses" were of this kind: a per-degree layering of perception (the doctrine puts every degree in every thought, *DLW* §§222–229, 256), an episode-level stage order (his sequence is of three states in the world of spirits that some skip, *HH* §491), and relatives as gatekeepers (relatives receive the newly arrived, *HH* §494). The converse also holds: a pattern that fits the text only after the fact is consistency, not confirmation, until a registered test has run.
 - **Specify "state" and "form" in advance.** For "constant state, variable form", decide before looking which properties are the constant state and which are the variable form. Otherwise every result can be accommodated.
 - **Separate levels of claim:**
   - **Pattern fit** (empirical): associations and predictive performance.
@@ -78,7 +79,7 @@ Swedenborg (1688–1772) proposed that the natural world is a "theatre represent
 |-----------|-------------|
 | **Vertical Causality** | Spiritual realities flow (influx) into natural forms. The natural is the "effect" plane; the spiritual is the "cause" plane |
 | **Constant State, Variable Form** | The underlying spiritual reality is constant. Perceptual forms vary with the receiver's mental repertoire |
-| **Discrete Degrees** | Reality stratifies into celestial (love), spiritual (wisdom/truth) and natural (effects) levels |
+| **Discrete Degrees** | Reality stratifies into celestial (love), spiritual (wisdom/truth) and natural (effects) levels. The levels are not separate layers met one at a time: in a "simultaneous arrangement" the highest is the centre and the lowest the circumference (*DLW* §§205–208), "every least bit of thought, even every least bit of a mental image" contains them all (§§222–229), and the earthly mind receives the higher levels as a continuum, "gradually", not "by distinct levels" (§256). Never assign an observable to a single degree |
 | **Correspondence Consistency** | The same natural object consistently corresponds to the same spiritual reality across contexts |
 | **Opposite Sense** | The same symbol can express good or evil depending on context (fire = divine love OR destructive passion) |
 | **The Divine Human** | God is not an abstract force but a Person, the Divine Human. The human form is the form of love and wisdom; since God *is* love and wisdom, God is the Divine Human. Humans are human because they are made in this image, receiving life from the Divine Human, who is present in every person at every level of reality. **Empirical status:** NDE data are consistent with personal properties of the Being of Light: teaching, telepathic communication and commissioning are more frequent than with other beings (§6.1, row 5). Singularity is not measurable with the current schema, and personhood itself is interpretation |
@@ -110,7 +111,7 @@ This framework is **not** interchangeable with Jungian archetypal psychology, Fr
 - **Function tracks the identity of the being.** Divine or religious figures teach six times as often as deceased relatives (23.0% vs 4.5%; length-adjusted OR 6.27, 95% CI 3.94–9.98). Relatives orient and comfort. A model in which beings are interchangeable projections does not predict this. Archetypal theories that assign roles to archetypes can accommodate role differentiation after the fact, so this result favours the framework without refuting Jung outright.
 - **Name varies weakly; function does not.** Religious background predicts the name given to the presence only weakly (Cramér's V 0.11–0.24; cross-validated AUC 0.53). Among Christians, encounters named "Jesus" and "unknown presence" do not differ in guidance, teaching, telepathy, belonging or mission. Perceptual *mode* does differ (visual figure +45.0 pp, unity −19.6 pp).
 - **Expectations are often contradicted.** 57.2% of Light-Being experiencers who comment on it report contradicted or surprised expectations. This is not specific to the Being of Light (55.2% with other beings).
-- **Content is consistent; order is not.** The same elements recur, but a strict canonical stage order occurs in only 0.05% of accounts.
+- **Content is consistent; order is not.** The same elements recur, but a strict canonical stage order occurs in only 0.05% of accounts. That order comes from the NDE literature, not from Swedenborg, so it is not a test of the framework (§6.1, row 7).
 
 **Do NOT substitute Jungian or Freudian framing as the primary lens** when analysing data in this project. Note parallels with other frameworks where relevant, as secondary.
 
@@ -140,23 +141,24 @@ Data: NDERF 5,659 + IANDS 1,092, coded by GPT-5.2. Two exact duplicate narrative
 | 1 | **Constant state, variable form**: the name varies with culture, the function does not | Name × religious background χ²(6) = 15.04, p = 0.020, V = 0.11; × belief at the NDE χ²(3) = 38.40, V = 0.24; religion predicts the name barely above chance (AUC 0.53). Among Christians, Jesus-only vs unknown-only: no difference in guidance, teaching, telepathy, belonging, mission. Perception profile equivalent, Christian vs atheist/agnostic (TOST p = 0.005). Mode differs: visual figure +45.0 pp, unity −19.6 pp | **Hit** for constant function and weak cultural naming. If perceptual mode was meant to be constant, the unity difference is a miss; pre-specify this | 01, 06 |
 | 2 | **Beings are functionally differentiated** | 10/11 functions differ across five exclusive being types (Holm; V 0.07–0.18); functions separate divine from relative encounters (AUC 0.673 vs 0.555 for length alone). Light-Being vs other beings: teaching 25.3% vs 12.6% (adj OR 1.96), telepathy 48.2% vs 34.2% (adj OR 1.53) | **Hit** | 01, 07 |
 | 2a | Higher-order beings teach | Divine vs relatives: teaching 23.0% vs 4.5% (adj OR 6.27, 3.94–9.98) | **Hit** | 07 |
-| 2b | Higher-order beings give more guidance overall | 73.2% vs 75.9% (adj OR 0.81, 0.61–1.09) | **Miss** | 07 |
+| 2b | Higher-order beings give more guidance overall (legacy claim) | 73.2% vs 75.9% (adj OR 0.81, 0.61–1.09) | **Not observed**; not a framework prediction (Swedenborg: angels *instruct*, which row 2a confirms) | 07 |
 | 2c | Relatives receive and comfort rather than instruct | Relatives: directional 67.3%, comfort 43.8%, teaching 5.9% | **Hit** | 07 |
-| 2d | Relatives act as gatekeepers | Sent back 54.6% (relatives) vs 51.7% (divine), adj OR 1.11, p = 0.42; 47–55% in every group | **Miss**: sending back is shared by all being types | 07 |
+| 2d | Relatives act as gatekeepers (legacy claim) | Sent back 54.6% (relatives) vs 51.7% (divine), adj OR 1.11, p = 0.42; 47–55% in every group | **Not observed**: sending back is shared by all being types. Not a framework prediction: relatives receive the newly arrived (*HH* §494) | 07 |
 | 3 | **Life review as revelation, not condemnation** | Harsh 1.4% (extraction) to 8.7% (second coder, 95% CI 1.3–16.8) of rated reviews; loving is the most common category (51–55% of all rated reviews; 60.3% of Light-Being reviews); loving:critical 1.7–1.8:1 over all rated reviews, 2.65:1 in Light-Being reviews; uncomfortable 21–28% | **Hit** for "rarely condemning, predominantly loving". Not "uniformly loving". The 36.5:1 ratio is coder-dependent; do not quote it as a fixed property | 01, 02, 08 |
 | 4 | **Mission returns form a distinct category** | Earthly-mission return reason → commissioning: PPV 94.2%, sensitivity 39.7%, κ = 0.49; holds under the second coder (6/7). Independent features adj OR 2.0–3.3. Commissioning prevalence 14.8% (calibrated) to 21.9% (extraction) | **Supported** as a coherent *reported* category (same-source caveat) | 03, 08 |
 | 5 | **Personhood of the Being of Light** | Teaching, telepathy (rows 2, 2a); mission-returners → personified encounter OR 4.38 (adj 3.26); spirituality rose in 89.2%, more than after other beings (p = 0.003). Singularity not measurable (8 Hindu/Buddhist cases, 2 name several figures). "Corrective" not specific to the Being (57.2% vs 55.2%, p = 0.59). "Presence" is the coder's label (κ 0.44), not the experiencer's word | Associations **supported**; personhood itself is **interpretation**; singularity **underdetermined** | 01, 03, 08 |
 | 6 | **Transformation** | Death fear decreased 88.0%, increased 0.9% (same as other beings, 88.1%); religiosity shows no net change (p = 0.58) | **Supported** descriptively; not specific to the Being | 01, 04 |
-| 7 | **Normative path: characteristic stage sequence** | Strict canonical order 0.05% (3/6,249); "mostly" canonical 37.7% | **Miss** | 02 |
-| 8 | **Discrete degrees structure perception** | One dominant factor (all retention criteria); no prevalence hierarchy (ρ = −0.47, p = 0.28) | **Miss** | 06 |
+| 7 | **Normative path: characteristic stage sequence** | Strict canonical order 0.05% (3/6,249); "mostly" canonical 37.7%. The order tested is the NDE literature's (OBE → tunnel → light → encounters → review → return) | **Not observed**; not a framework prediction: Swedenborg's sequence is three states in the world of spirits, which some skip (*HH* §491), and an NDE reaches at most its threshold | 02 |
+| 8 | **Discrete degrees structure perception** | Notebook 06 assigned each marker to one degree: one dominant factor, no prevalence hierarchy (ρ = −0.47, p = 0.28) — not a test of the doctrine (every degree is in every thought, *DLW* §§222–229). Registered test of the doctrine as written (notebook 09, one cumulative continuum): length-stratified Mokken H = 0.245 (0.231–0.259), threshold 0.30; one five-item monotone scale; archives agree | **Underdetermined** (registered verdict) | 06, 09 |
 | 9 | **Being of Light → "celestial" perception** | After length adjustment, only comparative reality (OR 1.87) and telepathy (OR 3.90) remain elevated; comparative reality is a less stable code (κ 0.74, test–retest 0.58) | **Partial hit** | 06 |
 | 10 | **East–West: the "Western profile" is a scholarly construction** | Claimed rates not observed in these archives (being of light 11.8% of all accounts, 20.7% of those with any light) | **Supported** for these archives; the Japanese side is untested | 05 |
 | 11 | **Purposive economy** | Personal light co-occurs with mission (adj OR 3.26) and life review (adj OR 1.89) | Association **supported**; direction is **interpretation** | 05 |
 
 **Summary of the NDE domain:**
 - **Hits or supported:** 9 rows (1, 2, 2a, 2c, 3, 4, 6, 10, 11), plus a partial hit (9) and the associations in row 5. The framework's predictions about the **function, character and cultural variation** of encounters largely hold.
-- **Misses:** 4 rows (2b, 2d, 7, 8). The framework's **structural** predictions fail: a fixed stage sequence, and a discrete-degree structure in perception. So do two role-specific claims: more guidance overall from divine figures, and relatives as gatekeepers.
-- **Underdetermined:** singularity of the Being (row 5).
+- **Not observed, and not framework predictions:** 3 rows (2b, 2d, 7). Divine figures do not give more guidance overall, relatives are not specific gatekeepers, and there is no fixed episode-level stage order. None of these claims is in Swedenborg's texts; they entered through earlier summaries and the NDE literature.
+- **Underdetermined:** perception as one cumulative continuum (row 8, registered test); singularity of the Being (row 5).
+- **Misses among the framework's own predictions:** none at present. The only candidate is row 1's perceptual mode, if "mode" was meant to be constant, which was never specified. With no misses, the weight of the case rests on whether registered tests on new data (row 8; §6.6) can fail and do not.
 
 ### 6.2 Measurement Reliability: What the NDE Numbers Can Bear
 
@@ -189,6 +191,7 @@ GPT-5.2 test–retest on duplicate submissions has a median κ of 0.88. It is le
 | κ = 0.84 inter-rater reliability on 200 records | No such study existed | §6.2 |
 | "95 out of 100 questions produce significant patterns" | No source in the repository; at N in the thousands nearly every association is significant, so the count is not evidence | §6.6 |
 | NDE N = 6,753 | Includes 2 exact duplicates | 6,751 |
+| "Misses" on a fixed stage sequence, discrete-degree structure, gatekeeping and guidance amount, scored against the framework | The predictions are not Swedenborg's (§3, "Find the prediction in the text") | Rows 2b, 2d, 7, 8 |
 
 ### 6.4 Not Tested in This Repository (Literature-Based)
 
@@ -218,7 +221,7 @@ The physics analogy sets the standard. General relativity was accepted because q
 - **Significance is cheap.** With N = 6,751, almost any association reaches p < 0.05, and length inflates co-occurrence. A count of significant tests is not evidence for the framework.
 - **What counts:** pre-specified predictions that could fail; effect sizes; robustness to narrative length and to the coder; replication in data not used to form the prediction.
 - **Current standing.**
-  - NDE domain: hits on function, character and cultural variation; misses on sequence and on discrete-degree structure (§6.1).
+  - NDE domain: hits on function, character and cultural variation. A fixed stage order and per-degree layering of perception are not observed, but neither is a framework prediction. The registered test of perception as one continuum is underdetermined (§6.1).
   - Other domains: consistent with the framework but untested here (§6.4).
   - The cumulative case is real for the first group and should not be stretched to the second.
 - **What would raise the weight:**
@@ -282,6 +285,7 @@ This project does **not** treat Swedenborg as infallible. Where the data or deep
 
 1. **Swedenborg predicts and the data confirm** → report a **hit**.
 2. **Swedenborg predicts and the data contradict** → report a **miss** and investigate.
+2a. **The data contradict a claim Swedenborg does not make** → report **not observed**, and say where the claim came from. Find the prediction in the text before scoring.
 3. **The framework reflects 18th-century limitations** → correct the artifact and keep the valid principle.
 4. **The data suggest extensions** → state the extension as a hypothesis and test it.
 
