@@ -532,14 +532,17 @@ def cluster_bootstrap(
     )
 
 
-def clustered_logit(df: pd.DataFrame, formula: str, cluster: str = "post_id"):
-    """Logistic regression with standard errors clustered on ``cluster`` (default: the dream)."""
+def clustered_logit(df: pd.DataFrame, formula: str, cluster: str = "post_id", maxiter: int = 35):
+    """Logistic regression with standard errors clustered on ``cluster`` (default: the dream).
+
+    ``maxiter`` is passed to the Newton optimiser (statsmodels' default is 35).
+    """
     import statsmodels.formula.api as smf
 
     data = df.dropna(subset=[cluster]).copy()
     model = smf.logit(formula, data=data)
     groups = pd.factorize(data.loc[model.data.row_labels, cluster])[0]
-    return model.fit(disp=0, cov_type="cluster", cov_kwds={"groups": groups})
+    return model.fit(disp=0, maxiter=maxiter, cov_type="cluster", cov_kwds={"groups": groups})
 
 
 def odds_ratio_table(result, terms: Iterable[str] | None = None) -> pd.DataFrame:

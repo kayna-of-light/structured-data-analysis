@@ -227,7 +227,7 @@ These claims rest on published literature or interpretive argument, not on analy
 **Sources.**
 - Reports: `projects/mallworld/reports/`.
 - Audit: `projects/mallworld/docs/STATISTICAL_AUDIT_2026-10.md`.
-- Pre-registration: `docs/PREREGISTRATION_2026-10.md`, committed before notebook 07 was written.
+- Pre-registration: `projects/mallworld/docs/PREREGISTRATION_2026-10.md`, committed before notebook 07 was written.
 
 | # | Prediction | Corrected evidence | Verdict | Notebook |
 |---|------------|--------------------|---------|----------|
