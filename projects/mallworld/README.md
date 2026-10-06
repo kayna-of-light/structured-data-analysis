@@ -54,12 +54,13 @@ python ../nde/scripts/md_to_latex.py --project mallworld
 
 **Partial hit:** below ground is worse than ground.
 
-**Misses:**
+**Misses** (all concern height; each prediction is located in Swedenborg's text, see the audit §5):
 - above ground is not better than ground;
 - warm light is not more common above;
 - noxious animals are not more common below (P2);
-- authority functions do not follow height;
-- there is no characteristic arc.
+- authority functions do not follow height.
+
+**Not observed, and not a framework prediction:** a characteristic arc of scenes within a dream.
 
 **Withdrawn:** see the audit. These include the elevation gradient ρ = 0.25–0.30, entity "autonomy", animals "independent of atmosphere", "dreamer explains 56.4%", and the four "archetypes".
 

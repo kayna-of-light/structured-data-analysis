@@ -36,6 +36,7 @@ The neutral position is **accuracy**, not equidistance between confirmation and 
 - **Origin is methodologically irrelevant.** Do not present Swedenborg as unquestionable revelation, and do not dismiss the framework because of its visionary origin.
 - **Testability is the criterion.** Prefer falsifiable predictions, out-of-sample checks and explicit failure modes.
 - **Pre-specify.** Before running a test, write the prediction and what would count as a miss in the notebook's first markdown cell. A criterion that cannot fail is not a test. (The old "5/5 markers support" check in notebook 02 used thresholds such as "past-life memory < 10% ⇒ ✓", which pass whatever the data say.)
+- **Find the prediction in the text.** Before a result is scored against the framework, locate the prediction in Swedenborg's writings, with a section reference. A result that contradicts a claim the framework does not make is reported as **not observed**, never as a miss. Three earlier "misses" were of this kind: a per-degree layering of perception (the doctrine puts every degree in every thought, *DLW* §§222–229, 256), an episode-level stage order (his sequence is of three states in the world of spirits that some skip, *HH* §491), and relatives as gatekeepers (relatives receive the newly arrived, *HH* §494). The converse also holds: a pattern that fits the text only after the fact is consistency, not confirmation, until a registered test has run.
 - **Specify "state" and "form" in advance.** For "constant state, variable form", decide before looking which properties are the constant state and which are the variable form. Otherwise every result can be accommodated.
 - **Separate levels of claim:**
   - **Pattern fit** (empirical): associations and predictive performance.
@@ -86,7 +87,7 @@ Swedenborg (1688–1772) proposed that the natural world is a "theatre represent
 |-----------|-------------|
 | **Vertical Causality** | Spiritual realities flow (influx) into natural forms. The natural is the "effect" plane; the spiritual is the "cause" plane |
 | **Constant State, Variable Form** | The underlying spiritual reality is constant. Perceptual forms vary with the receiver's mental repertoire |
-| **Discrete Degrees** | Reality stratifies into celestial (love), spiritual (wisdom/truth) and natural (effects) levels |
+| **Discrete Degrees** | Reality stratifies into celestial (love), spiritual (wisdom/truth) and natural (effects) levels. The levels are not separate layers met one at a time: in a "simultaneous arrangement" the highest is the centre and the lowest the circumference (*DLW* §§205–208), "every least bit of thought, even every least bit of a mental image" contains them all (§§222–229), and the earthly mind receives the higher levels as a continuum, "gradually", not "by distinct levels" (§256). Never assign an observable to a single degree |
 | **Correspondence Consistency** | The same natural object consistently corresponds to the same spiritual reality across contexts |
 | **Opposite Sense** | The same symbol can express good or evil depending on context (fire = divine love OR destructive passion) |
 | **The Divine Human** | God is not an abstract force but a Person, the Divine Human. The human form is the form of love and wisdom; since God *is* love and wisdom, God is the Divine Human. Humans are human because they are made in this image, receiving life from the Divine Human, who is present in every person at every level of reality. **Empirical status:** NDE data are consistent with personal properties of the Being of Light: teaching, telepathic communication and commissioning are more frequent than with other beings (§6.1, row 5). Singularity is not measurable with the current schema, and personhood itself is interpretation |
@@ -118,7 +119,7 @@ This framework is **not** interchangeable with Jungian archetypal psychology, Fr
 - **Function tracks the identity of the being.** Divine or religious figures teach six times as often as deceased relatives (23.0% vs 4.5%; length-adjusted OR 6.27, 95% CI 3.94–9.98). Relatives orient and comfort. A model in which beings are interchangeable projections does not predict this. Archetypal theories that assign roles to archetypes can accommodate role differentiation after the fact, so this result favours the framework without refuting Jung outright.
 - **Name varies weakly; function does not.** Religious background predicts the name given to the presence only weakly (Cramér's V 0.11–0.24; cross-validated AUC 0.53). Among Christians, encounters named "Jesus" and "unknown presence" do not differ in guidance, teaching, telepathy, belonging or mission. Perceptual *mode* does differ (visual figure +45.0 pp, unity −19.6 pp).
 - **Expectations are often contradicted.** 57.2% of Light-Being experiencers who comment on it report contradicted or surprised expectations. This is not specific to the Being of Light (55.2% with other beings).
-- **Content is consistent; order is not.** The same elements recur, but a strict canonical stage order occurs in only 0.05% of accounts.
+- **Content is consistent; order is not.** The same elements recur, but a strict canonical stage order occurs in only 0.05% of accounts. That order comes from the NDE literature, not from Swedenborg, so it is not a test of the framework (§6.1, row 7).
 
 **Do NOT substitute Jungian or Freudian framing as the primary lens** when analysing data in this project. Note parallels with other frameworks where relevant, as secondary.
 
@@ -148,23 +149,24 @@ Data: NDERF 5,659 + IANDS 1,092, coded by GPT-5.2. Two exact duplicate narrative
 | 1 | **Constant state, variable form**: the name varies with culture, the function does not | Name × religious background χ²(6) = 15.04, p = 0.020, V = 0.11; × belief at the NDE χ²(3) = 38.40, V = 0.24; religion predicts the name barely above chance (AUC 0.53). Among Christians, Jesus-only vs unknown-only: no difference in guidance, teaching, telepathy, belonging, mission. Perception profile equivalent, Christian vs atheist/agnostic (TOST p = 0.005). Mode differs: visual figure +45.0 pp, unity −19.6 pp | **Hit** for constant function and weak cultural naming. If perceptual mode was meant to be constant, the unity difference is a miss; pre-specify this | 01, 06 |
 | 2 | **Beings are functionally differentiated** | 10/11 functions differ across five exclusive being types (Holm; V 0.07–0.18); functions separate divine from relative encounters (AUC 0.673 vs 0.555 for length alone). Light-Being vs other beings: teaching 25.3% vs 12.6% (adj OR 1.96), telepathy 48.2% vs 34.2% (adj OR 1.53) | **Hit** | 01, 07 |
 | 2a | Higher-order beings teach | Divine vs relatives: teaching 23.0% vs 4.5% (adj OR 6.27, 3.94–9.98) | **Hit** | 07 |
-| 2b | Higher-order beings give more guidance overall | 73.2% vs 75.9% (adj OR 0.81, 0.61–1.09) | **Miss** | 07 |
+| 2b | Higher-order beings give more guidance overall (legacy claim) | 73.2% vs 75.9% (adj OR 0.81, 0.61–1.09) | **Not observed**; not a framework prediction (Swedenborg: angels *instruct*, which row 2a confirms) | 07 |
 | 2c | Relatives receive and comfort rather than instruct | Relatives: directional 67.3%, comfort 43.8%, teaching 5.9% | **Hit** | 07 |
-| 2d | Relatives act as gatekeepers | Sent back 54.6% (relatives) vs 51.7% (divine), adj OR 1.11, p = 0.42; 47–55% in every group | **Miss**: sending back is shared by all being types | 07 |
+| 2d | Relatives act as gatekeepers (legacy claim) | Sent back 54.6% (relatives) vs 51.7% (divine), adj OR 1.11, p = 0.42; 47–55% in every group | **Not observed**: sending back is shared by all being types. Not a framework prediction: relatives receive the newly arrived (*HH* §494) | 07 |
 | 3 | **Life review as revelation, not condemnation** | Harsh 1.4% (extraction) to 8.7% (second coder, 95% CI 1.3–16.8) of rated reviews; loving is the most common category (51–55% of all rated reviews; 60.3% of Light-Being reviews); loving:critical 1.7–1.8:1 over all rated reviews, 2.65:1 in Light-Being reviews; uncomfortable 21–28% | **Hit** for "rarely condemning, predominantly loving". Not "uniformly loving". The 36.5:1 ratio is coder-dependent; do not quote it as a fixed property | 01, 02, 08 |
 | 4 | **Mission returns form a distinct category** | Earthly-mission return reason → commissioning: PPV 94.2%, sensitivity 39.7%, κ = 0.49; holds under the second coder (6/7). Independent features adj OR 2.0–3.3. Commissioning prevalence 14.8% (calibrated) to 21.9% (extraction) | **Supported** as a coherent *reported* category (same-source caveat) | 03, 08 |
 | 5 | **Personhood of the Being of Light** | Teaching, telepathy (rows 2, 2a); mission-returners → personified encounter OR 4.38 (adj 3.26); spirituality rose in 89.2%, more than after other beings (p = 0.003). Singularity not measurable (8 Hindu/Buddhist cases, 2 name several figures). "Corrective" not specific to the Being (57.2% vs 55.2%, p = 0.59). "Presence" is the coder's label (κ 0.44), not the experiencer's word | Associations **supported**; personhood itself is **interpretation**; singularity **underdetermined** | 01, 03, 08 |
 | 6 | **Transformation** | Death fear decreased 88.0%, increased 0.9% (same as other beings, 88.1%); religiosity shows no net change (p = 0.58) | **Supported** descriptively; not specific to the Being | 01, 04 |
-| 7 | **Normative path: characteristic stage sequence** | Strict canonical order 0.05% (3/6,249); "mostly" canonical 37.7% | **Miss** | 02 |
-| 8 | **Discrete degrees structure perception** | One dominant factor (all retention criteria); no prevalence hierarchy (ρ = −0.47, p = 0.28) | **Miss** | 06 |
+| 7 | **Normative path: characteristic stage sequence** | Strict canonical order 0.05% (3/6,249); "mostly" canonical 37.7%. The order tested is the NDE literature's (OBE → tunnel → light → encounters → review → return) | **Not observed**; not a framework prediction: Swedenborg's sequence is three states in the world of spirits, which some skip (*HH* §491), and an NDE reaches at most its threshold | 02 |
+| 8 | **Discrete degrees structure perception** | Notebook 06 assigned each marker to one degree: one dominant factor, no prevalence hierarchy (ρ = −0.47, p = 0.28) — not a test of the doctrine (every degree is in every thought, *DLW* §§222–229). Registered test of the doctrine as written (notebook 09, one cumulative continuum): length-stratified Mokken H = 0.245 (0.231–0.259), threshold 0.30; one five-item monotone scale; archives agree | **Underdetermined** (registered verdict) | 06, 09 |
 | 9 | **Being of Light → "celestial" perception** | After length adjustment, only comparative reality (OR 1.87) and telepathy (OR 3.90) remain elevated; comparative reality is a less stable code (κ 0.74, test–retest 0.58) | **Partial hit** | 06 |
 | 10 | **East–West: the "Western profile" is a scholarly construction** | Claimed rates not observed in these archives (being of light 11.8% of all accounts, 20.7% of those with any light) | **Supported** for these archives; the Japanese side is untested | 05 |
 | 11 | **Purposive economy** | Personal light co-occurs with mission (adj OR 3.26) and life review (adj OR 1.89) | Association **supported**; direction is **interpretation** | 05 |
 
 **Summary of the NDE domain:**
 - **Hits or supported:** 9 rows (1, 2, 2a, 2c, 3, 4, 6, 10, 11), plus a partial hit (9) and the associations in row 5. The framework's predictions about the **function, character and cultural variation** of encounters largely hold.
-- **Misses:** 4 rows (2b, 2d, 7, 8). The framework's **structural** predictions fail: a fixed stage sequence, and a discrete-degree structure in perception. So do two role-specific claims: more guidance overall from divine figures, and relatives as gatekeepers.
-- **Underdetermined:** singularity of the Being (row 5).
+- **Not observed, and not framework predictions:** 3 rows (2b, 2d, 7). Divine figures do not give more guidance overall, relatives are not specific gatekeepers, and there is no fixed episode-level stage order. None of these claims is in Swedenborg's texts; they entered through earlier summaries and the NDE literature.
+- **Underdetermined:** perception as one cumulative continuum (row 8, registered test); singularity of the Being (row 5).
+- **Misses among the framework's own predictions:** none at present. The only candidate is row 1's perceptual mode, if "mode" was meant to be constant, which was never specified. With no misses, the weight of the case rests on whether registered tests on new data (row 8; §6.7) can fail and do not.
 
 ### 6.2 Measurement Reliability: What the NDE Numbers Can Bear
 
@@ -197,6 +199,7 @@ GPT-5.2 test–retest on duplicate submissions has a median κ of 0.88. It is le
 | κ = 0.84 inter-rater reliability on 200 records | No such study existed | §6.2 |
 | "95 out of 100 questions produce significant patterns" | No source in the repository; at N in the thousands nearly every association is significant, so the count is not evidence | §6.7 |
 | NDE N = 6,753 | Includes 2 exact duplicates | 6,751 |
+| "Misses" on a fixed stage sequence, discrete-degree structure, gatekeeping and guidance amount, scored against the framework | The predictions are not Swedenborg's (§3, "Find the prediction in the text") | Rows 2b, 2d, 7, 8 |
 | MallWorld vertical ρ = 0.25–0.30 "replicated across splits" | Typed banner; not significant in either holdout split; contaminated population | ρ = +0.064; worse below ground, not better above (§6.5, M1–M2) |
 | MallWorld "entity autonomy"; social interactions in malls z = +22.8 | Join on `location_id` alone, matching entities to other dreams | Rule 17; §6.5 |
 | MallWorld animals "completely independent of atmosphere (χ² ≈ 0, p = 1.0)"; animal ICC 0.630 | Binning error left one category; the "ICC" was not an intraclass correlation | Hostile creatures 59.0% vs 15.8% by atmosphere, OR 7.69; P1 (§6.5, M7) |
@@ -231,25 +234,28 @@ These claims rest on published literature or interpretive argument, not on analy
 
 | # | Prediction | Corrected evidence | Verdict | Notebook |
 |---|------------|--------------------|---------|----------|
-| M1 | **Below ground is worse** (lower degree) | Negative atmosphere 76.0% underground vs 58.3% at ground; OR 1.69–2.29, robust to location type and to excluding basements, caves and subways | **Partial hit** (with M2) | 02 |
-| M2 | **Above ground is better** | 65.2% negative above ground (OR 1.29–1.35 vs ground); within-dream OR 0.88 per level (0.72–1.07); overall ρ = 0.064 | **Miss**: ground, not the top, is least negative | 02 |
-| M3 | **Turbid water ↔ negative** (water = truth) | Dirty vs clean 84.4% vs 43.0% negative (OR 7.19); clear vs murky 20.6% vs 73.1% | **Hit** (pattern fit) | 02 |
-| M4 | **Darkness and cold light ↔ negative** (light = wisdom, heat = love) | ρ = −0.49 with darkness; cold vs warm 70.8% vs 33.1% negative (OR 4.88). Light temperature was primed by the prompt | **Hit** (pattern fit) | 02 |
-| M5 | **Warm light above** | Warm 41.7% below / 67.6% ground / 55.6% above | **Miss** | 02 |
-| M6 | **Exposure ↔ negative** (shame) | 87.1% vs 53.5% negative (OR 6.35); primed by the prompt | **Hit** (pattern fit) | 02 |
-| M7 | **Noxious animals in negative scenes** (P1, pre-registered) | 84.8% vs 58.3% negative (OR 4.08, 1.20–13.90; Holm p = 0.036). With a second coder's animal detection: OR 3.35, p = 0.11 | **Hit**; precision coder-sensitive | 07, 08 |
-| M8 | **Noxious animals below ground** (P2, pre-registered) | 25.0% vs 23.6% (OR 1.04) | **Miss** | 07 |
-| M9 | **The deceased in less negative scenes** (P3, pre-registered) | 45.5% vs 68.8% negative with living known persons (OR 0.36, 0.15–0.87; Holm p = 0.036); second coder OR 0.35 | **Hit**; coder-robust | 07, 08 |
-| M10 | **Ruling love persists: same person, similar atmospheres** (P4, pre-registered) | ICC1 = 0.094 across an author's dreams (Holm p = 0.036; 181 authors) | **Hit**; modest | 07 |
-| M11 | **Beings and animals co-vary with the state of the scene** | Threats 95.4%, creatures 84.0%, friends 58.0% negative; hostile creatures 59.0% vs 15.8% by atmosphere (OR 7.69) | Consistent; not discriminating | 03 |
-| M12 | **Authority guides above and punishes below** | Guiding or observing 55.0% below vs 35.7% above (OR 0.46, p = 0.24) | **Miss** in direction | 03 |
-| M13 | **Characteristic narrative arc** | Arc shapes as under random order; only continuous descent exceeds chance | **Miss** | 04 |
-| M14 | **East–West quality propagation** (§9) | Cardinal directions coded in 33 dreams | **Not testable** | 01 |
+| M1 | **Below ground is worse**: the hells are beneath, the deeper the worse (*HH* §§584–586) | Negative atmosphere 76.0% underground vs 58.3% at ground; OR 1.69–2.29, robust to location type and to excluding basements, caves and subways | **Partial hit** (with M2) | 02 |
+| M2 | **Above ground is better**: "interior things correspond to higher things" (*HH* §188) | 65.2% negative above ground (OR 1.29–1.35 vs ground); within-dream OR 0.88 per level (0.72–1.07); overall ρ = 0.064 | **Miss**: ground, not the top, is least negative | 02 |
+| M3 | **Turbid water ↔ negative**: waters signify the intellectual things of faith, and in the opposite sense falsities (*AC* §§42, 739) | Dirty vs clean 84.4% vs 43.0% negative (OR 7.19); clear vs murky 20.6% vs 73.1% | **Hit** (pattern fit) | 02 |
+| M4 | **Darkness and cold light ↔ negative**: the darkness of hell (*HH* §584); truths without good "shine coldly" (*HH* §132) | ρ = −0.49 with darkness; cold vs warm 70.8% vs 33.1% negative (OR 4.88). Light temperature was primed by the prompt | **Hit** (pattern fit) | 02 |
+| M5 | **Warm light above**: flaming light in the celestial kingdom (*HH* §128), which dwells on the heights (§188) | Warm 41.7% below / 67.6% ground / 55.6% above | **Miss** | 02 |
+| M6 | **Exposure ↔ negative**: shame at nakedness marks lost innocence (*HH* §341) | 87.1% vs 53.5% negative (OR 6.35). The prompt coded exposure as "shameful"; the text gives unashamed nakedness the opposite sense (innocence, §§179, 280) | **Hit** (pattern fit), weak: primed | 02 |
+| M7 | **Noxious animals in negative scenes** (P1, pre-registered; *HH* §110; *DLW* §§338–339) | 84.8% vs 58.3% negative (OR 4.08, 1.20–13.90; Holm p = 0.036). With a second coder's animal detection: OR 3.35, p = 0.11 | **Hit**; precision coder-sensitive | 07, 08 |
+| M8 | **Noxious animals below ground** (P2, pre-registered): noxious creatures appear in the hells (*DLW* §339), which are beneath (*HH* §584) | 25.0% vs 23.6% (OR 1.04) | **Miss** | 07 |
+| M9 | **The deceased in less negative scenes** (P3, pre-registered; *HH* §§449–450, 494) | 45.5% vs 68.8% negative with living known persons (OR 0.36, 0.15–0.87; Holm p = 0.036); second coder OR 0.35 | **Hit**; coder-robust | 07, 08 |
+| M10 | **Ruling love persists: same person, similar atmospheres** (P4, pre-registered; *HH* §§173–176, 477–479) | ICC1 = 0.094 across an author's dreams (Holm p = 0.036; 181 authors) | **Hit**; modest | 07 |
+| M11 | **Beings and animals co-vary with the state of the scene** (*HH* §§110, 173–176) | Threats 95.4%, creatures 84.0%, friends 58.0% negative; hostile creatures 59.0% vs 15.8% by atmosphere (OR 7.69) | Consistent; not discriminating | 03 |
+| M12 | **Authority guides above and punishes below**: heaven's governors "minister and serve" (*HH* §218); the hells are ruled by fear of punishment (§543) | Guiding or observing 55.0% below vs 35.7% above (OR 0.46, p = 0.24) | **Miss** in direction; not significant | 03 |
+| M13 | **Characteristic narrative arc** (legacy claim) | Arc shapes as under random order; only continuous descent exceeds chance | **Not observed**; not a framework prediction: the arc types come from the archived report's dramatic-structure analysis, and Swedenborg's sequence of states is after death, in the world of spirits (*HH* §491) | 04 |
+| M14 | **East–West quality propagation** (*HH* §§141–153; §9) | Cardinal directions coded in 33 dreams | **Not testable** | 01 |
+
+*HH* = *Heaven and Hell*; *DLW* = *Divine Love and Wisdom*; *AC* = *Arcana Coelestia*. The text for P2 (*DLW* §339, *HH* §584) was located after the test. The registration grounded P2 only in *HH* §110 and §§173–176. That leaves the miss unchanged.
 
 **Summary of the MallWorld domain.**
 - **Hits:** M3, M4, M6, M7, M9 and M10, plus the partial hit M1. The framework's predictions about the **character** of what appears in a scene hold: water, light, exposure, animals, the deceased, and a person's persistent atmosphere.
-- **Misses:** M2, M5, M8, M12 and M13. Its **structural** predictions fail: an elevation gradient, warm light above, animals below, authority function by height, and a characteristic arc. This repeats the NDE pattern (§6.1).
-- **Caveat:** every hit is also predicted by ordinary association, and M1–M6 were not registered in advance.
+- **Misses:** M2, M5, M8 and M12. All four concern **height**, and P2 (M8) is pre-registered. The text puts the interior above and the hells beneath (*HH* §§188, 584). In these dreams only the second half holds. Ground, not the top, is least negative; warm light is not concentrated above, noxious animals are not concentrated below, and authorities do not guide more above. These are the only misses among the framework's own predictions in this repository (the NDE domain has none, §6.1).
+- **Not observed, and not a framework prediction:** a characteristic arc (M13).
+- **Caveat:** every hit is also predicted by ordinary association, and M1–M6 were not registered in advance. The world of spirits appears "like a valley between mountains and rocks", with the ways to the hells opening downward and the gates of heaven visible only to those prepared (*HH* §429). That reading would accommodate "worse below, not better above", but only after the fact. It is a hypothesis for new data, not a result.
 
 **Reliability** (`projects/mallworld/notebooks/08_extraction_reliability.ipynb`; blind second coder, 119 dreams).
 - **Where both coders rated a feature, values agree:**
@@ -276,14 +282,15 @@ The physics analogy sets the standard. General relativity was accepted because q
 - **Significance is cheap.** With N = 6,751, almost any association reaches p < 0.05, and length inflates co-occurrence. A count of significant tests is not evidence for the framework.
 - **What counts:** pre-specified predictions that could fail; effect sizes; robustness to narrative length and to the coder; replication in data not used to form the prediction.
 - **Current standing.**
-  - NDE domain: hits on function, character and cultural variation; misses on sequence and on discrete-degree structure (§6.1).
-  - MallWorld domain: hits on the character of scenes (water, light, exposure, animals, the deceased, persistent atmosphere), three of them pre-registered; misses on vertical and sequential structure (§6.5).
+  - NDE domain: hits on function, character and cultural variation. A fixed stage order and per-degree layering of perception are not observed, but neither is a framework prediction. The registered test of perception as one continuum is underdetermined (§6.1).
+  - MallWorld domain: hits on the character of scenes (water, light, exposure, animals, the deceased, persistent atmosphere), three of them pre-registered. Misses on height: below ground is worse, but above ground is not better, warm light is not more common above, noxious animals are not more common below (pre-registered), and authorities do not guide more above. These are the repository's only misses among the framework's own predictions. A characteristic dream arc is not observed, and is not a framework prediction (§6.5).
   - Other domains: consistent with the framework but untested here (§6.4).
   - The cumulative case is real for the first group and should not be stretched to the second.
 - **What would raise the weight:**
   - pre-registered predictions tested on new archives (non-Western NDE collections, new NDERF submissions after a cut-off date);
   - head-to-head tests in which a competing framework states its prediction too;
-  - replication of the teaching and non-condemnation results with a revised schema.
+  - replication of the teaching and non-condemnation results with a revised schema;
+  - a registered replication of the MallWorld height results (M1, M2, M5, M8, M12) on dreams posted after a cut-off date, since these are the misses.
 
 The open questions are which parts of the framework work, how well, and why. The "why" leads into ontology, which remains speculative.
 
@@ -341,6 +348,7 @@ This project does **not** treat Swedenborg as infallible. Where the data or deep
 
 1. **Swedenborg predicts and the data confirm** → report a **hit**.
 2. **Swedenborg predicts and the data contradict** → report a **miss** and investigate.
+2a. **The data contradict a claim Swedenborg does not make** → report **not observed**, and say where the claim came from. Find the prediction in the text before scoring.
 3. **The framework reflects 18th-century limitations** → correct the artifact and keep the valid principle.
 4. **The data suggest extensions** → state the extension as a hypothesis and test it.
 
@@ -354,13 +362,13 @@ When analysing MallWorld dream data, interpret spatial, entity and atmospheric p
 
 | Natural Feature | Swedenborgian Correspondence | NOT This |
 |-----------------|------------------------------|----------|
-| Vertical space | Discrete degrees (celestial/spiritual/natural) | Id/Ego/Superego |
-| Underground | Lower natural; proximity to proprium/self-love | "The unconscious" |
-| Elevated | Higher states; proximity to influx from above | "Superego" |
+| Vertical space | Interior above, exterior below: "interior things correspond to higher things" (*HH* §188); the heavens are stacked in successive order (*DLW* §205). A dream level is not assigned to a degree (§5.1) | Id/Ego/Superego |
+| Underground | Toward the hells, which are beneath; the deeper, the worse (*HH* §§584–586) | "The unconscious" |
+| Elevated | More interior states; the celestial kingdom dwells on the heights (*HH* §188) | "Superego" |
 | Entities | Spiritual beings with differentiated functions | Psychological projections |
 | Threatening atmosphere | Spiritual state of the space; influx quality | "Repressed content" |
-| Creatures | Affections made visible (animals = affections) | "Instinctual drives" |
-| Authority figures | Beings with teaching/governing function | "Internalized parents" |
+| Creatures | Affections made visible (animals = affections, *HH* §110; noxious creatures appear in the hells, *DLW* §339) | "Instinctual drives" |
+| Authority figures | Beings with teaching/governing function (heaven's governors serve, *HH* §218; the hells are ruled by fear of punishment, §543) | "Internalized parents" |
 
 Directional framing used in the MallWorld synthesis:
 - **East** = ruling love (the source of quality). **West** = natural/sensory expression, which can be positive when East is good; it is not inherently negative.
@@ -368,7 +376,7 @@ Directional framing used in the MallWorld synthesis:
 - Let quality propagate outward from East into adjacent quadrants. Infer anchors relative to East when explicit cardinal labels are absent.
 
 **What the MallWorld data say about this table (§6.5).** The table is a set of hypotheses, not findings.
-- **Vertical space.** Only the lower half holds. Underground locations are worse than ground, but elevated ones are not better, and within a dream going up does not improve the atmosphere.
+- **Vertical space.** Only the lower half holds. Underground locations are worse than ground, but elevated ones are not better, and within a dream going up does not improve the atmosphere. Height accounts for all four MallWorld misses (M2, M5, M8, M12).
 - **Creatures.** They co-vary with the scene, as "animals = affections" predicts (P1, pre-registered). Noxious animals are not more common below ground (P2).
 - **Authority figures.** They do not guide more above and punish more below.
 - **East–West framing.** It cannot be tested: cardinal directions are coded in 33 of 1,918 dreams.

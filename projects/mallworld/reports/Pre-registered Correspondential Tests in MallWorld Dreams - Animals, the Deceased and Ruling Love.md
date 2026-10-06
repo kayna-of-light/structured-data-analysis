@@ -58,6 +58,7 @@ These three were registered before any computation.
 - **Animals.** Animals correspond to affections: gentle and useful animals to good affections, fierce and harmful ones to evil affections (Swedenborg, 1758, *Heaven and Hell* §110). Appearances around spirits correspond to their interiors (§§173–176).
 - **The deceased.** After death people meet friends and acquaintances (§494), and the newly arrived are received with kindness (§§449–450).
 - **Ruling love.** A person's ruling love persists (§§477–479), and the surroundings of a spirit correspond to it.
+- **Animals and height (P2).** Noxious creatures "appear in the hells" as correspondences of the lusts of those there (*Divine Love and Wisdom* §339), and the hells are beneath (*Heaven and Hell* §584). The registration cited only §110 and §§173–176 for P2. These two passages were located after the test, when every prediction was checked against the text (`CLAUDE.md` §3, "Find the prediction in the text"). They confirm that P2 is the framework's own prediction, so its miss stands.
 
 If MallWorld environments express the state of the scene and of the person, three things follow:
 - harmful animals should appear in negative scenes;
@@ -132,7 +133,7 @@ Sensitivity:
 
 Of located animal locations, 25.0% of noxious (n=20) and 23.6% of gentle (n=55) are underground. OR = 1.04 (0.31–3.54), one-sided p = 0.47.
 
-**Finding (statistically supported):** Animal class is not related to height. **Verdict: miss.** It matches the absence of an elevation gradient in the spatial report.
+**Finding (statistically supported):** Animal class is not related to height. **Verdict: miss.** It matches the absence of an elevation gradient in the spatial report. The interval is wide (OR 0.31–3.54, 75 located animal locations), so the miss excludes only a large effect.
 
 ### 3.3 P3: The Deceased vs Living Known Persons
 
@@ -185,9 +186,7 @@ The three primary hits share a structure. The quality of what appears in a dream
 
 The archived reports had reached the opposite conclusion about animals, "independence from atmosphere", through a binning error. They then built an interpretation on it. Corrected and tested in advance, the result runs in the framework's direction.
 
-The miss is structural, as in the spatial report and in the NDE project. The framework's vertical ordering does not place harmful animals below ground. The pattern across MallWorld and the NDE data is consistent:
-- predictions about the **character** of what is encountered tend to hold;
-- predictions about **structure** (vertical gradients, stage sequences, discrete degrees) tend to fail.
+The miss concerns height, as do the misses in the spatial report. The framework places noxious creatures in the hells and the hells beneath (*Divine Love and Wisdom* §339; *Heaven and Hell* §584), and these dreams do not place harmful animals below ground. Across the MallWorld reports, predictions about the **character** of what appears in a scene hold. Of the predictions about **height**, only "worse below ground" holds. In the NDE project, the earlier structural "misses" (stage order, per-degree layering) turned out not to be Swedenborg's predictions. The MallWorld height results are therefore the clearest misses of the framework's own predictions in this repository.
 
 These tests establish pattern fit only. Each hit was predicted in advance by an ordinary association that the registration named. They raise the weight of the framework's qualitative predictions in this domain only to the extent that those predictions could have failed and did not.
 
@@ -236,6 +235,8 @@ Liang, K.-Y., & Zeger, S. L. (1986). Longitudinal data analysis using generalize
 Shrout, P. E., & Fleiss, J. L. (1979). Intraclass correlations: Uses in assessing rater reliability. *Psychological Bulletin*, 86(2), 420–428.
 
 Swedenborg, E. (2000). *Heaven and Hell* (G. F. Dole, Trans.). Swedenborg Foundation. (Original work published 1758)
+
+Swedenborg, E. (2005). *Angelic Wisdom Concerning the Divine Love and the Divine Wisdom* (J. C. Ager, Trans.). Project Gutenberg, eBook #16627. (Original work published 1763). Quotations in this report follow this translation.
 
 ---
 

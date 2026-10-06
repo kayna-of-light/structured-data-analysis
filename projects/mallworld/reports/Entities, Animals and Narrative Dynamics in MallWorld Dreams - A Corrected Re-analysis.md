@@ -30,7 +30,8 @@ The audit found that these claims rest on a join that attached each entity to lo
 
 **Conclusions**:
 - **Fits the framework:** beings and animals co-vary with the state of the scene, as the framework holds that surroundings correspond to the state of those present. The archived reports had inverted this with a bug.
-- **Misses:** authority functions do not differentiate by height. Arcs and stage-like sequences are not structured beyond chance.
+- **Miss:** authority functions do not differentiate by height.
+- **Not observed, and not a framework prediction:** a characteristic arc. Arcs are not structured beyond chance, but Swedenborg's texts predict no dream arc.
 - **Withdrawn:** most dynamical "discoveries" (Markov attractors, loop hubs, archetypes) restate label frequencies.
 
 **Keywords**: MallWorld, dream entities, animal correspondences, Swedenborg, variance components, join error, clustered inference, narrative arcs
@@ -66,7 +67,9 @@ In Swedenborg's account, the things that appear around spirits correspond to the
 This gives directional expectations for dream entities:
 - **Co-variation:** beings and animals should co-vary with the quality of the scene, not be independent of it.
 - **Persistence:** a person's environments should be somewhat consistent across dreams.
-- **Function:** functions of beings should differ in the expected direction, for example guiding above and blocking or punishing below.
+- **Function:** functions of beings should differ in the expected direction, for example guiding above and blocking or punishing below. In heaven the governors "minister and serve" (§218); the hells are ruled by fear of punishment, with the more wicked set over the rest (§543).
+
+The texts give no characteristic order of scenes within a dream. Swedenborg's sequence of states is the three states after death in the world of spirits, which some skip (§491). Arc types are therefore tested here as claims of the archived sequence report, not as framework predictions (`CLAUDE.md` §3, "Find the prediction in the text").
 
 The archived reports did not state these expectations in advance. In several places they reinterpreted results against them. The tests registered in advance are reported in the companion report on pre-registered tests.
 
@@ -252,7 +255,7 @@ The R4 reversal is **interpretation**: affect leading the next scene fits the pr
 - **Social space.** "Social interactions are dramatically elevated in malls (z = +22.82)" came from the join bug. Corrected: 14.3% vs 12.9%, OR 1.14 (p = 0.22).
 
 **Finding (statistically supported):** Apart from a modest within-dream decline, an excess of continuous descent, and some adjacency of same-type locations beyond composition (school lift 3.79 vs 2.32 under shuffling), the archived dynamical structure restates label frequencies and chance. **Verdict:**
-- **Miss:** a characteristic arc or stage sequence, as was also found in the NDE project.
+- **Not observed:** a characteristic arc or stage sequence. This is not a framework prediction: the arc types come from the archived report's dramatic-structure analysis, not from Swedenborg (§1.2). The NDE project reached the same conclusion about stage order.
 - **Underdetermined:** the decline.
 
 ---
@@ -270,7 +273,7 @@ The R4 reversal is **interpretation**: affect leading the next scene fits the pr
 | Animals cluster by dreamer | ICC 0.130, p = 0.30, 8 authors | Underdetermined |
 | Dreamer explains 56.4% | Dream 0.314; author 0.094–0.183; type 0.058 | Withdrawn; author effect a hit (P4) |
 | No conflict with the deceased | 0 of 52 vs 2.9 expected, p = 0.050 | Weak, framework direction |
-| Characteristic arc or stage sequence | Same as random order, except more descent | Miss |
+| Characteristic arc or stage sequence | Same as random order, except more descent | Not observed (not a framework prediction) |
 | Four archetypes; four dimensions | Silhouette ≤ 0.16; 7 components | Withdrawn |
 
 ### 4.2 Interpretation
@@ -279,12 +282,11 @@ The largest change concerns animals. The archived thesis made animals its "stron
 
 The same pattern holds for beings generally, and for the dreamer's affect leading the next scene. MallWorld environments are coherent wholes: beings, animals, affect and atmosphere move together. That coherence is what correspondence predicts. It is also what any well-formed narrative, and any coder reading a single sentence, would produce. The data establish **pattern fit**, not mechanism.
 
-Where the framework makes a specific structural prediction, it fails or cannot be tested:
+Where the framework makes a prediction about height, it fails:
 - authority function by height (wrong direction);
-- creatures below (borderline), with noxious animals below a registered miss;
-- a characteristic arc (absent).
+- creatures below (borderline), with noxious animals below a registered miss.
 
-These match the NDE results, where the framework's predictions about character and function largely held, while its structural predictions (stage order, discrete degrees) failed.
+No characteristic arc is found, but the texts predict none, so that result is not scored against the framework. In the NDE project, the structural "misses" turned out not to be Swedenborg's predictions, and no miss among the framework's own predictions remains there (`CLAUDE.md` §6.1). The height results in MallWorld are therefore the clearest failures of the framework's own predictions in the repository. The spatial report reaches the same conclusion for atmosphere and light.
 
 ### 4.3 Implications
 
@@ -313,7 +315,7 @@ These match the NDE results, where the framework's predictions about character a
 
 The archived picture of autonomous entities, dreamer-bound animals and a structured dream grammar does not survive correction.
 - **What remains:** beings, animals and affect co-vary with the atmosphere of the scene. Fierce animals and hostile beings appear in negative scenes, and friends and the deceased in less negative ones. This fits the framework's claim that surroundings correspond to the state of those present, and it reverses the archived "independence".
-- **Structural predictions:** authority function by height and a characteristic arc are misses.
+- **Height:** authority function by height is a miss. No characteristic arc is found, and none is predicted by the texts.
 - **Dynamics:** most dynamical structure is chance or label frequency.
 
 ---
@@ -329,6 +331,8 @@ Liang, K.-Y., & Zeger, S. L. (1986). Longitudinal data analysis using generalize
 Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. *Journal of Computational and Applied Mathematics*, 20, 53–65.
 
 Swedenborg, E. (2000). *Heaven and Hell* (G. F. Dole, Trans.). Swedenborg Foundation. (Original work published 1758)
+
+Swedenborg, E. (2005). *Heaven and its Wonders and Hell* (J. C. Ager, Trans.). Project Gutenberg, eBook #17368. (Original work published 1758). Quotations in this report follow this translation.
 
 ---
 

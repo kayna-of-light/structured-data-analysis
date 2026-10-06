@@ -130,24 +130,28 @@ Their figures appear only in `docs/FINDINGS_LOG.md` and the January plans, which
 
 ## 5. Framework Scorecard (MallWorld, after correction)
 
-| # | Prediction | Evidence | Verdict | Notebook |
-|---|---|---|---|---|
-| M1 | Below ground worse than ground | 76.0% vs 58.3% negative; OR 1.69–2.29, robust to type | **Partial hit** | 02 |
-| M2 | Above ground better than ground | 65.2% vs 58.3%; within-dream OR 0.88 | **Miss** | 02 |
-| M3 | Turbid water ↔ negative | OR 7.19; clear vs murky 20.6% vs 73.1% | **Hit** (pattern fit) | 02 |
-| M4 | Darkness and cold light ↔ negative | ρ = −0.49; cold vs warm OR 4.88 (primed) | **Hit** (pattern fit) | 02 |
-| M5 | Warm light above | 41.7 / 67.6 / 55.6% | **Miss** | 02 |
-| M6 | Exposure ↔ negative | OR 6.35 (primed) | **Hit** (pattern fit) | 02 |
-| M7 | Noxious animals in negative scenes (P1) | OR 4.08, Holm p = 0.036; second coder OR ≈ 3.3, p = 0.11 | **Hit** (pre-registered; precision coder-sensitive) | 07, 08 |
-| M8 | Noxious animals below (P2) | OR 1.04 | **Miss** (pre-registered) | 07 |
-| M9 | Deceased in less negative scenes (P3) | OR 0.36, Holm p = 0.036; second coder OR 0.35 | **Hit** (pre-registered; coder-robust) | 07, 08 |
-| M10 | Ruling love: consistent atmospheres within a person (P4) | ICC1 0.094, Holm p = 0.036 | **Hit** (pre-registered; modest) | 07 |
-| M11 | Beings co-vary with the scene | Threats 95.4%, creatures 84.0%, friends 58.0% negative | Consistent (non-discriminating) | 03 |
-| M12 | Authority guides above, punishes below | 55.0% below vs 35.7% above guiding or observing | **Miss** in direction (n.s.) | 03 |
-| M13 | Characteristic arc or sequence | Arcs as under random order; excess descent only | **Miss** | 04 |
-| M14 | East–West quality propagation | Cardinal directions in 33 dreams | **Not testable** | 01 |
+Each prediction was located in Swedenborg's text before it was scored (`CLAUDE.md` §3, "Find the prediction in the text"). A result that contradicts a claim the texts do not make is reported as **not observed**, not as a miss. *HH* = *Heaven and Hell*; *DLW* = *Divine Love and Wisdom*; *AC* = *Arcana Coelestia*.
 
-Every hit is pattern fit: each is also predicted by ordinary association, the same-source caveat applies, and the predictions in M1–M6 were not registered in advance. As in the NDE domain, predictions about the **character** of what is encountered tend to hold, and predictions about **structure** (vertical gradients, arcs, stage order) tend to fail.
+| # | Prediction | Text | Evidence | Verdict | Notebook |
+|---|---|---|---|---|---|
+| M1 | Below ground worse than ground | Hells beneath, deeper is worse (*HH* §§584–586) | 76.0% vs 58.3% negative; OR 1.69–2.29, robust to type | **Partial hit** | 02 |
+| M2 | Above ground better than ground | "Interior things correspond to higher things" (*HH* §188) | 65.2% vs 58.3%; within-dream OR 0.88 | **Miss** | 02 |
+| M3 | Turbid water ↔ negative | Waters = things of faith; opposite sense falsities (*AC* §§42, 739) | OR 7.19; clear vs murky 20.6% vs 73.1% | **Hit** (pattern fit) | 02 |
+| M4 | Darkness and cold light ↔ negative | Darkness of hell (*HH* §584); truths without good shine coldly (§132) | ρ = −0.49; cold vs warm OR 4.88 (primed) | **Hit** (pattern fit) | 02 |
+| M5 | Warm light above | Flaming light of the celestial kingdom (*HH* §128), on the heights (§188) | 41.7 / 67.6 / 55.6% | **Miss** | 02 |
+| M6 | Exposure ↔ negative | Shame at nakedness marks lost innocence (*HH* §341); unashamed nakedness = innocence (§§179, 280) | OR 6.35 (primed) | **Hit** (pattern fit), weak | 02 |
+| M7 | Noxious animals in negative scenes (P1) | *HH* §110; *DLW* §§338–339 | OR 4.08, Holm p = 0.036; second coder OR ≈ 3.3, p = 0.11 | **Hit** (pre-registered; precision coder-sensitive) | 07, 08 |
+| M8 | Noxious animals below (P2) | Noxious creatures appear in the hells (*DLW* §339), which are beneath (*HH* §584); located after the test | OR 1.04 (0.31–3.54) | **Miss** (pre-registered) | 07 |
+| M9 | Deceased in less negative scenes (P3) | *HH* §§449–450, 494 | OR 0.36, Holm p = 0.036; second coder OR 0.35 | **Hit** (pre-registered; coder-robust) | 07, 08 |
+| M10 | Ruling love: consistent atmospheres within a person (P4) | *HH* §§173–176, 477–479 | ICC1 0.094, Holm p = 0.036 | **Hit** (pre-registered; modest) | 07 |
+| M11 | Beings co-vary with the scene | *HH* §§110, 173–176 | Threats 95.4%, creatures 84.0%, friends 58.0% negative | Consistent (non-discriminating) | 03 |
+| M12 | Authority guides above, punishes below | Heaven's governors serve (*HH* §218); hells ruled by fear of punishment (§543) | 55.0% below vs 35.7% above guiding or observing | **Miss** in direction (n.s.) | 03 |
+| M13 | Characteristic arc or sequence | None. The arc types are the archived sequence report's; Swedenborg's sequence of states is after death (*HH* §491) | Arcs as under random order; excess descent only | **Not observed**; not a framework prediction | 04 |
+| M14 | East–West quality propagation | *HH* §§141–153 | Cardinal directions in 33 dreams | **Not testable** | 01 |
+
+Every hit is pattern fit: each is also predicted by ordinary association, the same-source caveat applies, and the predictions in M1–M6 were not registered in advance. Predictions about the **character** of what appears in a scene hold. Predictions about **height** hold only for "worse below ground". All four misses (M2, M5, M8, M12) concern height, and one of them (M8) was pre-registered. The NDE domain has no misses among the framework's own predictions (`CLAUDE.md` §6.1, after the October 2026 verdict revisions), so these are the clearest failures of the framework's own predictions in the repository.
+
+A reading of the world of spirits as "a valley between mountains and rocks", with the ways to the hells opening downward and the gates of heaven visible only to those prepared (*HH* §429), would accommodate "worse below, not better above". It was found after the results. It is a hypothesis for dreams posted after a cut-off date, not a rescue of M2.
 
 ---
 
