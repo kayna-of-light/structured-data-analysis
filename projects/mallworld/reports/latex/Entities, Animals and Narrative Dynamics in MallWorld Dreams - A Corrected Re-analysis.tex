@@ -1,0 +1,738 @@
+% Generated from ../Entities, Animals and Narrative Dynamics in MallWorld Dreams - A Corrected Re-analysis.md by scripts/md_to_latex.py.
+% Edit the Markdown report, then regenerate this file; do not edit it by hand.
+\input{mallworld-report-preamble}
+\usepackage{array}
+\usepackage{calc}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setlength{\emergencystretch}{3em}
+\let\underscorechar\_
+\renewcommand{\_}{\underscorechar\allowbreak}  % let long field names break after underscores
+
+\reporttitle{Entities, Animals and Narrative Dynamics in MallWorld Dreams}{A Corrected Re-analysis}
+\reportauthors
+
+\begin{document}
+
+\maketitle
+
+{\small
+\emph{Report of the October 2026 audit. It replaces four archived reports: ``Entity Ecology in MallWorld Dreams'', ``Sequence Motifs in MallWorld Dreams'', ``Emergent Structure in Recurring Dream Environments'', and \S{}\S{}4--6 of ``Correspondential Structure in Collective Dream Space''. The archived reports are in \texttt{reports/archive/}. The withdrawn figures are listed in Appendix B and in \texttt{docs/STATISTICAL\_AUDIT\_2026-10.md}.}
+
+}
+
+\begin{abstract}
+\textbf{Background}: The archived MallWorld reports made strong claims about the beings, animals and dynamics of dream environments:
+
+\begin{itemize}
+\tightlist
+\item
+  entities behave ``autonomously'', the same at every level and atmosphere;
+\item
+  animals are ``completely independent of environmental atmosphere'' and ``represent the dreamer'' (ICC 0.630);
+\item
+  dreamer identity explains 56.4\% of atmosphere variance;
+\item
+  dreams fall into four archetypes and loop through ``trap'' locations.
+\end{itemize}
+
+The audit found that these claims rest on a join that attached each entity to locations from other dreams, a binning error, label repetition, and variance components that confuse the dream with the dreamer.
+
+\textbf{Methods}: The study uses 1,918 primary dream reports, 3,696 entity involvements and 6,056 interactions, keyed correctly by dream and location. Every archived figure is first reproduced on its own construction and then re-estimated. Re-estimation uses unique entity-type occurrences, logistic regression clustered by dream and adjusted for narrative length, chance-corrected variance components, within-dream permutation nulls, conditional logit, silhouette and bootstrap stability for clusters, and parallel analysis for components.
+
+\textbf{Results}:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Entities.} Threats, creatures and authority figures appear in negative scenes (95.4\%, 84.0\% and 79.9\% negative). Friends appear in the least negative scenes (58.0\%). ``Guides 0\% hostile, threats 94\% hostile'' follows from the labels, and the ``flat'' profiles across levels came from the join bug. Authority functions do not follow the framework's prediction (guiding or observing 55.0\% below ground vs 35.7\% above; OR 0.46, p = 0.24).
+\item
+  \textbf{Animals: independence reversed.} The archived ``independence'' was a single-category table filled in as \ensuremath{\chi}\ensuremath{^{2}} = 0. Corrected, hostile creatures appear at 59.0\% of negative locations and 15.8\% of non-negative ones (OR 7.69, 1.55--38.3).
+\item
+  \textbf{Animals: dreamer clustering withdrawn.} The ``ICC 0.630'' was not an intraclass correlation. A proper estimate is 0.130 (p = 0.30; 8 authors).
+\item
+  \textbf{Atmosphere variance.} ``Dreamer 56.4\%'' was a within-dream effect inflated by small groups. Corrected:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    within dream: ICC 0.314;
+  \item
+    same author across dreams: 0.094--0.183;
+  \item
+    location type: 0.058.
+  \end{itemize}
+\item
+  \textbf{Narrative dynamics.}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Arc shapes are what random ordering produces, except that continuous descent is more common than chance.
+  \item
+    ``Loops'' and ``traps'' are repeated type labels, mostly ``other'', only 2--5 points above a shuffled null.
+  \item
+    The four ``archetypes'' have silhouettes of 0.11--0.16, which indicates no cluster structure.
+  \item
+    ``Social interactions in malls, z = +22.8'' came from the join bug; corrected, OR 1.14 (n.s.).
+  \end{itemize}
+\end{itemize}
+
+\textbf{Conclusions}:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Fits the framework:} beings and animals co-vary with the state of the scene, as the framework holds that surroundings correspond to the state of those present. The archived reports had inverted this with a bug.
+\item
+  \textbf{Misses:} authority functions do not differentiate by height. Arcs and stage-like sequences are not structured beyond chance.
+\item
+  \textbf{Withdrawn:} most dynamical ``discoveries'' (Markov attractors, loop hubs, archetypes) restate label frequencies.
+\end{itemize}
+
+\keywords{MallWorld, dream entities, animal correspondences, Swedenborg, variance components, join error, clustered inference, narrative arcs}
+\end{abstract}
+
+\newpage
+
+\section*{Data Provenance}\label{data-provenance}
+\addcontentsline{toc}{section}{Data Provenance}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2911}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3544}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3544}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Access
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Dream reports (N=1,918 primary) & r/TheMallWorld (Reddit) & \texttt{data/mallworld/} \\
+Structured extraction & GPT-5.2 via Azure OpenAI & \texttt{projects/mallworld/structured/} \\
+Verified loader & \texttt{scripts/mallworld\_dataset.py} & \href{https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/mallworld/scripts/mallworld_dataset.py}{Repository} \\
+Entities and animals & \texttt{notebooks/03\_entities\_and\_animals.ipynb} & Repository \\
+Sequences and dreamer effects & \texttt{notebooks/04\_sequences\_and\_dreamer\_effects.ipynb} & Repository \\
+Exploratory report claims & \texttt{notebooks/06\_exploratory\_report\_claims.ipynb} & Repository \\
+Reliability & \texttt{notebooks/08\_extraction\_reliability.ipynb} & Repository \\
+\end{longtable}
+}
+
+\section{Introduction}\label{introduction}
+
+\subsection{Background}\label{background}
+
+Dreams in the MallWorld corpus are populated: 66.5\% of primary dream reports contain at least one coded entity (3,696 involvements in 1,275 dreams). Entities are recorded inside interactions, so one entity can appear several times. Their dreams also unfold in sequences of locations. The archived reports drew far-reaching conclusions from both: entity ``autonomy'', animals as ``dreamer affections'', atmosphere as a projection of ``ruling love'', and a ``grammar'' of dream movement.
+
+The audit (notebook 01, D6) found that \texttt{location\_id} values such as \texttt{loc\_1} repeat across dreams. Joining entities to locations on that key alone produced 7,158,025 rows from 4,235 involvements. Each entity was compared with environments from other people's dreams, so any ``invariance across environments'' built on that join is guaranteed.
+
+\subsection{Theoretical Framework}\label{theoretical-framework}
+
+In Swedenborg's account, the things that appear around spirits correspond to their interior state (\emph{Heaven and Hell} \S{}\S{}173--176). Animals in particular correspond to affections: gentle and useful animals to good affections, fierce and harmful ones to evil affections (\S{}110). Beings encountered after death have differentiated functions. Newcomers are met by friends (\S{}494) and attended by angels (\S{}\S{}449--450). A person's ruling love persists (\S{}\S{}477--479).
+
+This gives directional expectations for dream entities:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Co-variation:} beings and animals should co-vary with the quality of the scene, not be independent of it.
+\item
+  \textbf{Persistence:} a person's environments should be somewhat consistent across dreams.
+\item
+  \textbf{Function:} functions of beings should differ in the expected direction, for example guiding above and blocking or punishing below.
+\end{itemize}
+
+The archived reports did not state these expectations in advance. In several places they reinterpreted results against them. The tests registered in advance are reported in the companion report on pre-registered tests.
+
+\subsection{Aims}\label{aims}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Reproduce each archived entity, animal, variance and sequence figure on its own construction, and identify what it measured.
+\item
+  Re-estimate the answerable questions with the correct key, clustered inference and length adjustment.
+\item
+  Record which claims are built into the coding categories.
+\end{enumerate}
+
+\section{Methods}\label{methods}
+
+\subsection{Data Sources}\label{data-sources}
+
+The data are 1,918 primary dream reports (8,685 locations, 1,303 authors), loaded through the verified loader. Entities and interactions are keyed by \texttt{(post\_id,\ location\_id)}.
+
+\subsection{Coding Scheme}\label{coding-scheme}
+
+\textbf{Labels with built-in behaviour.} Several entity types carry their behaviour in their labels:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{threat} (schema comment: ``hostile entity'');
+\item
+  \texttt{guide} (``someone helpful'');
+\item
+  \texttt{watcher} (``observer entity'').
+\end{itemize}
+
+Associations between these types and demeanor, or between threats and threatening atmospheres, are partly definitional. They are reported as coder consistency.
+
+\textbf{Atmosphere} is the loader's valence:
+
+\begin{itemize}
+\tightlist
+\item
+  negative: threatening, oppressive, uncomfortable, wrong, eerie, chaotic;
+\item
+  non-negative: neutral, welcoming, peaceful.
+\end{itemize}
+
+\textbf{Animal classes} use the whole-word lists fixed in the pre-registration (\texttt{docs/PREREGISTRATION\_2026-10.md}).
+
+\subsection{Statistical Analysis}\label{statistical-analysis}
+
+\textbf{Units.} Rates of entity types at locations use unique (dream, location, entity type) triples.
+
+\textbf{Inference.} Inference is clustered by dream throughout, with logistic regression adjusted for log word count.
+
+\textbf{Variance components.} These are reported as:
+
+\begin{itemize}
+\tightlist
+\item
+  chance-corrected \ensuremath{\eta}\ensuremath{^{2}}, against permutation nulls;
+\item
+  ICC1 within dreams;
+\item
+  ICC1 across dreams of the same author.
+\end{itemize}
+
+\textbf{Sequences.} Sequences follow list order. Where \texttt{visit\_order} is given for every location of a dream, it agrees with list order in 98.0\% of dreams. Sequence claims are tested against nulls that shuffle labels across the corpus or order within each dream.
+
+\textbf{Clustering and components.}
+
+\begin{itemize}
+\tightlist
+\item
+  Clustering is assessed with silhouette width and bootstrap adjusted Rand index.
+\item
+  Principal components are retained by parallel analysis.
+\end{itemize}
+
+\section{Results}\label{results}
+
+\subsection{Dream-Level Effects of Entities Are Mostly Narrative Length}\label{dream-level-effects-of-entities-are-mostly-narrative-length}
+
+The archived dream-level figures reproduce (notebook 03, E1). Dreams with a threat have more locations (5.39 vs 4.44) and a higher share of threatening locations (35.3\% vs 6.7\%). Dreams with a family member also have a higher share (15.3\% vs 9.0\%). But dreams with entities are longer: the median is 232 words with a threat against 143 without. Length adjustment changes the picture:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5319}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4681}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Entity in the dream
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Location coded threatening, length-adjusted OR (95\% CI)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Threat & 5.14 (4.11--6.43) \\
+Authority & 1.34 (1.06--1.68) \\
+Family member & 1.28 (0.92--1.77); 1.01 among dreams with any entity \\
+\end{longtable}
+}
+
+Where a family member actually appears, the location is negative in 68.6\% of cases, against 67.2\% for other locations in dreams with entities (OR 1.06, p = 0.77).
+
+\textbf{Finding (statistically supported):} Threats go with threatening locations, which is close to definitional. The ``family paradox'' is withdrawn: it compared entity-rich long dreams with short dreams that have no entities.
+
+\subsection{Entity Types and the Atmosphere of the Scene}\label{entity-types-and-the-atmosphere-of-the-scene}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2747}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Entity type
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Locations
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Dreams
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Negative atmosphere (95\% CI)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Threat & 219 & 166 & 95.4\% (93--98) \\
+Creature & 100 & 86 & 84.0\% (76--92) \\
+Authority & 279 & 210 & 79.9\% (75--85) \\
+Crowd & 547 & 420 & 72.6\% (69--76) \\
+Family member & 121 & 102 & 68.6\% (61--77) \\
+Stranger & 499 & 370 & 66.3\% (62--71) \\
+Friend & 50 & 45 & 58.0\% (44--72) \\
+\end{longtable}
+}
+
+The archived \ensuremath{\chi}\ensuremath{^{2}} = 792 (df = 99) treated nested involvements as independent, and 53\% of the cells in its table have an expected count below 5.
+
+\textbf{Finding (statistically supported):} Threats, creatures and authority figures appear in negative scenes; friends, strangers and family in less negative ones. \textbf{Interpretation:} this fits the correspondence of surroundings to the state of those present. It also fits the ordinary reading that a hostile guard makes a scene unpleasant. The deceased are tested in the pre-registered report (P3, a hit).
+
+\subsection{``Entity Autonomy'' Is a Join Artifact and a Definition}\label{entity-autonomy-is-a-join-artifact-and-a-definition}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3623}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Claim
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Archived basis
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Corrected
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Guides 0\% hostile, threats 92--94\% hostile ``at all levels'' & Labels; join bug & Guides 0.0\% (32 involvements, 17 dreams); threats 93.8\% (306, 187); built into the labels \\
+Hostility flat across levels & Join on \texttt{location\_id} only: 19.7 / 19.5 / 19.6\% (7,158,006 rows) & Correct key: 21.8 / 20.2 / 19.5\% (4,208 rows); within types, CIs up to 53 points wide \\
+Threats present at 8.6\% of every atmosphere & Join bug & 7.6\% of negative, 0.5\% of neutral, 1.1\% of positive locations \\
+Guides at 5.2--5.3\% of every level & Join bug & 18 located guide involvements in 10 dreams; not estimable \\
+Authority functions identical at all levels (p = 0.78) & Join bug & \ensuremath{\chi}\ensuremath{^{2}}(8) = 9.2, p = 0.33, 27\% sparse cells; see below \\
+\end{longtable}
+}
+
+The archived notebook stated a prediction for authority figures before the join was introduced: guiding and observing above; blocking, pursuing and punishing below. Its own correctly joined run gave \ensuremath{\chi}\ensuremath{^{2}}(8) = 13.42, p = 0.098, with residuals \emph{opposite} to the prediction. The thesis instead reported the join result and labelled it as support for entity autonomy. On the primary population, the guiding-or-observing share of authority functions is 55.0\% below ground, 43.1\% at ground and 35.7\% above ground (above vs below OR 0.46, 0.12--1.71, p = 0.24; 134 involvements in 93 dreams).
+
+\textbf{Finding (statistically supported):} No evidence for entity autonomy, and none against it: the data are too thin to show either invariance or variation. \textbf{Verdicts:}
+
+\begin{itemize}
+\tightlist
+\item
+  entity autonomy: \textbf{underdetermined};
+\item
+  authority function by height: \textbf{miss in direction, not significant}.
+\end{itemize}
+
+\subsection{Entity Types by Height}\label{entity-types-by-height}
+
+The archived \ensuremath{\chi}\ensuremath{^{2}} = 41.13 (df = 22, p = 0.0079) reproduces exactly on its own construction: 1,245 involvements nested in 535 dreams, up to 16 per dream. Earlier project documents attributed this statistic to the NDE entity-function claim. It belongs to the MallWorld vertical report.
+
+On unique (dream, location, type) triples, creatures are 8.3\% of entity types below ground, 4.6\% at ground and 5.9\% above ground (below vs ground OR 1.90, 1.00--3.61, p = 0.05). Authority figures are 10.6\% / 11.3\% / 14.5\% (above vs ground OR 1.33, p = 0.18).
+
+\textbf{Finding (statistically supported):} Creatures lean slightly below ground (borderline). Authority figures are not more common above. The archived ``creatures below, authority above'' was not pre-registered: its plan was written after the vertical report. \textbf{Verdicts:}
+
+\begin{itemize}
+\tightlist
+\item
+  creatures below: \textbf{borderline (exploratory)};
+\item
+  authority above: \textbf{not supported}.
+\end{itemize}
+
+The registered test that noxious animals appear below ground was a \textbf{miss} (P2).
+
+\subsection{Interactions}\label{interactions}
+
+Outcomes are coded for 48.1\% of interactions.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Helpful vs hostile entities.} With a helpful or friendly entity, 88.8\% of interactions succeed; with a hostile or threatening one, 57.5\% (clustered, length-adjusted OR 5.87, 3.77--9.13). The thesis's 49.7\% vs 29.7\% included ``not mentioned'' and ``ongoing'' in the denominator, and duplicated interactions through a join.
+\item
+  \textbf{Entity type.} Success differs by entity type (joint \ensuremath{\chi}\ensuremath{^{2}}(11) = 31.6, p = 0.0009). The archived ranking with ``family lowest'' does not reproduce.
+\item
+  \textbf{Height.} Success does not differ by level (OR 0.82 below and 0.79 above, vs ground).
+\item
+  \textbf{The deceased.} None of the 52 interactions involving a deceased person is a conflict. At the base rate (5.6\%), 2.9 conflicts would be expected; the probability of none is 0.050.
+\end{itemize}
+
+\textbf{Finding (statistically supported):} Help makes tasks succeed, which is not a framework test. The absence of conflict with the deceased is in the framework's direction (\emph{Heaven and Hell} \S{}494) but weak, and was not specified in advance.
+
+\subsection{Animals}\label{animals}
+
+\textbf{Type and demeanor.} On the primary population the archived keyword scheme gives V = 0.500. That scheme filed ``attack'', ``aggressive'' and ``evil'' under predators and monsters, and matched by substring. With behaviour words removed and whole-word matching, V = 0.492: the association does not depend on the circular keywords. ``Predator vs cat OR = 106:1'' rests on a zero cell (cats 0 of 17 hostile), so the OR is unbounded. With the pre-registered classes, 46.4\% of noxious and 11.5\% of gentle creatures are hostile (OR 6.69, 1.98--22.6).
+
+\textbf{Atmosphere.} The archived test cut dream means on a 1--5 scale at \ensuremath{-}0.5 and 0.5, so every creature fell into one bin. The notebook printed ``Insufficient data for chi-square'' and then set \ensuremath{\chi}\ensuremath{^{2}} = 0 and p = 1. The thesis reported that placeholder as ``complete independence''. Corrected:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3623}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Location atmosphere
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Hostile creatures (95\% CI)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+n (dreams)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Negative & 59.0\% (48.0--70.1) & 105 (74) \\
+Non-negative & 15.8\% (0.0--37.7) & 19 (14) \\
+\end{longtable}
+}
+
+The OR is 7.69 (1.55--38.3), p = 0.013. Across 92 dreams, creatures are also more hostile where the other entities are hostile (r = 0.317, p = 0.002).
+
+\textbf{Dreamer clustering.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Archived ``ICC'' (0.630; 0.616 on the primary population).} It divides the variance of author means over all authors, 80 of 117 of whom have one creature, by that variance plus the mean within-author variance. It is not an intraclass correlation.
+\item
+  \textbf{Authors with more than one creature.} Of the 37 such authors, 29 have them all in one dream.
+\item
+  \textbf{Omitted result.} The archived notebook's own proper estimate (0.207, 95\% CI 0.000--0.620, ``consistency not established'') was left out of the thesis.
+\item
+  \textbf{Corrected.} ICC1 = 0.130, permutation p = 0.30 (21 dreams, 8 authors).
+\item
+  \textbf{``89.5\% between dreamers, within-dreamer r = 0.753.''} In the same data, 76 of 92 dreams come from authors with one such dream, whose deviation is zero by construction. Within authors who have more, r = 0.135 (p = 0.62).
+\end{itemize}
+
+\textbf{Finding (statistically supported):} Animal type predicts demeanor, which is close to definitional. Animals co-vary with the atmosphere of the scene and with the other beings in it. Whether they cluster by dreamer cannot be estimated. \textbf{Verdicts:}
+
+\begin{itemize}
+\tightlist
+\item
+  ``independence from atmosphere'': \textbf{reversed};
+\item
+  dreamer clustering: \textbf{underdetermined}.
+\end{itemize}
+
+\textbf{Interpretation:} co-variation is what the framework predicts (\emph{Heaven and Hell} \S{}110, \S{}\S{}173--176). The archived reading, that animals are ``independent of the environment'' and ``represent the dreamer'', was built on a bug and also departed from the framework.
+
+\subsection{Who Explains the Atmosphere?}\label{who-explains-the-atmosphere}
+
+The archived \ensuremath{\eta}\ensuremath{^{2}} values reproduce: dream 0.544 (archived 0.564) and location type 0.068 (archived 0.071). With 4,293 locations in 1,376 dreams, a grouping that explains nothing yields \ensuremath{\eta}\ensuremath{^{2}} = 0.320.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5319}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4681}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Estimate
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Same dream (ICC1) & 0.314 (chance-corrected \ensuremath{\eta}\ensuremath{^{2}} 0.329) \\
+Same author, different dreams (ICC1) & 0.183 on the 5-point scale (573 dreams, 185 authors); 0.094 on the valence scale (P4, a hit) \\
+Location type (chance-corrected \ensuremath{\eta}\ensuremath{^{2}}) & 0.058 \\
+\end{longtable}
+}
+
+\textbf{Other archived ``ruling love'' figures.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Congruent fear across a dreamer's locations (archived ICC 0.327).} The archived test used two non-schema atmosphere values and three non-schema affect values. On schema values, consistency across a dreamer's dreams is ICC1 = 0.041 (p = 0.22).
+\item
+  \textbf{The R4 null (partial \ensuremath{\rho} = 0.007).} The same cell printed a significant alternative specification (\ensuremath{\rho} = 0.053, p = 0.0077), which was not reported. Corrected, negative affect at one location predicts a negative atmosphere at the next, beyond the current atmosphere. The OR is 2.09 (1.59--2.75) across 1,740 pairs, and 1.62 (1.09--2.42) within dreams.
+\item
+  \textbf{No source.} The thesis's figures for ``ruling love markers'' (F = 47.82, \ensuremath{\eta}\ensuremath{^{2}} = 0.136), ``partial r = 0.751'', hierarchical R\ensuremath{^{2}} 0.398, congruence \ensuremath{\chi}\ensuremath{^{2}} = 54.17 and ``partial r = 0.186 / 0.261'' appear in no notebook output.
+\end{itemize}
+
+\textbf{Finding (statistically supported):} Atmosphere clusters strongly within a dream. It clusters weakly but reliably within an author's different dreams, and that author-level clustering is larger than the effect of location type. \textbf{Interpretation:} persistence across a person's dreams fits the framework's ruling love (\emph{Heaven and Hell} \S{}\S{}477--479), and equally fits temperament or writing style.
+
+The R4 reversal is \textbf{interpretation}: affect leading the next scene fits the principle that surroundings follow the state of the person. The archived test assumed the opposite and read a null as strong support. This analysis is exploratory, and affect is the least reliable field (\ensuremath{\kappa} 0.67 where both coders coded it).
+
+\subsection{Narrative Dynamics}\label{narrative-dynamics}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Entries and exits.} Dreams begin in malls far more often than they end there (25.6\% vs 5.8\% of first vs last locations). They end in the residual category ``other'' far more often than they begin there (35.9\% vs 15.6\%). ``Other'' covers 2,217 distinct place names. \textbf{Descriptive}; the corpus starts in malls by definition.
+\item
+  \textbf{``Loops'' and ``traps.''}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The archived figures reproduce (43.7\%, 30.4\%, 19.6\% of dreams), but they count repeated type labels, not returns. Of the ``traps'', 66.1\% are the label ``other''.
+  \item
+    Against a null that shuffles labels across the corpus, the excess is 2--5 percentage points (repeat 43.7\% vs 38.5\%).
+  \item
+    Connections leading back to an earlier location occur in 23.7\% of dreams with connections.
+  \end{itemize}
+\item
+  \textbf{Markov dynamics.} The stationary share of ``other'' (30.7\%) restates its frequency as a transition target (29.2\%). ``Attractors'', ``gravitational centres'' and first-passage times describe label frequencies.
+\item
+  \textbf{Arcs.}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Shuffling each dream's atmospheres into random order reproduces the archived arc distribution almost exactly: complex 36.0\% vs 35.0\%, rise--fall 17.9\% vs 18.8\%, descent--recovery 17.4\% vs 18.9\%.
+  \item
+    The only departure is an excess of continuous descent: 7.4\% against a null range of 3.2--6.9\%, and 8.6\% (3.5--6.7\%) with all negative atmospheres included.
+  \item
+    The archived transition count reproduces (927 vs 1,075, p = 0.0010) but treats transitions as independent. With the dream as the unit, 175 dreams worsen on balance and 130 improve (p = 0.012). The report's ``529 vs 456'' appears in no output.
+  \end{itemize}
+\item
+  \textbf{Archetypes and components.}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Silhouette widths are 0.11--0.16 for k = 2--8, which indicates no cluster structure. k = 4 is preferred by no criterion.
+  \item
+    The four clusters partly separate long from short reports: median 521 vs 98 words; \ensuremath{\eta}\ensuremath{^{2}} of log length 0.266.
+  \item
+    Parallel analysis retains 7 components, not 4.
+  \end{itemize}
+\item
+  \textbf{Social space.} ``Social interactions are dramatically elevated in malls (z = +22.82)'' came from the join bug. Corrected: 14.3\% vs 12.9\%, OR 1.14 (p = 0.22).
+\end{itemize}
+
+\textbf{Finding (statistically supported):} Apart from a modest within-dream decline, an excess of continuous descent, and some adjacency of same-type locations beyond composition (school lift 3.79 vs 2.32 under shuffling), the archived dynamical structure restates label frequencies and chance. \textbf{Verdict:}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Miss:} a characteristic arc or stage sequence, as was also found in the NDE project.
+\item
+  \textbf{Underdetermined:} the decline.
+\end{itemize}
+
+\section{Discussion}\label{discussion}
+
+\subsection{Summary of Findings}\label{summary-of-findings}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3623}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Claim
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Beings co-vary with the scene & Threats 95.4\%, creatures 84.0\%, friends 58.0\% negative & Fits framework (non-discriminating) \\
+Entity autonomy & Join artifact; current data too thin & Underdetermined \\
+Authority guides above, punishes below & 55.0\% below vs 35.7\% above guiding or observing & Miss in direction (n.s.) \\
+Animals independent of atmosphere & Hostile creatures 59.0\% vs 15.8\%, OR 7.69 & Reversed \\
+Animals cluster by dreamer & ICC 0.130, p = 0.30, 8 authors & Underdetermined \\
+Dreamer explains 56.4\% & Dream 0.314; author 0.094--0.183; type 0.058 & Withdrawn; author effect a hit (P4) \\
+No conflict with the deceased & 0 of 52 vs 2.9 expected, p = 0.050 & Weak, framework direction \\
+Characteristic arc or stage sequence & Same as random order, except more descent & Miss \\
+Four archetypes; four dimensions & Silhouette \ensuremath{\leq} 0.16; 7 components & Withdrawn \\
+\end{longtable}
+}
+
+\subsection{Interpretation}\label{interpretation}
+
+The largest change concerns animals. The archived thesis made animals its ``strongest signal''. Its argument was that animals are independent of the environment and cluster by dreamer, and so represent the dreamer's affections rather than the place. Both premises were artifacts. Corrected, animals behave as Swedenborg's own rule predicts: fierce, hostile animals appear in negative scenes and alongside hostile beings. In the framework, what appears around a person corresponds to the state of those present (\emph{Heaven and Hell} \S{}110, \S{}\S{}173--176). The data show co-variation of animals with the scene. Whether that scene's state is the dreamer's own cannot be separated with these data, because only 8 authors have creatures in more than one dream.
+
+The same pattern holds for beings generally, and for the dreamer's affect leading the next scene. MallWorld environments are coherent wholes: beings, animals, affect and atmosphere move together. That coherence is what correspondence predicts. It is also what any well-formed narrative, and any coder reading a single sentence, would produce. The data establish \textbf{pattern fit}, not mechanism.
+
+Where the framework makes a specific structural prediction, it fails or cannot be tested:
+
+\begin{itemize}
+\tightlist
+\item
+  authority function by height (wrong direction);
+\item
+  creatures below (borderline), with noxious animals below a registered miss;
+\item
+  a characteristic arc (absent).
+\end{itemize}
+
+These match the NDE results, where the framework's predictions about character and function largely held, while its structural predictions (stage order, discrete degrees) failed.
+
+\subsection{Implications}\label{implications}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Keys.} Any analysis joining entities, interactions or connections to locations must key on \texttt{(post\_id,\ location\_id)}. The loader enforces this.
+\item
+  \textbf{Variance components.} These must be corrected for chance and must separate the dream from the dreamer. With 79\% of authors posting once, ``dreamer'' effects are mostly dream effects.
+\item
+  \textbf{Sequences.} Sequence claims need a shuffled-order null. Claims about ``other'' need a check that they are not artifacts of a residual category.
+\end{itemize}
+
+\subsection{Limitations}\label{limitations}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Same-source coding.} All variables are coded from one narrative by one model.
+\item
+  \textbf{Measured reliability} (notebook 08):
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \textbf{Threat type.} It agrees only moderately with a second coder's ``hostile entity present'' (\ensuremath{\kappa} 0.50; \ensuremath{\kappa} 0.71 when any hostile-demeanor entity counts). Analyses using the \texttt{threat} label alone cover only part of hostile encounters.
+  \item
+    \textbf{Atmosphere and affect.} Where both coders rated, \ensuremath{\kappa} is 0.75 for atmosphere and 0.67 for affect. GPT-5.2 rated both about twice as often, by inference.
+  \end{itemize}
+\item
+  \textbf{Small groups.} Animal, guide, deceased and authority-function results rest on 10--100 dreams each.
+\item
+  \textbf{Exploratory status.} Except where cross-referenced to the pre-registered tests, every analysis here is a re-estimation, not a registered test.
+\end{itemize}
+
+\subsection{Future Directions}\label{future-directions}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Code functions per entity.} Code entity functions (guiding, blocking, punishing) per entity with a defined boundary, and test authority function by height on posts collected after a cut-off date.
+\item
+  \textbf{Detect animals with a coder.} Replace word lists with coder judgements and pre-register the animal--atmosphere and animal--dreamer tests.
+\item
+  \textbf{Follow repeat dreamers.} Collect repeated dreams from the same authors to separate dreamer from dream.
+\end{itemize}
+
+\section{Conclusion}\label{conclusion}
+
+The archived picture of autonomous entities, dreamer-bound animals and a structured dream grammar does not survive correction.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{What remains:} beings, animals and affect co-vary with the atmosphere of the scene. Fierce animals and hostile beings appear in negative scenes, and friends and the deceased in less negative ones. This fits the framework's claim that surroundings correspond to the state of those present, and it reverses the archived ``independence''.
+\item
+  \textbf{Structural predictions:} authority function by height and a characteristic arc are misses.
+\item
+  \textbf{Dynamics:} most dynamical structure is chance or label frequency.
+\end{itemize}
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+Bergsma, W. (2013). A bias-correction for Cram\'{e}r's V and Tschuprow's T. \emph{Journal of the Korean Statistical Society}, 42(3), 323--328.
+
+Horn, J. L. (1965). A rationale and test for the number of factors in factor analysis. \emph{Psychometrika}, 30(2), 179--185.
+
+Liang, K.-Y., \& Zeger, S. L. (1986). Longitudinal data analysis using generalized linear models. \emph{Biometrika}, 73(1), 13--22.
+
+Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. \emph{Journal of Computational and Applied Mathematics}, 20, 53--65.
+
+Swedenborg, E. (2000). \emph{Heaven and Hell} (G. F. Dole, Trans.). Swedenborg Foundation. (Original work published 1758)
+
+\newpage
+\appendix
+
+\section{Statistical Summary}\label{statistical-summary}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2747}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Test
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Estimate
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Interval / p
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+n
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Threat in dream \ensuremath{\rightarrow} threatening location, OR & 5.14 & 4.11--6.43 & primary \\
+Family member present at location \ensuremath{\rightarrow} negative, OR & 1.06 & p = 0.77 & --- \\
+Authority guiding or observing, above vs below, OR & 0.46 & 0.12--1.71, p = 0.24 & 134 (93 dreams) \\
+Creature share, below vs ground, OR & 1.90 & 1.00--3.61, p = 0.05 & 953 (478 dreams) \\
+Success, helpful vs hostile entity, OR & 5.87 & 3.77--9.13 & 665 involvements \\
+Hostile creature, negative vs non-negative atmosphere, OR & 7.69 & 1.55--38.3, p = 0.013 & 124 \\
+Creature hostility, author ICC1 & 0.130 & p = 0.30 & 21 dreams, 8 authors \\
+Atmosphere, within-dream ICC1 & 0.314 & --- & dreams with \ensuremath{\geq} 2 coded locations \\
+Atmosphere, across-dream author ICC1 (5-point) & 0.183 & --- & 573 dreams, 185 authors \\
+Next location negative, negative affect, OR (within dream) & 1.62 & 1.09--2.42, p = 0.017 & 183 dreams \\
+Dreams worsening vs improving & 175 vs 130 & p = 0.012 & 896 dreams \\
+k-means silhouette, k = 2--8 & 0.11--0.16 & --- & 1,918 \\
+Components retained (parallel analysis) & 7 & --- & 20 features \\
+Social interaction in mall, OR & 1.14 & 0.92--1.42 & primary \\
+\end{longtable}
+}
+
+\section{Withdrawn Figures}\label{withdrawn-figures}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3623}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Archived claim
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Why withdrawn
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Corrected
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Entity autonomy: guides 0\%, threats 92--94\% hostile at all levels; authority p = 0.78 & Labels; join bug & \S{}3.3 \\
+Entity \ensuremath{\times} vertical \ensuremath{\chi}\ensuremath{^{2}} = 41.13 (attributed elsewhere to NDE) & Nested involvements; a MallWorld statistic & \S{}3.4 \\
+Entity \ensuremath{\times} atmosphere \ensuremath{\chi}\ensuremath{^{2}} = 792 (df = 99), \ensuremath{\chi}\ensuremath{^{2}} = 330 (df = 121) & Sparse and nested & \S{}3.2 \\
+``Family paradox'' 15.3\% vs 9.1\% & Length and entity presence & \S{}3.1 \\
+Helpful 49.7\% vs hostile 29.7\% success (\ensuremath{\chi}\ensuremath{^{2}} = 48.90) & Denominator; duplicated join & 88.8\% vs 57.5\% \\
+``Friends 87.4\%, family lowest 70.3\%'' & Not reproducible & \S{}3.5 \\
+Animal type V = 0.513; predator vs cat OR = 106:1 & Circular keywords; zero cell & V = 0.492; OR unbounded \\
+Animals independent of atmosphere (\ensuremath{\chi}\ensuremath{^{2}} \ensuremath{\approx} 0, p = 1.0) & Binning error; placeholder value & OR 7.69 \\
+Animal ICC = 0.630; H = 70.91; \ensuremath{\eta}\ensuremath{^{2}} = 0.605 & Not an ICC; within-dream; proper ICC omitted & ICC 0.130 (p = 0.30) \\
+Animal variance 89.5\% between dreamers; r = 0.753 & Single-dream authors have zero deviation & r = 0.135 (p = 0.62) \\
+Dreamer explains 56.4\%, location 7.1\% & Dream, not dreamer; small-group inflation & \S{}3.7 \\
+Ruling-love ICC = 0.327 & Non-schema values; within-dream & ICC 0.041 (p = 0.22) \\
+R4 partial \ensuremath{\rho} = 0.007 ``strongly supports ruling love'' & Null read as support; significant alternative unreported & \S{}3.7 \\
+F = 47.82, \ensuremath{\eta}\ensuremath{^{2}} = 0.136; partial r 0.751, 0.312, 0.186, 0.261; R\ensuremath{^{2}} 0.398; \ensuremath{\chi}\ensuremath{^{2}} = 54.17 & In no notebook output & --- \\
+Loops 30.2\%, traps 19.5\%, ``other'' hub 58.7\% & Repeated labels & \S{}3.8 \\
+``Other'' stationary state 31.7\%; mall ``gravitational centre'' & Label frequency & \S{}3.8 \\
+Oscillatory arcs dominate; monotone arcs rare & Same under random order & \S{}3.8 \\
+Worsening 529 vs 456 (p = 0.0010) & In no output; output was 1,080 vs 931, not clustered & 175 vs 130 dreams \\
+Four dream archetypes; four latent dimensions & No cluster structure; number imposed & \S{}3.8 \\
+Social interactions in malls z = +22.82 & Join bug & OR 1.14 \\
+\end{longtable}
+}
+
+
+\end{document}

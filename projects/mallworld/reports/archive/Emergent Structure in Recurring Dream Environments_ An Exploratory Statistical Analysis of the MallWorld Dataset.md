@@ -1,3 +1,16 @@
+> **WITHDRAWN, 2026-10-06.** Do not cite figures from this report. It was written before the October 2026 audit. The audit found:
+>
+> - **Join bug.** The interaction × location results (social z = +22.82) came from the join bug.
+> - **No clusters.** The four "archetypes" have silhouettes of 0.11–0.16 and k = 4 was imposed.
+> - **Imposed dimensions.** Four dimensions were imposed where parallel analysis retains seven.
+> - **Sparse table.** The location × atmosphere χ² is sparse.
+> - **Definitional.** Several association rules are built into the categories.
+>
+> Every withdrawn figure and its correction is listed in `docs/STATISTICAL_AUDIT_2026-10.md`. Corrected analyses:
+>
+> - [Spatial Correspondences in MallWorld Dreams - A Corrected Re-analysis of Height, Water, Light and Exposure](../Spatial%20Correspondences%20in%20MallWorld%20Dreams%20-%20A%20Corrected%20Re-analysis%20of%20Height,%20Water,%20Light%20and%20Exposure.md)
+> - [Entities, Animals and Narrative Dynamics in MallWorld Dreams - A Corrected Re-analysis](../Entities,%20Animals%20and%20Narrative%20Dynamics%20in%20MallWorld%20Dreams%20-%20A%20Corrected%20Re-analysis.md)
+
 # Emergent Structure in Recurring Dream Environments: An Exploratory Statistical Analysis of the MallWorld Dataset
 
 **Date**: January 20, 2026  

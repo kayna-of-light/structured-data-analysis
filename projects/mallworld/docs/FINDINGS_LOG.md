@@ -1,3 +1,5 @@
+> **SUPERSEDED, 2026-10-06.** This document predates the October 2026 audit (`STATISTICAL_AUDIT_2026-10.md`). Its figures were computed on a contaminated population, with a join that matched entities to other dreams, or not at all, and none may be cited. Current results: the four reports in `../reports/` and the scorecard in the audit (§5).
+
 # MallWorld Analysis: Findings Log
 
 **Last Updated**: 2026-01-21  

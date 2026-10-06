@@ -1,0 +1,518 @@
+% Generated from ../Pre-registered Correspondential Tests in MallWorld Dreams - Animals, the Deceased and Ruling Love.md by scripts/md_to_latex.py.
+% Edit the Markdown report, then regenerate this file; do not edit it by hand.
+\input{mallworld-report-preamble}
+\usepackage{array}
+\usepackage{calc}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setlength{\emergencystretch}{3em}
+\let\underscorechar\_
+\renewcommand{\_}{\underscorechar\allowbreak}  % let long field names break after underscores
+
+\reporttitle{Pre-registered Correspondential Tests in MallWorld Dreams}{Animals, the Deceased and Ruling Love}
+\reportauthors
+
+\begin{document}
+
+\maketitle
+
+{\small
+\emph{New report, October 2026. The predictions were registered in \texttt{docs/PREREGISTRATION\_2026-10.md}, committed (\texttt{b3f91962}) before the analysis notebook was written or run. This report replaces the archived ``pre-registered'' plan \texttt{docs/correspondential\_falsification\_test\_plan\_20260120.md}. That plan was written after the reports whose findings it claimed to predict.}
+
+}
+
+\begin{abstract}
+\textbf{Background}: Swedenborg's framework makes three predictions about dream environments that the archived MallWorld analyses either never tested correctly or tested with a join error:
+
+\begin{itemize}
+\tightlist
+\item
+  harmful animals appear where the scene is evil-toned and gentle animals where it is good-toned;
+\item
+  the deceased are met in benign circumstances;
+\item
+  a person's ruling love persists, so the same person meets similar atmospheres across dreams.
+\end{itemize}
+
+These were registered as falsifiable predictions before any test was computed.
+
+\textbf{Methods}: The data are 1,918 primary MallWorld dream reports. Animal classes were fixed in advance as whole-word lists of gentle and noxious animals. The deceased were identified by the extraction's entity type.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{P1, P3 (outcome):} a negative location atmosphere, modelled by logistic regression with standard errors clustered by dream and adjustment for narrative length.
+\item
+  \textbf{P2 (secondary):} noxious animals more often underground.
+\item
+  \textbf{P4:} a one-way ICC of dream atmosphere within authors, with 5,000 permutations.
+\item
+  \textbf{Multiplicity and checks:} P1, P3 and P4 formed a Holm family, one-sided at \ensuremath{\alpha} = 0.05. Sensitivity analyses were registered. A blind second coder later recoded the 69 dreams behind P1 and P3.
+\end{itemize}
+
+\textbf{Results}:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{P1 (hit).} Noxious-animal locations are negative in 84.8\% of cases, gentle-animal locations in 58.3\% (OR 4.08, 95\% CI 1.20--13.90; Holm p = 0.036).
+\item
+  \textbf{P2 (miss).} Noxious animals are not more often underground (25.0\% vs 23.6\%; OR 1.04).
+\item
+  \textbf{P3 (hit).} Locations with a deceased person are negative in 45.5\% of cases, against 68.8\% with living family and friends (OR 0.36, 0.15--0.87; Holm p = 0.036).
+\item
+  \textbf{P4 (hit).} Authors meet consistent atmospheres across different dreams (ICC1 = 0.094; Holm p = 0.036).
+\item
+  \textbf{Second coder.} P3 is robust to the coder. P1 keeps its effect size (OR \ensuremath{\approx} 3.3 under every combination of coders) but loses significance once the word lists' false positives are removed (one-sided p = 0.11).
+\end{itemize}
+
+\textbf{Conclusions}: Three of three primary predictions are hits, and the secondary prediction is a miss. The hits establish \textbf{pattern fit}: the dreams behave as the correspondences predict. They do not discriminate the framework from ordinary associations: vermin are unpleasant, lost loved ones are emotionally significant, and temperament and style persist. The P1 effect needs replication with coder-based animal detection.
+
+\keywords{pre-registration, MallWorld, Swedenborg, animal correspondences, deceased, ruling love, intraclass correlation, coder sensitivity}
+\end{abstract}
+
+\newpage
+
+\section*{Data Provenance}\label{data-provenance}
+\addcontentsline{toc}{section}{Data Provenance}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2911}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3544}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3544}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Access
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Dream reports (N=1,918 primary) & r/TheMallWorld (Reddit) & \texttt{data/mallworld/} \\
+Structured extraction & GPT-5.2 via Azure OpenAI & \texttt{projects/mallworld/structured/} \\
+Pre-registration & \texttt{docs/PREREGISTRATION\_2026-10.md} (commit \texttt{b3f91962}) & \href{https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/mallworld/docs/PREREGISTRATION_2026-10.md}{Repository} \\
+Analysis & \texttt{notebooks/07\_preregistered\_correspondence\_tests.ipynb} & Repository \\
+Coder sensitivity & \texttt{notebooks/08\_extraction\_reliability.ipynb}, \texttt{validation/} & Repository \\
+\end{longtable}
+}
+
+\section{Introduction}\label{introduction}
+
+\subsection{Background}\label{background}
+
+The archived MallWorld thesis described its plan as pre-registered. The plan file was written on 2026-01-20 at 14:59, after the vertical, entity, sequence and exploratory reports had been committed the same day, and its hypotheses restated patterns already seen. Three framework predictions had never been tested correctly:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Animals.} The archived animal--atmosphere test put every creature in one category and reported the empty test as ``complete independence''.
+\item
+  \textbf{The deceased.} Figures on the deceased came from a smaller, older population.
+\item
+  \textbf{Ruling love.} Author consistency was never separated from within-dream clustering.
+\end{itemize}
+
+These three were registered before any computation.
+
+\subsection{Theoretical Framework}\label{theoretical-framework}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Animals.} Animals correspond to affections: gentle and useful animals to good affections, fierce and harmful ones to evil affections (Swedenborg, 1758, \emph{Heaven and Hell} \S{}110). Appearances around spirits correspond to their interiors (\S{}\S{}173--176).
+\item
+  \textbf{The deceased.} After death people meet friends and acquaintances (\S{}494), and the newly arrived are received with kindness (\S{}\S{}449--450).
+\item
+  \textbf{Ruling love.} A person's ruling love persists (\S{}\S{}477--479), and the surroundings of a spirit correspond to it.
+\end{itemize}
+
+If MallWorld environments express the state of the scene and of the person, three things follow:
+
+\begin{itemize}
+\tightlist
+\item
+  harmful animals should appear in negative scenes;
+\item
+  the deceased should appear in less negative scenes than living acquaintances;
+\item
+  a person's dreams should share an atmosphere.
+\end{itemize}
+
+\textbf{Competing readings.} Each prediction is also made by ordinary associations, stated in advance in the registration:
+
+\begin{itemize}
+\tightlist
+\item
+  vermin and predators are unpleasant;
+\item
+  the deceased are emotionally significant and often comforting;
+\item
+  temperament and writing style are stable.
+\end{itemize}
+
+A hit is therefore pattern fit, not discrimination. A miss counts against the framework regardless.
+
+\subsection{Aims}\label{aims}
+
+To test P1--P4 exactly as registered, and to report sensitivity analyses and coder sensitivity separately, without changing the verdicts.
+
+\section{Methods}\label{methods}
+
+\subsection{Data Sources}\label{data-sources}
+
+The data are the primary population of the verified loader: 1,918 dream reports with at least one location, after removing exact duplicates.
+
+\subsection{Coding Scheme}\label{coding-scheme}
+
+\textbf{Atmosphere.} It is negative if coded threatening, oppressive, uncomfortable, wrong, eerie or chaotic, and non-negative if neutral, welcoming or peaceful. Nostalgic and uncoded locations are excluded.
+
+\textbf{Animal classes.} A location carries a class if a listed word (whole word) appears in the description or name of an entity interacting there, or in the location's own description. ``Hot dog(s)'' is removed first, and locations matching both classes are excluded.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Gentle} (48 words), for example cat, dog, horse, bird, fish, rabbit, deer.
+\item
+  \textbf{Noxious} (54 words), for example snake, spider, rat, insect, wolf, shark, bear.
+\end{itemize}
+
+\textbf{The deceased (P3).} A location is ``deceased'' if an entity there is of type \texttt{deceased}. It is ``living known'' if there is none and an entity is a known person, family member or friend.
+
+\textbf{Author consistency (P4).} Authors with at least two dreams that have a scored atmosphere. A dream's score is the mean valence of its coded locations.
+
+\subsection{Statistical Analysis}\label{statistical-analysis}
+
+\textbf{Model (P1--P3).} Logistic regression of the outcome on the class indicator and log word count, with standard errors clustered by dream.
+
+\textbf{Author consistency (P4).} A one-way ICC1 with a permutation p-value from 5,000 shuffles of author labels.
+
+\textbf{Decision rules.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Primary family:} P1, P3 and P4 under Holm correction, one-sided in the predicted direction at \ensuremath{\alpha} = 0.05.
+\item
+  \textbf{P2:} secondary, one-sided, outside the family.
+\item
+  \textbf{Sensitivity analyses:} excluding locations with a \texttt{threat} entity; animals from entity descriptions only; adding location type. These were registered and do not change verdicts.
+\end{itemize}
+
+\textbf{Coder sensitivity} was added after the tests, in response to the audit rule on small-count results (CLAUDE.md \S{}4.12). A blind second coder recoded all dreams contributing to P1 and P3 (27 noxious-animal dreams, 18 deceased-person dreams) and 27 of the 81 gentle-animal dreams.
+
+\section{Results}\label{results}
+
+\subsection{P1: Noxious vs Gentle Animals}\label{p1-noxious-vs-gentle-animals}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3623}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Class
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Locations
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Negative atmosphere
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Noxious & 33 & 84.8\% \\
+Gentle & 96 & 58.3\% \\
+\end{longtable}
+}
+
+The two classes span 105 dreams. OR = 4.08 (95\% CI 1.20--13.90), one-sided p = 0.0124, Holm p = 0.036.
+
+Sensitivity:
+
+\begin{itemize}
+\tightlist
+\item
+  excluding locations with a \texttt{threat} entity: OR 4.20;
+\item
+  animals from entity descriptions only: OR 8.82 (n=66);
+\item
+  with location type: OR 3.88 (two-sided p = 0.055).
+\end{itemize}
+
+\textbf{Finding (statistically supported):} Noxious animals appear in negative scenes far more often than gentle animals. \textbf{Verdict: hit.}
+
+\subsection{P2: Noxious Animals and Height (Secondary)}\label{p2-noxious-animals-and-height-secondary}
+
+Of located animal locations, 25.0\% of noxious (n=20) and 23.6\% of gentle (n=55) are underground. OR = 1.04 (0.31--3.54), one-sided p = 0.47.
+
+\textbf{Finding (statistically supported):} Animal class is not related to height. \textbf{Verdict: miss.} It matches the absence of an elevation gradient in the spatial report.
+
+\subsection{P3: The Deceased vs Living Known Persons}\label{p3-the-deceased-vs-living-known-persons}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3623}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Persons present
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Locations
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Negative atmosphere
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+A deceased person & 22 (18 dreams) & 45.5\% \\
+Living known persons only & 266 & 68.8\% \\
+\end{longtable}
+}
+
+OR = 0.36 (95\% CI 0.15--0.87), one-sided p = 0.012, Holm p = 0.036. With location type added: OR 0.27.
+
+\textbf{Finding (statistically supported):} Scenes with a deceased person are less often negative than scenes with living family and friends. \textbf{Verdict: hit.}
+
+\subsection{P4: Author Consistency}\label{p4-author-consistency}
+
+Across 563 dreams from 181 authors with at least two scored dreams, ICC1 = 0.094. The permutation null has a mean of 0.000 and a 95th percentile of 0.072; p = 0.0176, Holm p = 0.036.
+
+\textbf{Finding (statistically supported):} The same author meets somewhat consistent atmospheres across different dreams. \textbf{Verdict: hit.} The effect is modest. It is far below the archived claim that ``dreamer identity explains 56.4\%'', which mistook the dream for the dreamer.
+
+\subsection{Coder Sensitivity (Added After the Tests)}\label{coder-sensitivity-added-after-the-tests}
+
+\textbf{Detection agreement.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Deceased person at a location:} \ensuremath{\kappa} = 0.79. GPT-5.2 found 22 such locations and the second coder 28, of which 20 are shared.
+\item
+  \textbf{Animal class:} \ensuremath{\kappa} = 0.70. The word lists flagged 15 of 34 noxious-animal locations, and 13 of 40 gentle ones, where the second coder found no living animal. The causes were similes, word fragments, feared-but-absent animals, animal-headed beings and models.
+\end{itemize}
+
+\textbf{Atmosphere agreement.} Where both coders rated the atmosphere at these locations, negative-vs-not agreement was 93--100\%.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2747}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Test
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+GPT-5.2 codes
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Second-coder detection
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Second-coder detection and atmosphere
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+P1 (within the 69 recoded dreams) & OR 3.36, one-sided p = 0.046 & OR 3.35, p = 0.11 & OR 3.28, p = 0.20 \\
+P3 & OR 0.35, p = 0.010 & OR 0.35, p = 0.012 & OR 0.19, p = 0.002 (atmosphere only) \\
+\end{longtable}
+}
+
+\textbf{Finding (statistically supported):} P3 is robust to a different coder. P1's effect size is robust (OR \ensuremath{\approx} 3.3 throughout). Its significance depends on a detector that over-counts noxious animals, by 15 of 34 locations. \textbf{Interpretation:} the registered verdict stands. The P1 effect is real in size but not yet secure in precision.
+
+\section{Discussion}\label{discussion}
+
+\subsection{Summary of Findings}\label{summary-of-findings}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2747}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\#
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Prediction
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+P1 & Noxious animals in negative scenes & 84.8\% vs 58.3\%; OR 4.08; Holm p = 0.036 & Hit (precision coder-sensitive) \\
+P2 & Noxious animals underground & 25.0\% vs 23.6\%; OR 1.04 & Miss \\
+P3 & The deceased in less negative scenes & 45.5\% vs 68.8\%; OR 0.36; Holm p = 0.036 & Hit (coder-robust) \\
+P4 & Consistent atmospheres within authors & ICC1 0.094; Holm p = 0.036 & Hit \\
+\end{longtable}
+}
+
+\subsection{Interpretation}\label{interpretation}
+
+The three primary hits share a structure. The quality of what appears in a dream scene (its animals, its people, the person dreaming it) goes with the quality of the scene's atmosphere. That is the core correspondential claim: surroundings correspond to the state of those present.
+
+The archived reports had reached the opposite conclusion about animals, ``independence from atmosphere'', through a binning error. They then built an interpretation on it. Corrected and tested in advance, the result runs in the framework's direction.
+
+The miss is structural, as in the spatial report and in the NDE project. The framework's vertical ordering does not place harmful animals below ground. The pattern across MallWorld and the NDE data is consistent:
+
+\begin{itemize}
+\tightlist
+\item
+  predictions about the \textbf{character} of what is encountered tend to hold;
+\item
+  predictions about \textbf{structure} (vertical gradients, stage sequences, discrete degrees) tend to fail.
+\end{itemize}
+
+These tests establish pattern fit only. Each hit was predicted in advance by an ordinary association that the registration named. They raise the weight of the framework's qualitative predictions in this domain only to the extent that those predictions could have failed and did not.
+
+\subsection{Implications}\label{implications}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Replication.} P1 should be replicated with coder-based animal detection, on posts submitted after a cut-off date.
+\item
+  \textbf{Discriminating tests.} The next registration should include a prediction on which the framework and ordinary association disagree. One candidate is the dreamer's affect leading the next scene (notebook 04), stated before the data are examined.
+\end{itemize}
+
+\subsection{Limitations}\label{limitations}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Same-source coding.} Animals, persons and atmosphere are coded from the same text, often the same sentence.
+\item
+  \textbf{Measured reliability} (notebook 08):
+
+  \begin{itemize}
+  \tightlist
+  \item
+    deceased detection \ensuremath{\kappa} 0.79;
+  \item
+    animal-class detection \ensuremath{\kappa} 0.70, with a 44\% false-positive rate for the noxious list;
+  \item
+    atmosphere negative-vs-not \ensuremath{\kappa} 0.74--0.89 where both coders rated.
+  \end{itemize}
+
+  GPT-5.2 rates atmosphere about twice as often as a coder who requires explicit affect. The tests therefore include inferred atmospheres.
+\item
+  \textbf{Small samples.} P1 rests on 33 noxious locations and P3 on 22 deceased locations in 18 dreams; the intervals are wide.
+\item
+  \textbf{Analyst knowledge.} The analyst had read the archived claims, although not correct estimates of these relations, before registering.
+\end{itemize}
+
+\subsection{Future Directions}\label{future-directions}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Replicate P1--P4 on new posts,} with coder-based animal and deceased detection and a neutral extraction prompt.
+\item
+  \textbf{Register a discriminating test:} affect leading the next scene within dreams.
+\item
+  \textbf{Collect repeated dreams from the same authors} to strengthen P4.
+\end{enumerate}
+
+\section{Conclusion}\label{conclusion}
+
+Tested as registered, MallWorld dreams fit three of the framework's correspondences:
+
+\begin{itemize}
+\tightlist
+\item
+  harmful animals in negative scenes;
+\item
+  the deceased in less negative scenes;
+\item
+  consistent atmospheres within a person.
+\end{itemize}
+
+They fail its vertical placement of harmful animals. The hits are pattern fit, not proof of mechanism. The P1 effect is coder-sensitive in precision but not in size.
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+Holm, S. (1979). A simple sequentially rejective multiple test procedure. \emph{Scandinavian Journal of Statistics}, 6(2), 65--70.
+
+Liang, K.-Y., \& Zeger, S. L. (1986). Longitudinal data analysis using generalized linear models. \emph{Biometrika}, 73(1), 13--22.
+
+Shrout, P. E., \& Fleiss, J. L. (1979). Intraclass correlations: Uses in assessing rater reliability. \emph{Psychological Bulletin}, 86(2), 420--428.
+
+Swedenborg, E. (2000). \emph{Heaven and Hell} (G. F. Dole, Trans.). Swedenborg Foundation. (Original work published 1758)
+
+\newpage
+\appendix
+
+\section{Statistical Summary}\label{statistical-summary}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2212}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1947}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1947}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1947}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1947}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Test
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Estimate (95\% CI)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+One-sided p
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Holm p
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+n
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+P1 noxious vs gentle, negative atmosphere & OR 4.08 (1.20--13.90) & 0.0124 & 0.036 & 129 locations, 105 dreams \\
+P2 noxious vs gentle, underground & OR 1.04 (0.31--3.54) & 0.47 & --- & 75 located \\
+P3 deceased vs living known, negative atmosphere & OR 0.36 (0.15--0.87) & 0.012 & 0.036 & 288 locations \\
+P4 author ICC1 & 0.094 (null 95th pct 0.072) & 0.0176 & 0.036 & 563 dreams, 181 authors \\
+P1 sensitivity: + location type & OR 3.88 & two-sided 0.055 & --- & --- \\
+P1 sensitivity: excluding threat entities & OR 4.20 & --- & --- & --- \\
+P1 sensitivity: entity descriptions only & OR 8.82 & --- & --- & 66 \\
+P3 sensitivity: + location type & OR 0.27 & --- & --- & --- \\
+\end{longtable}
+}
+
+\section{Archived Claims Addressed}\label{archived-claims-addressed}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5319}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4681}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Archived claim
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Status
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+``Pre-registered'' falsification plan (2026-01-20) & Written after the reports; superseded by \texttt{PREREGISTRATION\_2026-10.md} \\
+Animals ``completely independent of environmental atmosphere (\ensuremath{\chi}\ensuremath{^{2}} \ensuremath{\approx} 0, p = 1.0)'' & Binning error; P1 hit in the opposite direction \\
+Deceased ``appear regardless of atmospheric conditions'' & P3 hit: less negative scenes \\
+``Dreamer identity explains 56.4\% of atmosphere variance'' & Dream, not dreamer; author ICC 0.094 \\
+\end{longtable}
+}
+
+
+\end{document}

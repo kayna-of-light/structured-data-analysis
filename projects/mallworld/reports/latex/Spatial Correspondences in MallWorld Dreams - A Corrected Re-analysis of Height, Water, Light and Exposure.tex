@@ -1,0 +1,672 @@
+% Generated from ../Spatial Correspondences in MallWorld Dreams - A Corrected Re-analysis of Height, Water, Light and Exposure.md by scripts/md_to_latex.py.
+% Edit the Markdown report, then regenerate this file; do not edit it by hand.
+\input{mallworld-report-preamble}
+\usepackage{array}
+\usepackage{calc}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setlength{\emergencystretch}{3em}
+\let\underscorechar\_
+\renewcommand{\_}{\underscorechar\allowbreak}  % let long field names break after underscores
+
+\reporttitle{Spatial Correspondences in MallWorld Dreams}{A Corrected Re-analysis of Height, Water, Light and Exposure}
+\reportauthors
+
+\begin{document}
+
+\maketitle
+
+{\small
+\emph{Report of the October 2026 audit. It replaces the spatial sections of four archived reports: ``Correspondential Structure in Collective Dream Space'' (\S{}3), ``Vertical World Structure in MallWorld Dreams'', ``Ontological Versus Cultural Structure in MallWorld'' and ``Emergent Structure in Recurring Dream Environments'' (\S{}3.1). The archived reports are in \texttt{reports/archive/}. The withdrawn figures are listed in Appendix B and in \texttt{docs/STATISTICAL\_AUDIT\_2026-10.md}.}
+
+}
+
+\begin{abstract}
+\textbf{Background}: Swedenborg's doctrine of correspondences holds that the surroundings of a spirit correspond to its interior state. Applied to recurring dream environments, it predicts systematic links between spatial features (height, water, light, exposure) and the felt atmosphere of a place. Archived reports on the r/TheMallWorld corpus described these links as robust: ``vertical position \ensuremath{\rho} = 0.25--0.30, replicated across splits'', water ``2.6\ensuremath{\times}'', exposure ``3.5\ensuremath{\times}''. An audit found that the main analyses had been run on a population that included 750 non-dream posts. It also found headline figures that no notebook produced, and every test treating locations from the same dream as independent.
+
+\textbf{Methods}: The study uses 1,918 dream reports with at least one coded location (8,685 locations, 1,303 authors), after removing non-dream posts and exact duplicates. Associations between GPT-5.2-coded features and location atmosphere were estimated with logistic regression, with standard errors clustered by dream and adjustment for log narrative length. Height effects were re-estimated with location type controlled, without location types that are vertical by definition, and within dreams by conditional logit. Robustness to authors and time was re-examined with permutation nulls and an equivalence margin.
+
+\textbf{Results}:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Height.} The relation is not a gradient. Underground locations are negative more often than ground-level ones (76.0\% vs 58.3\%; OR 1.69--2.29 across specifications), including when basements, caves and subways are excluded. Elevated locations are not better than ground (65.2\%; OR 1.29--1.35). Within a dream, going up does not improve the atmosphere (OR 0.88 per level, 95\% CI 0.72--1.07). The correlation is \ensuremath{\rho} = 0.064 (0.007--0.114), not 0.25--0.30.
+\item
+  \textbf{Water.} Turbid water goes with negative atmospheres: 84.4\% vs 43.0\% (OR 7.19). Clear vs murky water in free text gives 20.6\% vs 73.1\% negative.
+\item
+  \textbf{Light.} Darker light goes with worse atmospheres (\ensuremath{\rho} = \ensuremath{-}0.49; OR 3.94 per step). So does cold white light compared with warm light (70.8\% vs 33.1\% negative), but warm light is not more common above ground.
+\item
+  \textbf{Exposure.} Exposed locations, mostly bathrooms, are more often negative: 87.1\% vs 53.5\% (OR 6.35).
+\item
+  \textbf{Cleanliness.} The association with height disappears once location type is controlled (OR 1.02).
+\item
+  \textbf{Location type.} Location type carries atmosphere information beyond each dream's overall tone, and the location-type association is equivalent across time (\ensuremath{\Delta}V = +0.015, 90\% CI \ensuremath{-}0.002 to 0.040).
+\end{itemize}
+
+\textbf{Conclusions}:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Hits at the level of pattern fit:} the framework's qualitative correspondences (turbid water, darkness and cold light, exposure).
+\item
+  \textbf{Partial hit:} its vertical correspondence holds only below ground.
+\item
+  \textbf{Misses:} ``higher is better'' and ``warm light above''.
+\item
+  \textbf{Not supported:} a vertical gradient in cleanliness.
+\end{itemize}
+
+None of these tests separates the framework from ordinary associations of murk, darkness and exposure with unpleasantness. Most of them use codes that GPT-5.2 inferred rather than read directly.
+
+\keywords{MallWorld, collective dreams, correspondences, Swedenborg, vertical symbolism, clustered regression, narrative length, reproducibility audit}
+\end{abstract}
+
+\newpage
+
+\section*{Data Provenance}\label{data-provenance}
+\addcontentsline{toc}{section}{Data Provenance}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2911}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3544}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3544}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Access
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Dream reports (N=1,918 primary; 3,732 posts extracted) & r/TheMallWorld (Reddit) & \texttt{data/mallworld/} \\
+Structured extraction & GPT-5.2 via Azure OpenAI, schema \texttt{models/questionnaire.py} & \texttt{projects/mallworld/structured/} \\
+Verified loader & \texttt{scripts/mallworld\_dataset.py} & \href{https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/mallworld/scripts/mallworld_dataset.py}{Repository} \\
+Population audit & \texttt{notebooks/01\_data\_audit.ipynb} & Repository \\
+Spatial analyses & \texttt{notebooks/02\_spatial\_affective\_correspondences.ipynb} & Repository \\
+Robustness and time & \texttt{notebooks/05\_robustness\_time\_and\_nde\_comparison.ipynb} & Repository \\
+Reliability & \texttt{notebooks/08\_extraction\_reliability.ipynb}, \texttt{validation/} & Repository \\
+\end{longtable}
+}
+
+\section{Introduction}\label{introduction}
+
+\subsection{Background}\label{background}
+
+r/TheMallWorld is an online community in which people describe recurring dreams of vast, interconnected malls, hotels, schools and transit spaces. Its 3,732 posts were coded with GPT-5.2 into locations, connections, entities and qualities. Earlier work on this corpus reported strong correspondences between space and atmosphere and presented them as support for Swedenborg's framework.
+
+The October 2026 audit (\texttt{docs/STATISTICAL\_AUDIT\_2026-10.md}) found that the main thesis population of 2,678 posts included 453 questions, 167 AI-generated visualisations, 38 map-only posts and other non-dreams. Together these supplied 23.3\% of its locations (notebook 01, D1). Several headline figures appear in no notebook output. All tests counted locations from the same dream as independent observations. This report re-estimates the spatial claims on a defined population, with methods that respect the structure of the data.
+
+\subsection{Theoretical Framework}\label{theoretical-framework}
+
+In \emph{Heaven and Hell} (Swedenborg, 1758), the things that appear around angels and spirits correspond to their interiors (\S{}\S{}173--176). Light in heaven corresponds to wisdom, and heat to love (\S{}\S{}126--140). The project framework (CLAUDE.md \S{}9) reads vertical space as discrete degrees: higher states above, lower states and proximity to self-love below. Water is a standard correspondence for truth in Swedenborg's exegesis: clear when the truth is genuine, turbid when it is falsified. Read as hypotheses about dream environments, these give testable predictions:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Correspondence
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Prediction
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What would count as a miss
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Height \ensuremath{\leftrightarrow} state & Lower locations more negative, higher locations less negative than ground & No difference, or elevated no better than ground \\
+Water \ensuremath{\leftrightarrow} truth & Turbid water more negative than clear water & No difference \\
+Light \ensuremath{\leftrightarrow} wisdom; heat \ensuremath{\leftrightarrow} love & Dark and cold light more negative; warm light more common above & No difference; warm light not more common above \\
+Exposure \ensuremath{\leftrightarrow} shame & Exposed locations more negative & No difference \\
+Cleanliness \ensuremath{\leftrightarrow} purity, by height & Dirt more common below & No height difference after location type \\
+\end{longtable}
+}
+
+The archived analyses did not state these predictions before testing them. This report therefore treats them as \textbf{confirmatory in direction but not pre-registered}. The pre-registered tests are reported separately.
+
+\textbf{Competing readings.} Murky water, darkness, dirt and exposure are unpleasant in ordinary experience, and dream narratives are written by people who share those associations. A cultural or psychological account predicts the same signs. The tests here can establish \textbf{pattern fit}. They cannot establish that the framework, rather than ordinary association, produces the pattern.
+
+\subsection{Aims}\label{aims}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Define the analysis population and its measurement limits.
+\item
+  Re-estimate each spatial correspondence with dream-clustered inference and length adjustment.
+\item
+  Separate correspondences of \emph{height} from properties of particular \emph{location types}.
+\item
+  Re-examine the robustness claims about authors and time.
+\end{enumerate}
+
+\section{Methods}\label{methods}
+
+\subsection{Data Sources}\label{data-sources}
+
+All 3,732 extracted posts were loaded through the verified loader \texttt{scripts/mallworld\_dataset.py}. It checks every comparison against the schema's enumerations, keys entities and interactions by dream \emph{and} location, and marks duplicates.
+
+The \textbf{primary population} contains dream reports (\texttt{dream\_report} or \texttt{dream\_report\_with\_map}) with at least one location, excluding 8 exact duplicate submissions. That gives N=1,918 dreams, 8,685 locations and 1,303 authors.
+
+The median report has 150 words. Length correlates with the number of locations (\ensuremath{\rho} = 0.55), and the share of locations with a coded atmosphere rises from 31.1\% to 61.9\% across length quartiles (notebook 01, D2).
+
+\subsection{Coding Scheme}\label{coding-scheme}
+
+\textbf{Atmosphere} is collapsed to a valence:
+
+\begin{itemize}
+\tightlist
+\item
+  negative: threatening, oppressive, uncomfortable, wrong, eerie, chaotic;
+\item
+  non-negative: neutral, welcoming, peaceful;
+\item
+  excluded: nostalgic and not mentioned.
+\end{itemize}
+
+\textbf{Vertical position} is mapped to below ground (lowest, lower), ground, and above ground (upper, uppermost).
+
+Every rate in this report is conditional on the feature being coded. Coverage, as a share of all 8,685 locations, is:
+
+\begin{itemize}
+\tightlist
+\item
+  atmosphere 49.4\%, vertical level 34.3\%, light 18.3\%;
+\item
+  light temperature 8.3\%, cleanliness 7.9\%;
+\item
+  privacy status 4.1\%, somatic response 3.0\%.
+\end{itemize}
+
+\textbf{Priming.} The extraction prompt labelled several fields with their framework meaning. Warm light ``indicates Charity/Good''. Exposure is ``shameful'' or ``hellish''. Verticality was to be inferred from location type. A third of underground-coded locations (32.5\%) are basements, caves, subways, parking structures or generic ``underground'' places (notebook 01, D5).
+
+\textbf{Reliability.} Inter-coder reliability of the fields is reported in \S{}4.4 and in the companion reliability report.
+
+\subsection{Statistical Analysis}\label{statistical-analysis}
+
+\textbf{Units and clustering.} Locations are nested in dreams: atmosphere ICC1 = 0.31 within dreams, a design effect of about 1.6 (notebook 01, D3). Associations are therefore estimated by logistic regression with standard errors clustered by dream, or with dream-level bootstrap intervals.
+
+\textbf{Height.} Every model adjusts for log word count. Height effects are estimated in five specifications:
+
+\begin{itemize}
+\tightlist
+\item
+  crude;
+\item
+  length-adjusted;
+\item
+  with location type controlled;
+\item
+  without intrinsically vertical location types;
+\item
+  within dreams, by conditional logit.
+\end{itemize}
+
+\textbf{Effect sizes.} Cram\'{e}r's V is reported with a bias correction (Bergsma, 2013) where tables are sparse.
+
+\textbf{Robustness to authors and time.} Author and time effects are examined with:
+
+\begin{itemize}
+\tightlist
+\item
+  permutation nulls that shuffle atmospheres globally, within author and within dream;
+\item
+  a median-date split with a dream bootstrap;
+\item
+  an equivalence margin of \textbar \ensuremath{\Delta}V\textbar{} \textless{} 0.05 fixed in advance.
+\end{itemize}
+
+\textbf{Test status.} These analyses are re-estimations of archived claims, not new confirmatory tests, and no multiplicity correction is applied to them. Effect sizes and intervals carry the weight.
+
+\section{Results}\label{results}
+
+\subsection{Height: Worse Below, Not Better Above}\label{height-worse-below-not-better-above}
+
+The archived computations reproduce exactly: notebook 09's ``pre-registered'' \ensuremath{\rho} = 0.055 and notebook 07's \ensuremath{\rho} = 0.067. The vertical report's \ensuremath{\rho} = 0.12 and the thesis's \ensuremath{\rho} = 0.25--0.30 appear in no output (notebook 02, C1).
+
+On the primary population, 1,605 locations in 667 dreams have both a level and a valence.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3623}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Level
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Negative atmosphere (95\% CI)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Positive atmosphere
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Underground & 76.0\% (70.3--81.7) & 9.6\% \\
+Ground & 58.3\% (54.2--62.3) & 11.7\% \\
+Elevated & 65.2\% (60.1--70.2) & 14.9\% \\
+\end{longtable}
+}
+
+Underground locations are more often negative than ground locations in every specification:
+
+\begin{itemize}
+\tightlist
+\item
+  length-adjusted OR 2.29;
+\item
+  location type controlled OR 1.79;
+\item
+  intrinsically vertical types removed OR 1.69--1.76.
+\end{itemize}
+
+Elevated locations are also more often negative than ground (OR 1.29--1.35, p = 0.03--0.08). Within the same dream, a higher location is not less negative (conditional logit OR 0.88 per level, 95\% CI 0.72--1.07; 111 dreams). The overall rank correlation is \ensuremath{\rho} = +0.064 (95\% CI 0.007--0.114).
+
+\textbf{Finding (statistically supported):} Atmosphere is worst below ground and best at ground level. The underground penalty survives length adjustment, location-type control and removal of basements and caves. There is no improvement above ground. \textbf{Verdict: partial hit} (``below is worse''), \textbf{miss} (``higher is better'').
+
+\subsection{Water: Turbid Water Goes With Negative Atmospheres}\label{water-turbid-water-goes-with-negative-atmospheres}
+
+The archived thesis's water-clarity \ensuremath{\times} atmosphere figures (``45\% vs 17\%'') were never computed. Computed here for the first time (notebook 02, C2):
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3623}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Water
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Negative atmosphere
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Positive atmosphere
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Clean (pools, fountains, clear) & 43.0\% & 37.6\% \\
+Dirty or turbid & 84.4\% & 7.4\% \\
+\end{longtable}
+}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Dirty vs clean:} OR 7.19; 9.58 with location type; 6.93 without floods, tsunamis and turbulent sea.
+\item
+  \textbf{Clarity in the free-text field:} clear water 20.6\% negative, murky water 73.1\% (Fisher OR 10.5, p = 7 \ensuremath{\times} 10\ensuremath{^{-5}}; 60 locations in 50 dreams).
+\item
+  \textbf{By height:} dirty water is also more common underground (52.8\% vs 18.1\% at ground; OR 4.89; 3.26 without intrinsically vertical types).
+\end{itemize}
+
+\textbf{Finding (statistically supported):} Turbid water goes with negative atmospheres, and clear water with benign ones. \textbf{Verdict: hit (pattern fit).} It does not discriminate the framework from the ordinary association of murk with unpleasantness.
+
+\subsection{Light: Darkness and Cold Light}\label{light-darkness-and-cold-light}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Light & Negative atmosphere \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Bright natural & 26.2\% \\
+Artificial or mixed & 57.0\% \\
+Dim or flickering & 82.2\% \\
+Dark or absent & 94.8\% \\
+\end{longtable}
+}
+
+The darker the light, the more negative the atmosphere: \ensuremath{\rho} = \ensuremath{-}0.49 (95\% CI \ensuremath{-}0.53 to \ensuremath{-}0.44); OR 3.94 per step after length and location type. Light and atmosphere are often coded from the same sentence.
+
+Light temperature, the framework's marker for love:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Atmosphere:} negative under cold white light in 70.8\% of locations and under warm light in 33.1\% (OR 4.88; 5.09 with location type).
+\item
+  \textbf{By height:} warm light makes up 41.7\% of temperature-coded light underground, 67.6\% at ground and 55.6\% above ground. The archived summary ticked ``warm above, cold below'' as ``correct, Strong'' without a test (notebook 02, C3).
+\end{itemize}
+
+\textbf{Finding (statistically supported):} Darkness and cold light go with negative atmospheres. Warm light is not more common above ground. \textbf{Verdict: hit (pattern fit)} for light quality and temperature; \textbf{miss} for warm light above. The light-temperature field was primed by the prompt.
+
+\subsection{Exposure}\label{exposure}
+
+Among locations with a coded privacy status:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Bathrooms:} exposed in 84.0\% of bathrooms and 14.3\% of other locations. Archived notebook 09 printed 85.5\% vs 14.2\%; the thesis's ``44.2\% vs 7.5\%'' has no source.
+\item
+  \textbf{Atmosphere:} exposed locations are negative in 87.1\% of cases and private ones in 53.5\% (OR 6.35). Among bathrooms alone the figures are 92.3\% vs 50.0\% (n=62).
+\item
+  \textbf{``3.5\ensuremath{\times} threatening'' was a different quantity.} The thesis's figure was exposure by vertical level: 35.0\% underground (n=20, 95\% CI 12--58\%) against 15.3--18.8\% elsewhere, with overlapping intervals.
+\end{itemize}
+
+\textbf{Finding (statistically supported):} Exposure goes with negative atmosphere. \textbf{Verdict: hit (pattern fit),} weakened by priming. The prompt called exposure ``shameful'' and peaceful seclusion ``innocent''. The claim that exposure concentrates below ground is \textbf{underdetermined} (n=20).
+
+\subsection{Cleanliness, Somatic Distress, Decay and Compounding}\label{cleanliness-somatic-distress-decay-and-compounding}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Cleanliness.} The correlation with height is \ensuremath{\rho} = +0.238 (95\% CI 0.099--0.359; 277 locations), against the archived 0.302.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Without intrinsically vertical types it falls to \ensuremath{\rho} = +0.111 (\ensuremath{-}0.034 to 0.250).
+  \item
+    With location type controlled, the underground OR for dirt is 1.02 (p = 0.97).
+  \item
+    Dirty places are negative in 95.4\% of cases (OR 39.7), which is close to definitional.
+  \end{itemize}
+\item
+  \textbf{Somatic distress.}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    By level: 4.7\% underground, 1.9\% at ground, 3.3\% elevated (OR 2.09, p = 0.007).
+  \item
+    Not significant once sudden awakenings are excluded (OR 1.76, p = 0.11).
+  \end{itemize}
+\item
+  \textbf{Abandoned or decaying buildings} (the thesis's ``anomalous perceptual states'').
+
+  \begin{itemize}
+  \tightlist
+  \item
+    By level: 7.1\% underground, 4.1\% at ground, 2.6\% elevated (OR 2.13).
+  \item
+    With location type controlled: OR 1.64, p = 0.06.
+  \end{itemize}
+\item
+  \textbf{Compounding.} Negative atmosphere rises from 63.6\% with no marker to 93.3\% with three (\ensuremath{\rho} = \ensuremath{-}0.122).
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Adjusted for each other, four markers carry independent weight: underground (OR 1.55), dirty water (2.48), exposure (3.34) and somatic distress (3.00).
+  \item
+    Cold light does not (1.15, p = 0.39).
+  \item
+    The thesis's ``1.86'' was the mean of the 21 locations with three markers.
+  \end{itemize}
+\end{itemize}
+
+\textbf{Finding (statistically supported):} Dirt belongs to particular location types, not to height. The associations of somatic distress and decay with lower levels are small and fragile. \textbf{Verdicts:}
+
+\begin{itemize}
+\tightlist
+\item
+  cleanliness by height: \textbf{not supported};
+\item
+  somatic distress: \textbf{weak partial support};
+\item
+  decay: \textbf{underdetermined}.
+\end{itemize}
+
+``Compounding'' is the sum of separate associations.
+
+\subsection{Location Type, Movement and the Course of a Dream}\label{location-type-movement-and-the-course-of-a-dream}
+
+\textbf{Location type.} Location type is associated with atmosphere (clustered joint test \ensuremath{\chi}\ensuremath{^{2}}(32) = 166, p = 5 \ensuremath{\times} 10\ensuremath{^{-20}}). Concrete places are most often negative: basements 91.9\%, public bathrooms 90.0\%, hospitals 81.2\%, schools 80.2\%. Mountains (39.4\%), restaurants (43.3\%) and mall stores (44.5\%) are least often negative. The archived 70 \ensuremath{\times} 10 tables had 72--74\% of cells with expected counts below 5 (notebook 02, C9; notebook 05, R1).
+
+\textbf{Movement.} Upward and downward moves are nearly balanced (552 vs 487, p = 0.047). The direction of a move does not predict the change in atmosphere (\ensuremath{\rho} = +0.007) or the destination's atmosphere (\ensuremath{\rho} = +0.046).
+
+\textbf{Course of a dream.} Atmosphere worsens modestly through a dream:
+
+\begin{itemize}
+\tightlist
+\item
+  mean within-dream slope \ensuremath{-}0.083 (95\% CI \ensuremath{-}0.148 to \ensuremath{-}0.017);
+\item
+  56.4\% of 594 dreams decline and 41.6\% rise.
+\end{itemize}
+
+\textbf{Finding (statistically supported):} Location type matters, and atmosphere worsens slightly over a dream. Movement direction does not. \textbf{Verdict: underdetermined} for the decline, which fits both a framework reading (vastation) and the ordinary arc of a remembered dream.
+
+\subsection{Robustness to Authors and Time}\label{robustness-to-authors-and-time}
+
+\textbf{Location type \ensuremath{\times} atmosphere.} The archived table reproduces: \ensuremath{\chi}\ensuremath{^{2}} = 1,729.52, df = 621, V = 0.212. Of its cells, 74\% have an expected count below 5. Restricted to the 41 types with at least 20 coded locations:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+V & Value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Observed & 0.195 \\
+Labels shuffled at random & 0.100 \\
+Shuffled within author & 0.121 \\
+Shuffled within dream (99th percentile) & 0.129 (0.138) \\
+\end{longtable}
+}
+
+So location type carries information beyond each dream's tone. ``Within-author'' shuffling is mostly within-dream shuffling, because 53.6\% of locations come from single-dream authors.
+
+\textbf{Time.} Across a median-date split, V is 0.214 earlier and 0.229 recent (\ensuremath{\Delta}V = +0.015, 90\% CI \ensuremath{-}0.002 to 0.040), equivalent within \ensuremath{\pm}0.05. The underground penalty holds in both periods (earlier OR 2.56, 1.56--4.20). Its ratio across periods (0.79, 0.40--1.57) is too imprecise to show equivalence. The thesis's ``all Cochran's Q p \textgreater{} 0.50'' appears in no output (notebook 05, R3).
+
+\textbf{Finding (statistically supported):} The location--atmosphere association is not an author artifact, and it is equivalent across time. \textbf{Interpretation:} robustness to authors and time cannot separate a shared cultural schema from a correspondential structure. Both predict stability.
+
+\section{Discussion}\label{discussion}
+
+\subsection{Summary of Findings}\label{summary-of-findings}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3623}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Correspondence
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Below ground worse than ground & 76.0\% vs 58.3\% negative; OR 1.69--2.29 & Partial hit \\
+Above ground better than ground & 65.2\% vs 58.3\%; within-dream OR 0.88 & Miss \\
+Turbid water worse than clear & 84.4\% vs 43.0\%; OR 7.19 & Hit (pattern fit) \\
+Dark and cold light worse & \ensuremath{\rho} = \ensuremath{-}0.49; cold vs warm OR 4.88 & Hit (pattern fit; primed) \\
+Warm light above ground & 41.7\% / 67.6\% / 55.6\% & Miss \\
+Exposure worse & 87.1\% vs 53.5\%; OR 6.35 & Hit (pattern fit; primed) \\
+Dirt below ground & OR 1.02 with location type & Not supported \\
+Somatic distress below & OR 2.09; 1.76 (n.s.) without awakenings & Weak partial support \\
+\end{longtable}
+}
+
+\subsection{Interpretation}\label{interpretation}
+
+The archived reports presented an elevation gradient as the backbone of the evidence (``\ensuremath{\rho} = 0.25--0.30, replicated''). That gradient does not exist in these data. What exists is a penalty for going below ground and no reward for going above it. In correspondential terms, this is half the vertical prediction. The lower, natural or infernal, direction is marked; the higher one is not.
+
+One framework-consistent reading follows from where the corpus starts. MallWorld dreams begin in malls (25.6\% of first locations), at ground level. If the environment reflects the dreamer's state, a dreamer whose state is ``natural'' would find ground the most fitting level. Height would then not be experienced as ascent into heaven. This reading is \textbf{interpretation}. It was formed after seeing the data and is not a test.
+
+The qualitative correspondences behave as predicted: turbid water, darkness, cold light and exposure. They are also what an ordinary reading of these words predicts. Several were primed by the extraction prompt, and the coder usually read them from the same sentence as the atmosphere. Their status is pattern fit, not discrimination between explanations.
+
+\subsection{Implications}\label{implications}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Inference.} Location-level \ensuremath{\chi}\ensuremath{^{2}} tests and correlations on this corpus must be replaced by dream-clustered estimates. Every archived p-value was too small.
+\item
+  \textbf{Population.} Analyses must state their population. The thesis's inclusion of AI images and questions altered both rates and associations.
+\item
+  \textbf{Height vs place.} Height effects must be separated from location-type effects. Basements are not merely ``low places''.
+\end{itemize}
+
+\subsection{Limitations}\label{limitations}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Same-source coding.} Features and atmosphere are coded from the same narrative by the same model. Associations show that the \emph{reports} are coherent, not that the dream environments had these properties.
+\item
+  \textbf{Measured reliability} (notebook 08). Where both a blind second coder and GPT-5.2 rated a feature, values agree well:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    atmosphere valence \ensuremath{\kappa} 0.75 (negative vs not \ensuremath{\kappa} 0.74--0.89);
+  \item
+    vertical level \ensuremath{\kappa} 0.84;
+  \item
+    light \ensuremath{\kappa} 0.90.
+  \end{itemize}
+
+  However, GPT-5.2 rated atmosphere at 58.0\% of locations against the second coder's 29.0\%, and vertical level at 51.0\% against 20.8\%. It inferred them from events and location types. Prevalence figures, and associations that rest on inferred ratings, are therefore \textbf{convention-dependent}. Overall \ensuremath{\kappa} including ``not mentioned'' is 0.42 for both atmosphere valence and vertical level.
+\item
+  \textbf{Priming.} Light temperature, exposure and verticality were labelled with framework meanings in the prompt.
+\item
+  \textbf{Coverage.} Most markers are coded for under 10\% of locations, and only in longer, more vivid reports.
+\item
+  \textbf{Not pre-registered.} The predictions in \S{}1.2 were not registered before these data were analysed. Their direction follows the framework, but the analyst had seen the archived results.
+\end{itemize}
+
+\subsection{Future Directions}\label{future-directions}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Pre-register a fresh test of the height correspondence} on posts submitted after a cut-off date, stating the ground-level pattern in advance.
+\item
+  \textbf{Re-extract with a neutral prompt.} Remove framework meanings from the extraction prompt and re-extract a sample. Compare light temperature and exposure associations.
+\item
+  \textbf{Require explicit evidence for atmosphere and level,} or code inferred and explicit values separately, so that prevalence can be stated without convention dependence.
+\end{itemize}
+
+\section{Conclusion}\label{conclusion}
+
+Corrected, the spatial evidence in MallWorld is smaller and more specific than the archived reports claimed:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Hits at the level of pattern fit:} turbid water, darkness, cold light and exposure go with negative atmospheres.
+\item
+  \textbf{Partial hit:} the vertical correspondence holds only below ground.
+\item
+  \textbf{Misses:} ``higher is better'' and ``warm light above''.
+\item
+  \textbf{Not supported:} a vertical gradient in cleanliness.
+\item
+  \textbf{Robustness:} the location--atmosphere structure is shared across authors and stable over time.
+\end{itemize}
+
+None of these results distinguishes Swedenborg's correspondences from ordinary associations. The pre-registered tests in the companion report were designed to be sharper, but they share the same limitation.
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+Bergsma, W. (2013). A bias-correction for Cram\'{e}r's V and Tschuprow's T. \emph{Journal of the Korean Statistical Society}, 42(3), 323--328.
+
+Cohen, J. (1960). A coefficient of agreement for nominal scales. \emph{Educational and Psychological Measurement}, 20(1), 37--46.
+
+Liang, K.-Y., \& Zeger, S. L. (1986). Longitudinal data analysis using generalized linear models. \emph{Biometrika}, 73(1), 13--22.
+
+Swedenborg, E. (2000). \emph{Heaven and Hell} (G. F. Dole, Trans.). Swedenborg Foundation. (Original work published 1758)
+
+\newpage
+\appendix
+
+\section{Statistical Summary}\label{statistical-summary}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2747}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2418}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Test
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Estimate
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Interval
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+n (dreams)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Height \ensuremath{\times} valence, \ensuremath{\rho} & +0.064 & 0.007--0.114 & 1,605 (667) \\
+Underground vs ground, OR (length-adjusted) & 2.29 & --- & 1,605 (667) \\
+Within-dream level, conditional logit OR & 0.88 & 0.72--1.07 & 111 dreams \\
+Dirty vs clean water, OR & 7.19 & --- & --- \\
+Murky vs clear (free text), Fisher OR & 10.5 & p = 7 \ensuremath{\times} 10\ensuremath{^{-5}} & 60 (50) \\
+Light darkness, \ensuremath{\rho} & \ensuremath{-}0.49 & \ensuremath{-}0.53 to \ensuremath{-}0.44 & --- \\
+Cold vs warm light, OR & 4.88 & --- & --- \\
+Exposed vs private, OR & 6.35 & --- & --- \\
+Cleanliness \ensuremath{\times} height, \ensuremath{\rho} & +0.238 & 0.099--0.359 & 277 \\
+Location type, clustered joint \ensuremath{\chi}\ensuremath{^{2}}(32) & 166 & p = 5 \ensuremath{\times} 10\ensuremath{^{-20}} & --- \\
+Within-dream slope of valence & \ensuremath{-}0.083 & \ensuremath{-}0.148 to \ensuremath{-}0.017 & 594 dreams \\
+Location-type V, recent \ensuremath{-} earlier & +0.015 & 90\% CI \ensuremath{-}0.002 to 0.040 & 3,985 \\
+\end{longtable}
+}
+
+Intervals marked ``---'' are printed in the notebook cell outputs. ORs are from dream-clustered logistic regressions adjusted for log word count.
+
+\section{Withdrawn Figures}\label{withdrawn-figures}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3623}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3188}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Archived claim
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Why withdrawn
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Corrected
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Vertical \ensuremath{\rho} = 0.25--0.30, ``replicated across splits'' & Hand-typed banner; not significant in either holdout split & \ensuremath{\rho} = +0.064; not monotone \\
+Vertical report \ensuremath{\rho} = 0.12; elevated mean 2.77; n = 570/1,547/819; df = 15 & In no output (computed: 0.067, 2.61, 263/678/401, df = 18) & \S{}3.1 \\
+Water ``2.6\ensuremath{\times}'', ``45\% vs 17\%'' & ``45\% vs 17\%'' never computed & \S{}3.2 \\
+Light ``ordering matches predictions exactly'', V = 0.483 & Different table and population & \S{}3.3 \\
+Warm light above ticked ``correct, Strong'' & Non-monotone; no test & Miss \\
+Bathrooms ``44.2\% vs 7.5\% (6.0\ensuremath{\times})'' & No source & 84.0\% vs 14.3\% of coded locations \\
+Exposure ``3.5\ensuremath{\times} threatening atmosphere'' & Was exposure by level, n = 20 & Exposure vs atmosphere OR 6.35 \\
+``Anomalous perceptual states 7.3\% vs 2.2\%'' & Field is building state (abandoned or decaying) & \S{}3.5 \\
+Compounding ``2.53 vs 1.86'' & 1.86 was three-marker locations only & \S{}3.5 \\
+``Ascending destinations better, \ensuremath{\rho} = 0.10, p = 0.016'' & Does not survive clustering & \ensuremath{\rho} = +0.046 (n.s.) \\
+Ascent/descent ``1,220 vs 1,224, perfect balance'' & Not reproducible & 552 vs 487 \\
+\ensuremath{\chi}\ensuremath{^{2}} = 1,677 / 1,737.99 with V = 0.21 as ``robust'' & 72--74\% sparse cells; nested data & Clustered \ensuremath{\chi}\ensuremath{^{2}}(32) = 166; within-dream null \\
+``Within-author null less than half the observed V'' & Within-author \ensuremath{\approx} within-dream; not reproducible & Null 62\% of observed \\
+``Correspondential effect sizes stable (all Cochran's Q p \textgreater{} 0.50)'' & In no output & Equivalence test, \S{}3.7 \\
+\end{longtable}
+}
+
+
+\end{document}

@@ -178,7 +178,7 @@ These documents were **not edited** in the first pass of this audit because they
 | "61.8% of Christians … 'unknown presence' (only 11.2% say 'Jesus')" | Those were shares of *all* Light-Being encounters in an archived old-schema notebook (`archive/conceptual_framework_deep_dive.ipynb`). Christian background, current data: unknown presence 44.2%, Jesus 25.1% (first-listed label); unknown-only 42.6% |
 | Experiential properties "all differences below 10%" | Function does not differ; visual-being coding (+45 pp) and unity (−20 pp) do |
 | ML classifier below baseline (37.8% vs 45.9%) | An artifact of overfitting. Religion predicts the name barely above chance (AUC 0.53) |
-| Entity function χ² = 41.13, p = 0.008; 70–73% guidance; 29.5% "told to return" | Not produced by any notebook. Tested in notebook 07: beings are differentiated (AUC 0.673) and divine figures teach far more (OR 6.27), but they do not give more guidance (73.2% vs 75.9%), and relatives are not specific gatekeepers (OR 1.11, p = 0.42) |
+| Entity function χ² = 41.13, p = 0.008; 70–73% guidance; 29.5% "told to return" | Not produced by any NDE notebook. The χ² is the MallWorld entity × vertical-level test (MallWorld notebook 03, E4), attributed to NDE by mistake. Tested in notebook 07: beings are differentiated (AUC 0.673) and divine figures teach far more (OR 6.27), but they do not give more guidance (73.2% vs 75.9%), and relatives are not specific gatekeepers (OR 1.11, p = 0.42) |
 | Mission "94.2% accuracy"; χ² = 3018.1 | PPV 94.2% (accuracy 86.2% vs 78.1% baseline, κ = 0.49); χ² circular |
 | Loving 32.2% / harsh 0.9%, 36.5:1 | Of rated reviews: loving 60.3%, harsh 1.7%. 36.5:1 is arithmetically correct (CI 14.0–135.8) but coder-dependent: a blind second coder gives 6.4:1 over all rated reviews. Loving:critical 2.65:1 (Light-Being reviews), 1.7–1.8:1 (all), stable |
 | Singular Being "even polytheists" | Not measurable (8 cases; 2 name several figures) |
@@ -191,7 +191,7 @@ These documents were **not edited** in the first pass of this audit because they
 | 84.2% increased spirituality; 0.0% increased death fear | 89.2%; 0.9% |
 | NDE sample 6,753 | 6,751 unique narratives |
 
-**`docs/external/The Epistemic Architecture of Post-Materialist Inquiry_ ….md`** repeats χ² = 365.14, "< 10% variation" and the ML result.
+**`docs/external/The Epistemic Architecture of Post-Materialist Inquiry_ ….md`** repeats χ² = 365.14, "< 10% variation" and the ML result. It also cites χ² = 41.13 as an NDE entity-function result; that figure is a MallWorld statistic (see `projects/mallworld/docs/STATISTICAL_AUDIT_2026-10.md`).
 
 **`projects/nde/docs/notebook_reanalysis_plan.md`** cites "61.8% transcend categories".
 
@@ -219,7 +219,7 @@ Two items the first pass left open were analysed in new notebooks, each with a r
 
 ### 9.1 Entity Function Differentiation (notebook 07)
 
-The `CLAUDE.md` figures for this prediction (χ² = 41.13; 70–73% guidance; 29.5% "told to return") were not produced by any notebook. The percentages appear to come from the legacy script `scripts/entity_role_analysis.py`. That script read the pre-2026 schema from a directory that no longer exists, reported "told to return" as a share of all records, and ran no χ² test. Guidance and return are recorded per account, so functions were attributed to five exclusive being types (accounts with one kind of being, n = 2,634).
+The `CLAUDE.md` figures for this prediction (χ² = 41.13; 70–73% guidance; 29.5% "told to return") were not produced by any NDE notebook. χ² = 41.13 turned out to be a MallWorld statistic: the entity × vertical-level test of the archived MallWorld vertical report, reproduced in MallWorld notebook 03 (E4). The percentages appear to come from the legacy script `scripts/entity_role_analysis.py`. That script read the pre-2026 schema from a directory that no longer exists, reported "told to return" as a share of all records, and ran no χ² test. Guidance and return are recorded per account, so functions were attributed to five exclusive being types (accounts with one kind of being, n = 2,634).
 
 - Ten of 11 functions differ across types after Holm correction (V 0.07–0.18). The function profile separates divine from relative encounters beyond narrative length (cross-validated AUC 0.673 vs 0.555).
 - Divine figures teach far more than relatives (23.0% vs 4.5%; length-adjusted OR 6.27, 3.94–9.98). They also communicate telepathically more (OR 1.83) and commission missions more (OR 1.62). They do **not** give more guidance overall (OR 0.81).

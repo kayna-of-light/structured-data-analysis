@@ -1,3 +1,5 @@
+> **SUPERSEDED, 2026-10-06.** This document predates the October 2026 audit (`STATISTICAL_AUDIT_2026-10.md`). Its figures were computed on a contaminated population, with a join that matched entities to other dreams, or not at all, and none may be cited. This plan was written after the reports whose findings it claimed to predict; it is replaced by `PREREGISTRATION_2026-10.md`.
+
 # MallWorld Correspondential Falsification Test Plan (Preregisterable)
 
 **Date**: 2026-01-20  

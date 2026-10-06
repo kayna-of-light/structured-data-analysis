@@ -1,3 +1,14 @@
+> **WITHDRAWN, 2026-10-06.** Do not cite figures from this report. It was written before the October 2026 audit. The audit found:
+>
+> - **Sparse table.** Its χ² tables are sparse (74% of cells with expected counts below 5).
+> - **Within-author is within-dream.** For single-dream authors, the "within-author" null is a within-dream null; the reported null (0.059) does not reproduce.
+> - **Not equivalence.** "No drift" rested on non-significance rather than an equivalence test.
+> - **Title.** No test in it can separate ontological from cultural explanations, as its own discussion conceded.
+>
+> Every withdrawn figure and its correction is listed in `docs/STATISTICAL_AUDIT_2026-10.md`. Corrected analyses:
+>
+> - [Spatial Correspondences in MallWorld Dreams - A Corrected Re-analysis of Height, Water, Light and Exposure](../Spatial%20Correspondences%20in%20MallWorld%20Dreams%20-%20A%20Corrected%20Re-analysis%20of%20Height,%20Water,%20Light%20and%20Exposure.md)
+
 # Ontological Versus Cultural Structure in MallWorld: Robustness Tests for Spatial–Affective Associations
 
 ## Abstract

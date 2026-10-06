@@ -1,3 +1,15 @@
+> **WITHDRAWN, 2026-10-06.** Do not cite figures from this report. It was written before the October 2026 audit. The audit found:
+>
+> - **Figures not produced.** ρ = 0.12, the elevated mean 2.77, the n's and df = 15 do not match the notebook, which gave 0.067, 2.61, 263/678/401 and df = 18.
+> - **Not reproducible.** The ascent/descent balance (1,220 vs 1,224) does not reproduce.
+> - **Nested data.** The entity χ² = 41.13 and the outcome χ² = 27.40 treat nested observations as independent.
+> - **Corrected result.** Below ground is worse than ground; above ground is not better.
+>
+> Every withdrawn figure and its correction is listed in `docs/STATISTICAL_AUDIT_2026-10.md`. Corrected analyses:
+>
+> - [Spatial Correspondences in MallWorld Dreams - A Corrected Re-analysis of Height, Water, Light and Exposure](../Spatial%20Correspondences%20in%20MallWorld%20Dreams%20-%20A%20Corrected%20Re-analysis%20of%20Height,%20Water,%20Light%20and%20Exposure.md)
+> - [Entities, Animals and Narrative Dynamics in MallWorld Dreams - A Corrected Re-analysis](../Entities,%20Animals%20and%20Narrative%20Dynamics%20in%20MallWorld%20Dreams%20-%20A%20Corrected%20Re-analysis.md)
+
 # Vertical World Structure in MallWorld Dreams: A Spatial Analysis of Chthonic-Celestial Symbolism
 
 ## Abstract
