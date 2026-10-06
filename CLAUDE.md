@@ -257,6 +257,25 @@ These claims rest on published literature or interpretive argument, not on analy
 - **Not observed, and not a framework prediction:** a characteristic arc (M13).
 - **Caveat:** every hit is also predicted by ordinary association, and M1–M6 were not registered in advance. The world of spirits appears "like a valley between mountains and rocks", with the ways to the hells opening downward and the gates of heaven visible only to those prepared (*HH* §429). That reading would accommodate "worse below, not better above", but only after the fact. It is a hypothesis for new data, not a result.
 
+**State dynamics (registered).**
+- **Registration:** `projects/mallworld/docs/STATE_DYNAMICS_DESIGN_2026-10.md` (commit `6be44a3b`).
+- **Notebooks:** 09 (measurement) and 10 (tests).
+- **Report:** "State Dynamics in MallWorld Dreams".
+- **Model:** MallWorld as a common intermediate state, entered by each visitor from his or her own state (§9).
+- **Measures:** place quality Q (six coded properties, without atmosphere) and the experiencer's evaluation E (affect).
+
+| # | Question | Evidence | Verdict |
+|---|---|---|---|
+| S1 | Does the person lead the place? (*HH* §§173–176, 192, 547) | Person → next place +0.117 SD; place → next person −0.003 SD; difference +0.121 (95% CI 0.020–0.213), Holm p = 0.036; same direction in every sensitivity analysis | **Hit**. Narrative colouring by the narrator's mood predicts the same, so this is pattern fit |
+| S2 | Do people move toward what they treat as good? (*HH* §§429, 547, 584) | Registered orientation index: −0.245 SD (−0.436 to −0.055). 92.7% of negative orientation is distress in ordinary places; a rank index gives −0.070 (post hoc) | **Miss** of the registered index; the principle is **untested** with this extraction |
+| S3 | Is a presence perceived as benign felt? (*HH* §§543, 548) | +0.353 within dreams (0.221–0.485), Holm p < 0.0001 | **Hit**; not discriminating; demeanor is perception |
+| S4 | Is what a person approaches consistent across his or her dreams? | ICC1 0.148 (−0.056 to 0.353); 38 authors | **Underdetermined** |
+| — | Contagion check | 12–13 of 13 structural motifs equivalent (±10 pp) across onset mention, era and first report | Shared motifs are not mainly contagion |
+
+**Secondary and descriptive results.**
+- Structure (malls, hotels, escalators) is as person-specific as state: mean ICC1 0.073 vs 0.064.
+- Height conditional on state is underdetermined (interaction −0.116, −0.364 to 0.133).
+
 **Reliability** (`projects/mallworld/notebooks/08_extraction_reliability.ipynb`; blind second coder, 119 dreams).
 - **Where both coders rated a feature, values agree:**
   - light κ 0.90;
@@ -283,7 +302,7 @@ The physics analogy sets the standard. General relativity was accepted because q
 - **What counts:** pre-specified predictions that could fail; effect sizes; robustness to narrative length and to the coder; replication in data not used to form the prediction.
 - **Current standing.**
   - NDE domain: hits on function, character and cultural variation. A fixed stage order and per-degree layering of perception are not observed, but neither is a framework prediction. The registered test of perception as one continuum is underdetermined (§6.1).
-  - MallWorld domain: hits on the character of scenes (water, light, exposure, animals, the deceased, persistent atmosphere), three of them pre-registered. Misses on height: below ground is worse, but above ground is not better, warm light is not more common above, noxious animals are not more common below (pre-registered), and authorities do not guide more above. These are the repository's only misses among the framework's own predictions. A characteristic dream arc is not observed, and is not a framework prediction (§6.5).
+  - MallWorld domain: hits on the character of scenes (water, light, exposure, animals, the deceased, persistent atmosphere), three of them pre-registered. Misses on height: below ground is worse, but above ground is not better, warm light is not more common above, noxious animals are not more common below (pre-registered), and authorities do not guide more above. These are the repository's only misses among the framework's own predictions. A characteristic dream arc is not observed, and is not a framework prediction (§6.5). Registered state-dynamics tests: the person's state leads the next place and not the reverse (hit); a presence perceived as benign is felt (hit, not discriminating). Whether people move toward what they themselves treat as good is untested: the registered index failed (§6.5, S1–S4).
   - Other domains: consistent with the framework but untested here (§6.4).
   - The cumulative case is real for the first group and should not be stretched to the second.
 - **What would raise the weight:**
@@ -382,6 +401,18 @@ Directional framing used in the MallWorld synthesis:
 - **East–West framing.** It cannot be tested: cardinal directions are coded in 33 of 1,918 dreams.
 
 Use the table to state predictions before analysis (§3). Do not read it into results.
+
+**Ask state questions, not place averages** (owner's guidance, October 2026).
+- **A common state.** MallWorld is treated as a common intermediate state, close to the world of spirits (*HH* §§421–427, 438). Each visitor experiences it through his or her own state. Averaging a kind of place over all visitors mixes people in different states.
+- **Follow how state evolves.** Track the person's state across movements, since change of place is change of state (*HH* §§192–195). Separate who or what influences the state from what arises from it. Read the person's choices as the observable trace of the ruling love; never infer the ruling love itself.
+- **Good and light are as the experiencer sees them** (*HH* §§35, 429, 547, 584). Keep apart:
+  - the place's quality;
+  - the person's evaluation of it;
+  - what the person treats as good, revealed by what he or she approaches or flees.
+
+  Do not classify an act (fleeing, approaching) as turning toward or away from the good by its type alone.
+- **Compute state from several properties together.** Do not measure degrees.
+- **Do not test narrative templates.** Arcs and stage sequences are not framework predictions.
 
 ## 10. When to Apply the Framework
 
