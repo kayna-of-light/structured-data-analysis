@@ -2,6 +2,8 @@
 
 > **Correction notice (2026-10-05).** This report was revised after a statistical audit (`docs/STATISTICAL_AUDIT_2026-10.md`). Changes: (1) **the statement that inter-rater reliability was assessed (κ = 0.84 on 200 records) has been removed** — no such validation exists in the repository, and the companion perception report lists human validation as future work; (2) "deceased relatives (17.9%) nearly twice religious figures (9.9%)" omitted God and Jesus from the religious-figure count — corrected counts are 13.8–19.9% depending on definition, and the "inversion" does not hold under the report's own category label; (3) "brilliant light" was relabelled "impersonal light", but more than half of those accounts identify beings and report communication; (4) the nature-vs-urban test used an invalid goodness-of-fit χ² on overlapping counts (now McNemar); (5) several appendix χ² values did not match their p-values; (6) associations are now adjusted for narrative length; (7) the boundary-type × agency association is partly built into the category definitions; (8) the sample was described as "Western NDEs" although country is unknown for 88% and 27% of known countries are outside the West; (9) N = 6,751 after removing two duplicate narratives. The LaTeX and PDF versions were regenerated from this corrected text.
 
+> **Reliability addendum (2026-10-06).** Coding reliability has now been measured with a blind second coder; see *Reliability of Near-Death Experience Narrative Coding* (`08_extraction_reliability.ipynb`). The deceased-relative and God-or-Jesus codes behind the relatives vs religious-figures comparison agree at Cohen's κ = 0.85 and 0.82. Light encounter agrees at 0.85–0.87. Boundary *presence* is reliable (κ = 0.77), but boundary *type* is not: κ = 0.34 among accounts both coders treat as a boundary. When a barrier and a spoken "not your time" co-occur, the schema gives no rule for choosing between them, so comparisons between boundary types depend on that unstated convention.
+
 ## Abstract
 
 **Background**: Cross-cultural NDE literature has contrasted a "Western" profile — personified Being of Light (claimed 70–80%), Cities of Light, frequent life reviews (25–30%), tunnel (34–50%) — with a "Japanese" profile of impersonal light, flower gardens, ancestors and absent life reviews. Both profiles rest on small or selected samples.
@@ -62,7 +64,7 @@ NDERF (5,659 accounts; online questionnaire) and IANDS (1,092 narrative accounts
 
 Each record was processed with GPT-5.2 (Azure OpenAI) into the Pydantic schema in `models/questionnaire.py`. Key fields: `light_encounter` (brilliant_light, being_of_light, presence_without_visual, no, not_mentioned); `being_identifications` (multi-select); `environment_features` (light, landscape, buildings, sky, colors, water, other); life review occurrence; `boundary_encounter` (none, physical_barrier, verbal_limit, threshold, not_mentioned); return reasons; return agency (self, external_being, involuntary, mutual, not_mentioned).
 
-**No human validation of the extraction has been performed.** (An earlier version of this report stated that human coders achieved κ = 0.84 on 200 records; no record of such a study exists, and the statement has been removed.)
+Coding reliability was measured afterwards against a blind second coder (`08_extraction_reliability.ipynb`, 100 random accounts): Cohen's κ = 0.85 for deceased relatives, 0.82 for God or Jesus, 0.85–0.87 for light encounter, 0.77 for boundary presence and 0.34 for boundary type. (An earlier version of this report stated that human coders achieved κ = 0.84 on 200 records; no record of such a study exists, and the statement has been removed.)
 
 ### 2.3 Statistical Analysis
 
@@ -170,7 +172,7 @@ Of 772 accounts with buildings, 55.3% report no physical or verbal boundary; of 
 
 **Boundary type and return agency** (boundary reported and agency stated, n = 2,733): external being decided in 70.5% of verbal limits and 58.4% of physical barriers; self in 48.8% of thresholds (χ² = 683.8, df = 6, Cramér's V = 0.35; the earlier χ² = 3,724.7 with df = 16 — 3,728.7 on the deduplicated data — included the "none" and "not mentioned" categories).
 
-**Finding with caveat.** The association is partly built into the categories: a verbal limit is by definition a being telling the experiencer to go back, and a threshold is typically the experiencer's own sense of a limit. It is therefore expected from the coding and cannot by itself show that the boundary *is* the return decision. That reading is a framework interpretation. Physical barriers co-occur with water in 11.3% of cases.
+**Finding with caveat.** The association is partly built into the categories: a verbal limit is by definition a being telling the experiencer to go back, and a threshold is typically the experiencer's own sense of a limit. It is therefore expected from the coding and cannot by itself show that the boundary *is* the return decision. That reading is a framework interpretation. Boundary type is also the least reliable code in the reliability study (κ = 0.34): in accounts with both a barrier and a spoken limit, the two coders chose different types. Physical barriers co-occur with water in 11.3% of cases.
 
 Two earlier arguments were removed as invalid: that unequal frequencies of boundary types show they are "not consistent representations of the same phenomenon" (frequency says nothing about consistency), and that 58% returning without a boundary shows boundaries are not points of no return (everyone in the dataset returned; the earlier version itself noted this is untestable).
 
@@ -209,7 +211,7 @@ Cross-cultural comparisons need common, documented denominators; large, systemat
 
 ### 4.5 Limitations
 
-Self-selected archives; no human validation of LLM extraction; "not mentioned" treated as absence for prevalence figures; country unknown for 88%; no non-Western comparison sample; claimed rates of uncertain provenance.
+Self-selected archives; LLM extraction (inter-coder κ ≥ 0.77 for the main fields, but 0.34 for boundary type); "not mentioned" treated as absence for prevalence figures; country unknown for 88%; no non-Western comparison sample; claimed rates of uncertain provenance.
 
 ---
 

@@ -75,7 +75,7 @@ In embodied life, biological filtering constrains awareness to the natural degre
 
 ### 2.1 Data Sources
 
-NDERF (5,659 accounts) and IANDS (1,092 accounts); two duplicate narratives counted once (N = 6,751). All records were processed through GPT-5.2 structured extraction using the Pydantic schema in `models/questionnaire.py`. **No human validation of the extraction has been performed.**
+NDERF (5,659 accounts) and IANDS (1,092 accounts); two duplicate narratives counted once (N = 6,751). All records were processed through GPT-5.2 structured extraction using the Pydantic schema in `models/questionnaire.py`. Coding reliability was measured afterwards against a blind second coder (`08_extraction_reliability.ipynb`) for two of the seven markers. Telepathic communication agrees at Cohen's κ = 0.88. Comparative reality agrees at κ = 0.74, but GPT-5.2 codes it more often than the second coder (13 vs 8 in 100 accounts) and is unstable on it across duplicate submissions (test–retest κ = 0.58). The other five markers have not been recoded.
 
 ### 2.2 Perception Markers
 
@@ -300,14 +300,14 @@ The earlier version linked these findings to the 32 geometric signs found in Eur
 
 1. **Narrative length**: explains 41% of score variance; adjustment for word count is a partial control, because length may itself partly reflect experiential depth.
 2. **"Not mentioned" coded as absent**: scores mix experience with reporting completeness.
-3. **AI-extracted data**: GPT-5.2 coding without human validation.
+3. **AI-extracted data**: GPT-5.2 coding. Inter-coder agreement is high for telepathy (κ = 0.88) and acceptable for comparative reality (κ = 0.74, test–retest 0.58); the other five markers are untested.
 4. **Sample composition**: one of the seven named religious backgrounds is stated in 22.4% of accounts (24.1% including "other"), 84.7% of them Christian; other traditions n = 14–43.
 5. **Self-selected, predominantly Western archives.**
 6. **Degree assignment is theoretical**: the mapping of markers to degrees is not empirically derived, and the data do not recover it.
 
 ### 4.5 Future Directions
 
-1. Human validation of a random subsample (n ≈ 200) for each marker
+1. Second coding of the five untested markers on a random subsample, as done for telepathy and comparative reality in `08_extraction_reliability.ipynb`
 2. Confirmatory factor analysis comparing a one-factor model with a three-factor degree model, with narrative length as a covariate, ideally on graded rather than binary items
 3. Non-Western samples with adequate size for equivalence tests in each tradition
 4. Separating "not mentioned" from "absent" through structured follow-up questionnaires

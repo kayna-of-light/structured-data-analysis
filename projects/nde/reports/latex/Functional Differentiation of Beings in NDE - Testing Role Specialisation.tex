@@ -1,0 +1,597 @@
+% Generated from ../Functional Differentiation of Beings in NDE - Testing Role Specialisation.md by scripts/md_to_latex.py.
+% Edit the Markdown report, then regenerate this file; do not edit it by hand.
+\input{nde-report-preamble}
+\usepackage{array}
+\usepackage{calc}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setlength{\emergencystretch}{3em}
+\let\underscorechar\_
+\renewcommand{\_}{\underscorechar\allowbreak}  % let long field names break after underscores
+
+\reporttitle{Functional Differentiation of Beings in Near-Death Experiences}{Testing Role Specialisation}
+\reportauthors
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\textbf{Background}: Near-death experiencers report meeting divine or religious figures, unidentified presences, angels and deceased relatives. The Swedenborgian framework predicts that such beings occupy differentiated functional roles rather than being interchangeable projections. A specific earlier claim was that divine figures give more guidance (70--73\%) and relatives act as gatekeepers (29.5\% ``told to return''; \ensuremath{\chi}\ensuremath{^{2}} = 41.13, p = 0.008). That claim could not be reproduced from any notebook, and the field it rested on no longer exists in the schema.
+
+\textbf{Methods}: The analysis covers 6,751 NDE narratives from NDERF (n=5,659) and IANDS (n=1,092), coded by GPT-5.2 structured extraction. Functions are recorded per account, not per being. A function is therefore attributed to a being type only in accounts with one kind of being. Five exclusive groups are compared: divine or religious figure (n=418), unknown presence (n=610), angels (n=112), deceased relatives (n=584) and other beings (n=910). The tests are \ensuremath{\chi}\ensuremath{^{2}} with Holm correction, logistic regression adjusted for narrative length, a cross-validated classifier, and archive and religion interaction tests. Coding reliability was measured separately with a blind second coder (\ensuremath{\kappa} 0.70--0.88 for the fields used here).
+
+\textbf{Results}: Ten of eleven functions differ across being types after Holm correction (Cram\'{e}r's V 0.07--0.18). The function profile separates divine from relative encounters better than narrative length alone (cross-validated AUC 0.673, 95\% CI 0.640--0.707, vs 0.555). Divine figures do not give more guidance overall (73.2\% vs 75.9\%; adjusted OR 0.81, 0.61--1.09). They teach six times as often (23.0\% vs 4.5\%; OR 6.27, 3.94--9.98), communicate telepathically more (OR 1.83) and commission missions more (OR 1.62). Relatives give mostly directional guidance (67.3\%) and comfort (43.8\%), and rarely teach (5.9\%). Sending the experiencer back is common to all being types (47.0--54.6\%) and not specific to relatives (OR 1.11, 0.86--1.43, p = 0.42).
+
+\textbf{Conclusions}: The beings are functionally differentiated, and the clearest specialisation is teaching by divine figures. That differentiation is a \textbf{hit} for the framework's prediction. The specific figures previously cited are not reproducible. The gatekeeping prediction is a \textbf{miss}: sending back is a shared function, not a relative-specific role. The unknown presence is functionally close to divine figures, but so are angels and other beings.
+
+\keywords{near-death experience, entity encounters, functional differentiation, deceased relatives, Being of Light, teaching, Swedenborg, logistic regression}
+\end{abstract}
+
+\newpage
+
+\section*{Data Provenance}\label{data-provenance}
+\addcontentsline{toc}{section}{Data Provenance}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2911}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3544}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3544}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Item
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Access
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+NDERF Records (n=5,659) & Near-Death Experience Research Foundation & \href{https://nderf.org}{nderf.org} \\
+IANDS Records (n=1,092) & International Association for Near-Death Studies & \href{https://iands.org}{iands.org} \\
+Analysis Code & \texttt{07\_entity\_function\_differentiation.ipynb} & \href{https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/07_entity_function_differentiation.ipynb}{Repository} \\
+Reliability Analysis & \texttt{08\_extraction\_reliability.ipynb} & \href{https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/08_extraction_reliability.ipynb}{Repository} \\
+Data loader & \texttt{scripts/nde\_dataset.py} & Repository \\
+Structured Data & \texttt{structured/*.json} & \href{https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/structured/}{Repository} \\
+Extraction Model & GPT-5.2 via Azure OpenAI & Azure OpenAI Service \\
+\end{longtable}
+}
+
+\section{Introduction}\label{introduction}
+
+\subsection{Background}\label{background}
+
+Encounters with other beings are among the most frequently reported elements of near-death experiences (Moody, 1975; Greyson, 1983). Experiencers describe deceased relatives and friends, religious figures, angels, and luminous or unseen presences they cannot identify (Osis \& Haraldsson, 1977; Kelly, 2001). Most research has counted \emph{who} is met. Less attention has gone to \emph{what} each kind of being does: whether a grandmother and a figure identified as Jesus perform the same role under different names, or different roles.
+
+The question matters for interpretation. If the beings are culturally shaped projections of one underlying process, they should be functionally interchangeable: what they do should not depend on who they are. If they are distinct agents, or distinct appearances of distinct functions, their roles should differ systematically.
+
+\subsection{Theoretical Framework}\label{theoretical-framework}
+
+Swedenborg's account of the transition after death (\emph{Heaven and Hell}, 1758) assigns different beings different tasks. Friends and relatives receive and accompany the newly arrived. Angels instruct. The Lord is present as the source of wisdom and love. The framework therefore predicts \textbf{functional differentiation}: beings should differ in what they do, and teaching should concentrate in higher-order beings. Under the framework's principle of ``constant state, variable form'', a presence that the experiencer cannot name should behave like the divine figure it may represent.
+
+\texttt{CLAUDE.md} recorded this prediction as confirmed, with three specific numbers: divine figures give ``more significant guidance (70--73\%)'', relatives serve as gatekeepers (``29.5\% told to return''), and \ensuremath{\chi}\ensuremath{^{2}} = 41.13 (p = 0.008). None of these numbers is produced by any notebook in the repository, current or archived. The 2026-10 audit flagged the claim as unverified, and this report tests it.
+
+\subsection{Aims}\label{aims}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Test} whether being types differ in function (H1), using exclusive groups so that functions can be attributed.
+\item
+  \textbf{Quantify} whether divine or religious figures give more guidance, and more teaching in particular, than deceased relatives (H2).
+\item
+  \textbf{Examine} whether relatives comfort rather than teach (H3) and act as gatekeepers (H4).
+\item
+  \textbf{Assess} whether functional signatures are consistent across archives and religious backgrounds (H5).
+\item
+  \textbf{Locate} the unknown presence on the divine--relatives axis.
+\end{enumerate}
+
+\section{Methods}\label{methods}
+
+\subsection{Data Sources}\label{data-sources}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1957}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1957}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.6087}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Records
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+NDERF & 5,659 & Near-Death Experience Research Foundation online archive \\
+IANDS & 1,092 & International Association for Near-Death Studies archive \\
+\textbf{Total} & \textbf{6,751} & After removing two exact duplicate narratives \\
+\end{longtable}
+}
+
+All records were coded by GPT-5.2 into the questionnaire schema (\texttt{models/questionnaire.py}) and loaded through the verified loader \texttt{scripts/nde\_dataset.py}, which checks every enum value against the schema.
+
+\subsection{Being-Type Groups}\label{being-type-groups}
+
+Guidance, communication and return are recorded for the account as a whole. A function can be attributed to a kind of being only when that kind is the only one in the account. Accounts were assigned to one exclusive group:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3611}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3889}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.1250}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Group
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Criterion
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+n
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\%
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Divine or religious figure & God, Jesus, Buddha or a specified religious figure; no other kind & 418 & 6.2\% \\
+Unknown presence & \texttt{unknown\_presence} only & 610 & 9.0\% \\
+Angels & \texttt{angels} only & 112 & 1.7\% \\
+Deceased relatives & \texttt{deceased\_relative\_guide} or deceased relatives (named/unnamed) only & 584 & 8.7\% \\
+Other beings & \texttt{other} only & 910 & 13.5\% \\
+Mixed (excluded) & more than one kind & 1,224 & 18.1\% \\
+No beings (excluded) & none & 2,893 & 42.9\% \\
+\end{longtable}
+}
+
+\subsection{Function Variables}\label{function-variables}
+
+\textbf{Guidance}: guidance received (\texttt{yes} vs other); guidance types (teaching, life guidance, informational, comfort, directional).
+\textbf{Communication}: telepathic communication (\texttt{telepathic} in \texttt{communication\_modes}).
+\textbf{Return}: told it is not their time (\texttt{not\_your\_time} in \texttt{return\_reasons}); return decided by a being (\texttt{return\_agency\ =\ external\_being}); verbal limit (\texttt{boundary\_encounter\ =\ verbal\_limit}).
+\textbf{Commissioning}: mission commissioned (\texttt{yes\_explicit} or \texttt{implied}).
+
+\subsection{Statistical Analysis}\label{statistical-analysis}
+
+\begin{itemize}
+\tightlist
+\item
+  \ensuremath{\chi}\ensuremath{^{2}} tests of each function across the five groups (df = 4), with Cram\'{e}r's V and Holm correction across the 11 functions
+\item
+  Five-fold cross-validated logistic classifier of divine vs relative accounts from the 11 functions plus log word count, compared with log word count alone (AUC with bootstrap CI)
+\item
+  Pairwise logistic regressions (divine vs relatives, unknown vs relatives, divine vs unknown) adjusted for log word count, because longer accounts mention more of everything; Holm correction within each contrast
+\item
+  McNemar tests for paired comparisons of guidance types within relative accounts
+\item
+  Interaction tests of the divine--relatives contrast with archive (NDERF/IANDS) and with religious background (Christian vs other stated), with Holm correction
+\item
+  Coding reliability from a blind second coding of 100 random accounts (\texttt{08\_extraction\_reliability.ipynb})
+\end{itemize}
+
+\section{Results}\label{results}
+
+\subsection{Functions Differ Across Being Types (H1)}\label{functions-differ-across-being-types-h1}
+
+Ten of the eleven functions differ significantly across the five groups after Holm correction (\ensuremath{\chi}\ensuremath{^{2}} tests, df = 4). Effects are small to moderate; the largest is teaching.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.2577}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0928}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0928}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0928}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0928}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0928}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0928}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0928}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0928}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Function
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Divine
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Unknown
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Angels
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Relatives
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Other
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\ensuremath{\chi}\ensuremath{^{2}}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Holm p
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+V
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Guidance received & 73.2\% & 77.5\% & 72.3\% & 75.9\% & 68.6\% & 17.9 & 0.006 & 0.08 \\
+Teaching & 23.0\% & 17.5\% & 20.5\% & 4.5\% & 13.6\% & 81.1 & \textless0.0001 & 0.18 \\
+Life guidance & 37.1\% & 23.8\% & 33.0\% & 27.7\% & 22.5\% & 36.4 & \textless0.0001 & 0.12 \\
+Informational guidance & 29.9\% & 31.5\% & 29.5\% & 22.8\% & 31.5\% & 15.7 & 0.010 & 0.08 \\
+Comfort & 29.4\% & 28.7\% & 33.9\% & 33.2\% & 24.9\% & 13.7 & 0.017 & 0.07 \\
+Directional guidance & 36.1\% & 47.9\% & 41.1\% & 51.0\% & 42.6\% & 26.5 & 0.0002 & 0.10 \\
+Told it is not their time & 30.4\% & 28.5\% & 25.9\% & 37.7\% & 28.5\% & 18.1 & 0.006 & 0.08 \\
+Return decided by a being & 39.2\% & 36.1\% & 36.6\% & 46.7\% & 35.5\% & 21.9 & 0.001 & 0.09 \\
+Verbal limit & 29.4\% & 30.0\% & 26.8\% & 26.5\% & 24.6\% & 6.7 & 0.154 & 0.05 \\
+Telepathic communication & 44.0\% & 42.5\% & 36.6\% & 28.6\% & 33.3\% & 39.4 & \textless0.0001 & 0.12 \\
+Mission commissioned & 35.4\% & 27.7\% & 31.2\% & 24.0\% & 25.2\% & 20.1 & 0.003 & 0.09 \\
+\end{longtable}
+}
+
+A classifier using the eleven functions separates divine-only from relatives-only accounts with a cross-validated AUC of \textbf{0.673} (95\% CI 0.640--0.707). Narrative length alone gives 0.555.
+
+\textbf{Finding}: Being types are \textbf{functionally differentiated}. The separation is modest, and the groups overlap, but it is not produced by narrative length. Under a projection account the beings would be interchangeable, and this pattern is the opposite.
+
+\subsection{Divine Figures Teach; They Do Not Guide More Overall (H2)}\label{divine-figures-teach-they-do-not-guide-more-overall-h2}
+
+Length-adjusted contrasts between divine-only and relatives-only accounts:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3380}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1268}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1268}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2817}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1268}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Function
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Divine
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Relatives
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Adjusted OR (95\% CI)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Holm p
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Guidance received & 73.2\% & 75.9\% & 0.81 (0.61--1.09) & 0.16 \\
+\textbf{Teaching} & \textbf{23.0\%} & \textbf{4.5\%} & \textbf{6.27 (3.94--9.98)} & \textbf{\textless{} 0.0001} \\
+Telepathic communication & 44.0\% & 28.6\% & 1.83 (1.39--2.41) & 0.0001 \\
+Mission commissioned & 35.4\% & 24.0\% & 1.62 (1.22--2.15) & 0.007 \\
+Life guidance & 37.1\% & 27.7\% & 1.43 (1.09--1.88) & 0.075 \\
+Informational guidance & 29.9\% & 22.8\% & 1.39 (1.05--1.86) & 0.12 \\
+Directional guidance & 36.1\% & 51.0\% & 0.54 (0.42--0.70) & \textless{} 0.0001 \\
+Comfort & 29.4\% & 33.2\% & 0.76 (0.57--1.00) & 0.16 \\
+\end{longtable}
+}
+
+Among accounts that state whether guidance was received, the rate is 82.0--91.0\% in every group. Guidance as such does not distinguish the beings.
+
+\textbf{Critical Finding}: Divine figures are \textbf{six times as likely to teach} as deceased relatives (adjusted OR 6.27). They are also more likely to communicate telepathically and to commission a mission. The difference is in the \textbf{kind} of guidance, not its amount. ``More significant guidance (70--73\%)'' is not reproducible. ``More teaching'' is, strongly.
+
+\subsection{Relatives Direct and Comfort; They Rarely Teach (H3)}\label{relatives-direct-and-comfort-they-rarely-teach-h3}
+
+Within the 443 relatives-only accounts that report any guidance type:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Guidance type & n & \% (95\% CI) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Directional & 298 & 67.3\% (62.8--71.5) \\
+Comfort & 194 & 43.8\% (39.2--48.4) \\
+Life guidance & 162 & 36.6\% (32.2--41.2) \\
+Informational & 133 & 30.0\% (25.9--34.4) \\
+Teaching & 26 & 5.9\% (4.0--8.5) \\
+\end{longtable}
+}
+
+Comfort exceeds teaching within the same accounts (paired McNemar p \textless{} 10\ensuremath{^{-40}}), and comfort exceeds life guidance (p = 0.027). Relatives do not comfort significantly more than divine figures do (33.2\% vs 29.4\%; OR 0.76, Holm p = 0.16). They do give more directional guidance (51.0\% vs 36.1\%).
+
+\textbf{Finding}: Deceased relatives \textbf{orient and reassure}: they say where to go, what to do, and that all is well. They rarely instruct. The prediction ``comfort rather than teaching'' holds. ``More comfort than divine figures'' does not reach significance.
+
+\subsection{Sending Back Is Shared, Not a Relative Role (H4)}\label{sending-back-is-shared-not-a-relative-role-h4}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.5185}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3148}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Sent back (not-your-time, being decides return, or verbal limit)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+n
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\% (95\% CI)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Deceased relatives only & 319/584 & 54.6\% (50.6--58.6) \\
+Divine or religious figure only & 216/418 & 51.7\% (46.9--56.4) \\
+Unknown presence only & 298/610 & 48.9\% (44.9--52.8) \\
+Angels only & 53/112 & 47.3\% (38.3--56.5) \\
+Other beings only & 428/910 & 47.0\% (43.8--50.3) \\
+\end{longtable}
+}
+
+Relatives vs divine figures: adjusted OR 1.11 (0.86--1.43), p = 0.42. Taken separately, relatives are told ``not your time'' (37.7\% vs 30.4\%) and have the return decided by a being (46.7\% vs 39.2\%) somewhat more often, but neither survives Holm correction (Holm p = 0.11 and 0.12). Against unknown-presence accounts, both return codes do differ after correction (adjusted OR 0.67 and 0.65 for unknown vs relatives).
+
+\textbf{Finding}: Gatekeeping is a \textbf{shared function} of all being types (47--55\% of accounts). It is not a role specific to relatives. The ``29.5\% told to return'' figure cannot be reproduced from any current field. The gatekeeping prediction is a \textbf{miss} as stated.
+
+\subsection{Where the Unknown Presence Sits}\label{where-the-unknown-presence-sits}
+
+A ``divine-likeness'' score from the classifier (0 = relatives-like, 1 = divine-like) places each group on the divine--relatives axis:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Group & Mean score (95\% CI) & n \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Divine or religious figure & 0.481 (0.463--0.500) & 418 \\
+Angels & 0.458 (0.424--0.492) & 112 \\
+Unknown presence & 0.454 (0.441--0.468) & 610 \\
+Other beings & 0.436 (0.425--0.447) & 910 \\
+Deceased relatives & 0.370 (0.359--0.382) & 584 \\
+\end{longtable}
+}
+
+Unknown-presence accounts match divine accounts on telepathy (42.5\% vs 44.0\%), teaching (Holm p = 0.33) and all return codes. They differ on life guidance (OR 1.89 for divine, Holm p \textless{} 0.0001) and directional guidance (OR 0.61, Holm p = 0.002).
+
+\textbf{Finding}: The unknown presence behaves \textbf{like a divine figure, not like a relative}. This is what ``constant state, variable form'' predicts. Angels and other beings sit just as close to the divine end, however. The closeness is therefore a property of non-relative beings in general, not a signature that identifies the unknown presence with the divine.
+
+\subsection{Consistency Across Archives and Religious Backgrounds (H5)}\label{consistency-across-archives-and-religious-backgrounds-h5}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2330}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1748}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1748}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2039}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2136}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Function
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Adjusted OR, NDERF
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Adjusted OR, IANDS
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Archive interaction p
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Religion interaction p
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Teaching & 5.90 & 8.46 & 0.58 & 0.48 \\
+Telepathic communication & 2.02 & 1.06 & 0.074 & 0.19 \\
+Mission commissioned & 1.64 & 1.38 & 0.63 & 0.66 \\
+Directional guidance & 0.57 & 0.42 & 0.35 & 0.87 \\
+\end{longtable}
+}
+
+The direction of the divine--relatives difference agrees between archives for 9 of 11 functions, including all four significant overall. No archive or religion interaction survives Holm correction. Power is limited: IANDS contributes 171 divine or relatives accounts, and only 241 accounts state a religion (203 Christian).
+
+\textbf{Finding}: The functional signature is \textbf{consistent where it can be tested}. The test cannot speak to non-Christian traditions.
+
+\subsection{Measurement Reliability of the Variables Used}\label{measurement-reliability-of-the-variables-used}
+
+A blind second coder recoded 100 random accounts (\texttt{08\_extraction\_reliability.ipynb}). Agreement for the fields used here:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Variable & Cohen's \ensuremath{\kappa} (95\% CI) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Guidance received & 0.88 (0.78--0.96) \\
+Telepathic communication & 0.88 (0.76--0.98) \\
+Deceased relatives & 0.85 (0.72--0.97) \\
+Return decided by a being & 0.83 (0.70--0.93) \\
+God or Jesus & 0.82 (0.65--0.96) \\
+Mission commissioned & 0.71 (0.49--0.88) \\
+Teaching & 0.70 (0.45--0.88) \\
+Unknown presence & 0.44 (0.20--0.66) \\
+Boundary type (among boundaries) & 0.34 \\
+\end{longtable}
+}
+
+\textbf{Finding}: The variables behind the main results are measured with substantial to almost perfect agreement. Teaching, divine and relative identification, telepathy and return agency all reach \ensuremath{\kappa} \ensuremath{\geq} 0.70. Random coding error of this size weakens differences rather than creating them. Two variables are weaker. The unknown-presence group depends on an undefined boundary between \texttt{unknown\_presence} and \texttt{other}. The verbal-limit code depends on which boundary type a coder chooses when a barrier and a spoken limit co-occur.
+
+\section{Discussion}\label{discussion}
+
+\subsection{Summary of Findings}\label{summary-of-findings}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Ten of 11 functions differ across five exclusive being types (Holm-corrected; V 0.07--0.18).
+\item
+  Functions separate divine from relative encounters beyond narrative length (AUC 0.673 vs 0.555).
+\item
+  Divine figures teach six times as often as relatives (23.0\% vs 4.5\%; OR 6.27). They also communicate telepathically more (OR 1.83) and commission missions more (OR 1.62). They do not give more guidance overall (OR 0.81).
+\item
+  Relatives give directional guidance (67.3\%) and comfort (43.8\%) and rarely teach (5.9\%).
+\item
+  Sending back is common to all being types (47.0--54.6\%) and is not relative-specific (OR 1.11, p = 0.42).
+\item
+  The unknown presence is functionally closer to divine figures than to relatives, as are angels and other beings.
+\item
+  The direction of differences is consistent across archives (9 of 11 functions).
+\end{enumerate}
+
+\subsection{Interpretation}\label{interpretation}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3733}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3733}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2533}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Framework prediction
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Observed pattern
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verdict
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Beings occupy differentiated roles & 10/11 functions differ; AUC 0.673 & \textbf{Hit} (modest effect) \\
+Higher-order beings teach & Teaching OR 6.27 for divine vs relatives & \textbf{Hit} \\
+Higher-order beings give more guidance overall & 73.2\% vs 75.9\%, OR 0.81 & \textbf{Miss} \\
+Relatives receive and comfort rather than instruct & Directional 67.3\%, comfort 43.8\%, teaching 5.9\% & \textbf{Hit} \\
+Relatives act as gatekeepers & Sent back 54.6\% vs 47.0--51.7\% in other groups; not significant vs divine & \textbf{Miss} \\
+Unknown presence = divine reality in variable form & Closer to divine than to relatives, but not distinguishable from angels or other beings & \textbf{Underdetermined} \\
+Signatures stable across contexts & Same direction in both archives; no significant interaction & \textbf{Hit} where testable \\
+\end{longtable}
+}
+
+The pattern fits a division of labour in which teaching is concentrated in beings identified as divine and orientation is concentrated in relatives. The framework predicts this. A model of interchangeable projections does not: under it, who the being is should not predict what it does. Two parts of the earlier claim do not survive testing. Divine figures do not give \emph{more} guidance, and gatekeeping is not a relatives' role. Swedenborg's own description has relatives receiving and accompanying the newly arrived, not deciding their return. The ``gatekeeper'' prediction may therefore have been an over-specification added later rather than a consequence of the framework.
+
+These are associations between codes of the same narrative. They show that experiencers \emph{report} beings of different kinds doing different things. Whether the reports reflect real agents (ontology) is a separate question that these data cannot settle.
+
+\subsection{Implications}\label{implications}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The entity-function entry in \texttt{CLAUDE.md} should be replaced by these results: differentiation and teaching specialisation confirmed; guidance-amount and gatekeeping predictions not confirmed.
+\item
+  Future schema versions should record guidance, communication and return \textbf{per being}, so that the 1,224 mixed accounts can be used and attribution does not depend on single-type accounts.
+\item
+  The \texttt{unknown\_presence} vs \texttt{other} boundary needs a definition before the unknown presence can be studied as a group.
+\end{enumerate}
+
+\subsection{Limitations}\label{limitations}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Attribution by exclusion.} Functions are attributed only in single-type accounts (2,634 of 6,751). Mixed accounts may differ systematically.
+\item
+  \textbf{Model-coded data.} All variables are GPT-5.2 codes. Reliability is substantial for most fields but moderate for the unknown presence (\ensuremath{\kappa} 0.44).
+\item
+  \textbf{Small effects.} Cram\'{e}r's V is at most 0.18, and the classifier separates the groups only modestly.
+\item
+  \textbf{Self-selected archives.} NDERF and IANDS accounts are volunteered and predominantly Western; religion is stated in a minority of accounts.
+\item
+  \textbf{Duplicates.} About 1.8\% of records are near-duplicate submissions; removing them changes headline rates by less than 0.5 percentage points.
+\end{enumerate}
+
+\subsection{Future Directions}\label{future-directions}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Re-extract with per-being function fields and re-test H1--H4 including mixed accounts.
+\item
+  Define the unknown-presence category and re-test its position on the divine--relatives axis.
+\item
+  Test differentiation within non-Christian accounts once adequate samples exist.
+\item
+  Examine whether teaching content differs by being type (what is taught, not only whether).
+\end{enumerate}
+
+\section{Conclusion}\label{conclusion}
+
+In 6,751 near-death experiences, the beings encountered are functionally differentiated. The sharpest difference is teaching: divine or religious figures teach in 23.0\% of single-type accounts and deceased relatives in 4.5\% (length-adjusted OR 6.27, 95\% CI 3.94--9.98). Relatives orient and reassure. The framework predicted this differentiation, and it is a hit.
+
+Two specific claims recorded earlier do not hold. Divine figures do not provide more guidance overall, and sending the experiencer back is a function shared by every kind of being rather than a role of relatives. The numbers once cited for this prediction (70--73\%, 29.5\%, \ensuremath{\chi}\ensuremath{^{2}} = 41.13) are not reproducible and should not be used.
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+Greyson, B. (1983). The near-death experience scale: Construction, reliability, and validity. \emph{Journal of Nervous and Mental Disease}, 171(6), 369--375.
+
+Holm, S. (1979). A simple sequentially rejective multiple test procedure. \emph{Scandinavian Journal of Statistics}, 6(2), 65--70.
+
+Kelly, E. W. (2001). Near-death experiences with reports of meeting deceased people. \emph{Death Studies}, 25(3), 229--249.
+
+Moody, R. A. (1975). \emph{Life After Life}. Mockingbird Books.
+
+Osis, K., \& Haraldsson, E. (1977). \emph{At the Hour of Death}. Avon Books.
+
+Swedenborg, E. (1758). \emph{Heaven and Hell} (De Caelo et Ejus Mirabilibus et de Inferno). London.
+
+\newpage
+\appendix
+
+\section{Statistical Summary}\label{statistical-summary}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3373}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3373}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3253}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Test
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Statistic
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Teaching \ensuremath{\times} being type & \ensuremath{\chi}\ensuremath{^{2}} = 81.1, df = 4 & p \textless{} 0.0001, V = 0.18 \\
+Telepathic communication \ensuremath{\times} being type & \ensuremath{\chi}\ensuremath{^{2}} = 39.4, df = 4 & p \textless{} 0.0001, V = 0.12 \\
+Life guidance \ensuremath{\times} being type & \ensuremath{\chi}\ensuremath{^{2}} = 36.4, df = 4 & p \textless{} 0.0001, V = 0.12 \\
+Verbal limit \ensuremath{\times} being type & \ensuremath{\chi}\ensuremath{^{2}} = 6.7, df = 4 & p = 0.154 \\
+Divine vs relatives classifier & AUC 0.673 (0.640--0.707) & Length only 0.555 \\
+Teaching, divine vs relatives & Adjusted OR 6.27 (3.94--9.98) & Holm p \textless{} 0.0001 \\
+Guidance received, divine vs relatives & Adjusted OR 0.81 (0.61--1.09) & Holm p = 0.16 \\
+Sent back, relatives vs divine & Adjusted OR 1.11 (0.86--1.43) & p = 0.42 \\
+Comfort vs teaching within relatives & McNemar & p \textless{} 10\ensuremath{^{-40}} \\
+Archive / religion interactions & 11 functions each & none significant after Holm \\
+\end{longtable}
+}
+
+\section{Data Access}\label{data-access}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Repository}: \url{https://github.com/kayna-of-light/structured-data-analysis}
+\item
+  \textbf{Analysis Notebook}: \href{https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/07_entity_function_differentiation.ipynb}{07\_entity\_function\_differentiation.ipynb}
+\item
+  \textbf{Reliability Notebook}: \href{https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/08_extraction_reliability.ipynb}{08\_extraction\_reliability.ipynb}
+\item
+  \textbf{Figure}: \texttt{output/07\_entity\_functions.png} (generated by the notebook)
+\item
+  \textbf{Audit}: \texttt{projects/nde/docs/STATISTICAL\_AUDIT\_2026-10.md}
+\end{itemize}
+
+
+\end{document}

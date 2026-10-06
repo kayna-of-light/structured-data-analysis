@@ -2,6 +2,8 @@
 
 > **Correction notice (2026-10-05).** This report was revised after a statistical audit (`docs/STATISTICAL_AUDIT_2026-10.md`). Changes: (1) the sequence data the title refers to had never been analysed; they are now reported, and a fixed canonical order is essentially absent; (2) the life-review "15.9:1 loving:harsh" mixed life reviews with judgments recorded outside life reviews and used all 6,753 records as denominator — within life reviews the ratio is 36.2:1 but loving:critical is 1.7:1; (3) several percentages were computed on the wrong denominator (e.g. judgment sources as % of all NDEs); (4) the "four markers support" conclusion relied on criteria that could not fail; markers are now classified by what they can and cannot test; (5) agency × willingness χ² was inflated by co-missing data (4,824.8 → 1,389.0 without "not mentioned"); (6) N is 6,751 after removing two duplicate narratives, and four IANDS records previously mislabelled as NDERF are corrected. The LaTeX and PDF versions were regenerated from this corrected text.
 
+> **Reliability addendum (2026-10-06).** Coding reliability was measured with a blind second coder; see *Reliability of Near-Death Experience Narrative Coding* (`08_extraction_reliability.ipynb`). The presence of tunnel, light, life review and boundary, the elements this report sequences, agrees at Cohen's κ = 0.77–0.97. The life-review loving:harsh ratio is coder-dependent: 36.2:1 under GPT-5.2, 6.4:1 (95% CI 3.1–43.9) under the second coder. Loving:critical (1.72 vs 1.77) is stable.
+
 ## Abstract
 
 Near-death experiences are often described as following a characteristic sequence — passage, arrival in light, encounters, life review, return. The Swedenborgian framework proposes a normative path in which most souls continue in the spiritual world, with reincarnation an exception. We analysed 6,751 NDE records from NDERF (n=5,659) and IANDS (n=1,092), coded with GPT-5.2 structured extraction, for return patterns, encounters with deceased relatives, identity, life review, reincarnation indicators, transformation, and adherence to a canonical stage order.
@@ -116,7 +118,7 @@ Life reviews occurred in 1,183 NDEs (17.5%, 95% CI 16.6–18.4; brief 718, exten
 
 **Evaluator** (928 reviews with stated source): none 53.1%, guide or entity 19.9%, Being of Light 15.9%, self 10.2%, deceased relative 0.8%. About a third (36.6%) involved an external evaluator. (The earlier report gave these as percentages of all 6,753 records, including records without a life review.)
 
-**Character** (428 rated reviews): loving/gentle 50.7% (95% CI 46.0–55.4), neutral 19.9%, uncomfortable 28.0% (24.0–32.5), harsh/condemning 1.4% (0.6–3.0). Loving : harsh = 36.2 : 1 (95% CI 16.3–99.6); loving : (uncomfortable + harsh) = 1.72 : 1. Judgment fields are also filled for 26 records without a life review (8 of them harsh); the earlier 15.9 : 1 (223 : 14) mixed both groups.
+**Character** (428 rated reviews): loving/gentle 50.7% (95% CI 46.0–55.4), neutral 19.9%, uncomfortable 28.0% (24.0–32.5), harsh/condemning 1.4% (0.6–3.0). Loving : harsh = 36.2 : 1 (95% CI 16.3–99.6); loving : (uncomfortable + harsh) = 1.72 : 1. A blind second coder rated more reviews harsh. Reweighted to these 428 reviews, its harsh share is 8.7% (1.3–16.8) and loving : harsh is 6.4 : 1 (3.1–43.9), while loving : critical is 1.77 : 1. The loving : critical ratio is the coder-robust summary. Judgment fields are also filled for 26 records without a life review (8 of them harsh); the earlier 15.9 : 1 (223 : 14) mixed both groups.
 
 **Empathetic perspective** (feeling others' emotions): 18.0% of life reviews (previously reported as 2.9% of all NDEs). **Experiencer tone:** mixed is most common; love (163) and shame/regret (169) are about equally frequent.
 
@@ -169,7 +171,7 @@ The low rate of harsh evaluation in life reviews (≈1%) may be reassuring to pe
 
 ### 4.5 Limitations
 
-Self-selected online archives; LLM extraction without human validation; retrospective reports; many fields "not mentioned"; before/after pairs selected toward change; predominantly Western sample (country stated for 12%).
+Self-selected online archives; LLM extraction (inter-coder κ 0.77–0.97 for the sequence elements; judgment intensity unstable at the harsh boundary); retrospective reports; many fields "not mentioned"; before/after pairs selected toward change; predominantly Western sample (country stated for 12%).
 
 ### 4.6 Future Directions
 
@@ -203,7 +205,7 @@ Swedenborg, E. (1758). *Heaven and Hell* (G. F. Dole, Trans.). Swedenborg Founda
 | Death fear before vs after | Wilcoxon W = 1,148 (n = 327) | — | < 10⁻⁴⁵ |
 | Spirituality before vs after | Wilcoxon W = 2,198 (n = 723) | — | < 10⁻¹⁰⁰ |
 | Religiosity before vs after | Wilcoxon W = 53,538 (n = 1,168) | — | 0.58 |
-| Life review loving : harsh | 217 : 6 = 36.2 : 1 (95% CI 16.3–99.6) | — | — |
+| Life review loving : harsh | 217 : 6 = 36.2 : 1 (95% CI 16.3–99.6); second coder 6.4 : 1 (3.1–43.9) | — | — |
 | Life review loving : critical | 217 : 126 = 1.72 : 1 | — | — |
 
 ## Appendix B: Key Statistics

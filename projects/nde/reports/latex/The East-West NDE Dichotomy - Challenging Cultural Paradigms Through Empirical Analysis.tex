@@ -20,6 +20,10 @@
 \textbf{Correction notice (2026-10-05).} This report was revised after a statistical audit (\texttt{docs/STATISTICAL\_AUDIT\_2026-10.md}). Changes: (1) \textbf{the statement that inter-rater reliability was assessed (\ensuremath{\kappa} = 0.84 on 200 records) has been removed} --- no such validation exists in the repository, and the companion perception report lists human validation as future work; (2) ``deceased relatives (17.9\%) nearly twice religious figures (9.9\%)'' omitted God and Jesus from the religious-figure count --- corrected counts are 13.8--19.9\% depending on definition, and the ``inversion'' does not hold under the report's own category label; (3) ``brilliant light'' was relabelled ``impersonal light'', but more than half of those accounts identify beings and report communication; (4) the nature-vs-urban test used an invalid goodness-of-fit \ensuremath{\chi}\ensuremath{^{2}} on overlapping counts (now McNemar); (5) several appendix \ensuremath{\chi}\ensuremath{^{2}} values did not match their p-values; (6) associations are now adjusted for narrative length; (7) the boundary-type \ensuremath{\times} agency association is partly built into the category definitions; (8) the sample was described as ``Western NDEs'' although country is unknown for 88\% and 27\% of known countries are outside the West; (9) N = 6,751 after removing two duplicate narratives. The LaTeX and PDF versions were regenerated from this corrected text.
 \end{quote}
 
+\begin{quote}
+\textbf{Reliability addendum (2026-10-06).} Coding reliability has now been measured with a blind second coder; see \emph{Reliability of Near-Death Experience Narrative Coding} (\texttt{08\_extraction\_reliability.ipynb}). The deceased-relative and God-or-Jesus codes behind the relatives vs religious-figures comparison agree at Cohen's \ensuremath{\kappa} = 0.85 and 0.82. Light encounter agrees at 0.85--0.87. Boundary \emph{presence} is reliable (\ensuremath{\kappa} = 0.77), but boundary \emph{type} is not: \ensuremath{\kappa} = 0.34 among accounts both coders treat as a boundary. When a barrier and a spoken ``not your time'' co-occur, the schema gives no rule for choosing between them, so comparisons between boundary types depend on that unstated convention.
+\end{quote}
+
 }
 
 \begin{abstract}
@@ -104,7 +108,7 @@ NDERF (5,659 accounts; online questionnaire) and IANDS (1,092 narrative accounts
 
 Each record was processed with GPT-5.2 (Azure OpenAI) into the Pydantic schema in \texttt{models/questionnaire.py}. Key fields: \texttt{light\_encounter} (brilliant\_light, being\_of\_light, presence\_without\_visual, no, not\_mentioned); \texttt{being\_identifications} (multi-select); \texttt{environment\_features} (light, landscape, buildings, sky, colors, water, other); life review occurrence; \texttt{boundary\_encounter} (none, physical\_barrier, verbal\_limit, threshold, not\_mentioned); return reasons; return agency (self, external\_being, involuntary, mutual, not\_mentioned).
 
-\textbf{No human validation of the extraction has been performed.} (An earlier version of this report stated that human coders achieved \ensuremath{\kappa} = 0.84 on 200 records; no record of such a study exists, and the statement has been removed.)
+Coding reliability was measured afterwards against a blind second coder (\texttt{08\_extraction\_reliability.ipynb}, 100 random accounts): Cohen's \ensuremath{\kappa} = 0.85 for deceased relatives, 0.82 for God or Jesus, 0.85--0.87 for light encounter, 0.77 for boundary presence and 0.34 for boundary type. (An earlier version of this report stated that human coders achieved \ensuremath{\kappa} = 0.84 on 200 records; no record of such a study exists, and the statement has been removed.)
 
 \subsection{Statistical Analysis}\label{statistical-analysis}
 
@@ -315,7 +319,7 @@ Of 772 accounts with buildings, 55.3\% report no physical or verbal boundary; of
 
 \textbf{Boundary type and return agency} (boundary reported and agency stated, n = 2,733): external being decided in 70.5\% of verbal limits and 58.4\% of physical barriers; self in 48.8\% of thresholds (\ensuremath{\chi}\ensuremath{^{2}} = 683.8, df = 6, Cram\'{e}r's V = 0.35; the earlier \ensuremath{\chi}\ensuremath{^{2}} = 3,724.7 with df = 16 --- 3,728.7 on the deduplicated data --- included the ``none'' and ``not mentioned'' categories).
 
-\textbf{Finding with caveat.} The association is partly built into the categories: a verbal limit is by definition a being telling the experiencer to go back, and a threshold is typically the experiencer's own sense of a limit. It is therefore expected from the coding and cannot by itself show that the boundary \emph{is} the return decision. That reading is a framework interpretation. Physical barriers co-occur with water in 11.3\% of cases.
+\textbf{Finding with caveat.} The association is partly built into the categories: a verbal limit is by definition a being telling the experiencer to go back, and a threshold is typically the experiencer's own sense of a limit. It is therefore expected from the coding and cannot by itself show that the boundary \emph{is} the return decision. That reading is a framework interpretation. Boundary type is also the least reliable code in the reliability study (\ensuremath{\kappa} = 0.34): in accounts with both a barrier and a spoken limit, the two coders chose different types. Physical barriers co-occur with water in 11.3\% of cases.
 
 Two earlier arguments were removed as invalid: that unequal frequencies of boundary types show they are ``not consistent representations of the same phenomenon'' (frequency says nothing about consistency), and that 58\% returning without a boundary shows boundaries are not points of no return (everyone in the dataset returned; the earlier version itself noted this is untestable).
 
@@ -372,7 +376,7 @@ Cross-cultural comparisons need common, documented denominators; large, systemat
 
 \subsection{Limitations}\label{limitations}
 
-Self-selected archives; no human validation of LLM extraction; ``not mentioned'' treated as absence for prevalence figures; country unknown for 88\%; no non-Western comparison sample; claimed rates of uncertain provenance.
+Self-selected archives; LLM extraction (inter-coder \ensuremath{\kappa} \ensuremath{\geq} 0.77 for the main fields, but 0.34 for boundary type); ``not mentioned'' treated as absence for prevalence figures; country unknown for 88\%; no non-Western comparison sample; claimed rates of uncertain provenance.
 
 \section{Conclusion}\label{conclusion}
 
