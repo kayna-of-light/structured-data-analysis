@@ -1,5 +1,7 @@
 # Direct Perception Through Discrete Degrees: Empirical Analysis of Perceptual Depth in Near-Death Experiences
 
+> **Correction notice (2026-10-06).** H1 and H3 tested an assignment of each marker to **one** degree. That assignment is not Swedenborg's: in *Divine Love and Wisdom* every least thought and mental image contains all the degrees (§§222–229), and the earthly mind, which narrates the experience, is a continuum enlightened "gradually", not "by distinct levels" (§256). Their results stand as data: no prevalence hierarchy, one dominant factor. They are no longer scored as misses of the doctrine; they are *not tests of it*. A test of the doctrine as written was registered in advance and run in `09_perception_continuum_test.ipynb` (new H7, §3.7): the registered verdict is **underdetermined**. §1.2 now uses the author's state-shift wording in place of "biological filtering" (filter language is not a framework position).
+
 > **Correction notice (2026-10-05).** This report was revised after a statistical audit (`docs/STATISTICAL_AUDIT_2026-10.md`). The original statistics were mostly computed correctly, but several conclusions went beyond them. Changes:
 > 1. **Factor structure.** The two-factor solution was imposed (`n_factors = 2`), not found. Every retention criterion gives one factor, so "internal differentiation" is withdrawn.
 > 2. **Score distribution.** The right-skewed distribution was called "exactly what discrete degree theory predicts". Seven *independent* markers with these prevalences would also be right-skewed, so the skew is not diagnostic.
@@ -21,7 +23,7 @@
 
 **Results**: The markers form an internally consistent scale (KR-20 = 0.738; KMO = 0.817; 21/21 positive correlations). Narrative length explains 41% of score variance; controlling for it halves the mean inter-marker correlation (0.29 → 0.15), but the six non-telepathic markers still cohere (15/15 significant), while telepathy no longer correlates with them. Every retention criterion gives one factor; the predicted prevalence hierarchy is not observed (ρ = −0.47, p = 0.28). The right-skewed distribution is also produced by independent markers and is not diagnostic. Being-of-Light accounts score higher (d = 0.589), but after length adjustment the difference is +0.39 markers (95% CI 0.28–0.49), carried by comparative reality (OR 1.87) and telepathy (OR 3.90). Christian and atheist/agnostic experiencers score the same (difference −0.005; TOST within ±0.5, p = 0.005; length-adjusted +0.02).
 
-**Conclusions**: NDE accounts contain one dominant dimension of enhanced perception that is not produced by narrative length alone and does not differ between Christian and non-religious experiencers — consistent with a universal perceptual state rather than religious priming. The predictions specific to *discrete* degrees — a prevalence hierarchy and degree-aligned factors — are not supported. The Being-of-Light association survives, attenuated, for the two markers assigned to the celestial degree.
+**Conclusions**: NDE accounts contain one dominant dimension of enhanced perception that is not produced by narrative length alone and does not differ between Christian and non-religious experiencers — consistent with a universal perceptual state rather than religious priming. A prevalence hierarchy and degree-aligned factors are absent, but these tested a one-degree-per-marker assignment that the doctrine of discrete degrees does not make. A pre-registered test of the doctrine as written — one cumulative continuum — is underdetermined: five markers form a monotone cumulative scale, but the seven together fall short of scale strength once narrative length is controlled (H = 0.245). The Being-of-Light association survives, attenuated, for the two markers assigned to the celestial degree.
 
 **Keywords**: near-death experience, discrete degrees, perception, Swedenborg, correspondences, factor analysis, Being of Light, cultural invariance, equivalence testing
 
@@ -33,7 +35,7 @@
 |------|--------|--------|
 | NDERF accounts (n=5,659) | Near-Death Experience Research Foundation | [nderf.org](https://nderf.org) |
 | IANDS accounts (n=1,092) | International Association for Near-Death Studies | [iands.org](https://iands.org) |
-| Analysis code | `06_cognitive_mode_profile.ipynb` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/06_cognitive_mode_profile.ipynb) |
+| Analysis code | `06_cognitive_mode_profile.ipynb`; registered continuum test `09_perception_continuum_test.ipynb` | [Repository](https://github.com/kayna-of-light/structured-data-analysis/tree/main/projects/nde/notebooks/06_cognitive_mode_profile.ipynb) |
 | Data loader | `scripts/nde_dataset.py` | Repository |
 | Structured data | `projects/nde/structured/*.json` | [Repository](https://github.com/kayna-of-light/structured-data-analysis) (6,753 files; 6,751 unique narratives) |
 | Extraction model | GPT-5.2 via Azure OpenAI | Structured output with Pydantic schema |
@@ -52,22 +54,25 @@ Swedenborg's doctrine of discrete degrees (1758, 1763) proposes three levels of 
 
 | Degree | Mode of Perception | Key Property |
 |--------|-------------------|--------------|
-| **Natural** | Sensory-mediated, sequential, spatiotemporal | Filtered by biological constraints |
+| **Natural** | Sensory-mediated, sequential, spatiotemporal | Ordinarily the degree in operation |
 | **Spiritual** | Direct knowing through understanding; truth-mediated | Access to meaning without sensory intermediation |
 | **Celestial** | Direct knowing through love; affection-mediated | Perception through union rather than understanding |
 
-In embodied life, biological filtering constrains awareness to the natural degree; the higher degrees are present as capacities, and the ruling love determines which is developed. If filtering is suspended during an NDE, perception should reflect the degree already developed.
+In embodied life, the natural degree is the one in operation; the higher degrees are present as capacities, and the ruling love determines which is developed. If a state-shift occurs during an NDE — operation passing from the natural degree to a degree already developed by the individual's ruling love, rather than a constraint being lifted from a mind held behind it — perception should reflect the degree already developed.
+
+The degrees are not separate kinds of perception that occur one at a time. In a "simultaneous arrangement" the highest degree is the centre and the lowest the circumference (*Divine Love and Wisdom* §§205–208), and "every least bit of thought, even every least bit of a mental image, is made up of levels of both kinds" (§§222–229; tr. Dole). The earthly mind — the mind that later narrates the experience — "is a continuum"; it is enlightened from within by the higher degrees, but "this enlightenment … does not happen by distinct levels. There is instead a gradual increase" (§256). On the doctrine as written, then, no single marker belongs to one degree, and reported depth should vary along one continuum rather than separate into degree-specific layers.
 
 ### 1.3 Hypotheses
 
 | # | Hypothesis | What would distinguish discrete degrees from a single intensity dimension |
 |---|---|---|
-| H1 | Prevalence gradient: natural markers most common, celestial least | Yes |
+| H1 | Prevalence gradient: natural markers most common, celestial least | Tests the one-degree-per-marker assignment, which the doctrine does not make (§1.2) |
 | H2 | The markers form a coherent construct | No (any shared state predicts this) |
-| H3 | Internal structure with 2+ factors aligned with the degrees | Yes |
+| H3 | Internal structure with 2+ factors aligned with the degrees | Tests the same assignment (§1.2) |
 | H4 | Being-of-Light encounter correlates with deeper perception | Partly (if the effect concentrates on higher-degree markers) |
 | H5 | The profile is constant across religious backgrounds | No (constant state) |
 | H6 | The score shows a gradient rather than all-or-none activation | Only if it differs from what independent or length-driven markers produce |
+| H7 | The markers form one cumulative continuum (Mokken scale), length-controlled — registered before analysis | Tests the doctrine's simultaneous order and gradual enlightenment (§1.2); see `09_perception_continuum_test.ipynb` |
 
 ---
 
@@ -99,6 +104,7 @@ Each marker is binary (1 = present; 0 = absent or not mentioned). The composite 
 - **Distribution**: observed score distribution vs the Poisson-binomial distribution expected if the seven markers were independent with their observed prevalences
 - **Being of Light**: t-test, Mann-Whitney U, Cohen's d; per-marker χ² and crude/length-adjusted odds ratios
 - **Religion**: one-way ANOVA with η², Kruskal–Wallis, TOST equivalence (±0.5 markers) for Christian vs atheist/agnostic, per-marker χ² with Holm correction and expected-count checks
+- **Continuum (H7, registered 2026-10-06 before analysis)**: Mokken scalability coefficients (H, Hᵢ, Hᵢⱼ) raw and within log-length quintiles (primary), 1,000-resample bootstrap CIs; automated item selection at c = 0.30; manifest monotonicity on rest-score groups; replication by archive. Decision rule fixed in advance: hit if length-stratified H ≥ 0.30 with one scale of ≥ 5 items, no monotonicity violation and both archives ≥ 0.30; miss if H < 0.20, two or more scales, or the archives disagree; otherwise underdetermined
 
 ---
 
@@ -120,7 +126,7 @@ Each marker is binary (1 = present; 0 = absent or not mentioned). The composite 
 
 Rank correlation between assigned degree and prevalence: Spearman ρ = −0.47 (predicted sign), p = 0.28, n = 7.
 
-**Finding (H1 — not supported).** The most prevalent marker (reality certainty, 58.2%) and the least prevalent (thought speed, 14.9%) are both assigned to the spiritual degree; the celestial telepathy marker (27.0%) is as common as the natural memory marker (28.9%). The spread within the spiritual degree is larger than the differences between degrees. When a feature is mentioned at all, positive responses dominate (48–97%), so prevalence depends largely on whether the narrative addresses the feature.
+**Finding (H1 — not observed; a test of the marker assignment, not of the doctrine).** The most prevalent marker (reality certainty, 58.2%) and the least prevalent (thought speed, 14.9%) are both assigned to the spiritual degree; the celestial telepathy marker (27.0%) is as common as the natural memory marker (28.9%). The spread within the spiritual degree is larger than the differences between degrees. When a feature is mentioned at all, positive responses dominate (48–97%), so prevalence depends largely on whether the narrative addresses the feature.
 
 ### 3.2 Construct Validity (H2)
 
@@ -160,7 +166,7 @@ KR-20 computed within narrative-length quintiles: 0.40, 0.42, 0.48, 0.58, 0.65 (
 
 **Length-controlled structure.** The second component contrasts time perception, thought speed and telepathy (loadings 0.46, 0.33, 0.53) with memory and reality certainty (−0.49, −0.45); the third is dominated by telepathy (0.76). In a two-factor minres solution on the length-controlled matrix, thought speed, sensory vividness and time load on one factor (0.58, 0.44, 0.40), and memory, reality certainty and sensory vividness on the other (0.49, 0.49, 0.40); telepathy loads on neither.
 
-**Finding (H3 — not supported).** On the raw data, every criterion retains one factor. After length control, weak additional dimensions appear, but they do not follow the proposed assignment: reality certainty (spiritual) groups with memory (natural), and the two celestial markers do not form a factor. The data describe one dominant dimension of perceptual intensity, with minor sub-structure that does not correspond to discrete degrees.
+**Finding (H3 — not observed; a test of the marker assignment, not of the doctrine).** On the raw data, every criterion retains one factor. After length control, weak additional dimensions appear, but they do not follow the proposed assignment: reality certainty (spiritual) groups with memory (natural), and the two celestial markers do not form a factor. The data describe one dominant dimension of perceptual intensity, with minor sub-structure that does not correspond to discrete degrees.
 
 ### 3.4 The Score Distribution (H6)
 
@@ -266,18 +272,38 @@ ANOVA F(6, 1507) = 0.331, p = 0.921, η² = 0.0013; Kruskal–Wallis H = 1.87, p
 
 ---
 
+### 3.7 One Cumulative Continuum (H7, registered)
+
+The prediction, analysis plan and decision rule were committed before any computation (`09_perception_continuum_test.ipynb`, first cell). The seven markers are those of §2.2, unchanged.
+
+| Statistic | Value |
+|---|---|
+| Raw scale H | 0.422 (95% CI 0.408–0.437) |
+| **Length-stratified scale H (primary)** | **0.245 (0.231–0.259)** |
+| H within length quintiles, shortest → longest | 0.157, 0.184, 0.201, 0.261, 0.304 |
+| Automated item selection (c = 0.30) | One scale: reality certainty, comparative reality, sensory vividness, thought speed, memory persistence (H = 0.40, min Hᵢ = 0.32); time perception and telepathy unscalable |
+| Manifest monotonicity | No violation > 0.03 for any item |
+| By archive (length-stratified) | NDERF 0.251; IANDS 0.233 |
+
+Length-stratified item coefficients: reality certainty 0.43, comparative reality 0.34, sensory vividness 0.31, thought speed 0.27, memory persistence 0.22, time perception 0.20, telepathy 0.07.
+
+**Finding (H7 — underdetermined by the registered rule).** The markers do not split into separate scales; five form one monotone cumulative continuum after narrative length is controlled, and the two archives agree. Across all seven pre-specified markers, the cumulative structure falls short of scale strength once length is controlled (0.245 against the 0.30 threshold, above the 0.20 miss line). Scalability rises with narrative length, so short accounts may be too brief to show the structure, or the structure in long accounts may partly be descriptive completeness; the data cannot separate these. The five-item scale was selected on these data, so its H = 0.40 is not a test result. Reliability is measured only for telepathy (κ = 0.88) and comparative reality (κ = 0.74).
+
+---
+
 ## 4. Discussion
 
 ### 4.1 Summary
 
 | Hypothesis | Result | Assessment |
 |---|---|---|
-| H1 Prevalence hierarchy | Most and least prevalent markers both "spiritual"; ρ = −0.47, p = 0.28 | **Not supported** |
+| H1 Prevalence hierarchy | Most and least prevalent markers both "spiritual"; ρ = −0.47, p = 0.28 | **Not observed** — tests the marker assignment, not the doctrine |
 | H2 Coherent construct | KR-20 0.74, KMO 0.82; six markers cohere after length control (15/15) | **Supported** (six markers); telepathy's membership is a length artefact |
-| H3 Degree-aligned factors | One factor by every criterion; weak length-controlled sub-structure not degree-aligned | **Not supported** |
+| H3 Degree-aligned factors | One factor by every criterion; weak length-controlled sub-structure not degree-aligned | **Not observed** — tests the marker assignment, not the doctrine |
 | H6 Gradient | Right-skewed with excess 0s and 5–7s; 41% of variance is narrative length | Observed, **not diagnostic** |
 | H4 Being of Light ↔ deeper perception | d = 0.59 crude; +0.39 adjusted; celestial markers only (OR 1.87, 3.90) | **Partially supported** |
 | H5 Religious invariance | Christian = atheist/agnostic (TOST p = 0.005; adjusted diff +0.02) | **Supported** for Christian vs non-religious |
+| H7 One cumulative continuum (registered) | Length-stratified H = 0.245; one 5-item monotone scale; archives agree | **Underdetermined** |
 
 ### 4.2 Interpretation
 
@@ -288,7 +314,9 @@ ANOVA F(6, 1507) = 0.331, p = 0.921, η² = 0.0013; Kruskal–Wallis H = 1.87, p
 
 **Reasonable interpretation.** The religious invariance fits the framework's "constant state, variable form". The underlying state does not depend on the experiencer's religious repertoire. This result does not, on its own, discriminate between the framework and a universal neurophysiological account, which also predicts invariance. The framework does, however, predict this result, and religious-priming accounts predict the opposite; so with respect to priming it is a hit. The concentration of the Being-of-Light effect on the celestial markers is likewise the pattern the framework predicts.
 
-**Not supported.** The data do not show *discrete* degrees: there is no prevalence hierarchy, and the factors are not degree-aligned. What they show is a single intensity dimension. Discrete degrees might still describe the experience. But these seven markers, as coded, cannot resolve them, or the degree assignments are wrong.
+**Not a test of the doctrine.** There is no prevalence hierarchy, and the factors are not degree-aligned; the data show a single intensity dimension. H1 and H3 expected separate per-degree layers because they assigned each marker to one degree. The doctrine does not: every perception contains all the degrees, and the earthly mind receives them as a continuum (§1.2). The earlier verdict, "discrete degrees not supported", scored the framework on a prediction it does not make and is withdrawn.
+
+**Underdetermined.** The registered test of the doctrine as written (H7) finds one cumulative continuum among five markers but not a scale of the seven pre-specified markers once length is controlled. A single dimension is also what many non-correspondential accounts of perceptual intensity would predict, so even a hit on H7 would be consistent with the doctrine rather than discriminating for it.
 
 **Withdrawn.** The earlier version said the framework "outperforms the materialist null hypothesis (which predicts no coherent structure) and the universal activation hypothesis (which predicts a left-skewed distribution)". Neither alternative was specified or tested, and the claim is withdrawn.
 
@@ -303,14 +331,15 @@ The earlier version linked these findings to the 32 geometric signs found in Eur
 3. **AI-extracted data**: GPT-5.2 coding. Inter-coder agreement is high for telepathy (κ = 0.88) and acceptable for comparative reality (κ = 0.74, test–retest 0.58); the other five markers are untested.
 4. **Sample composition**: one of the seven named religious backgrounds is stated in 22.4% of accounts (24.1% including "other"), 84.7% of them Christian; other traditions n = 14–43.
 5. **Self-selected, predominantly Western archives.**
-6. **Degree assignment is theoretical**: the mapping of markers to degrees is not empirically derived, and the data do not recover it.
+6. **Degree assignment is theoretical and not the doctrine's**: the mapping of each marker to one degree (H1, H3) was the analysts' construction; the doctrine places all degrees in every perception (§1.2).
 
 ### 4.5 Future Directions
 
-1. Second coding of the five untested markers on a random subsample, as done for telepathy and comparative reality in `08_extraction_reliability.ipynb`
-2. Confirmatory factor analysis comparing a one-factor model with a three-factor degree model, with narrative length as a covariate, ideally on graded rather than binary items
-3. Non-Western samples with adequate size for equivalence tests in each tradition
-4. Separating "not mentioned" from "absent" through structured follow-up questionnaires
+1. A confirmatory run of `09_perception_continuum_test.ipynb`, unchanged, on accounts submitted after 2026-10-06
+2. Second coding of the five untested markers on a random subsample, as done for telepathy and comparative reality in `08_extraction_reliability.ipynb`
+3. Graded rather than binary items, so that a cumulative continuum can be estimated with item-response models
+4. Non-Western samples with adequate size for equivalence tests in each tradition
+5. Separating "not mentioned" from "absent" through structured follow-up questionnaires
 
 ---
 
@@ -318,9 +347,9 @@ The earlier version linked these findings to the 32 geometric signs found in Eur
 
 Seven perception markers from 6,751 NDE accounts form an internally consistent scale (KR-20 = 0.74). Six of them still cohere after controlling for how much each account says, so the construct is not an artefact of narrative length. Telepathic communication is the exception. The construct is the same in Christian and non-religious experiencers (equivalence within ±0.5 markers), consistent with a universal perceptual state rather than religious priming.
 
-Being-of-Light encounters are associated with more "more real than real" and telepathic perception, even after length adjustment. These are the two markers assigned to the celestial degree. The predictions specific to *discrete* degrees are not supported: no prevalence hierarchy, and a single dominant factor rather than degree-aligned strata. The right-skewed "gradient" is real but does not discriminate between models.
+Being-of-Light encounters are associated with more "more real than real" and telepathic perception, even after length adjustment. These are the two markers assigned to the celestial degree. There is no prevalence hierarchy and no set of degree-aligned strata, but those were predictions of a one-degree-per-marker assignment, not of the doctrine, which places every degree in every perception. Tested as the doctrine describes it — one cumulative continuum — the result registered in advance is underdetermined: five markers form one monotone scale, but the seven together fall short of scale strength once length is controlled. The right-skewed "gradient" is real but does not discriminate between models.
 
-The framework's prediction of a constant underlying state is supported against religious priming. Its prediction of discrete perceptual degrees is not supported by these markers.
+The framework's prediction of a constant underlying state is supported against religious priming. Its account of the degrees in perception is neither confirmed nor refuted by these markers.
 
 ---
 
@@ -364,11 +393,13 @@ van Lommel, P. (2010). *Consciousness Beyond Life: The Science of the Near-Death
 | One-way ANOVA | Religion × score | F = 0.331, η² = 0.0013 | 6, 1507 | 0.921 |
 | Kruskal–Wallis | Religion × score | H = 1.87 | 6 | 0.931 |
 | TOST (±0.5) | Christian vs atheist/agnostic | diff = −0.005 | — | 0.005 |
+| Mokken H (length-stratified; registered) | 7 markers | H = 0.245 (0.231–0.259) | — | — |
+| Mokken H (raw) | 7 markers | H = 0.422 (0.408–0.437) | — | — |
 
 ## Appendix B: Data Access
 
 - **Repository**: [structured-data-analysis](https://github.com/kayna-of-light/structured-data-analysis)
-- **Analysis notebook**: `projects/nde/notebooks/06_cognitive_mode_profile.ipynb`
+- **Analysis notebooks**: `projects/nde/notebooks/06_cognitive_mode_profile.ipynb`; `projects/nde/notebooks/09_perception_continuum_test.ipynb` (registered continuum test)
 - **Structured data**: `projects/nde/structured/*.json` (6,753 files; 6,751 unique narratives)
 - **Extraction schema**: `projects/nde/models/questionnaire.py`
 - **Audit**: `projects/nde/docs/STATISTICAL_AUDIT_2026-10.md`
