@@ -30,6 +30,11 @@ Structured analysis of recurring "Mall World" dream reports from r/TheMallWorld.
 | `06_exploratory_report_claims` | Claims of the archived exploratory report |
 | `07_preregistered_correspondence_tests` | Tests registered in `docs/PREREGISTRATION_2026-10.md` |
 | `08_extraction_reliability` | Blind second coding of 119 dreams (`validation/`) |
+| `09_state_measurement` | State-dynamics redesign: scene and experiencer state measures, transitions, choices and influences (measurement only) |
+
+## State-dynamics redesign (in progress)
+
+`docs/STATE_DYNAMICS_DESIGN_2026-10.md` treats MallWorld as a common intermediate state experienced through each visitor's own state, and asks how state evolves: who or what influences it, what arises from it, and how the person's choices go with its change. It is a draft awaiting the owner's review; its predictions are registered only when it is committed with status "Registered".
 
 ## Reports
 
