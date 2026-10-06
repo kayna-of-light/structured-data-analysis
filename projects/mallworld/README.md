@@ -31,10 +31,18 @@ Structured analysis of recurring "Mall World" dream reports from r/TheMallWorld.
 | `07_preregistered_correspondence_tests` | Tests registered in `docs/PREREGISTRATION_2026-10.md` |
 | `08_extraction_reliability` | Blind second coding of 119 dreams (`validation/`) |
 | `09_state_measurement` | State-dynamics redesign: scene and experiencer state measures, transitions, choices and influences (measurement only) |
+| `10_state_dynamics_tests` | Registered state-dynamics tests (H1–H4), secondary analyses and the contagion check |
 
-## State-dynamics redesign (in progress)
+## State-dynamics redesign
 
-`docs/STATE_DYNAMICS_DESIGN_2026-10.md` treats MallWorld as a common intermediate state experienced through each visitor's own state, and asks how state evolves: who or what influences it, what arises from it, and how the person's choices go with its change. It is a draft awaiting the owner's review; its predictions are registered only when it is committed with status "Registered".
+`docs/STATE_DYNAMICS_DESIGN_2026-10.md` (registered, commit `6be44a3b`) treats MallWorld as a common intermediate state experienced through each visitor's own state. It asks how state evolves: who or what influences it, what arises from it, and how the person's choices go with its change.
+
+**Results (notebook 10):**
+- the person's state leads the next place, and not the reverse (**hit**);
+- a presence perceived as benign is felt (**hit**, not discriminating);
+- whether people move toward what they treat as good is untested: the registered index was a **miss** and did not measure orientation;
+- consistency of approach across a person's dreams is **underdetermined**;
+- the shared motifs are not mainly community contagion.
 
 ## Reports
 
@@ -42,6 +50,7 @@ Structured analysis of recurring "Mall World" dream reports from r/TheMallWorld.
 - *Entities, Animals and Narrative Dynamics in MallWorld Dreams: A Corrected Re-analysis*
 - *Pre-registered Correspondential Tests in MallWorld Dreams: Animals, the Deceased and Ruling Love*
 - *Reliability of MallWorld Dream Coding: Blind Second Coding of 119 Dream Reports*
+- *State Dynamics in MallWorld Dreams: Registered Tests of Who Leads, What Is Approached and Perceived Influence*
 
 The Markdown files in `reports/` are the source of truth. Regenerate the LaTeX with:
 

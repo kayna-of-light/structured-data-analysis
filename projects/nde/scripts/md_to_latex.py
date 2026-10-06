@@ -50,6 +50,7 @@ SYMBOLS = {
     "α": r"\ensuremath{\alpha}",
     "φ": r"\ensuremath{\phi}",
     "×": r"\ensuremath{\times}",
+    "·": r"\ensuremath{\cdot}",
     "−": r"\ensuremath{-}",
     "≈": r"\ensuremath{\approx}",
     "≠": r"\ensuremath{\neq}",
