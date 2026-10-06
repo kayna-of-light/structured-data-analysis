@@ -219,7 +219,7 @@ Two items the first pass left open were analysed in new notebooks, each with a r
 
 ### 9.1 Entity Function Differentiation (notebook 07)
 
-The `CLAUDE.md` figures for this prediction (χ² = 41.13; 70–73% guidance; 29.5% "told to return") were not produced by any notebook. Guidance and return are recorded per account, so functions were attributed to five exclusive being types (accounts with one kind of being, n = 2,634).
+The `CLAUDE.md` figures for this prediction (χ² = 41.13; 70–73% guidance; 29.5% "told to return") were not produced by any notebook. The percentages appear to come from the legacy script `scripts/entity_role_analysis.py`. That script read the pre-2026 schema from a directory that no longer exists, reported "told to return" as a share of all records, and ran no χ² test. Guidance and return are recorded per account, so functions were attributed to five exclusive being types (accounts with one kind of being, n = 2,634).
 
 - Ten of 11 functions differ across types after Holm correction (V 0.07–0.18). The function profile separates divine from relative encounters beyond narrative length (cross-validated AUC 0.673 vs 0.555).
 - Divine figures teach far more than relatives (23.0% vs 4.5%; length-adjusted OR 6.27, 3.94–9.98). They also communicate telepathically more (OR 1.83) and commission missions more (OR 1.62). They do **not** give more guidance overall (OR 0.81).
