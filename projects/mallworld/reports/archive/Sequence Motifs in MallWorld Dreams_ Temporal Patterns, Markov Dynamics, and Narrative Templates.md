@@ -1,3 +1,15 @@
+> **WITHDRAWN, 2026-10-06.** Do not cite figures from this report. It was written before the October 2026 audit. The audit found:
+>
+> - **Cannot run.** Its notebook reads files that do not exist.
+> - **Labels, not returns.** "Loops" and "traps" are repeated type labels, mostly the residual category "other".
+> - **Label frequency.** The Markov "attractor" restates label frequency.
+> - **Chance.** The arc distribution is what random ordering produces.
+> - **No source.** The "529 vs 456" count appears in no output.
+>
+> Every withdrawn figure and its correction is listed in `docs/STATISTICAL_AUDIT_2026-10.md`. Corrected analyses:
+>
+> - [Entities, Animals and Narrative Dynamics in MallWorld Dreams - A Corrected Re-analysis](../Entities,%20Animals%20and%20Narrative%20Dynamics%20in%20MallWorld%20Dreams%20-%20A%20Corrected%20Re-analysis.md)
+
 # Sequence Motifs in MallWorld Dreams: Temporal Patterns, Markov Dynamics, and Narrative Templates
 
 ## Abstract

@@ -1,0 +1,142 @@
+% MallWorld Research Report Preamble
+% Common settings for all MallWorld research reports (copied from the NDE preamble)
+% Include with: \input{mallworld-report-preamble}
+
+\documentclass[11pt,a4paper]{article}
+
+% ============================================================================
+% PACKAGES
+% ============================================================================
+
+% Encoding and fonts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}           % Times Roman font
+\usepackage{microtype}          % Better typography
+
+% Layout and formatting
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{parskip}            % Paragraph spacing
+\usepackage{titlesec}           % Section formatting
+
+% Tables and figures
+\usepackage{booktabs}           % Professional tables
+\usepackage{tabularx}           % Flexible column widths
+\usepackage{longtable}          % Multi-page tables
+\usepackage{graphicx}           % Images
+\usepackage{float}              % Better float control
+
+% Mathematics
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Lists
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt}
+\setlist[enumerate]{noitemsep, topsep=0pt}
+
+% References and links
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
+\usepackage{url}
+\urlstyle{same}
+
+% Bibliography
+\usepackage[numbers,sort&compress]{natbib}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightgray}{RGB}{245,245,245}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\leftmark}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Abstract formatting
+\usepackage{abstract}
+\renewcommand{\abstractnamefont}{\normalfont\bfseries}
+\renewcommand{\abstracttextfont}{\normalfont}
+
+% ============================================================================
+% SECTION FORMATTING
+% ============================================================================
+
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% ============================================================================
+% CUSTOM COMMANDS
+% ============================================================================
+
+% Statistical notation
+\newcommand{\chisq}{\ensuremath{\chi^2}}
+\newcommand{\pvalue}[1]{\ensuremath{p #1}}
+\newcommand{\nequals}[1]{\ensuremath{n=#1}}
+\newcommand{\Nequals}[1]{\ensuremath{N=#1}}
+
+% Finding box
+\newcommand{\criticalfinding}[1]{%
+  \vspace{0.5em}
+  \noindent\textbf{Critical Finding:} #1
+  \vspace{0.5em}
+}
+
+\newcommand{\finding}[1]{%
+  \vspace{0.5em}
+  \noindent\textbf{Finding:} #1
+  \vspace{0.5em}
+}
+
+% Keywords
+\newcommand{\keywords}[1]{%
+  \vspace{1em}
+  \noindent\textbf{Keywords:} #1
+}
+
+% Data provenance
+\newenvironment{dataprovenance}{%
+  \section*{Data Provenance}
+  \begin{tabularx}{\textwidth}{lXl}
+  \toprule
+  \textbf{Item} & \textbf{Source} & \textbf{Access} \\
+  \midrule
+}{%
+  \bottomrule
+  \end{tabularx}
+}
+
+% ============================================================================
+% TITLE PAGE SETTINGS
+% ============================================================================
+
+\newcommand{\reporttitle}[2]{%
+  \title{%
+    \vspace{-2cm}
+    {\LARGE\bfseries #1}\\[0.5em]
+    {\Large #2}
+  }
+}
+
+\newcommand{\reportauthors}{%
+  \author{%
+    MallWorld Research Project\\
+    \small Structured Data Analysis Repository\\
+    \small\url{https://github.com/kayna-of-light/structured-data-analysis}
+  }
+}
+
+\date{\today}
+
+% ============================================================================
+% END PREAMBLE
+% ============================================================================

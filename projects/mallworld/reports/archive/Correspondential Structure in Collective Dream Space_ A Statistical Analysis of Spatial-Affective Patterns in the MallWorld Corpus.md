@@ -1,3 +1,19 @@
+> **WITHDRAWN, 2026-10-06.** Do not cite figures from this report. It was written before the October 2026 audit. The audit found:
+>
+> - **Population.** It analysed 2,678 posts, including 750 non-dream posts: questions, AI images and map-only posts.
+> - **No source.** Several headline figures appear in no notebook output: vertical ρ = 0.25–0.30; the bathroom 44.2% vs 7.5%; the whole of §6 (F = 47.82, partial r = 0.751, R² 0.398, χ² = 54.17); and Cochran's Q.
+> - **Join and binning bugs.** The entity-autonomy and animal results (§§4.3, 5.2) came from a join that matched entities to locations in other dreams, and from a binning error.
+> - **Not an ICC.** The animal "ICC 0.630" is not an intraclass correlation.
+> - **Inference.** No test accounted for locations nested in dreams.
+> - **Not pre-registered.** The "pre-registered" plan was written after the reports.
+>
+> Every withdrawn figure and its correction is listed in `docs/STATISTICAL_AUDIT_2026-10.md`. Corrected analyses:
+>
+> - [Spatial Correspondences in MallWorld Dreams - A Corrected Re-analysis of Height, Water, Light and Exposure](../Spatial%20Correspondences%20in%20MallWorld%20Dreams%20-%20A%20Corrected%20Re-analysis%20of%20Height,%20Water,%20Light%20and%20Exposure.md)
+> - [Entities, Animals and Narrative Dynamics in MallWorld Dreams - A Corrected Re-analysis](../Entities,%20Animals%20and%20Narrative%20Dynamics%20in%20MallWorld%20Dreams%20-%20A%20Corrected%20Re-analysis.md)
+> - [Pre-registered Correspondential Tests in MallWorld Dreams - Animals, the Deceased and Ruling Love](../Pre-registered%20Correspondential%20Tests%20in%20MallWorld%20Dreams%20-%20Animals,%20the%20Deceased%20and%20Ruling%20Love.md)
+> - [Extraction Reliability - Blind Second Coding of MallWorld Dream Reports](../Extraction%20Reliability%20-%20Blind%20Second%20Coding%20of%20MallWorld%20Dream%20Reports.md)
+
 # Correspondential Structure in Collective Dream Space: A Statistical Analysis of Spatial-Affective Patterns in the MallWorld Corpus
 
 ## Abstract
