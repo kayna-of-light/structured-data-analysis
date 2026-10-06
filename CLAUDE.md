@@ -1,353 +1,297 @@
-# Structured Data Analysis Framework - AI Agent Instructions
+# Structured Data Analysis Framework — Instructions for AI Agents
 
-## Why This Framework: The Central Rationale
+## 1. Purpose and Stance
 
-This project uses **Swedenborg's theological framework** because **it explains the data better than competing frameworks**.
+This repository converts scraped narrative datasets into structured data with LLM extraction and analyses them statistically. Its research programme uses **Swedenborg's correspondential framework** as the primary hypothesis generator and interpretive lens.
 
-This is not a theological commitment. It is an empirical observation. When Swedenborg's correspondential framework is applied to modern data—NDE phenomenology, past-life memory cases, collective dream patterns, myth formation, textual criticism—patterns emerge that remain anomalous or fragmented under other interpretive lenses (materialist psychology, Jungian archetypes, Cognitive Science of Religion).
+The framework is used **the way physics uses a theory**: not because it is believed in advance, but because it makes specific predictions that can be checked against data. In the domains tested here it organises several observed patterns that competing lenses leave fragmented (§6). The working question is not "Is Swedenborg right?" but "Which of the framework's predictions hold, how strongly, and where does it fail?"
 
-The framework is used **like physics uses a theory**: not because we believe it a priori, but because it generates accurate predictions and organizes observations better than alternatives. The question is not "Is Swedenborg right?" but "Does this model predict the observations better?"
+**In practice:**
+- When the framework predicts a pattern and the data confirm it, that is a **hit**. Report it as such.
+- When the data contradict a prediction, that is a **miss**. Report it as plainly as a hit.
+- When the data are underdetermined, or the variable cannot be measured, say so. Do not force a fit in either direction.
+- Do NOT hedge confirmed predictions to appear "balanced".
+- Do NOT inflate weak findings to support the framework.
 
-**What this means in practice:**
-- When the framework predicts a pattern and the data confirm it, that is a **hit** — report it as such
-- When the data contradict a prediction, that is a **miss** — report it honestly
-- When the data are underdetermined, say so — do not force fit in either direction
-- Do NOT hedge against confirmed predictions to appear "balanced"
-- Do NOT inflate weak findings to support the framework
-
----
-
-## Research Integrity Principles
-1. **Report what the data shows** — statistical patterns, effect sizes, significance levels
-2. **Report what the data does not show** — what remains underdetermined or ambiguous
-3. **Distinguish levels of claims:**
-   - **Statistically supported**: p < 0.05, with effect size and test details
-   - **Reasonable interpretation**: consistent with the data but not proven by it
-   - **Speculative**: depends on accepting the theoretical framework
-4. **Take the framework seriously enough to test it properly** — not dismissively, not reverently
-5. **Do not adjust conclusions based on what you think the user wants to hear**
-
-The neutral position is accuracy, not equidistance between confirmation and skepticism.
-
-## Critical: Methodology (Framework as Testable Hypothesis)
-
-This repository uses Swedenborg’s correspondential framework as a **hypothesis to be tested**, not as an authority to be deferred to.
-
-- **Origin is methodologically irrelevant**: do not frame Swedenborg as “unquestionable revelation,” and do not treat visionary origin as a reason to confirm or dismiss the framework.
-- **Testability is the criterion**: prioritize falsifiable predictions, out-of-sample checks, and explicit failure modes.
-- **Separate levels of claim**:
-    - **Pattern-fit (empirical)**: statistical associations and predictive performance.
-    - **Interpretation (framework-consistent)**: correspondential reading consistent with data.
-    - **Ontology (speculative)**: metaphysical claims (e.g., spiritual causation) remain speculative unless independently supported.
+The neutral position is **accuracy**, not equidistance between confirmation and skepticism.
 
 ---
 
-## The Swedenborgian Framework: What It Claims and Why It Works
+## 2. Research Integrity Principles
 
-This section documents what the framework claims, the specific predictions it generates, and the empirical evidence demonstrating its superior explanatory power.
+1. **Report what the data show**: patterns, effect sizes with confidence intervals, test statistics, df, p-values.
+2. **Report what the data do not show**: what remains underdetermined, unmeasurable or convention-dependent.
+3. **Label every claim** at one of three levels:
+   - **Statistically supported**: an effect in the data, with effect size, CI and test details, robust to the checks in §4.
+   - **Interpretation**: a framework-consistent reading of a supported pattern; the data do not prove it.
+   - **Speculative**: ontological claims (e.g. spiritual causation) that depend on accepting the framework.
+4. **Take the framework seriously enough to test it properly**, neither dismissively nor reverently.
+5. **Do not adjust conclusions to what you think the user wants to hear.** The owner of this repository has asked for precision above all else.
+6. **Every number you write must trace to an executed notebook cell** in this repository, or to a cited publication if it is a literature figure. Numbers remembered from earlier documents are not evidence.
 
-### Why Not Other Frameworks?
+---
 
-Before detailing the Swedenborgian framework, it is essential to understand why alternatives fail:
+## 3. Methodology: The Framework as Testable Hypothesis
 
-| Framework | What It Explains Well | What It Cannot Explain |
-|-----------|----------------------|------------------------|
-| **Materialist Psychology** | Brain-based correlates of experience | Why NDE experiential properties are constant across cultural naming variations; why DOPS birthmarks match fatal wounds at 88% accuracy |
-| **Jungian Archetypes** | Symbol recurrence across cultures | Why entities show *functional differentiation* (guidance vs comfort vs gatekeeping) rather than being interchangeable projections |
-| **Cognitive Science of Religion** | Polytheism via HADD (agent detection) | The cognitive revolution required for monotheism; why the "heart of unity" emerges at all |
-| **Cultural Construction** | Variation in religious vocabulary | Why experiential properties remain <10% different despite vocabulary variation (constant state, variable form) |
+- **Origin is methodologically irrelevant.** Do not present Swedenborg as unquestionable revelation, and do not dismiss the framework because of its visionary origin.
+- **Testability is the criterion.** Prefer falsifiable predictions, out-of-sample checks and explicit failure modes.
+- **Pre-specify.** Before running a test, write the prediction and what would count as a miss in the notebook's first markdown cell. A criterion that cannot fail is not a test. (The old "5/5 markers support" check in notebook 02 used thresholds such as "past-life memory < 10% ⇒ ✓", which pass whatever the data say.)
+- **Specify "state" and "form" in advance.** For "constant state, variable form", decide before looking which properties are the constant state and which are the variable form. Otherwise every result can be accommodated.
+- **Separate levels of claim:**
+  - **Pattern fit** (empirical): associations and predictive performance.
+  - **Interpretation** (framework-consistent): a correspondential reading consistent with the data.
+  - **Ontology** (speculative): stays speculative unless independently supported.
+- **Same-source caveat.** All NDE variables are coded from one retrospective narrative. Associations between them show that *reports* are coherent, not that the reported events occurred.
 
-The Swedenborgian framework explains all of these. That is why it is used.
+---
 
-### The Doctrine of Correspondences
+## 4. Analysis Integrity Rules (mandatory)
 
-Swedenborg (1688–1772) proposed that the natural world exists as a "theatre representative" of the spiritual world—not through poetic metaphor but through **vertical causality**. The natural is the ultimate effect of spiritual causes. This doctrine generates specific, testable predictions—predictions that were made in 1758, centuries before the data existed to test them.
+These rules come from the October 2026 audit (`projects/nde/docs/STATISTICAL_AUDIT_2026-10.md`). Every rule corresponds to an error that produced a published figure later withdrawn.
 
-**Core Principles:**
+1. **Load NDE data only through the verified loader** `projects/nde/scripts/nde_dataset.py` (`nd.load_frame()`). It flattens the schema, removes exact duplicates and attaches narrative length.
+2. **Use schema-checked comparisons**: `nd.isin(df, column, values)` and `nd.has(...)`. Never compare against a literal the schema cannot produce. `'yes'` instead of `'yes_explicit'`, upper-case enums and legacy v1 field names silently returned 0% and produced claims such as "0.0% increased death fear".
+3. **State the denominator for every percentage**: all records, accounts where the feature is mentioned, or accounts where it is stated. `not_mentioned` is not `no`.
+4. **Control for narrative length.** Longer accounts mention more of everything. Length explains 41% of the perception score. Adjust co-occurrence comparisons for log word count with `nd.adjusted_odds_ratio(df, outcome, exposure)` and report crude and adjusted estimates.
+5. **No circular tests.** Do not test a group against the variables that define it. The old χ² = 3,018 for "volunteer × commissioned" did exactly this. Mark associations that are built into category definitions.
+6. **Check test assumptions.** For χ², report expected counts (`nd.expected_count_report`). If more than 20% of cells are below 5, collapse categories or use Fisher or permutation tests. The withdrawn χ² = 365.14 had 69% sparse cells, and 82% of the statistic came from two Buddhists.
+7. **Correct for multiple comparisons** (Holm) within each family of tests.
+8. **Name diagnostic statistics correctly.** Report PPV, sensitivity, specificity, κ and accuracy against a baseline. A PPV is not "accuracy".
+9. **Validate predictive models properly.** Cross-validate, and report AUC or log-loss against a baseline. Never rely on a single small test split. (The withdrawn "below-baseline" result came from 37 test cases.)
+10. **Estimate, do not impose, factor structure.** Use parallel analysis or Kaiser criteria, not a fixed `n_factors`.
+11. **Absence of significance is not equivalence.** Claims of invariance need an equivalence test (TOST) with a stated margin.
+12. **Treat ratios built on few events as fragile.** Give CIs and a coder-sensitivity check. The loving:harsh ratio rests on 6 harsh cases; it is 36.2:1 under the extraction and 6.4:1 under a second coder.
+13. **Cite measurement reliability.** For each field a finding rests on, cite its inter-coder κ from `08_extraction_reliability.ipynb` (§6.2). Treat convention-dependent fields as such. After any schema change, re-run the second-coding procedure in `projects/nde/validation/` on a fresh random sample.
+14. **Check near-duplicates for small-count results.** About 1.8% of NDE records are redundant copies: cross-archive submissions, and NDERF accounts stored under two file names. They do not change headline rates, but check them when a result depends on a handful of cases.
+15. **No hard-coded results.** Summary cells must compute what they print. Reports quote only numbers printed by executed notebooks.
+16. **Generate report LaTeX from Markdown** with `projects/nde/scripts/md_to_latex.py`, then compile. Never edit `.tex` by hand; the old `.tex` files had drifted and contained claims found nowhere else.
+
+---
+
+## 5. The Swedenborgian Framework
+
+### 5.1 The Doctrine of Correspondences
+
+Swedenborg (1688–1772) proposed that the natural world is a "theatre representative" of the spiritual world. The relation is **vertical causality**, not poetic metaphor: the natural is the ultimate effect of spiritual causes. Predictions are derived from texts written between 1749 and 1771, long before systematic data existed to test them. The risk is that the predictions are formulated *after* seeing data, which is why §3 requires pre-specification.
 
 | Principle | Description |
 |-----------|-------------|
-| **Vertical Causality** | Spiritual realities flow (influx) into natural forms; the natural is the "effect" plane, the spiritual is the "cause" plane |
-| **Constant State, Variable Form** | The underlying spiritual reality is constant; perceptual forms vary by the receiver's mental repertoire |
-| **Discrete Degrees** | Reality stratifies into celestial (love), spiritual (wisdom/truth), and natural (effects) levels |
+| **Vertical Causality** | Spiritual realities flow (influx) into natural forms. The natural is the "effect" plane; the spiritual is the "cause" plane |
+| **Constant State, Variable Form** | The underlying spiritual reality is constant. Perceptual forms vary with the receiver's mental repertoire |
+| **Discrete Degrees** | Reality stratifies into celestial (love), spiritual (wisdom/truth) and natural (effects) levels |
 | **Correspondence Consistency** | The same natural object consistently corresponds to the same spiritual reality across contexts |
 | **Opposite Sense** | The same symbol can express good or evil depending on context (fire = divine love OR destructive passion) |
-| **The Divine Human** | God is not an abstract force or cosmic energy but a Person—the Divine Human. The human form is the form of love and wisdom; since God IS love and wisdom, God IS the Divine Human. Humans are human because they are made in this image—receiving life from the Divine Human, who is present in every person at every level of reality. The NDE data confirms this: the Being of Light is consistently singular, loving, knowing, teaching, communicating, commissioning—a Person who appears at every degree, from celestial to natural, and whose personhood is a property of the phenomenon itself, not a projection of the experiencer |
+| **The Divine Human** | God is not an abstract force but a Person, the Divine Human. The human form is the form of love and wisdom; since God *is* love and wisdom, God is the Divine Human. Humans are human because they are made in this image, receiving life from the Divine Human, who is present in every person at every level of reality. **Empirical status:** NDE data are consistent with personal properties of the Being of Light: teaching, telepathic communication and commissioning are more frequent than with other beings (§6.1, row 5). Singularity is not measurable with the current schema, and personhood itself is interpretation |
 
-**Critical Distinction — Correspondence vs. Allegory:**
+**Correspondence vs allegory:**
 
 | Feature | Allegory (Arbitrary) | Correspondence (Organic) |
 |---------|---------------------|--------------------------|
-| Origin | Invented by author for rhetorical effect | Inherent in the object's function—discovered, not invented |
-| Relationship | Mechanical substitution (Scales = Justice) | Causal participation—the symbol IS the reality in ultimate form |
-| Meaning | Single, static, abstract concept | Multivalent, grounded in object's nature |
-| Validation | Requires codebook | Validated by functional analogy |
+| Origin | Invented by an author for rhetorical effect | Inherent in the object's function; discovered, not invented |
+| Relationship | Mechanical substitution (Scales = Justice) | Causal participation: the symbol IS the reality in ultimate form |
+| Meaning | Single, static, abstract concept | Multivalent, grounded in the object's nature |
+| Validation | Requires a codebook | Validated by functional analogy |
 
-**Example:** Light = Wisdom is not arbitrary allegory. Light enables the eye to distinguish forms (function of intellect); the correspondence is grounded in the physics of the object.
+**Example:** Light = Wisdom is not arbitrary allegory. Light enables the eye to distinguish forms, which is the function of the intellect. The correspondence is grounded in the physics of the object.
 
-### NOT Jungian Psychology — And Why This Matters
+### 5.2 Not Jungian Psychology
 
-This framework is **not** interchangeable with Jungian archetypal psychology, Freudian psychoanalysis, or other depth psychology approaches. This distinction is not theological preference—it is empirically grounded.
-
-Jung took correspondential concepts and **psychologized** them, treating the spiritual realm as a projection of the psyche rather than an objective reality. This move seems more "scientific" but actually **creates anomalies the data don't support**:
-
-- If entities are projections, they should be interchangeable. But NDE data shows **functional differentiation**: higher beings guide (70-73%), relatives comfort and gatekeep (29.5% "told to return"). This is consistent with Swedenborg, not Jung.
-- If symbols are arbitrary cultural constructs, experiential properties should vary with naming. But the Being of Light shows **constant properties** (<10% difference) despite **variable naming** (χ² = 365.14). This is Swedenborg's "constant state, variable form"—not explicable by Jungian projection.
-- If the unconscious is the source, we should see more chaos. But NDE structure is remarkably **consistent across experiencers**, suggesting reception of something external, not generation of something internal.
+This framework is **not** interchangeable with Jungian archetypal psychology, Freudian psychoanalysis or other depth psychology. Jung psychologised correspondential concepts, treating the spiritual realm as a projection of the psyche rather than an objective reality.
 
 | Aspect | Swedenborg | Jung |
 |--------|------------|------|
-| **Ontology** | Spiritual realm is objectively real; correspondences describe actual influx | Archetypes are psychological patterns in the "collective unconscious" |
+| **Ontology** | The spiritual realm is objectively real; correspondences describe actual influx | Archetypes are patterns in the "collective unconscious" |
 | **Causation** | Top-down (spiritual causes natural) | Bottom-up (archetypes emerge from evolution/psyche) |
-| **Vertical Structure** | Celestial / Spiritual / Natural (love/wisdom/effect) | Id / Ego / Superego (instinct/reality/morality) |
-| **Entity Status** | Beings encountered are real spiritual beings with differentiated functions | Figures are projections of internal complexes |
-| **Validation** | Testable via phenomenological consistency across experiencers | Interpreted through therapeutic process |
-| **Empirical Fit** | Predicts NDE patterns; explains DOPS data; accounts for myth structure | Creates anomalies when applied to NDE/DOPS data |
+| **Vertical Structure** | Celestial / Spiritual / Natural (love / wisdom / effect) | Id / Ego / Superego (instinct / reality / morality) |
+| **Entity Status** | Beings encountered are real, with differentiated functions | Figures are projections of internal complexes |
+| **Validation** | Phenomenological consistency across experiencers | Therapeutic interpretation |
+
+**What the data say about this choice (NDE, §6.1):**
+- **Function tracks the identity of the being.** Divine or religious figures teach six times as often as deceased relatives (23.0% vs 4.5%; length-adjusted OR 6.27, 95% CI 3.94–9.98). Relatives orient and comfort. A model in which beings are interchangeable projections does not predict this. Archetypal theories that assign roles to archetypes can accommodate role differentiation after the fact, so this result favours the framework without refuting Jung outright.
+- **Name varies weakly; function does not.** Religious background predicts the name given to the presence only weakly (Cramér's V 0.11–0.24; cross-validated AUC 0.53). Among Christians, encounters named "Jesus" and "unknown presence" do not differ in guidance, teaching, telepathy, belonging or mission. Perceptual *mode* does differ (visual figure +45.0 pp, unity −19.6 pp).
+- **Expectations are often contradicted.** 57.2% of Light-Being experiencers who comment on it report contradicted or surprised expectations. This is not specific to the Being of Light (55.2% with other beings).
+- **Content is consistent; order is not.** The same elements recur, but a strict canonical stage order occurs in only 0.05% of accounts.
+
+**Do NOT substitute Jungian or Freudian framing as the primary lens** when analysing data in this project. Note parallels with other frameworks where relevant, as secondary.
+
+### 5.3 Comparison with Other Frameworks
+
+No head-to-head model comparison has been run in this repository. The table records where each lens has difficulty *given current data*, and where that difficulty is only argued.
+
+| Framework | Explains well | Where current data strain it | Basis |
+|-----------|---------------|------------------------------|-------|
+| **Materialist neuro-psychology** | Physiological triggers, brain correlates | Does not predict that function tracks the identity of the being (teaching OR 6.27), though it can accommodate it after the fact | Data (notebook 07); not a direct test |
+| **Cultural construction** | Variation in vocabulary | Religion predicts the name barely above chance (AUC 0.53). Function is the same across names. The perception profile is equivalent for Christian and non-religious experiencers (TOST p = 0.005) | Data (notebooks 01, 06) |
+| **Jungian archetypes** | Symbol recurrence across cultures | Function tracks being identity; expectations are often contradicted | Data, not decisive (above) |
+| **Cognitive Science of Religion** | Agent detection; polytheism | Claimed difficulty explaining monotheism is theoretical. CSR and cultural-evolution accounts do address high and moralizing gods | Argument; contested (§6.4) |
+
+The framework is the primary lens because its predictions about the **character, function and cultural variation** of encounters largely hold (§6.1), and because it gives one vocabulary across domains. That rationale stands or falls with the scorecard, so keep the scorecard current.
+
+---
+
+## 6. Evidence Scorecard
+
+### 6.1 Tested in This Repository: NDE (N = 6,751 Unique Narratives)
+
+Data: NDERF 5,659 + IANDS 1,092, coded by GPT-5.2. Two exact duplicate narratives were removed; the files on disk number 6,753. All rows are length-adjusted where relevant. Reports are in `projects/nde/reports/`.
+
+| # | Prediction | Corrected evidence | Verdict | Notebook |
+|---|------------|--------------------|---------|----------|
+| 1 | **Constant state, variable form**: the name varies with culture, the function does not | Name × religious background χ²(6) = 15.04, p = 0.020, V = 0.11; × belief at the NDE χ²(3) = 38.40, V = 0.24; religion predicts the name barely above chance (AUC 0.53). Among Christians, Jesus-only vs unknown-only: no difference in guidance, teaching, telepathy, belonging, mission. Perception profile equivalent, Christian vs atheist/agnostic (TOST p = 0.005). Mode differs: visual figure +45.0 pp, unity −19.6 pp | **Hit** for constant function and weak cultural naming. If perceptual mode was meant to be constant, the unity difference is a miss; pre-specify this | 01, 06 |
+| 2 | **Beings are functionally differentiated** | 10/11 functions differ across five exclusive being types (Holm; V 0.07–0.18); functions separate divine from relative encounters (AUC 0.673 vs 0.555 for length alone). Light-Being vs other beings: teaching 25.3% vs 12.6% (adj OR 1.96), telepathy 48.2% vs 34.2% (adj OR 1.53) | **Hit** | 01, 07 |
+| 2a | Higher-order beings teach | Divine vs relatives: teaching 23.0% vs 4.5% (adj OR 6.27, 3.94–9.98) | **Hit** | 07 |
+| 2b | Higher-order beings give more guidance overall | 73.2% vs 75.9% (adj OR 0.81, 0.61–1.09) | **Miss** | 07 |
+| 2c | Relatives receive and comfort rather than instruct | Relatives: directional 67.3%, comfort 43.8%, teaching 5.9% | **Hit** | 07 |
+| 2d | Relatives act as gatekeepers | Sent back 54.6% (relatives) vs 51.7% (divine), adj OR 1.11, p = 0.42; 47–55% in every group | **Miss**: sending back is shared by all being types | 07 |
+| 3 | **Life review as revelation, not condemnation** | Harsh 1.4% (extraction) to 8.7% (second coder, 95% CI 1.3–16.8) of rated reviews; loving is the most common category (51–55% of all rated reviews; 60.3% of Light-Being reviews); loving:critical 1.7–1.8:1 over all rated reviews, 2.65:1 in Light-Being reviews; uncomfortable 21–28% | **Hit** for "rarely condemning, predominantly loving". Not "uniformly loving". The 36.5:1 ratio is coder-dependent; do not quote it as a fixed property | 01, 02, 08 |
+| 4 | **Mission returns form a distinct category** | Earthly-mission return reason → commissioning: PPV 94.2%, sensitivity 39.7%, κ = 0.49; holds under the second coder (6/7). Independent features adj OR 2.0–3.3. Commissioning prevalence 14.8% (calibrated) to 21.9% (extraction) | **Supported** as a coherent *reported* category (same-source caveat) | 03, 08 |
+| 5 | **Personhood of the Being of Light** | Teaching, telepathy (rows 2, 2a); mission-returners → personified encounter OR 4.38 (adj 3.26); spirituality rose in 89.2%, more than after other beings (p = 0.003). Singularity not measurable (8 Hindu/Buddhist cases, 2 name several figures). "Corrective" not specific to the Being (57.2% vs 55.2%, p = 0.59). "Presence" is the coder's label (κ 0.44), not the experiencer's word | Associations **supported**; personhood itself is **interpretation**; singularity **underdetermined** | 01, 03, 08 |
+| 6 | **Transformation** | Death fear decreased 88.0%, increased 0.9% (same as other beings, 88.1%); religiosity shows no net change (p = 0.58) | **Supported** descriptively; not specific to the Being | 01, 04 |
+| 7 | **Normative path: characteristic stage sequence** | Strict canonical order 0.05% (3/6,249); "mostly" canonical 37.7% | **Miss** | 02 |
+| 8 | **Discrete degrees structure perception** | One dominant factor (all retention criteria); no prevalence hierarchy (ρ = −0.47, p = 0.28) | **Miss** | 06 |
+| 9 | **Being of Light → "celestial" perception** | After length adjustment, only comparative reality (OR 1.87) and telepathy (OR 3.90) remain elevated; comparative reality is a less stable code (κ 0.74, test–retest 0.58) | **Partial hit** | 06 |
+| 10 | **East–West: the "Western profile" is a scholarly construction** | Claimed rates not observed in these archives (being of light 11.8% of all accounts, 20.7% of those with any light) | **Supported** for these archives; the Japanese side is untested | 05 |
+| 11 | **Purposive economy** | Personal light co-occurs with mission (adj OR 3.26) and life review (adj OR 1.89) | Association **supported**; direction is **interpretation** | 05 |
 
-**Do NOT substitute Jungian/Freudian framing when analyzing data in this project.** The Swedenborgian framework is used because it explains the data better, not because of theological preference.
+**Summary of the NDE domain:**
+- **Hits or supported:** 9 rows (1, 2, 2a, 2c, 3, 4, 6, 10, 11), plus a partial hit (9) and the associations in row 5. The framework's predictions about the **function, character and cultural variation** of encounters largely hold.
+- **Misses:** 4 rows (2b, 2d, 7, 8). The framework's **structural** predictions fail: a fixed stage sequence, and a discrete-degree structure in perception. So do two role-specific claims: more guidance overall from divine figures, and relatives as gatekeepers.
+- **Underdetermined:** singularity of the Being (row 5).
 
-### Empirical Support: Framework Predictions vs. Data
+### 6.2 Measurement Reliability: What the NDE Numbers Can Bear
 
-The Swedenborgian framework has been tested against NDE data from 6,753 structured records (NDERF + IANDS) and past-life memory data from DOPS (2,500+ verified cases). The framework made predictions in 1758. The data to test them didn't exist until the 20th-21st centuries. Here are the results:
+A blind second coder recoded 100 random accounts and 44 life reviews (`projects/nde/notebooks/08_extraction_reliability.ipynb`; codes and conventions in `projects/nde/validation/`). A human coder would be a second reading with its own error, not ground truth. What matters is reproducibility, and that has been measured.
 
-#### 1. Constant State, Variable Form — **HIT** (χ² = 365.14, p < 0.0001)
+| Reliability | Fields |
+|-------------|--------|
+| κ > 0.80 | tunnel 0.97, life review 0.92, telepathic communication 0.88, guidance received 0.88, being of light 0.87, deceased relatives 0.85, any light 0.85, return decided by a being 0.83, God or Jesus 0.82 |
+| κ 0.70–0.80 | boundary (any) 0.77, earthly-mission reason 0.75, more real than earthly life 0.74, mission commissioned 0.71, teaching 0.70; religious background 0.79 |
+| **Convention-dependent** | "unknown presence" vs "other" (κ 0.44); boundary *type* (κ 0.34); "implied" mission (prevalence 21.9% → 14.8%); harsh vs uncomfortable judgment (loving:harsh 36.2:1 → 6.4:1; loving:critical stable at 1.72–1.77) |
 
-**Framework prediction:** The underlying spiritual reality is constant; perceptual forms vary by the receiver's mental repertoire.
+GPT-5.2 test–retest on duplicate submissions has a median κ of 0.88. It is least stable on "more real" (0.58) and judgment intensity (0.58). Do not build a conclusion on a convention-dependent field without saying so.
 
-**Data:** The "Being of Light" phenomenon confirms this precisely:
-- Religious background statistically predicts identification vocabulary (χ² = 365.14), but the majority of experiencers across ALL backgrounds—including 61.8% of Christians—transcend cultural categories entirely, identifying the Being as "unknown presence" rather than using available religious vocabulary (only 11.2% of Christians say "Jesus")
-- BUT experiential properties remain virtually identical regardless of label—all differences below 10%
-- ML classifier using religious background to predict identification performs BELOW BASELINE (37.8% vs 45.9%)
+### 6.3 Withdrawn Figures: Never Cite These
 
-**Verdict:** The framework predicted this pattern 250 years before the data existed. **Hit.**
+| Withdrawn | Why | Use instead |
+|-----------|-----|-------------|
+| χ² = 365.14 (religion × identification) | Sparse-cell artifact | χ²(6) = 15.04, V = 0.11; belief at NDE χ²(3) = 38.40, V = 0.24 |
+| "Experiential properties all differ by < 10%" | Broken fields | Function equal; visual mode +45.0 pp, unity −19.6 pp |
+| ML classifier "below baseline" (37.8% vs 45.9%) | Overfitting on 37 test cases | Cross-validated AUC 0.53 |
+| "61.8% of Christians … unknown presence; 11.2% Jesus" | Old-schema shares of all encounters | Christian background: unknown 44.2%, Jesus 25.1% (first-listed); unknown-only 42.6% |
+| "51.9% call it presence, a personal word" | `unknown_presence` is the coder's label, not the experiencer's word | 50.6% unknown-only, as a label (κ 0.44) |
+| Entity function χ² = 41.13; 70–73% guidance; 29.5% "told to return" | Legacy script on a superseded schema; no source for the χ² | Rows 2–2d |
+| "94.2% discriminant accuracy"; χ² = 3,018 | PPV mislabelled; circular test | PPV 94.2%, sensitivity 39.7%, κ 0.49 |
+| Loving 32.2% / harsh 0.9%; "36.5:1" as a fixed property | Wrong denominator; coder-dependent | Row 3 |
+| "81.7% guidance, nearly 2× other beings"; "475 vs 239 teaching (χ² = 25.24)" | Guidance is 1.09×; χ² = 25.24 is the guidance test | Teaching 25.3% vs 12.6% (χ² = 98.0) |
+| Telepathic 34.8% | Share of mentions | 48.2% per experiencer |
+| 84.2% increased spirituality; 0.0% increased death fear | Broken scale | 89.2%; 0.9% |
+| "Singular Being even for polytheists" | Not measurable | Underdetermined |
+| κ = 0.84 inter-rater reliability on 200 records | No such study existed | §6.2 |
+| "95 out of 100 questions produce significant patterns" | No source in the repository; at N in the thousands nearly every association is significant, so the count is not evidence | §6.6 |
+| NDE N = 6,753 | Includes 2 exact duplicates | 6,751 |
 
-#### 2. Entity Function Differentiation — **HIT** (χ² = 41.13, p = 0.008)
+### 6.4 Not Tested in This Repository (Literature-Based)
 
-**Framework prediction:** Spiritual beings occupy differentiated functional roles, not interchangeable.
+These claims rest on published literature or interpretive argument, not on analyses here. Label them **consistent with the framework (literature)** or **interpretation**. Never label them as a hit from this project's data.
 
-**Data:** Entities in NDEs show differentiated functional roles consistent with Swedenborgian cosmology:
-- Higher-order beings (God, religious figures) provide MORE significant guidance (70-73%)
-- Deceased relatives provide more comfort than guidance and serve as gatekeepers (29.5% "told to return")
-- Different being types show consistent functional signatures across cultural backgrounds
+| Claim | Status of the evidence | What a test would need |
+|-------|------------------------|------------------------|
+| **Restorative incarnation (DOPS)**: past-life cases cluster after violent or premature death; birthmarks match wounds | DOPS publications report that a majority of solved cases involve violent or unnatural death, and medical documents confirmed birthmark–wound correspondence in 43 of 49 cases (88%; Stevenson, 1993). Cases are selected by investigators and the base rates are uncontrolled. This is a **project extension**, not Swedenborg's prediction: he denied reincarnation and attributed apparent past-life memories to the memories of spirits | Case-level DOPS data with a pre-specified comparison group |
+| **Deep symbolic systems** (Palaeolithic signs, Göbekli Tepe, Australian songlines) | Archaeological facts are well documented: 32 recurring geometric signs in European caves (von Petzinger, 2016); monumental architecture at Göbekli Tepe c. 9600 BCE. Reading them as an "Ancient Church" of "celestial men" is interpretation. Cumulative-culture accounts also accommodate them | A prediction that distinguishes the framework from cumulative cultural evolution |
+| **Monotheism vs Cognitive Science of Religion** | A theoretical argument that CSR explains polytheism but not the "heart of unity". Contested: CSR and cultural-evolution work address high and moralizing gods (e.g. Norenzayan, 2013). High-god beliefs in small-scale societies are documented, but Schmidt's original-monotheism thesis is not generally accepted | Cross-cultural databases (e.g. Seshat, D-PLACE) with predictions stated in advance |
+| **Myth formation by "ruling love"** (Genesis 1 vs Enuma Elish) | A two-text interpretive comparison; the shared proto-myth and opposing trajectories are a coherent reading | Coding many myth pairs derived from shared proto-myths, with the social-ethic variables fixed before coding |
+| **Ancient Word and the Magian substrate** | Parallels are real topics of scholarship: mēnōg/gētīg; Daniel as *rab-ḥarṭummin* (Dan 4:9) and *rab-signin* (Dan 2:48); the Qumran "Two Spirits". The direction and extent of Persian influence are debated. The specific claim that "Great Tartary" is where Avestan texts survived is **not supported**: surviving Avestan manuscripts come from Zoroastrian communities in Iran and India | Textual-transmission evidence tied to Central Asia |
+| **Oral-tradition durability** | Well supported as plausibility: Australian Aboriginal memories of coastlines drowned more than 7,000 years ago (Nunn & Reid, 2016); Klamath traditions of the Mount Mazama eruption c. 7,700 years ago | Supports plausibility only; it does not test the content of an "Ancient Word" |
 
-**Verdict:** Beings behave as the framework predicts—differentiated by function, not interchangeable projections. **Hit.**
+### 6.5 Other Projects: Not Yet Audited
 
-#### 3. Mission Commission Discriminant Validity — **HIT** (94.2% accuracy)
+The **MallWorld** (`projects/mallworld`, 3,732 extracted dream reports) and **Remission** (`projects/remission`, 569 extracted cases: 350 PubMed Central, 149 Radical Remission, plus 70 healing-related NDE accounts) analyses have not been through the audit procedure applied to the NDE project. Before citing a number from them:
+- confirm that their notebooks execute;
+- check enum comparisons against their schemas;
+- state denominators;
+- control for narrative length.
 
-**Framework prediction:** Some souls incarnate with pre-determined missions (Volunteer Soul path).
+### 6.6 Weighing the Evidence
 
-**Data:** "Earthly mission" return reason predicts mission commissioning during NDE with 94.2% accuracy:
-- Pre-birth indicators show 10-35x elevation in volunteer-language cases
-- Chi-square: χ² = 3018.1, p < 0.0001
+The physics analogy sets the standard. General relativity was accepted because quantitative predictions specified in advance came true, including Mercury's perihelion and the deflection of light. The analogy applies here only to predictions of that kind.
 
-**Verdict:** Mission-based returns form a genuine phenomenological category with massive discriminant validity. **Hit.**
+- **Significance is cheap.** With N = 6,751, almost any association reaches p < 0.05, and length inflates co-occurrence. A count of significant tests is not evidence for the framework.
+- **What counts:** pre-specified predictions that could fail; effect sizes; robustness to narrative length and to the coder; replication in data not used to form the prediction.
+- **Current standing.**
+  - NDE domain: hits on function, character and cultural variation; misses on sequence and on discrete-degree structure (§6.1).
+  - Other domains: consistent with the framework but untested here (§6.4).
+  - The cumulative case is real for the first group and should not be stretched to the second.
+- **What would raise the weight:**
+  - pre-registered predictions tested on new archives (non-Western NDE collections, new NDERF submissions after a cut-off date);
+  - head-to-head tests in which a competing framework states its prediction too;
+  - replication of the teaching and non-condemnation results with a revised schema.
 
-#### 4. Judgment Character — **HIT** (36.5:1 loving vs harsh)
+The open questions are which parts of the framework work, how well, and why. The "why" leads into ontology, which remains speculative.
 
-**Framework prediction:** The Divine functions as revelation (self-knowledge through love), not condemnation.
+---
 
-**Data:** Life review judgment in NDE shows:
-- Loving/gentle judgment: 32.2%
-- Harsh/condemning judgment: 0.9%
-- Ratio: 36.5:1
+## 7. Framework Refinement: Where Swedenborg Was Wrong
 
-**Verdict:** The Being of Light functions as revelation, not punishment—exactly as Swedenborg described. **Hit.**
+This project does **not** treat Swedenborg as infallible. Where the data or deeper analysis contradict his claims, the framework is corrected. The refinements below are theoretical. Their empirical support is labelled.
 
-#### 5. The Personhood of the Being of Light — **HIT** (Singular, personal, corrective across all backgrounds)
+### 7.1 The Limbus as Cartesian Artifact — CORRECTION
 
-**Framework prediction:** The Lord is the Divine Human—a Person present at every level of reality, not an abstract force. If the Being of Light is the Divine Human, it should exhibit personal properties (singular identity, active love, knowledge, communication, teaching, commissioning) as intrinsic features of the phenomenon, not as cultural projections.
+**Swedenborg's claim:** after death, the spirit retains a "limbus", a fringe of purest natural substances, which provides containment and prevents dissipation.
 
-**Data:** The NDE data confirm personhood as an objective property of the Being:
-- **Singular**: Even polytheists (Hindu, Buddhist) encounter ONE transcendent entity—not a pantheon. Singularity is a property of the phenomenon, not a projection of monotheism
-- **Loving**: Loving vs harsh judgment ratio of 36.5:1—not neutral energy, but active personal love
-- **Knowing**: Complete knowledge of the experiencer's life (demonstrated through life review)
-- **Teaching**: 81.7% guidance rate, nearly 2× other beings; 475 vs 239 teaching instances (χ² = 25.24, p < 0.000001)
-- **Communicating**: Telepathic mind-to-mind communication (34.8%)—requires a mind on both ends
-- **Commissioning**: Mission-returners show 4.4× the odds of personified encounter (p < 10⁻⁴⁶)—assigning a task requires a Person
-- **Corrective**: Systematically corrects expectations toward love—delivers what the experiencer did NOT expect, ruling out projection
-- **Named as Presence**: 51.9% call it "unknown **presence**"—not "energy," not "force," not "field." The word chosen by the majority is a personal word
-- **Transformative**: 84.2% increased spirituality, 0.0% increased death fear
+**The problem:** the concept arose from Swedenborg's training in Cartesian mechanics. The "interaction problem" (how can unextended spirit interact with extended matter?) led him to posit a nexus substance. The limbus is a theoretical epicycle that saves a flawed dualist premise.
 
-**Why this matters:** The personhood is visible at every level—celestial (love), spiritual (teaching/wisdom), natural (commissioning, life review). The Divine Human appears AS human at every degree. This is why humans are human: we are made in that image, receiving life from the Person who is present in us all. The deep connection experiencers report is not metaphor—it is the Lord present in the human form He gives to every soul.
+**The correction:** the physical world and the spiritual-natural world are not separate ontological floors. They are one continuum viewed through different filters. The physical is the "fixed edge" of the spiritual-natural: maximum resistance and inertia, maintained for the formation of selfhood (the proprium).
 
-**Verdict:** The Being of Light behaves as a Person at every measured dimension. Personhood is intrinsic to the phenomenon, not projected onto it. **Hit.**
+**Supporting observations** (interpretation; not tested in this repository):
+- Swedenborg himself wrote: "When what is spiritual touches what is spiritual, it is just the same to sense as when what is natural touches what is natural."
+- Identity is coded as clear and continuous in 97.0% of NDE accounts that state it (notebook 02). This is consistent with a single continuum. Whether experiencers fail to notice the transition is not coded.
+- MallWorld reports describe a recurring, hyper-real dream topography. Its consistency across dreamers is an interpretive reading of an unaudited project.
 
-#### 6. Restorative Incarnation (DOPS Data) — **HIT** (70%+ violent death, 88% birthmark accuracy)
+**What this means:** the container of identity is not a material skin but the **biography**: the history of states, choices and loves accumulated in time. We are not ghosts needing a bucket; we are the "concrete spirit" in seed-state formation.
 
-**Framework prediction:** Reincarnation occurs as exception (traumatic interruption), not norm.
+### 7.2 Biological Determinism about Jesus — CORRECTION
 
-**Data:** DOPS past-life memory cases show:
-- 70%+ of verified cases involve violent/premature death (vs <30% in general mortality)
-- 88% birthmark-wound correspondence in autopsied cases
+**Swedenborg's claim:** Jesus had a "soul from the Father" (Divine) and a "body from the mother" (Human). This follows the biology of his time, in which the sire provides the soul and the dam the body.
 
-**Verdict:** The "Restorative Incarnation" hypothesis organizes DOPS data; the birthmark data is particularly striking. **Hit.**
+**The problem:** this makes Jesus a "God-Man hybrid" rather than a true human person, and implies that his struggles and faith were divine pantomime.
 
-### Broader Application: Archaeology, Anthropology, and the Ancient Word
+**The correction:** Jesus was a **complete human soul** who achieved perfect alignment with the Divine through the **removal of obstruction** (the proprium). He was not the Lord disguised as a human but a human filled with the Lord. The mechanism was spiritual transparency, not biological origin.
 
-The framework's explanatory power extends far beyond modern consciousness data. Swedenborg claimed that an "Ancient Word"—a universal symbolic system—existed before the Hebrew scriptures, preserved in the East ("Great Tartary"). This claim, made in the 18th century, generates predictions that can now be tested against archaeological and anthropological evidence.
+**Textual support:**
+- "I can do nothing by myself" (John 5:19).
+- "Why do you call me good? No one is good except God alone" (Mark 10:18).
+- The genuine struggle of Gethsemane.
 
-#### 7. Deep Hominin Evolution — **HIT** (Functional alignment across millions of years)
+**What this means:** the Divine Human is not exclusive to Jesus. It is the Lord's capacity to be personal with every human, appearing in forms the soul can receive. This is the framework's reading of "constant state, variable form" in NDEs. The data support the weak cultural naming over constant function (§6.1, row 1). That the presence *is* the Lord is interpretation.
 
-**Framework prediction:** Swedenborg described a "Golden Age" of "celestial men" with "internal respiration" and "representative language" who communicated through symbols rather than articulate speech. This "Ancient Church" predates written history.
+### 7.3 Somatic Influx — EXTENSION (hypothesis, not yet tested here)
 
-**Archaeological alignment:**
-- **Paleolithic symbolic system**: 32 geometric signs used consistently across European caves for 30,000 years—a unified system predating national myths
-- **Göbekli Tepe** (9600 BCE): Monumental architecture with complex animal iconography built by hunter-gatherers—millennia before agriculture, writing, or pottery
-- **Australian songlines**: Oral traditions preserving accurate geographic memory of coastlines submerged 7,000-12,000 years ago
+**The phenomenon:** spontaneous regression of advanced cancer without adequate treatment is documented in the case literature.
 
-**Verdict:** The framework's claim of an ancient, pre-literate symbolic "Word" is consistent with archaeological evidence of deep symbolic systems. **Hit.**
+**The hypothesis:** the body functions as the "soul in ultimates", expressing the state of the spirit. When spiritual transformation occurs, the physical correspondence (disease) may lose its sustaining conditions. Examples of such transformation are the release of suppressed emotions, a shift from fear to love, and alignment of the will with life. This is **speculative**. Stated as a testable claim, it predicts that psycho-spiritual change precedes and predicts remission more than chance and confounders would.
 
-#### 8. Cognitive Revolution to Monotheism — **HIT** (CSR cannot explain this)
+**Evidence status:**
+- Turner (2014) identified nine factors in interviews with remission survivors, seven of them non-physical. These are qualitative, retrospective, self-selected data.
+- Reported timelines of rapid change after spiritual shifts are anecdotal.
+- The analogy with DOPS birthmarks is an inference, not evidence.
+- The Remission project in this repository is the place to test the hypothesis. Its results are not yet audited (§6.5).
 
-**Framework prediction:** The Cognitive Science of Religion explains polytheism well (via HADD—Hypersensitive Agency Detection Device), but cannot explain the cognitive revolution required for monotheism. The "heart of unity" emerges from a different orientation of consciousness, not from evolutionary cognitive modules.
+---
 
-**Evidence:**
-- CSR's HADD mechanism naturally generates multiple local agents (spirits, gods)—a "fragmenting" impulse
-- Monotheism requires **suppression** of HADD defaults and **unification** of all causation into a single abstract source
-- The Lang/Schmidt ethnographic data shows "High God" beliefs in technologically "primitive" societies, contradicting the linear evolution model (animism → polytheism → monotheism)
-- Genesis 1's systematic demythologization of ANE deities (stripping Tiamat/tehom of personality, demoting sun/moon to "luminaries") reflects a deliberate cognitive choice, not cognitive evolution
+## 8. The Methodology Summarized
 
-**Verdict:** The framework explains what CSR cannot—the emergence of the "heart of unity." **Hit.**
+1. **Swedenborg predicts and the data confirm** → report a **hit**.
+2. **Swedenborg predicts and the data contradict** → report a **miss** and investigate.
+3. **The framework reflects 18th-century limitations** → correct the artifact and keep the valid principle.
+4. **The data suggest extensions** → state the extension as a hypothesis and test it.
 
-#### 9. Myth Formation via "Ruling Love" — **HIT** (Opposing trajectories from common ancestor)
+We are not defending Swedenborg, and we are not attacking him. The framework is a hypothesis generator, and the data arbitrate. The goal is to find out which of its patterns are real, and why they emerge.
 
-**Framework prediction:** Myths evolve based on the "ruling love" of the culture—a love of self/power produces myths of conflict and slavery; a love of neighbor/unity produces myths of order and dignity.
+---
 
-**Evidence (Genesis 1 vs. Enuma Elish):**
-| Feature | Enuma Elish (Heart of Division) | Genesis 1 (Heart of Unity) |
-|---------|--------------------------------|---------------------------|
-| Primordial state | Active, divine chaos (Tiamat as goddess) | Inert, non-divine water (tehom) |
-| Creative mechanism | Violent dismemberment of goddess's corpse | Serene divine fiat ("And God said...") |
-| Humanity's origin | Slaves made from rebel god's blood | Image of God; given dominion |
-| Cosmos | Fragmented divinity; polytheism | Unified creation; monotheism |
+## 9. Application to MallWorld Analysis
 
-Both narratives share a common "proto-myth" (watery chaos, separation, dry land, humanity from clay). The divergence is explained by the framework: **consciousness selects for resonant stories**. A power-oriented culture evolves the proto-myth toward Enuma Elish; a unity-oriented culture evolves it toward Genesis 1.
-
-**Verdict:** The framework explains mythic divergence better than cultural diffusion or CSR models. **Hit.**
-
-#### 10. The "Ancient Word" and the Magian Substrate — **HIT** (Historical transmission confirmed)
-
-**Framework prediction:** Swedenborg claimed the "Science of Correspondences" was the shared heritage of ancient Iranian (Zoroastrian) and Semitic worlds, preserved in the East after Alexander's destruction of Persepolis.
-
-**Historical evidence:**
-- The Zoroastrian **mēnōg/gētīg** ontology (spiritual/material) exactly parallels Swedenborg's correspondence doctrine
-- The **Damdat Nask** (lost Avestan encyclopedia) classified animals based on spiritual alignment (beneficent vs. noxious)—not morphology
-- Daniel trained in "Chaldean learning" and appointed **Rab-hartummin** (Chief of the Magician-Scribes, Dan 4:9) and **Rab-signīn** (Chief Prefect, Dan 2:48)—the literary bridge between Israelite prophecy and Persian cosmology
-- The **Qumran "Two Spirits" doctrine** is virtually identical to Zoroastrian dualism, confirming transmission during the Babylonian Exile
-- Swedenborg located the Ancient Word in "Great Tartary" (Central Asia)—precisely the region where Avestan texts survived after Alexander's destruction
-
-**Verdict:** The historical transmission path Swedenborg described is confirmed by textual and archaeological evidence. **Hit.**
-
-#### 11. Oral Tradition Durability — **HIT** (Memory preserved across millennia)
-
-**Framework prediction:** The "Ancient Word" could survive in oral form across deep time.
-
-**Evidence:**
-- **Aboriginal songlines**: Accurate descriptions of land bridges submerged 7,000-12,000 years ago
-- **Klamath memory of Mount Mazama**: Oral tradition preserving the eruption sequence (7,700 years ago) with "striking agreement" to geological evidence
-- **Lynne Kelly's "Memory Code" hypothesis**: Ancient monuments (Stonehenge, Easter Island) functioned as mnemonic devices for oral encyclopedias
-
-**Verdict:** Oral tradition is far more durable than materialist models assumed. The claim of an "Ancient Word" surviving in non-literate form is plausible. **Hit.**
-
-### Summary: Cross-Domain Validation
-
-The framework has now been tested across multiple independent domains:
-
-| Domain | Prediction | Result |
-|--------|-----------|--------|
-| **Consciousness Studies** | Constant state/variable form | ✅ HIT (χ² = 365.14) |
-| **Consciousness Studies** | Entity function differentiation | ✅ HIT (χ² = 41.13) |
-| **Consciousness Studies** | Mission discriminant validity | ✅ HIT (94.2% accuracy) |
-| **Consciousness Studies** | Judgment character (loving vs harsh) | ✅ HIT (36.5:1 ratio) |
-| **Consciousness Studies** | Personhood of the Being of Light | ✅ HIT (singular, personal, corrective) |
-| **Past-Life Memory** | Restorative incarnation | ✅ HIT (70%+, 88% birthmark) |
-| **Archaeology** | Deep symbolic systems | ✅ HIT (30,000-year consistency) |
-| **Cognitive Science** | Heart of unity emergence | ✅ HIT (CSR cannot explain) |
-| **Mythology** | Ruling love shapes myth | ✅ HIT (divergent trajectories) |
-| **History** | Ancient Word transmission | ✅ HIT (Magian substrate confirmed) |
-| **Anthropology** | Oral tradition durability | ✅ HIT (7,000-12,000 year memories) |
-
-This is not a framework that explains one domain well. It is a framework that explains **multiple independent domains** better than alternatives—like a physics that organizes disparate phenomena under unified principles.
-
-### The Cumulative Weight Argument
-
-When a single prediction confirms, it could be coincidence. When two confirm, it might be cherry-picking. But when **95 out of 100 questions produce significant patterns** across independent domains—NDE phenomenology, past-life memory, myth formation, historical transmission, cognitive archaeology—the cumulative weight becomes the evidence.
-
-This is how physics works. Einstein's general relativity wasn't accepted because one observation matched. It was accepted because:
-- Mercury's perihelion precession matched
-- Light bending around the sun matched
-- Gravitational time dilation matched
-- Gravitational waves (decades later) matched
-
-Each individual finding could have alternative explanations. Together, they constitute proof that the theory captures something real about the structure of reality.
-
-**The Swedenborgian framework is at this stage.** The question is no longer "Does it work?" The question is "Why does it work?"—and that question leads into ontology that remains speculative but increasingly difficult to dismiss.
-
-### Framework Refinement: Where Swedenborg Was Wrong
-
-**This project does NOT treat Swedenborg as infallible.** Where the data or deeper analysis contradict his claims, we correct the framework. Several significant corrections have been identified:
-
-#### The Limbus as Cartesian Artifact — **CORRECTION**
-
-**Swedenborg's claim:** After death, the spirit retains a "limbus"—a fringe of purest natural substances—to provide containment and prevent dissipation.
-
-**The problem:** This concept arose from Swedenborg's 18th-century scientific training in Cartesian mechanics. The "interaction problem" (how can unextended spirit interact with extended matter?) led him to posit a "nexus" substance bridging the gap. The limbus is a theoretical epicycle—a construct to save the phenomena while maintaining a flawed premise (dualism).
-
-**The correction:** The physical world and the spiritual-natural world are NOT separate ontological floors. They are the same continuum viewed through different filters. The "physical" is the "fixed edge" of the spiritual-natural—maximum resistance and inertia maintained for the developmental purposes of the proprium (selfhood formation).
-
-**Evidence supporting the correction:**
-- NDE experiencers don't notice the "transition"—they have to be TOLD they are dead. If physical and spiritual were ontologically distinct, the difference would be immediately obvious.
-- "When what is spiritual touches what is spiritual, it is just the same to sense as when what is natural touches what is natural" (Swedenborg's own observation contradicts his theory)
-- The "Mall World" phenomenon: thousands report accessing a consistent, hyper-real topography during sleep—the same "spiritual-natural" reality, just with the biological filter bypassed
-
-**What this means:** The true "container" of identity is not a material skin—it is the **biography**. The history of states, choices, and loves accumulated in time forms the irrevocable vessel. We are not ghosts needing a bucket; we are the "concrete spirit" in seed-state formation.
-
-#### Biological Determinism about Jesus — **CORRECTION**
-
-**Swedenborg's claim:** Jesus had a "soul from the Father" (Divine) and a "body from the mother" (Human), based on the biological theory of his time that the sire provides the soul and the dam provides the body.
-
-**The problem:** This dehumanizes Jesus into a "God-Man hybrid" rather than a true human person. It implies his struggles and faith were divine pantomime, not genuine human experience.
-
-**The correction:** Jesus was a **complete human soul** who achieved perfect alignment with the Divine through the **removal of obstruction** (the proprium). He was not the Lord *disguised* as a human; he was a human *filled* with the Lord. The mechanism was not biological origin but spiritual transparency.
-
-**Evidence supporting the correction:**
-- Jesus's own recorded statements: "I can do nothing by myself" (John 5:19)—impossible if he possessed inherent omnipotence
-- "Why do you call me good? No one is good except God alone" (Mark 10:18)—refusing to appropriate divine attributes to his human vessel
-- The vulnerability of Gethsemane: genuine struggle, not theatrical performance
-
-**What this means:** The "Divine Human" is not exclusive to Jesus—it is the Lord's capacity to be personal with every human, appearing in forms the soul can receive. The "Being of Light" in NDEs is the Lord appearing to Christians as Jesus, to Buddhists as Amida, to secularists as Light—constant reality, variable form.
-
-#### Somatic Influx: Extending the Framework — **EXTENSION**
-
-Beyond corrections, the framework has been **extended** where empirical data support new applications:
-
-**The phenomenon:** Radical remission—spontaneous regression of advanced cancer in the absence of adequate treatment—occurs with statistical regularity (not placebo, which achieves <1% complete response in solid tumors).
-
-**Framework extension:** "Somatic influx" proposes that the body functions as the "soul in ultimates"—faithfully printing the state of the spirit. When spiritual transformation (release of suppressed emotions, shift from fear to love, alignment of will with life) occurs, the physical correspondence (disease) loses its sustaining energy.
-
-**Evidence:**
-- Kelly Turner's research: 7 of 9 factors in radical remission are psycho-spiritual, not physical
-- The timeline is often compressed: spiritual shift → physical reorganization within days
-- DOPS birthmark data: spiritual trauma can "print" onto physical form; therefore, spiritual resolution can "erase" physical manifestation
-
-**What this means:** The body is not a machine that occasionally malfunctions; it is a printer that faithfully outputs the spiritual template. Change the template, change the output.
-
-### The Methodology Summarized
-
-This project follows the data wherever it leads:
-
-1. **Where Swedenborg predicts and data confirm** → Report as HIT
-2. **Where Swedenborg predicts and data contradict** → Report as MISS and investigate
-3. **Where Swedenborg's framework reflects 18th-century limitations** → Correct the artifact while retaining the valid principle
-4. **Where data suggest extensions** → Extend the framework and test the extension
-
-We are not defending Swedenborg. We are not attacking Swedenborg. We are using his framework as a **hypothesis generator** and letting the data arbitrate. When 95/100 questions produce significant patterns, the hypothesis has earned serious consideration—not as revelation to be accepted on faith, but as theory that organizes observations better than alternatives.
-
-The goal is not to prove Swedenborg right. The goal is to understand why the patterns emerge when his framework is applied.
-
-### Application to MallWorld Analysis
-
-When analyzing MallWorld dream data, interpret spatial, entity, and atmospheric patterns through the correspondential lens:
+When analysing MallWorld dream data, interpret spatial, entity and atmospheric patterns through the correspondential lens. Test them as in §3–§4:
 
 | Natural Feature | Swedenborgian Correspondence | NOT This |
 |-----------------|------------------------------|----------|
@@ -359,120 +303,102 @@ When analyzing MallWorld dream data, interpret spatial, entity, and atmospheric 
 | Creatures | Affections made visible (animals = affections) | "Instinctual drives" |
 | Authority figures | Beings with teaching/governing function | "Internalized parents" |
 
-Directional framing used in MallWorld synthesis:
-- East = ruling love (quality source); West = natural/sensory expression that can be positive when East is good (not inherently negative).
-- Proprium refers to the self; self-love appears when the ruling love is self-oriented—do not equate West with proprium by default.
-- Let quality propagate outward from East into adjacent quadrants; infer anchors relative to East when explicit cardinal labels are absent.
+Directional framing used in the MallWorld synthesis:
+- **East** = ruling love (the source of quality). **West** = natural/sensory expression, which can be positive when East is good; it is not inherently negative.
+- **Proprium** refers to the self. Self-love appears when the ruling love is self-oriented. Do not equate West with proprium by default.
+- Let quality propagate outward from East into adjacent quadrants. Infer anchors relative to East when explicit cardinal labels are absent.
 
-### When to Apply This Framework
+## 10. When to Apply the Framework
 
-**The framework is the primary lens because it has demonstrated superior explanatory power.** Apply it as follows:
+- **DO** test whether patterns align with correspondential predictions specified in advance.
+- **DO** report whether the data support, contradict or underdetermine the framework.
+- **DO** report hits as hits, clearly.
+- **DO** note parallels with other frameworks where relevant, as secondary.
+- **DO NOT** substitute Jungian or Freudian interpretation as the primary lens.
+- **DO NOT** dismiss findings that support the framework to appear "scientific" or "balanced".
+- **DO NOT** force data to confirm the framework, or present literature-based consistency as a tested hit.
 
-- **DO** test whether MallWorld patterns align with correspondential predictions
-- **DO** report whether data support, contradict, or are underdetermined regarding the framework
-- **DO** note parallels with other interpretive frameworks when relevant, but as secondary
-- **DO** report hits as hits — when the framework predicts and data confirm, say so clearly
-- **DO NOT** substitute Jungian/Freudian interpretation as the primary lens (it creates anomalies)
-- **DO NOT** dismiss findings that support the framework to appear "scientific" or "balanced"
-- **DO NOT** force data to confirm the framework when they don't
-- **DO NOT** hedge against confirmed predictions — accuracy is the goal, not false balance
+## 11. Source Documentation
 
-### Source Documentation
+Source material for the framework is maintained in the companion repository [literary-compilation](https://github.com/kayna-of-light/literary-compilation):
+- `data/02_Swedenborgian_Theology/` — core doctrinal documents
+- `data/01_Consciousness_Studies/` — empirical validation analyses. See especially "Validating Swedenborg's Correspondences.md", "Testing Swedenborg's Correspondences Empirically.md" and "Being of Light - Statistical Analysis of NDE Phenomenology.md".
 
-Detailed source materials for the Swedenborgian framework are maintained in the companion repository:
-- `literary-compilation/data/02_Swedenborgian_Theology/` — Core doctrinal documents
-- `literary-compilation/data/01_Consciousness_Studies/` — Empirical validation analyses
-- See especially: "Validating Swedenborg's Correspondences.md", "Testing Swedenborg's Correspondences Empirically.md", "Being of Light - Statistical Analysis of NDE Phenomenology.md"
+Figures in those documents, and in `docs/external/` and `projects/nde/docs/` (other than the 2026-10 audit), may predate the audit. Cite numbers from this repository's executed notebooks.
 
 ---
 
-## Project Overview
+## 12. Project Overview
 
-This repository provides a **general-purpose framework** for converting scraped text datasets into structured data and performing systematic analysis using LLM-powered extraction. The framework supports research projects that:
+The repository is a **general-purpose framework** for research projects that:
+1. **scrape** narrative data from web sources;
+2. **extract** structured data from the text with Azure OpenAI structured output;
+3. **analyse** the structured data statistically and write reports.
 
-1. **Scrape** data from various sources (web pages, databases, documents)
-2. **Extract** structured data from unstructured text using Azure OpenAI
-3. **Analyze** the structured data with statistical and qualitative methods
+| Project | Description | Data (raw files on disk) |
+|---------|-------------|--------------------------|
+| [NDE Analysis](projects/nde/) | Near-death experience phenomenology | NDERF 5,666 raw / 5,659 extracted unique; IANDS 1,102 raw / 1,092 extracted unique |
+| [Remission Analysis](projects/remission/) | Spontaneous remission and psycho-spiritual transformation | PubMed Central 350; Radical Remission 149; 70 healing-related NDE accounts (NDERF 50, IANDS 20) |
+| [MallWorld Analysis](projects/mallworld/) | Collective dream phenomenology and spatial symbolism | r/themallworld 3,743 |
+| `projects/extraction-test/` | Small extraction experiments | — |
 
-### Current Research Projects
-
-| Project | Description | Data Sources |
-|---------|-------------|--------------|
-| **[NDE Analysis](../projects/nde/)** | Near-death experience phenomenology | NDERF (~3,500), IANDS (~600) |
-| **[Remission Analysis](../projects/remission/)** | Spontaneous remission and psycho-spiritual transformation | PubMed Central, Radical Remission Project |
-| **[MallWorld Analysis](../projects/mallworld/)** | Collective dream phenomenology and spatial symbolism | r/themallworld (~3,700 dreams) |
-
-### Collaboration
-
-This repository works in close collaboration with [literary-compilation](https://github.com/kayna-of-light/literary-compilation) for theoretical frameworks and interpretive lenses. Statistical findings from this project provide empirical evidence for concepts in the knowledge graph.
+The repository works with [literary-compilation](https://github.com/kayna-of-light/literary-compilation), which supplies theoretical frameworks. Statistical findings from this project feed its knowledge graph, so only audited figures (§6) should flow there.
 
 ---
 
-## Repository Architecture
+## 13. Repository Architecture
 
 ```
 structured-data-analysis/
-├── shared/                            # SHARED CORE LIBRARY
-│   ├── scrapers/                      # Common scraper utilities
-│   │   ├── base.py                    # BaseScraper, ScrapedCase, http utilities
-│   │   └── [source]_scraper.py        # Source-specific scrapers
-│   ├── analysis/                      # Azure OpenAI analysis utilities
-│   │   ├── azure_client.py            # Credential management
-│   │   ├── base_analyzer.py           # BaseAnalyzer class
-│   │   └── structured_extractor.py    # Generic extraction pipeline
-│   ├── registry/                      # Dataset registry management
-│   │   └── loader.py                  # YAML registry loader
-│   └── models/                        # Shared Pydantic models
-│       └── common.py                  # Base model classes
-│
-├── data/                              # UNIFIED DATA REPOSITORY
-│   ├── nderf/                         # ~3,500 NDERF experiences
-│   ├── iands/                         # ~600 IANDS experiences
-│   ├── pmc/                           # PubMed Central case reports
-│   └── radical_remission/             # Radical Remission testimonials
-│
-├── projects/                          # ANALYSIS PROJECTS
-│   └── [project_name]/                # Individual project
-│       ├── extract.py                 # Structured extraction script
-│       ├── models/questionnaire.py    # Pydantic schema for extraction
-│       ├── registries/                # Dataset registry YAML files
-│       ├── notebooks/                 # Analysis notebooks
-│       ├── reports/                   # Generated reports (markdown)
-│       ├── scripts/                   # Project-specific utilities
-│       └── structured/                # Extraction output (JSON)
-│
-├── docs/                              # Documentation
-│   ├── REPORT_WRITING_GUIDELINES.md   # Academic report structure
-│   └── plans/                         # Planning documents
-│
-├── secrets/                           # API credentials (gitignored)
-│   └── azure_openai.env               # Azure OpenAI credentials
-│
-└── tests/                             # Unit tests
+├── shared/                         # Shared core library
+│   ├── scrapers/                   # base.py (ScrapedCase, http_get, slugify, clean_text) + per-source scrapers
+│   ├── analysis/                   # azure_client.py, base_analyzer.py, structured_extractor.py
+│   ├── registry/loader.py          # YAML dataset registries (load_registry, DatasetRegistry)
+│   ├── models/common.py            # Shared Pydantic base classes
+│   └── build_pdfs.py               # Generic Markdown → PDF builder
+├── data/                           # Raw scraped data (one JSON per case)
+│   ├── nderf/ iands/ mallworld/ pmc/ radical_remission/
+├── projects/
+│   └── <project>/
+│       ├── extract.py              # Structured extraction entry point
+│       ├── models/questionnaire.py # Pydantic schema = the codebook
+│       ├── registries/             # Dataset registry YAML
+│       ├── structured/             # Extraction output (JSON)
+│       ├── notebooks/              # Numbered analysis notebooks (archive/ = superseded)
+│       ├── reports/                # Markdown reports (source of truth); latex/ + PDFs generated
+│       ├── scripts/                # Project utilities
+│       ├── tests/                  # Project tests
+│       └── docs/                   # Project documentation
+├── projects/nde/scripts/nde_dataset.py   # Verified NDE loader (use it; §4)
+├── projects/nde/scripts/md_to_latex.py   # Report Markdown → LaTeX
+├── projects/nde/validation/              # Second-coder reliability codes + conventions
+├── docs/REPORT_WRITING_GUIDELINES.md     # Report structure
+├── secrets/azure_openai.env              # Credentials (gitignored)
+└── output/, projects/*/output/           # Generated figures (gitignored; regenerate by running notebooks)
 ```
+
+There is no top-level `tests/` directory; tests live in `projects/*/tests/`.
 
 ---
 
-## Core Concepts
+## 14. Core Concepts
 
-### 1. Questionnaire Schema (Pydantic Models)
+### 14.1 Questionnaire Schema (Pydantic Models)
 
-Each project defines a **questionnaire schema** as Pydantic models in `models/questionnaire.py`. These models:
-- Define the structure of extracted data
-- Use enums for categorical responses
-- Include `Field(description=...)` for LLM guidance
-- Inherit from `QuestionnaireBaseModel` with `extra="forbid"`
+Each project defines its codebook as Pydantic models in `models/questionnaire.py`:
+- enums for categorical responses;
+- `Field(description=...)` text to guide the extractor (this text *is* the codebook a second coder uses);
+- inheritance from `QuestionnaireBaseModel` with `extra="forbid"`.
 
-**Example pattern:**
 ```python
-from pydantic import BaseModel, Field
 from enum import Enum
+from pydantic import BaseModel, Field
 
 class MentionResponse(str, Enum):
-    YES_EXPLICIT = "yes_explicit"
-    IMPLIED = "implied"
-    NO = "no"
-    NOT_MENTIONED = "not_mentioned"
+    YES_EXPLICIT = "yes_explicit"    # Directly stated
+    IMPLIED = "implied"              # Inferrable from context
+    NO = "no"                        # Explicitly negated
+    NOT_MENTIONED = "not_mentioned"  # No information
 
 class MyResponse(BaseModel):
     feature_present: MentionResponse = Field(
@@ -480,63 +406,64 @@ class MyResponse(BaseModel):
     )
 ```
 
-### 2. Registry System
+**Schema design lessons from the reliability study:**
+- **Define the boundary between neighbouring categories.** For example, say when an unidentified being is `unknown_presence` and when it is `other`.
+- **Give a precedence rule when categories can co-occur.** For example, a barrier and a spoken "not your time".
+- **Say what "implied" requires.** For example, a specific task, not a general life lesson.
+- **Anchor severity scales with examples**, including the hard cases (self-condemnation in hellish reviews).
+- **Use `no` only when the narrative can distinguish it from `not_mentioned`.**
+- **Record functions per entity, not per account,** when the analysis needs to attribute them.
 
-Projects use **YAML registry files** to define which data files to analyze without duplicating data:
+### 14.2 Registry System
+
+YAML registry files define which data files a project analyses, without duplicating data:
 
 ```yaml
 # projects/my_project/registries/dataset.yaml
 name: dataset_full
 description: Complete dataset for analysis
 version: "1.0.0"
-
 datasets:
   source_name:
     description: Data source description
-    source_path: ../../../data/source_name
-    files: "*"           # or list of specific files
-    exclude: []          # patterns to exclude
+    source_path: ../../../data/source_name   # relative to the registry file
+    files: "*"                               # or a list of specific files
+    exclude: []
 ```
 
-### 3. Extraction Pipeline
+```python
+from shared.registry import load_registry
+registry = load_registry(Path("registries/nderf.yaml"))
+files = registry.get_files("nderf")     # list of Paths; registry.list_datasets() names the datasets
+```
 
-The `StructuredExtractor` class handles:
-- Loading files via registries
-- Parallel processing with configurable concurrency
-- Azure OpenAI structured output parsing
-- Progress tracking and resumption
-- Error handling with retry logic
+### 14.3 Extraction Pipeline and Data Flow
 
-### 4. Data Flow
+`StructuredExtractor` loads files via registries, runs Azure OpenAI structured output with parallel workers, validates against the schema, retries on errors and resumes where it stopped.
 
 ```
-Raw Data (data/)
-    ↓ extract.py + Azure OpenAI
-Structured JSON (projects/*/structured/)
-    ↓ Jupyter notebooks
-Statistical Analysis (projects/*/notebooks/)
-    ↓ Report generation
-Markdown Reports (projects/*/reports/)
+Raw data (data/) → extract.py + Azure OpenAI → structured JSON (projects/*/structured/)
+→ notebooks (verified loader, executed top to bottom) → Markdown reports → LaTeX/PDF
 ```
 
 ---
 
-## Development Guidelines
+## 15. Development Guidelines
 
-### Creating a New Project
+### 15.1 Creating a New Project
 
-1. **Create project structure:**
 ```bash
-mkdir -p projects/my_project/{models,registries,notebooks,reports,scripts,structured}
+mkdir -p projects/my_project/{models,registries,notebooks,reports,scripts,structured,tests}
 ```
 
-2. **Define questionnaire schema** in `models/questionnaire.py`
-3. **Create extract.py** following the pattern in existing projects
-4. **Create registry YAML files** in `registries/`
-5. **Run extraction:** `python extract.py --max-concurrency 4`
-6. **Create analysis notebooks** in `notebooks/`
+1. Define the questionnaire schema in `models/questionnaire.py`, following the design lessons above.
+2. Create `extract.py` from the pattern below.
+3. Create registry YAML files.
+4. Test with `python extract.py --limit 1`, then run the full extraction.
+5. Write a verified loader for the project (model it on `projects/nde/scripts/nde_dataset.py`) before writing analysis notebooks.
+6. Measure coding reliability on a random sample (model it on `projects/nde/validation/`).
 
-### Extraction Script Pattern
+### 15.2 Extraction Script Pattern
 
 ```python
 #!/usr/bin/env python3
@@ -567,111 +494,90 @@ def main() -> None:
         secrets_path=PROJECT_ROOT.parent.parent / "secrets" / "azure_openai.env",
         registries_dir=PROJECT_ROOT / "registries",
     )
-    extractor = StructuredExtractor(config)
-    extractor.run()
+    StructuredExtractor(config).run()
 
 if __name__ == "__main__":
     main()
 ```
 
-### Command Line Options for extract.py
+### 15.3 `extract.py` Command-Line Options
 
 | Flag | Description |
 |------|-------------|
-| `--datasets source1 source2` | Select specific datasets to process |
-| `--limit 25` | Process only first N cases (for testing) |
+| `--datasets a b` | Datasets to process (default: all) |
+| `--limit N` | Process at most N files |
+| `--files name.json` | Extract specific files |
 | `--dry-run` | List files without calling Azure OpenAI |
-| `--overwrite` | Regenerate existing extractions |
-| `--max-concurrency 4` | Parallel processing threads |
-| `--log-level INFO` | Logging verbosity |
+| `--overwrite` | Re-extract existing outputs |
+| `--max-concurrency N` | Concurrent API calls (default 10) |
+| `--temperature T` | Sampling temperature (default 0.7) |
+| `--max-output-tokens N` | Response token limit (default 10000) |
+| `--model NAME` | Override the deployment name |
+| `--secrets-path PATH` | Path to `azure_openai.env` |
+| `--log-level LEVEL` | Logging verbosity (default INFO) |
 
 ---
 
-## Report Writing Standards
+## 16. Report Writing Standards
 
-Follow the guidelines in [docs/REPORT_WRITING_GUIDELINES.md](../docs/REPORT_WRITING_GUIDELINES.md):
-
-### Report Structure
+Follow `docs/REPORT_WRITING_GUIDELINES.md`:
 
 ```
 TITLE: [Descriptive Phrase]: [Methodology Subtitle]
-│
 ├── ABSTRACT (Background, Methods, Results, Conclusions, Keywords)
 ├── DATA PROVENANCE TABLE
 ├── 1. INTRODUCTION (Background, Theoretical Framework, Aims)
 ├── 2. METHODS (Data Sources, Coding Scheme, Statistical Analysis)
-├── 3. RESULTS (One finding per subsection: Narrative → Table → Finding Statement)
-├── 4. DISCUSSION (Summary, Interpretation, Implications, Limitations, Future)
+├── 3. RESULTS (one finding per subsection: Narrative → Table → Finding Statement)
+├── 4. DISCUSSION (Summary, Interpretation, Implications, Limitations, Future Directions)
 ├── 5. CONCLUSION
 ├── REFERENCES
 └── APPENDICES
 ```
 
-### Statistical Reporting
-
-- Always include: test statistic, df, p-value
-- Format: `(χ² = 2845.61, df = 15, p < 0.0001)`
-- Sample sizes: `n=443` (subset), `N=6,753` (total)
-- Percentages: one decimal place `73.4%`
-
-### Finding Statements
-
-After each table, include a bolded interpretive statement:
-```markdown
-**Critical Finding**: The variable achieves **94.6% accuracy**. This represents...
-```
+- **Statistics:** test statistic, df, p-value, effect size and CI, e.g. `(χ² = 15.04, df = 6, p = 0.020, V = 0.11)`. Subsets are written `n=443`; totals `N=6,751`. Percentages take one decimal place.
+- **Finding statements:** after each results table, add a bolded statement labelled with its claim level, e.g. `**Finding (statistically supported):** ...`. Label verdicts against the framework explicitly: **Hit**, **Miss**, **Partial hit**, **Underdetermined**.
+- **Limitations** must cite the measured reliability of the fields used (§6.2) instead of a generic "AI coding" caveat.
+- **Corrections:** when a report is corrected, add a dated correction notice at the top listing what changed.
+- **LaTeX/PDF:** `python projects/nde/scripts/md_to_latex.py "<report name>"`, then compile from `reports/latex/` with `tectonic` or `pdflatex`. Check the rendered PDF: wide tables need content-proportional column widths (the separator dashes set them).
 
 ---
 
-## Notebook Conventions
+## 17. Notebook Conventions
 
-### Naming Convention
+- **Numbered names**, e.g. `01_being_of_light_analysis.ipynb`, `07_entity_function_differentiation.ipynb`. Superseded notebooks go to `notebooks/archive/`.
+- **First cell:** purpose, the framework prediction, and what would count as a miss (§3).
+- **Execute top to bottom** before committing (`jupyter nbconvert --to notebook --execute --inplace`). Committed outputs must come from the committed code.
+- **Summary cells compute what they print.**
+- **Figures:** follow the `dataviz` skill; render each figure and look at it before committing.
 
-Notebooks follow a numbered naming scheme:
-- `01_being_of_light_analysis.ipynb`
-- `02_normative_path_validation.ipynb`
-- `03_volunteer_soul_profile.ipynb`
-
-### Standard Imports
+NDE notebooks load data like this:
 
 ```python
-import json
+import sys
 from pathlib import Path
-import pandas as pd
 import numpy as np
+import pandas as pd
 from scipy import stats
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-# Project paths
-PROJECT_ROOT = Path.cwd().parent
-DATA_ROOT = PROJECT_ROOT.parent / "data"
-STRUCTURED_ROOT = PROJECT_ROOT / "structured"
+NDE_ROOT = Path.cwd().parent
+sys.path.insert(0, str(NDE_ROOT / "scripts"))
+import nde_dataset as nd
+
+df = nd.load_frame()                      # 6,751 rows, one column per schema leaf + word_count/log_words
+lr = nd.isin(df, "occurrence", nd.LIFE_REVIEW_YES)
+print(nd.fmt_pct(int(lr.sum()), len(df))) # 'k/n = p% [95% CI lo–hi]'
+res = nd.adjusted_odds_ratio(df.assign(lr=lr.astype(int), bol=df.bol_encounter.astype(int)), "lr", "bol")
 ```
 
-### Loading Structured Data
-
-```python
-def load_structured_data(source: str) -> list[dict]:
-    """Load all structured JSON files for a source."""
-    source_dir = STRUCTURED_ROOT / source
-    data = []
-    for path in sorted(source_dir.glob("*.json")):
-        with open(path) as f:
-            data.append(json.load(f))
-    return data
-
-nderf_data = load_structured_data("nderf")
-df = pd.DataFrame(nderf_data)
-```
+For other projects, read the extraction from the `extraction` key of each structured file (§19.2) and check every enum value against the schema.
 
 ---
 
-## Azure OpenAI Configuration
+## 18. Azure OpenAI Configuration
 
-### Credentials File
+`secrets/azure_openai.env` (gitignored):
 
-Create `secrets/azure_openai.env`:
 ```env
 AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
 AZURE_OPENAI_API_KEY=your-api-key
@@ -679,237 +585,145 @@ AZURE_OPENAI_DEPLOYMENT=your-deployment-name
 AZURE_OPENAI_API_VERSION=2024-05-01-preview
 ```
 
-### Structured Output
-
-The framework uses Azure OpenAI's **structured output** feature:
-- Pydantic schemas are converted to JSON Schema
-- The model is constrained to return valid JSON matching the schema
-- Validation errors trigger automatic retry
+The extractor uses structured output: the Pydantic schema is converted to JSON Schema, the model must return matching JSON, and validation errors trigger a retry. The NDE extraction used `gpt-5.2` (schema `NDEAnalysisResponse`, run of 2026-01-06).
 
 ---
 
-## Scraper Development
+## 19. Data Formats
 
-### Adding a New Data Source
+### 19.1 Scrapers and Raw Data
 
-1. Create scraper in `shared/scrapers/[source]_scraper.py`
-2. Inherit from `BaseScraper`
-3. Implement `scrape()` method returning `List[ScrapedCase]`
-4. Save output to `data/[source]/`
-
-### ScrapedCase Schema
+New sources: create `shared/scrapers/<source>_scraper.py`, inherit from `BaseScraper`, implement `scrape()` returning `List[ScrapedCase]`, and save to `data/<source>/`. Use `http_get` (retry and rate limiting), `slugify` and `clean_text` from `shared/scrapers/base.py`.
 
 ```python
 @dataclass
 class ScrapedCase:
-    """Standardized output for all scrapers."""
-    id: str
-    title: str
-    content: str
-    source: str
+    source: str                    # e.g. "nderf", "pmc"
+    source_id: str                 # unique within the source
     url: str
-    scraped_at: str
+    title: str
+    content: str                   # main narrative text
+    date_scraped: str              # ISO timestamp
+    date_published: Optional[str] = None
     metadata: Dict[str, Any] = field(default_factory=dict)
 ```
 
-### HTTP Utilities
+Raw NDE files carry fields such as `id`, `nde_code`, `title`, `date`, `content` and `url`. **`id` and `nde_code` are not unique identifiers**: different people share them. Use the file name, or the `content_checksum` of the structured record.
 
-Use shared utilities from `shared/scrapers/base.py`:
-- `http_get(url)` — Fetch with retry logic and rate limiting
-- `slugify(text)` — Convert to URL-safe filename
-- `clean_text(text)` — Normalize whitespace and encoding
+### 19.2 Structured Output Files
+
+```json
+{
+  "dataset": "nderf",
+  "source_file": "...data/nderf/<file>.json",
+  "source_url": "https://...",
+  "title": "...",
+  "date": "...",
+  "content_checksum": "sha256...",
+  "extraction_model": "gpt-5.2",
+  "extraction_timestamp": "2026-01-06T13:59:35+00:00",
+  "schema": "NDEAnalysisResponse",
+  "extraction": { "...": "schema fields, nested as in models/questionnaire.py" },
+  "response_id": "...",
+  "usage": { "...": "token counts" }
+}
+```
 
 ---
 
-## Testing
-
-### Running Tests
+## 20. Testing
 
 ```bash
-pytest tests/
-pytest tests/test_extractor.py -v
+python -m pytest projects/nde/tests          # run each project separately
+python -m pytest projects/remission/tests
+python -m pytest projects/nde/tests/test_nde_dataset.py -v   # verified-loader checks
 ```
 
-### Test Structure
-
-```
-tests/
-├── test_extractor.py      # Extraction pipeline tests
-├── test_registry.py       # Registry loader tests
-└── test_scrapers.py       # Scraper unit tests
-```
+- `pyproject.toml` sets `testpaths = ["tests"]`, which does not exist, so pass test paths explicitly.
+- Run each project in its own invocation. Both import a top-level `models` package, so a combined run fails at collection.
+- **Known failures**, with fixtures that predate the current schemas:
+  - `projects/nde/tests/test_questionnaire_models.py::test_model_instantiation_succeeds`
+  - `projects/remission/tests/test_questionnaire_models.py`: `test_minimal_payload_parses`, `test_valid_payload_parses`
 
 ---
 
-## Dependencies
+## 21. Dependencies and Environment
 
-### Core Dependencies (requirements.txt)
+```bash
+pip install -r requirements.txt     # or: conda env create -f environment.yml
+```
 
 | Package | Purpose |
 |---------|---------|
-| `pydantic>=2.5` | Schema validation |
-| `openai>=1.30` | Azure OpenAI client |
-| `python-dotenv` | Environment loading |
-| `requests` | HTTP requests |
-| `beautifulsoup4` | HTML parsing |
-| `pandas`, `numpy`, `scipy` | Data analysis |
-| `matplotlib`, `seaborn` | Visualization |
+| `pydantic>=2.5`, `openai>=1.30`, `python-dotenv` | Schema validation, Azure OpenAI, credentials |
+| `requests`, `beautifulsoup4`, `lxml`, `selenium` | Scraping |
+| `pandas`, `numpy`, `scipy`, `statsmodels` | Analysis |
+| `scikit-learn<1.8`, `factor_analyzer` | Modelling (`factor_analyzer` breaks with scikit-learn 1.8) |
+| `matplotlib`, `seaborn`, `plotly` | Visualisation |
 | `jupyter` | Notebooks |
-
-### Environment Setup
-
-```bash
-# Using pip
-pip install -r requirements.txt
-
-# Using conda
-conda env create -f environment.yml
-conda activate consciousness-research
-```
+| `pypandoc_binary` (or `pandoc`), `tectonic` or a LaTeX distribution | Report LaTeX/PDF |
 
 ---
 
-## File Format Standards
+## 22. Common Patterns
 
-### JSON Data Files
-
-Each scraped/extracted file follows this structure:
-```json
-{
-  "id": "unique_identifier",
-  "title": "Document Title",
-  "content": "Full text content...",
-  "source": "dataset_name",
-  "url": "https://source.url/path",
-  "scraped_at": "2025-01-15T10:30:00Z",
-  "metadata": {
-    "additional": "fields"
-  }
-}
-```
-
-### Structured Output Files
-
-Extraction output mirrors the Pydantic schema with additional metadata:
-```json
-{
-  "_extraction_metadata": {
-    "schema_name": "NDEAnalysisResponse",
-    "schema_hash": "abc123...",
-    "extracted_at": "2025-01-15T10:30:00Z",
-    "model": "gpt-5.2"
-  },
-  "field1": "value1",
-  "field2": "value2"
-}
-```
-
----
-
-## Common Patterns
-
-### Enum Usage in Questionnaires
-
-For categorical responses, prefer specific enums over booleans:
-
-```python
-class MentionResponse(str, Enum):
-    YES_EXPLICIT = "yes_explicit"  # Directly stated
-    IMPLIED = "implied"             # Inferrable from context
-    NO = "no"                       # Explicitly negated
-    NOT_MENTIONED = "not_mentioned" # No information
-```
-
-### Field Descriptions for LLM Guidance
-
-Include detailed descriptions to guide extraction:
+- Prefer specific enums (`yes_explicit` / `implied` / `no` / `not_mentioned`) over booleans.
+- Write precise `Field` descriptions, including precedence rules:
 
 ```python
 light_encounter: LightEncounter = Field(
     description="""Type of light encounter. Select ONE value.
-    Precedence: being_of_light > brilliant_light > presence_without_visual
-    If the experiencer describes both brilliant light AND a being of light,
-    select being_of_light - the being inherently indicates presence of light."""
+    Precedence: being_of_light > brilliant_light > presence_without_visual.
+    If both brilliant light AND a being of light are described, select being_of_light."""
 )
 ```
 
-### List Fields for Multiple Items
-
-Use `List[Enum]` for multi-select responses:
-
-```python
-greeting_type: List[GreetingType] = Field(
-    default_factory=list,
-    description="Types of greeting upon arrival. Empty list means not mentioned."
-)
-```
+- Use `List[Enum]` with `default_factory=list` for multi-select fields. An empty list means not mentioned.
 
 ---
 
-## Troubleshooting
-
-### Common Issues
+## 23. Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
 | Azure API rate limits | Reduce `--max-concurrency` |
-| Missing credentials | Check `secrets/azure_openai.env` exists |
-| Registry path errors | Verify `source_path` is relative to registry file |
-| Validation errors | Check Pydantic schema against actual output |
-| Encoding issues | `http_get()` auto-detects encoding |
-
-### Debugging Extraction
-
-1. Run with `--limit 1` to test single file
-2. Check `--dry-run` output for file resolution
-3. Enable `--log-level DEBUG` for verbose output
-4. Inspect structured output JSON for schema compliance
+| Missing credentials | Check that `secrets/azure_openai.env` exists |
+| Registry path errors | `source_path` is relative to the registry file |
+| A percentage comes out 0.0% | Almost always a wrong enum value or field path. Use `nd.isin`, which raises on impossible values |
+| Validation errors | Compare the schema with actual output; run `extract.py --limit 1 --log-level DEBUG` |
+| `factor_analyzer` TypeError | Install `scikit-learn<1.8` |
+| `md_to_latex.py` "unmapped non-ASCII characters" | Add the character to `SYMBOLS` in the script, or use an ASCII form in the Markdown |
 
 ---
 
-## Contributing
+## 24. Contributing
 
-### Code Style
-
-- Use `black` for formatting (line length 100)
-- Use `ruff` for linting
-- Type hints required for public APIs
-- Docstrings for all public functions
-
-### Pull Request Checklist
-
-- [ ] Tests pass (`pytest tests/`)
-- [ ] Code formatted (`black .`)
-- [ ] Lint clean (`ruff .`)
-- [ ] Documentation updated
-- [ ] Questionnaire changes documented
+- **Code style:** format Python with `black` (line length 100) and lint with `ruff check`. Public functions need type hints and docstrings.
+- **Before a pull request:**
+  - [ ] Tests pass (per project; known failures noted in §20)
+  - [ ] Changed notebooks re-executed top to bottom
+  - [ ] Every new number in a report or in this file traces to an executed cell
+  - [ ] Report LaTeX/PDF regenerated from Markdown
+  - [ ] Schema changes documented, and reliability re-measured if fields changed
+  - [ ] §6 scorecard updated when a verdict changes
 
 ---
 
-## Quick Reference
+## 25. Quick Reference
 
-### Run Extraction
 ```bash
-cd projects/nde
-python extract.py --datasets nderf iands --max-concurrency 4
+# Extraction
+cd projects/nde && python extract.py --datasets nderf iands --max-concurrency 4
+
+# Re-execute all NDE notebooks
+cd projects/nde/notebooks && jupyter nbconvert --to notebook --execute --inplace 0*.ipynb
+
+# Regenerate report LaTeX and PDF
+cd projects/nde && python scripts/md_to_latex.py && cd reports/latex && tectonic "<report>.tex"
 ```
 
-### Run Analysis Notebook
-```bash
-cd projects/nde/notebooks
-jupyter notebook 01_being_of_light_analysis.ipynb
-```
-
-### Load Registry
-```python
-from shared.registry import load_registry
-registry = load_registry(Path("registries/nderf.yaml"))
-files = registry.resolve_paths(Path("../../data"))
-```
-
-### Statistical Test
 ```python
 from scipy.stats import chi2_contingency
-chi2, p, dof, expected = chi2_contingency(contingency_table)
-print(f"χ² = {chi2:.2f}, df = {dof}, p = {p:.4f}")
+chi2, p, dof, expected = chi2_contingency(table)
+print(f"χ² = {chi2:.2f}, df = {dof}, p = {p:.4f}; {nd.expected_count_report(table)}; V = {nd.cramers_v(table):.2f}")
 ```
