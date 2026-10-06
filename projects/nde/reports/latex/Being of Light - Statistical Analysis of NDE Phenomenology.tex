@@ -20,12 +20,16 @@
 \textbf{Correction notice (2026-10-05).} This report was revised after a statistical audit of the underlying notebooks (\texttt{docs/STATISTICAL\_AUDIT\_2026-10.md}). Several headline results in the earlier version were produced by coding errors or invalid tests and have been corrected or withdrawn: the \ensuremath{\chi}\ensuremath{^{2}} = 365.14 for religion \ensuremath{\times} identification (a sparse-cell artifact; the valid association is weak), ``experiential properties identical --- all differences below 10\%'' (an artifact of broken fields; three properties differ by more than 10 points), ``0.0\% increased death fear'' (a broken scale; 0.9\%), ``54.7\% no external judgment'' (unmentioned sources were counted as ``no judgment''; 55.9\% of classifiable reviews involve an external evaluator), the ``singular Being even for polytheists'' finding (not measurable with the schema), and the ``below-baseline'' machine-learning result (overfitting on 37 test cases). Findings that hold --- rare harsh judgment, more teaching and telepathy in Light-Being encounters, a majority ``unknown presence'' identification, and a larger spirituality increase --- are reported with confidence intervals and narrative-length adjustment. The LaTeX and PDF versions were regenerated from this corrected text.
 \end{quote}
 
+\begin{quote}
+\textbf{Reliability addendum (2026-10-06).} Coding reliability was measured with a blind second coder on 100 random accounts and 44 life reviews; see \emph{Reliability of Near-Death Experience Narrative Coding} (\texttt{08\_extraction\_reliability.ipynb}). The fields behind the teaching, telepathy and functional-profile results agree well: light encounter, God or Jesus, telepathy and guidance at Cohen's \ensuremath{\kappa} = 0.82--0.88, teaching at 0.70. Two results change. (1) The schema does not define where ``unknown presence'' ends and ``other'' begins, and agreement on that label is \ensuremath{\kappa} = 0.44. The 50.6\% share describes how the extractor labelled unnamed beings. It is not a word experiencers chose, and it is no evidence about the vocabulary they prefer. (2) The loving:harsh ratio depends on the coder. Across all 428 rated life reviews it is 36.2:1 under GPT-5.2 and 6.4:1 (95\% CI 3.1--43.9) under the second coder. ``Rarely condemning, predominantly loving'' holds under both coders; the precise ratio does not.
+\end{quote}
+
 }
 
 \begin{abstract}
 Near-death experiences frequently involve encounters with a ``Being of Light'' described in terms evoking divine presence. The Swedenborgian correspondential framework proposes that the Being is a constant reality whose \emph{identification} is culturally mediated (``constant state, variable form''). We tested this against 6,751 structured NDE records (NDERF n=5,659; IANDS n=1,092; two exact duplicates removed) coded by GPT-5.2 structured extraction.
 
-Encounters identified as a divine figure or an unidentified presence occurred in 27.9\% of NDEs (95\% CI 26.8--28.9); only a third of these were coded as a visual \emph{being of light}. Half (50.6\%) were identified only as an ``unknown presence''. Religious background was weakly associated with the name used (\ensuremath{\chi}\ensuremath{^{2}} = 15.04, df = 6, p = 0.020, Cram\'{e}r's V = 0.11; the previously reported \ensuremath{\chi}\ensuremath{^{2}} = 365.14 was a sparse-cell artifact). When the evaluation during a life review was rated, harsh condemnation was rare (1.7\%; loving 60.3\%, uncomfortable 21.1\%), giving a loving:harsh ratio of 36.5:1 (95\% CI 14--136) but a loving:critical ratio of 2.7:1. Light-Being encounters involved more teaching (25.3\% vs 12.6\%) and telepathic communication (48.2\% vs 34.2\%) than encounters with other beings only, differences that survived adjustment for narrative length. Comparing Christians who named the Being ``Jesus'' with those who named it ``unknown presence'', guidance, teaching, telepathy, belonging and mission did not differ, but visual-being coding (+45 percentage points) and unity experience (\ensuremath{-}20 pp) did. Death fear fell in 88.0\% and rose in 0.9\% of Light-Being experiencers who stated both levels; this did not differ from other-being encounters. Spirituality rose in 89.2\%, with a larger increase than after other-being encounters (p = 0.003).
+Encounters identified as a divine figure or an unidentified presence occurred in 27.9\% of NDEs (95\% CI 26.8--28.9); only a third of these were coded as a visual \emph{being of light}. Half (50.6\%) were identified only as an ``unknown presence''. Religious background was weakly associated with the name used (\ensuremath{\chi}\ensuremath{^{2}} = 15.04, df = 6, p = 0.020, Cram\'{e}r's V = 0.11; the previously reported \ensuremath{\chi}\ensuremath{^{2}} = 365.14 was a sparse-cell artifact). When the evaluation during a life review was rated, harsh condemnation was rare (1.7\%; loving 60.3\%, uncomfortable 21.1\%), giving a loving:harsh ratio of 36.5:1 (95\% CI 14--136) but a loving:critical ratio of 2.7:1. The loving:harsh ratio depends on where a coder draws the harsh line: a blind second coder puts it at 6.4:1 across all rated reviews. Light-Being encounters involved more teaching (25.3\% vs 12.6\%) and telepathic communication (48.2\% vs 34.2\%) than encounters with other beings only, differences that survived adjustment for narrative length. Comparing Christians who named the Being ``Jesus'' with those who named it ``unknown presence'', guidance, teaching, telepathy, belonging and mission did not differ, but visual-being coding (+45 percentage points) and unity experience (\ensuremath{-}20 pp) did. Death fear fell in 88.0\% and rose in 0.9\% of Light-Being experiencers who stated both levels; this did not differ from other-being encounters. Spirituality rose in 89.2\%, with a larger increase than after other-being encounters (p = 0.003).
 
 The data support a weak cultural shaping of vocabulary over a functionally similar encounter, consistent with ``constant state, variable form'', but they also show that the name covaries with the \emph{mode} of the encounter. Several previously reported confirmations do not survive correction.
 
@@ -90,7 +94,7 @@ Records came from the Near-Death Experience Research Foundation (NDERF, 5,659 ac
 
 \subsection{Coding Scheme}\label{coding-scheme}
 
-Each record was processed with GPT-5.2 (Azure OpenAI) into the Pydantic schema in \texttt{models/questionnaire.py} (131 leaf fields). No human validation of the extraction has been performed. Relevant fields: \texttt{light\_encounter}, \texttt{being\_identifications} (multi-select), \texttt{communication\_modes}, \texttt{guidance\_types}, life-review \texttt{judgment\_source}, \texttt{judgment\_intensity} and experiencer \texttt{emotional\_tone}, before/after levels of death fear, spirituality and religiosity, and religious background and belief at the time of the NDE.
+Each record was processed with GPT-5.2 (Azure OpenAI) into the Pydantic schema in \texttt{models/questionnaire.py} (131 leaf fields). Coding reliability was measured against a blind second coder (\texttt{08\_extraction\_reliability.ipynb}): Cohen's \ensuremath{\kappa} = 0.82--0.88 for light encounter, God or Jesus, telepathy and guidance; 0.70 for teaching; 0.44 for ``unknown presence''; and 0.74 (linear-weighted) for judgment intensity. Relevant fields: \texttt{light\_encounter}, \texttt{being\_identifications} (multi-select), \texttt{communication\_modes}, \texttt{guidance\_types}, life-review \texttt{judgment\_source}, \texttt{judgment\_intensity} and experiencer \texttt{emotional\_tone}, before/after levels of death fear, spirituality and religiosity, and religious background and belief at the time of the NDE.
 
 \subsection{Operational Definition of the Light-Being Subset}\label{operational-definition-of-the-light-being-subset}
 
@@ -201,7 +205,7 @@ Other religion (n=51) & 19.6\% & 9.8\% & 13.7\% & 56.9\% \\
 
 \ensuremath{\chi}\ensuremath{^{2}} = 15.04, df = 6, p = 0.020, Cram\'{e}r's V = 0.11. Using belief at the time of the NDE instead, Christians identify an unknown presence only in 38.0\% of encounters versus 61.5--64.3\% for atheist/agnostic, spiritual-not-religious and other experiencers (\ensuremath{\chi}\ensuremath{^{2}} = 38.40, df = 3, p \textless{} 0.0001, V = 0.24).
 
-\textbf{Finding (statistically supported):} cultural background shapes naming, weakly to moderately, and an ``unknown presence'' is the most common identification in every group.
+\textbf{Finding (statistically supported):} cultural background shapes naming, weakly to moderately, and an ``unknown presence'' is the most common identification in every group. The share of ``unknown presence'' depends on how the coder separates it from ``other'' beings, which the schema leaves undefined (inter-coder \ensuremath{\kappa} = 0.44). It describes the extractor's labelling, not a word experiencers chose.
 
 \subsection{Do Different Names Go with Different Properties?}\label{do-different-names-go-with-different-properties}
 
@@ -292,7 +296,7 @@ Among self-judgments, 43.6\% were rated loving/gentle (17/39).
 
 \textbf{Christians} (religious background, n = 147 reviews): 52.6\% of classifiable reviews had no external evaluator; 65.7\% of rated evaluations were loving (1 harsh, 12 uncomfortable); love tone 25, shame/regret 22.
 
-\textbf{Finding (statistically supported, magnitude corrected).} Condemnation is rare: harsh evaluation occurs in about 2\% of rated reviews, and when the Being of Light itself evaluates, three-quarters of evaluations are loving. The 36.5:1 ratio is arithmetically correct but rests on four harsh cases; one evaluation in five is uncomfortable. The data support ``evaluation occurs and is predominantly non-condemning'', not ``no external evaluation'', and the experiencer's own feeling is mixed rather than predominantly loving.
+\textbf{Finding (statistically supported, magnitude corrected).} Condemnation is rare: harsh evaluation occurs in about 2\% of rated reviews, and when the Being of Light itself evaluates, three-quarters of evaluations are loving. The 36.5:1 ratio is arithmetically correct but rests on four harsh cases; one evaluation in five is uncomfortable. The data support ``evaluation occurs and is predominantly non-condemning'', not ``no external evaluation'', and the experiencer's own feeling is mixed rather than predominantly loving. The ratio is also coder-dependent. Across all 428 rated reviews, a blind second coder rated 8.7\% harsh (95\% CI 1.3--16.8) against GPT-5.2's 1.4\%, for a loving:harsh ratio of 6.4:1 (3.1--43.9). Across those reviews, loving:critical stays at 1.7--1.8:1 under both coders, so it is the stable summary.
 
 \subsection{Expectation versus Experience}\label{expectation-versus-experience}
 
@@ -388,7 +392,7 @@ Verdict
 \endlastfoot
 Identification varies with culture & V \ensuremath{\approx} 0.11--0.24 & \textbf{Hit} (weak effect) \\
 A constant core beneath variable names & Functional properties equal; mode differs & \textbf{Partial hit} \\
-Non-condemning evaluation & Harsh \ensuremath{\approx} 2\%; uncomfortable \ensuremath{\approx} 21\% & \textbf{Hit} for non-condemnation; ``unconditional love'' overstated \\
+Non-condemning evaluation & Harsh \ensuremath{\approx} 2\% (up to 9\% under a second coder); uncomfortable \ensuremath{\approx} 21\% & \textbf{Hit} for non-condemnation; ``unconditional love'' and the 36.5:1 ratio overstated \\
 Singular Being across traditions & Not measurable; 2/8 Hindu/Buddhist cases name several figures & \textbf{Underdetermined} \\
 Distinct teaching function of the Being & Teaching 2\ensuremath{\times}, robust to length & \textbf{Hit} \\
 Transformation specific to the Being & Fear: no; spirituality magnitude: yes & \textbf{Mixed} \\
@@ -401,11 +405,11 @@ Transformation specific to the Being & Fear: no; spirituality magnitude: yes & \
 
 \subsection{Limitations}\label{limitations}
 
-All variables are LLM extractions from self-selected online narratives; no human validation has been performed. Many fields are ``not mentioned'' for most records, and the Light-Being subset is defined from identifications rather than from a luminous-being field. Religious background is known for only 24\% of records, and those accounts are much longer, so religion-based comparisons apply to a selected subgroup. Before/after measures are retrospective and selected toward change. The sample is predominantly Western; Hindu, Buddhist and Muslim subgroups are very small. Narrative length is an imperfect proxy for reporting detail; adjusted estimates reduce but cannot eliminate this confound.
+All variables are LLM extractions from self-selected online narratives. Agreement with a blind second coder is \ensuremath{\kappa} \ensuremath{\geq} 0.70 for the main fields, but 0.44 for ``unknown presence'', and judgment intensity is unstable at the harsh boundary. Many fields are ``not mentioned'' for most records, and the Light-Being subset is defined from identifications rather than from a luminous-being field. Religious background is known for only 24\% of records, and those accounts are much longer, so religion-based comparisons apply to a selected subgroup. Before/after measures are retrospective and selected toward change. The sample is predominantly Western; Hindu, Buddhist and Muslim subgroups are very small. Narrative length is an imperfect proxy for reporting detail; adjusted estimates reduce but cannot eliminate this confound.
 
 \subsection{Future Directions}\label{future-directions}
 
-A pre-registered definition of which phenomenological properties count as ``state'' and which as ``form''; human validation of a random subsample of extractions; schema fields that record the \emph{number} of beings of light and attribute communication and guidance to specific beings; and non-Western archives with adequate Hindu, Buddhist and Muslim samples.
+A pre-registered definition of which phenomenological properties count as ``state'' and which as ``form''; a schema definition that separates ``unknown presence'' from ``other'' and anchors harsh judgment, with agreement re-measured; schema fields that record the \emph{number} of beings of light and attribute communication and guidance to specific beings; and non-Western archives with adequate Hindu, Buddhist and Muslim samples.
 
 \section{Conclusion}\label{conclusion}
 
@@ -466,9 +470,15 @@ Religion \ensuremath{\rightarrow} name, cross-validated AUC & 0.53 (background),
 \section{Key Statistics}\label{key-statistics}
 
 {\def\LTcaptype{none} % do not increment counter
-\begin{longtable}[]{@{}ll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4667}}@{}}
 \toprule\noalign{}
-Metric & Value \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Metric
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Value
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -479,7 +489,7 @@ Light-Being encounters & 1,881 (27.9\%) \\
 Unknown presence only & 50.6\% \\
 External evaluator, classifiable life reviews & 55.9\% \\
 Harsh evaluation, rated life reviews & 1.7\% \\
-Loving : harsh & 36.5 : 1 (95\% CI 14--136) \\
+Loving : harsh & 36.5 : 1 (95\% CI 14--136); coder-dependent (second coder, all rated reviews: 6.4 : 1) \\
 Loving : critical (uncomfortable + harsh) & 2.65 : 1 \\
 Teaching, Light Being vs other & 25.3\% vs 12.6\% \\
 Death fear decreased / increased (both stated) & 88.0\% / 0.9\% \\

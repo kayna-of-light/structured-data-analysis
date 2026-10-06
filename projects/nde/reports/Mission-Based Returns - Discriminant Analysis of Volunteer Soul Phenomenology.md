@@ -2,6 +2,8 @@
 
 > **Correction notice (2026-10-05).** This report was revised after a statistical audit (`docs/STATISTICAL_AUDIT_2026-10.md`). Changes: (1) the headline "94.2% discriminant accuracy" is a **positive predictive value**; the full diagnostic picture is sensitivity 39.7%, accuracy 86.2% against a 78.1% baseline, and Cohen's κ = 0.49; (2) the χ² values for mission commissioning (3,018) and volunteer language (599) tested variables that *define* the volunteer group and are circular; (3) "sense of belonging shows no association (χ² = 0.0)" and "life transformation shows no association" were produced by a wrong field path and a non-existent field — belonging is in fact associated (χ² = 252); (4) the volunteer-detection rule described in Methods did not match the rule used; (5) associations are now adjusted for narrative length; (6) N = 6,751 (two duplicate narratives removed; four IANDS records previously mislabelled NDERF). The LaTeX and PDF versions were regenerated from this corrected text.
 
+> **Reliability addendum (2026-10-06).** Coding reliability was measured with a blind second coder; see *Reliability of Near-Death Experience Narrative Coding* (`08_extraction_reliability.ipynb`). Mission commissioning agrees at Cohen's κ = 0.71 and the earthly-mission return reason at 0.75. GPT-5.2's "implied" commissioning codes are liberal. The second coder confirmed all 7 explicit codes but only 5 of 13 implied ones; the rest were general life lessons rather than a specific task. Calibrated to the second coder, commissioning prevalence is about 14.8% (95% CI 12.2–18.4) rather than 21.9%. The association between an earthly-mission return reason and commissioning holds under both coders (6/6 and 6/7 in the sample).
+
 ## Abstract
 
 Some near-death experiencers report returning for an "earthly mission". The Swedenborgian framework proposes that mission-based returns form a distinct category associated with souls who incarnate for specific purposes. We analysed 6,751 NDE records from NDERF (n=5,659) and IANDS (n=1,092), coded by GPT-5.2 for return reasons, mission commissioning, volunteer language, pre-birth indicators and related features. We use binary "volunteer detection" rather than soul-path classification.
@@ -181,7 +183,7 @@ Clinically, mission-return accounts are coherent and warrant respectful engageme
 
 ### 4.5 Limitations
 
-LLM extraction without human validation; self-selected archives; mission and volunteer language may be culturally available framings; volunteer-language n = 53; detection is rule-dependent (695 vs 898 under the alternative rule).
+LLM extraction (inter-coder κ 0.71 for commissioning, with liberal "implied" codes that overstate prevalence by about a third); self-selected archives; mission and volunteer language may be culturally available framings; volunteer-language n = 53; detection is rule-dependent (695 vs 898 under the alternative rule).
 
 ### 4.6 Future Directions
 

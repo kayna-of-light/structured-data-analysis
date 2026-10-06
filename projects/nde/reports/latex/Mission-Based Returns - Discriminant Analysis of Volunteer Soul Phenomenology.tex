@@ -20,6 +20,10 @@
 \textbf{Correction notice (2026-10-05).} This report was revised after a statistical audit (\texttt{docs/STATISTICAL\_AUDIT\_2026-10.md}). Changes: (1) the headline ``94.2\% discriminant accuracy'' is a \textbf{positive predictive value}; the full diagnostic picture is sensitivity 39.7\%, accuracy 86.2\% against a 78.1\% baseline, and Cohen's \ensuremath{\kappa} = 0.49; (2) the \ensuremath{\chi}\ensuremath{^{2}} values for mission commissioning (3,018) and volunteer language (599) tested variables that \emph{define} the volunteer group and are circular; (3) ``sense of belonging shows no association (\ensuremath{\chi}\ensuremath{^{2}} = 0.0)'' and ``life transformation shows no association'' were produced by a wrong field path and a non-existent field --- belonging is in fact associated (\ensuremath{\chi}\ensuremath{^{2}} = 252); (4) the volunteer-detection rule described in Methods did not match the rule used; (5) associations are now adjusted for narrative length; (6) N = 6,751 (two duplicate narratives removed; four IANDS records previously mislabelled NDERF). The LaTeX and PDF versions were regenerated from this corrected text.
 \end{quote}
 
+\begin{quote}
+\textbf{Reliability addendum (2026-10-06).} Coding reliability was measured with a blind second coder; see \emph{Reliability of Near-Death Experience Narrative Coding} (\texttt{08\_extraction\_reliability.ipynb}). Mission commissioning agrees at Cohen's \ensuremath{\kappa} = 0.71 and the earthly-mission return reason at 0.75. GPT-5.2's ``implied'' commissioning codes are liberal. The second coder confirmed all 7 explicit codes but only 5 of 13 implied ones; the rest were general life lessons rather than a specific task. Calibrated to the second coder, commissioning prevalence is about 14.8\% (95\% CI 12.2--18.4) rather than 21.9\%. The association between an earthly-mission return reason and commissioning holds under both coders (6/6 and 6/7 in the sample).
+\end{quote}
+
 }
 
 \begin{abstract}
@@ -298,7 +302,7 @@ Clinically, mission-return accounts are coherent and warrant respectful engageme
 
 \subsection{Limitations}\label{limitations}
 
-LLM extraction without human validation; self-selected archives; mission and volunteer language may be culturally available framings; volunteer-language n = 53; detection is rule-dependent (695 vs 898 under the alternative rule).
+LLM extraction (inter-coder \ensuremath{\kappa} 0.71 for commissioning, with liberal ``implied'' codes that overstate prevalence by about a third); self-selected archives; mission and volunteer language may be culturally available framings; volunteer-language n = 53; detection is rule-dependent (695 vs 898 under the alternative rule).
 
 \subsection{Future Directions}\label{future-directions}
 

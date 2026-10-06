@@ -1,7 +1,7 @@
 # Statistical Audit of the NDE Notebooks and Reports (October 2026)
 
-**Date:** 2026-10-05
-**Scope:** `projects/nde/notebooks/01–06*.ipynb`; the five reports in `projects/nde/reports/` (Markdown), their LaTeX sources in `reports/latex/`, and the PDFs.
+**Date:** 2026-10-05 (follow-up analyses added 2026-10-06, §9)
+**Scope:** `projects/nde/notebooks/01–06*.ipynb` (and the follow-up notebooks 07–08, §9); the five reports in `projects/nde/reports/` (Markdown), their LaTeX sources in `reports/latex/`, and the PDFs.
 **Supersedes:** `NOTEBOOK_AUDIT_REPORT.md` (January 2026). That audit was run on the extraction schema before the 2026-01-06 schema change, and its figures do not reproduce on the current data. For example, "84.8% no external condemnation" corresponds to nothing in the current schema. On current data, 36.6% of classifiable life reviews have an external evaluator, and harsh evaluation occurs in 1.4% of rated reviews.
 
 ---
@@ -16,7 +16,7 @@ The main problems found were:
 2. **Wrong denominators.** Examples: shares of mentions reported as shares of experiencers; "not mentioned" counted as "no"; life-review percentages computed over all 6,753 records.
 3. **Invalid or circular tests.** These include a χ² test where 69% of cells had expected counts below 5, goodness-of-fit tests on overlapping counts, and tests of a group against the variables that define it. A positive predictive value was also reported as "accuracy", and a 2-factor solution was imposed rather than estimated.
 4. **No control for narrative length.** Longer accounts mention more of every feature. Length explains 41% of the perception score, and it inflates every co-occurrence comparison.
-5. **Hard-coded or unanalysed claims.** Notebook 04's summary printed percentages that were computed nowhere. The old Sequential Structure LaTeX/PDF reported sequence statistics that no notebook computed ("tunnel preceded light in 73.2%", "life reviews after beings 68.4%", "boundary preceded return 89.3%", "r = 0.34"). The old Mission LaTeX/PDF described a "linear discriminant analysis" that was never run. The East-West report stated an inter-rater reliability of κ = 0.84, but no human validation exists anywhere in the repository.
+5. **Hard-coded or unanalysed claims.** Notebook 04's summary printed percentages that were computed nowhere. The old Sequential Structure LaTeX/PDF reported sequence statistics that no notebook computed ("tunnel preceded light in 73.2%", "life reviews after beings 68.4%", "boundary preceded return 89.3%", "r = 0.34"). The old Mission LaTeX/PDF described a "linear discriminant analysis" that was never run. The East-West report stated an inter-rater reliability of κ = 0.84, but no reliability study existed anywhere in the repository. One has since been run (§9.2).
 
 Several framework predictions hold after correction, some with different numbers. Others are withdrawn. Section 6 gives the scorecard.
 
@@ -96,7 +96,7 @@ All were replaced with computed analyses:
 
 | Previous claim | Corrected | Verdict |
 |---|---|---|
-| κ = 0.84 inter-rater reliability (report) | No validation exists | Removed |
+| κ = 0.84 inter-rater reliability (report) | No such study existed. A blind second coding has since been run (§9.2): κ = 0.85–0.87 for light and relatives, 0.34 for boundary type | Removed; replaced by measured values |
 | Deceased (17.9%) ≈ 2× religious figures (9.9%) | God and Jesus had been omitted. Correct range 13.8–19.9% depending on definition (McNemar: p < 10⁻¹⁰, p = 0.26, p = 0.002) | Definition-dependent; "inversion" withdrawn |
 | Brilliant light = "impersonal", 3.8:1 | 57.0% of these accounts identify beings and 56.9% report communication | Relabelling withdrawn |
 | Nature vs urban χ² = 74.7 | Goodness-of-fit test on overlapping counts. McNemar χ² = 107.4, p < 10⁻²⁴ | Finding holds; test corrected |
@@ -136,7 +136,7 @@ The LaTeX files had drifted from the Markdown, and some contained claims that ap
 
 ## 5. Remaining Limitations (apply to every result)
 
-1. **No human validation of the GPT-5.2 extraction.** All variables are model-coded features of one retrospective narrative.
+1. **Coding reliability.** All variables are model-coded features of one retrospective narrative. A human coder would not provide ground truth, but reproducibility can be measured, and it was (§9.2). Against a blind second coder, the median κ is 0.83 across 15 fields, and GPT-5.2 test–retest κ is 0.88. Four results depend on codebook conventions that the schema leaves open: "unknown presence" vs "other" (κ 0.44), "implied" mission (prevalence 21.9% → 14.8%), boundary type (κ 0.34), and the harsh/uncomfortable line (loving:harsh 36.2:1 → 6.4:1).
 2. **"Not mentioned" is not "absent".** Prevalence figures computed over all records are lower bounds of what was experienced; figures over stated cases may be biased toward salient experiences.
 3. **Self-selected archives.** These are not population prevalence estimates.
 4. **Narrative length.** Adjusting for word count is a partial control, because length may itself reflect experiential richness.
@@ -151,9 +151,10 @@ Labels follow `CLAUDE.md`. **Statistically supported** means the pattern is in t
 | Prediction | Corrected evidence | Verdict |
 |---|---|---|
 | Constant state, variable form (Being of Light) | The name varies weakly with background (V = 0.11–0.24), and most encounters stay unnamed (50.6% unknown-only). Functional properties do not differ by name. The perception profile is equivalent for Christian and non-religious experiencers (TOST p = 0.005) | **Hit** (statistically supported). The statistics previously cited for it (χ² = 365.14, "< 10%", "below-baseline ML") are withdrawn |
-| Functional differentiation of beings | Light-Being encounters: teaching 2.0× (adjusted OR 1.96), telepathy adjusted OR 1.53, guidance 1.09× (adjusted OR 1.34) | **Hit** (statistically supported) |
-| Non-condemning review | Harsh 1.7% of rated Light-Being reviews and 1.4% of all rated reviews (loving:harsh about 36:1). Uncomfortable evaluation 21–28%; loving:critical 1.7–2.7:1 | **Hit** for "rarely condemning". Not supported as "uniformly loving" |
-| Mission returns as a category | PPV 94.2%, κ = 0.49. Independent features associate with adjusted ORs of 2.0–3.3. Mission → BoL adjusted OR 3.26 | **Supported** as a coherent reported category. "94.2% accuracy" withdrawn |
+| Functional differentiation of beings | Light-Being encounters: teaching 2.0× (adjusted OR 1.96), telepathy adjusted OR 1.53, guidance 1.09× (adjusted OR 1.34). Exclusive being types (notebook 07): 10/11 functions differ; divine vs relatives teaching OR 6.27; guidance overall OR 0.81 | **Hit** for differentiation and teaching (statistically supported). "More guidance overall" is a miss |
+| Relatives as gatekeepers | Sent back in 54.6% of relatives-only vs 51.7% of divine-only accounts (adjusted OR 1.11, p = 0.42); 47–55% in every group | **Miss**: sending back is shared by all being types |
+| Non-condemning review | Harsh 1.7% of rated Light-Being reviews and 1.4% of all rated reviews (loving:harsh about 36:1). A blind second coder gives 8.7% harsh (CI 1.3–16.8), loving:harsh 6.4:1. Uncomfortable evaluation 21–28%; loving:critical 1.7–2.7:1, stable across coders | **Hit** for "rarely condemning, predominantly loving". The 36:1 magnitude is coder-dependent. Not supported as "uniformly loving" |
+| Mission returns as a category | PPV 94.2%, κ = 0.49. Independent features associate with adjusted ORs of 2.0–3.3. Mission → BoL adjusted OR 3.26. Commissioning prevalence calibrated to the second coder is 14.8% (vs 21.9%); the return-reason link holds under both coders | **Supported** as a coherent reported category. "94.2% accuracy" withdrawn |
 | Personhood of the Being | Teaching, telepathy and commissioning associations hold. "Presence" is the majority label. Singularity is not measurable. "Corrective" is not specific to the Being | Associations supported; personhood itself is **interpretation** |
 | Transformation | Spirituality ↑ 89.2% (larger than after other beings); death fear ↑ 0.9%. Religiosity shows no net change | **Supported** (descriptive) |
 | Normative path: characteristic sequence | Strict canonical order in 0.05% of accounts | **Miss** |
@@ -167,7 +168,7 @@ Labels follow `CLAUDE.md`. **Statistically supported** means the pattern is in t
 
 ## 7. Claims Elsewhere That the Corrected Analysis Contradicts
 
-These documents were **not edited** in this audit because they are outside the notebooks and reports. They cite figures that no longer hold:
+These documents were **not edited** in the first pass of this audit because they are outside the notebooks and reports. They cite figures that no longer hold. (`CLAUDE.md` was rewritten on 2026-10-06 with the owner's permission to match §6 and §9.)
 
 **`CLAUDE.md`** ("Empirical Support" and "Summary" sections):
 
@@ -177,15 +178,15 @@ These documents were **not edited** in this audit because they are outside the n
 | "61.8% of Christians … 'unknown presence' (only 11.2% say 'Jesus')" | Those were shares of *all* Light-Being encounters in an archived old-schema notebook (`archive/conceptual_framework_deep_dive.ipynb`). Christian background, current data: unknown presence 44.2%, Jesus 25.1% (first-listed label); unknown-only 42.6% |
 | Experiential properties "all differences below 10%" | Function does not differ; visual-being coding (+45 pp) and unity (−20 pp) do |
 | ML classifier below baseline (37.8% vs 45.9%) | An artifact of overfitting. Religion predicts the name barely above chance (AUC 0.53) |
-| Entity function χ² = 41.13, p = 0.008; 70–73% guidance; 29.5% "told to return" | Not produced by any notebook in `projects/nde` (current or archived); unverified |
+| Entity function χ² = 41.13, p = 0.008; 70–73% guidance; 29.5% "told to return" | Not produced by any notebook. Tested in notebook 07: beings are differentiated (AUC 0.673) and divine figures teach far more (OR 6.27), but they do not give more guidance (73.2% vs 75.9%), and relatives are not specific gatekeepers (OR 1.11, p = 0.42) |
 | Mission "94.2% accuracy"; χ² = 3018.1 | PPV 94.2% (accuracy 86.2% vs 78.1% baseline, κ = 0.49); χ² circular |
-| Loving 32.2% / harsh 0.9%, 36.5:1 | Of rated reviews: loving 60.3%, harsh 1.7%. 36.5:1 holds (CI 14.0–135.8); loving:critical 2.65:1 |
+| Loving 32.2% / harsh 0.9%, 36.5:1 | Of rated reviews: loving 60.3%, harsh 1.7%. 36.5:1 is arithmetically correct (CI 14.0–135.8) but coder-dependent: a blind second coder gives 6.4:1 over all rated reviews. Loving:critical 2.65:1 (Light-Being reviews), 1.7–1.8:1 (all), stable |
 | Singular Being "even polytheists" | Not measurable (8 cases; 2 name several figures) |
 | "81.7% guidance rate, nearly 2× other beings" | Guidance 1.09×; teaching is 2× |
 | "475 vs 239 teaching instances (χ² = 25.24)" | χ² = 25.24 is the guidance test; teaching 25.3% vs 12.6%, χ² = 98.0 |
 | Telepathic 34.8% | Per experiencer 48.2% (vs 34.2%) |
 | "Corrective — delivers what the experiencer did NOT expect" | Not specific to the Being (57.2% vs 55.2%, p = 0.59) |
-| 51.9% "unknown presence" | Holds as first-listed label; 50.6% unknown-only |
+| 51.9% "unknown presence" | Holds as first-listed label; 50.6% unknown-only. But the label is the coder's, not the experiencer's, and its boundary with "other" is unreliable (κ 0.44), so it cannot show that experiencers prefer a "personal word" |
 | Mission-returners 4.4× odds (p < 10⁻⁴⁶) | Holds (OR 4.38; length-adjusted 3.26) |
 | 84.2% increased spirituality; 0.0% increased death fear | 89.2%; 0.9% |
 | NDE sample 6,753 | 6,751 unique narratives |
@@ -201,7 +202,7 @@ These documents were **not edited** in this audit because they are outside the n
 ```bash
 pip install -r requirements.txt          # scikit-learn < 1.8 (factor_analyzer compatibility)
 cd projects/nde/notebooks
-jupyter nbconvert --to notebook --execute --inplace 0*.ipynb
+jupyter nbconvert --to notebook --execute --inplace 0*.ipynb   # includes 07 and 08
 cd ..
 python -m pytest tests/test_nde_dataset.py
 python scripts/md_to_latex.py            # regenerate reports/latex/*.tex from the Markdown
@@ -209,3 +210,36 @@ cd reports/latex && tectonic "<report>.tex"   # or pdflatex
 ```
 
 **Known test failure.** `tests/test_questionnaire_models.py::test_model_instantiation_succeeds` fails both before and after this audit. Its fixture payload predates the current schema, and this audit did not change it.
+
+---
+
+## 9. Follow-up Analyses (2026-10-06)
+
+Two items the first pass left open were analysed in new notebooks, each with a report.
+
+### 9.1 Entity Function Differentiation (notebook 07)
+
+The `CLAUDE.md` figures for this prediction (χ² = 41.13; 70–73% guidance; 29.5% "told to return") were not produced by any notebook. Guidance and return are recorded per account, so functions were attributed to five exclusive being types (accounts with one kind of being, n = 2,634).
+
+- Ten of 11 functions differ across types after Holm correction (V 0.07–0.18). The function profile separates divine from relative encounters beyond narrative length (cross-validated AUC 0.673 vs 0.555).
+- Divine figures teach far more than relatives (23.0% vs 4.5%; length-adjusted OR 6.27, 3.94–9.98). They also communicate telepathically more (OR 1.83) and commission missions more (OR 1.62). They do **not** give more guidance overall (OR 0.81).
+- Relatives give directional guidance (67.3%) and comfort (43.8%) and rarely teach (5.9%).
+- Sending the experiencer back is shared by all being types (47–55%). It is not specific to relatives (OR 1.11 vs divine, p = 0.42).
+- The unknown presence is functionally closer to divine figures than to relatives, but so are angels and other beings.
+
+Report: `reports/Functional Differentiation of Beings in NDE - Testing Role Specialisation.md`.
+
+### 9.2 Extraction Reliability (notebook 08)
+
+A blind second coder (Claude) recoded 100 random accounts on 15 fields and 44 life reviews (40 random plus all 6 GPT-harsh). It saw the same text GPT-5.2 received, with the schema's field descriptions as the codebook. Codes and conventions are in `validation/`.
+
+- Median κ across binary fields is 0.83. Nine fields are above 0.80: tunnel, life review, telepathy, guidance, being of light, deceased relatives, any light, return by a being, God or Jesus. Five fields are 0.70–0.77: boundary, earthly-mission reason, more real, mission, teaching.
+- **Convention-dependent results:**
+  - "unknown presence" (κ 0.44): its boundary with "other" is undefined;
+  - mission commissioning: the "implied" codes are liberal, and the calibrated prevalence is 14.8% (12.2–18.4) vs 21.9%;
+  - boundary type (κ 0.34): there is no precedence rule when a barrier and a spoken limit co-occur;
+  - judgment intensity: weighted κ 0.74, but the harsh boundary is unstable. Harsh is 8.7% (1.3–16.8) vs 1.4% and loving:harsh is 6.4:1 vs 36.2:1, while loving:critical is stable (1.77 vs 1.72).
+- **Near-duplicates:** 125 pairs and 121 redundant records (1.8%; lower bound), including the same NDERF account stored under two file names. Removing them moves headline rates by less than 0.5 percentage points.
+- **GPT-5.2 test–retest** on duplicate pairs: median κ 0.88 on near-identical text and 0.75 on all pairs. It is least stable on "more real" and judgment intensity.
+
+The first-pass limitation "no human validation" is therefore replaced by measured reliability in every report. Report: `reports/Extraction Reliability - Independent Second Coding of NDE Narratives.md`.
