@@ -68,9 +68,9 @@ This project is part of a multi-repository research framework:
 | Repository | Purpose |
 |---|---|
 | **[literary-compilation](https://github.com/kayna-of-light/literary-compilation)** | The Divine Bricolage — research collection and synthesis across multiple channels, documenting what the data shows and how it connects |
-| **[nag-hammadi-analysis](https://github.com/kayna-of-light/NagHammadiLibrary)** | Correspondential reading of the complete Nag Hammadi Library |
+| **[nag-hammadi-analysis](https://github.com/kayna-of-light/nag-hammadi-analysis)** | Correspondential reading of the complete Nag Hammadi Library |
 | **[manichaean-analysis](https://github.com/kayna-of-light/manichaean-analysis)** | Extraction of the correspondential substrate from the Kephalaia and Manichaean corpus — recovering the Ancient Word |
-| **[proto-luke-reconstruction](https://github.com/kayna-of-light/ProtoLuke)** | Proto-Luke reconstruction — the Jamesian Protograph |
+| **[proto-luke-reconstruction](https://github.com/kayna-of-light/proto-luke-reconstruction)** | Proto-Luke reconstruction — the Jamesian Protograph |
 
 ## Getting Started
 
